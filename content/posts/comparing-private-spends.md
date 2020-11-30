@@ -40,7 +40,8 @@ insufficient for many use cases and allowed users to very easily ruin their own 
 outputs, re-using addresses, and simple output amount analysis among many other heuristics.
 
 There are currently two main approaches to gaining some level of "reasonable privacy" on Bitcoin, using CoinJoin[^1] to 
-obfuscate UTXO ownership, and the Lightning Network[^2] to move the trail of funds off-chain (to some extent).
+obfuscate UTXO ownership, and the Lightning Network[^2] to move the trail of funds off-chain (to some extent, privacy 
+via Lightning is still very much a work-in-progress and not well understood).
 
 CoinJoin is a technique where a group of unique users use a central coordinator to build a shared transaction that 
 combines all of their input UTXOs of the same fixed amount and then "mixes" these funds to break deterministic links 
@@ -142,7 +143,7 @@ Zcash and 0.0002% the cost of Bitcoin.
 
 The largest caveat here for the scaling of Monero is that it is not currently fully pruneable in the same way as 
 Bitcoin (Bitcoin can prune down to just the current UTXO set), and requires retaining a database of all outputs to use as decoys 
-in each future transaction as no output is ever known-spent by the network. Zcash is (as far as I can tell) not 
+in each future transaction as no output is ever known-spent by the network[^10]. Zcash is (as far as I can tell) not 
 pruneable in any way at present.
 
 It's important to note that most users of both Zcash and Bitcoin do not opt into using these privacy tools, and instead 
@@ -157,6 +158,7 @@ For more info on comparing the frequency of spends utilizing these privacy tools
 | Monero  | 1,419b | $0.002 (median as of 11/29) |
 | Zcash   | 2,373b | $0.0066 (median as of 11/29) |
 
+[^10]: https://www.getmonero.org/resources/moneropedia/pruning.html
 
 ## Throughput  
 
@@ -168,13 +170,13 @@ size and block time to match their own needs and goals. To provide a common grou
 #### Bitcoin Network Notes  
 
 Bitcoin has retained the 10min block times from it's inception, but block sizes have been changed (in a way) with the 
-introduction of SegWit[^10] to a maximum of 4MB for native SegWit transactions, and 2MB for "legacy" transactions. To 
+introduction of SegWit[^11] to a maximum of 4MB for native SegWit transactions, and 2MB for "legacy" transactions. To 
 provide the optimal network conditions for this comparison, I am assuming a 100% native SegWit adoption, something that 
 is not even close to reality, but provides a better picture of what is *possible* in Bitcoin natively.
 
 More details of how the weighting of transactions works in Bitcoin can be found in ["What's the blocksize limit after SegWit?"](https://bitcoin.stackexchange.com/questions/98810/whats-the-blocksize-limit-after-segwit-and-how-do-legacy-nodes-deal-with-segwit).
 
-[^10]: https://bitcoinmagazine.com/what-is-bitcoin/what-is-segwit
+[^11]: https://bitcoinmagazine.com/what-is-bitcoin/what-is-segwit
 
 #### Monero Network Notes  
 
@@ -196,12 +198,12 @@ does, however, retain the 2MB hard cap for block sizes from Bitcoin. As SegWit i
 As you can see below, due to the much more space-efficient transactions in Monero, you can support the most 
 Bitcoin-weighted TPS when comparing "reasonably private" spends across the three networks.
 
-Note that Zcash technically supports the highest TPS natively, but combining their very quick block times with full 
-blocks would lead to difficulties for nodes and a quickly growing blockchain.
+Note that Zcash technically supports the highest TPS at the default block sizes, but combining their very quick block 
+times with full blocks would lead to difficulties for nodes and a quickly growing blockchain.
 
 | Cryptocurrency | Block Time | Block Size Limit | Max TPS/10min | Max TPS/10min weighted to Bitcoin block size |  
 | ---| --- | --- | --- | -- |  
-| Bitcoin | 10min | median of 2MB, hard cap of 4MB | ~2,750 (with SegWit) | ~2,750 (with SegWit) |  
+| Bitcoin | 10min | median of 2mb, hard cap of 4MB | ~2,750 (with SegWit) | ~2,750 (with SegWit) |  
 | Monero  | 2min | Initial median of 300KB, hard cap of 600KB | ~2,150 | ~2,900 (w/o SegWit) |  
 | Zcash   | 1.25min | 2MB | ~6,900 | ~1,725 (w/o SegWit) |  
 
