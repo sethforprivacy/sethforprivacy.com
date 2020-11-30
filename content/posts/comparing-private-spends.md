@@ -47,7 +47,8 @@ CoinJoin is a technique where a group of unique users use a central coordinator 
 combines all of their input UTXOs of the same fixed amount and then "mixes" these funds to break deterministic links 
 between the input UTXOs and output addresses. The most well known approaches to this are 
 [Samourai](https://samouraiwallet.com/), [Wasabi](https://www.wasabiwallet.io/), and 
-[JoinMarket](https://github.com/Joinmarket-Org/joinmarket-clientserver/releases).
+[JoinMarket](https://github.com/Joinmarket-Org/joinmarket-clientserver/releases) (note that JoinMarket uses a 
+maker/taker model instead of a coordinator model, but that is outside the scope of this blog post).
 
 For this blog post we'll focus on Samourai wallet, as that is most widely accepted as the ideal way to gain privacy in 
 Bitcoin at the moment. For more information on how the basics of Samourai Wallet work, see 
