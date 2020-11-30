@@ -165,12 +165,12 @@ For more info on comparing the frequency of spends utilizing these privacy tools
 Throughput is an even harder metric to measure across networks, as each network has made their own choices of block 
 size and block time to match their own needs and goals. To provide a common ground here, I've chosen to list the default
  limits/times of each network and the throughput that allows, as well as provide a version of each weighted to Bitcoin's
-  design choices of 10min block times and 2MB/4MB block size caps.
+  design choices of 10min block times and 1MB/4MB block size caps.
   
 #### Bitcoin Network Notes  
 
 Bitcoin has retained the 10min block times from it's inception, but block sizes have been changed (in a way) with the 
-introduction of SegWit[^11] to a maximum of 4MB for native SegWit transactions, and 2MB for "legacy" transactions. To 
+introduction of SegWit[^11] to a maximum of 4MB for native SegWit transactions, and 1MB for "legacy" transactions. To 
 provide the optimal network conditions for this comparison, I am assuming a 100% native SegWit adoption, something that 
 is not even close to reality, but provides a better picture of what is *possible* in Bitcoin natively.
 
@@ -189,9 +189,9 @@ For more info on how this dynamic block scaling works, see ["How Monero Solved t
 
 #### Zcash Network Notes  
 
-Zcash uses similar properties to the Bitcoin network, but with a reduced block time of only 1.25min between blocks. It 
-does, however, retain the 2MB hard cap for block sizes from Bitcoin. As SegWit is not supported, there is no complicated
- block limit differences to discuss here.
+Zcash uses similar properties to the Bitcoin network, but with a reduced block time of only 1.25min between blocks while
+ also changing block size to 2MB. As SegWit is not supported, there is no complicated block limit differences to discuss
+  here.
 
 #### Results  
 
@@ -203,9 +203,9 @@ times with full blocks would lead to difficulties for nodes and a quickly growin
 
 | Cryptocurrency | Block Time | Block Size Limit | Max TPS/10min | Max TPS/10min weighted to Bitcoin block size |  
 | ---| --- | --- | --- | -- |  
-| Bitcoin | 10min | median of 2mb, hard cap of 4MB | ~2,750 (with SegWit) | ~2,750 (with SegWit) |  
-| Monero  | 2min | Initial median of 300KB, hard cap of 600KB | ~2,150 | ~2,900 (w/o SegWit) |  
-| Zcash   | 1.25min | 2MB | ~6,900 | ~1,725 (w/o SegWit) |  
+| Bitcoin | 10min | legacy of 1MB, SegWit of 4MB | ~2,750 (with SegWit) | ~2,750 (with SegWit) |  
+| Monero  | 2min | Initial median of 300KB, hard cap of 2x median | ~2,150 | ~2,900 (with SegWit) |  
+| Zcash   | 1.25min | 2MB | ~6,900 | ~1,725 (with SegWit) |  
 
 ## Conclusion  
 
