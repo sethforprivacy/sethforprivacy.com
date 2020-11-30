@@ -1,5 +1,5 @@
 +++
-title = "Comparing Reasonably Private Spends"
+title = "Comparing Reasonably Private Spends in Bitcoin, Monero, and Zcash"
 date = "2020-11-29T16:10:10Z"
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
@@ -8,10 +8,9 @@ tags = ["Monero", "Bitcoin", "Zcash"]
 keywords = ["Monero", "Bitcoin", "Zcash", "privacy", "efficiency"]
 description = ""
 showFullContent = false
-draft = true
+draft = false
 +++
 
-# Comparing "Reasonably Private" Spends in Bitcoin, Monero, and Zcash  
 
 ## Introduction  
 As my first blog post I wanted to go ahead and share some thoughts I've had about efficiency within transaction types 
@@ -22,15 +21,23 @@ where I was surprised by the results, finding that Monero manages to be quite a 
 Bitcoin when trying to use both in a private manner. I'll use this blog post to break it down in a bit more detail,
 and add a new contender to the mix -- Zcash.
 
-But first, an introduction to each approach to privacy.
+The reason I've chosen to focus on efficiency of each protocol is that users will generally prioritize simplicity and 
+low cost, and if a privacy protocol can provide both of those to users, they can greatly aid adoption of powerful tools.
+While users do generally prefer to have privacy (who reading this is willing to email me all of your passwords and home 
+address?), they will not normally go above and beyond, at great cost in time and money, to preserve their privacy.
 
-### Bitcoin  
+So for this post, let's take a look at how each of the three most recognized privacy approaches in cryptocurrency stack 
+up in size, cost (in both money and time!), and throughput.
 
-[Bitcoin](https://bitcoin.org/en/) is the king of cryptocurrencies and made major breakthroughs that enabled the existence of cryptocurrencies 
-like Monero and Zcash. While many thought it's approach to privacy sufficient in the early days, people quickly realized
-that the pseudonymity it offered was insufficient for many use cases and allowed users to very easily ruin their own
-privacy via things like combining outputs, re-using addresses, and simple output amount analysis among many other
-heuristics.
+But first, an introduction to each network's approach to privacy.
+
+#### Bitcoin - Privacy by Wallet  
+
+[Bitcoin](https://bitcoin.org/en/) is the king of cryptocurrencies and made major breakthroughs that enabled the 
+existence of cryptocurrencies like [Monero](https://www.getmonero.org/) and [Zcash](https://z.cash). While many thought 
+it's approach to privacy sufficient in the early days, people quickly realized that the pseudonymity it offered was 
+insufficient for many use cases and allowed users to very easily ruin their own privacy via things like combining 
+outputs, re-using addresses, and simple output amount analysis among many other heuristics.
 
 There are currently two main approaches to gaining some level of "reasonable privacy" on Bitcoin, using CoinJoin[^1] to 
 obfuscate UTXO ownership, and the Lightning Network[^2] to move the trail of funds off-chain (to some extent).
@@ -43,27 +50,26 @@ between the input UTXOs and output addresses. The most well known approaches to 
 
 For this blog post we'll focus on Samourai wallet, as that is most widely accepted as the ideal way to gain privacy in 
 Bitcoin at the moment. For more information on how the basics of Samourai Wallet work, see 
-[here](https://www.bitcoinqna.com/post/samourai-101) for a great explainer.
+["Samourai 101"](https://www.bitcoinqna.com/post/samourai-101) for a great explainer.
 
 [^1]: For more info see https://bitcoinmagazine.com/articles/coinjoin-combining-bitcoin-transactions-to-obfuscate-trails-and-increase-privacy-1465235087  
 [^2]: For more info see https://blog.bitmex.com/the-lightning-network/
 
-### Monero  
+#### Monero - Privacy by Default  
 
 [Monero](https://www.getmonero.org/) was created in 2014 as a fork of a project called “Bytecoin” by a small community of developers. Monero is not a 
 fork of Bitcoin, and uses an entirely new codebase called “Cryptonote”[^3] that has evolved into the Monero protocol. 
 Monero was started with three core aims -- privacy that is usable and approachable for the masses, by-default, a 
- scalable and iterating base-layer, and ASIC-resistance to enable commodity hardware mining, which aids decentralization
-  of mining.
+ scalable and iterating base-layer, and ASIC-resistance to enable commodity hardware mining which aids decentralization.
   
 Monero enables this default privacy for all users of the network through a variety of means:
 
-- RingCT[^4]: this technology hides all amounts sent and received on-chain, as well as hides which output is actually 
-being spent among (currently) 10 others. This requires no coordination (unlike CoinJoin) and happens entirely via the 
-protocol itself.  
-- Stealth addresses[^5]: this technology hides sender and receiver addresses on-chain by letting the sender generate a 
+- RingCT[^4]: this technology hides all amounts sent and received on-chain (via Confidential Transactions[^5]), as well 
+as hides which output is actually being spent among (currently) 10 others (via ring signatures[^6]). This requires no 
+coordination and is completely non-interactive (unlike CoinJoin) and happens entirely via the protocol itself.  
+- Stealth addresses[^7]: this technology hides sender and receiver addresses on-chain by letting the sender generate a 
 one-time address using the receiver’s public key, so no actual addresses are ever published to the blockchain.  
-- Dandelion++[^6]: This technology helps to hide the sender’s IP address when sending Monero by using a special method 
+- Dandelion++[^8]: This technology helps to hide the sender’s IP address when sending Monero by using a special method 
 of relaying transactions to other nodes.  
 
 These technologies combine to allow any user interacting with the Monero network to gain strong privacy without taking 
@@ -71,66 +77,79 @@ extra effort, making multiple transactions, or relying on a central coordinator.
 
 [^3]: https://cryptonote.org/whitepaper.pdf
 [^4]: https://www.getmonero.org/resources/moneropedia/ringCT.html
-[^5]: https://www.getmonero.org/resources/moneropedia/stealthaddress.html
-[^6]: https://www.monerooutreach.org/stories/dandelion.html
+[^5]: https://localmonero.co/knowledge/monero-ringct
+[^6]: https://www.getmonero.org/resources/moneropedia/ringsignatures.html
+[^7]: https://www.getmonero.org/resources/moneropedia/stealthaddress.html
+[^8]: https://www.monerooutreach.org/stories/dandelion.html
 
-### Zcash  
+#### Zcash - Privacy by Pool  
 
-[Zcash](https://z.cash) is a fork of Bitcoin created in 2016 that adds on optional privacy via a technology called 
-zk-SNARKs[^7], allowing users to opt-in to hiding the sender, receiver, and amount of a given transaction (if sending 
-from a z-address to another z-address).
+[Zcash](https://z.cash) is a code fork of Bitcoin created in 2016 that adds on optional privacy via a technology called 
+zk-SNARKs[^9], allowing users to opt-in to hiding the sender, receiver, and amount of a given transaction (if sending 
+from a z-address to another z-address). This functions in similar ways to Monero, in that there are one-time addresses, 
+amount commitments, and proofs that the transaction spends a previous output.
 
 Zcash retains many of the network characteristics of Bitcoin, but does enable vastly greater privacy to those users who 
 choose to opt-in. Unfortunately, because these strong privacy tools are not enabled by default for users, they see very 
 little adoption and normal, Bitcoin-like transactions are by far the majority of transactions made on the Zcash network.
 
-For more info on how Zcash works technically, see [here](https://z.cash/technology/) for a solid introduction.
+For more info on how Zcash works technically, see ["Zcash Technology"](https://z.cash/technology/) for a solid introduction.
 
-[^7]: [https://z.cash/technology/zksnarks/](https://z.cash/technology/zksnarks/)
+[^9]: [https://z.cash/technology/zksnarks/](https://z.cash/technology/zksnarks/)
 
 ## Comparing Size and Cost  
 
 As comparing across unique networks is very difficult, I've done my best to find a unifying set of metrics that we can 
-more easily compare, and used the common denominator of USD as a fee measure, as measuring in native units is not easily
- comparable.
+more easily compare, and used the common denominator of USD as a fee measure as native units are not easily comparable.
 
-Some more notes on the exact comparison transactions used here:
-
-#### Bitcoin  
+#### Bitcoin Transaction Notes  
 
 This example chain of transactions represents the recommended way to gain "reasonable privacy" and spend in 
-Bitcoin, and requires a TX0 pre-mix transaction, a Whirlpool mixing transaction, and a post-mix transaction (here a 
-STONEWALL transaction is used for the comparison, as this is most common and does not require a trusted second part).
+Bitcoin, and requires a [TX0 pre-mix transaction](https://medium.com/samourai-wallet/diving-head-first-into-whirlpool-anonymity-sets-4156a54b0bc7), 
+a [Whirlpool mixing transaction](https://samouraiwallet.com/whirlpool), and a post-mix transaction (here a 
+[STONEWALL transaction](https://samouraiwallet.com/stonewall) is used for the comparison, as this is most common and 
+does not require a trusted second part).
 
-#### Monero  
+It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and [in my own 
+testing](https://twitter.com/sethisimmons/status/1270424174834712577?s=20) it took ~4.5h to go from TX0 to STONEWALL 
+spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
+for all users depending on input amount and pool size.
+
+For this comparison I have omitted ["doxxic change"](https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs) 
+costs and [mixing fees](https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
+transactions. I am purely listing Bitcoin transaction fees below.
+
+#### Monero Transaction Notes  
 
 This example transaction is a standard 1-in 2-out Monero transaction with the present network technology, and 
 represents the most common spend. Note that no preparatory, mixing, or post-mix transactions are necessary to protect 
 the sender, receiver, and amount, or to break any deterministic links along the way.
 
-#### Zcash  
+Sending a Monero transaction is as simple as a basic Bitcoin transaction, and takes ~2min to confirm on-chain.
+
+#### Zcash Transaction Notes  
 
 This example transaction is a standard 1-in 2-out z-to-z transaction in Zcash, and represents the highest level of 
 privacy available to users who opt-in to sending from and to a z-address (fully shielded). This type of transaction 
 hides the sender, receiver, and amount on-chain. Note that no preparatory, mixing, or post-mix transactions are 
 necessary to protect the sender, receiver, and amount, or to break any deterministic links along the way.
 
-### Results  
+#### Results  
 
 As you can see below, Monero offers the most cost and space-efficient transactions of the three networks, saving almost 
 900b per "reasonably private" spend compared to comparable transactions in Bitcoin and Zcash, and is 33% the cost of 
 Zcash and 0.0002% the cost of Bitcoin.
 
 The largest caveat here for the scaling of Monero is that it is not currently fully pruneable in the same way as 
-Bitcoin (can prune down to just the current UTXO set), and requires retaining a database of all outputs to use as decoys 
+Bitcoin (Bitcoin can prune down to just the current UTXO set), and requires retaining a database of all outputs to use as decoys 
 in each future transaction as no output is ever known-spent by the network. Zcash is (as far as I can tell) not 
 pruneable in any way at present.
 
 It's important to note that most users of both Zcash and Bitcoin do not opt into using these privacy tools, and instead 
 choose to transact without hiding sender/receiver/amount for the vast majority of transactions.
 
-For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from 
-@JEhrenhofer [here](https://twitter.com/JEhrenhofer/status/1332552672185098240?s=20).
+For more info on comparing the frequency of spends utilizing these privacy tools, see a  [recent Tweet thread from 
+@JEhrenhofer](https://twitter.com/JEhrenhofer/status/1332552672185098240?s=20).
 
 | Cryptocurrency | Transaction Size | Transaction Cost (in USD) |
 | ---| --- | --- |
@@ -146,35 +165,33 @@ size and block time to match their own needs and goals. To provide a common grou
  limits/times of each network and the throughput that allows, as well as provide a version of each weighted to Bitcoin's
   design choices of 10min block times and 2MB/4MB block size caps.
   
-Some more details of each network:
+#### Bitcoin Network Notes  
 
-#### Bitcoin  
-
-Bitcoin has retained the 10min block times from it's inception, but block sizes have been changed (kind of) with the 
-introduction of SegWit[^8] to a maximum of 4MB for native SegWit transactions, and 2MB for "legacy" transactions. To 
+Bitcoin has retained the 10min block times from it's inception, but block sizes have been changed (in a way) with the 
+introduction of SegWit[^10] to a maximum of 4MB for native SegWit transactions, and 2MB for "legacy" transactions. To 
 provide the optimal network conditions for this comparison, I am assuming a 100% native SegWit adoption, something that 
 is not even close to reality, but provides a better picture of what is *possible* in Bitcoin natively.
 
-More details of how the weighting of transactions works in Bitcoin can be found [here](https://bitcoin.stackexchange.com/questions/98810/whats-the-blocksize-limit-after-segwit-and-how-do-legacy-nodes-deal-with-segwit).
+More details of how the weighting of transactions works in Bitcoin can be found in ["What's the blocksize limit after SegWit?"](https://bitcoin.stackexchange.com/questions/98810/whats-the-blocksize-limit-after-segwit-and-how-do-legacy-nodes-deal-with-segwit).
 
-[^8]: https://bitcoinmagazine.com/what-is-bitcoin/what-is-segwit
+[^10]: https://bitcoinmagazine.com/what-is-bitcoin/what-is-segwit
 
-#### Monero  
+#### Monero Network Notes  
 
 The Monero network has a block time of 2min, but has a more complex block size limit than most other networks. In 
 Monero, block sizes have a median and a hard cap that can both be expanded by miners at the expense of block subsidy 
 penalties proportional to the block size increase. For the calculations below I've chosen the default block size hard 
 cap, but the Monero network can easily and smoothly scale up without any developer intervention or software releases.
 
-For more info on how this dynamic block scaling works, see [here](https://localmonero.co/knowledge/dynamic-block-size).
+For more info on how this dynamic block scaling works, see ["How Monero Solved the Block Size Problem That Plagues Bitcoin"](https://localmonero.co/knowledge/dynamic-block-size).
 
-#### Zcash  
+#### Zcash Network Notes  
 
 Zcash uses similar properties to the Bitcoin network, but with a reduced block time of only 1.25min between blocks. It 
 does, however, retain the 2MB hard cap for block sizes from Bitcoin. As SegWit is not supported, there is no complicated
  block limit differences to discuss here.
 
-### Results  
+#### Results  
 
 As you can see below, due to the much more space-efficient transactions in Monero, you can support the most 
 Bitcoin-weighted TPS when comparing "reasonably private" spends across the three networks.

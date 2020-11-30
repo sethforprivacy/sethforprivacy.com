@@ -1,8 +1,9 @@
 baseURL = "https://sethsimmons.me/"
 languageCode = "en-us"
-title = "Seth Simmons"
+title = "sethsimmons.me"
 theme = "terminal"
 paginate = 5
+enableGitInfo = true
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -13,7 +14,7 @@ paginate = 5
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -29,7 +30,7 @@ paginate = 5
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
+  showLastUpdated = true
   # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
   # updatedDatePrefix = "Updated"
 
@@ -65,9 +66,13 @@ paginate = 5
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
-        name = "About"
+        name = "About Me"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
+      [[languages.en.menu.main]]
+        identifier = "privacytools"
+        name = "Recommended Privacy Tools"
+        url = "/about/#my-recommended-privacy-tools"
