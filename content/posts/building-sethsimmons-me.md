@@ -1,6 +1,13 @@
 ---
 title: "Building sethsimmons.me"
 date: 2020-11-30T12:08:53-05:00
+author = "Seth Simmons"
+authorTwitter = "sethisimmons" #do not include @
+cover = ""
+tags = ["Hugo", "NGINX", "Tor", "Blog"]
+keywords = ["Hugo", "Markdown", "NGINX", "Tor", "blog"]
+description = ""
+showFullContent = false
 draft: false
 ---
 

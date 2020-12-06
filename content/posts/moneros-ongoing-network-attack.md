@@ -1,7 +1,14 @@
 ---
 title: "A Brief Breakdown of Monero's Ongoing Network Attacks"
 date: 2020-12-04T09:14:48-05:00
-draft: true
+author = "Seth Simmons"
+authorTwitter = "sethisimmons" #do not include @
+cover = ""
+tags = ["Monero", "Network", "p2p"]
+keywords = ["Monero", "Eclipse", "Sybil", "p2p", "network"]
+description = ""
+showFullContent = false
+draft = true
 ---
 
 # Introduction
