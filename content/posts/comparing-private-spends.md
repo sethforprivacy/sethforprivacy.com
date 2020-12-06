@@ -114,10 +114,11 @@ a [Whirlpool mixing transaction](https://samouraiwallet.com/whirlpool), and a po
 [STONEWALL transaction](https://samouraiwallet.com/stonewall) is used for the comparison, as this is most common and 
 does not require a trusted second part).
 
-It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and [in my own 
-testing](https://twitter.com/sethisimmons/status/1270424174834712577?s=20) it took ~4.5h to go from TX0 to STONEWALL 
+It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and in my own testing it took ~4.5h to go from TX0 to STONEWALL 
 spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
 for all users depending on input amount and pool size.
+
+{{< twitter 1270424174834712577 >}}
 
 For this comparison I have omitted ["doxxic change"](https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs) 
 costs and [mixing fees](https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
@@ -152,8 +153,10 @@ pruneable in any way at present.
 It's important to note that most users of both Zcash and Bitcoin do not opt into using these privacy tools, and instead 
 choose to transact without hiding sender/receiver/amount for the vast majority of transactions.
 
-For more info on comparing the frequency of spends utilizing these privacy tools, see a  [recent Tweet thread from 
-@JEhrenhofer](https://twitter.com/JEhrenhofer/status/1332552672185098240?s=20).
+For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from 
+@JEhrenhofer.
+
+{{< twitter 1332552672185098240 >}}
 
 | Cryptocurrency | Transaction Size | Transaction Cost (in USD) |
 | ---| --- | --- |
