@@ -8,7 +8,7 @@ tags = ["Hugo", "NGINX", "Tor", "Blog"]
 keywords = ["Hugo", "Markdown", "NGINX", "Tor", "blog"]
 description = ""
 showFullContent = false
-draft: false
+draft = false
 ---
 
 # Introduction  
