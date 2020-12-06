@@ -99,7 +99,7 @@ are a great guide here, and should be all you need to get started.
 
 I use [Mozilla's SSL config generator](https://ssl-config.mozilla.org/) as the core of any NGINX configuration, and this 
 time was no different. Make sure to customize the certificate[^1] placement to match your own, and add in the unique lines 
-for our Hugo deployment and hostname. Mine are similar to the below:
+for your Hugo deployment and hostname to the new site config file (located at /etc/nginx/conf.d/<site-name>.conf for my NGINX version). My unique lines are similar to the below, and are the core of what I had to add to the generated config from Mozilla:
 
 ```shell
   server_name sethsimmons.me;
