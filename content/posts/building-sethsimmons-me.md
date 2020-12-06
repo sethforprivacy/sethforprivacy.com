@@ -1,6 +1,6 @@
----
-title: "Building sethsimmons.me"
-date: 2020-11-30T12:08:53-05:00
++++
+title = "Building sethsimmons.me"
+date = 2020-11-30T12:08:53-05:00
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
@@ -9,7 +9,7 @@ keywords = ["Hugo", "Markdown", "NGINX", "Tor", "blog"]
 description = ""
 showFullContent = false
 draft = false
----
++++
 
 # Introduction  
 I figured the second post I made should be about this blog in general, as it has been a long time coming. I've been 
