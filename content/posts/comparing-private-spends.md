@@ -154,7 +154,7 @@ It's important to note that most users of both Zcash and Bitcoin do not opt into
 choose to transact without hiding sender/receiver/amount for the vast majority of transactions.
 
 For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from 
-@JEhrenhofer.
+@JEhrenhofer:
 
 {{< twitter 1332552672185098240 >}}
 
