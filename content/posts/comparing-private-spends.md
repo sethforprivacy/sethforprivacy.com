@@ -16,10 +16,12 @@ draft = false
 As my first blog post I wanted to go ahead and share some thoughts I've had about efficiency within transaction types 
 when comparing privacy protocols and usage.
 
-I have recently discussed this in some depth [on Twitter](https://twitter.com/sethisimmons/status/1285336820264382468?s=20) 
+I have recently discussed this in some depth on Twitter
 where I was surprised by the results, finding that Monero manages to be quite a bit more efficient on size compared to 
 Bitcoin when trying to use both in a private manner. I'll use this blog post to break it down in a bit more detail,
 and add a new contender to the mix -- Zcash.
+
+{{< tweet 1285336820264382468 >}}
 
 The reason I've chosen to focus on efficiency of each protocol is that users will generally prioritize simplicity and 
 low cost, and if a privacy protocol can provide both of those to users, they can greatly aid adoption of powerful tools.

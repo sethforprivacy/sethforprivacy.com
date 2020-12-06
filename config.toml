@@ -76,3 +76,26 @@ enableGitInfo = true
         identifier = "privacytools"
         name = "Recommended Privacy Tools"
         url = "/about/#my-recommended-privacy-tools"
+        
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = true
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = true
+  [privacy.vimeo]
+    disable = true
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = false
