@@ -217,11 +217,25 @@ latest changes on my web server:
 Those three commands and my latest changes are live in seconds! It's simple to work on the blog from any device, push the 
 changes to Github, and then deploy in seconds.
 
+# Helpful Hugo Pages
+
+Here are a few Hugo pages I found useful as I was customizing my site, and they may be interesting to you as well:
+
+- [Privacy settings](https://gohugo.io/about/hugo-and-gdpr/)
+  - Allows disabling excess features and using simple/no-JS versions of embedding etc.
+- [Tweet shortcodes](https://gohugo.io/content-management/shortcodes/#tweet)
+  - Highlights Tweets cleanly within posts when used
+- [All shortcodes](https://gohugo.io/content-management/shortcodes/)
+  - Useful ways to highlight or embed
+- [Using git info for page metadata](https://gohugo.io/variables/git/)
+  - Uses git info to set last update date among other data
+- [Page variables](https://gohugo.io/variables/page/)
+  - I used info from this page to set data like keywords, tags, and description (for a selected short description used on the homepage instead of the "first 70 word" default)
+
 # Next Steps  
 
 The biggest new features I'd like to add to my site are:
 
-- [Tighter Git integration with blogposts](https://gohugo.io/variables/git/)
 - Automatic deployments whenever a new commit is pushed to my repo
 - Simple subscriptions so user's can be notified of new posts automatically
 - Simple search
