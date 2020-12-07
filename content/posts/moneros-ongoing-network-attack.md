@@ -30,8 +30,9 @@ It's important to note before jumping in that while these attacks specifically t
 common attack surface with most other cryptocurrency networks and so are valuable for any community to be aware of and 
 attempt to mitigate or resolve to harden the network before these attacks happen.
 
-The two best sources for info on this attack that have already been shared are [this Twitter thread by @fluffypony](https://twitter.com/fluffypony/status/1326130648491417602?s=21)
- and [this Reddit post by u/dEBRUYNE_1](https://www.reddit.com/r/Monero/comments/jrh7mv/psa_informational_thread_on_the_recently_observed/).
+The two best sources for info on this attack that have already been shared are [this Reddit post by u/dEBRUYNE_1](https://www.reddit.com/r/Monero/comments/jrh7mv/psa_informational_thread_on_the_recently_observed/) this Twitter thread by @fluffypony:
+ 
+{{< twitter 1326130648491417602 >}}
 
 # Timeline
 
