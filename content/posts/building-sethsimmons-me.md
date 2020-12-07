@@ -7,6 +7,7 @@ cover = ""
 tags = ["Hugo", "NGINX", "Tor", "Blog"]
 keywords = ["Hugo", "Markdown", "NGINX", "Tor", "blog"]
 description = ""
+summary = "In this post I’ll detail how I spun up my blog specifically and how you can do the same easily."
 showFullContent = false
 draft = false
 +++

@@ -7,6 +7,7 @@ cover = ""
 tags = ["Monero", "Network", "p2p"]
 keywords = ["Monero", "Eclipse", "Sybil", "p2p", "network"]
 description = ""
+summary = "In this blog post I'll break down a rough timeline of events, a short list of the known attacks that have happened or are still occurring, and what users can do to mitigate these attacks and others like them in the future."
 showFullContent = false
 draft = true
 +++
