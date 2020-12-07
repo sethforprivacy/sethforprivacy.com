@@ -66,7 +66,7 @@ large peer lists
 # The Attack
 
 The core of the attack is a cluster of malicious nodes running customized clients, hosted across ~130 IP addresses on OVH and Digital Ocean. 
-This is combined with spamming outgoing connections to valid nodes, spamming of peer lists containing only the malicious 
+These nodes increase their share of the p2p network by spamming outgoing connections to valid nodes, spamming of large peer lists containing only the malicious 
 nodes, and utilizing a flaw in the node peering system that gives multiple nodes running behind one IP address a higher 
 chance of being used as outgoing connections by valid nodes.
 
@@ -87,6 +87,8 @@ nodes, and made the other attacks more effective by increasing their share of th
 This is another method used by the attacker to inject their malicious nodes into valid node peer lists and consists of 
 only sending malicious nodes via their own peer lists when requested by valid nodes while spamming very large peer lists.
 
+This attack, when combined with the use of excessively large peer lists above was the key to increasing the effectiveness of the attacks we'll break down below, as it drastically increased the attack surface available without increasing cost or node count to the attacker.
+
 *Mitigated by [PR7072](https://github.com/monero-project/monero/pull/7072).*
 
 ## Block Height Mirroring
@@ -96,27 +98,29 @@ their existing block height, and then when the malicious node was asked for the 
 chain-tip was the same height that the valid node was currently at.
  
 This attack prevents eclipsed nodes from syncing while potentially slowing down initial block download by 
-valid nodes containing any malicious node in their peer list but not fully eclipsed.
+valid nodes containing any malicious node in their peer list but not fully eclipsed by limiting the number of peers providing valid blocks.
 
-*Attack is not harmful and requires no active mitigation at this time.*
+*This attack was partially mitigated by increasing outgoing peer count defaults, but is not harmful and requires no further mitigation.*
 
 ## Spying on Transactions
 
 The particular attack made public by the attacker is an attempt to link the IP address of a node with particular transactions. This 
 is done by spamming peer lists as we discussed above, and then attributing transactions to the node that first shares 
-the transaction via p2p.
+the transaction via p2p with the spying nodes.
 
-This attack is the most probable and dangerous in most networks, as it could allow linking of transactions with user's 
+This attack is the most dangerous in most networks as it could allow linking of transactions with user's 
 node IP addresses if not using Tor/i2p. Thankfully, Monero has implemented [Dandelion++](https://www.monerooutreach.org/stories/dandelion.html) which makes it very 
 difficult for nodes on the network to deterministically link IP addresses with transactions, as transactions are slowly 
 published (via the stem phase) to a randomized set of nodes, and then "fluffed" to the rest of the network after a set 
 number of hops (or a timeout).
 
+The use of Dandelion++ drastically increases the portion of the network needing to be controlled by the attacker to accurately link node IP addresses with transactions, and makes the linkage probabilistic instead of deterministic.
+
 *Mitigated by Dandelion++ and/or Tor/i2p usage.*
 
 ## Wallet DoS via Block Height +2
 
-This attack is a simple DoS that relies on expected behavior of the Monero wallet which prevents the wallet from 
+This attack is a simple DoS that relies on expected behavior of the Monero wallet. This behavior prevents the wallet from 
 searching blocks for transactions until the node is fully synced.
 
 Because of this behavior, any node with malicious peers run by the attacker will be told that the chain-tip is 2 blocks 
@@ -129,8 +133,7 @@ for the Monero CLI wallet, and only for the GUI and mobile wallets.
 
 This particular attack has caused a lot of headache for users as anyone using the "Simple Mode" in the GUI was 
 particularly susceptible to this. If the first node the transaction was sent through was malicious, "Simple Mode" 
-was unable to "fluff" the transaction properly after the set Dandelion++ timeout, causing the transaction to fail 
-completely.
+was unable to relay the transaction properly to the rest of the network after the set Dandelion++ timeout, causing the transaction to fail completely.
 
 *Mitigated by a combination of Dandelion++ PRs.*
 
@@ -159,15 +162,14 @@ transactions hide the sender, receiver, and amount transacted by-default. This l
 the network, but users with advanced threat models should still perform the mitigations mentioned above.
 
 The last important note here is that none of these attacks affected the Monero protocol itself -- all on-chain privacy 
-measures are in-tact and unaffected. These attacks merely target the p2p network layer, something that is shared by all 
+measures are intact and unaffected. These attacks merely target the p2p network layer, something that is shared by all 
 decentralized cryptocurrencies.
 
-If you have any questions from this post or would like more information on a specific attack or aspect, please reach out 
-via Twitter, Keybase, or email.
+If you have any questions from this post or would like more information on a specific aspect of the attack, please reach out via [Twitter, Keybase, or email]({{< ref /content/about.md >}}).
 
 Thanks!
 
 # Credits
 
 Thanks to selsta for helping me piece together the PR timeline and walk me through some of the attack details, and 
-thanks to all the Monero developers who have worked long hours hardening the Monero p2p network against these types of attacks!
+thanks to all the Monero developers who have worked long hours hardening the Monero p2p network against these types of attacks.
