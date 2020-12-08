@@ -39,29 +39,29 @@ The two best sources for info on this attack that have already been shared are [
 The attack's origin date is unknown exactly, but prior to the implementation of Dandelion++ it seems to have been 
 mostly harmless and being built out. We will focus here on the attack starting from the upgrade on October 17th, 2020:
 
-- 10/17/2020 - Monero upgrades to v0.17 via hard-fork including Dandelion++ and CLSAG
-- 10/18/2020 - Rapid increase in users unable to send transactions successfully due to malicious nodes dropping transactions
-- 10/18/2020 - [PR6916](https://github.com/monero-project/monero/pull/6916) implemented to increase out_peers, lessening impact of 
+- 2020-10-17 - Monero upgrades to v0.17 via hard-fork including Dandelion++ and CLSAG
+- 2020-10-18 - Rapid increase in users unable to send transactions successfully due to malicious nodes dropping transactions
+- 2020-10-18 - [PR6916](https://github.com/monero-project/monero/pull/6916) implemented to increase out_peers, lessening impact of 
 malicious nodes
-- 10/20/2020 - Some reports of an inability to sync successfully due to all peers showing incorrect chain-tip
-- 10/27/2020 - [PR6939](https://github.com/monero-project/monero/pull/6939) implemented to reduce effectiveness of 
+- 2020-10-20 - Some reports of an inability to sync successfully due to all peers showing incorrect chain-tip
+- 2020-10-27 - [PR6939](https://github.com/monero-project/monero/pull/6939) implemented to reduce effectiveness of 
 running multiple nodes behind one IP address
-- 11/2/2020  - [PR6961](https://github.com/monero-project/monero/pull/6961) implemented to allow passing a banlist to 
+- 2020-11-02  - [PR6961](https://github.com/monero-project/monero/pull/6961) implemented to allow passing a banlist to 
 monerod (like [selsta's block.txt](https://gui.xmr.pm/files/block.txt))
-- 11/3/2020  - [PR6971](https://github.com/monero-project/monero/pull/6971) implemented to avoid DoS vector using specially crafted packets
-- 11/3/2020  - [PR6973](https://github.com/monero-project/monero/pull/6973) implemented to mitigate transaction DoS 
+- 2020-11-03  - [PR6971](https://github.com/monero-project/monero/pull/6971) implemented to avoid DoS vector using specially crafted packets
+- 2020-11-03  - [PR6973](https://github.com/monero-project/monero/pull/6973) implemented to mitigate transaction DoS 
 caused by malicious nodes dropping transactions
-- 11/5/2020  - Attacker announces the attack publicly
-- 11/5/2020  - [PR6983](https://github.com/monero-project/monero/pull/6983) implemented to prevent hiding of IPv4 nodes 
+- 2020-11-05  - Attacker announces the attack publicly
+- 2020-11-05  - [PR6983](https://github.com/monero-project/monero/pull/6983) implemented to prevent hiding of IPv4 nodes 
 in IPv6 addresses
-- 11/10/2020 - User's notice that wallet will not sync as malicious nodes are reporting a block height of +2 to the 
+- 2020-11-10 - User's notice that wallet will not sync as malicious nodes are reporting a block height of +2 to the 
 actual height
-- 11/12/2020 - [PR7018](https://github.com/monero-project/monero/pull/7018) implemented to further improve Dandelion++ 
+- 2020-11-12 - [PR7018](https://github.com/monero-project/monero/pull/7018) implemented to further improve Dandelion++ 
 resistance to malicious nodes reporting incorrect height by avoiding selecting attacker nodes during Dandelion++ stem phase
-- 11/18/2020 - [PR7025](https://github.com/monero-project/monero/pull/7025) implemented to further improve Dandelion++ 
+- 2020-11-18 - [PR7025](https://github.com/monero-project/monero/pull/7025) implemented to further improve Dandelion++ 
 handling of malicious peers in regards to transaction sending times
-- 12/2/2020  - [PR7055](https://github.com/monero-project/monero/pull/7055) proposed to further mitigate misbehaving peers
-- 12/4/2020  - [PR7072](https://github.com/monero-project/monero/pull/7072) proposed to prevent malicious nodes spamming 
+- 2020-12-02  - [PR7055](https://github.com/monero-project/monero/pull/7055) implemented to further mitigate misbehaving peers
+- 2020-12-04  - [PR7072](https://github.com/monero-project/monero/pull/7072) implemented to prevent malicious nodes spamming 
 large peer lists
 
 # The Attack
