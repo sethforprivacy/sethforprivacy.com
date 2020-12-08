@@ -148,7 +148,7 @@ help protect yourself against malicious nodes in general across p2p networks:
 - [Utilize anonymity networks like Tor or i2p for relaying transactions](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 - Make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block.txt)), 
 to prohibit the attacker from connecting to your node
-    - This is a temporary measure that should no longer be necessary after v0.17.1.6
+    - This is a temporary measure that should no longer be necessary after v0.17.1.6, but can still be used to explicitly block known-malicious nodes
 
 # Moving Forward
 
