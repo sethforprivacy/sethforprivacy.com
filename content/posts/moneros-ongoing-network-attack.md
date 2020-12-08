@@ -1,6 +1,6 @@
 +++
 title = "A Brief Breakdown of Monero's Ongoing Network Attacks"
-date = 2020-12-04T09:14:48-05:00
+date = 2020-12-08T15:35:00-05:00
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
@@ -9,7 +9,7 @@ keywords = ["Monero", "Eclipse", "Sybil", "p2p", "network"]
 description = "In this blog post I'll break down a rough timeline of events, a short list of the known attacks that have happened or are still occurring, and what users can do to mitigate these attacks and others like them in the future."
 summary = "In this blog post I'll break down a rough timeline of events, a short list of the known attacks that have happened or are still occurring, and what users can do to mitigate these attacks and others like them in the future."
 showFullContent = false
-draft = true
+draft = false
 +++
 
 # Introduction
