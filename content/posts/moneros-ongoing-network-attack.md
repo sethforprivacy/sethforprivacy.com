@@ -1,6 +1,6 @@
 +++
 title = "A Brief Breakdown of Monero's Ongoing Network Attacks"
-date = 2020-12-08T15:35:00-05:00
+date = "2020-12-08T15:35:00-05:00"
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
