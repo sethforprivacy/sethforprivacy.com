@@ -44,3 +44,11 @@ the journey towards better online privacy, and I use it daily.
 
 [Keybase](https://keybase.io/) is another end-to-end encrypted messaging platform that is more fully featured than 
 Signal while also boasting slightly better privacy and many more ways to engage other communities.
+
+## Donations
+
+If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
+
+`86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF`
+
+Enjoy donating privately ;)
