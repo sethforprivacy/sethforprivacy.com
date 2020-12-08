@@ -48,6 +48,7 @@ malicious nodes
 running multiple nodes behind one IP address
 - 11/2/2020  - [PR6961](https://github.com/monero-project/monero/pull/6961) implemented to allow passing a banlist to 
 monerod (like [selsta's block.txt](https://gui.xmr.pm/files/block.txt))
+- 11/3/2020  - [PR6971](https://github.com/monero-project/monero/pull/6971) implemented to avoid DoS vector using specially crafted packets
 - 11/3/2020  - [PR6973](https://github.com/monero-project/monero/pull/6973) implemented to mitigate transaction DoS 
 caused by malicious nodes dropping transactions
 - 11/5/2020  - Attacker announces the attack publicly
