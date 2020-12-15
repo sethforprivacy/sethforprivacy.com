@@ -63,6 +63,11 @@ handling of malicious peers in regards to transaction sending times
 - 2020-12-02  - [PR7055](https://github.com/monero-project/monero/pull/7055) implemented to further mitigate misbehaving peers
 - 2020-12-04  - [PR7072](https://github.com/monero-project/monero/pull/7072) implemented to prevent malicious nodes spamming 
 large peer lists
+- 2020-12-05  - [PR7081](https://github.com/monero-project/monero/pull/7081) implemented to allow simplified passing of banned hosts from monerod to fail2ban etc.
+- 2020-12-12  - [PR7135](https://github.com/monero-project/monero/pull/7135) proposed as the long-term fix for +2 height issue proposed that requires majority of nodes to upgrade  
+- 2020-12-13  - [PR7138](https://github.com/monero-project/monero/pull/7138) proposed to allow using a DNS-based block-list of malicious nodes (similar to [PR6961](https://github.com/monero-project/monero/pull/6961))
+
+Note: There are many, many more PRs that have been proposed/merged to fix smaller attack vectors and edge cases, for a full list please see [monero-project pull requests](https://github.com/monero-project/monero/pulls?q=is%3Apr).
 
 # The Attack
 
@@ -128,7 +133,7 @@ Because of this behavior, any node with malicious peers run by the attacker will
 away from their valid block height, preventing their wallet from ever beginning to sync. Note that this is not an issue 
 for the Monero CLI wallet, and only for the GUI and mobile wallets.
 
-*Mitigated by [PR7055](https://github.com/monero-project/monero/pull/7055) and [PR6961](https://github.com/monero-project/monero/pull/6961).*
+*Mitigated by  (short-term) [PR7055](https://github.com/monero-project/monero/pull/7055), [PR6961](https://github.com/monero-project/monero/pull/6961), [PR7138](https://github.com/monero-project/monero/pull/7138), and (long-term) [PR7135](https://github.com/monero-project/monero/pull/7135).*
 
 ## Transaction DoS via Dropping Stem-Phase Transactions
 
@@ -145,11 +150,10 @@ help protect yourself against malicious nodes in general across p2p networks:
 
 - [Run your own node and keep it up to date](https://www.monerooutreach.org/monero_best_practices/your_own_node.html)
     - If you're running your own node, please make sure to update to the latest version containing all of the mentioned
-    mitigations, [v0.17.1.6 or greater](https://www.getmonero.org/downloads/)
+    mitigations, [v0.17.1.7 or greater](https://www.getmonero.org/downloads/)
 - [Utilize anonymity networks like Tor or i2p for relaying transactions](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
-- Make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block.txt)), 
-to prohibit the attacker from connecting to your node
-    - This is a temporary measure that should no longer be necessary after v0.17.1.6, but can still be used to explicitly block known-malicious nodes
+- Make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block.txt)), or the [--enable-dns-blocklist](https://github.com/monero-project/monero/pull/7138) flag (if using v0.17.1.8+) to prohibit the known IP addresses of the attacker from connecting to your node
+    - While the ban list is not explicitly necessary, it is still recommended and saves some headache and load from malicious nodes.
 
 # Moving Forward
 
