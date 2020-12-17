@@ -159,11 +159,11 @@ For more info on comparing the frequency of spends utilizing these privacy tools
 
 {{< twitter 1332552672185098240 >}}
 
-| Cryptocurrency | Transaction Size | Transaction Cost (in USD) |
+| Cryptocurrency | Transaction Size | Transaction Cost (in USD as of 2020-12-17) |
 | ---| --- | --- |
-| Bitcoin | 2,363b, 1,475vb | $8.75 @ 50sat/vb (excluding "doxxic" change and mixing fees) |
-| Monero  | 1,419b | $0.002 (median as of 11/29) |
-| Zcash   | 2,373b | $0.0066 (median as of 11/29) |
+| Bitcoin | 2,363b, 1,475vb | $16.58 @ 50sat/vb |
+| Monero  | 1,419b | $0.0019 |
+| Zcash   | 2,373b | $0.0075 |
 
 [^10]: https://www.getmonero.org/resources/moneropedia/pruning.html
 
