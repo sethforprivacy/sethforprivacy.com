@@ -25,14 +25,16 @@ late and will be focusing my posts on those two topics.
 
 ### Monero  
 
-[Monero](https://www.getmonero.org/) is a cryptocurrency that aims to be a privacy-preserving decentralized digital cash,
- allowing users to transact directly p2p without any trusted third parties while retaining strong anonymity.
+[Monero](https://www.getmonero.org/) is a cryptocurrency that aims to be a privacy-preserving, decentralized, digital cash,
+ allowing users to transact directly peer-to-peer without any trusted third parties while retaining strong privacy.
  
 ### Tor  
 
 [Tor](https://www.torproject.org/) is an anonymity network protocol that helps users avoid ISP and government network 
 surveillance. It is the backbone of many privacy tools, and is a great initiative to help user's remain anonymous while 
-online.
+online. 
+
+The Tor browser is the browser I would recommend people use for everyday browsing as it includes many default privacy protections by-default, while also sending all traffic natively over the Tor network.
 
 ### Signal  
 
@@ -49,6 +51,7 @@ Signal while also boasting slightly better privacy and many more ways to engage 
 
 If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
 
+{{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF" >}}
 `86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF`
 
 Enjoy donating privately ;)
