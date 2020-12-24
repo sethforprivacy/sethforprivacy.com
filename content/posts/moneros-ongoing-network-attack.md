@@ -39,11 +39,13 @@ The two best sources for info on this attack that have already been shared are [
 The attack's origin date is unknown exactly, but prior to the implementation of Dandelion++ it seems to have been 
 mostly harmless and being built out. We will focus here on the attack starting from the upgrade on October 17th, 2020:
 
-- 2020-10-17 - Monero upgrades to v0.17 via hard-fork including Dandelion++ and CLSAG
+- 2020-10-14  - [Monero v0.17.1.0 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.0)
+- 2020-10-17 - Monero network upgrades to v0.17 via hard-fork including Dandelion++ and CLSAG
 - 2020-10-18 - Rapid increase in users unable to send transactions successfully due to malicious nodes dropping transactions
 - 2020-10-18 - [PR6916](https://github.com/monero-project/monero/pull/6916) implemented to increase out_peers, lessening impact of 
 malicious nodes
 - 2020-10-20 - Some reports of an inability to sync successfully due to all peers showing incorrect chain-tip
+- 2020-10-21  - [Monero v0.17.1.1 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.1)
 - 2020-10-27 - [PR6939](https://github.com/monero-project/monero/pull/6939) implemented to reduce effectiveness of 
 running multiple nodes behind one IP address
 - 2020-11-02  - [PR6961](https://github.com/monero-project/monero/pull/6961) implemented to allow passing a banlist to 
@@ -58,14 +60,18 @@ in IPv6 addresses
 actual height
 - 2020-11-12 - [PR7018](https://github.com/monero-project/monero/pull/7018) implemented to further improve Dandelion++ 
 resistance to malicious nodes reporting incorrect height by avoiding selecting attacker nodes during Dandelion++ stem phase
+- 2020-11-16  - [Monero v0.17.1.3 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.3)
 - 2020-11-18 - [PR7025](https://github.com/monero-project/monero/pull/7025) implemented to further improve Dandelion++ 
 handling of malicious peers in regards to transaction sending times
+- 2020-11-26  - [Monero v0.17.1.5 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.5)
 - 2020-12-02  - [PR7055](https://github.com/monero-project/monero/pull/7055) implemented to further mitigate misbehaving peers
 - 2020-12-04  - [PR7072](https://github.com/monero-project/monero/pull/7072) implemented to prevent malicious nodes spamming 
 large peer lists
 - 2020-12-05  - [PR7081](https://github.com/monero-project/monero/pull/7081) implemented to allow simplified passing of banned hosts from monerod to fail2ban etc.
+- 2020-12-08  - [Monero v0.17.1.6 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.6)
 - 2020-12-12  - [PR7135](https://github.com/monero-project/monero/pull/7135) proposed as the long-term fix for +2 height issue proposed that requires majority of nodes to upgrade  
 - 2020-12-13  - [PR7138](https://github.com/monero-project/monero/pull/7138) proposed to allow using a DNS-based block-list of malicious nodes (similar to [PR6961](https://github.com/monero-project/monero/pull/6961))
+- 2020-12-14  - [Monero v0.17.1.7 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.7)
 
 Note: There are many, many more PRs that have been proposed/merged to fix smaller attack vectors and edge cases, for a full list please see [monero-project pull requests](https://github.com/monero-project/monero/pulls?q=is%3Apr).
 
