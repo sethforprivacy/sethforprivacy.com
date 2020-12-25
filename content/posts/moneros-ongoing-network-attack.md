@@ -152,7 +152,11 @@ was unable to relay the transaction properly to the rest of the network after th
 
 ## Node DoS via out-of-memory crash
 
-*Analysis in progress, mitigations to come.*
+Attack uses an excessively large crafted network packet to cause an out-of-memory crash on nodes with exposed p2p ports, and is carried out over Tor to make blocking the source node more difficult.
+
+The short-term mitigation is to make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block_tor.txt)). This is a temporary block-list that includes Tor exit nodes as a temporary measure until the DoS vector is patched.
+
+*Analysis in progress, long-term mitigations to come.*
 
 # Mitigations You Can Implement
 
