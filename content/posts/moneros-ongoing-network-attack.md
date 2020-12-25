@@ -156,8 +156,6 @@ Attack uses an excessively large crafted network packet to cause an out-of-memor
 
 The short-term mitigation is to make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block_tor.txt)). This is a temporary block-list that includes Tor exit nodes as a temporary measure until the DoS vector is patched.
 
-Note that while this attack seems to have stopped as of 17:30 UTC, the above block-list remains the short-term mitigation if it restarts. In the meantime feel free to use the [non-Tor block-list](https://gui.xmr.pm/files/block.txt).
-
 *Analysis in progress, long-term mitigations to come.*
 
 # Mitigations You Can Implement
