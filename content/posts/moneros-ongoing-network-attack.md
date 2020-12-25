@@ -56,7 +56,7 @@ caused by malicious nodes dropping transactions
 - 2020-11-05  - Attacker announces the attack publicly
 - 2020-11-05  - [PR6983](https://github.com/monero-project/monero/pull/6983) implemented to prevent hiding of IPv4 nodes 
 in IPv6 addresses
-- 2020-11-10 - User's notice that wallet will not sync as malicious nodes are reporting a block height of +2 to the 
+- 2020-11-10 - Users notice that wallet will not sync as malicious nodes are reporting a block height of +2 to the 
 actual height
 - 2020-11-12 - [PR7018](https://github.com/monero-project/monero/pull/7018) implemented to further improve Dandelion++ 
 resistance to malicious nodes reporting incorrect height by avoiding selecting attacker nodes during Dandelion++ stem phase
@@ -72,6 +72,7 @@ large peer lists
 - 2020-12-12  - [PR7135](https://github.com/monero-project/monero/pull/7135) proposed as the long-term fix for +2 height issue proposed that requires majority of nodes to upgrade  
 - 2020-12-13  - [PR7138](https://github.com/monero-project/monero/pull/7138) proposed to allow using a DNS-based block-list of malicious nodes (similar to [PR6961](https://github.com/monero-project/monero/pull/6961))
 - 2020-12-14  - [Monero v0.17.1.7 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.7)
+- 2020-12-24  - Users first notice DoS attack being carried out against nodes with exposed p2p ports using large crafted network packets to cause out-of-memory node crashes
 
 Note: There are many, many more PRs that have been proposed/merged to fix smaller attack vectors and edge cases, for a full list please see [monero-project pull requests](https://github.com/monero-project/monero/pulls?q=is%3Apr).
 
@@ -148,6 +149,10 @@ particularly susceptible to this. If the first node the transaction was sent thr
 was unable to relay the transaction properly to the rest of the network after the set Dandelion++ timeout, causing the transaction to fail completely.
 
 *Mitigated by a combination of Dandelion++ PRs.*
+
+## Node DoS via out-of-memory crash
+
+*Analysis in progress, mitigations to come.*
 
 # Mitigations You Can Implement
 
