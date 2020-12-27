@@ -70,9 +70,12 @@ large peer lists
 - 2020-12-05  - [PR7081](https://github.com/monero-project/monero/pull/7081) implemented to allow simplified passing of banned hosts from monerod to fail2ban etc.
 - 2020-12-08  - [Monero v0.17.1.6 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.6)
 - 2020-12-12  - [PR7135](https://github.com/monero-project/monero/pull/7135) proposed as the long-term fix for +2 height issue proposed that requires majority of nodes to upgrade  
-- 2020-12-13  - [PR7138](https://github.com/monero-project/monero/pull/7138) proposed to allow using a DNS-based block-list of malicious nodes (similar to [PR6961](https://github.com/monero-project/monero/pull/6961))
+- 2020-12-13  - [PR7138](https://github.com/monero-project/monero/pull/7138) implemented to allow using a DNS-based block-list of malicious nodes (similar to [PR6961](https://github.com/monero-project/monero/pull/6961))
 - 2020-12-14  - [Monero v0.17.1.7 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.7)
 - 2020-12-24  - Users first notice DoS attack being carried out against nodes with exposed p2p ports using large crafted network packets to cause out-of-memory node crashes
+- 2020-12-26  - [PR7188](https://github.com/monero-project/monero/pull/7188) implemented to resolve [+2 height issue]({{< relref "#wallet-dos-via-block-height-2" >}}) until [PR7135](https://github.com/monero-project/monero/pull/7135) is live and adopted
+- 2020-12-26  - [PR7190](https://github.com/monero-project/monero/pull/7190) implemented to resolve the [node DoS]({{< relref "#node-dos-via-out-of-memory-crash" >}}) attack vector
+- 2020-12-28  - [Monero v0.17.1.8 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.8)
 
 Note: There are many, many more PRs that have been proposed/merged to fix smaller attack vectors and edge cases, for a full list please see [monero-project pull requests](https://github.com/monero-project/monero/pulls?q=is%3Apr).
 
@@ -138,9 +141,9 @@ searching blocks for transactions until the node is fully synced.
 
 Because of this behavior, any node with malicious peers run by the attacker will be told that the chain-tip is 2 blocks 
 away from their valid block height, preventing their wallet from ever beginning to sync. Note that this is not an issue 
-for the Monero CLI wallet, and only for the GUI and mobile wallets.
+for the Monero CLI wallet, and only for the GUI and mobile wallets due to the wrapper library in-use.
 
-*Mitigated by  (short-term) [PR7055](https://github.com/monero-project/monero/pull/7055), [PR6961](https://github.com/monero-project/monero/pull/6961), [PR7138](https://github.com/monero-project/monero/pull/7138), and (long-term) [PR7135](https://github.com/monero-project/monero/pull/7135).*
+*Mitigated by (short-term) [PR7055](https://github.com/monero-project/monero/pull/7055), [PR6961](https://github.com/monero-project/monero/pull/6961), [PR7138](https://github.com/monero-project/monero/pull/7138), [PR7188](https://github.com/monero-project/monero/pull/7188), and (long-term) [PR7135](https://github.com/monero-project/monero/pull/7135).*
 
 ## Transaction DoS via Dropping Stem-Phase Transactions
 
@@ -152,11 +155,11 @@ was unable to relay the transaction properly to the rest of the network after th
 
 ## Node DoS via out-of-memory crash
 
-Attack uses an excessively large crafted network packet to cause an out-of-memory crash on nodes with exposed p2p ports, and is carried out over Tor to make blocking the source node more difficult.
+Attack uses an excessively large crafted network packet to cause an out-of-memory crash on nodes with exposed p2p ports, and is carried out over Tor to make blocking the source-nodes more difficult.
 
-The short-term mitigation is to make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block_tor.txt)). This is a temporary block-list that includes Tor exit nodes as a temporary measure until the DoS vector is patched.
+While this attack was able to cause some nodes to be brought down, the network did not see any large outage, consensus issues, or large re-orgs as a result.
 
-*Analysis in progress, long-term mitigations to come.*
+*Mitigated by [PR7190](https://github.com/monero-project/monero/pull/7190)*
 
 # Mitigations You Can Implement
 
@@ -165,7 +168,7 @@ help protect yourself against malicious nodes in general across p2p networks:
 
 - [Run your own node and keep it up to date](https://www.monerooutreach.org/monero_best_practices/your_own_node.html)
     - If you're running your own node, please make sure to update to the latest version containing all of the mentioned
-    mitigations, [v0.17.1.7 or greater](https://www.getmonero.org/downloads/)
+    mitigations, [v0.17.1.8 or greater](https://www.getmonero.org/downloads/)
 - [Utilize anonymity networks like Tor or i2p for relaying transactions](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 - Make use of the --ban-list flag, (a list of offending IPs managed by selsta can be found [here](https://gui.xmr.pm/files/block.txt)), or the [--enable-dns-blocklist](https://github.com/monero-project/monero/pull/7138) flag (if using v0.17.1.8+) to prohibit the known IP addresses of the attacker from connecting to your node
     - While the ban list is not explicitly necessary, it is still recommended and saves some headache and load from malicious nodes.
@@ -191,5 +194,5 @@ Thanks!
 
 # Credits
 
-Thanks to selsta for helping me piece together the PR timeline and walk me through some of the attack details, and 
+Thanks to selsta for helping me piece together the PR timeline and walk me through attack details, and 
 thanks to all the Monero developers who have worked long hours hardening the Monero p2p network against these types of attacks.
