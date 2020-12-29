@@ -75,7 +75,7 @@ large peer lists
 - 2020-12-24  - Users first notice DoS attack being carried out against nodes with exposed p2p ports using large crafted network packets to cause out-of-memory node crashes
 - 2020-12-26  - [PR7188](https://github.com/monero-project/monero/pull/7188) implemented to resolve [+2 height issue]({{< relref "#wallet-dos-via-block-height-2" >}}) until [PR7135](https://github.com/monero-project/monero/pull/7135) is live and adopted
 - 2020-12-26  - [PR7190](https://github.com/monero-project/monero/pull/7190) implemented to resolve the [node DoS]({{< relref "#node-dos-via-out-of-memory-crash" >}}) attack vector
-- 2020-12-28  - [Monero v0.17.1.8 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.8)
+- 2020-12-29  - [Monero v0.17.1.8 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.8)
 
 Note: There are many, many more PRs that have been proposed/merged to fix smaller attack vectors and edge cases, for a full list please see [monero-project pull requests](https://github.com/monero-project/monero/pulls?q=is%3Apr).
 
