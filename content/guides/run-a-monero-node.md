@@ -84,7 +84,7 @@ cp -r monero-x86_64-linux-gnu-*/* .
 ```
 Full code from the gist:
 
-{{< code language="bash" title="download_monero_binaries.sh " id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="bash" title="download_monero_binaries.sh " id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
 #!/bin/bash
 # Download fluffypony's GPG key
 wget -q -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
