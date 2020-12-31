@@ -66,9 +66,9 @@ sudo ufw enable
 
 # Download and install monerod
 
-Create our user and working directory for Monero binaries and logs:
+Create our non-root user and working directory for Monero binaries and logs:
 
-*You will need to provide a password that will also be usable for SSH (on most VPSs), so please choose wisely and store it in a safe place.
+*You will need to provide a password that will also be usable for SSH (on most VPSs), so please choose wisely and store it in a safe place.*
 
 ```bash
 # Create a non-root user to run monerod as
