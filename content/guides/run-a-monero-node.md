@@ -66,9 +66,21 @@ sudo ufw enable
 
 # Download and install monerod
 
-Create our working directory for Monero binaries and logs:
+Create our user and working directory for Monero binaries and logs:
+
+*You will need to provide a password that will also be usable for SSH (on most VPSs), so please choose wisely and store it in a safe place.
 
 ```bash
+# Create a non-root user to run monerod as
+sudo adduser monero
+
+# Give the user sudo rights
+sudo usermod -aG sudo monero
+
+# Switch to the new user
+su - monero
+
+# Create working directory for monerod
 mkdir ~/monero
 cd ~/monero
 ```
@@ -159,16 +171,16 @@ Description=Monero Full Node (Mainnet)
 After=network.target
 
 [Service]
-User=<username>
-Group=<username>
+User=monero
+Group=monero
 WorkingDirectory=~
 RuntimeDirectory=monero
 
 # Clearnet config
 #
 Type=forking
-PIDFile=<replace_with_pwd_output>/monerod.pid
-ExecStart=<replace_with_pwd_output>/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file <replace_with_pwd_output>/monerod.log --pidfile <replace_with_pwd_output>/monerod.pid --detach --non-interactive --enable-dns-blocklist
+PIDFile=/home/monero/monero/monerod.pid
+ExecStart=/home/monero/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
 Restart=always
 
 [Install]
@@ -181,16 +193,16 @@ Description=Monero Full Node (Mainnet) with restricted public RPC
 After=network.target
 
 [Service]
-User=<username>
-Group=<username>
+User=monero
+Group=monero
 WorkingDirectory=~
 RuntimeDirectory=monero
 
 # Clearnet config
 #
 Type=forking
-PIDFile=<replace_with_pwd_output>/monerod.pid
-ExecStart=<replace_with_pwd_output>/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file <replace_with_pwd_output>/monerod.log --pidfile <replace_with_pwd_output>/monerod.pid --detach --non-interactive --enable-dns-blocklist
+PIDFile=/home/monero/monero/monerod.pid
+ExecStart=/home/monero/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
 Restart=always
 
 [Install]
@@ -203,16 +215,16 @@ Description=Monero Full Node (Mainnet)
 After=network.target
 
 [Service]
-User=<username>
-Group=<username>
+User=monero
+Group=monero
 WorkingDirectory=~
 RuntimeDirectory=monero
 
 # Clearnet config
 #
 Type=forking
-PIDFile=<replace_with_pwd_output>/monerod.pid
-ExecStart=<replace_with_pwd_output>/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file <replace_with_pwd_output>/monerod.log --pidfile <replace_with_pwd_output>/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
+PIDFile=/home/monero/monero/monerod.pid
+ExecStart=/home/monero/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
 Restart=always
 
 [Install]
@@ -225,39 +237,26 @@ Description=Monero Full Node (Mainnet) with restricted public RPC
 After=network.target
 
 [Service]
-User=<username>
-Group=<username>
+User=monero
+Group=monero
 WorkingDirectory=~
 RuntimeDirectory=monero
 
 # Clearnet config
 #
 Type=forking
-PIDFile=<replace_with_pwd_output>/monerod.pid
-ExecStart=<replace_with_pwd_output>/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file <replace_with_pwd_output>/monerod.log --pidfile <replace_with_pwd_output>/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
+PIDFile=/home/monero/monero/monerod.pid
+ExecStart=/home/monero/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
 Restart=always
 
 [Install]
 WantedBy=multi-user.target
 {{< /code >}}
 
-Once you've chosen the script you want, simply copy the contents and save it to `/etc/systemd/system/monerod.service` using vim or nano, replacing the user/group with your own.
+Once you've chosen the script you want, simply copy the contents and save it to `/etc/systemd/system/monerod.service` using vim or nano:
 
 ```bash
 sudo nano /etc/systemd/system/monerod.service
-```
-
-Replace `<replace_with_pwd_output>` with the output of the following command:
-
-```bash
-cd ~/monero
-pwd
-```
-
-Replace the user/group with the name of your user:
-
-```bash
-whoami
 ```
 
 *To escape from the nano shell and save the file, hit `ctrl+x`.*
