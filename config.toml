@@ -73,6 +73,10 @@ enableGitInfo = true
         name = "Posts"
         url = "/posts"
       [[languages.en.menu.main]]
+        identifier = "guides"
+        name = "Guides"
+        url = "/guides"
+      [[languages.en.menu.main]]
         identifier = "privacytools"
         name = "Recommended Privacy Tools"
         url = "/about/#my-recommended-privacy-tools"
