@@ -44,16 +44,16 @@ If you're using your own hardware at home, this guide will still generally apply
 
 # Why run your own Monero node?
 
-The Monero network relies on a distributed web of Monero nodes, each of which validate transactions, propagate transactions to the rest of the network, and help new nodes easily and quickly synchronize to the current state of the network.
+The Monero network relies on a distributed web of Monero nodes, each of which validate transactions, propagate transactions to the rest of the network, and helps new nodes easily and quickly synchronize to the current state of the network.
 
 Running a Monero node for yourself not only helps to give you the stronger network-level privacy guarantees, but also helps to increase the decentralization, stability, and speed of the Monero network.
 
-Each node can expose two different services, each of which have a positive impact on the network in a unique way:
+Each node can expose two different services, each of which has a positive impact on the network in a unique way:
 
 - Peer-to-Peer (p2p) port (default 18080): this port allows other nodes on the network to connect to your node to download the blockchain and to send you any transactions they validate that you do not yet have. It also increases overall network privacy, as your node participates in the [Dandelion++](https://www.monerooutreach.org/stories/dandelion.html) propagation of transactions.
 - Remote Procedure Call (RPC) port (default 18089 for restricted): Exposing this port (especially with the `public-node` arg) allows other users on the network, especially those using mobile wallets or the GUI wallet in "Simple" mode, to connect to your node to sync their wallets, without needing to run their own full node locally.
 
-In this guide I have only given configuration files that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arh listed below if you'd also like to advertise your restricted RPC port.
+In this guide I have only given configuration files that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arg listed below if you'd also like to advertise your restricted RPC port.
 
 # Update and install required packages
 
@@ -135,10 +135,10 @@ Full code from the gist:
 
 {{< code language="bash" title="download_monero_binaries.sh " id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
 #!/bin/bash
-# Download fluffypony's GPG key
+# Download binaryfate's GPG key
 wget -q -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 
-# Verify fluffypony's GPG key
+# Verify binaryfate's GPG key
 echo "1. Verify binaryfate's GPG key: "
 gpg --keyid-format long --with-fingerprint binaryfate.asc
 
