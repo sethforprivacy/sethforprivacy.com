@@ -66,23 +66,21 @@ sudo ufw enable
 
 # Download and install monerod
 
-Create our non-root user and working directory for Monero binaries and logs:
+Create our system user and working directory for Monero binaries:
 
-*You will need to provide a password that will also be usable for SSH (on most VPSs), so please choose wisely and store it in a safe place.*
 
 ```bash
-# Create a non-root user to run monerod as
-sudo adduser monero
+# Create a system user and group to run monerod as
+sudo adduser --system monero --home /var/lib/monero
+sudo addgroup --system monero
 
-# Give the user sudo rights
-sudo usermod -aG sudo monero
+# Create necessary directories for monerod
+sudo mkdir /var/run/monero
+sudo mkdir /var/log/monero
 
-# Switch to the new user
-su - monero
-
-# Create working directory for monerod
-mkdir ~/monero
-cd ~/monero
+# Set permissions for new directories
+sudo chown monero:monero /var/run/monero
+sudo chown monero:monero /var/log/monero
 ```
 
 Download and verify the latest CLI binaries using my gist:
@@ -92,8 +90,10 @@ wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111d
 chmod +x download_monero_binaries.sh
 ./download_monero_binaries.sh
 tar xvf monero-linux-*.tar.bz2
-cp -r monero-x86_64-linux-gnu-*/* .
+cp -r monero-x86_64-linux-gnu-*/* /var/lib/monero/bin
+chown -R monero:monero /var/lib/monero/bin
 ```
+
 Full code from the gist:
 
 {{< code language="bash" title="download_monero_binaries.sh " id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -174,14 +174,15 @@ After=network.target
 User=monero
 Group=monero
 WorkingDirectory=~
-RuntimeDirectory=monero
+RuntimeDirectory=~
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/home/monero/monero/monerod.pid
-ExecStart=/home/monero/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
+PIDFile=/var/run/monero/monerod.pid
+ExecStart=/var/lib/monero/bin/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
 Restart=always
+RestartSec=always
 
 [Install]
 WantedBy=multi-user.target
@@ -196,14 +197,15 @@ After=network.target
 User=monero
 Group=monero
 WorkingDirectory=~
-RuntimeDirectory=monero
+RuntimeDirectory=~
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/home/monero/monero/monerod.pid
-ExecStart=/home/monero/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
+PIDFile=/var/run/monero/monerod.pid
+ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
 Restart=always
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
@@ -218,14 +220,15 @@ After=network.target
 User=monero
 Group=monero
 WorkingDirectory=~
-RuntimeDirectory=monero
+RuntimeDirectory=~
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/home/monero/monero/monerod.pid
-ExecStart=/home/monero/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
+PIDFile=/var/run/monero/monerod.pid
+ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
 Restart=always
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
@@ -240,14 +243,15 @@ After=network.target
 User=monero
 Group=monero
 WorkingDirectory=~
-RuntimeDirectory=monero
+RuntimeDirectory=~
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/home/monero/monero/monerod.pid
-ExecStart=/home/monero/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /home/monero/monero/monerod.log --pidfile /home/monero/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
+PIDFile=/var/run/monero/monerod.pid
+ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
 Restart=always
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
@@ -265,7 +269,7 @@ Then run the following to start `monerod`:
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl start monerod
-tail -f ~/monero/monerod.log
+sudo tail -f /var/log/monero/monerod.log
 ```
 
 You should see `monerod` start up properly there and tell you it is synchronizing with the network!
@@ -281,7 +285,8 @@ cd ~/monero
 ./download_monero_binaries.sh
 tar xvf monero-linux-*.tar.bz2
 sudo systemctl stop monerod
-cp -r monero-x86_64-linux-gnu-*/* .
+cp -r monero-x86_64-linux-gnu-*/* /var/lib/monero/
+sudo chown -R monero:monero /var/lib/monero
 sudo systemctl start monerod
 ```
 
