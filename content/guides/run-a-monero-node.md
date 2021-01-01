@@ -73,9 +73,6 @@ A great intro to getting started with UFW is available [on DigitalOcean](https:/
 Run the following commands to add some basic UFW rules and enable the firewall:
 
 ```bash
-# Install UFW via apt-get
-sudo apt-get install ufw
-
 # Deny all non-explicitly allowed ports
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
