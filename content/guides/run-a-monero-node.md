@@ -127,7 +127,7 @@ Install the latest binaries:
 ```bash
 tar xvf monero-linux-*.tar.bz2
 rm monero-linux-*.tar.bz2
-cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
+sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
 sudo chown -R monero:monero /usr/local/bin/monero*
 ```
 
@@ -398,7 +398,7 @@ Install the new binaries and restart `monerod`:
 tar xvf monero-linux-*.tar.bz2
 rm monero-linux-*.tar.bz2
 sudo systemctl stop monerod
-cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
+sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
 sudo chown -R monero:monero /usr/local/bin/monero*
 sudo systemctl start monerod
 ```
