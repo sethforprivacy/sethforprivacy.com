@@ -210,7 +210,6 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 
 # Log file
 log-file=/var/log/monero/monerod.log
-max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
 
 # P2P full node
 # p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
@@ -241,7 +240,6 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 
 # Log file
 log-file=/var/log/monero/monerod.log
-max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
 
 # P2P full node
 # p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
@@ -273,7 +271,6 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 
 # Log file
 log-file=/var/log/monero/monerod.log
-max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
 
 # Pruning
 prune-blockchain=1
@@ -307,7 +304,6 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 
 # Log file
 log-file=/var/log/monero/monerod.log
-max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
 
 # Pruning
 prune-blockchain=1
