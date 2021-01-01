@@ -86,12 +86,12 @@ sudo chown monero:monero /var/log/monero
 Download and verify the latest CLI binaries using my gist:
 
 ```bash
-wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/4e504434cc7f1404233af4ce92eeabe6b828369b/download_monero_binaries.sh
+wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/2b431ccdbd64401a3a43c6a51611524aa797a526/download_monero_binaries.sh
 chmod +x download_monero_binaries.sh
 ./download_monero_binaries.sh
 tar xvf monero-linux-*.tar.bz2
-cp -r monero-x86_64-linux-gnu-*/* /var/lib/monero/bin
-chown -R monero:monero /var/lib/monero/bin
+cp -r monero-x86_64-linux-gnu-*/* /var/lib/monero/
+chown -R monero:monero /var/lib/monero/
 ```
 
 Full code from the gist:
