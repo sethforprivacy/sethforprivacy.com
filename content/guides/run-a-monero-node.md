@@ -66,7 +66,7 @@ sudo ufw enable
 
 # Download and install monerod
 
-Create our system user and working directory for Monero binaries:
+Create our system user and directories for Monero PID and log files:
 
 
 ```bash
