@@ -27,12 +27,40 @@ I will also assume in this guide that you have purchased and SSH'd into the VPS/
 
 If you're using your own hardware at home, this guide will still generally apply to you assuming you are running Ubuntu/Debian.
 
+# Recommended hardware
+
+- Full Node
+  - 2+ vCPUs/cores
+  - 4GB+ RAM
+  - 150GB+ SSD
+  
+- Pruned Node
+  - 2+ vCPUs/cores
+  - 4GB+ RAM
+  - 75GB+ SSD
+        
+
+*If you're able to get unlimited bandwidth, be sure to raise the bandwidth limits in the provided configuration files to speed up your initial sync and to provide more bandwidth to the overall Monero network.*
+
+# Why run your own Monero node?
+
+The Monero network relies on a distributed web of Monero nodes, each of which validate transactions, propagate transactions to the rest of the network, and help new nodes easily and quickly synchronize to the current state of the network.
+
+Running a Monero node for yourself not only helps to give you the stronger network-level privacy guarantees, but also helps to increase the decentralization, stability, and speed of the Monero network.
+
+Each node can expose two different services, each of which have a positive impact on the network in a unique way:
+
+- Peer-to-Peer (p2p) port (default 18080): this port allows other nodes on the network to connect to your node to download the blockchain and to send you any transactions they validate that you do not yet have. It also increases overall network privacy, as your node participates in the [Dandelion++](https://www.monerooutreach.org/stories/dandelion.html) propagation of transactions.
+- Remote Procedure Call (RPC) port (default 18089 for restricted): Exposing this port (especially with the `public-node` arg) allows other users on the network, especially those using mobile wallets or the GUI wallet in "Simple" mode, to connect to your node to sync their wallets, without needing to run their own full node locally.
+
+In this guide I have only given configuration files that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arh listed below if you'd also like to advertise your restricted RPC port.
+
 # Install required packages
 
 First we need to install a few tools we will need later:
 
 ```bash
-sudo apt-get install git ufw gpg wget
+sudo apt-get install ufw gpg wget
 ```
 
 # Initial Hardening via UFW
@@ -66,21 +94,26 @@ sudo ufw enable
 
 # Download and install monerod
 
-Create our system user and directories for Monero PID and log files:
+Create our system user and directories for Monero configuration, PID, and log files:
 
 
 ```bash
 # Create a system user and group to run monerod as
-sudo adduser --system monero --home /var/lib/monero
 sudo addgroup --system monero
+sudo adduser --system monero --home /var/lib/monero --group monero
 
 # Create necessary directories for monerod
 sudo mkdir /var/run/monero
 sudo mkdir /var/log/monero
+sudo mkdir /etc/monero
+
+# Create monerod config file
+sudo touch /etc/monero/monerod.conf
 
 # Set permissions for new directories
 sudo chown monero:monero /var/run/monero
 sudo chown monero:monero /var/log/monero
+sudo chown -R monero:monero /etc/monero
 ```
 
 Download and verify the latest CLI binaries using my gist:
@@ -89,9 +122,15 @@ Download and verify the latest CLI binaries using my gist:
 wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/2b431ccdbd64401a3a43c6a51611524aa797a526/download_monero_binaries.sh
 chmod +x download_monero_binaries.sh
 ./download_monero_binaries.sh
+```
+
+Install the latest binaries:
+
+```bash
 tar xvf monero-linux-*.tar.bz2
-cp -r monero-x86_64-linux-gnu-*/* /var/lib/monero/
-chown -R monero:monero /var/lib/monero/
+rm monero-linux-*.tar.bz2
+cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
+sudo chown -R monero:monero /usr/local/bin/monero*
 ```
 
 Full code from the gist:
@@ -163,9 +202,151 @@ fi
 
 Installing `monerod` via a systemd script allows Monero to start automatically on boot, restart on any crash, and log to a given file.
 
-Choose the proper systemd script depending on if you want to prune, run a public restricted RPC node to allow other users to sync their wallets using your node, or any combination of the two:
+Choose the proper configuration file depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
 
-{{< code language="systemd" title="monerod systemd script" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="monerod config file" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+# /etc/monero/monerod.conf
+
+# Data directory (blockchain db and indices)
+data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
+
+# Log file
+log-file=/var/log/monero/monerod.log
+max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
+
+# P2P full node
+# p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
+# p2p-bind-port=18080            # Bind to default port
+
+# RPC open node
+rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
+rpc-restricted-bind-port=18089            # Bind on default port
+confirm-external-bind=1        # Open node (confirm)
+no-igd=1                       # Disable UPnP port mapping
+
+# ZMQ configuration
+no-zmq=1
+
+# Block known-malicious nodes from a DNSBL
+enable-dns-blocklist=1
+
+# Set download and upload limits, if desired
+# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+{{< /code >}}
+
+{{< code language="conf" title="monerod config file w/ public restricted RPC" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
+# /etc/monero/monerod.conf
+
+# Data directory (blockchain db and indices)
+data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
+
+# Log file
+log-file=/var/log/monero/monerod.log
+max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
+
+# P2P full node
+# p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
+# p2p-bind-port=18080            # Bind to default port
+
+# RPC open node
+public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
+rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
+rpc-restricted-bind-port=18089            # Bind on default port
+confirm-external-bind=1                   # Open node (confirm)
+no-igd=1                                  # Disable UPnP port mapping
+
+# ZMQ configuration
+no-zmq=1
+
+# Block known-malicious nodes from a DNSBL
+enable-dns-blocklist=1
+
+# Set download and upload limits, if desired
+# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+{{< /code >}}
+
+{{< code language="conf" title="monerod config file (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
+# /etc/monero/monerod.conf
+
+# Data directory (blockchain db and indices)
+data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
+
+# Log file
+log-file=/var/log/monero/monerod.log
+max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
+
+# Pruning
+prune-blockchain=1
+
+# P2P full node
+# p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
+# p2p-bind-port=18080            # Bind to default port
+
+# RPC open node
+rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
+rpc-restricted-bind-port=18089            # Bind on default port
+confirm-external-bind=1        # Open node (confirm)
+no-igd=1                       # Disable UPnP port mapping
+
+# ZMQ configuration
+no-zmq=1
+
+# Block known-malicious nodes from a DNSBL
+enable-dns-blocklist=1
+
+# Set download and upload limits, if desired
+# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+{{< /code >}}
+
+{{< code language="conf" title="monerod config file w/ public restricted RPC (pruned)" id="6" expand="Show" collapse="Hide" isCollapsed="true" >}}
+# /etc/monero/monerod.conf
+
+# Data directory (blockchain db and indices)
+data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
+
+# Log file
+log-file=/var/log/monero/monerod.log
+max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
+
+# Pruning
+prune-blockchain=1
+
+# P2P full node
+# p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
+# p2p-bind-port=18080            # Bind to default port
+
+# RPC open node
+public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
+rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
+rpc-restricted-bind-port=18089            # Bind on default port
+confirm-external-bind=1                   # Open node (confirm)
+no-igd=1                                  # Disable UPnP port mapping
+
+# ZMQ configuration
+no-zmq=1
+
+# Block known-malicious nodes from a DNSBL
+enable-dns-blocklist=1
+
+# Set download and upload limits, if desired
+# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+{{< /code >}}
+
+Now copy and paste the configuration file you want to use:
+
+```bash
+sudo nano /etc/monero/monerod.conf
+```
+
+*To escape from the nano shell and save the file, hit `ctrl+x`.*
+
+Simply copy the contents of the systemd script below and save it to `/etc/systemd/system/monerod.service` using vim or nano:
+
+{{< code language="systemd" title="monerod systemd script" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
 [Unit]
 Description=Monero Full Node (Mainnet)
 After=network.target
@@ -177,87 +358,15 @@ WorkingDirectory=~
 RuntimeDirectory=~
 
 # Clearnet config
-#
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --enable-dns-blocklist
-Restart=always
-RestartSec=always
-
-[Install]
-WantedBy=multi-user.target
-{{< /code >}}
-
-{{< code language="systemd" title="monerod systemd script w/ public restricted RPC" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
-[Unit]
-Description=Monero Full Node (Mainnet) with restricted public RPC
-After=network.target
-
-[Service]
-User=monero
-Group=monero
-WorkingDirectory=~
-RuntimeDirectory=~
-
-# Clearnet config
-#
-Type=forking
-PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --enable-dns-blocklist
+ExecStart=/usr/local/bin/monerod --config-file=/etc/monero/monerod.conf --pidfile /var/run/monero/monerod.pid --detach
 Restart=always
 RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
 {{< /code >}}
-
-{{< code language="systemd" title="monerod systemd script (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
-[Unit]
-Description=Monero Full Node (Mainnet)
-After=network.target
-
-[Service]
-User=monero
-Group=monero
-WorkingDirectory=~
-RuntimeDirectory=~
-
-# Clearnet config
-#
-Type=forking
-PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --prune-blockchain --enable-dns-blocklist
-Restart=always
-RestartSec=30
-
-[Install]
-WantedBy=multi-user.target
-{{< /code >}}
-
-{{< code language="systemd" title="monerod systemd script w/ public restricted RPC (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
-[Unit]
-Description=Monero Full Node (Mainnet) with restricted public RPC
-After=network.target
-
-[Service]
-User=monero
-Group=monero
-WorkingDirectory=~
-RuntimeDirectory=~
-
-# Clearnet config
-#
-Type=forking
-PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --prune-blockchain --enable-dns-blocklist
-Restart=always
-RestartSec=30
-
-[Install]
-WantedBy=multi-user.target
-{{< /code >}}
-
-Once you've chosen the script you want, simply copy the contents and save it to `/etc/systemd/system/monerod.service` using vim or nano:
 
 ```bash
 sudo nano /etc/systemd/system/monerod.service
@@ -278,19 +387,31 @@ You should see `monerod` start up properly there and tell you it is synchronizin
 
 Whenever a new version is released, you'll want to update as soon as possible to ensure you have the latest fixes, improvements, and features available.
 
-In order to do that, simply run the below commands:
+Download the new binaries:
 
 ```bash
-cd ~/monero
+cd ~
 ./download_monero_binaries.sh
+```
+
+Install the new binaries and restart `monerod`:
+
+```bash
 tar xvf monero-linux-*.tar.bz2
+rm monero-linux-*.tar.bz2
 sudo systemctl stop monerod
-cp -r monero-x86_64-linux-gnu-*/* /var/lib/monero/
-sudo chown -R monero:monero /var/lib/monero
+cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
+sudo chown -R monero:monero /usr/local/bin/monero*
 sudo systemctl start monerod
 ```
 
 That will download the latest binaries, replace the old ones, and restart `monerod` with the latest version!
+
+# Connecting to your new remote node
+
+This will depend on the wallet you've chosen to use, but usually just entails specifying the IP address of your node (either your home IP address or that of your VPS-provided host).
+
+An example of how to do this in the main desktop wallet [is provided here.](https://www.getmonero.org/resources/user-guides/remote_node_gui.html)
 
 # Conclusion
 
