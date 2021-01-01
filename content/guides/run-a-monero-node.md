@@ -180,7 +180,7 @@ RuntimeDirectory=~
 #
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
+ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --enable-dns-blocklist
 Restart=always
 RestartSec=always
 
@@ -203,7 +203,7 @@ RuntimeDirectory=~
 #
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --enable-dns-blocklist
+ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --enable-dns-blocklist
 Restart=always
 RestartSec=30
 
@@ -226,7 +226,7 @@ RuntimeDirectory=~
 #
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
+ExecStart=/var/lib/monero/monerod --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --prune-blockchain --enable-dns-blocklist
 Restart=always
 RestartSec=30
 
@@ -249,7 +249,7 @@ RuntimeDirectory=~
 #
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
-ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --non-interactive --prune-blockchain --enable-dns-blocklist
+ExecStart=/var/lib/monero/monerod --public-node --rpc-bind-ip 0.0.0.0 --rpc-restricted-bind-ip 0.0.0.0 --rpc-restricted-bind-port 18089 --confirm-external-bind --log-file /var/log/monero/monerod.log --pidfile /var/run/monero/monerod.pid --detach --prune-blockchain --enable-dns-blocklist
 Restart=always
 RestartSec=30
 
