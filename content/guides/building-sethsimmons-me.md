@@ -115,7 +115,7 @@ for your Hugo deployment and hostname to the new site config file (located at `/
   root /var/www/sethsimmons.me/public/; #Absolute path to where your hugo site is
   index index.html; # Hugo generates HTML
 
-  error_page   404  =  404.html;
+  error_page   404  =  /404.html;
 
   location / {
         try_files $uri $uri/ =404;
