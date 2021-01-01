@@ -417,6 +417,10 @@ An example of how to do this in the main desktop wallet [is provided here.](http
 
 Hopefully this guide simplified the process of setting up a remote node on a VPS, and many more similar guides should be popping up shortly.
 
+I used the commands and info in this guide to kick off a new remote node on Linode, feel free to utilize it for wallet sync, add it as a priority peer, etc:
+
+`node.sethsimmons.me:18089`
+
 Please reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
 Thanks!
