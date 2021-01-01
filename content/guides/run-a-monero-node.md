@@ -55,11 +55,12 @@ Each node can expose two different services, each of which have a positive impac
 
 In this guide I have only given configuration files that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arh listed below if you'd also like to advertise your restricted RPC port.
 
-# Install required packages
+# Update and install required packages
 
 First we need to install a few tools we will need later:
 
 ```bash
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install ufw gpg wget
 ```
 
