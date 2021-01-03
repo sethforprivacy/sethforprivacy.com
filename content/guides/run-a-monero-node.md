@@ -228,8 +228,8 @@ no-zmq=1
 enable-dns-blocklist=1
 
 # Set download and upload limits, if desired
-# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
-# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+# limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
 {{< code language="conf" title="monerod config file w/ public restricted RPC" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -259,8 +259,8 @@ no-zmq=1
 enable-dns-blocklist=1
 
 # Set download and upload limits, if desired
-# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
-# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+# limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
 {{< code language="conf" title="monerod config file (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -292,8 +292,8 @@ no-zmq=1
 enable-dns-blocklist=1
 
 # Set download and upload limits, if desired
-# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
-# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+# limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
 {{< code language="conf" title="monerod config file w/ public restricted RPC (pruned)" id="6" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -326,8 +326,8 @@ no-zmq=1
 enable-dns-blocklist=1
 
 # Set download and upload limits, if desired
-# limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
-# limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
+# limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
+# limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
 Now copy and paste the configuration file you want to use:
@@ -349,7 +349,7 @@ After=network.target
 User=monero
 Group=monero
 WorkingDirectory=~
-RuntimeDirectory=~
+RuntimeDirectory=monero
 
 # Clearnet config
 Type=forking
