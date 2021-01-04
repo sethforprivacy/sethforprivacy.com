@@ -132,64 +132,7 @@ sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
 sudo chown -R monero:monero /usr/local/bin/monero*
 ```
 
-Full code from the gist:
-
-{{< code language="bash" title="download_monero_binaries.sh " id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
-#!/bin/bash
-# Download binaryfate's GPG key
-wget -q -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
-
-# Verify binaryfate's GPG key
-echo "1. Verify binaryfate's GPG key: "
-gpg --keyid-format long --with-fingerprint binaryfate.asc
-
-# Prompt user to confirm the key matches that posted on https://src.getmonero.org/resources/user-guides/verification-allos-advanced.html
-echo
-read -p "Does the above output match https://src.getmonero.org/resources/user-guides/verification-allos-advanced.html?" -n 1 -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-        # Import binaryfate's GPG key
-        echo
-        echo "----------------------------"
-        echo "2. Import binaryfate's GPG key"
-        gpg --import binaryfate.asc
-fi
-
-# Delete stale .bz2 Monero downloads
-rm monero-linux-x64-*.tar.bz2
-
-# Download hashes.txt
-wget -q -O hashes.txt https://getmonero.org/downloads/hashes.txt
-
-# Verify hashes.txt
-echo
-echo "--------------------"
-echo "3. Verify hashes.txt"
-gpg --verify hashes.txt
-
-# Download latest 64-bit binaries
-echo
-echo "-------------------------------------"
-echo "4. Download latest Linux binaries"
-echo "Downloading..."
-wget -q --content-disposition https://downloads.getmonero.org/cli/linux64
-
-# Verify shasum of downloaded binaries
-echo
-echo "---------------------------------------"
-echo "5. Verify hashes of downloaded binaries"
-if grep "$(sha256sum monero-linux-x64-*.tar.bz2 | cut -d " " -f 1)" hashes.txt
-then
-        echo
-        echo "Success: The downloaded binaries verified properly!"
-else
-        echo
-        echo -e "\e[31mDANGER: The download binaries have been tampered with or corrupted\e[0m"
-        rm -rf monero-linux-x64-*.tar.bz2
-        exit 1
-fi
-{{< /code >}}
+*Note: Full code from the gist can be found [on Github](https://gist.github.com/sethsimmons/ad5848767d9319520a6905b7111dc021).*
 
 # Install monerod systemd script
 
