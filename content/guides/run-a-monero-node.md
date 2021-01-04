@@ -9,6 +9,7 @@ keywords = ["Monero", "Node", "p2p", "network"]
 description = "In this short post I'll detail how to easily run a Monero node on a Linux server, the most common OS for virtual private servers (VPS)."
 summary = "In this short post I'll detail how to easily run a Monero node on a Linux server, the most common OS for virtual private servers (VPS)."
 showFullContent = false
+toc = true
 draft = false
 +++
 

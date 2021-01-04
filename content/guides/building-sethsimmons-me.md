@@ -9,6 +9,7 @@ keywords = ["Hugo", "Markdown", "NGINX", "Tor", "blog"]
 description = "In this post I’ll detail how I spun up my blog specifically and how you can do the same easily."
 summary = "In this post I’ll detail how I spun up my blog specifically and how you can do the same easily."
 showFullContent = false
+toc = true
 draft = false
 +++
 

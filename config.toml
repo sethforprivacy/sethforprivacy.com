@@ -103,3 +103,9 @@ enableGitInfo = true
   [privacy.youtube]
     disable = true
     privacyEnhanced = false
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 1

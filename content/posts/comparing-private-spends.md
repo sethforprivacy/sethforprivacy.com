@@ -9,6 +9,7 @@ keywords = ["Monero", "Bitcoin", "Zcash", "privacy", "efficiency"]
 description = "I take a look at how each of the three most recognized privacy approaches in cryptocurrency stack up in size, cost (in both money and time!), and throughput."
 summary = "I take a look at how each of the three most recognized privacy approaches in cryptocurrency stack up in size, cost (in both money and time!), and throughput."
 showFullContent = false
+toc = true
 draft = false
 +++
 
