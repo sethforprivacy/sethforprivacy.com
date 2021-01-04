@@ -115,10 +115,10 @@ sudo chown monero:monero /var/log/monero
 sudo chown -R monero:monero /etc/monero
 ```
 
-Download and verify the latest CLI binaries using my gist:
+Download and verify the latest CLI binaries using [my gist](https://gist.github.com/sethsimmons/ad5848767d9319520a6905b7111dc021):
 
 ```bash
-wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/2b431ccdbd64401a3a43c6a51611524aa797a526/download_monero_binaries.sh
+wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/download_monero_binaries.sh
 chmod +x download_monero_binaries.sh
 ./download_monero_binaries.sh
 ```
@@ -156,6 +156,9 @@ then
         gpg --import binaryfate.asc
 fi
 
+# Delete stale .bz2 Monero downloads
+rm monero-linux-x64-*.tar.bz2
+
 # Download hashes.txt
 wget -q -O hashes.txt https://getmonero.org/downloads/hashes.txt
 
@@ -165,22 +168,13 @@ echo "--------------------"
 echo "3. Verify hashes.txt"
 gpg --verify hashes.txt
 
-# Download binary version requested
+# Download latest 64-bit binaries
 echo
 echo "-------------------------------------"
 echo "4. Download latest Linux binaries"
-echo -n "Enter your preferred version (64/32) and press [ENTER]: "
-read VERSION
-if [[ $VERSION == 64 ]]; then
-        echo "Downloading..."
-        wget -q --content-disposition https://downloads.getmonero.org/cli/linux64
-elif [[ $VERSION == 32 ]]; then
-        echo "Downloading..."
-        wget -q --content-disposition https://downloads.getmonero.org/cli/linux32
-else
-        echo "Incorrect version chosen, exiting..."
-        exit 1
-fi
+echo "Downloading..."
+wget -q --content-disposition https://downloads.getmonero.org/cli/linux64
+
 # Verify shasum of downloaded binaries
 echo
 echo "---------------------------------------"
