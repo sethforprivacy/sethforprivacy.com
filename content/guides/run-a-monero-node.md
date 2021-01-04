@@ -401,11 +401,23 @@ sudo systemctl start monerod
 
 That will download the latest binaries, replace the old ones, and restart `monerod` with the latest version!
 
+# Port forwarding
+
+If you decide to use this guide on a device on your home network, you will need to be sure to port forward `18080/tcp` and `18089/tcp` through your router.
+
+A good central site with a lot of guides for specific routers can be found at [portforward.com](https://portforward.com/router.htm). Just make sure to select your proper router make and model, and then open 18080/18089 for TCP only.
+
 # Connecting to your new remote node
 
 This will depend on the wallet you've chosen to use, but usually just entails specifying the IP address of your node (either your home IP address or that of your VPS-provided host).
 
 An example of how to do this in the main desktop wallet [is provided here.](https://www.getmonero.org/resources/user-guides/remote_node_gui.html)
+
+# Using anonymity networks
+
+This guide only walks you through setting up a node over clearnet, which is the standard configuration and the most straightforward to handle.
+
+If you're interested in exploring Tor or i2p configurations for your node, you can take a look at [the official docs on Github](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md) for more info, and I'll hopefully be able to add in those steps here for those interested down the road.
 
 # Conclusion
 
