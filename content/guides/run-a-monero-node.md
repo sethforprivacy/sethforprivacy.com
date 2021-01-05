@@ -314,6 +314,7 @@ sudo nano /etc/systemd/system/monerod.service
 Then run the following to start `monerod`:
 ```bash
 sudo systemctl daemon-reload
+sudo systemctl enable monerod
 sudo systemctl start monerod
 sudo tail -f /var/log/monero/monerod.log
 ```
