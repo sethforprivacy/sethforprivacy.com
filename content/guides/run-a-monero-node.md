@@ -290,16 +290,53 @@ Description=Monero Full Node (Mainnet)
 After=network.target
 
 [Service]
-User=monero
-Group=monero
-WorkingDirectory=~
-RuntimeDirectory=monero
+# Process management
+####################
 
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
 ExecStart=/usr/local/bin/monerod --config-file=/etc/monero/monerod.conf --pidfile /var/run/monero/monerod.pid --detach
-Restart=always
+Restart=on-failure
 RestartSec=30
+
+# Directory creation and permissions
+####################################
+
+# Run as monero:monero
+User=monero
+Group=monero
+
+# /run/monero
+RuntimeDirectory=monero
+RuntimeDirectoryMode=0710
+
+# /var/lib/monero
+StateDirectory=monero
+StateDirectoryMode=0710
+
+# /var/log/monero
+LogsDirectory=monero
+LogsDirectoryMode=0710
+
+# /etc/monero
+ConfigurationDirectory=monero
+ConfigurationDirectoryMode=0710
+
+# Hardening measures
+####################
+
+# Provide a private /tmp and /var/tmp.
+PrivateTmp=true
+
+# Mount /usr, /boot/ and /etc read-only for the process.
+ProtectSystem=full
+
+# Deny access to /home, /root and /run/user
+ProtectHome=true
+
+# Disallow the process and all of its children to gain
+# new privileges through execve().
+NoNewPrivileges=true
 
 [Install]
 WantedBy=multi-user.target
