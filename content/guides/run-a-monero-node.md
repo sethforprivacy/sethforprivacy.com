@@ -443,6 +443,8 @@ A few of my favorite tools for general Linux CLI usage are below, hopefully they
   - A simple CLI tool to watch and view bandwidth usage numbers
 - [htop](https://htop.dev/)
   - Gives a great overall picture of system resource usage by process, and is much more readable than `top`
+- [multitail](https://www.vanheusden.com/multitail/)
+  - a much more fully-featured way to view logs (especially more than one at a time)
 
 # Conclusion
 
