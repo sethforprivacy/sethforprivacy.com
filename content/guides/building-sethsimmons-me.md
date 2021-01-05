@@ -30,7 +30,7 @@ Let's dive in.
 # Hosting  
 
 For hosting my blog I decided to go with a well known cloud provider, [Linode](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d),
- and spin up a basic Debian VM to build on top of. The basic things that I setup on a new host like this are:
+ and spin up a basic Debian VM to build on top of. The basic things that I set up on a new host like this are:
  
 - [UFW](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server)
  for simple firewall setup
@@ -43,7 +43,7 @@ Once I had these basics installed, it was time to dive into Hugo and learn my wa
 
 # Installing Hugo  
 
-While I could have installed Hugo via apt, I decided to compile from source to get the latest features and improved 
+While I could have installed Hugo via apt, I decided to compile from the source to get the latest features and improved 
 theme support. Hugo made this simple with their clear and detailed docs, so I simply followed [their "Installing"](https://gohugo.io/getting-started/installing)
  docs.
  
@@ -235,7 +235,7 @@ Here are a few Hugo pages I found useful as I was customizing my site, and they 
 
 # Sourcecode
 
-The up-to-date sourcecode for all of the Hugo configurations and posts on [sethsimmons.me](sethsimmons.me) can be found at [sethsimmons/sethsimmons.me](https://github.com/sethsimmons/sethsimmons.me).
+The up-to-date sourcecode for all of the Hugo configurations and posts on [sethsimmons.me](https://sethsimmons.me) can be found at [sethsimmons/sethsimmons.me](https://github.com/sethsimmons/sethsimmons.me).
 
 # Next Steps  
 
