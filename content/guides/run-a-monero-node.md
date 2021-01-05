@@ -35,13 +35,15 @@ If you're using your own hardware at home, this guide will still generally apply
   - 4GB+ RAM
   - 150GB+ SSD
   
-- Pruned Node
+- Pruned Node[^1]
   - 2+ vCPUs/cores
   - 4GB+ RAM
   - 75GB+ SSD
         
 
 *If you're able to get unlimited bandwidth, be sure to raise the bandwidth limits in the provided configuration files to speed up your initial sync and to provide more bandwidth to the overall Monero network.*
+
+[^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
 # Why run your own Monero node?
 
@@ -139,6 +141,7 @@ sudo chown -R monero:monero /usr/local/bin/monero*
 Installing `monerod` via a systemd script allows Monero to start automatically on boot, restart on any crash, and log to a given file.
 
 Choose the proper configuration file depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
+
 
 {{< code language="conf" title="monerod config file" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # /etc/monero/monerod.conf
