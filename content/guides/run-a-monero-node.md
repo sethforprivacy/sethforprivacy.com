@@ -117,7 +117,7 @@ sudo chown monero:monero /var/log/monero
 sudo chown -R monero:monero /etc/monero
 ```
 
-Download and verify the latest CLI binaries using [my gist](https://gist.github.com/sethsimmons/ad5848767d9319520a6905b7111dc021):
+Download and verify the latest CLI binaries using my gist[^2]:
 
 ```bash
 wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/download_monero_binaries.sh
@@ -134,7 +134,7 @@ sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
 sudo chown -R monero:monero /usr/local/bin/monero*
 ```
 
-*Note: Full code from the gist can be found [on Github](https://gist.github.com/sethsimmons/ad5848767d9319520a6905b7111dc021).*
+[^2]: Full code from the gist can be found [on Github](https://gist.github.com/sethsimmons/ad5848767d9319520a6905b7111dc021).
 
 # Install monerod systemd script
 
@@ -152,11 +152,11 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 # Log file
 log-file=/var/log/monero/monerod.log
 
-# P2P full node
+# P2P configuration
 # p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
 # p2p-bind-port=18080            # Bind to default port
 
-# RPC open node
+# RPC configuration
 rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
 rpc-restricted-bind-port=18089            # Bind on default port
 confirm-external-bind=1        # Open node (confirm)
@@ -182,11 +182,11 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 # Log file
 log-file=/var/log/monero/monerod.log
 
-# P2P full node
+# P2P configuration
 # p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
 # p2p-bind-port=18080            # Bind to default port
 
-# RPC open node
+# RPC configuration
 public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
 rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
 rpc-restricted-bind-port=18089            # Bind on default port
@@ -213,14 +213,14 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 # Log file
 log-file=/var/log/monero/monerod.log
 
-# Pruning
+# Pruning configuration
 prune-blockchain=1
 
-# P2P full node
+# P2P configuration
 # p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
 # p2p-bind-port=18080            # Bind to default port
 
-# RPC open node
+# RPC configuration
 rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
 rpc-restricted-bind-port=18089            # Bind on default port
 confirm-external-bind=1        # Open node (confirm)
@@ -246,14 +246,14 @@ data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
 # Log file
 log-file=/var/log/monero/monerod.log
 
-# Pruning
+# Pruning configuration
 prune-blockchain=1
 
-# P2P full node
+# P2P configuration
 # p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
 # p2p-bind-port=18080            # Bind to default port
 
-# RPC open node
+# RPC configuration
 public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
 rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
 rpc-restricted-bind-port=18089            # Bind on default port
@@ -292,7 +292,6 @@ Group=monero
 WorkingDirectory=~
 RuntimeDirectory=monero
 
-# Clearnet config
 Type=forking
 PIDFile=/var/run/monero/monerod.pid
 ExecStart=/usr/local/bin/monerod --config-file=/etc/monero/monerod.conf --pidfile /var/run/monero/monerod.pid --detach
@@ -362,7 +361,7 @@ If you're interested in exploring Tor or i2p configurations for your node, you c
 
 # Sending commands to your node
 
-`monerod` support sending commands locally to the unrestricted RPC via the `monerod` binary when detached, allowing you get additional info on the status of `monerod`, set bandwidth limits, set peer limits, etc.
+`monerod` supports sending commands locally, allowing you get additional info on the status of `monerod`, set bandwidth limits, set peer limits, etc.
 
 A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
 
