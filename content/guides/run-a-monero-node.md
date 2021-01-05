@@ -359,11 +359,11 @@ If you're interested in exploring Tor or i2p configurations for your node, you c
 
 # Sending commands to your node
 
-`monerod` support sending commands locally to the unrestricted RPC via the `monerod` binary when detached, allowing you get additional info on the status of `monerod`, set bandwidth limits, increase peer limits, etc.
+`monerod` support sending commands locally to the unrestricted RPC via the `monerod` binary when detached, allowing you get additional info on the status of `monerod`, set bandwidth limits, set peer limits, etc.
 
 A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
 
-{{< code language="help" title="monerod help output" id="5" expand="Show" collapse="Hide" isCollapsed="false" >}}
+{{< code language="help" title="monerod help output" id="5" expand="Show" collapse="Hide" isCollapsed="true" >}}
 Monero 'Oxygen Orion' (v0.17.1.8-release)
 Commands: 
   alt_chain_info [blockhash]
