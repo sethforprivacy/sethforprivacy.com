@@ -140,7 +140,7 @@ Installing `monerod` via a systemd script allows Monero to start automatically o
 
 Choose the proper configuration file depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
 
-{{< code language="conf" title="monerod config file" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="monerod config file" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -170,7 +170,7 @@ enable-dns-blocklist=1
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
-{{< code language="conf" title="monerod config file w/ public restricted RPC" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="monerod config file w/ public restricted RPC" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -201,7 +201,7 @@ enable-dns-blocklist=1
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
-{{< code language="conf" title="monerod config file (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="monerod config file (pruned)" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -234,7 +234,7 @@ enable-dns-blocklist=1
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
-{{< code language="conf" title="monerod config file w/ public restricted RPC (pruned)" id="6" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="monerod config file w/ public restricted RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -278,7 +278,7 @@ sudo nano /etc/monero/monerod.conf
 
 Simply copy the contents of the systemd script below and save it to `/etc/systemd/system/monerod.service` using vim or nano:
 
-{{< code language="systemd" title="monerod systemd script" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
+{{< code language="systemd" title="monerod systemd script" id="4" expand="Show" collapse="Hide" isCollapsed="false" >}}
 [Unit]
 Description=Monero Full Node (Mainnet)
 After=network.target
@@ -356,6 +356,77 @@ An example of how to do this in the main desktop wallet [is provided here.](http
 This guide only walks you through setting up a node over clearnet, which is the standard configuration and the most straightforward to handle.
 
 If you're interested in exploring Tor or i2p configurations for your node, you can take a look at [the official docs on Github](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md) for more info, and I'll hopefully be able to add in those steps here for those interested down the road.
+
+# Sending commands to your node
+
+`monerod` support sending commands locally to the unrestricted RPC via the `monerod` binary when detached, allowing you get additional info on the status of `monerod`, set bandwidth limits, increase peer limits, etc.
+
+A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
+
+{{< code language="help" title="monerod help output" id="5" expand="Show" collapse="Hide" isCollapsed="false" >}}
+Monero 'Oxygen Orion' (v0.17.1.8-release)
+Commands: 
+  alt_chain_info [blockhash]
+  apropos <keyword> [<keyword> ...]
+  ban [<IP>|@<filename>] [<seconds>]
+  banned <address>
+  bans
+  bc_dyn_stats <last_block_count>
+  check_blockchain_pruning
+  diff
+  exit
+  flush_cache [bad-txs] [bad-blocks]
+  flush_txpool [<txid>]
+  hard_fork_info
+  help [<command>]
+  hide_hr
+  in_peers <max_number>
+  is_key_image_spent <key_image>
+  limit [<kB/s>]
+  limit_down [<kB/s>]
+  limit_up [<kB/s>]
+  mining_status
+  out_peers <max_number>
+  output_histogram [@<amount>] <min_count> [<max_count>]
+  pop_blocks <nblocks>
+  print_bc <begin_height> [<end_height>]
+  print_block <block_hash> | <block_height>
+  print_cn
+  print_coinbase_tx_sum <start_height> [<block_count>]
+  print_height
+  print_net_stats
+  print_pl [white] [gray] [pruned] [publicrpc] [<limit>]
+  print_pl_stats
+  print_pool
+  print_pool_sh
+  print_pool_stats
+  print_status
+  print_tx <transaction_hash> [+hex] [+json]
+  prune_blockchain
+  relay_tx <txid>
+  rpc_payments
+  save
+  set_bootstrap_daemon (auto | none | host[:port] [username] [password])
+  set_log <level>|<{+,-,}categories>
+  show_hr
+  start_mining <addr> [<threads>|auto] [do_background_mining] [ignore_battery]
+  status
+  stop_daemon
+  stop_mining
+  sync_info
+  unban <address>
+  update (check|download)
+  version
+{{< /code >}}
+
+When you want to run a command, simply run `monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
+
+A few of my most commonly used commands are:
+
+- `monerod status`: get a short output on the status of `monerod`, including peer counts (both out and in), block height, sync status, and version
+- `monerod sync_info`: print a list of peers with info on their status and what syncing your node is doing with them
+- `monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
+- `monerod update check`: check if an updated version of `monerod` has been released
 
 # Conclusion
 
