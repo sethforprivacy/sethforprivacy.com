@@ -433,6 +433,17 @@ A few of my most commonly used commands are:
 - `monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
 - `monerod update check`: check if an updated version of `monerod` has been released
 
+# A few helpful Linux CLI tools
+
+A few of my favorite tools for general Linux CLI usage are below, hopefully they will help you out getting more comfortable with the CLI or keeping a closer eye on your node!
+
+- [Oh My Zsh](https://ohmyz.sh/)
+  - A great replacement for bash/sh shells, Oh My Zsh gives much better highlighting, features, and has automatic updates over git
+- [vnstat](https://humdi.net/vnstat/)
+  - A simple CLI tool to watch and view bandwidth usage numbers
+- [htop](https://htop.dev/)
+  - Gives a great overall picture of system resource usage by process, and is much more readable than `top`
+
 # Conclusion
 
 Hopefully this guide simplified the process of setting up a remote node on a VPS, and many more similar guides should be popping up shortly.
