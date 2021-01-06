@@ -23,8 +23,6 @@ I will also assume in this guide that you have purchased and SSH'd into the VPS/
 
 - [Hosting services accepting Monero](https://www.getmonero.org/community/merchants/#hosting)
   - These are some of the options available for hosting a VPS while paying with Monero, and each come with pro's and con's.
-- [Cockbox VPS Hosting](https://cockbox.org/?r=4708)
-  - This is the provider I've used for the nodes provisioned below, and while the name is... unique, the services provided work great, they accept Monero, and they have great Tor support (both for the site and for VPS instances).
 - [Simple Linode deployment guide](https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/)
   - If you use Linode, consider using [my referral link](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d) so we both get free credits.
 
