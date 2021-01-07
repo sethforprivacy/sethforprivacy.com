@@ -22,7 +22,8 @@ In this short post I'll detail how to easily run a Monero node on a Linux server
 I will also assume in this guide that you have purchased and SSH'd into the VPS/host of your choosing, but if you need help with those first steps here are a few good links to follow:
 
 - [Hosting services accepting Monero](https://www.getmonero.org/community/merchants/#hosting)
-  - These are some of the options available for hosting a VPS while paying with Monero, and each come with pro's and con's.
+  - These are some options available for hosting a VPS while paying with Monero, and each come with pro's and con's.
+  - I have also been recommended both Hetzner and 99Stack, but do not have direct experience with either.
 - [Simple Linode deployment guide](https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/)
   - If you use Linode, please consider using [my referral link](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d) so we both get free credits.
 
@@ -33,7 +34,7 @@ If you're using your own hardware at home, this guide will still generally apply
 - Full Node
   - 2+ vCPUs/cores
   - 4GB+ RAM
-  - 150GB+ SSD
+  - 175GB+ SSD
   
 - Pruned Node[^1]
   - 2+ vCPUs/cores
