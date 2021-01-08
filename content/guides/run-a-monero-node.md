@@ -378,10 +378,10 @@ cd ~
 Install the new binaries and restart `monerod`:
 
 ```bash
+rm -rf monero-x86_64-linux-gnu-*
 tar xvf monero-linux-*.tar.bz2
 rm monero-linux-*.tar.bz2
 sudo systemctl stop monerod
-sudo rm /usr/local/bin/monero*
 sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
 sudo chown -R monero:monero /usr/local/bin/monero*
 sudo systemctl start monerod
