@@ -23,7 +23,8 @@ I will also assume in this guide that you have purchased and SSH'd into the VPS/
 
 - [Hosting services accepting Monero](https://www.getmonero.org/community/merchants/#hosting)
   - These are some options available for hosting a VPS while paying with Monero, and each come with pro's and con's.
-  - I have also been recommended both Hetzner and 99Stack, but do not have direct experience with either.
+- [Hetzner Dedicated Servers](https://www.hetzner.com/dedicated-rootserver)
+  - A solid and cheap dedicated server provider based out of Germany, they do not accept Monero (yet!) but are a great choice for a high-performance node.
 - [Simple Linode deployment guide](https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/)
   - If you use Linode, please consider using [my referral link](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d) so we both get free credits.
 
@@ -497,6 +498,7 @@ I used the commands and info in this guide to kick off a few new remote nodes on
 
 `node-1.sethsimmons.me:18089`
 `node-2.sethsimmons.me:18089`
+`node-3.sethsimmons.me:18089` (high-performance node on Hetzner)
 
 Please reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
