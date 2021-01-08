@@ -149,7 +149,7 @@ Choose the proper configuration file depending on if you want to run a full node
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
-data-dir=/var/lib/monero/.bitmonero  # Remember to create the monero user first
+data-dir=/var/lib/monero/.bitmonero
 
 # Log file
 log-file=/var/log/monero/monerod.log
@@ -159,9 +159,9 @@ log-file=/var/log/monero/monerod.log
 # p2p-bind-port=18080            # Bind to default port
 
 # RPC configuration
-rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
-rpc-restricted-bind-port=18089            # Bind on default port
-confirm-external-bind=1        # Open node (confirm)
+rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
+rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
+confirm-external-bind=1        # Open restricted RPC node (confirm)
 no-igd=1                       # Disable UPnP port mapping
 
 # ZMQ configuration
@@ -190,9 +190,9 @@ log-file=/var/log/monero/monerod.log
 
 # RPC configuration
 public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
-rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
-rpc-restricted-bind-port=18089            # Bind on default port
-confirm-external-bind=1                   # Open node (confirm)
+rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
+rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
+confirm-external-bind=1                   # Open restricted RPC node (confirm)
 no-igd=1                                  # Disable UPnP port mapping
 
 # ZMQ configuration
@@ -223,9 +223,9 @@ prune-blockchain=1
 # p2p-bind-port=18080            # Bind to default port
 
 # RPC configuration
-rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
-rpc-restricted-bind-port=18089            # Bind on default port
-confirm-external-bind=1        # Open node (confirm)
+rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
+rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
+confirm-external-bind=1        # Open restricted RPC node (confirm)
 no-igd=1                       # Disable UPnP port mapping
 
 # ZMQ configuration
@@ -257,9 +257,9 @@ prune-blockchain=1
 
 # RPC configuration
 public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
-rpc-restricted-bind-ip=0.0.0.0            # Bind to all interfaces
-rpc-restricted-bind-port=18089            # Bind on default port
-confirm-external-bind=1                   # Open node (confirm)
+rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
+rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
+confirm-external-bind=1                   # Open restricted RPC node (confirm)
 no-igd=1                                  # Disable UPnP port mapping
 
 # ZMQ configuration
