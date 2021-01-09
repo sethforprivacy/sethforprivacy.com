@@ -495,7 +495,7 @@ A few of my favorite tools for general Linux CLI usage are below, hopefully they
 
 Hopefully this guide simplified the process of setting up a remote node on a VPS, and many more similar guides should be popping up shortly.
 
-I used the commands and info in this guide to kick off a few new remote nodes on Linode, feel free to utilize them for wallet sync, add them as priority peers, etc:
+I used the commands and info in this guide to kick off a few new remote nodes on Linode and Hetzner, feel free to utilize them for wallet sync, add them as priority peers, etc:
 
 `node-1.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
 `node-2.sethsimmons.me:18089` (medium-performance node on Linode in Georgia, USA)
