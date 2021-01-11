@@ -47,6 +47,14 @@ the journey towards better online privacy, and I use it daily.
 [Keybase](https://keybase.io/) is another end-to-end encrypted messaging platform that is more fully featured than 
 Signal while also boasting slightly better privacy and many more ways to engage other communities.
 
+### Standard Notes
+
+[Standard Notes](https://standardnotes.org/) is a great encrypted notes app available across platforms that also accepts Monero for subscriptions. Extensions add a lot of power features including encrypted attachment uploads to your own WebDav server, like Nextcloud.
+
+### Nextcloud
+
+[Nextcloud](https://nextcloud.com/athome/) is my personal cloud service of choice, and provides an easy to setup and use home cloud platform for storing files, photos, and much more with the plethora of community apps available.
+
 ## Donations
 
 If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
