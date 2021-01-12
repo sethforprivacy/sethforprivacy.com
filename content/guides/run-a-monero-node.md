@@ -58,7 +58,9 @@ Each node can expose two different services, each of which has a positive impact
 - Peer-to-Peer (p2p) port (default 18080): this port allows other nodes on the network to connect to your node to download the blockchain and to send you any transactions they validate that you do not yet have. It also increases overall network privacy, as your node participates in the [Dandelion++](https://www.monerooutreach.org/stories/dandelion.html) propagation of transactions.
 - Remote Procedure Call (RPC) port (default 18089 for restricted): Exposing this port (especially with the `public-node` arg) allows other users on the network, especially those using mobile wallets or the GUI wallet in "Simple" mode, to connect to your node to sync their wallets, without needing to run their own full node locally.
 
-In this guide I have only given configuration files that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arg listed below if you'd also like to advertise your restricted RPC port.
+In this guide I have only given configuration files and Docker commands that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arg listed below if you'd also like to advertise your restricted RPC port.
+
+You can choose to either [setup a node via systemd and binaries]({{< ref "#installing-via-systemd-and-binaries" >}}) or deploy `monerod` [as a Docker container](#installing-via-docker) below.
 
 # Installing via systemd and binaries
 
@@ -472,11 +474,12 @@ First we need to install a few tools we will need later:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install ufw
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-*Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer.*
+*Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
 
 ## Initial Hardening via UFW
 
@@ -506,14 +509,52 @@ sudo ufw enable
 
 ## Download and run monero via Docker
 
-```
+Choose the proper command set below depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
+
+*Note: My recommended commands are automatically expanded below, but feel free to choose one of the other 3 options as needed.*
+
+{{< code language="bash" title="monerod Docker w/o public RPC" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+sudo mkdir -p /var/lib/monero/.bitmonero
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -e RPC_BIND_PORT=18081 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
+sudo docker run -d \
+    --name watchtower \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower
+{{< /code >}}
+
+{{< code language="bash" title="monerod Docker w/ public RPC" id="2" expand="Show" collapse="Hide" isCollapsed="false" >}}
 sudo mkdir -p /var/lib/monero/.bitmonero
 sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -e RPC_BIND_PORT=18081 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
 sudo docker run -d \
     --name watchtower \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower
+{{< /code >}}
+
+{{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+sudo mkdir -p /var/lib/monero/.bitmonero
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -e RPC_BIND_PORT=18081 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+sudo docker run -d \
+    --name watchtower \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower
+{{< /code >}}
+
+{{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+sudo mkdir -p /var/lib/monero/.bitmonero
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -e RPC_BIND_PORT=18081 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+sudo docker run -d \
+    --name watchtower \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower
+{{< /code >}}
+
+To watch the logs for `monerod`, simply run:
+
+```bash
+sudo docker logs --follow monerod
 ```
+
 
 ## Updating your Monero node
 
@@ -583,14 +624,14 @@ Commands:
   version
 {{< /code >}}
 
-When you want to run a command, simply run `docker exec monerod /usr/local/bin/monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
+When you want to run a command, simply run `sudo docker exec monerod /usr/local/bin/monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
 
 A few of my most commonly used commands are:
 
-- `docker exec monerod /usr/local/bin/monerod status`: get a short output on the status of `monerod`, including peer counts (both out and in), block height, sync status, and version
-- `docker exec monerod /usr/local/bin/monerod sync_info`: print a list of peers with info on their status and what syncing your node is doing with them
-- `docker exec monerod /usr/local/bin/monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
-- `docker exec monerod /usr/local/bin/monerod update check`: check if an updated version of `monerod` has been released
+- `sudo docker exec monerod /usr/local/bin/monerod status`: get a short output on the status of `monerod`, including peer counts (both out and in), block height, sync status, and version
+- `sudo docker exec monerod /usr/local/bin/monerod sync_info`: print a list of peers with info on their status and what syncing your node is doing with them
+- `sudo docker exec monerod /usr/local/bin/monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
+- `sudo docker exec monerod /usr/local/bin/monerod update check`: check if an updated version of `monerod` has been released
 
 # Port forwarding
 
