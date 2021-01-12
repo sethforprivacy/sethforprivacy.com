@@ -69,7 +69,7 @@ First we need to install a few tools we will need later:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install ufw
+sudo apt-get install -y ufw
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```

@@ -6,8 +6,8 @@ authorTwitter = "sethisimmons" #do not include @
 cover = ""
 tags = ["Monero", "Network", "p2p"]
 keywords = ["Monero", "Node", "p2p", "network"]
-description = "In this short post I'll detail how to run a Monero node built run using systemd scripts on a Linux server, the most common OS for virtual private servers (VPS)."
-summary = "In this short post I'll detail how to run a Monero node run using systemd scripts on a Linux server, the most common OS for virtual private servers (VPS)."
+description = "In this short post I'll detail how to run a Monero node using systemd scripts on a Linux server, the most common OS for virtual private servers (VPS)."
+summary = "In this short post I'll detail how to run a Monero node using systemd scripts on a Linux server, the most common OS for virtual private servers (VPS)."
 showFullContent = false
 toc = true
 draft = false
@@ -70,7 +70,7 @@ First we need to install a few tools we will need later:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install ufw gpg wget
+sudo apt-get install -y ufw gpg wget
 ```
 
 # Initial Hardening via UFW
