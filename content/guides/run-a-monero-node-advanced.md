@@ -148,6 +148,7 @@ Installing `monerod` via a systemd script allows Monero to start automatically o
 
 Choose the proper configuration file depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
 
+*Note: My recommended configuration file is automatically expanded below, but feel free to choose one of the other 3 options as needed.*
 
 {{< code language="conf" title="monerod config file" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # /etc/monero/monerod.conf
@@ -179,7 +180,7 @@ enable-dns-blocklist=1
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 {{< /code >}}
 
-{{< code language="conf" title="monerod config file w/ public restricted RPC" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="monerod config file w/ public restricted RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
