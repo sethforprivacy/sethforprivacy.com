@@ -508,7 +508,7 @@ sudo ufw enable
 
 ```
 sudo mkdir -p /var/lib/monero/.bitmonero
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -e RPC_BIND_PORT=18081 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v /var/lib/monero/.bitmonero:/monero -e RPC_BIND_PORT=18081 xmrto/monero:most_recent_tag  --data-dir /monero --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
 sudo docker run -d \
     --name watchtower \
     -v /var/run/docker.sock:/var/run/docker.sock \
