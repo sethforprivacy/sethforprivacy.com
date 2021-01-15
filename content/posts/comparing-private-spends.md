@@ -229,8 +229,7 @@ can better hone this approach to give a clear picture of privacy tool efficiency
 
 Thanks for tuning in to my first blog post, and hopefully you'll keep a close eye on my future writings!
 
-If you have any questions or want to follow me elsewhere, please check me out on Twitter 
-[@sethisimmons](https://twitter.com/sethisimmons), and on Keybase (@sethsimmons).
+If you have any questions from this post or would like to connect with me otherwise, please reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
 
 ## Transactions used for estimates  
 #### Bitcoin  
