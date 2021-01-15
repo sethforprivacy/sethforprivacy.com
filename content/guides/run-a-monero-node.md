@@ -70,6 +70,11 @@ First we need to install a few tools we will need later:
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y ufw
+```
+
+Then install Docker:
+
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
@@ -112,36 +117,32 @@ An alternative Docker implementation is also available [on Github](https://githu
 
 *Note: My recommended commands are automatically expanded below, but feel free to choose one of the other 3 options as needed.*
 
-{{< code language="bash" title="monerod Docker w/o public RPC" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
-sudo mkdir -p /var/lib/monero/.bitmonero
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v /var/lib/monero/.bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --data-dir /monero --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
+{{< code language="bash" title="monerod Docker w/o public RPC" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower
 {{< /code >}}
 
-{{< code language="bash" title="monerod Docker w/ public RPC" id="2" expand="Show" collapse="Hide" isCollapsed="false" >}}
-sudo mkdir -p /var/lib/monero/.bitmonero
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v /var/lib/monero/.bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --data-dir /monero --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
+{{< code language="bash" title="monerod Docker w/ public RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower
 {{< /code >}}
 
-{{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
-sudo mkdir -p /var/lib/monero/.bitmonero
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v /var/lib/monero/.bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --data-dir /monero --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+{{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower
 {{< /code >}}
 
-{{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
-sudo mkdir -p /var/lib/monero/.bitmonero
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v /var/lib/monero/.bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --data-dir /monero --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+{{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
+sudo docker run -d --restart unless-stopped --name="monerod" -p 18089:18089 -p 18080:18080 -v bitmonero:/monero -e RPC_BIND_PORT=18081 -e P2P_BIND_PORT=18080 xmrto/monero:most_recent_tag --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
