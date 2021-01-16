@@ -120,7 +120,8 @@ sudo docker run -d --restart unless-stopped --name="monerod" -v bitmonero:/home/
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower
+    containrrr/watchtower --cleanup \
+    monerod
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/ public RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
@@ -128,7 +129,8 @@ sudo docker run -d --restart unless-stopped --name="monerod" -v bitmonero:/home/
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower
+    containrrr/watchtower --cleanup \
+    monerod
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -136,7 +138,8 @@ sudo docker run -d --restart unless-stopped --name="monerod" -v bitmonero:/home/
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower
+    containrrr/watchtower --cleanup \
+    monerod
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -144,7 +147,8 @@ sudo docker run -d --restart unless-stopped --name="monerod" -v bitmonero:/home/
 sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower
+    containrrr/watchtower --cleanup \
+    monerod
 {{< /code >}}
 
 To watch the logs for `monerod`, simply run:
