@@ -154,6 +154,12 @@ https://signal.org/android/apk/
 
 #### Where to get it
 
+Official APKs are available from Github for the latest versions:
+
+https://github.com/standardnotes/mobile/releases/
+
+If you're OK being a bit behind the most recent release, there is a community-run F-Droid version available as well:
+
 https://f-droid.org/en/packages/com.standardnotes/
 
 ## Tor Browser and Orbot
