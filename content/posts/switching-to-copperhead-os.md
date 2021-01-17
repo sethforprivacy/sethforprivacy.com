@@ -22,8 +22,10 @@ As Android is an open-source operating system at the core with many vendor-speci
 The three main contenders today (this list is hotly debated, as it seems everything in the privacy space is!) are:
 
 - [Copperhead OS](https://copperhead.co/)
-- [CalyxOS](https://calyxos.org/)
+- [CalyxOS](https://calyxos.org/) [^1]
 - [GrapheneOS](https://grapheneos.org/)
+
+[^1]: CalyxOS bundles MicroG, a Google Services middle-man that makes transitioning to it much easier, and is still open-source.
 
 # Why Copperhead OS?
 
@@ -72,6 +74,16 @@ Aegis is an open-source two-factor authentication app, similar to Google Authent
 
 https://f-droid.org/en/packages/com.beemdevelopment.aegis/
 
+## AntennaPod for podcasts
+
+#### Why I like it
+
+AntennaPod is a great open-source podcast app that shares a lot of it's UX with Pocket Casts, but is available through F-Droid. I've just started using it, but so far it's an excellent FOSS replacement for Pocket Casts!
+
+#### Where to get it
+
+https://f-droid.org/en/packages/de.danoeh.antennapod/
+
 ## Bitwarden for password manager
 
 #### Why I like it
@@ -93,6 +105,16 @@ FireFox has quickly become my browser-of-choice for day-to-day browsing, even th
 #### Where to get it
 
 https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/
+
+## Infinity for Reddit
+
+#### Why I like it
+
+Infinity is a gorgeous Reddit app with great features, and has been a much better overall experience than I ever had on iOS. Highly recommended.
+
+#### Where to get it
+
+https://f-droid.org/en/packages/ml.docilealligator.infinityforreddit/
 
 ## Monerujo for payments
 
@@ -121,6 +143,16 @@ https://newpipe.net/FAQ/tutorials/install-add-fdroid-repo/
 It is also available on a slower update schedule from the standard F-Droid repositories here:
 
 https://f-droid.org/en/packages/org.schabi.newpipe/
+
+## OSMAnd for maps and navigation
+
+#### Why I like it
+
+It certainly doesn't have the same visual appeal and ease of use as Google Maps, but so far it's been a fine and usable replacement, and of course is open-source and has much better data handling than Google Maps while not relying on Google Services.
+
+#### Where to get it
+
+https://f-droid.org/en/packages/net.osmand.plus/
 
 ## Samourai Wallet for Bitcoin payments
 
