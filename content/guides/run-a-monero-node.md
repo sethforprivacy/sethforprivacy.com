@@ -113,6 +113,11 @@ Choose the proper command set below depending on if you want to run a full node 
 
 An alternative Docker implementation is also available [on Github](https://github.com/lalanza808/docker-monero-node), which even includes native Grafana visualizations. This guide will focus on being extremely simple, so I'll stick to just `monerod` here.
 
+If you would like to inspect the source code behind the image used here or build it yourself, please see the below links:
+
+[Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
+[Source Repository](https://github.com/sethsimmons/simple-monerod-docker)
+
 *Note: My recommended commands are automatically expanded below, but feel free to choose one of the other 3 options as needed.*
 
 {{< code language="bash" title="monerod Docker w/o public RPC" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -273,7 +278,8 @@ Hopefully this guide simplified the process of setting up a remote node on a VPS
 I used the commands and info in this guide to kick off a few new remote nodes on Linode and Hetzner, feel free to utilize them for wallet sync, add them as priority peers, etc:
 
 `node-1.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
-`node-2.sethsimmons.me:18089` (medium-performance node on Linode in Georgia, USA)
+`node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
+`node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
 
 Please reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 

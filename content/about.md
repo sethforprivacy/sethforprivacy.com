@@ -55,11 +55,26 @@ Signal while also boasting slightly better privacy and many more ways to engage 
 
 [Nextcloud](https://nextcloud.com/athome/) is my personal cloud service of choice, and provides an easy to setup and use home cloud platform for storing files, photos, and much more with the plethora of community apps available.
 
+## My Community Resources
+
+### High-Performance Monero Nodes
+
+I host a set of high-performance Monero nodes that are free to use for anyone needing them, both as a p2p peer and a remote RPC for wallet usage:
+
+`node-1.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
+`node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
+`node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
+
+### Monero Docker Images
+
+I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
+
+[Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
+[Source Repository](https://github.com/sethsimmons/simple-monerod-docker)
+
 ## Donations
 
 If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
 
 {{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF" >}}
 `86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF`
-
-Enjoy donating privately ;)
