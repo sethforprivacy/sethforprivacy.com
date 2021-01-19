@@ -41,13 +41,13 @@ The attack's origin date is unknown exactly, but prior to the implementation of 
 mostly harmless and being built out. We will focus here on the attack starting from the upgrade on October 17th, 2020:
 
 - 2020-10-14  - [Monero v0.17.1.0 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.0)
-- 2020-10-17 - Monero network upgrades to v0.17 via hard-fork including Dandelion++ and CLSAG
-- 2020-10-18 - Rapid increase in users unable to send transactions successfully due to malicious nodes dropping transactions
-- 2020-10-18 - [PR6916](https://github.com/monero-project/monero/pull/6916) implemented to increase out_peers, lessening impact of 
+- 2020-10-17  - Monero network upgrades to v0.17 via hard-fork including Dandelion++ and CLSAG
+- 2020-10-18  - Rapid increase in users unable to send transactions successfully due to malicious nodes dropping transactions
+- 2020-10-18  - [PR6916](https://github.com/monero-project/monero/pull/6916) implemented to increase out_peers, lessening impact of 
 malicious nodes
-- 2020-10-20 - Some reports of an inability to sync successfully due to all peers showing incorrect chain-tip
+- 2020-10-20  - Some reports of an inability to sync successfully due to all peers showing incorrect chain-tip
 - 2020-10-21  - [Monero v0.17.1.1 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.1)
-- 2020-10-27 - [PR6939](https://github.com/monero-project/monero/pull/6939) implemented to reduce effectiveness of 
+- 2020-10-27  - [PR6939](https://github.com/monero-project/monero/pull/6939) implemented to reduce effectiveness of 
 running multiple nodes behind one IP address
 - 2020-11-02  - [PR6961](https://github.com/monero-project/monero/pull/6961) implemented to allow passing a banlist to 
 monerod (like [selsta's block.txt](https://gui.xmr.pm/files/block.txt))
@@ -57,12 +57,12 @@ caused by malicious nodes dropping transactions
 - 2020-11-05  - Attacker announces the attack publicly
 - 2020-11-05  - [PR6983](https://github.com/monero-project/monero/pull/6983) implemented to prevent hiding of IPv4 nodes 
 in IPv6 addresses
-- 2020-11-10 - Users notice that wallet will not sync as malicious nodes are reporting a block height of +2 to the 
+- 2020-11-10  - Users notice that wallet will not sync as malicious nodes are reporting a block height of +2 to the 
 actual height
-- 2020-11-12 - [PR7018](https://github.com/monero-project/monero/pull/7018) implemented to further improve Dandelion++ 
+- 2020-11-12  - [PR7018](https://github.com/monero-project/monero/pull/7018) implemented to further improve Dandelion++ 
 resistance to malicious nodes reporting incorrect height by avoiding selecting attacker nodes during Dandelion++ stem phase
 - 2020-11-16  - [Monero v0.17.1.3 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.3)
-- 2020-11-18 - [PR7025](https://github.com/monero-project/monero/pull/7025) implemented to further improve Dandelion++ 
+- 2020-11-18  - [PR7025](https://github.com/monero-project/monero/pull/7025) implemented to further improve Dandelion++ 
 handling of malicious peers in regards to transaction sending times
 - 2020-11-26  - [Monero v0.17.1.5 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.5)
 - 2020-12-02  - [PR7055](https://github.com/monero-project/monero/pull/7055) implemented to further mitigate misbehaving peers
@@ -77,6 +77,8 @@ large peer lists
 - 2020-12-26  - [PR7188](https://github.com/monero-project/monero/pull/7188) implemented to resolve [+2 height issue]({{< relref "#wallet-dos-via-block-height-2" >}}) until [PR7135](https://github.com/monero-project/monero/pull/7135) is live and adopted
 - 2020-12-26  - [PR7190](https://github.com/monero-project/monero/pull/7190) implemented to resolve the [node DoS]({{< relref "#node-dos-via-out-of-memory-crash" >}}) attack vector
 - 2020-12-30  - [Monero v0.17.1.8 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.8)
+- 2020-01-01  - Multiple PRs merged to fix new DoS vector ([PR7250](https://github.com/monero-project/monero/pull/7250), [PR7256](https://github.com/monero-project/monero/pull/7256), [PR7261](https://github.com/monero-project/monero/pull/7261), and [PR7263](https://github.com/monero-project/monero/pull/7263))  
+- 2020-01-08  - [Monero v0.17.1.9 released](https://github.com/monero-project/monero/releases/tag/v0.17.1.9)
 
 Note: There are many, many more PRs that have been proposed/merged to fix smaller attack vectors and edge cases, for a full list please see [monero-project pull requests](https://github.com/monero-project/monero/pulls?q=is%3Apr).
 
