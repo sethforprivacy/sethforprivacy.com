@@ -72,6 +72,14 @@ I have created a bare-bones and simple `monerod` Docker image that compiles from
 [Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
 [Source Repository](https://github.com/sethsimmons/simple-monerod-docker)
 
+### Tor Relay/Guard Nodes
+
+I also host a set of Tor relay/guard nodes, available at the below addresses:
+
+`tor-1.sethsimmons.me:443`
+`tor-2.sethsimmons.me:443`
+`tor-3.sethsimmons.me:443`
+
 ## Donations
 
 If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
