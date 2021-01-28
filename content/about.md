@@ -76,13 +76,13 @@ I have created a bare-bones and simple `monerod` Docker image that compiles from
 
 I also host a set of Tor relay/guard nodes, available at the below addresses:
 
-`tor-1.sethsimmons.me:443`
-`tor-2.sethsimmons.me:443`
-`tor-3.sethsimmons.me:443`
+`tor-1.sethsimmons.me:443`  
+`tor-2.sethsimmons.me:443`  
+`tor-3.sethsimmons.me:443`  
 
 ## Donations
 
 If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
 
-{{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF" >}}
-`86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF`
+{{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY" >}}
+`86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY`
