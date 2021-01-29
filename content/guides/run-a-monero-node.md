@@ -241,22 +241,59 @@ A few of my most commonly used commands are:
 
 # Port forwarding
 
-If you decide to use this guide on a device on your home network, you will need to be sure to port forward `18080/tcp` and `18089/tcp` through your router.
+If you decide to use this guide on a device on your home network, you will need to be sure to port forward `18080/tcp` and `18089/tcp` through your router or [use an anonymity network like Tor]({{< ref "#tor" >}}).
 
 A good central site with a lot of guides for specific routers can be found at [portforward.com](https://portforward.com/router.htm). Just make sure to select your proper router make and model, and then open 18080/18089 for TCP only.
 
-# Connecting to your new remote node
-
-This will depend on the wallet you've chosen to use, but usually just entails specifying the IP address of your node (either your home IP address or that of your VPS-provided host).
-
-An example of how to do this in the main desktop wallet [is provided here.](https://www.getmonero.org/resources/user-guides/remote_node_gui.html)
-
 # Using anonymity networks
 
-This guide only walks you through setting up a node over clearnet, which is the standard configuration and the most straightforward to handle.
+## Tor
+**NOTE: This section will be updated soon with a Dockerized way to perform the same steps, but feel free to follow these in the meantime.**
 
-If you're interested in exploring Tor or i2p configurations for your node, you can take a look at [the official docs on Github](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md) for more info, and I'll hopefully be able to add in those steps here for those interested down the road.
+If you would like to also expose your RPC port over Tor as a Hidden Service, follow these few commands and you're all set. This allows you to access your RPC port entirely over Tor without ever even needing to go through exit nodes.
 
+### Install Tor
+
+```bash
+# Install the Tor daemon
+sudo apt-get install tor
+
+# Enable Tor to start on boot
+sudo systemctl enable tor
+```
+
+### Create the necessary directory
+
+```bash
+sudo mkdir /var/lib/tor/hidden_service
+sudo chown debian-tor:debian-tor /var/lib/tor/hidden_service
+```
+
+### Edit the torrc configuration file
+
+```bash
+# Add configuration lines to /etc/tor/torrc to enable the HiddenService for restricted RPC
+echo "## Tor Monero RPC HiddenService
+HiddenServiceDir /var/lib/tor/hidden_service/monero-rpc
+HiddenServicePort 18089 127.0.0.1:18089" >> /etc/tor/torrc
+```
+
+### Restart Tor and get the HiddenService address
+
+```bash
+sudo systemctl restart tor
+sudo cat /var/lib/tor/hidden_service/monero-rpc/hostname
+```
+
+The string that gets output from the last command is your new Monero RPC Hidden Service, and remember to use port `18089` when connecting to it, still!
+
+*Note: To test connectivity, simply visit `http://<replacewithnewonionaddress>:18089/get_info in the Tor browser and make sure you get a block of text back.*
+
+# Connecting to your new remote node
+
+This will depend on the wallet you've chosen to use, but usually just entails specifying the IP address of your node (either your home IP address or that of your VPS-provided host) or Onion address.
+
+An example of how to do this in the main desktop wallet [is provided here.](https://www.getmonero.org/resources/user-guides/remote_node_gui.html)
 
 # A few helpful Linux CLI tools
 
@@ -280,6 +317,12 @@ I used the commands and info in this guide to kick off a few new remote nodes on
 `node-1.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
 `node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
 `node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
+
+Also available as Tor HiddenServices at:
+
+`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
+`slvb7iuq6rwj4gjbbfwile5piamhnllwk3s5vqccn2hqvz2nmrkvpiid.onion:18089`  
+`wq7o3snkc65onqc3rjdoynnsve2z22aqs3gixdtaaayx4qhgbz74auqd.onion:18089` 
 
 Please reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
