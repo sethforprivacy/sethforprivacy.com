@@ -65,6 +65,12 @@ I host a set of high-performance Monero nodes that are free to use for anyone ne
 `node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
 `node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
 
+Also available as Tor HiddenServices at:
+
+`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
+`slvb7iuq6rwj4gjbbfwile5piamhnllwk3s5vqccn2hqvz2nmrkvpiid.onion:18089`  
+`wq7o3snkc65onqc3rjdoynnsve2z22aqs3gixdtaaayx4qhgbz74auqd.onion:18089`  
+
 ### Monero Docker Images
 
 I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
