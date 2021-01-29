@@ -512,7 +512,7 @@ sudo cat /var/lib/tor/hidden_service/monero-rpc/hostname
 
 The string that gets output from the last command is your new Monero RPC Hidden Service, and remember to use port `18089` when connecting to it, still! 
 
-*Note: To test connectivity, simply visit `http://<replacewithnewonionaddress>:18089/get_info and make sure you get a block of text back.*
+*Note: To test connectivity, simply visit `http://replacewithnewonionaddress:18089/get_info and make sure you get a block of text back.*
 
 # Connecting to your new remote node
 
