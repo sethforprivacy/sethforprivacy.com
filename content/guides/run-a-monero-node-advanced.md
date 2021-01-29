@@ -500,7 +500,7 @@ sudo chown debian-tor:debian-tor /var/lib/tor/hidden_service
 # Add configuration lines to /etc/tor/torrc to enable the HiddenService for restricted RPC
 echo "## Tor Monero RPC HiddenService
 HiddenServiceDir /var/lib/tor/hidden_service/monero-rpc
-HiddenServicePort 18089 127.0.0.1:18089" >> /etc/tor/torrc
+HiddenServicePort 18089 127.0.0.1:18089" | sudo tee -a /etc/tor/torrc
 ```
 
 ### Restart Tor and get the HiddenService address
