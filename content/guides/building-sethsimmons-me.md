@@ -245,4 +245,4 @@ The biggest new features I'd like to add to my site are:
 - Simple subscriptions so user's can be notified of new posts automatically
 - Simple search
 
-Thanks for reading, and please don't hesitate to reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions or would like more detail!
+Thanks for reading, and please don't hesitate to reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions or would like more detail!

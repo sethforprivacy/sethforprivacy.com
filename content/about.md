@@ -18,7 +18,7 @@ late and will be focusing my posts on those two topics.
 ## How To Contact Me  
 
 [Twitter - @sethisimmons](https://twitter.com/sethisimmons)  
-[Keybase - sethsimmons](https://keybase.io/sethsimmons)  
+[Matrix - @sethsimmons](https://matrix.to/#/@sethsimmons:matrix.org)
 [Email - sethsimmons@pm.me](mailto:sethsimmons@pm.me)  
 
 ## My Recommended Privacy Tools
@@ -42,10 +42,13 @@ The Tor browser is the browser I would recommend people use for everyday browsin
 communicate without revealing data to any intermediaries. While not perfect, it's a great first step to get people on 
 the journey towards better online privacy, and I use it daily.
 
-### Keybase  
+### Element/Matrix
 
-[Keybase](https://keybase.io/) is another end-to-end encrypted messaging platform that is more fully featured than 
-Signal while also boasting slightly better privacy and many more ways to engage other communities.
+[Element](https://element.io/) is an open-source cross-platform application for accessing the Matrix decentralized chat protocol. While there are other clients available, I've enjoyed the Element client on both desktop and mobile.
+
+This is the primary way I prefer to do group chats, and is the way I stay involved with the Monero community on IRC as Element supports excellent native bridging.
+
+I'm also going to work on spinnning up my own federated server for Matrix shortly, if time permits.
 
 ### Standard Notes
 
