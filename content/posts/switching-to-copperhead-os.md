@@ -238,4 +238,4 @@ The experience is surprisingly user-friendly once you get used to how to get app
 
 Thanks to Mamushi for the phone and Max Tannahill for the in-depth answers to all of my questions, excellent support, and strong recommendations!
 
-If you have any questions from this post or would like more information on a specific aspect of my switch to Copperhead OS, please reach out via [Twitter, Keybase, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my switch to Copperhead OS, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).

@@ -18,7 +18,7 @@ late and will be focusing my posts on those two topics.
 ## How To Contact Me  
 
 [Twitter - @sethisimmons](https://twitter.com/sethisimmons)  
-[Keybase - sethsimmons](https://keybase.io/sethsimmons)  
+[Matrix - @sethsimmons](https://matrix.to/#/@sethsimmons:matrix.org)  
 [Email - sethsimmons@pm.me](mailto:sethsimmons@pm.me)  
 
 ## My Recommended Privacy Tools
@@ -42,10 +42,13 @@ The Tor browser is the browser I would recommend people use for everyday browsin
 communicate without revealing data to any intermediaries. While not perfect, it's a great first step to get people on 
 the journey towards better online privacy, and I use it daily.
 
-### Keybase  
+### Element/Matrix
 
-[Keybase](https://keybase.io/) is another end-to-end encrypted messaging platform that is more fully featured than 
-Signal while also boasting slightly better privacy and many more ways to engage other communities.
+[Element](https://element.io/) is an open-source cross-platform application for accessing the Matrix decentralized chat protocol. While there are other clients available, I've enjoyed the Element client on both desktop and mobile.
+
+This is the primary way I prefer to do group chats, and is the way I stay involved with the Monero community on IRC as Element supports excellent native bridging.
+
+I'm also going to work on spinnning up my own federated server for Matrix shortly, if time permits.
 
 ### Standard Notes
 
@@ -65,6 +68,12 @@ I host a set of high-performance Monero nodes that are free to use for anyone ne
 `node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
 `node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
 
+Also available as Tor HiddenServices at:
+
+`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
+`slvb7iuq6rwj4gjbbfwile5piamhnllwk3s5vqccn2hqvz2nmrkvpiid.onion:18089`  
+`wq7o3snkc65onqc3rjdoynnsve2z22aqs3gixdtaaayx4qhgbz74auqd.onion:18089`  
+
 ### Monero Docker Images
 
 I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
@@ -76,13 +85,13 @@ I have created a bare-bones and simple `monerod` Docker image that compiles from
 
 I also host a set of Tor relay/guard nodes, available at the below addresses:
 
-`tor-1.sethsimmons.me:443`
-`tor-2.sethsimmons.me:443`
-`tor-3.sethsimmons.me:443`
+`tor-1.sethsimmons.me:443`  
+`tor-2.sethsimmons.me:443`  
+`tor-3.sethsimmons.me:443`  
 
 ## Donations
 
 If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
 
-{{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF" >}}
-`86VpUsSB138JCPJvTepPy1bpSdUtorMkQ8XaJVEGie3RfWqpQbiqdTP32nfcW1bXQ7HcJrfLYpysAWSePasGwtNn4p72YYF`
+{{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY" >}}
+`86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY`
