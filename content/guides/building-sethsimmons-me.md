@@ -30,7 +30,7 @@ Let's dive in.
 # Hosting  
 
 For hosting my blog I decided to go with a well known cloud provider, [Linode](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d),
- and spin up a basic Debian VM to build on top of. The basic things that I set up on a new host like this are:
+ and spin up a basic Debian VM to build on top of. A few of the things that I set up on a new host like this are:
  
 - [UFW](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server)
  for simple firewall setup
@@ -70,17 +70,25 @@ Once I had Go installed and working (test with `go version`), it was time to bui
 The build takes a bit depending on resources, but installs the latest Hugo directly to a directory we just added to 
 $PATH.
 
+To update Hugo later on, simply run the following commands:
+
+```bash
+  cd ~/build/hugo
+  git pull
+  go install --tags extended
+```
+
 Now it was time to spin up a test site and play around with themes.
 
 # Starting my new Hugo site  
 
 Hugo's docs again came in handy here, as they have a great [quick start guide](https://gohugo.io/getting-started/quick-start/)
  that makes it easy to get your test site up and running. Once I had simple site up, I tried out a few themes and 
-eventually settled on ["Terminal"](https://github.com/panr/hugo-theme-terminal) by panr. Not only was the theme very 
-minimal and dark by-default, but it had a great Monero-like color scheme to choose from!
+eventually settled on ["Terminal"](https://github.com/panr/hugo-theme-terminal) by [@panr](https://twitter.com/panr). Not only was the theme very 
+minimal and dark by-default, but it had a great Monero-like color scheme to choose from.
 
 One of the best features of Hugo is that it is *extremely* simple to test out changes to your site/posts as you go, 
-since you can simple run `hugo server -D` to host a copy locally that auto-refreshes with each change you make.
+since you can simply run `hugo server -D` to serve a copy locally that auto-refreshes with each change you make.
 
 All it took to start up a new blog post was:
 
@@ -92,7 +100,7 @@ Then I just edited the MarkDown and alt+tabbed to FireFox to check my changes as
 
 # Deploying the site publicly with NGINX  
 
-The above is all thats needed to see the site for yourself, but obviously the end goal is to share this with others. To 
+The above is all that is needed to see the site for yourself, but obviously the end goal is to share this with others. To 
 do that I chose to deploy NGINX, which is a very simple and easy to use web server that is widely available.
 
 [This post](https://gideonwolfe.com/posts/sysadmin/hugonginx/) by Gideon Wolfe came in handy, and gave me the building 
@@ -106,8 +114,8 @@ are a great guide here, and should be all you need to get started.
 
 ## Creating a custom server configuration
 
-I use [Mozilla's SSL config generator](https://ssl-config.mozilla.org/) as the core of any NGINX configuration, and this 
-time was no different. Make sure to customize the certificate[^1] placement to match your own, and add in the unique lines 
+I like to use [Mozilla's SSL config generator](https://ssl-config.mozilla.org/) as the core of any NGINX configuration to make sure I have the proper security and SSL settings configured, and this 
+time was no different. Make sure to customize the certificate placement to match your own, and add in the unique lines 
 for your Hugo deployment and hostname to the new site config file (located at `/etc/nginx/conf.d/name-me.conf` for my NGINX version). My unique lines are similar to the below, and are the core of what I had to add to the generated config from Mozilla:
 
 ```shell
@@ -123,11 +131,9 @@ for your Hugo deployment and hostname to the new site config file (located at `/
   }
 ```
 
-I navigated to [sethsimmons.me](https://sethsimmons.me) and validated that the blog loaded up, and we were off to the 
-races!
+I navigated to [sethsimmons.me](https://sethsimmons.me) and validated that the blog loaded up.
 
-[^1]: I had SSL certificates for very cheap with my domain purchase and used those, but for most people getting certs 
-from [LetsEncrypt](https://letsencrypt.org/getting-started/) is a better choice all around.
+**Note: I had SSL certificates for very cheap with my domain purchase and used those, but for most people getting certs from [LetsEncrypt](https://letsencrypt.org/getting-started/) is a better choice all around. See ["Using Free Let’s Encrypt SSL/TLS Certificates with NGINX"](https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/) for more details on how to setup LetsEncrypt with NGINX.**
 
 ## Enabling native Tor support  
 
@@ -141,7 +147,7 @@ a base to go off of, starting with installing Tor:
   sudo apt install tor
 ```
 
-Then I just had to edit the Tor configuration file at `/etc/tor/torrc` and add in the following lines:
+Then I just had to edit the Tor configuration file at `/etc/tor/torrc` and add in the following lines (replace "sethsimmons.me" with your site name or other preferred name):
 
 ```shell
   HiddenServiceDir /var/lib/tor/sethsimmons.me/
@@ -149,14 +155,14 @@ Then I just had to edit the Tor configuration file at `/etc/tor/torrc` and add i
   HiddenServicePort 80 127.0.0.1:80
 ```
 
-Once that was added, I simply restarted tor (`sudo systemctl restart tor`) and cat'd the file to get the .onion domain:
+Once that was added, I simply restarted tor (`sudo systemctl restart tor`) and cat the file to get the .onion domain (replace "sethsimmons.me" with what you chose above as the directory name):
 
 ```bash
   cat /var/lib/tor/sethsimmons.me/hostname        
   6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion
 ```
 
-Next (and last) step was to add a new server block to my NGINX configuration, telling NGINX to serve a copy of the blog 
+The next (and last) step was to add a new server block to my NGINX configuration, telling NGINX to serve a copy of the blog 
 on localhost so that Tor could share it as a hidden service:
 
 ```shell
@@ -188,6 +194,99 @@ prompt Tor users who navigate to the clearnet site to use the native Tor site in
   add_header Onion-Location http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion$request_uri;
 ```
 
+My full NGINX configuration file is below:
+
+{{< code language="nginx" title="Full NGINX Configuration for sethsimmons.me" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+# generated 2020-11-29, Mozilla Guideline v5.6, nginx 1.18, OpenSSL 1.1.1d, intermediate configuration, no OCSP
+# https://ssl-config.mozilla.org/#server=nginx&version=1.18&config=intermediate&openssl=1.1.1d&ocsp=false&guideline=5.6
+server {
+# Server block to redirect any non-HTTPS queries to HTTPS
+
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    if ($request_method !~ ^(GET|HEAD|POST)$ ) {
+        return 444;
+    }
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+# Server block for serving sethsimmons.me as a Tor Hidden Service
+
+    listen 127.0.0.1:80;
+    server_name 6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion;
+
+    if ($request_method !~ ^(GET|HEAD|POST)$ ) {
+        return 444;
+    }
+
+    root /var/www/sethsimmons.me/public/;
+    index index.html;
+    error_page 404 = /404.html;
+    location / {
+
+    try_files $uri $uri/ =404;
+
+    }
+
+}
+
+server {
+# Server block for monitoring NGINX status via Zabbix
+
+    listen 127.0.0.1:8080;
+    location /basic_status {
+        stub_status;
+        allow 127.0.0.1;        # only allow requests from localhost
+        deny all;               # deny all other hosts
+    }
+
+}
+
+server {
+# Server block for serving sethsimmons.me as an HTTPS site
+
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name sethsimmons.me;
+
+    if ($request_method !~ ^(GET|HEAD|POST)$ ) {
+        return 444;
+    }
+
+    root /var/www/sethsimmons.me/public/; #Absolute path to where your hugo site is
+    index index.html; # Hugo generates HTML
+
+    ssl_certificate /etc/nginx/ssl/sethsimmons.me.crt;
+    ssl_certificate_key /etc/nginx/ssl/sethsimmons.me.key;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:MozSSL:10m;  # about 40000 sessions
+    ssl_session_tickets off;
+
+    # curl https://ssl-config.mozilla.org/ffdhe2048.txt > /path/to/dhparam
+    ssl_dhparam /etc/nginx/ssl/dhparam;
+
+    # intermediate configuration
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+    ssl_prefer_server_ciphers off;
+
+    # HSTS (ngx_http_headers_module is required) (63072000 seconds)
+    add_header Strict-Transport-Security "max-age=63072000" always;
+
+    # Header to redirect Tor browser users to the native Onion site
+    add_header Onion-Location http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion$request_uri;
+
+    error_page   404  =  404.html;
+
+    location / {
+            try_files $uri $uri/ =404;
+    }
+}
+{{< /code >}}
+
 # Writing workflow  
 
 A quick note on my workflow, as this was one of the primary drivers to choosing Hugo in the first place. Hugo enables 
@@ -195,18 +294,19 @@ very quick and easy testing of changes via the native `localhost` server, and is
 
 ## Adding a new blog post  
 
-Whenever I want to add a new blog post, I simply do the following:
+Whenever I want to add a new blog post, I simply open up the directory where I keep my Github repo and do the following:
 
 ```bash
+  git pull
   hugo new content/posts/post-name.md
   hugo server -D
 ```
 
-That creates the new post and starts a local server that displays draft pages (which all post start out as). As I go 
-the changes are automatically refreshed in my local browser so it's easy to make sure formatting is what I want before I 
+That creates the new post and starts a local server that displays draft pages (which all posts start out as). As I go, 
+the changes are automatically refreshed in my local browser, so it's easy to make sure formatting is what I want before I 
 publish them.
 
-Once I'm done with the post, I simple edit the top of it to `draft=false`, push the changes to Github, and then pull the 
+Once I'm done with the post, I simply edit the top of it to `draft=false`, push the changes to Github, and then pull the 
 latest changes on my web server:
 
 ```bash
@@ -215,7 +315,7 @@ latest changes on my web server:
   hugo
 ```
 
-Those three commands and my latest changes are live in seconds! It's simple to work on the blog from any device, push the 
+All it takes are those three commands and my latest changes are live in seconds! It's simple to work on the blog from any device, push the 
 changes to Github, and then deploy in seconds.
 
 # Helpful Hugo Pages
@@ -235,14 +335,13 @@ Here are a few Hugo pages I found useful as I was customizing my site, and they 
 
 # Sourcecode
 
-The up-to-date sourcecode for all of the Hugo configurations and posts on [sethsimmons.me](https://sethsimmons.me) can be found at [sethsimmons/sethsimmons.me](https://github.com/sethsimmons/sethsimmons.me).
+The up-to-date sourcecode for all the Hugo configurations and posts on [sethsimmons.me](https://sethsimmons.me) can be found at [sethsimmons/sethsimmons.me](https://github.com/sethsimmons/sethsimmons.me).
 
 # Next Steps  
 
 The biggest new features I'd like to add to my site are:
 
 - Automatic deployments whenever a new commit is pushed to my repo
-- Simple subscriptions so user's can be notified of new posts automatically
 - Simple search
 
 Thanks for reading, and please don't hesitate to reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions or would like more detail!
