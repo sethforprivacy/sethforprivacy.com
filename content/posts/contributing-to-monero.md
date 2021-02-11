@@ -18,7 +18,7 @@ draft = false
 The Monero project (like many other open-source projects) has no central company, entity, or funding behind it, all of which are necessary for decentralization and resilience. 
 However, this means that the success of the project depends entirely on the contributions of passionate individuals in the community for funding, development, and outreach just like you. 
 
-This post is an attempt to help clarify and highlight ways that people from all backgrounds and walks of life who love Monero can jump in and help out using their unique skill-sets.
+A post in a similar vein was done by the Monero Outreach workgroup in 2019, entitled ["Getting Started with Helping Monero"](https://www.monerooutreach.org/stories/getting-started-helping-monero.html) and is a good additional resource.
 
 # For non-developers
 
