@@ -1,6 +1,6 @@
 +++
 title = "Contributing to Monero"
-date = 2021-02-11T09:29:56-05:00
+date = 2021-02-11T12:00:00-05:00
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
