@@ -171,7 +171,7 @@ server {
     listen 127.0.0.1:80;
     server_name 6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion;
 
-    root /var/www/sethsimmons.me/public/;
+    root /var/www/sethsimmons.me/tor/;
     index index.html;
     error_page 404 = 404.html;
     location / {
@@ -182,6 +182,237 @@ server {
 
 }
 ```
+
+*Note: To properly serve over Tor you need to set the baseURL to the .onion address while also setting a unique publishDir in a different configuration file for Hugo. You can see my full config.toml files below.*
+
+{{< code language="toml" title="clearnet_config.toml for sethsimmons.me" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+baseURL = "https://sethsimmons.me/"
+languageCode = "en-us"
+title = "sethsimmons.me"
+theme = "terminal"
+paginate = 5
+enableGitInfo = true
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "orange"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 4
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = true
+
+  # set a custom favicon (default is a `themeColor` square)
+  favicon = "favicon.ico"
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = true
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  # oneHeadingSize = false
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = "sethisimmons"
+  site = "sethisimmons"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "sethsimmons.me"
+    subtitle = "A simple blog about privacy, Monero, and me"
+    owner = "Seth Simmons"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "sethsimmons.me"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About Me"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
+      [[languages.en.menu.main]]
+        identifier = "guides"
+        name = "Guides"
+        url = "/guides"
+      [[languages.en.menu.main]]
+        identifier = "privacytools"
+        name = "Recommended Privacy Tools"
+        url = "/about/#my-recommended-privacy-tools"
+        
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = true
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = true
+  [privacy.vimeo]
+    disable = true
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = false
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 1
+{{< /code >}}
+
+{{< code language="toml" title="tor_config.toml for 6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+baseURL = "http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion/"
+publishDir = "tor"
+languageCode = "en-us"
+title = "sethsimmons.me"
+theme = "terminal"
+paginate = 5
+enableGitInfo = true
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "orange"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 4
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = true
+
+  # set a custom favicon (default is a `themeColor` square)
+  favicon = "favicon.ico"
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = true
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  # oneHeadingSize = false
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = "sethisimmons"
+  site = "sethisimmons"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "sethsimmons.me"
+    subtitle = "A simple blog about privacy, Monero, and me"
+    owner = "Seth Simmons"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "sethsimmons.me"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About Me"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
+      [[languages.en.menu.main]]
+        identifier = "guides"
+        name = "Guides"
+        url = "/guides"
+      [[languages.en.menu.main]]
+        identifier = "privacytools"
+        name = "Recommended Privacy Tools"
+        url = "/about/#my-recommended-privacy-tools"
+        
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = true
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = true
+  [privacy.vimeo]
+    disable = true
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = false
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 1
+{{< /code >}}
 
 A simple `nginx -t` to verify the configuration was valid, a restart of NGINX via `sudo systemctl restart nginx`, and I 
 was up and running on both clearnet and Tor!
@@ -196,7 +427,7 @@ prompt Tor users who navigate to the clearnet site to use the native Tor site in
 
 My full NGINX configuration file is below:
 
-{{< code language="nginx" title="Full NGINX Configuration for sethsimmons.me" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="nginx" title="Full NGINX Configuration for sethsimmons.me" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # generated 2020-11-29, Mozilla Guideline v5.6, nginx 1.18, OpenSSL 1.1.1d, intermediate configuration, no OCSP
 # https://ssl-config.mozilla.org/#server=nginx&version=1.18&config=intermediate&openssl=1.1.1d&ocsp=false&guideline=5.6
 server {
@@ -222,7 +453,7 @@ server {
         return 444;
     }
 
-    root /var/www/sethsimmons.me/public/;
+    root /var/www/sethsimmons.me/tor/;
     index index.html;
     error_page 404 = /404.html;
     location / {
