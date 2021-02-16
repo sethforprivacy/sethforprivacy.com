@@ -430,6 +430,16 @@ My full NGINX configuration file is below:
 {{< code language="nginx" title="Full NGINX Configuration for sethsimmons.me" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # generated 2020-11-29, Mozilla Guideline v5.6, nginx 1.18, OpenSSL 1.1.1d, intermediate configuration, no OCSP
 # https://ssl-config.mozilla.org/#server=nginx&version=1.18&config=intermediate&openssl=1.1.1d&ocsp=false&guideline=5.6
+
+# Setup client-side caching
+map $sent_http_content_type $expires {
+    default                    off;
+    text/html                  epoch;
+    text/css                   max;
+    application/javascript     max;
+    ~image/                    max;
+}
+
 server {
 # Server block to redirect any non-HTTPS queries to HTTPS
 
@@ -452,6 +462,14 @@ server {
     if ($request_method !~ ^(GET|HEAD|POST)$ ) {
         return 444;
     }
+   
+    # Enable compression for all types of files 
+    gzip_static  always;
+    gzip_proxied expired no-cache no-store private auth;
+    gunzip       on;
+
+    # Enable client-side caching
+    expires $expires;
 
     root /var/www/sethsimmons.me/tor/;
     index index.html;
@@ -470,8 +488,8 @@ server {
     listen 127.0.0.1:8080;
     location /basic_status {
         stub_status;
-        allow 127.0.0.1;        # only allow requests from localhost
-        deny all;               # deny all other hosts
+        allow 127.0.0.1;        #only allow requests from localhost
+        deny all;               #deny all other hosts
     }
 
 }
@@ -486,6 +504,14 @@ server {
     if ($request_method !~ ^(GET|HEAD|POST)$ ) {
         return 444;
     }
+
+    # Enable compression for all types of files
+    gzip_static  always;
+    gzip_proxied expired no-cache no-store private auth;
+    gunzip       on;
+
+    # Enable client-side caching
+    expires $expires;
 
     root /var/www/sethsimmons.me/public/; #Absolute path to where your hugo site is
     index index.html; # Hugo generates HTML
@@ -506,8 +532,6 @@ server {
 
     # HSTS (ngx_http_headers_module is required) (63072000 seconds)
     add_header Strict-Transport-Security "max-age=63072000" always;
-
-    # Header to redirect Tor browser users to the native Onion site
     add_header Onion-Location http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion$request_uri;
 
     error_page   404  =  404.html;
@@ -538,12 +562,38 @@ the changes are automatically refreshed in my local browser, so it's easy to mak
 publish them.
 
 Once I'm done with the post, I simply edit the top of it to `draft=false`, push the changes to Github, and then pull the 
-latest changes on my web server:
+latest changes on my web server with the following script:
 
 ```bash
-  cd /var/www/sethsimmons.me/
-  git pull
-  hugo
+cd /var/www/sethsimmons.me/
+
+# Pull the latest changes from Github
+git pull
+
+# Build the clearnet static site
+hugo --config clearnet_config.toml
+
+# Build the Tor static site
+hugo --config tor_config.toml
+
+# Compress the clearnet static site
+cd /var/www/sethsimmons.me/public
+for file in $(find . -type f)
+do
+    zopfli "$file"
+    rm "$file"
+    touch -r "$file".gz "$file"
+done
+
+# Compress the Tor static site
+cd /var/www/sethsimmons.me/tor
+for file in $(find . -type f)
+do
+    zopfli "$file"
+    rm "$file"
+    touch -r "$file".gz "$file"
+done
+cd ~
 ```
 
 All it takes are those three commands and my latest changes are live in seconds! It's simple to work on the blog from any device, push the 
