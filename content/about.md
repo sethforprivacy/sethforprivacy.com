@@ -62,17 +62,13 @@ I'm also going to work on spinnning up my own federated server for Matrix shortl
 
 ### High-Performance Monero Nodes
 
-I host a set of high-performance Monero nodes that are free to use for anyone needing them, both as a p2p peer and a remote RPC for wallet usage:
+I host a high-performance Monero node that is free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
 
 `node-1.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
-`node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
-`node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
 
 Also available as Tor HiddenServices at:
 
-`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
-`slvb7iuq6rwj4gjbbfwile5piamhnllwk3s5vqccn2hqvz2nmrkvpiid.onion:18089`  
-`wq7o3snkc65onqc3rjdoynnsve2z22aqs3gixdtaaayx4qhgbz74auqd.onion:18089`  
+`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`
 
 ### Monero Docker Images
 
@@ -83,11 +79,9 @@ I have created a bare-bones and simple `monerod` Docker image that compiles from
 
 ### Tor Relay/Guard Nodes
 
-I also host a set of Tor relay/guard nodes, available at the below addresses:
+I also host a Tor relay/guard node, available at the below address:
 
-`tor-1.sethsimmons.me:443`  
-`tor-2.sethsimmons.me:443`  
-`tor-3.sethsimmons.me:443`  
+`tor-1.sethsimmons.me:443`
 
 ## Donations
 
