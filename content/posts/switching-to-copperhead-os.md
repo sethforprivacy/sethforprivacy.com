@@ -19,11 +19,7 @@ As the next step in my journey towards reducing my digital footprint and improvi
 
 As Android is an open-source operating system at the core with many vendor-specific changes and additions on top, it provides a great base for a privacy-centric OS once stripped of any Google tracking services and applications.
 
-The three main contenders today (this list is hotly debated, as it seems everything in the privacy space is!) are:
-
-- [Copperhead OS](https://copperhead.co/)
-- [CalyxOS](https://calyxos.org/) [^1]
-- [GrapheneOS](https://grapheneos.org/)
+The two main contenders today are [Copperhead OS](https://copperhead.co/) and [CalyxOS](https://calyxos.org/). [^1]
 
 [^1]: CalyxOS bundles MicroG, a Google Services middle-man that makes transitioning to it much easier, and is still open-source.
 
