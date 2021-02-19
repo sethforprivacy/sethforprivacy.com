@@ -1,13 +1,13 @@
 +++
-title = "Switching to Copperhead OS"
+title = "Switching to CopperheadOS"
 date = 2021-01-15T10:26:44-05:00
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
-tags = ["privacy", "Copperhead OS", "F-Droid"]
-keywords = ["privacy", "Copperhead OS", "F-Droid"]
-description = "How and why I made the jump to Copperhead OS for my mobile operating system."
-summary = "How and why I made the jump to Copperhead OS for my mobile operating system."
+tags = ["privacy", "CopperheadOS", "F-Droid"]
+keywords = ["privacy", "CopperheadOS", "F-Droid"]
+description = "How and why I made the jump to CopperheadOS for my mobile operating system."
+summary = "How and why I made the jump to CopperheadOS for my mobile operating system."
 showFullContent = false
 toc = true
 draft = false
@@ -19,31 +19,31 @@ As the next step in my journey towards reducing my digital footprint and improvi
 
 As Android is an open-source operating system at the core with many vendor-specific changes and additions on top, it provides a great base for a privacy-centric OS once stripped of any Google tracking services and applications.
 
-The two main contenders today are [Copperhead OS](https://copperhead.co/) and [CalyxOS](https://calyxos.org/). [^1]
+The two main contenders today are [CopperheadOS](https://copperhead.co/) and [CalyxOS](https://calyxos.org/). [^1]
 
 [^1]: CalyxOS bundles MicroG, a Google Services middle-man that makes transitioning to it much easier, and is still open-source.
 
-# Why Copperhead OS?
+# Why CopperheadOS?
 
-After investigating each of the above options and seeing they shared a lot of core features and design choices, I decided to go with Copperhead OS at the recommendation of many people I trust in the space. 
+After investigating each of the above options and seeing they shared a lot of core features and design choices, I decided to go with CopperheadOS at the recommendation of many people I trust in the space. 
 
 All three options above have the same [Android Open Source Project](https://source.android.com/) base and focus heavily on stripping Google services out and hardening the OS from the ground up, but Copperhead came highly recommended and [@maxtannahill](https://twitter.com/maxtannahill) (and his company [Mamushi](https://mamushi.io/)) were extremely helpful throughout every step of the process.
 
-My experience dealing with Mamushi and Copperhead OS so far has been flawless, with excellent customer support, active Telegram groups, and a simple setup with [great documentation](https://copperhead.co/android/docs/usage_guide/) to get me started. My phone was shipped quickly once I paid in Monero, well packaged, and had easy to install OTA updates ready once I got it booted up.
+My experience dealing with Mamushi and CopperheadOS so far has been flawless, with excellent customer support, active Telegram groups, and a simple setup with [great documentation](https://copperhead.co/android/docs/usage_guide/) to get me started. My phone was shipped quickly once I paid in Monero, well packaged, and had easy to install OTA updates ready once I got it booted up.
 
 # What is it like to use?
 
-Using Copperhead OS is *very* similar to using the near-stock Android found on Google Pixel devices normally, albeit with the exception of Google Play services and the Play Store.
+Using CopperheadOS is *very* similar to using the near-stock Android found on Google Pixel devices normally, albeit with the exception of Google Play services and the Play Store.
 
 I chose to go with the Google Pixel 4a and so far it's extremely smooth to use, has all the core settings I would normally expect, and has provided me with excellent battery life right out of the box.
 
 # How do I get apps?
 
-The biggest difference when switching to a privacy-preserving mobile OS like Copperhead OS is the distinct lack of any Google service support -- including the Play Store, where all apps are normally distributed through! So how do you get all the apps you need installed?
+The biggest difference when switching to a privacy-preserving mobile OS like CopperheadOS is the distinct lack of any Google service support -- including the Play Store, where all apps are normally distributed through! So how do you get all the apps you need installed?
 
 **Enter [F-Droid](https://f-droid.org/).**
 
-F-Droid is an awesome repository of open-source Android apps and comes pre-installed in Copperhead OS. There are a core set of repositories enabled within F-Droid, but you can add your own repositories from companies and services you love to get their app directly through F-Droid.
+F-Droid is an awesome repository of open-source Android apps and comes pre-installed in CopperheadOS. There are a core set of repositories enabled within F-Droid, but you can add your own repositories from companies and services you love to get their app directly through F-Droid.
 
 F-Droid not only allows you to download, install, and update apps, it also performs verification on them each time to make sure some of the most serious Android attack vectors are harder to use against you.
 
@@ -58,7 +58,7 @@ Two other options exist as well for installing applications, though they are not
 
 # My recommended apps
 
-A big part of switching over to Copperhead OS was to get off of Google services, so many of the apps I had been using before had to be replaced. Hopefully the list below will save you some time when you decide to take this privacy leap as well!
+A big part of switching over to CopperheadOS was to get off of Google services, so many of the apps I had been using before had to be replaced. Hopefully the list below will save you some time when you decide to take this privacy leap as well!
 
 ## Aegis for OTP
 
@@ -234,4 +234,4 @@ The experience is surprisingly user-friendly once you get used to how to get app
 
 Thanks to Mamushi for the phone and Max Tannahill for the in-depth answers to all of my questions, excellent support, and strong recommendations!
 
-If you have any questions from this post or would like more information on a specific aspect of my switch to Copperhead OS, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my switch to CopperheadOS, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
