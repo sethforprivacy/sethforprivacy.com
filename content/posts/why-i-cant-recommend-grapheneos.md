@@ -81,7 +81,7 @@ Unfortunately, that has since changed:
 
 # GrapheneOS's organized campaign of harassment, slander, and brigading
 
-As soon as [I posted]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples) from new or purchased accounts anytime I mentioned CopperheadOS.
+As soon as [I posted]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://tweet.lambda.dance/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
 
 Members of the GrapheneOS community also started creating new Telegram accounts to send the same canned reply and links and then delete their accounts, while also messaging members of the Monero community directly, attempting to undermine my reputation and contributions:
 
@@ -113,6 +113,8 @@ GrapheneOS may or may not be an excellent tool, but the communities behavior is 
 
 # Next steps
 
-If you're using GrapheneOS (or regular Android/iOS) today and want to switch, I can highly recommend reaching out to [@maxtannahill](https://twitter.com/maxtannahill) (or his company [Mamushi](https://mamushi.io/)) to start the switch based on personal experience, and take a look at [my guide]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) to help the transition.
+If you're using GrapheneOS (or regular Android/iOS) today and want to switch, I can highly recommend reaching out to [@maxtannahill](https://twitter.com/maxtannahill) (or his company [Mamushi](https://mamushi.io/)) to start the switch based on personal experience, and be sure to take a look at [my guide]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) to help the transition.
 
 If you want to use a FOSS alternative and/or don't want to pay for CopperheadOS, [CalyxOS](https://calyxos.org/) is a great alternative that can be a bit easier to transition to due to [support for microG](https://calyxos.org/features/microg/).
+
+If you have any questions from this post or would like more information on a specific aspect of my thought process or decision here, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
