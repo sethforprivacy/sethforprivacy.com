@@ -614,10 +614,6 @@ Here are a few Hugo pages I found useful as I was customizing my site, and they 
 - [Page variables](https://gohugo.io/variables/page/)
   - I used info from this page to set data like keywords, tags, and description (for a selected short description used on the homepage instead of the "first 70 word" default)
 
-# Sourcecode
-
-The up-to-date sourcecode for all the Hugo configurations and posts on [sethsimmons.me](https://sethsimmons.me) can be found at [sethsimmons/sethsimmons.me](https://github.com/sethsimmons/sethsimmons.me).
-
 # Next Steps  
 
 The biggest new features I'd like to add to my site are:
