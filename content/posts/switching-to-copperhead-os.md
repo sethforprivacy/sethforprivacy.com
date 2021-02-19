@@ -21,7 +21,7 @@ As Android is an open-source operating system at the core with many vendor-speci
 
 The two main contenders today are [CopperheadOS](https://copperhead.co/) and [CalyxOS](https://calyxos.org/). [^1]
 
-*Note: GrapheneOS is also a common recommendation, but due to many factors I can not recommend it. For more info, please read ["Why I Can't Recommend GrapheneOS"]({{< ref "/content/posts/why-i-cant-recommend-grapheneos.md" >}}).*
+*Note: GrapheneOS is also a common recommendation, but due to many factors I can not recommend it.*
 
 [^1]: CalyxOS bundles MicroG, a Google Services middle-man that makes transitioning to it much easier, and is still open-source.
 
