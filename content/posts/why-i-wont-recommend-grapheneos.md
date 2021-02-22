@@ -48,9 +48,8 @@ The three main choices presented to me as de-Googled Android-based OSs were [Cop
       - Free
       - Accept Monero for donations
   - Cons
-      - Unstable leadership
-      - Personally harassed me
-      - Long record of harassment and brigading of Copperhead users
+      - Long record of harassment and brigading of Copperhead users (including myself, as I will detail in this post) by community members
+        - *Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen.*
 
 - ## CalyxOS
     _(have not used personally)_
@@ -80,7 +79,7 @@ That has since changed:
 
 {{< tweet 1362397771957960704 >}}
 
-# GrapheneOS's organized campaign of harassment, slander, and brigading
+# GrapheneOS community member's organized campaign of harassment, slander, and brigading
 
 Unfortunately, choosing CopperheadOS of my own free will and writing about it during my free time was taken as an attack and misinformation campaign on GrapheneOS by their leader [Daniel Micay](https://tweet.lambda.dance/DanielMicay) and others in the community.
 
@@ -101,6 +100,14 @@ All this to find out today that these attacks are coordinated brigading being pu
 Feel free to read all the brigade replies on the mentioned tweet, and note this is one of many such examples:
 
 {{< tweet 1356303734691819524 >}}
+
+*Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen.*
+
+# Negative behavior of CopperheadOS
+
+While I have directly been affected by harassment, slander, and brigading by members of the GrapheneOS community, that is not to say that CopperheadOS is innocent in this ongoing community drama. The ongoing legal battle between CopperheadOS and GrapheneOS has been expanded to [include contributors to the GrapheneOS project](https://renlord.com/posts/2020-03-25-copperheados-legal-threat/) in ways that do not seem right or proper to me.
+
+As the legal proceedings are private I cannot comment on how it will turn out or who is right or wrong in this case, but the ongoing drama that is happening publicly around it is harmful to both communities, and more specifically, to people simply trying to take back a piece of their privacy via a hardened and privacy-preserving mobile OS. I have still settled on CopperheadOS for my personal use but this whole situation is a stain on both communities and muddies the waters greatly.
 
 # Conclusion
 
