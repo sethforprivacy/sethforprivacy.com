@@ -72,7 +72,7 @@ The three main choices presented to me as de-Googled Android-based OSs were [Cop
 
 As you can see above, there are quite a few shared pros between the three projects, and all use a similarly de-Googled Android base and build upon that. CopperheadOS and GrapheneOS, in particular, share many similarities and were once a single project.
 
-The core reason that I chose to go with CopperheadOS over GrapheneOS (I decided against CalyxOS simply because I didn't want microG) was that the phone I'm using must be well supported as I require it for work. I wanted to ensure that I would have timely updates, support, and someone on deck to help fix issues and bugs to keep my phone usable and useful. If you combine that with it came highly recommended by many people I respected in both the Bitcoin and Monero communities, and I was able to purchase both the phone and subscription with Monero, I decided to go that route.
+The core reason that I chose to go with CopperheadOS over GrapheneOS (I decided against CalyxOS simply because I didn't want microG) was that the phone I'm using must be well supported as I require it for work. I wanted to ensure that I would have timely updates, support, and someone on deck to help fix issues and bugs to keep my phone usable and useful. If you combine that with it coming highly recommended by many people I respect in both the Bitcoin and Monero communities while also being able to purchase both the phone and subscription with Monero, I decided to go that route.
 
 I was very much on the fence about this decision, but continued to recommend both GrapheneOS and CalyxOS as alternatives for those not wanting to pay the subscription or unwilling to use a source-available project.
 
@@ -86,7 +86,7 @@ Unfortunately, choosing CopperheadOS of my own free will and writing about it du
 
 As soon as [I posted]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://tweet.lambda.dance/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
 
-Members of the GrapheneOS community also started creating new Telegram accounts to send the same canned reply and links and then delete their accounts, while also messaging members of the Monero community directly, attempting to undermine my reputation and contributions:
+Members of the GrapheneOS community also started messaging members of the Monero community directly, attempting to undermine my reputation and contributions:
 
 {{< tweet 1362457609077424128 >}}
 
@@ -104,13 +104,13 @@ Feel free to read all the brigade replies on the mentioned tweet, and note this 
 
 # Conclusion
 
-While I would generally be a strong advocate for open-source, privacy-concious versions of any tool, I find it hard to ignore malicious and aggressive behavior from a project's community, especially by the lead developer.
+While I would generally be a strong advocate for open-source, privacy-conscious versions of any tool, I find it hard to ignore malicious and aggressive behavior from a project's community, especially by the lead developer.
 
 I cannot put any trust in Daniel Micay and others attacking me, and therefore will not recommend a tool run by people willing to stoop to such levels to harass others they disagree with.
 
 GrapheneOS may very well be an excellent tool, but the community's behavior is anything but a positive indicator of the technical merit and longevity of the project.
 
-I want to be intentional about providing options for people to take control of their privacy. Community drama, legal battles, slandering, and harassment takes away from the important mission any OS like this: privacy and security. This hurts those who want to better their life and it gets in the way of what is ultimately important.
+I want to be intentional about providing options for people to take control of their privacy. Community drama, legal battles, slandering, and harassment takes away from the important mission of any OS like this: privacy and security. This hurts those who want to better their life and it gets in the way of what is ultimately important.
 
 # Next steps
 
