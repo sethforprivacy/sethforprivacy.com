@@ -15,7 +15,7 @@ draft = true
 
 # Introduction
 
-Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional aboyt my data footprint and continue my privacy journey, where I ultimately settled on CopperheadOS. I even [wrote a post]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about my experiences and takewaways.
+Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on CopperheadOS. I even [wrote a post]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about my experiences and takewaways.
 
 In full disclosure, I did this entirely from my own research, paid in full with Monero for the phone and the service, and wrote the blog post to help others interested in privacy and who may want to switch to a more privacy concious mobile operating system.
 
