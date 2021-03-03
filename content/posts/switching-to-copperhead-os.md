@@ -10,7 +10,7 @@ description = "How and why I made the jump to CopperheadOS for my mobile operati
 summary = "How and why I made the jump to CopperheadOS for my mobile operating system."
 showFullContent = false
 toc = true
-draft = false
+draft = true
 +++
 
 # Introduction
