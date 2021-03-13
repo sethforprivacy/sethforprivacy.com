@@ -1,55 +1,67 @@
 +++
-title = "Switching to CopperheadOS"
+title = "Switching to CalyxOS"
 date = 2021-01-15T10:26:44-05:00
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
-tags = ["privacy", "CopperheadOS", "F-Droid"]
-keywords = ["privacy", "CopperheadOS", "F-Droid"]
-description = "How and why I made the jump to CopperheadOS for my mobile operating system."
-summary = "How and why I made the jump to CopperheadOS for my mobile operating system."
+tags = ["privacy", "CalyxOS", "F-Droid"]
+keywords = ["privacy", "CalyxOS", "F-Droid"]
+description = "How and why I made the jump to CalyxOS for my mobile operating system."
+summary = "How and why I made the jump to CalyxOS for my mobile operating system."
 showFullContent = false
 toc = true
-draft = true
+draft = false
 +++
 
 # Introduction
+
+*This post originally recommended CopperheadOS and focused on my experiences with that, but I have since transitioned to CalyxOS and thought that this post would be the best place to share that process as well.*
 
 As the next step in my journey towards reducing my digital footprint and improving my privacy, I wanted to step away from the tracking-centric and monopolized mobile operating systems (OSs) that are most commonly used by people all around the world.
 
 As Android is an open-source operating system at the core with many vendor-specific changes and additions on top, it provides a great base for a privacy-centric OS once stripped of any Google tracking services and applications.
 
-The two main contenders today are [CopperheadOS](https://copperhead.co/) and [CalyxOS](https://calyxos.org/). [^1]
+The three main contenders today are [CalyxOS](https://calyxos.org/), [GrapheneOS](https://grapheneos.org), and [CopperheadOS](https://copperhead.co/).
 
-*Note: GrapheneOS is also a common recommendation, but due to many factors I can not recommend it.*
+*Note: GrapheneOS and/or CopperheadOS are common recommendations, but due to [many factors]({{< ref "/content/posts/community-drama-and-mobile-os.md" >}}) I can not recommend either one.*
 
-[^1]: CalyxOS bundles MicroG, a Google Services middle-man that makes transitioning to it much easier, and is still open-source.
+# Why CalyxOS?
 
-# Why CopperheadOS?
+All three options above have the same [Android Open Source Project (AOSP)](https://source.android.com/) base and focus heavily on stripping Google services out, while GrapheneOS and CopperheadOS add in a few security optimizations to the base OS to help close off advanced threat vectors. While I appreciate the hyper-secure approach taken by both GrapheneOS and CopperheadOS, these security optimizations add quite a bit of lag and greatly slow down the usage of the OS as a whole.
 
-After investigating each of the above options and seeing they shared a lot of core features and design choices, I decided to go with CopperheadOS at the recommendation of many people I trust in the space. 
+I spent two months using CopperheadOS as my daily driver and enjoyed the overall experience, but after the many-sided drama and some behind the scenes issues, I decided to flash CalyxOS and make the jump. The main driver for choosing CalyxOS was the overall strength of the organization (Calyx) behind the OS and the balanced approach taken with CalyxOS -- give users options but lean towards preserving good UX when it doesn't conflict with private options.
 
-All three options above have the same [Android Open Source Project](https://source.android.com/) base and focus heavily on stripping Google services out and hardening the OS from the ground up, but Copperhead came highly recommended and [@maxtannahill](https://twitter.com/maxtannahill) (and his company [Mamushi](https://mamushi.io/)) were extremely helpful throughout every step of the process.
+For a more detailed comparison of the three, see my breakdown of each at ["Comparing CopperheadOS, GrapheneOS, and CalyxOS"]({{< ref "/posts/community-drama-and-mobile-os.md#comparing-copperheados-grapheneos-and-calyxos" >}}).
 
-My experience dealing with Mamushi and CopperheadOS so far has been flawless, with excellent customer support, active Telegram groups, and a simple setup with [great documentation](https://copperhead.co/android/docs/usage_guide/) to get me started. My phone was shipped quickly once I paid in Monero, well packaged, and had easy to install OTA updates ready once I got it booted up.
+# How do I install it?
+
+Thankfully, Calyx has made the process very straightforward with a pre-built flashing tool available from their site.
+
+I simply downloaded the appropriate package for the Pixel 4a, downloaded the flashing tool for Linux at https://calyxos.org/get/install/, and followed the instructions the flashing tool put in my terminal.
+
+It took all of ten minutes to flash and setup, and was very straightforward. You can see all the supported devices and downloads at https://calyxos.org/get/.
 
 # What is it like to use?
 
-Using CopperheadOS is *very* similar to using the near-stock Android found on Google Pixel devices normally, albeit with the exception of Google Play services and the Play Store.
+Using CalyxOS is *very* similar to using the near-stock Android found on Google Pixel devices normally, albeit with the exception of not having default Google Play services and the Google Play Store.
 
 I chose to go with the Google Pixel 4a and so far it's extremely smooth to use, has all the core settings I would normally expect, and has provided me with excellent battery life right out of the box.
 
+One thing to note with CalyxOS -- while the default is no support for Google Play Services, they do allow you to enable [microG](https://calyxos.org/features/microg/) for using Google Play Services in a more private and FOSS way. I personally have chosen to run my phone without microG enabled, but it's a perfectly valid choice and enables a much easier transition as more apps will function properly when it is enabled.
+
 # How do I get apps?
 
-The biggest difference when switching to a privacy-preserving mobile OS like CopperheadOS is the distinct lack of any Google service support -- including the Play Store, where all apps are normally distributed through! So how do you get all the apps you need installed?
+The biggest difference when switching to a privacy-preserving mobile OS like CalyxOS is the distinct lack of any Google service support -- including the Play Store, where all apps are normally distributed through! So how do you get all the apps you need installed?
 
 **Enter [F-Droid](https://f-droid.org/).**
 
-F-Droid is an awesome repository of open-source Android apps and comes pre-installed in CopperheadOS. There are a core set of repositories enabled within F-Droid, but you can add your own repositories from companies and services you love to get their app directly through F-Droid.
+F-Droid is an awesome repository of open-source Android apps and comes pre-installed in CalyxOS. There are a core set of repositories enabled within F-Droid, but you can add your own repositories from companies and services you love to get their app directly through F-Droid.
 
 F-Droid not only allows you to download, install, and update apps, it also performs verification on them each time to make sure some of the most serious Android attack vectors are harder to use against you.
 
-Two other options exist as well for installing applications, though they are not recommended if at all avoidable:
+CalyxOS has taken integration with F-Droid a step further and provides a recommended list of apps at initial setup, which makes the transition much easier. I would highly recommend testing out each of the apps they recommend, and hope they will add apps like [Monerujo]({{< relref "#monerujo-for-payments" >}}) in the future.
+
+Two other options exist as well for installing applications, though I would generally recommend avoiding them where possible:
 
 - [Aurora Store](https://auroraoss.com/) is an open-source Google Play Store alternate client, allowing you to (either anonymously via throwaway accounts or via your own Google account) install apps from the Play Store without Google Services installed.
   - Reasons to use it: the ability to access the entire Google Play Store library of applications is powerful, and many applications are simply not available via F-Droid or direct APK installation
@@ -60,7 +72,7 @@ Two other options exist as well for installing applications, though they are not
 
 # My recommended apps
 
-A big part of switching over to CopperheadOS was to get off of Google services, so many of the apps I had been using before had to be replaced. Hopefully the list below will save you some time when you decide to take this privacy leap as well!
+A big part of switching over to CalyxOS was to get off of Google services, so many of the apps I had been using before had to be replaced. Hopefully the list below will save you some time when you decide to take this privacy leap as well!
 
 ## Aegis for OTP
 
@@ -104,6 +116,12 @@ FireFox has quickly become my browser-of-choice for day-to-day browsing, even th
 
 https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/
 
+#### Alternatives
+
+An alternative I am currently testing is [Brave Browser](https://brave.com), a privacy-preserving version of Google Chrome with some nice added features. The best way to install Brave is via an updater app that is present in F-Droid: 
+
+https://f-droid.org/en/packages/de.marmaro.krt.ffupdater/
+
 ## Infinity for Reddit
 
 #### Why I like it
@@ -142,13 +160,21 @@ It is also available on a slower update schedule from the standard F-Droid repos
 
 https://f-droid.org/en/packages/org.schabi.newpipe/
 
-## OSMAnd for maps and navigation
+## Waze for maps and navigation
 
 #### Why I like it
 
-It certainly doesn't have the same visual appeal and ease of use as Google Maps, but so far it's been a fine and usable replacement, and of course is open-source and has much better data handling than Google Maps while not relying on Google Services.
+While Waze is owned by Google, it provides an easy and non-account-based option for modern navigation. While I'm hopeful apps like OSMAnd can improve in the future, they are simply not usable for my own purposes at the moment. I made sure to go into the settings of Waze and enable some of the privacy features and disable data collection, but it's still not an ideal choice.
 
 #### Where to get it
+
+While Waze is available from the Aurora Store, the latest versions do not work in any of the major de-Googled OSs. In order to use the latest version you have to first download [v4.35.1.0](https://www.apkmirror.com/apk/waze/waze-gps-maps-traffic-alerts-live-navigation/waze-gps-maps-traffic-alerts-live-navigation-4-35-1-0-release/), install it manually, launch the app and let it perform initial setup, and then update through the Aurora Store.
+
+After that future versions update and work properly.
+
+#### Alternatives
+
+While it certainly doesn't have the same visual appeal and ease of use as Google Maps, OSMAnd is open-source and has much better data handling than Google Maps while not relying on Google Services. If you want to explore using OSMAnd, check-out the package in F-Droid: 
 
 https://f-droid.org/en/packages/net.osmand.plus/
 
@@ -228,12 +254,16 @@ VLC is a well-respected and trusted video player, and one I have used for many, 
 
 https://f-droid.org/en/packages/org.videolan.vlc/
 
+#### Alternatives
+
+MPV Android is a great and simple FOSS player available via Github: https://github.com/mpv-android/mpv-android/releases/latest
+
+I have switched to using this instead of VLC while some bugs I have found and reported are fixed, and it's served my needs well.
+
 # Conclusion
 
 While the jump to a de-Googled phone may not be the easiest, it's a great further step towards preserving my privacy, reducing my digital footprint, and ensuring I am not reliant on the good-graces of a big tech company like Google for my daily apps.
 
 The experience is surprisingly user-friendly once you get used to how to get apps and migrate over to strong open-source alternatives where possible, and I would highly recommend this for those somewhat tech-savvy users who want to preserve their privacy while on the go.
 
-Thanks to Mamushi for the phone and Max Tannahill for the in-depth answers to all of my questions, excellent support, and strong recommendations!
-
-If you have any questions from this post or would like more information on a specific aspect of my switch to CopperheadOS, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my switch to CalyxOS, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).

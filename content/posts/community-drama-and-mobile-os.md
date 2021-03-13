@@ -15,9 +15,11 @@ draft = false
 
 # Introduction
 
-Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on [CopperheadOS](https://copperhead.co/android/). I even [wrote a post]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about my experiences and takeaways.
+Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on [CopperheadOS](https://copperhead.co/android/). 
 
-In full disclosure, I did this entirely from my own research, paid in full with Monero for the phone and the service, and wrote the blog post to help others interested in privacy and who may want to switch to a more privacy-conscious mobile operating system.
+I have since switched to CalyxOS and [written a post]({{< ref "/content/posts/switching-to-calyxos.md" >}}) about my experiences and takeaways.
+
+In full disclosure, I originally chose CopperheadOS entirely from my own research, paid in full with Monero for the phone and the service, and wrote a blog post to help others interested in privacy and who may want to switch to a more privacy-conscious mobile operating system.
 
 # Comparing CopperheadOS, GrapheneOS, and CalyxOS
 
@@ -54,7 +56,7 @@ The three main choices presented to me as de-Googled Android-based OSs were [Cop
       - Ongoing legal battle against CopperheadOS
 
 - ## CalyxOS
-    _(have not used personally)_
+    _(have used personally)_
   - Pros
       - Recommended by Bitcoin and Monero community members I trust
       - Includes [microG](https://calyxos.org/features/microg/) for using Google Play Services
@@ -68,6 +70,7 @@ The three main choices presented to me as de-Googled Android-based OSs were [Cop
         - Can disable entirely on initial setup if desired
       - Smaller project
       - Do not accept Monero for donations
+        - Will be added soon
 
 # Why I chose CopperheadOS
 
@@ -77,11 +80,13 @@ The core reason that I chose to go with CopperheadOS over GrapheneOS (I decided 
 
 I was very much on the fence about this decision, but continued to recommend both GrapheneOS and CalyxOS as alternatives for those not wanting to pay the subscription or unwilling to use a source-available project.
 
+*Note: Since writing this post I have changed to using CalyxOS. For more details on the thought process on the change, please see [written a post]({{< ref "/content/posts/switching-to-calyxos.md#why-calyxos" >}})*
+
 # GrapheneOS community member's organized campaign of harassment, slander, and brigading
 
 Unfortunately, choosing CopperheadOS of my own free will and writing about it during my free time was taken as an attack and misinformation campaign on GrapheneOS by their leader [Daniel Micay](https://tweet.lambda.dance/DanielMicay) and others in the community.
 
-As soon as [I posted]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://tweet.lambda.dance/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
+As soon as I posted about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://tweet.lambda.dance/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
 
 Members of the GrapheneOS community also started messaging members of the Monero community directly, attempting to undermine my reputation and contributions:
 
@@ -119,8 +124,6 @@ I want to be intentional about providing options for people to take control of t
 
 # Next steps
 
-If you're using Google Android/iOS today and want to switch, I can highly recommend reaching out to [@maxtannahill](https://twitter.com/maxtannahill) (or his company [Mamushi](https://mamushi.io/)) to start the switch based on personal experience, and be sure to take a look at [my guide]({{< ref "/content/posts/switching-to-copperhead-os.md" >}}) to help the transition.
-
-If you want to use a FOSS alternative and/or don't want to pay for CopperheadOS, [CalyxOS](https://calyxos.org/) is a great alternative that can be a bit easier to transition to due to [support for microG](https://calyxos.org/features/microg/).
+If you're using Google Android/iOS today and want to switch, I can highly recommend [CalyxOS](https://calyxos.org/) as a great alternative that can be a bit easier to transition to due to [support for microG](https://calyxos.org/features/microg/) based on personal experience, and be sure to take a look at [my guide]({{< ref "/content/posts/switching-to-calyxos.md" >}}) to help the transition.
 
 If you have any questions from this post or would like more information on a specific aspect of my thought process or decision here, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
