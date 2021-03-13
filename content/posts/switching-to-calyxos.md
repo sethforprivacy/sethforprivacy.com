@@ -41,6 +41,8 @@ I simply downloaded the appropriate package for the Pixel 4a, downloaded the fla
 
 It took all of ten minutes to flash and setup, and was very straightforward. You can see all the supported devices and downloads at https://calyxos.org/get/.
 
+*Be sure to also check out [BitcoinQ+A's installation guide](bitcoiner.guide/calyxos/) for more details on his thoughts on CalyxOS and how to install it with step by step instructions.*
+
 # What is it like to use?
 
 Using CalyxOS is *very* similar to using the near-stock Android found on Google Pixel devices normally, albeit with the exception of not having default Google Play services and the Google Play Store.
