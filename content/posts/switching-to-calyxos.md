@@ -108,6 +108,16 @@ For Bitwarden (and some other apps on this list) you will have to install the re
 
 https://mobileapp.bitwarden.com/fdroid/
 
+## Element for community interactions
+
+#### Why I like it
+
+Element is the native Matrix client available across platforms, and is something I use daily on both desktop and Android. It isn't without it's quirks but works quite well and is a great way to stay engaged with many communities in the privacy and FOSS ecosystem.
+
+#### Where to get it
+
+https://f-droid.org/en/packages/im.vector.app/
+
 ## Fennec for browsing
 
 #### Why I like it
@@ -120,9 +130,25 @@ https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/
 
 #### Alternatives
 
+##### Brave Browser
+
 An alternative I am currently testing is [Brave Browser](https://brave.com), a privacy-preserving version of Google Chrome with some nice added features. The best way to install Brave is via an updater app that is present in F-Droid: 
 
 https://f-droid.org/en/packages/de.marmaro.krt.ffupdater/
+
+## Gcam for pictures and video
+
+#### Why I like it
+
+[Gcam](https://www.celsoazevedo.com/files/android/google-camera/) is a custom built camera app focused on emulating many (if not all) of the core features of the native Google Pixel camera app for devices and OSs that are non-standard. Using Gcam gives practically the same experience and quality of shooting on the official Google Android without needing Google Play Services and without Google's tracking and Photos integration.
+
+#### Where to get it
+
+Gcam is a bit tricky as there are many devs that create many different builds, all of which have some slight differences in supported devices or features. In my usage on my Pixel 4a (and in others in the CalyxOS community's experience on the Pixel 5) the builds by Urnyx05 have been excellent and worked without issue. You can find those builds below:
+
+https://www.celsoazevedo.com/files/android/google-camera/dev-urnyx05/
+
+Note that if you're on a Pixel 5/4a 5G you will need a build that is version 8.1+, so be sure to grab that.
 
 ## Infinity for Reddit
 
@@ -161,24 +187,6 @@ https://newpipe.net/FAQ/tutorials/install-add-fdroid-repo/
 It is also available on a slower update schedule from the standard F-Droid repositories here:
 
 https://f-droid.org/en/packages/org.schabi.newpipe/
-
-## Waze for maps and navigation
-
-#### Why I like it
-
-While Waze is owned by Google, it provides an easy and non-account-based option for modern navigation. While I'm hopeful apps like OSMAnd can improve in the future, they are simply not usable for my own purposes at the moment. I made sure to go into the settings of Waze and enable some of the privacy features and disable data collection, but it's still not an ideal choice.
-
-#### Where to get it
-
-While Waze is available from the Aurora Store, the latest versions do not work in any of the major de-Googled OSs. In order to use the latest version you have to first download [v4.35.1.0](https://www.apkmirror.com/apk/waze/waze-gps-maps-traffic-alerts-live-navigation/waze-gps-maps-traffic-alerts-live-navigation-4-35-1-0-release/), install it manually, launch the app and let it perform initial setup, and then update through the Aurora Store.
-
-After that future versions update and work properly.
-
-#### Alternatives
-
-While it certainly doesn't have the same visual appeal and ease of use as Google Maps, OSMAnd is open-source and has much better data handling than Google Maps while not relying on Google Services. If you want to explore using OSMAnd, check-out the package in F-Droid: 
-
-https://f-droid.org/en/packages/net.osmand.plus/
 
 ## Samourai Wallet for Bitcoin payments
 
@@ -258,9 +266,35 @@ https://f-droid.org/en/packages/org.videolan.vlc/
 
 #### Alternatives
 
+##### MPV for Android
+
 MPV Android is a great and simple FOSS player available via Github: https://github.com/mpv-android/mpv-android/releases/latest
 
 I have switched to using this instead of VLC while some bugs I have found and reported are fixed, and it's served my needs well.
+
+## Waze for maps and navigation
+
+#### Why I like it
+
+While Waze is owned by Google, it provides an easy and non-account-based option for modern navigation. While I'm hopeful apps like OSMAnd can improve in the future, they are simply not usable for my own purposes at the moment. I made sure to go into the settings of Waze and enable some of the privacy features and disable data collection, but it's still not an ideal choice.
+
+#### Where to get it
+
+While Waze is available from the Aurora Store, the latest versions do not work in any of the major de-Googled OSs. In order to use the latest version you have to first download [v4.35.1.0](https://www.apkmirror.com/apk/waze/waze-gps-maps-traffic-alerts-live-navigation/waze-gps-maps-traffic-alerts-live-navigation-4-35-1-0-release/), install it manually, launch the app and let it perform initial setup, and then update through the Aurora Store.
+
+After that future versions update and work properly.
+
+#### Alternatives
+
+##### OSMAnd
+
+While it certainly doesn't have the same visual appeal and ease of use as Google Maps or Waze, OSMAnd is open-source and has much better data handling than Google Maps while not relying on Google Services. If you want to explore using OSMAnd, check-out the package in F-Droid: 
+
+https://f-droid.org/en/packages/net.osmand.plus/
+
+##### Magic Earth
+
+While [Magic Earth](https://www.magicearth.com) is not available on F-Droid, it does have very strong privacy-preserving features and a much better UX than OSMAnd. I'm currently testing it out, but you can grab it from the Aurora Store.
 
 # Conclusion
 
