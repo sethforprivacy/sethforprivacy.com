@@ -96,7 +96,7 @@ Members of the GrapheneOS community also started messaging members of the Monero
 
 This has happened twice, with the latest being directly to someone via IRC. I have no idea how they found this person or why they chose them, but thankfully the Monero community can see through attacks like these.
 
-All this to find out today that these attacks are coordinated brigading being pushed from the top down in Matrix and Telegram channels (at least) by members of the GrapheneOS community:
+All this to find out today that these attacks are coordinated brigading being pushed from the top down in Matrix and Telegram channels (at least) by members of the GrapheneOS community, this instance being by a lead dev for GrapheneOS as [listed on their Github](https://github.com/orgs/GrapheneOS/people):
 
 {{< figure src="/graphene_brigading.jpg" position="center" style="border-radius: 8px;" >}}
 
