@@ -1,6 +1,6 @@
 +++
 title = "Switching to CalyxOS"
-date = 2021-01-15T10:26:44-05:00
+date = 2021-03-13T12:30:00-05:00
 author = "Seth Simmons"
 authorTwitter = "sethisimmons" #do not include @
 cover = ""
@@ -276,25 +276,25 @@ I have switched to using this instead of VLC while some bugs I have found and re
 
 #### Why I like it
 
-While Waze is owned by Google, it provides an easy and non-account-based option for modern navigation. While I'm hopeful apps like OSMAnd can improve in the future, they are simply not usable for my own purposes at the moment. I made sure to go into the settings of Waze and enable some of the privacy features and disable data collection, but it's still not an ideal choice.
+While [Magic Earth](https://www.magicearth.com) is not available on F-Droid and is not open-source, it does have very strong privacy-preserving features and a much better UX than OSMAnd. So far in my experience it is an excellent navigation app and doesn't even require network access once you download the map for your area.
+
+POI searches can still be a bit lackluster, but I've defaulted to finding the place I want to go via DuckDuckGo searches and just copy+pasting the address into Magic Earth.
 
 #### Where to get it
 
-While Waze is available from the Aurora Store, the latest versions do not work in any of the major de-Googled OSs. In order to use the latest version you have to first download [v4.35.1.0](https://www.apkmirror.com/apk/waze/waze-gps-maps-traffic-alerts-live-navigation/waze-gps-maps-traffic-alerts-live-navigation-4-35-1-0-release/), install it manually, launch the app and let it perform initial setup, and then update through the Aurora Store.
+Make sure you have the [Aurora Store](https://auroraoss.com/) installed first, and then simply search in Aurora for "Magic Earth" and install from there.
 
-After that future versions update and work properly.
+Future updates will be served via Aurora as well.
 
 #### Alternatives
 
-##### OSMAnd
+##### Waze
 
-While it certainly doesn't have the same visual appeal and ease of use as Google Maps or Waze, OSMAnd is open-source and has much better data handling than Google Maps while not relying on Google Services. If you want to explore using OSMAnd, check-out the package in F-Droid: 
+While Waze is owned by Google, it provides an easy and non-account-based option for modern navigation. I made sure to go into the settings of Waze and enable some of the privacy features and disable data collection, but it's still not an ideal choice.
 
-https://f-droid.org/en/packages/net.osmand.plus/
+While Waze is available from the Aurora Store, the latest versions do not work in any of the major de-Googled OSs. In order to use the latest version you have to first download [v4.35.1.0](https://www.apkmirror.com/apk/waze/waze-gps-maps-traffic-alerts-live-navigation/waze-gps-maps-traffic-alerts-live-navigation-4-35-1-0-release/), install it manually, launch the app and let it perform initial setup, and then update through the [Aurora Store](https://auroraoss.com/).
 
-##### Magic Earth
-
-While [Magic Earth](https://www.magicearth.com) is not available on F-Droid, it does have very strong privacy-preserving features and a much better UX than OSMAnd. I'm currently testing it out, but you can grab it from the Aurora Store.
+After that future versions update and work properly.
 
 # Conclusion
 
