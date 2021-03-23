@@ -31,33 +31,47 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 ## Wasabi
 
-- https://twitter.com/bittlecat/status/1207621591820951552
-- https://old.reddit.com/r/WasabiWallet/comments/czext2/paxful_account_was_frozen_due_to_coinjoin/
-- https://old.reddit.com/r/WasabiWallet/comments/beqj8r/bitfinex_lock_account/
-- https://twitter.com/6102bitcoin/status/1367376460214853632
+- A user's Binance SGD account is frozen upon attempted withdrawal to Wasabi Wallet for mixing: 
+  - [Twitter Source](https://twitter.com/bittlecat/status/1207621591820951552)
+- A user's Paxful account is frozen upon attempted withdrawal to Wasabi Wallet for mixing: 
+  - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/czext2/paxful_account_was_frozen_due_to_coinjoin/)
+- A user's Bitfinex account is frozen upon attempted withdrawal to Wasabi Wallet for mixing: 
+  - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/beqj8r/bitfinex_lock_account/)
+- A user's Bitstamp account is flagged months/years after withdrawal to Wasabi Wallet for mixing: 
+  - [Twitter Source](https://twitter.com/6102bitcoin/status/1367376460214853632)
+- A user's BitVavo account is closed upon attempted withdrawal to Wasabi Wallet for mixing: 
+  - [Reddit Source](https://www.reddit.com/r/Bitcoin/comments/i8ye6x/exchange_account_closed_because_of_risk_profile/)
 
 ## Samourai
 
-- https://twitter.com/Marty_P_B/status/1366737347887456260
-- https://twitter.com/RonaldMcHodled/status/1222172084610027523
+- A users's Bottlepay deposit is rejected/returned upon depositing mixed funds:
+  - [Twitter Source](https://twitter.com/Marty_P_B/status/1366737347887456260)
+- A user's Paxos account is frozen upon attempted withdrawal to Samourai Wallet for mixing:
+  - [Twitter Source](https://twitter.com/RonaldMcHodled/status/1222172084610027523)
 
 ## JoinMarket
 
-- https://twitter.com/kristapsk/status/1374336620158140419
+- A user's BitMEX account is flagged months after withdrawal to Samourai Wallet for mixing:
+  - [Twitter Source](https://twitter.com/kristapsk/status/1374336620158140419)
 
 ## All CoinJoins
 
-- https://twitter.com/matt_odell/status/1234514628115341313
-- https://tweetstamp.org/1234531935038341120
-- https://www.reddit.com/r/Bitcoin/comments/i8ye6x/exchange_account_closed_because_of_risk_profile/
-- https://twitter.com/sundaywar/status/1366854774864322560?s=20
-
-## General Fungibility Issues
-
-- https://twitter.com/woonomic/status/1371418824499630081
-- https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/
+- Multiple user's deposits are flagged by BlockFi upon depositing from a CoinJoin tool like Wasabi:
+  - [Twitter Source](https://twitter.com/matt_odell/status/1234514628115341313)
+  - [Response from BlockFi](https://tweetstamp.org/1234531935038341120)
+- A user's account is flagged upon mixing coins after withdrawal from Voyager:
+  - [Twitter Source](https://twitter.com/sundaywar/status/1366854774864322560?s=20)
+- Paxos official statement on handling of Bitcoin with a history of CoinJoin:
+  - [Twitter Source](https://twitter.com/jehrenhofer/status/1235963248522006528)
 
 ## Tainted Bitcoin
 
-- https://bisq.community/t/dirty-btc-coins-on-the-xmr-market/7798
-- https://twitter.com/sethisimmons/status/1370721319680155651
+- A user receives tainted Bitcoin that cause two exchange accounts to be locked upon deposits:
+  - [Bisq Source](https://bisq.community/t/dirty-btc-coins-on-the-xmr-market/7798)
+- A user is attacked by the media upon receiving a donation from a "far-right" donor:
+  - [Twitter Source](https://twitter.com/sethisimmons/status/1370721319680155651)
+
+## General Fungibility Issues
+
+- Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
+  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/)
