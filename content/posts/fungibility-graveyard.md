@@ -77,3 +77,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 - Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
   - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/)
+
+# Something Missing?
+
+If you've noticed an instance of fungibility causing issues in the real world with Bitcoin, please feel free to reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
