@@ -70,6 +70,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Bisq Source](https://bisq.community/t/dirty-btc-coins-on-the-xmr-market/7798)
 - A user is attacked by the media upon receiving a donation from a "far-right" donor:
   - [Twitter Source](https://twitter.com/sethisimmons/status/1370721319680155651)
+- Multiple user's exchange accounts are closed after making a donation to a dark-net researcher:
+  - [Twitter Source](https://twitter.com/DarkDotFail/status/1359243753664303104)
 
 ## General Fungibility Issues
 
