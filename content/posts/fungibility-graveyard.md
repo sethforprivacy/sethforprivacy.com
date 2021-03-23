@@ -6,8 +6,8 @@ authorTwitter = "sethisimmons" #do not include @
 cover = ""
 tags = ["fungibility", "Bitcoin", "privacy"]
 keywords = ["fungibility", "Bitcoin", "privacy"]
-description = "This post contains a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin."
-summary = "This post contains a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin."
+description = "Where the pipe-dream of Bitcoin's real-world fungibility goes to die."
+summary = "Where the pipe-dream of Bitcoin's real-world fungibility goes to die."
 showFullContent = false
 toc = true
 draft = false
@@ -19,27 +19,27 @@ Bitcoin is often touted as a fungible and private asset and digital cash alterna
 
 Many Bitcoiners purport that fungibility can be gained through more users mixing, or by peer-pressuring and boycotting exchanges and services that flag or trace Bitcoin transactions. In theory this is possible (suppose in another universe, everyone mixes), but why leave it up to chance?
 
-We see fungibility as a basic safety feature. Good tools should include safety features by default, strong enough to withstand both governmental and social attacks. This is far preferable to relying on the goodwill of governments and regulators, or the peer-pressure of us as users to ensure fungibility of digital cash. Do you really want your coins to be fungible only if your grandma correctly follows a 50 page mixing guide? And if arbitrage traders agree to mix between exchanges?
+We see fungibility as a basic safety feature. Good tools should include safety features by default, strong enough to withstand both governmental and social attacks. This is far preferable to relying on the goodwill of governments and regulators, or the peer-pressure of us as users to ensure fungibility of digital cash. Do you really want your coins to be fungible only if your grandma correctly follows a 50 page mixing guide?
 
 Monero relies on privacy by-default, for all users and all transactions, to ensure that 1XMR = 1XMR, no matter what. Monero is fungible today, not just in a pipe dream.
 
 # The Fungibility Graveyard
 
-Our concerns aren't only a fun thought exercise. Users of Bitcoin privacy tools are being harassed today.
+Our concerns aren't only a fun thought exercise, unfortunately, as users of Bitcoin privacy tools are being harassed today.
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
 ## Wasabi
 
-- A user's Binance SGD account is frozen upon attempted withdrawal to Wasabi Wallet for mixing: 
+- A user's Binance SGD account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Twitter Source](https://twitter.com/bittlecat/status/1207621591820951552)
-- A user's Paxful account is frozen upon attempted withdrawal to Wasabi Wallet for mixing: 
+- A user's Paxful account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/czext2/paxful_account_was_frozen_due_to_coinjoin/)
-- A user's Bitfinex account is frozen upon attempted withdrawal to Wasabi Wallet for mixing: 
+- A user's Bitfinex account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/beqj8r/bitfinex_lock_account/)
-- A user's Bitstamp account is flagged months/years after withdrawal to Wasabi Wallet for mixing: 
+- A user's Bitstamp account is flagged months/years after withdrawal to Wasabi Wallet for mixing:
   - [Twitter Source](https://twitter.com/6102bitcoin/status/1367376460214853632)
-- A user's BitVavo account is closed upon attempted withdrawal to Wasabi Wallet for mixing: 
+- A user's BitVavo account is closed upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://www.reddit.com/r/Bitcoin/comments/i8ye6x/exchange_account_closed_because_of_risk_profile/)
 
 ## Samourai
