@@ -88,7 +88,7 @@ If you've noticed an instance of fungibility causing issues in the real world wi
 
 # Credits
 
-- Several of the sources linked above were pulled from an excellent resoure by [@6102bitcoin](https://twitter.com/6102bitcoin?s=21) on cases of CoinJoin flagging: https://6102bitcoin.com/coinjoin-flagging/.
+- Several of the sources linked above were pulled from an excellent resource by [@6102bitcoin](https://twitter.com/6102bitcoin?s=21) on cases of CoinJoin flagging: https://6102bitcoin.com/coinjoin-flagging/.
 - Many of the linked sources were provided by Monero community members on Reddit and Twitter on threads like the below:
   - https://www.reddit.com/r/Monero/comments/mbn12q/i_created_a_new_blog_post_will_be_a_new_site_soon/
   - https://twitter.com/sethisimmons/status/1374445921484689408?s=21
