@@ -63,6 +63,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source](https://twitter.com/sundaywar/status/1366854774864322560?s=20)
 - Paxos official statement on handling of Bitcoin with a history of CoinJoin:
   - [Twitter Source](https://twitter.com/jehrenhofer/status/1235963248522006528)
+- A user's account is frozen due to 6mo-old post-CoinJoin transactions by Bitwala:
+  - [Twitter Source](https://twitter.com/riccardomasutti/status/1375507165151076353?s=21)
 
 ## Tainted Bitcoin
 
