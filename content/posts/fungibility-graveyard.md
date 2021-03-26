@@ -76,11 +76,13 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 ## General Fungibility Issues
 
 - Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
-  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/)
+  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/) [^1]
 - A user's account is flagged after withdrawing from BlockFi to a peer-to-peer exchange:
   - [Reddit Source](https://www.reddit.com/r/Monero/comments/mcxwhp/a_mail_from_block_fi/)
 - Multiple mining pools start actively censoring transactions deemed illicit:
   - [Twitter Source](https://twitter.com/fluffypony/status/1326594121797087238?s=20)
+
+[^1]: I have not been able to find a concrete source confirming this beyond rumour. I will do more research on this before removing it or this comment.
 
 # Something Missing?
 
