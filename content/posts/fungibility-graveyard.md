@@ -72,6 +72,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source](https://twitter.com/sethisimmons/status/1370721319680155651)
 - Multiple user's exchange accounts are closed after making a donation to a dark-net researcher:
   - [Twitter Source](https://twitter.com/DarkDotFail/status/1359243753664303104)
+- A user is worried about accepting donations from unknown sources because of a lack of fungibility:
+  - [Reddit Source](https://www.reddit.com/r/CryptoCurrency/comments/c7bw1h/question_what_is_someone_sends_me_stolen_funds/)
 
 ## General Fungibility Issues
 
