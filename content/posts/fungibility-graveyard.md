@@ -77,14 +77,28 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - A user is worried about accepting donations from unknown sources because of a lack of fungibility:
   - [Reddit Source](https://www.reddit.com/r/CryptoCurrency/comments/c7bw1h/question_what_is_someone_sends_me_stolen_funds/)
 
-## General Fungibility Issues
+## Compliant Mining and "Virgin" Bitcoin
 
+- Marathon Digital Holdings Inc. launches a mining pool "that is fully compliant with U.S. regulations, including anti-money laundering (AML) and the Office of Foreign Asset Control’s (OFAC’s) standards":
+  - "We believe that such regulatory compliant mining will allow us to produce ‘clean’ Bitcoin."
+  - "On May 1, 2020, Marathon will begin directing 100% of its hashrate to the new mining pool."
+  - "[Will] be the seventh largest bitcoin mining pool in the world."
+  - [News Source](https://finance.yahoo.com/news/marathon-digital-holdings-launch-first-200000064.html?guccounter=1)
+  - [News Source](https://cointelegraph.com/news/the-blacklist-marathon-only-mining-fully-compliant-bitcoin-transactions)
+- Blockseer launches compliant Bitcoin mining pool that only mines approved and filtered transactions:
+  - "Blocks posted to the Bitcoin blockchain by Blockseer’s pool will only contain filtered transactions using Blockseer and Walletscore’s labeling data, along with verified sources such as the United States OFAC blacklist for crypto."
+  - [News Source](http://www.globenewswire.com/news-release/2020/10/29/2117008/0/en/DMG-s-subsidiary-Blockseer-Launches-Bitcoin-Mining-Pool-Focused-on-Good-Governance-Auditability-and-OFAC-Compliance.html)
 - Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
   - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/) [^1]
+- Bitcoin mined in China or via fossil fuels are not acceptable to institutional investors:
+  - "If you don’t want to own China coin—also being called ‘blood coin’, which sounds like blood diamonds—you’re going to prove where your coin is born."
+  - [News Source](https://decrypt.co/62850/institutions-china-bitcoin-kevin-oleary)  
+  - [News Source](https://www.coindesk.com/shark-tank-kevin-oleary-bitcoin-mining)
+
+## General Fungibility Issues
+
 - A user's account is flagged after withdrawing from BlockFi to a peer-to-peer exchange:
   - [Reddit Source](https://www.reddit.com/r/Monero/comments/mcxwhp/a_mail_from_block_fi/)
-- Multiple mining pools start actively censoring transactions deemed illicit:
-  - [Twitter Source](https://twitter.com/fluffypony/status/1326594121797087238?s=20)
 
 [^1]: I have not been able to find a concrete source confirming this beyond rumour. I will do more research on this before removing it or this comment.
 
