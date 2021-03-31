@@ -88,12 +88,12 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - Blockseer launches compliant Bitcoin mining pool that only mines approved and filtered transactions:
   - "Blocks posted to the Bitcoin blockchain by Blockseer’s pool will only contain filtered transactions using Blockseer and Walletscore’s labeling data, along with verified sources such as the United States OFAC blacklist for crypto."
   - [News Source](http://www.globenewswire.com/news-release/2020/10/29/2117008/0/en/DMG-s-subsidiary-Blockseer-Launches-Bitcoin-Mining-Pool-Focused-on-Good-Governance-Auditability-and-OFAC-Compliance.html)
-- Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
-  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/) [^1]
 - Bitcoin mined in China or via fossil fuels are not acceptable to institutional investors:
   - "If you don’t want to own China coin—also being called ‘blood coin’, which sounds like blood diamonds—you’re going to prove where your coin is born."
   - [News Source](https://decrypt.co/62850/institutions-china-bitcoin-kevin-oleary)  
   - [News Source](https://www.coindesk.com/shark-tank-kevin-oleary-bitcoin-mining)
+- Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
+  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/) [^1]
 
 ## General Fungibility Issues
 
