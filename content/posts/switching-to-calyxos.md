@@ -272,7 +272,7 @@ MPV Android is a great and simple FOSS player available via Github: https://gith
 
 I have switched to using this instead of VLC while some bugs I have found and reported are fixed, and it's served my needs well.
 
-## Waze for maps and navigation
+## Magic Earth for maps and navigation
 
 #### Why I like it
 
