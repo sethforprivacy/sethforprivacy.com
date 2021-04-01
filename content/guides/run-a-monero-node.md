@@ -126,7 +126,7 @@ sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
-    monerod
+    monerod tor
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/ public RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
@@ -135,7 +135,7 @@ sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
-    monerod
+    monerod tor
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -144,7 +144,7 @@ sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
-    monerod
+    monerod tor
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -153,7 +153,7 @@ sudo docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
-    monerod
+    monerod tor
 {{< /code >}}
 
 To watch the logs for `monerod`, simply run:
@@ -248,44 +248,20 @@ A good central site with a lot of guides for specific routers can be found at [p
 # Using anonymity networks
 
 ## Tor
-**NOTE: This section will be updated soon with a Dockerized way to perform the same steps, but feel free to follow these in the meantime.**
 
 If you would like to also expose your RPC port over Tor as a Hidden Service, follow these few commands and you're all set. This allows you to access your RPC port entirely over Tor without ever even needing to go through exit nodes.
 
-### Install Tor
+### Run a Tor Docker container
 
 ```bash
-# Install the Tor daemon
-sudo apt-get install tor
-
-# Enable Tor to start on boot
-sudo systemctl enable tor
+docker run -d --restart unless-stopped --link monerod:monerod --name tor --volume tor-keys:/var/lib/tor/hidden_service/ goldy/tor-hidden-service
 ```
 
-### Create the necessary directory
+### Get the HiddenService address
 
 ```bash
-sudo mkdir /var/lib/tor/hidden_service
-sudo chown debian-tor:debian-tor /var/lib/tor/hidden_service
+docker exec -ti tor onions
 ```
-
-### Edit the torrc configuration file
-
-```bash
-# Add configuration lines to /etc/tor/torrc to enable the HiddenService for restricted RPC
-echo "## Tor Monero RPC HiddenService
-HiddenServiceDir /var/lib/tor/hidden_service/monero-rpc
-HiddenServicePort 18089 127.0.0.1:18089" | sudo tee -a /etc/tor/torrc
-```
-
-### Restart Tor and get the HiddenService address
-
-```bash
-sudo systemctl restart tor
-sudo cat /var/lib/tor/hidden_service/monero-rpc/hostname
-```
-
-The string that gets output from the last command is your new Monero RPC Hidden Service, and remember to use port `18089` when connecting to it, still!
 
 *Note: To test connectivity, simply visit `http://replacewithnewonionaddress:18089/get_info` in the Tor browser and make sure you get a block of text back.*
 
