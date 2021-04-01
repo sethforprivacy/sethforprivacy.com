@@ -75,13 +75,19 @@ Also available as Tor HiddenServices at:
 I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
 
 [Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
-[Source Repository](https://github.com/sethsimmons/simple-monerod-docker)
 
 ### Tor Relay/Guard Nodes
 
 I also host a Tor relay/guard node, available at the below address:
 
 `tor-1.sethsimmons.me:443`
+
+### Github Repositories
+
+* [simple-monerod-docker](https://github.com/sethsimmons/simple-monerod-docker)
+  * A simple and straightforward Dockerized monerod built from source and exposing standard ports.
+* [self-hosted-services](https://github.com/sethsimmons/self-hosted-services)
+  * A core set of privacy-preserving services that can be easily self-hosted via Docker Compose.
 
 ## Donations
 
