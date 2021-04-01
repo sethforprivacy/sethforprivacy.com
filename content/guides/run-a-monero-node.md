@@ -77,6 +77,7 @@ Then install Docker:
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
+sudo usermod -aG docker $USER
 ```
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
@@ -121,8 +122,8 @@ If you would like to inspect the source code behind the image used here or build
 *Note: My recommended commands are automatically expanded below, but feel free to choose one of the other 3 options as needed.*
 
 {{< code language="bash" title="monerod Docker w/o public RPC" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
-sudo docker run -d \
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
+docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
@@ -130,8 +131,8 @@ sudo docker run -d \
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/ public RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
-sudo docker run -d \
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
+docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
@@ -139,8 +140,8 @@ sudo docker run -d \
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
-sudo docker run -d \
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
@@ -148,8 +149,8 @@ sudo docker run -d \
 {{< /code >}}
 
 {{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
-sudo docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
-sudo docker run -d \
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
@@ -159,7 +160,7 @@ sudo docker run -d \
 To watch the logs for `monerod`, simply run:
 
 ```bash
-sudo docker logs --follow monerod
+docker logs --follow monerod
 ```
 
 # Updating your Monero node
@@ -230,14 +231,14 @@ Commands:
   version
 {{< /code >}}
 
-When you want to run a command, simply run `sudo docker exec monerod /usr/local/bin/monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
+When you want to run a command, simply run `docker exec monerod /usr/local/bin/monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
 
 A few of my most commonly used commands are:
 
-- `sudo docker exec monerod /usr/local/bin/monerod status`: get a short output on the status of `monerod`, including peer counts (both out and in), block height, sync status, and version
-- `sudo docker exec monerod /usr/local/bin/monerod sync_info`: print a list of peers with info on their status and what syncing your node is doing with them
-- `sudo docker exec monerod /usr/local/bin/monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
-- `sudo docker exec monerod /usr/local/bin/monerod update check`: check if an updated version of `monerod` has been released
+- `docker exec monerod /usr/local/bin/monerod status`: get a short output on the status of `monerod`, including peer counts (both out and in), block height, sync status, and version
+- `docker exec monerod /usr/local/bin/monerod sync_info`: print a list of peers with info on their status and what syncing your node is doing with them
+- `docker exec monerod /usr/local/bin/monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
+- `docker exec monerod /usr/local/bin/monerod update check`: check if an updated version of `monerod` has been released
 
 # Port forwarding
 
