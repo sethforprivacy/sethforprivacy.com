@@ -102,6 +102,12 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 [^1]: I have not been able to find a concrete source confirming this beyond rumour. I will do more research on this before removing it or this comment.
 
+# Additional Reading on Fungibility
+
+- ["How could regulators successfully introduce Bitcoin censorship and other dystopias"](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/amp/)
+- ["Bitcoin censorship will most likely come, pt 2"](https://juraj.bednar.io/en/blog-en/2020/11/18/bitcoin-censorship-will-most-likely-come-pt-2/)
+- [Bitcoin’s Attack Vectors: Fungibility](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)
+
 # Something Missing?
 
 If you've noticed an instance of fungibility causing issues in the real world with Bitcoin, please feel free to reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
