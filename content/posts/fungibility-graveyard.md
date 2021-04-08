@@ -99,6 +99,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 - A user's account is flagged after withdrawing from BlockFi to a peer-to-peer exchange:
   - [Reddit Source](https://www.reddit.com/r/Monero/comments/mcxwhp/a_mail_from_block_fi/)
+- Luke Dashjr, Bitcoin core developer, blocks gambling sites as "spam" in a Bitcoin implementation:
+  - [News Source](https://www.coindesk.com/blacklist-debate-ok-meddle-bitcoins-code)
 
 [^1]: I have not been able to find a concrete source confirming this beyond rumour. I will do more research on this before removing it or this comment.
 
@@ -107,6 +109,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - ["How could regulators successfully introduce Bitcoin censorship and other dystopias"](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/amp/)
 - ["Bitcoin censorship will most likely come, pt 2"](https://juraj.bednar.io/en/blog-en/2020/11/18/bitcoin-censorship-will-most-likely-come-pt-2/)
 - [Bitcoin’s Attack Vectors: Fungibility](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)
+- [What is fungibility and why does it matter?](https://monero.stackexchange.com/questions/1967/what-is-fungibility-and-why-does-it-matter)
+- [Fungibility - Moneropedia](https://web.getmonero.org/resources/moneropedia/fungibility.html)
 
 # Something Missing?
 
