@@ -25,6 +25,10 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://ccs.getmonero.org/funding-required/>
 - Feather, a Tor-native Monero desktop wallet:  
   - <https://featherwallet.org/faq/#how-can-i-support-the-development-of-feather>
+- Cake Wallet, a mobile Monero wallet for both iOS and Android:  
+  - <https://cakewallet.com/>
+- Monerujo, a mobile Monero wallet for Android:  
+  - <https://www.monerujo.io/index.html#support>
 - Haveno, a Monero-first decentralized exchange:  
   - <https://github.com/haveno-dex/haveno#support>
 
@@ -36,6 +40,8 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://www.whonix.org/wiki/Donate>
 - Tor, a privacy-preserving network protocol and multi-platform browser:  
   - <https://donate.torproject.org/cryptocurrency/>
+- i2p, a privacy-preserving network protocol:  
+  - <https://geti2p.net/en/get-involved/donate>
 - Nitter, a privacy-preserving Twitter front-end:  
   - <https://github.com/zedeus/nitter>
 - Teddit, a privacy-preserving Reddit front-end:  
@@ -45,8 +51,12 @@ Donating in Monero not only is a great use-case for private, fungible money like
 
 # Mobile OSs and Applications
 
-- GrapheneOS, a privacy-preserving and hardend Android OS[^1]:  
+- GrapheneOS, a privacy-preserving and hardened Android OS[^1]:  
   - <https://grapheneos.org/donate#monero>
+- FairEmail, a privacy-preserving Android email app[^1]:  
+  - <https://email.faircode.eu/donate/>
+- PCAPdroid, an open-source network monitoring and capture tool[^1]:  
+  - <https://emanuele-f.github.io/PCAPdroid/donate>
 
 # Pro-privacy Organizations
 
