@@ -45,25 +45,25 @@ Donating in Monero not only is a great use-case for private, fungible money like
 
 # Mobile OSs and Applications
 
-- GrapheneOS, a privacy-preserving and hardend Android OS [^1]:  
+- GrapheneOS, a privacy-preserving and hardend Android OS[^1]:  
   - <https://grapheneos.org/donate#monero>
 
 # Pro-privacy Organizations
 
 - Techlore, a privacy advocacy and guidance organization that works to simplify and clarify the privacy journey:  
   - <https://techlore.tech/support.html>
-- Open Privacy Research Society [^1]:  
+- Open Privacy Research Society[^1]:  
   - <https://openprivacy.ca/donate/#donatecrypto>
-- Riseup, a privacy-centric non-profit building and running secure means of communication [^1]:  
+- Riseup, a privacy-centric non-profit building and running secure means of communication[^1]:  
   - <https://riseup.net/donate>
 - Calyx, a privacy-centric non-profit that builds CalyxOS, my current mobile OS (coming soon):  
   - <https://calyxinstitute.org/>
 
 # Others
 
-- FOSSHub, a FOSS-centric software download hub [^1]:  
+- FOSSHub, a FOSS-centric software download hub[^1]:  
   - <https://www.fosshub.com/crypto.html>
-- VideoLAN, makers of VLC Player [^1]:  
+- VideoLAN, makers of VLC Player[^1]:  
   - <https://www.videolan.org/contribute.html>
 
 [^1]: These projects or organizations have not been used/vetted by myself personally, but have come recommended by followers or Monero community members.
