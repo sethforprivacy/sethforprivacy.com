@@ -60,7 +60,7 @@ Each node can expose two different services, each of which has a positive impact
 
 In this guide I have only given configuration files and Docker commands that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arg listed below if you'd also like to advertise your restricted RPC port.
 
-You can choose to either deploy `monerod` [as a Docker container](run-a-monero-node.md) or setup a node via systemd and using "official" binaries below.
+You can choose to either deploy `monerod` [as a Docker container]({{< ref "/content/guides/run-a-monero-node.md" >}}) or setup a node via systemd and using "official" binaries below.
 
 *Note: If you'd like to build from source instead of downloading and verifying binaries, please checkout the [great gist from tannerdsilva](https://gist.github.com/tannerdsilva/071100b6b7f5e2903b2c4ba232bccd68).*
 
