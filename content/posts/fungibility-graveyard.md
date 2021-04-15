@@ -29,6 +29,8 @@ This concern isn't only a fun thought exercise, unfortunately, as users of Bitco
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
+***Current confirmed cases: 24***
+
 ## Wasabi
 
 - A user's Binance SGD account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
@@ -74,8 +76,12 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source](https://twitter.com/sethisimmons/status/1370721319680155651)
 - Multiple user's exchange accounts are closed after making a donation to a dark-net researcher:
   - [Twitter Source](https://twitter.com/DarkDotFail/status/1359243753664303104)
+- A user's account is closed by LocalBitcoins after sending funds directly to a DNM:  
+  - [Reddit Source](https://www.reddit.com/r/darknet/comments/mrjd99/local_bitcoin_website_terminated_my_account_after/)
 - A user is worried about accepting donations from unknown sources because of a lack of fungibility:
   - [Reddit Source](https://www.reddit.com/r/CryptoCurrency/comments/c7bw1h/question_what_is_someone_sends_me_stolen_funds/)
+- 28 cryptocurrency addresses (including Bitcoin) are sanctioned due to alleged use to fund Russian operations:  
+  - [Government Source](https://archive.ph/IqnrX)
 
 ## Compliant Mining and "Virgin" Bitcoin
 
@@ -92,8 +98,9 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - "If you don’t want to own China coin—also being called ‘blood coin’, which sounds like blood diamonds—you’re going to prove where your coin is born."
   - [News Source](https://decrypt.co/62850/institutions-china-bitcoin-kevin-oleary)  
   - [News Source](https://www.coindesk.com/shark-tank-kevin-oleary-bitcoin-mining)
-- Freshly mined bitcoin fetches a 20% premium from large buyers, as this is the only bitcoin available without taint or history:
-  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/) [^1]
+- Freshly mined bitcoin fetches a 20% (or "very large") premium from large buyers, as this is the only bitcoin available without taint or history:
+  - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/)
+  - [Confirmation Source](https://www.youtube.com/watch?v=WcXp17fjcT8&t=2223s)
 
 ## General Fungibility Issues
 
@@ -101,8 +108,6 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Reddit Source](https://www.reddit.com/r/Monero/comments/mcxwhp/a_mail_from_block_fi/)
 - Luke Dashjr, Bitcoin core developer, blocks gambling sites as "spam" in a Bitcoin implementation:
   - [News Source](https://www.coindesk.com/blacklist-debate-ok-meddle-bitcoins-code)
-
-[^1]: I have not been able to find a concrete source confirming this beyond rumour. I will do more research on this before removing it or this comment.
 
 # Additional Reading on Fungibility
 
