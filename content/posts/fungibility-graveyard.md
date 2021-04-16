@@ -87,7 +87,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 - Marathon Digital Holdings Inc. launches a mining pool "that is fully compliant with U.S. regulations, including anti-money laundering (AML) and the Office of Foreign Asset Control’s (OFAC’s) standards":
   - "We believe that such regulatory compliant mining will allow us to produce ‘clean’ Bitcoin."
-  - "On May 1, 2020, Marathon will begin directing 100% of its hashrate to the new mining pool."
+  - "On May 1, 2021, Marathon will begin directing 100% of its hashrate to the new mining pool."
+  - "By 2022, Marathon expects to have deployed 103,120 miners to direct 10.37 exahashes per second, or EH/s, to the mining pool — equal to roughly 6.4% of the Bitcoin network’s current combined hash rate."
   - "[Will] be the seventh largest bitcoin mining pool in the world."
   - [News Source](https://finance.yahoo.com/news/marathon-digital-holdings-launch-first-200000064.html?guccounter=1)
   - [News Source](https://cointelegraph.com/news/the-blacklist-marathon-only-mining-fully-compliant-bitcoin-transactions)
