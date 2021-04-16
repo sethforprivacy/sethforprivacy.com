@@ -48,6 +48,8 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://codeberg.org/teddit/teddit>
 - Yotter, a privacy-preserving YouTube and Twitter front-end:
   - <https://github.com/pluja/pluja/blob/main/SUPPORT.md>
+- The Hitchhiker’s Guide to Online Anonymity[^1]:  
+  - <https://anonymousplanet.org/donations.html>
 
 # Mobile OSs and Applications
 
@@ -68,6 +70,8 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://riseup.net/donate>
 - Calyx, a privacy-centric non-profit that builds CalyxOS, my current mobile OS (coming soon):  
   - <https://calyxinstitute.org/>
+- PrivacyTools.io, a privacy-oriented community and service provider:  
+  - <https://privacytools.io/donate/>
 
 # Others
 
