@@ -80,6 +80,8 @@ The Tor browser is the browser I would recommend people use for everyday browsin
 communicate without revealing data to any intermediaries. While not perfect, it's a great first step to get people on 
 the journey towards better online privacy, and I use it daily.
 
+**NOTE: Signal has chosen to integrate a pre-mined and suspicious cryptocurrency into their platform, raising many concerns over leadership and financial vulnerability to governments and regulators. For more context, see my two Twitter threads [here](https://twitter.com/sethisimmons/status/1379791201558278144?s=21) and [here](https://twitter.com/sethisimmons/status/1382107861082386434?s=21).**
+
 ### Element/Matrix
 
 [Element](https://element.io/) is an open-source cross-platform application for accessing the Matrix decentralized chat protocol. While there are other clients available, I've enjoyed the Element client on both desktop and mobile.
