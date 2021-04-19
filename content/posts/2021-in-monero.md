@@ -22,14 +22,14 @@ draft = true
 ***04/2019 through 04/2020:***
 
 - Monero usage grew from ~7,000tx per day to ~10,000tx per day
-- There were ***2,811,244*** total transactions, for an average of ***7702.03*** transactions per day for the year.
+- There were ***2,811,244*** total transactions, for an average of ***7,702.03*** transactions per day for the year.
 
 {{< figure src="/monero-6y-transactions.png" position="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
 - Monero usage grew from ~10,000tx per day to ~23,000tx per day
-- There were ***5,868,096*** total transactions, for an average of ***16076.97*** transactions per day for the year
+- There were ***5,868,096*** total transactions, for an average of ***16,076.97*** transactions per day for the year
 
 {{< figure src="/monero-7y-transactions.png" position="center" style="border-radius: 8px;" >}}
 
@@ -57,30 +57,85 @@ Monero's on-chain usage grew ***208%*** YoY!
 
 ### Year over Year Growth
 
-Monero's blockchain size grew ***180%*** YoY.
+Monero's blockchain size grew ***180%*** YoY and the average transaction size dropped ***13.76%*** YoY!
 
 ## Emissions
 
+***04/2019 through 04/2020:***
+
+- Monero's block subsidy (emission) created 599,105.65XMR.
+- There were ***292,651*** total blocks, for an average block subsidy of ***2.04XMR*** per block for the year.
+- Monero's emission per day dropped from ***~2,000XMR*** to ***~1,200XMR*** over the course of the year.
+
 {{< figure src="/monero-6y-emissions.png" position="center" style="border-radius: 8px;" >}}
+
+***04/2020 through 04/2021:***
+
+- Monero's block subsidy (emission) created ***362,406.83XMR***.
+- There were ***262,588*** total blocks, for an average block subsidy of ***1.38XMR*** per block for the year.
+- Monero's emission per day dropped from ***~1,200XMR*** to ***~750XMR*** over the course of the year.
 
 {{< figure src="/monero-7y-emissions.png" position="center" style="border-radius: 8px;" >}}
 
+### Year over Year Change
+
+Monero's emissions decreased ***39.5%*** YoY!
+
+## Fee Changes
+
+***04/2019 through 04/2020:***
+
+- Monero's participants spent ***1,101.07XMR*** on fees in a year.
+- Monero averaged ***3.016XMR*** in fees spent per day.
+- There were ***262,651*** total blocks, for an average total fees to miners of ***0.00419288XMR*** per block for the year.
+- There were ***2,811,244*** total transactions, for an average of ***0.000391666XMR*** per transaction.
+
+{{< figure src="/monero-6y-fees.png" position="center" style="border-radius: 8px;" >}}
+
+***04/2020 through 04/2021:***
+
+- Monero's participants spent ***1,884.77XMR*** on fees in a year.
+- Monero averaged ***5.16XMR*** in fees spent per day.
+- There were ***262,588*** total blocks, for an average total fees to miners of ***0.00717767XMR*** per block for the year.
+- There were ***5,868,096*** total transactions, for an average of ***0.000321189XMR*** per transaction.
+
+{{< figure src="/monero-7y-fees.png" position="center" style="border-radius: 8px;" >}}
+
+### Year over Year Growth
+
+Monero's blockchain size grew ***180%*** YoY and the average transaction size dropped ***13.76%*** YoY!
+
 ## Reddit
 
-2020 -- 157 - 168k
-2021 -- 168k - 211k
+***04/2019 through 04/2020:***
+
+- Monero's main subreddit, [r/Monero](https://www.reddit.com/r/Monero) gained ***~11,000*** subscribers, going from ***~157,000*** to ***~168,000*** subscribers over the year.
+
+{{< figure src="/subreddit_2020.png" position="center" style="border-radius: 8px;" >}}
+
+***04/2020 through 04/2021:***
+
+- Monero's main subreddit, [r/Monero](https://www.reddit.com/r/Monero) gained ***~43,000*** subscribers, going from ***~168,000*** to ***~211,000*** subscribers over the year.
+
+{{< figure src="/subreddit_2021.png" position="center" style="border-radius: 8px;" >}}
+
+### Year over Year Growth
+
+Monero's subreddit subscriber count grew ***25.59%*** YoY and grew ***290%*** faster than the previous year!
 
 ## Twitter
 
-2020 -- 3510 followers gained
-2021 -- 69148 followers gained
+***04/2019 through 04/2020:***
 
-## Price
+- Monero's main Twitter account, [@monero](https://twitter.com/monero) gained ***3,510*** followers.
 
-2020 -- 69.07 - 58.18
-2021 -- 58.18 - 312
+***04/2020 through 04/2021:***
 
-## Volume
+- Monero's main subreddit, [@monero](https://twitter.com/monero) gained ***69,148*** followers.
+
+### Year over Year Growth
+
+Monero's Twitter follower count grew ***%*** YoY and grew ***1870%*** faster than the previous year!
 
 # Top Reddit Posts
 
