@@ -46,7 +46,7 @@ Each section will highlight the previous year (04/2019 through 04/2020) as well 
 
 ### Year over Year Growth
 
-Monero's on-chain usage via private-by-default transactions that protect sender, receiver, and amounts, grew ***208%*** YoY!
+Monero's on-chain usage grew ***208%*** YoY! Every one of these transactions was done via private-by-default transactions that protect sender, receiver, and amounts.
 
 ## Blockchain Growth
 
@@ -243,3 +243,14 @@ Monero's Twitter follower count grew ***21.63%*** YoY and grew ***1,870%*** fast
 # Something Missing?
 
 If you see something missing from this post that was a major highlight of the year, please feel free to reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
+
+# Resources Used
+
+Here is a quick list of the sources and tools I used to gather these statistics:
+
+- `monero-blockchain-stats`, using some hints from the following link for plotting:
+  - <https://github.com/monero-project/monero/pull/4694>
+- [Gnuplot](https://www.gnuplot.info/) for the graphs from data pulled via `monero-blockchain-stats`
+- <https://miningpoolstats.stream/monero> for hashrate graph and current miner count
+- <https://subredditstats.com/r/monero> for subreddit-related statistics and graphs
+- <https://github.com/oduwsdl/FollowerCountHistory> for Twitter follower count history for @monero
