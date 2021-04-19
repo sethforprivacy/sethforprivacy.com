@@ -116,6 +116,29 @@ Monero's inflation decreased ***39.5%*** YoY and is steadily approaching the [ta
 
 Monero's fees spent increased ***71.11%*** YoY while the average transaction fee dropped ***17.99%*** YoY (thanks, [CLSAG](https://www.getmonero.org/resources/moneropedia/clsag.html))!
 
+## Mining
+
+***12/2019 through 04/2020:***
+
+*NOTE: This time range begins with the implementation of RandomX in the November 30th, 2019 network upgrade.*
+
+- Monero's network hashrate increased from ***0.682GH/s*** to ***1.21GH/s*** over the year.
+- Monero forked to the ASIC-resistant mining algorithm known as [RandomX](https://www.monerooutreach.org/stories/RandomX.html?ref=hackernoon.com).
+- Monero started after the RandomX upgrade with ***~40,000 miners***.
+
+{{< figure src="/monero-hashrate-2020.png" position="center" style="border-radius: 8px;" >}}
+
+***04/2020 through 04/2021:***
+
+- Monero's network hashrate increased from ***1.21GH/s*** to ***2.29GH/s*** over the year.
+- Monero broke ***100,000 miners*** for the first time in it's network history.
+
+{{< figure src="/monero-hashrate-2021.png" position="center" style="border-radius: 8px;" >}}
+
+### Year over Year Growth
+
+Monero's network hashrate increased ***89.25%*** YoY and network miners increased ***~150%*** since the introduction of RandomX!
+
 ## Reddit
 
 ***04/2019 through 04/2020:***
