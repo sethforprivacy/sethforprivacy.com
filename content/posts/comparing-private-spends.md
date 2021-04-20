@@ -209,11 +209,11 @@ Bitcoin-weighted TPS when comparing "reasonably private" spends across the three
 Note that Zcash technically supports the highest TPS at the default block sizes, but combining their very quick block 
 times with full blocks would lead to difficulties for nodes and a quickly growing blockchain.
 
-| Cryptocurrency | Block Time | Block Size Limit | Max TPS/10min | Max TPS/10min weighted to Bitcoin block size | Chain Growth / day weighted to Bitcoin TX load |  
+| Cryptocurrency | Block Time | Block Size Limit | Max TPS/10min | Max TPS/10min weighted to Bitcoin block size | Chain growth weighted to Bitcoin TX count |  
 | ---| --- | --- | --- | --- | --- |    
-| Bitcoin | 10min | legacy of 1MB, SegWit of 4MB | ~2,750 (with SegWit) | ~2,750 (with SegWit) | 0.77GB |  
-| Monero  | 2min | Initial median of 300KB, hard cap of 2x median | ~2,150 | ~2,900 (with SegWit) | 0.46GB |  
-| Zcash   | 1.25min | 2MB | ~6,900 | ~1,725 (with SegWit) | 0.77GB |  
+| Bitcoin | 10min | legacy of 1MB, SegWit of 4MB | ~2,750 (with SegWit) | ~2,750 (with SegWit) | 0.77GB/d |  
+| Monero  | 2min | Initial median of 300KB, hard cap of 2x median | ~2,150 | ~2,900 (with SegWit) | 0.46GB/d |  
+| Zcash   | 1.25min | 2MB | ~6,900 | ~1,725 (with SegWit) | 0.77GB/d |  
 
 ## Conclusion  
 
