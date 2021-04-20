@@ -122,24 +122,27 @@ Monero's fees spent increased ***71.11%*** YoY while the average transaction fee
 
 *NOTE: This time range begins with the implementation of RandomX in the November 30th, 2019 network upgrade.*
 
+
 - Monero's network hashrate increased from ***0.682GH/s*** to ***1.21GH/s*** over the year.
 - Monero forked to the ASIC-resistant mining algorithm known as [RandomX](https://www.monerooutreach.org/stories/RandomX.html?ref=hackernoon.com).
-- Monero started after the RandomX upgrade with ***~27,000 miners***.
-- Monero unique miners increased from ***27,247*** to ***37,380*** over the year.
+- Monero started after the RandomX upgrade with ***~27,000 miners***[^1].
+- Monero unique miners increased from ***27,247***[^1] to ***37,380***[^1] over the year.
 
 {{< figure src="/monero-hashrate-2020.png" position="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
 - Monero's network hashrate increased from ***1.21GH/s*** to ***2.29GH/s*** over the year.
-- Monero broke ***100,000 miners*** for the first time in it's network history!
-- Monero unique miners increased from ***37,380*** to ***102,163*** over the year.
+- Monero broke ***100,000 miners***[^1] for the first time in it's network history!
+- Monero unique miners increased from ***37,380***[^1] to ***102,163***[^1] over the year.
 
 {{< figure src="/monero-hashrate-2021.png" position="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Growth
 
 Monero's network hashrate increased ***89.25%*** YoY and network miners increased ***173.30%*** YoY and ***274.95%*** since the introduction of RandomX!
+
+[^1]: These miner numbers are the lower bound, as they are the numbers visible via API of public pools where the API is reachable and provides miner count. There are likely many more miners that are solo, use private pools, or are on pools that do not expose miner count.
 
 ## Reddit
 
