@@ -69,7 +69,7 @@ First we need to install a few tools we will need later:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y ufw
+sudo apt-get install -y ufw curl
 ```
 
 Then install Docker:
@@ -78,6 +78,7 @@ Then install Docker:
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
+su - $USER
 ```
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
