@@ -483,6 +483,10 @@ server {
     add_header X-Content-Type-Options "nosniff";
     add_header X-XSS-Protection "1; mode=block";
 
+    # Privacy headers
+    add_header Referrer-Policy "no-referrer";
+    add_header Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), speaker=(), usb=(), vibrate=(), sync-xhr=()";
+
     location / {
 
     try_files $uri $uri/ =404;
@@ -550,6 +554,10 @@ server {
     # Security headers
     add_header X-Content-Type-Options "nosniff";
     add_header X-XSS-Protection "1; mode=block";
+
+    # Privacy headers
+    add_header Referrer-Policy "no-referrer";
+    add_header Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), speaker=(), usb=(), vibrate=(), sync-xhr=()";
 
     error_page   404  =  404.html;
 
