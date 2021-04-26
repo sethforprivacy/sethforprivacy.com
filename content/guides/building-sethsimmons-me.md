@@ -474,6 +474,15 @@ server {
     root /var/www/sethsimmons.me/tor/;
     index index.html;
     error_page 404 = /404.html;
+
+    # Block site from being framed with X-Frame-Options and CSP
+    add_header Content-Security-Policy "frame-ancestors 'none'; default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; form-action 'none'; base-uri 'none'";
+    add_header X-Frame-Options "DENY";
+
+    # Security headers
+    add_header X-Content-Type-Options "nosniff";
+    add_header X-XSS-Protection "1; mode=block";
+
     location / {
 
     try_files $uri $uri/ =404;
@@ -533,6 +542,14 @@ server {
     # HSTS (ngx_http_headers_module is required) (63072000 seconds)
     add_header Strict-Transport-Security "max-age=63072000" always;
     add_header Onion-Location http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion$request_uri;
+
+    # Block site from being framed with X-Frame-Options and CSP
+    add_header Content-Security-Policy "frame-ancestors 'none'; default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; form-action 'none'; base-uri 'none'";
+    add_header X-Frame-Options "DENY";
+
+    # Security headers
+    add_header X-Content-Type-Options "nosniff";
+    add_header X-XSS-Protection "1; mode=block";
 
     error_page   404  =  404.html;
 

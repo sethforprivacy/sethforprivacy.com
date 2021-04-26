@@ -17,7 +17,7 @@ late and will be focusing my posts on those two topics.
 
 ## How To Contact Me  
 
-[Twitter - @sethisimmons](https://twitter.com/sethisimmons)  
+[Twitter - @sethforprivacy](https://twitter.com/sethforprivacy)  
 [Matrix - @sethsimmons](https://matrix.to/#/@sethsimmons:monero.social)  
 [Email - sethsimmons@pm.me](mailto:sethsimmons@pm.me)  
 
