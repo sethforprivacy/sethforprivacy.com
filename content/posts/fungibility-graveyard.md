@@ -102,6 +102,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - Freshly mined bitcoin fetches a 20% (or "very large") premium from large buyers, as this is the only bitcoin available without taint or history:
   - [News Source](https://news.bitcoin.com/industry-execs-freshly-minted-virgin-bitcoins/)
   - [Confirmation Source](https://www.youtube.com/watch?v=WcXp17fjcT8&t=2223s)
+- Only "virgin" Bitcoin mined by state-sanctioned miners can be used to pay for imports in Iran:  
+  - [News Source](https://bitcoinmagazine.com/culture/iran-using-cryptocurrency-for-imports)
 
 ## General Fungibility Issues
 
