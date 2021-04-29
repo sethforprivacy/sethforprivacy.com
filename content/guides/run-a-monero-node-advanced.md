@@ -540,14 +540,10 @@ Hopefully this guide simplified the process of setting up a remote node on a VPS
 I used the commands and info in this guide to kick off a few new remote nodes on Linode and Hetzner, feel free to utilize them for wallet sync, add them as priority peers, etc:
 
 `node-1.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
-`node-2.sethsimmons.me:18089` (high-performance node on Hetzner in Frankfurt, Germany)
-`node-3.sethsimmons.me:18089` (high-performance node on Hetzner in Helsinki, Finland)
 
 Also available as Tor HiddenServices at:
 
 `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
-`slvb7iuq6rwj4gjbbfwile5piamhnllwk3s5vqccn2hqvz2nmrkvpiid.onion:18089`  
-`wq7o3snkc65onqc3rjdoynnsve2z22aqs3gixdtaaayx4qhgbz74auqd.onion:18089` 
 
 Please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
