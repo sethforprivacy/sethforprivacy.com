@@ -2,6 +2,7 @@
 ### Hugo template
 # Generated files by hugo
 /public/
+/tor/
 /resources/_gen/
 
 # Executable may be added to repository
