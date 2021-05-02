@@ -11,3 +11,6 @@ hugo.linux
 
 /Hugo/
 sethsimmons.me.code-workspace
+/static/
+/content/
+/sethsimmons.me-content/
