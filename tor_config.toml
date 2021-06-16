@@ -15,7 +15,7 @@ enableGitInfo = true
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
+  showMenuItems = 6
 
   # show selector to switch language
   showLanguageSelector = false
@@ -81,6 +81,14 @@ enableGitInfo = true
         identifier = "privacytools"
         name = "Recommended Privacy Tools"
         url = "/about/#my-recommended-privacy-tools"
+      [[languages.en.menu.main]]
+        identifier = "rss"
+        name = "RSS Feed"
+        url = "/index.xml"
+      [[languages.en.menu.main]]
+        identifier = "podcast"
+        name = "Podcast"
+        url = "https://www.optoutpod.com/"
 
 [privacy]
   [privacy.disqus]
