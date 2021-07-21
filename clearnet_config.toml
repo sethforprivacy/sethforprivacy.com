@@ -1,6 +1,6 @@
-baseURL = "https://sethsimmons.me/"
+baseURL = "https://sethforprivacy.com/"
 languageCode = "en-us"
-title = "sethsimmons.me"
+title = "sethforprivacy.com"
 theme = "terminal"
 paginate = 5
 enableGitInfo = true
@@ -42,15 +42,15 @@ enableGitInfo = true
   # set Twitter handles for Twitter cards
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
-  creator = "sethisimmons"
-  site = "sethisimmons"
+  creator = "sethforprivacy"
+  site = "sethforprivacy"
 
 [languages]
   [languages.en]
     languageName = "English"
-    title = "sethsimmons.me"
+    title = "sethforprivacy.com"
     subtitle = "A simple blog about privacy, Monero, and me"
-    owner = "Seth Simmons"
+    owner = "Seth For Privacy"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -60,7 +60,7 @@ enableGitInfo = true
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "sethsimmons.me"
+      logoText = "sethforprivacy.com"
       logoHomeLink = "/"
 
     [languages.en.menu]
