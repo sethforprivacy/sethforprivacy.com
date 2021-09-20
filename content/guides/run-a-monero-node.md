@@ -118,7 +118,7 @@ An alternative Docker implementation is also available [on Github](https://githu
 If you would like to inspect the source code behind the image used here or build it yourself, please see the below links:
 
 [Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
-[Source Repository](https://github.com/sethsimmons/simple-monerod-docker)
+[Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)
 
 *Note: My recommended commands are automatically expanded below, but feel free to choose one of the other 3 options as needed.*
 

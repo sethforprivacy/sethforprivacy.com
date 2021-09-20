@@ -138,9 +138,9 @@ This allows us to simplify down the launch of `monerod` and `p2pool` down to a f
 If you would like to inspect the source code behind the image used here or build it yourself, please see the below links:
 
 [monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)  
-[monerod Source Repository](https://github.com/sethsimmons/simple-monerod-docker)  
+[monerod Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)  
 [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)  
-[p2pool Source Repository](https://github.com/sethsimmons/p2pool-docker)  
+[p2pool Source Repository](https://github.com/sethforprivacy/p2pool-docker)  
 
 1. Copy and paste the below configuration file wherever you would like on the VPS, for this guide I will use `~/p2pool`:
 

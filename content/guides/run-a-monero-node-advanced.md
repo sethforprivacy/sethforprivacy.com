@@ -140,7 +140,7 @@ sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
 sudo chown -R monero:monero /usr/local/bin/monero*
 ```
 
-[^2]: Full code from the gist can be found [on Github](https://gist.github.com/sethsimmons/ad5848767d9319520a6905b7111dc021).
+[^2]: Full code from the gist can be found [on Github](https://gist.github.com/sethforprivacy/ad5848767d9319520a6905b7111dc021).
 
 # Install monerod systemd script
 

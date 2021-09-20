@@ -159,11 +159,11 @@ I also host a Tor relay/guard node, available at the below address:
 
 ### Github Repositories
 
-* [simple-monerod-docker](https://github.com/sethsimmons/simple-monerod-docker)
+* [simple-monerod-docker](https://github.com/sethforprivacy/simple-monerod-docker)
   * A simple and straightforward Dockerized monerod built from source and exposing standard ports.
-* [self-hosted-services](https://github.com/sethsimmons/self-hosted-services)
+* [self-hosted-services](https://github.com/sethforprivacy/self-hosted-services)
   * A core set of privacy-preserving services that can be easily self-hosted via Docker Compose.
-* [sethforprivacy.com-content](https://github.com/sethsimmons/sethforprivacy.com-content)
+* [sethforprivacy.com-content](https://github.com/sethforprivacy/sethforprivacy.com-content)
   * The contents of this blog are published here and available to be changed, or for new posts/guides to be added via PRs.
 
 ## Donations
