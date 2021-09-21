@@ -151,73 +151,73 @@ If you would like to inspect the source code behind the image used here or build
     {{< code language="docker" title="docker-compose.yml" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
     version: '3.5'
     services:
-        monerod:
-            image: sethsimmons/simple-monerod:p2pool-api-v0.17
-            restart: unless-stopped
-            container_name: monerod
-            volumes:
-            - bitmonero:/home/monero
-            ports:
-            - 18080:18080
-            - 18083:18083
-            - 18089:18089
-            command:
-            - "--rpc-restricted-bind-ip=0.0.0.0"
-            - "--rpc-restricted-bind-port=18089"
-            - "--public-node"
-            - "--no-igd"
-            - "--enable-dns-blocklist"
-            - "--prune-blockchain"
-            - "--zmq-pub=tcp://0.0.0.0:18083"
-            - "--out-peers=50"
+      monerod:
+        image: sethsimmons/simple-monerod:p2pool-api-v0.17
+        restart: unless-stopped
+        container_name: monerod
+        volumes:
+          - bitmonero:/home/monero
+        ports:
+          - 18080:18080
+          - 18083:18083
+          - 18089:18089
+        command:
+          - "--rpc-restricted-bind-ip=0.0.0.0"
+          - "--rpc-restricted-bind-port=18089"
+          - "--public-node"
+          - "--no-igd"
+          - "--enable-dns-blocklist"
+          - "--prune-blockchain"
+          - "--zmq-pub=tcp://0.0.0.0:18083"
+          - "--out-peers=50"
         
-        p2pool:
-            image: sethsimmons/p2pool:latest
-            restart: unless-stopped
-            container_name: p2pool
-            tty: true
-            stdin_open: true
-            volumes:
-            - p2pool-data:/home/p2pool
-            - /dev/hugepages:/dev/hugepages:rw
-            ports:
-            - 3333:3333
-            - 37889:37889
-            command: >-
-            --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
-            --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
-            --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "monerod"
+      p2pool:
+        image: sethsimmons/p2pool:latest
+        restart: unless-stopped
+        container_name: p2pool
+        tty: true
+        stdin_open: true
+        volumes:
+          - p2pool-data:/home/p2pool
+          - /dev/hugepages:/dev/hugepages:rw
+        ports:
+          - 3333:3333
+          - 37889:37889
+        command: >-
+          --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
+          --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
+          --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "monerod"
 
-        tor:
-            image: goldy/tor-hidden-service:latest
-            container_name: tor
-            restart: unless-stopped
-            links:
-                - monerod
-                - p2pool
-            environment:
-                MONEROD_TOR_SERVICE_HOSTS: 18089:monerod:18089
-                MONEROD_TOR_SERVICE_VERSION: '3'
-                P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
-                P2POOL_TOR_SERVICE_VERSION: '3'
-            volumes:
-                - tor-keys:/var/lib/tor/hidden_service/
+      tor:
+        image: goldy/tor-hidden-service:latest
+        container_name: tor
+        restart: unless-stopped
+        links:
+          - monerod
+          - p2pool
+        environment:
+          MONEROD_TOR_SERVICE_HOSTS: 18089:monerod:18089
+          MONEROD_TOR_SERVICE_VERSION: '3'
+          P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
+          P2POOL_TOR_SERVICE_VERSION: '3'
+        volumes:
+          - tor-keys:/var/lib/tor/hidden_service/
 
-        autoheal:
-            image: willfarrell/autoheal:latest
-            container_name: autoheal
-            restart: unless-stopped
-            environment:
-                AUTOHEAL_CONTAINER_LABEL: all
-            volumes:
-                - "/var/run/docker.sock:/var/run/docker.sock"
+      autoheal:
+        image: willfarrell/autoheal:latest
+        container_name: autoheal
+        restart: unless-stopped
+        environment:
+          AUTOHEAL_CONTAINER_LABEL: all
+        volumes:
+          - "/var/run/docker.sock:/var/run/docker.sock"
 
-        watchtower:
-            image: containrrr/watchtower:latest
-            container_name: watchtower
-            restart: unless-stopped
-            volumes:
-                - "/var/run/docker.sock:/var/run/docker.sock"
+      watchtower:
+        image: containrrr/watchtower:latest
+        container_name: watchtower
+        restart: unless-stopped
+        volumes:
+          - "/var/run/docker.sock:/var/run/docker.sock"
 
     volumes:
         bitmonero:
