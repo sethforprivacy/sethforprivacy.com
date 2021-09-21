@@ -148,7 +148,7 @@ If you would like to inspect the source code behind the image used here or build
     vim ~/p2pool/docker-compose.yml
     ```
 
-    {{< code language="yaml" title="docker-compose.yml" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
+    ```yaml
     version: '3.5'
     services:
       monerod:
@@ -223,8 +223,7 @@ If you would like to inspect the source code behind the image used here or build
         bitmonero:
         tor-keys:
         p2pool-data:
-
-    {{< /code >}}
+    ```
 
     ***NOTE: Be sure to replace the Monero address (468y...b55R) with your own, or else you'll be making generous hashrate donations to me!***
 
