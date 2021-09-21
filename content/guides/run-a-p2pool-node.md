@@ -148,7 +148,7 @@ If you would like to inspect the source code behind the image used here or build
     vim ~/p2pool/docker-compose.yml
     ```
 
-    {{< code language="docker" title="docker-compose.yml" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
+    {{< code language="yaml" title="docker-compose.yml" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
     version: '3.5'
     services:
       monerod:
@@ -170,7 +170,7 @@ If you would like to inspect the source code behind the image used here or build
           - "--prune-blockchain"
           - "--zmq-pub=tcp://0.0.0.0:18083"
           - "--out-peers=50"
-        
+
       p2pool:
         image: sethsimmons/p2pool:latest
         restart: unless-stopped
