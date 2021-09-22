@@ -186,7 +186,7 @@ If you would like to inspect the source code behind the image used here or build
         command: >-
           --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
           --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
-          --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "monerod"
+          --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "monerod" --rpc-port "18089"
 
       tor:
         image: goldy/tor-hidden-service:latest
