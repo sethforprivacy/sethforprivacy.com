@@ -203,15 +203,6 @@ If you would like to inspect the source code behind the image used here or build
         volumes:
           - tor-keys:/var/lib/tor/hidden_service/
 
-      autoheal:
-        image: willfarrell/autoheal:latest
-        container_name: autoheal
-        restart: unless-stopped
-        environment:
-          AUTOHEAL_CONTAINER_LABEL: all
-        volumes:
-          - "/var/run/docker.sock:/var/run/docker.sock"
-
       watchtower:
         image: containrrr/watchtower:latest
         container_name: watchtower
