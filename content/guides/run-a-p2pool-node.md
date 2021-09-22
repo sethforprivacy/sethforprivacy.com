@@ -161,15 +161,10 @@ If you would like to inspect the source code behind the image used here or build
           - 18080:18080
           - 18083:18083
           - 18089:18089
-        command:
-          - "--rpc-restricted-bind-ip=0.0.0.0"
-          - "--rpc-restricted-bind-port=18089"
-          - "--public-node"
-          - "--no-igd"
-          - "--enable-dns-blocklist"
-          - "--prune-blockchain"
-          - "--zmq-pub=tcp://0.0.0.0:18083"
-          - "--out-peers=50"
+        command: >-
+          --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089
+          --public-node --no-igd --enable-dns-blocklist --prune-blockchain
+          --zmq-pub=tcp://0.0.0.0:18083 --in-peers=50 --out-peers=50
 
       p2pool:
         image: sethsimmons/p2pool:latest
