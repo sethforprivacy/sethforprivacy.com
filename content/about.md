@@ -105,11 +105,23 @@ I'm also going to work on spinnning up my own federated server for Matrix shortl
 
 ## My Community Resources
 
+### Status page for all of my community resources
+
+Go to <https://status.sethforprivacy.com> to see the uptime and any outages associated with the services that I run.
+
 ### Opt Out, a FOSS and privacy-focused podcast
 
 Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty.
 
 Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info, or the podcast's website at [optoutpod.com](https://www.optoutpod.com/).
+
+I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod.com>.
+
+### Privacy-preserving front-ends and tools
+
+- [Nitter](https://nitter.sethforprivacy.com)
+- [Teddit](https://teddit.sethforprivacy.com)
+- [Privatebin](https://paste.sethforprivacy.com)
 
 ### High-Performance Monero Nodes
 
