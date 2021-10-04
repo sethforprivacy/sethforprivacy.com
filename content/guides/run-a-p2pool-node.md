@@ -145,8 +145,11 @@ If you would like to inspect the source code behind the image used here or build
 1. Copy and paste the below configuration file wherever you would like on the VPS, for this guide I will use `~/p2pool`:
 
     ```bash
-    vim ~/p2pool/docker-compose.yml
+    mkdir ~/p2pool
+    nano ~/p2pool/docker-compose.yml
     ```
+
+    *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
     ```yaml
     version: '3.5'
@@ -302,15 +305,6 @@ services:
         volumes:
             - tor-keys:/var/lib/tor/hidden_service/
 
-    autoheal:
-        image: willfarrell/autoheal:latest
-        container_name: autoheal
-        restart: unless-stopped
-        environment:
-            AUTOHEAL_CONTAINER_LABEL: all
-        volumes:
-            - "/var/run/docker.sock:/var/run/docker.sock"
-
     watchtower:
         image: containrrr/watchtower:latest
         container_name: watchtower
@@ -417,8 +411,6 @@ This signals to the Docker console that you want to disconnect without killing t
 To see payouts from mining, simply watch the wallet in your favorite Monero wallet like [Cake Wallet](https://cakewallet.com/) or [Monerujo](https://www.monerujo.io/).
 
 To view general pool statistics for the current mainnet testing p2pool instance, see <https://p2pool.io/>.
-
-***NOTE: At the time of this blog post, Cake Wallet is not yet updated to Monero v0.17.2.3 so payouts will not show properly there.***
 
 # Alternative ways to run p2pool
 
