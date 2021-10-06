@@ -180,9 +180,23 @@ I also host a Tor relay/guard node, available at the below address:
 
 ## Donations
 
-If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Moneroj you'd like to throw my way:
+If you've enjoyed my blog and would like to give me a little more time to dedicate to it, I'll happily take any Monero you'd like to throw my way:
+
+### OpenAlias
+
+To use OpenAlias, just type (or paste) the following address into the "To" field in your favorite Monero wallet:
+
+`donate.sethforprivacy.com`  
+
+For more info on OpenAlias, see the excellent guide by Justin [here](https://medium.com/@JEhrenhofer/openalias-the-best-cryptocurrency-wallet-feature-youve-never-heard-of-bbf4a991d0a8).
+
+### Address/QR
+
+The first option for donations is provided via xmrSale, an awesome and light-weight payment platform that is self-hosted.
 
 <iframe src="https://node.sethforprivacy.com:8443/" style="margin: 0 auto;display:block;width:420px;height:460px;border:none;overflow:hidden;" scrolling="no"></iframe>
+
+For more info on xmrSale, see <https://xmrsale.org/>.
 
 {{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY" >}}
 `86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY`
