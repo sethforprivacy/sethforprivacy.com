@@ -122,6 +122,7 @@ I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod
 - [Nitter](https://nitter.sethforprivacy.com) (Tor: <http://6vc6q7fthjoggek3bpefjrv3rna35niaflu6az3w6cd6r7zjty7nmgyd.onion>)
 - [Teddit](https://teddit.sethforprivacy.com) (Tor: <http://yn4hq3s3cuvqxr6yrsawt4xxayg4t63yag4k4vod3qll76ve6nnxl6id.onion>)
 - [Privatebin](https://paste.sethforprivacy.com) (Tor: <http://hlk76zrahto2azwciiljvufv7z563dl2xauciubzte4adh5qdpw6tpad.onion>)
+- [Whoogle](https://search.sethforprivacy.com) (Tor: <http://dxjcqv6gh3y5oqcapdvx2cxbbiy2bzzmti6ofquct3l77sbbspsovoid.onion>)
 
 ### High-Performance Monero Nodes
 
@@ -171,12 +172,12 @@ I also host a Tor relay/guard node, available at the below address:
 
 ### Github Repositories
 
-* [simple-monerod-docker](https://github.com/sethforprivacy/simple-monerod-docker)
-  * A simple and straightforward Dockerized monerod built from source and exposing standard ports.
-* [self-hosted-services](https://github.com/sethforprivacy/self-hosted-services)
-  * A core set of privacy-preserving services that can be easily self-hosted via Docker Compose.
-* [sethforprivacy.com-content](https://github.com/sethforprivacy/sethforprivacy.com-content)
-  * The contents of this blog are published here and available to be changed, or for new posts/guides to be added via PRs.
+- [simple-monerod-docker](https://github.com/sethforprivacy/simple-monerod-docker)
+  - A simple and straightforward Dockerized monerod built from source and exposing standard ports.
+- [p2pool-docker](https://github.com/sethforprivacy/p2pool-docker)
+  - A simple and straightforward Dockerized p2pool built from source and exposing standard ports.
+- [self-hosted-services](https://github.com/sethforprivacy/self-hosted-services)
+  - A core set of privacy-preserving services that can be easily self-hosted via Docker Compose.
 
 ## Donations
 
