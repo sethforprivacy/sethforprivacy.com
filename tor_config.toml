@@ -1,4 +1,4 @@
-baseURL = "http://gxuo2dgrmfaqf4axf4rdbh4avraj5v6dtiezmefhgkureig7urevcaid.onion/"
+baseURL = "http://sfprivg7qec6tdle7u6hdepzjibin6fn3ivm6qlwytr235rh5vc6bfqd.onion/"
 publishDir = "tor"
 languageCode = "en-us"
 title = "blog.sethforprivacy.com"
@@ -43,15 +43,15 @@ enableGitInfo = true
   # set Twitter handles for Twitter cards
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
-  creator = "sethisimmons"
-  site = "sethisimmons"
+  creator = "sethforprivacy"
+  site = "sethforprivacy"
 
 [languages]
   [languages.en]
     languageName = "English"
     title = "blog.sethforprivacy.com"
     subtitle = "A simple blog about privacy, Monero, and me"
-    owner = "Seth Simmons"
+    owner = "Seth For Privacy"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
