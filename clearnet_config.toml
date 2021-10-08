@@ -1,6 +1,6 @@
-baseURL = "https://sethforprivacy.com/"
+baseURL = "https://blog.sethforprivacy.com/"
 languageCode = "en-us"
-title = "sethforprivacy.com"
+title = "blog.sethforprivacy.com"
 theme = "terminal"
 paginate = 5
 enableGitInfo = true
@@ -48,7 +48,7 @@ enableGitInfo = true
 [languages]
   [languages.en]
     languageName = "English"
-    title = "sethforprivacy.com"
+    title = "blog.sethforprivacy.com"
     subtitle = "A simple blog about privacy, Monero, and me"
     owner = "Seth For Privacy"
     keywords = ""
@@ -60,7 +60,7 @@ enableGitInfo = true
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "sethforprivacy.com"
+      logoText = "blog.sethforprivacy.com"
       logoHomeLink = "/"
 
     [languages.en.menu]

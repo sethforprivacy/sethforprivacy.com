@@ -1,7 +1,7 @@
-baseURL = "http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion/"
+baseURL = "http://gxuo2dgrmfaqf4axf4rdbh4avraj5v6dtiezmefhgkureig7urevcaid.onion/"
 publishDir = "tor"
 languageCode = "en-us"
-title = "sethforprivacy.com"
+title = "blog.sethforprivacy.com"
 theme = "terminal"
 paginate = 5
 enableGitInfo = true
@@ -49,7 +49,7 @@ enableGitInfo = true
 [languages]
   [languages.en]
     languageName = "English"
-    title = "sethforprivacy.com"
+    title = "blog.sethforprivacy.com"
     subtitle = "A simple blog about privacy, Monero, and me"
     owner = "Seth Simmons"
     keywords = ""
@@ -61,7 +61,7 @@ enableGitInfo = true
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "sethforprivacy.com"
+      logoText = "blog.sethforprivacy.com"
       logoHomeLink = "/"
 
     [languages.en.menu]
