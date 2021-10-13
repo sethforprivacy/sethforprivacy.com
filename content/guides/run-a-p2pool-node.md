@@ -19,6 +19,8 @@ draft = false
 
 This guide will aim to make it very simple and straightforward for you to start and run your own Monero node and p2pool instance for decentralized and fee-less mining of Monero. p2pool is a huge breakthrough that allows individual miners full control over the mining process, removing trust in pools and pool operators and allowing anyone to mine in a decentralized fashion while keeping payout variance down as opposed to solo mining.
 
+Note that once you have this up and running on a VPS or personal hardware, you will want to mine against your p2pool node as the "pool" in your mining configuration. For more on mining Monero generally, including setting up XMRig, see my other guide, ["Mining Monero"]({{< ref "/content/guides/mining-monero.md" >}}).
+
 For more information on why you would want to use p2pool instead of a normal pool for mining, please see: [Why run and mine on p2pool instead of a "normal" Monero pool?]({{< relref "#why-run-and-mine-on-p2pool-instead-of-a-normal-monero-pool" >}})
 
 # Pre-requisites
@@ -137,12 +139,12 @@ This allows us to simplify down the launch of `monerod` and `p2pool` down to a f
 
 If you would like to inspect the source code behind the image used here or build it yourself, please see the below links:
 
-[monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)  
-[monerod Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)  
-[p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)  
-[p2pool Source Repository](https://github.com/sethforprivacy/p2pool-docker)  
+- [monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)  
+- [monerod Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)  
+- [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)  
+- [p2pool Source Repository](https://github.com/sethforprivacy/p2pool-docker)  
 
-1. Copy and paste the below configuration file wherever you would like on the VPS, for this guide I will use `~/p2pool`:
+1. Copy and paste the below configuration file wherever you would like on the host, for this guide I will use `~/p2pool`:
 
     ```bash
     mkdir ~/p2pool
@@ -214,14 +216,13 @@ If you would like to inspect the source code behind the image used here or build
         p2pool-data:
     ```
 
-    ***NOTE: Be sure to replace the Monero address (468y...b55R) with your own, or else you'll be making generous hashrate donations to me!***
+    ***NOTE: Be sure to replace the Monero address (468y...b55R) with your own primary address (an address starting with 4), or else you'll be making generous hashrate donations to me!***
 
     Explanations of the containers used in the above `docker-compose.yml` file:
 
     `monerod`: The Monero daemon is the process that connects to the Monero blockchain, synchronizes with other nodes on the network, and validates and keeps track of transactions happening in the Monero blockchain.  
     `p2pool`: The p2pool daemon connects to `monerod` for Monero's blockchain data needed for mining, and connects to the p2pool blockchain for synchronization and publishing work you accomplish via mining.  
     `tor`: This is a container that publishes your `monerod` and `p2pool` daemons as Tor Hidden Services if you want to connect to them via Tor directly. Feel free to remove this section if that is not something you're interested in.  
-    `autoheal`: This container will attempt to restart the other containers if they fail, hopefully ensuring all services stay up.  
     `watchtower`: This container keeps an eye out for new images for all other running containers, updating them immediately when new images are available. This container will ensure you never need to manually upgrade `monerod` or `p2pool`, and will always be running the latest versions.  
 
 2. Set huge pages for `monerod` and `p2pool`
@@ -244,7 +245,7 @@ If you would like to inspect the source code behind the image used here or build
 
 4. Replace `--wallet` address with your own in `docker-compose.yml`
 
-    ***NOTE: Be sure to create a new wallet for using with p2pool to preserve your privacy, and only use a "standard" address starting with a 4, subaddresses are not yet supported.***
+    ***NOTE: Be sure to create a new wallet for using with p2pool to preserve your privacy, and only use a "standard" address starting with a 4, subaddresses are not supported.***
 
 5. Once `monerod` is fully synced, start up the other services
 
@@ -267,50 +268,50 @@ If you would like to inspect the source code behind the image used here or build
 If you already run a node and don't want to migrate to this Docker Compose setup, simply add the flag `--zmq-pub tcp://0.0.0.0:18083` to your `monerod` instance and restart it, forward port `18083/tcp`, and then use the below docker-compose file and replace the `--host` value with the IP or DNS address of your existing node:
 
 ```bash
-vim ~/p2pool/docker-compose.yml
+mkdir ~/p2pool
+nano ~/p2pool/docker-compose.yml
 ```
+
+*To escape from the nano shell and save the file, hit `ctrl+x`.*
 
 {{< code language="docker" title="docker-compose.yml" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
 version: '3.5'
 services:
-    p2pool:
-        image: sethsimmons/p2pool:latest
-        restart: unless-stopped
-        container_name: p2pool
-        tty: true
-        stdin_open: true
-        volumes:
-        - p2pool-data:/home/p2pool
-        - /dev/hugepages:/dev/hugepages:rw
-        ports:
-        - 3333:3333
-        - 37889:37889
-        command: >-
-        --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
-        --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
-        --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "node.sethforprivacy.com"
+  p2pool:
+      image: sethsimmons/p2pool:latest
+      restart: unless-stopped
+      container_name: p2pool
+      tty: true
+      stdin_open: true
+      volumes:
+      - p2pool-data:/home/p2pool
+      - /dev/hugepages:/dev/hugepages:rw
+      ports:
+      - 3333:3333
+      - 37889:37889
+      command: >-
+      --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
+      --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
+      --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "node.sethforprivacy.com"
 
-    tor:
-        image: goldy/tor-hidden-service:latest
-        container_name: tor
-        restart: unless-stopped
-        links:
-            - monerod
-            - p2pool
-        environment:
-            MONEROD_TOR_SERVICE_HOSTS: 18089:monerod:18089
-            MONEROD_TOR_SERVICE_VERSION: '3'
-            P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
-            P2POOL_TOR_SERVICE_VERSION: '3'
-        volumes:
-            - tor-keys:/var/lib/tor/hidden_service/
+  tor:
+      image: goldy/tor-hidden-service:latest
+      container_name: tor
+      restart: unless-stopped
+      links:
+          - p2pool
+      environment:
+          P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
+          P2POOL_TOR_SERVICE_VERSION: '3'
+      volumes:
+          - tor-keys:/var/lib/tor/hidden_service/
 
-    watchtower:
-        image: containrrr/watchtower:latest
-        container_name: watchtower
-        restart: unless-stopped
-        volumes:
-            - "/var/run/docker.sock:/var/run/docker.sock"
+  watchtower:
+      image: containrrr/watchtower:latest
+      container_name: watchtower
+      restart: unless-stopped
+      volumes:
+          - "/var/run/docker.sock:/var/run/docker.sock"
 
 volumes:
     tor-keys:
@@ -318,7 +319,7 @@ volumes:
 
 {{< /code >}}
 
-***NOTE: Be sure to replace the Monero address (468y...b55R) with your own, or else you'll be making generous hashrate donations to me!***
+***NOTE: Be sure to replace the Monero address (468y...b55R) with your own primary address (an address starting with 4), or else you'll be making generous hashrate donations to me!***
 
 Once you've created the above file, start at step 4 in the section above.
 
@@ -360,11 +361,15 @@ For more details on miner configuration, see my guide ["Mining Monero"]({{< ref 
 
 # Viewing your mining stats
 
-*Thanks to DataHoarder on Matrix/IRC for the tip on how to do this!*
-
 As there is no standard pool for you to use to check your statistics, you may be wondering how you can see your pool-side hashrate in total, shares found, accumulated approximate reward, etc.
 
-Thankfully there is a command within `p2pool` that allows you to do just this! To check your current statistics, simply attach to the containers console, run `status`, and view the output:
+The easiest way to check your statistics is to use a community-run website, [p2pool.observer](https://p2pool.observer/), and enter your payout address to view statistics, shares, payouts, etc.
+
+If you don't want to enter your address into website, you can also use the p2pool node itself to check statistics.
+
+*Thanks to DataHoarder on Matrix/IRC for the tip on how to do this!*
+
+To check your current statistics via your own p2pool node, simply attach to the containers console, run `status`, and view the output:
 
 ```bash
 docker attach p2pool
@@ -408,9 +413,30 @@ This signals to the Docker console that you want to disconnect without killing t
 
 # Checking payouts
 
-To see payouts from mining, simply watch the wallet in your favorite Monero wallet like [Cake Wallet](https://cakewallet.com/) or [Monerujo](https://www.monerujo.io/).
+The easiest way to check your payouts is to use a community-run website, [p2pool.observer](https://p2pool.observer/), and enter your payout address to view statistics, shares, payouts, etc.
 
-To view general pool statistics for the current mainnet testing p2pool instance, see <https://p2pool.io/>.
+If you don't want to enter your address into website, simply watch the wallet in your favorite Monero wallet like [Cake Wallet](https://cakewallet.com/) or [Monerujo](https://www.monerujo.io/).
+
+To view general pool statistics for the current mainnet p2pool instance, see <https://p2pool.io/>.
+
+# Resolving issues
+
+While `monerod` is very stable and rarely has any issues, occasionally `p2pool` can get hung up and fail to function properly. If you do run into issues with p2pool not allowing you to mine against it, or being generally unresponsive, just run the following command to restart it and let it sync back up:
+
+```bash
+cd ~/p2pool
+docker-compose restart p2pool
+```
+
+If you're still having issues after giving that a few minutes to sync up, you can blow away p2pool and start the p2pool sync from scratch with the following commands:
+
+```bash
+cd ~/p2pool
+docker rm --force p2pool
+docker-compose up -d
+```
+
+If neither of these sets of commands resolve the issues, please file an [issue in Github](https://github.com/SChernykh/p2pool/issues) or reach out in Matrix (`#monero-pow:matrix.org`) for help.
 
 # Alternative ways to run p2pool
 
