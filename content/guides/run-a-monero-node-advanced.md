@@ -288,7 +288,7 @@ sudo nano /etc/monero/monerod.conf
 
 Simply copy the contents of the systemd script below and save it to `/etc/systemd/system/monerod.service` using vim or nano:
 
-{{< code language="systemd" title="monerod systemd script" id="4" expand="Show" collapse="Hide" isCollapsed="false" >}}
+{{< code language="conf" title="monerod systemd script" id="4" expand="Show" collapse="Hide" isCollapsed="false" >}}
 [Unit]
 Description=Monero Full Node (Mainnet)
 After=network.target

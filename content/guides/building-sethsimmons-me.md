@@ -427,7 +427,7 @@ prompt Tor users who navigate to the clearnet site to use the native Tor site in
 
 My full NGINX configuration file is below:
 
-{{< code language="nginx" title="Full NGINX Configuration for sethforprivacy.com" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="conf" title="Full NGINX Configuration for sethforprivacy.com" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
 # generated 2020-11-29, Mozilla Guideline v5.6, nginx 1.18, OpenSSL 1.1.1d, intermediate configuration, no OCSP
 # https://ssl-config.mozilla.org/#server=nginx&version=1.18&config=intermediate&openssl=1.1.1d&ocsp=false&guideline=5.6
 

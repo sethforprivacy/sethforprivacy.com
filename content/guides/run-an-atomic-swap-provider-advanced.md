@@ -243,7 +243,7 @@ sudo nano /etc/systemd/system/monero-wallet-rpc.service
 
 ***NOTE: If you are not running a Monero node on the same host, be sure to replace the `127.0.0.1:18089` daemon-host arg with the appropriate Monero daemon URL, i.e. `node.sethforprivacy.com:18089`.***
 
-{{< code language="systemd" title="monero-wallet-rpc systemd script" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
+{{< code language="conf" title="monero-wallet-rpc systemd script" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
 [Unit]
 Description=Monero Wallet RPC (Mainnet)
 After=network.target
@@ -311,7 +311,7 @@ sudo nano /etc/systemd/system/asb.service
 
 *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
-{{< code language="systemd" title="asb systemd script" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
+{{< code language="conf" title="asb systemd script" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
 [Unit]
 Description=Automated swap broker (ASB)
 After=network.target monero-wallet-rpc.service
