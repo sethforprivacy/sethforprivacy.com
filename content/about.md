@@ -123,6 +123,7 @@ I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod
 - [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
 - [Whoogle (Private Search)](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
+- [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com)
 
 ### High-Performance Monero Node
 

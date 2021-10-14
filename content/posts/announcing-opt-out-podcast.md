@@ -23,9 +23,14 @@ Each episode we’ll take a walk down the rabbit hole of privacy and data-sovere
 
 ## Where to find Opt Out
 
-While Opt Out is available on all major podcast platforms, you can also find each episode on my (Buzzsprout-hosted) site, [optoutpod.com](https://www.optoutpod.com/).
+While Opt Out is available on all major podcast platforms, you can also find each episode on my site, [optoutpod.com](https://www.optoutpod.com/).
 
 The site will be the first place new episodes are published, hosts and serves the RSS feed for the podcast, and has handy buttons under the podcast description for jumping straight into your favorite podcast app at the show's listing.
+
+You can find video versions of each episode, along with the soundbites I make from each episode, on both YouTube and my self-hosted PeerTube instance:
+
+- [YouTube](https://www.youtube.com/c/OptOutPodcast)
+- [PeerTube](https://videos.optoutpod.com)
 
 You can also follow the show on Twitter [@optoutpod](https://twitter.com/optoutpod), where updates, polls, new guests, and regular snippets from the show will be shared.
 
