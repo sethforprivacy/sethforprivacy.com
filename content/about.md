@@ -119,18 +119,18 @@ I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod
 
 ### Privacy-preserving front-ends and tools
 
-- [Nitter](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
-- [Teddit](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
-- [Privatebin](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
-- [Whoogle](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
+- [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
+- [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
+- [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
+- [Whoogle (Private Search)](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
 
-### High-Performance Monero Nodes
+### High-Performance Monero Node
 
 I host a high-performance Monero node that is free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
 
 `node.sethforprivacy.com:18089` (high-performance node on Hetzner in Frankfurt, Germany)
 
-Also available as Tor HiddenServices at:
+Also available as a Tor v3 endpoint at:
 
 `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`
 
@@ -160,7 +160,8 @@ rendezvous_point = "/dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6B
 
 I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
 
-[Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
+- [Monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
+- [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)
 
 ### Tor Relay/Guard Nodes
 
@@ -168,7 +169,7 @@ I also host a Tor relay/guard node, available at the below address:
 
 `tor.sethforprivacy.com:443`
 
-[Node Statistics (Nickname: tor1sethsimmonsme)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
+[Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
 
 ### Github Repositories
 
