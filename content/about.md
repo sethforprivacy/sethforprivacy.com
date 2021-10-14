@@ -70,12 +70,12 @@ Below you can find verification of this DNS domain, my Github profile, my Matrix
 
 [Monero](https://www.getmonero.org/) is a cryptocurrency that aims to be a privacy-preserving, decentralized, digital cash,
  allowing users to transact directly peer-to-peer without any trusted third parties while retaining strong privacy.
- 
+
 ### Tor  
 
 [Tor](https://www.torproject.org/) is an anonymity network protocol that helps users avoid ISP and government network 
 surveillance. It is the backbone of many privacy tools, and is a great initiative to help user's remain anonymous while 
-online. 
+online.
 
 The Tor browser is the browser I would recommend people use for everyday browsing as it includes many default privacy protections by-default, while also sending all traffic natively over the Tor network.
 
@@ -105,10 +105,6 @@ I'm also going to work on spinnning up my own federated server for Matrix shortl
 
 ## My Community Resources
 
-### Status page for all of my community resources
-
-Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmjwn3kqcpp7dlugiw3aonlhkfpc3vipeyd.onion>) to see the uptime and any outages associated with the services that I run.
-
 ### Opt Out, a FOSS and privacy-focused podcast
 
 Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty.
@@ -117,23 +113,37 @@ Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out
 
 I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod.com>.
 
+### Status page for all of my community resources
+
+Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmjwn3kqcpp7dlugiw3aonlhkfpc3vipeyd.onion>) to see the uptime and any outages associated with the services that I run.
+
 ### Privacy-preserving front-ends and tools
 
-- [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
-- [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
-- [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
 - [Whoogle (Private Search)](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
+  - More info: <https://github.com/benbusby/whoogle-search>
 - [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com) (Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>)
+  - More info: https://github.com/iv-org/invidious
+- [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
+  - More info: <https://github.com/zedeus/nitter>
+- [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
+  - More info: <https://codeberg.org/teddit/teddit>
+- [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
+  - More info: <https://privatebin.info/>
 
 ### High-Performance Monero Node
 
 I host a high-performance Monero node that is free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
 
-`node.sethforprivacy.com:18089` (high-performance node on Hetzner in Frankfurt, Germany)
+- p2p: `node.sethforprivacy.com:18080`
+- RPC (use this address in your wallet for a remote node): `node.sethforprivacy.com:18089` (Tor: `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`)
 
-Also available as a Tor v3 endpoint at:
+### Tor Relay/Guard Node
 
-`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`
+I also host a Tor relay/guard node, available at the below address:
+
+`tor.sethforprivacy.com:443`
+
+[Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
 
 ### Atomic Swap Rendezvous Node
 
@@ -163,14 +173,6 @@ I have created a bare-bones and simple `monerod` Docker image that compiles from
 
 - [Monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
 - [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)
-
-### Tor Relay/Guard Nodes
-
-I also host a Tor relay/guard node, available at the below address:
-
-`tor.sethforprivacy.com:443`
-
-[Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
 
 ### Github Repositories
 

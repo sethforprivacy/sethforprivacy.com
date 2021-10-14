@@ -3,7 +3,7 @@ publishDir = "tor"
 languageCode = "en-us"
 title = "blog.sethforprivacy.com"
 theme = "terminal"
-paginate = 5
+paginate = 10
 enableGitInfo = true
 
 [params]
@@ -15,7 +15,7 @@ enableGitInfo = true
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 6
+  showMenuItems = 7
 
   # show selector to switch language
   showLanguageSelector = false
@@ -50,7 +50,7 @@ enableGitInfo = true
   [languages.en]
     languageName = "English"
     title = "blog.sethforprivacy.com"
-    subtitle = "A simple blog about privacy, Monero, and me"
+    subtitle = "A simple blog about privacy, Monero, and self-hosting"
     owner = "Seth For Privacy"
     keywords = ""
     copyright = ""
@@ -79,15 +79,19 @@ enableGitInfo = true
         url = "/guides"
       [[languages.en.menu.main]]
         identifier = "privacytools"
-        name = "Recommended Privacy Tools"
+        name = "Recommended Tools"
         url = "/about/#my-recommended-privacy-tools"
+      [[languages.en.menu.main]]
+        identifier = "resources"
+        name = "Hosted Resources"
+        url = "/about/#my-community-resources"
       [[languages.en.menu.main]]
         identifier = "rss"
         name = "RSS Feed"
         url = "/index.xml"
       [[languages.en.menu.main]]
         identifier = "podcast"
-        name = "Podcast"
+        name = "Opt Out Podcast"
         url = "https://www.optoutpod.com/"
 
 [privacy]
