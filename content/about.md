@@ -107,7 +107,7 @@ I'm also going to work on spinnning up my own federated server for Matrix shortl
 
 ### Status page for all of my community resources
 
-Go to <https://status.sethforprivacy.com> (Tor: <http://wv6vzroyraqx35tm454ey2b6unua24l4a4i5wg43253v5dv77bow46id.onion>) to see the uptime and any outages associated with the services that I run.
+Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmjwn3kqcpp7dlugiw3aonlhkfpc3vipeyd.onion>) to see the uptime and any outages associated with the services that I run.
 
 ### Opt Out, a FOSS and privacy-focused podcast
 
@@ -119,10 +119,10 @@ I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod
 
 ### Privacy-preserving front-ends and tools
 
-- [Nitter](https://nitter.sethforprivacy.com) (Tor: <http://6vc6q7fthjoggek3bpefjrv3rna35niaflu6az3w6cd6r7zjty7nmgyd.onion>)
-- [Teddit](https://teddit.sethforprivacy.com) (Tor: <http://yn4hq3s3cuvqxr6yrsawt4xxayg4t63yag4k4vod3qll76ve6nnxl6id.onion>)
-- [Privatebin](https://paste.sethforprivacy.com) (Tor: <http://hlk76zrahto2azwciiljvufv7z563dl2xauciubzte4adh5qdpw6tpad.onion>)
-- [Whoogle](https://search.sethforprivacy.com) (Tor: <http://dxjcqv6gh3y5oqcapdvx2cxbbiy2bzzmti6ofquct3l77sbbspsovoid.onion>)
+- [Nitter](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
+- [Teddit](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
+- [Privatebin](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
+- [Whoogle](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
 
 ### High-Performance Monero Nodes
 
