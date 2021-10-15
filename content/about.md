@@ -129,6 +129,8 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
   - More info: <https://codeberg.org/teddit/teddit>
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
   - More info: <https://privatebin.info/>
+- [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/) (Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>)
+  - More info: <https://codeberg.org/orenom/Wikiless>
 
 ### High-Performance Monero Node
 
