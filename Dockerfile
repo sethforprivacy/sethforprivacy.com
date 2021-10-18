@@ -3,7 +3,6 @@ FROM nginx:latest
 # Patch vulnerabilities
 RUN apt-get update \
     && apt-get upgrade -y \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends ca-certificates\
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
