@@ -44,6 +44,29 @@ jobs:
       - name: Build Tor
         run: hugo --config tor_config.yml --destination ./tor
 
+      - name: Install zopfli
+        run: sudo apt-get install -y --no-install-recommends zopfli
+
+      - name: Compress public static files
+        run: |
+          cd public
+          for file in $(find . -type f)
+          do
+              zopfli "$file"
+              rm "$file"
+              touch -r "$file".gz "$file"
+          done
+
+      - name: Compress tor static files
+        run: |
+          cd tor
+          for file in $(find . -type f)
+          do
+              zopfli "$file"
+              rm "$file"
+              touch -r "$file".gz "$file"
+          done
+
       - name: Build and push to Docker Hub and Github Packages Docker Registry
         id: docker_build
         uses: docker/build-push-action@v2.7.0
