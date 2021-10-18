@@ -37,15 +37,16 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build clearnet
-        run: hugo --config clearnet_config.yml --destination public
+        run: hugo --config clearnet_config.yml --destination ./public
 
       - name: Build Tor
-        run: hugo --config tor_config.yml --destination tor
+        run: hugo --config tor_config.yml --destination ./tor
 
       - name: Build and push to Docker Hub and Github Packages Docker Registry
         id: docker_build
         uses: docker/build-push-action@v2.7.0
         with:
+          context: .
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/sethforprivacy-blog:latest
