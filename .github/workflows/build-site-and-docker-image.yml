@@ -37,10 +37,10 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build clearnet
-        run: hugo --minify --config clearnet_config.yml
+        run: hugo --minify --config clearnet_config.yml --destination ./public
 
       - name: Build Tor
-        run: hugo --minify --config tor_config.yml
+        run: hugo --minify --config tor_config.yml --destination ./tor
 
       - name: Build and push to Docker Hub and Github Packages Docker Registry
         id: docker_build
