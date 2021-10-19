@@ -132,12 +132,12 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/) (Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>)
   - More info: <https://codeberg.org/orenom/Wikiless>
 
-### High-Performance Monero Node
+### High-Performance Monero Nodes
 
-I host a high-performance Monero node that is free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
+I host two high-performance Monero nodes that are free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
 
-- p2p: `node.sethforprivacy.com:18080`
-- RPC (use this address in your wallet for a remote node): `node.sethforprivacy.com:18089` (Tor: `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`)
+- p2p: `node.sethforprivacy.com:18080` or `node2.sethforprivacy.com:18080`
+- RPC (use this address in your wallet for a remote node): `node.sethforprivacy.com:18089` (Tor: `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`) or `node2.sethforprivacy.com:18089` (Tor: `qpj4l2h5r6auxropjqok344cdtunbm2n3zr23bnoa4hdgk36zyq2fsid.onion:18089`)
 
 ### Tor Relay/Guard Node
 
