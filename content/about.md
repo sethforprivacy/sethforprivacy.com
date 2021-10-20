@@ -136,8 +136,8 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 
 I host two high-performance Monero nodes that are free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
 
-- p2p: `node.sethforprivacy.com:18080` or `node2.sethforprivacy.com:18080`
-- RPC (use this address in your wallet for a remote node): `node.sethforprivacy.com:18089` (Tor: `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`) or `node2.sethforprivacy.com:18089` (Tor: `qpj4l2h5r6auxropjqok344cdtunbm2n3zr23bnoa4hdgk36zyq2fsid.onion:18089`)
+- p2p: `node.sethforprivacy.com:18080` (Tor: `sfpp2p7wnfjv3lrvfan4jmmkvhnbsbimpa3cqyuf7nt6zd24xhcqcsyd.onion:18080`) or `node2.sethforprivacy.com:18080` (Tor: `sfpp2p2tlgpsjxygeknkkfq4ho5uco56zvp2whn7bz2v7xbyqoslofqd.onion:18080`)
+- RPC (use this address in your wallet for a remote node): `node.sethforprivacy.com:18089` (Tor: `sfprpc5klzs5vyitq2mrooicgk2wcs5ho2nm3niqduvzn5o6ylaslaqd.onion:18089`) or `node2.sethforprivacy.com:18089` (Tor: `sfprpc2fws6ltnq4hyr7lvpul3nank5layd7q7tyc5h4gy4h77gtabad.onion:18089`)
 
 ### Tor Relay/Guard Node
 
