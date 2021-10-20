@@ -136,16 +136,31 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 
 I host two high-performance Monero nodes that are free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
 
-- p2p: `node.sethforprivacy.com:18080` (Tor: `sfpp2p7wnfjv3lrvfan4jmmkvhnbsbimpa3cqyuf7nt6zd24xhcqcsyd.onion:18080`) or `node2.sethforprivacy.com:18080` (Tor: `sfpp2p2tlgpsjxygeknkkfq4ho5uco56zvp2whn7bz2v7xbyqoslofqd.onion:18080`)
-- RPC (use this address in your wallet for a remote node): `node.sethforprivacy.com:18089` (Tor: `sfprpc5klzs5vyitq2mrooicgk2wcs5ho2nm3niqduvzn5o6ylaslaqd.onion:18089`) or `node2.sethforprivacy.com:18089` (Tor: `sfprpc2fws6ltnq4hyr7lvpul3nank5layd7q7tyc5h4gy4h77gtabad.onion:18089`)
+- RPC (use this address in your wallet for a remote node):
+  - `node.sethforprivacy.com`
+    - Port `18089`
+  - `node2.sethforprivacy.com`
+    - Port `18089`
+  - `sfprpc5klzs5vyitq2mrooicgk2wcs5ho2nm3niqduvzn5o6ylaslaqd.onion`
+    - Port `18089`
+  - `sfprpc2fws6ltnq4hyr7lvpul3nank5layd7q7tyc5h4gy4h77gtabad.onion`
+    - Port `18089`
+- p2p:
+  - `node.sethforprivacy.com`
+    - Port `18080`
+  - `node2.sethforprivacy.com`
+    - Port `18080`
+  - `sfpp2p7wnfjv3lrvfan4jmmkvhnbsbimpa3cqyuf7nt6zd24xhcqcsyd.onion`
+    - Port `18080`
+  - `sfpp2p2tlgpsjxygeknkkfq4ho5uco56zvp2whn7bz2v7xbyqoslofqd.onion`
+    - Port `18080`
 
 ### Tor Relay/Guard Node
 
 I also host a Tor relay/guard node, available at the below address:
 
-`tor.sethforprivacy.com:443`
-
-[Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
+- `tor.sethforprivacy.com:443`
+  - [Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
 
 ### Atomic Swap Rendezvous Node
 
@@ -153,9 +168,9 @@ The current atomic swap protocol provided by COMIT network uses rendezvous nodes
 
 I run one of these nodes that you can use to discover current sellers of Monero, and you can use it as shown below:
 
-Rendezvous node: 
+Rendezvous node:
 
-`/dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6BX8FuwajdvktSzmMg4U5ZX2uYZjHeu`
+- `/dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6BX8FuwajdvktSzmMg4U5ZX2uYZjHeu`
 
 ```bash
 ./swap list-sellers --rendezvous-point /dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6BX8FuwajdvktSzmMg4U5ZX2uYZjHeu
