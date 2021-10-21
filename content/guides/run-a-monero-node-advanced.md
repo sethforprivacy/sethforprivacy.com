@@ -103,7 +103,6 @@ sudo ufw enable
 
 Create our system user and directories for Monero configuration, PID, and log files:
 
-
 ```bash
 # Create a system user and group to run monerod as
 sudo addgroup --system monero
@@ -166,7 +165,6 @@ log-file=/var/log/monero/monerod.log
 # RPC configuration
 rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
 rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
-confirm-external-bind=1        # Open restricted RPC node (confirm)
 no-igd=1                       # Disable UPnP port mapping
 
 # ZMQ configuration
@@ -197,7 +195,6 @@ log-file=/var/log/monero/monerod.log
 public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
 rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
 rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
-confirm-external-bind=1                   # Open restricted RPC node (confirm)
 no-igd=1                                  # Disable UPnP port mapping
 
 # ZMQ configuration
@@ -230,7 +227,6 @@ prune-blockchain=1
 # RPC configuration
 rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
 rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
-confirm-external-bind=1        # Open restricted RPC node (confirm)
 no-igd=1                       # Disable UPnP port mapping
 
 # ZMQ configuration
@@ -264,7 +260,6 @@ prune-blockchain=1
 public-node=1                             # Advertise the RPC-restricted port over p2p peer lists
 rpc-restricted-bind-ip=0.0.0.0            # Bind restricted RPC to all interfaces
 rpc-restricted-bind-port=18089            # Bind restricted RPC on custom port to differentiate from default unrestricted RPC (18081)
-confirm-external-bind=1                   # Open restricted RPC node (confirm)
 no-igd=1                                  # Disable UPnP port mapping
 
 # ZMQ configuration

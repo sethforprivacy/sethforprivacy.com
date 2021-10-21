@@ -185,8 +185,9 @@ If you would like to inspect the source code behind the image used here or build
           - 37889:37889
         command: >-
           --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
-          --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
-          --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "monerod" --rpc-port "18089"
+          --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889" 
+          --loglevel "0" --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889"
+          --host "monerod" --rpc-port "18089"
 
       tor:
         image: goldy/tor-hidden-service:latest
@@ -290,9 +291,10 @@ services:
       - 3333:3333
       - 37889:37889
       command: >-
-      --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
-      --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889"
-      --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889" --host "node.sethforprivacy.com"
+        --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
+        --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889" 
+        --loglevel "0" --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889"
+        --host "monerod" --rpc-port "18089"
 
   tor:
       image: goldy/tor-hidden-service:latest
