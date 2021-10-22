@@ -321,6 +321,7 @@ After=network.target monero-wallet-rpc.service
 ####################
 
 Type=simple
+ExecStartPre=truncate -s 0 /var/log/asb/asb.log
 ExecStart=/usr/local/bin/asb --config /etc/asb/config.toml start
 StandardOutput=file:/var/log/asb/asb.log
 
