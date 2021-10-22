@@ -95,12 +95,12 @@ This guide will also assume you are using Linux, but commands should be similar 
     cd ~/asb
     ```
 
-2. Download the latest release of the `asb` tool, i.e. `asb_0.8.3_Linux_x86_64.tar` via your browser
+2. Download the latest release of the `asb` tool, i.e. `asb_0.10.0_Linux_x86_64.tar` via your browser
     - <https://github.com/comit-network/xmr-btc-swap/releases/latest>
     - Alternatively you can download the tool via the CLI
 
         ```bash
-        wget https://github.com/comit-network/xmr-btc-swap/releases/download/0.8.3/asb_0.8.3_Linux_x86_64.tar
+        wget https://github.com/comit-network/xmr-btc-swap/releases/download/0.10.0/asb_0.10.0_Linux_x86_64.tar
         ```
 
 3. Extract the `asb` binary
@@ -108,8 +108,8 @@ This guide will also assume you are using Linux, but commands should be similar 
     - Run the following commands:
 
         ```bash
-        tar xvf asb_0.8.1_Linux_x86_64.tar
-        rm asb_0.8.1_Linux_x86_64.tar
+        tar xvf asb_0.10.0_Linux_x86_64.tar
+        rm asb_0.10.0_Linux_x86_64.tar
         sudo chmod +x asb
         sudo cp asb /usr/local/bin/
         ```
@@ -124,13 +124,13 @@ This guide will also assume you are using Linux, but commands should be similar 
 
 ## monero-wallet-rpc
 
-1. Download the latest release of the Monero binaries, i.e. `monero-linux-x64-v0.17.2.0.tar.bz2`
+1. Download the latest release of the Monero binaries, i.e. `monero-linux-x64-v0.17.2.3.tar.bz2`
     - <https://github.com/monero-project/monero/releases/latest>
     - Alternatively you can download the tool via the CLI
 
         ```bash
         cd ~/asb
-        wget https://downloads.getmonero.org/cli/monero-linux-x64-v0.17.2.0.tar.bz2
+        wget https://downloads.getmonero.org/cli/monero-linux-x64-v0.17.2.3.tar.bz2
         ```
 
 2. Extract the `monero-wallet-rpc` binary
@@ -138,11 +138,11 @@ This guide will also assume you are using Linux, but commands should be similar 
     - Run the following commands:
 
         ```bash
-        tar xvf monero-linux-x64-v0.17.2.0.tar.bz2
-        sudo chmod +x monero-x86_64-linux-gnu-v0.17.2.0/monero-wallet-rpc
-        sudo cp monero-x86_64-linux-gnu-v0.17.2.0/monero-wallet-rpc /usr/local/bin
-        rm monero-linux-x64-v0.17.2.0.tar.bz2
-        rm -rf monero-x86_64-linux-gnu-v0.17.2.0
+        tar xvf monero-linux-x64-v0.17.2.3.tar.bz2
+        sudo chmod +x monero-x86_64-linux-gnu-v0.17.2.3/monero-wallet-rpc
+        sudo cp monero-x86_64-linux-gnu-v0.17.2.3/monero-wallet-rpc /usr/local/bin
+        rm monero-linux-x64-v0.17.2.3.tar.bz2
+        rm -rf monero-x86_64-linux-gnu-v0.17.2.3
         ```
 
 3. Verify the binary is working properly
