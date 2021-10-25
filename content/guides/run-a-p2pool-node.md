@@ -233,6 +233,8 @@ If you would like to inspect the source code behind the image used here or build
     sudo bash -c "echo vm.nr_hugepages=3072 >> /etc/sysctl.conf"
     ```
 
+    ***NOTE: If you have a host with little memory or have issues booting after applying the above, try replacing "3072" with "1168" to reduce the hugepages size.***
+
 3. Start `monerod` and allow it to sync fully:
 
     ```bash
