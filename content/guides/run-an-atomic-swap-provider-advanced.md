@@ -96,16 +96,16 @@ This guide will also assume you are using Linux, but commands should be similar 
     ```
 
 2. Download the latest release of the `asb` tool, i.e. `asb_0.10.0_Linux_x86_64.tar` via your browser
-    - <https://github.com/comit-network/xmr-btc-swap/releases/latest>
-    - Alternatively you can download the tool via the CLI
+    1. <https://github.com/comit-network/xmr-btc-swap/releases/latest>
+    2. Alternatively you can download the tool via the CLI
 
         ```bash
         wget https://github.com/comit-network/xmr-btc-swap/releases/download/0.10.0/asb_0.10.0_Linux_x86_64.tar
         ```
 
 3. Extract the `asb` binary
-    - Open the Terminal
-    - Run the following commands:
+    1. Open the Terminal
+    2. Run the following commands:
 
         ```bash
         tar xvf asb_0.10.0_Linux_x86_64.tar
@@ -125,8 +125,8 @@ This guide will also assume you are using Linux, but commands should be similar 
 ## monero-wallet-rpc
 
 1. Download the latest release of the Monero binaries, i.e. `monero-linux-x64-v0.17.2.3.tar.bz2`
-    - <https://github.com/monero-project/monero/releases/latest>
-    - Alternatively you can download the tool via the CLI
+    1. <https://github.com/monero-project/monero/releases/latest>
+    2. Alternatively you can download the tool via the CLI
 
         ```bash
         cd ~/asb
@@ -134,8 +134,8 @@ This guide will also assume you are using Linux, but commands should be similar 
         ```
 
 2. Extract the `monero-wallet-rpc` binary
-    - Open the Terminal
-    - Run the following commands:
+    1. Open the Terminal
+    2. Run the following commands:
 
         ```bash
         tar xvf monero-linux-x64-v0.17.2.3.tar.bz2

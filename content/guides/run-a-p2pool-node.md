@@ -221,10 +221,10 @@ If you would like to inspect the source code behind the image used here or build
 
     Explanations of the containers used in the above `docker-compose.yml` file:
 
-    `monerod`: The Monero daemon is the process that connects to the Monero blockchain, synchronizes with other nodes on the network, and validates and keeps track of transactions happening in the Monero blockchain.  
-    `p2pool`: The p2pool daemon connects to `monerod` for Monero's blockchain data needed for mining, and connects to the p2pool blockchain for synchronization and publishing work you accomplish via mining.  
-    `tor`: This is a container that publishes your `monerod` and `p2pool` daemons as Tor Hidden Services if you want to connect to them via Tor directly. Feel free to remove this section if that is not something you're interested in.  
-    `watchtower`: This container keeps an eye out for new images for all other running containers, updating them immediately when new images are available. This container will ensure you never need to manually upgrade `monerod` or `p2pool`, and will always be running the latest versions.  
+    1. `monerod`: The Monero daemon is the process that connects to the Monero blockchain, synchronizes with other nodes on the network, and validates and keeps track of transactions happening in the Monero blockchain.  
+    2. `p2pool`: The p2pool daemon connects to `monerod` for Monero's blockchain data needed for mining, and connects to the p2pool blockchain for synchronization and publishing work you accomplish via mining.  
+    3. `tor`: This is a container that publishes your `monerod` and `p2pool` daemons as Tor Hidden Services if you want to connect to them via Tor directly. Feel free to remove this section if that is not something you're interested in.  
+    4. `watchtower`: This container keeps an eye out for new images for all other running containers, updating them immediately when new images are available. This container will ensure you never need to manually upgrade `monerod` or `p2pool`, and will always be running the latest versions.  
 
 2. Set huge pages for `monerod` and `p2pool`
 
@@ -279,45 +279,45 @@ nano ~/p2pool/docker-compose.yml
 version: '3.5'
 services:
   p2pool:
-      image: sethsimmons/p2pool:latest
-      restart: unless-stopped
-      container_name: p2pool
-      tty: true
-      stdin_open: true
-      volumes:
-      - p2pool-data:/home/p2pool
-      - /dev/hugepages:/dev/hugepages:rw
-      ports:
-      - 3333:3333
-      - 37889:37889
-      command: >-
-        --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
-        --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889" 
-        --loglevel "0" --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889"
-        --host "monerod" --rpc-port "18089"
+    image: sethsimmons/p2pool:latest
+    restart: unless-stopped
+    container_name: p2pool
+    tty: true
+    stdin_open: true
+    volumes:
+    - p2pool-data:/home/p2pool
+    - /dev/hugepages:/dev/hugepages:rw
+    ports:
+    - 3333:3333
+    - 37889:37889
+    command: >-
+      --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
+      --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889" 
+      --loglevel "0" --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889"
+      --host "monerod" --rpc-port "18089"
 
   tor:
-      image: goldy/tor-hidden-service:latest
-      container_name: tor
-      restart: unless-stopped
-      links:
-          - p2pool
-      environment:
-          P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
-          P2POOL_TOR_SERVICE_VERSION: '3'
-      volumes:
-          - tor-keys:/var/lib/tor/hidden_service/
+    image: goldy/tor-hidden-service:latest
+    container_name: tor
+    restart: unless-stopped
+    links:
+        - p2pool
+    environment:
+        P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
+        P2POOL_TOR_SERVICE_VERSION: '3'
+    volumes:
+        - tor-keys:/var/lib/tor/hidden_service/
 
   watchtower:
-      image: containrrr/watchtower:latest
-      container_name: watchtower
-      restart: unless-stopped
-      volumes:
-          - "/var/run/docker.sock:/var/run/docker.sock"
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+        - "/var/run/docker.sock:/var/run/docker.sock"
 
 volumes:
-    tor-keys:
-    p2pool-data:
+  tor-keys:
+  p2pool-data:
 
 {{< /code >}}
 
