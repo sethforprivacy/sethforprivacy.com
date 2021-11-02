@@ -18,7 +18,7 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 [Twitter - @sethforprivacy](https://twitter.com/sethforprivacy)  
 [Matrix - @sethsimmons:monero.social](https://matrix.to/#/@sethsimmons:monero.social)  
 [Threema - WBAAN4ZA](https://threema.id/WBAAN4ZA)  
-[Email - sethforprivacy@protonmail.com](mailto:sethforprivacy@protonmail.com)  
+[Email - seth@sethforprivacy.com](mailto:seth@sethforprivacy.com)  
 
 ## PGP Key
 
