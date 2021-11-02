@@ -58,6 +58,35 @@ JEcJD9ltDAVcgs36
 -----END PGP PUBLIC KEY BLOCK-----
 {{< /code >}}
 
+### CTemplar PGP key
+
+My primary email provider is CTemplar, and I use their generated PGP key for signing (*not* encrypting) emails I send from that account (starting Nov 2nd, 2021).
+
+To validate an email is from me, please ensure the following PGP key is used to sign said email:
+
+Fingerprint:
+
+`35e6178dd2477340b42e4305ce7da310006c8067`
+
+Full PGP key:
+
+{{< code language="pgp" title="CTemplar full PGP key" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.10.4
+Comment: https://openpgpjs.org
+
+xjMEYYEx3BYJKwYBBAHaRw8BAQdAcQTDaZId+tN58jH8S99kUl4IUf6L0yhT
+PF2Gk4SlWmrNGTxzZXRoQHNldGhmb3Jwcml2YWN5LmNvbT7CeAQQFgoAIAUC
+YYEx3AYLCQcIAwIEFQgKAgQWAgEAAhkBAhsDAh4BAAoJEM59oxAAbIBnMBYB
+AJZRlQ8uwtPKjwxIljylbh4rFnd2hg2Y+l1bj6Ak8dPtAP9M6VBbZn19eNOd
+iL7LkOcem67bU08vhBDhAlsejL+cCM44BGGBMdwSCisGAQQBl1UBBQEBB0D+
+lrh/7bwP/bDaqgoDoGpMAcRSCzghF5nhjn9ZHMDtSwMBCAfCYQQYFggACQUC
+YYEx3AIbDAAKCRDOfaMQAGyAZ887AQDckNbs+pNNw18JLUc/wc1IFtLKYSPT
+0pTg2z9bJy9EqQD/YfmVzRDMsjrxtkfm9EtBATNJN2sWRn57IoT9qB+opgM=
+=D/Fr
+-----END PGP PUBLIC KEY BLOCK-----
+{{< /code >}}
+
 ### PGP-verified identities
 
 Below you can find verification of this DNS domain, my Github profile, my Matrix profile, and my Twitter account, all signed via PGP:
