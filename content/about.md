@@ -150,6 +150,8 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 
 - [Whoogle (Private Search)](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
   - More info: <https://github.com/benbusby/whoogle-search>
+- [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com) (Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>)
+  - More info: <https://cryptpad.fr/>
 - [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com) (Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>)
   - More info: https://github.com/iv-org/invidious
 - [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
