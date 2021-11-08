@@ -125,7 +125,7 @@ sudo chown -R monero:monero /etc/monero
 Download and verify the latest CLI binaries using my gist[^2]:
 
 ```bash
-wget https://gist.githubusercontent.com/sethsimmons/ad5848767d9319520a6905b7111dc021/raw/download_monero_binaries.sh
+wget https://gist.githubusercontent.com/sethforprivacy/ad5848767d9319520a6905b7111dc021/raw/download_monero_binaries.sh
 chmod +x download_monero_binaries.sh
 ./download_monero_binaries.sh
 ```
