@@ -23,6 +23,11 @@ Note that once you have this up and running on a VPS or personal hardware, you w
 
 For more information on why you would want to use p2pool instead of a normal pool for mining, please see: [Why run and mine on p2pool instead of a "normal" Monero pool?]({{< relref "#why-run-and-mine-on-p2pool-instead-of-a-normal-monero-pool" >}})
 
+***NOTE: If you're attempting to run p2pool on Windows, see the following two guides/videos on how to do that. This guide focuses on Linux usage.***
+
+- [Mining Monero with P2Pool - Windows; Quick start guide](https://www.youtube.com/watch?v=yfbvTksF9ic)
+- [Windows installer for p2pool](https://github.com/WeebDataHoarder/p2pool-nsis/releases/latest)
+
 # Pre-requisites
 
 I will assume in this guide that you have purchased and SSH'd into the VPS/host of your choosing, but if you need help with those first steps here are a few good links to follow:
