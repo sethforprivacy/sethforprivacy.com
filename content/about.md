@@ -152,6 +152,8 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
   - More info: <https://github.com/benbusby/whoogle-search>
 - [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com) (Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>)
   - More info: <https://cryptpad.fr/>
+- [Monero Blockchain Explorer](https://explore.sethforprivacy.com) (Tor: <http://exploredv42tq2nowrll6f27nuymenndwupueqvyugaqzbrvmjhhceqd.onion>)
+  - More info: <https://github.com/moneroexamples/onion-monero-blockchain-explorer>
 - [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com) (Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>)
   - More info: https://github.com/iv-org/invidious
 - [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
@@ -162,6 +164,8 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
   - More info: <https://privatebin.info/>
 - [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/) (Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>)
   - More info: <https://codeberg.org/orenom/Wikiless>
+- [Send (E2EE file sharing)](https://send.sethforprivacy.com) (Tor: <http://oj6wrcuutlpr44no3qawuer22xsyfu4iyddz2ga5uagpsxoo4kvdwhqd.onion>)
+  - More info: <https://gitlab.com/timvisee/send>
 
 ### High-Performance Monero Nodes
 
