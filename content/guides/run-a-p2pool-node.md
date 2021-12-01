@@ -162,7 +162,7 @@ If you would like to inspect the source code behind the image used here or build
     version: '3.5'
     services:
       monerod:
-        image: sethsimmons/simple-monerod:p2pool-api-v0.17
+        image: sethsimmons/simple-monerod:latest
         restart: unless-stopped
         container_name: monerod
         volumes:
