@@ -122,7 +122,7 @@ the journey towards better online privacy, and I use it daily.
 
 This is the primary way I prefer to do group chats, and is the way I stay involved with the Monero community on IRC as Element supports excellent native bridging.
 
-I'm also going to work on spinnning up my own federated server for Matrix shortly, if time permits.
+I'm also going to work on spinning up my own federated server for Matrix shortly, if time permits.
 
 ### Standard Notes
 
