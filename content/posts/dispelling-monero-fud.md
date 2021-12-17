@@ -108,6 +108,8 @@ The key points I would make around this are walked through in detail in the Twit
 
 ### Resources
 
+- Blog post on scheduled upgrades in Monero:
+  - <https://www.getmonero.org/2020/09/01/note-scheduled-upgrades.html>
 - Long thread by myself on the details around how Monero hard-forks and what they mean for centralization/decentralization:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1397543058070200324>
 
@@ -125,12 +127,14 @@ All of Monero's adoption is due to grassroots marketing, word-of-mouth, and tech
 
 Payments:
 
-- Broad and growing acceptance of Monero with merchants:
+- Broad and growing acceptance of Monero with merchants (over 1,200 merchants as of writing):
   - <https://cryptwerk.com/pay-with/xmr/>
 - Simple usage of Monero to buy gift cards to most popular online merchants:
   - <https://coincards.com/>
 - Using Monero to pay for travel, lodging, etc.
   - <https://www.travala.com/>
+- ProxyStore, allowing you to purchase goods and services via Monero:
+  - <https://proxysto.re/en/index.html>
 
 Donations:
 
@@ -188,6 +192,35 @@ I'll put some resources below to browse, but for those that specifically would l
   - <https://bitcoiner.guide/nokyconly/>
 - An amazing list of KYC-free exchanges, merchants, and more:
   - <https://kycnot.me/>
+
+Excellent decentralized exchanges supporting Monero:
+
+- LocalMonero, an excellent and privacy-preserving way to buy and sell Monero
+  - <https://localmonero.co/>
+- Haveno, a WIP decentralized and entirely peer-to-peer exchange
+  - <https://haveno.exchange/>
+- Atomic swaps (WIP)
+  - <https://github.com/comit-network/xmr-btc-swap>
+  - <https://github.com/farcaster-project/farcaster-node>
+
+# Monero can't support layer-two networks (like Lightning)
+
+### Response
+
+While Monero does lack the complex compute capabilities of Ethereum and the simple scripting ability of Bitcoin, there have already been some fascinating approaches presented by researchers on how to support layer-two networks like Lightning on Monero *without protocol changes* today.
+
+Monero's layer-one scaling (much of which was mentioned previously in this post) also allows for a much longer runway without *needing* a layer-two network, even though layer-two networks could provide both better scaling and more privacy through ephemerality (transactions not being published to a permanent ledger).
+
+For more on the possibility of layer-two networks in Monero, see the resources below.
+
+### Resources
+
+- "PayMo: Payment Channels For Monero"
+  - <https://eprint.iacr.org/2020/1441>
+- Twitter thread on PayMo by one of the authors:
+  - <https://twitter.com/aravind2112/status/1329420254884335617>
+- "Sleepy Channels: Bitcoin-Compatible Bi-directional Payment Channels without Watchtowers" (also applies to Monero with PayMo)
+  - <https://eprint.iacr.org/2021/1445>
 
 # Conclusion
 
