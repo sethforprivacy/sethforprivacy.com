@@ -207,11 +207,11 @@ Excellent decentralized exchanges supporting Monero:
 
 ### Response
 
-While Monero does lack the complex compute capabilities of Ethereum and the simple scripting ability of Bitcoin, there have already been some fascinating approaches presented by researchers on how to support layer-two networks like Lightning on Monero *without protocol changes* today.
+While Monero does lack the complex compute capabilities of Ethereum and the simple scripting ability of Bitcoin, there have already been some fascinating approaches presented by researchers on how to support layer-two networks like Lightning on Monero *without protocol changes* today in theory.
 
 Monero's layer-one scaling (much of which was mentioned previously in this post) also allows for a much longer runway without *needing* a layer-two network, even though layer-two networks could provide both better scaling and more privacy through ephemerality (transactions not being published to a permanent ledger).
 
-For more on the possibility of layer-two networks in Monero, see the resources below.
+For more on the possibility of layer-two networks in Monero, see the resources below. Please note, however, that none of these approaches have been deployed on Monero and may have issues not yet seen in the theoretical papers.
 
 ### Resources
 
