@@ -6,8 +6,8 @@ authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["monero", "privacy", "fud", "bitcoin"]
 keywords = ["monero", "privacy", "fud", "bitcoin"]
-description = "In this specific post I’ll attempt to walk through the most common FUD around Monero (both valid and invalid) and help to clarify many of these points."
-summary = "In this specific post I’ll attempt to walk through the most common FUD around Monero (both valid and invalid) and help to clarify many of these points."
+description = "In this post I’ll attempt to walk through the most common FUD around Monero (both valid and invalid) and help to clarify many of these points."
+summary = "In this post I’ll attempt to walk through the most common FUD around Monero (both valid and invalid) and help to clarify many of these points."
 showFullContent = false
 toc = true
 draft = false
@@ -24,6 +24,36 @@ In this specific post I'll attempt to walk through the most common FUD around Mo
 All I want out of this post is people to have the chance to make well-informed decisions -- I don't expect to sway anyone or change minds, but hopefully the information container within this post will help to clarify things for you.
 
 Let's walk through the common FUD points one-by-one below.
+
+# Monero has an infinite supply
+
+### Response
+
+This one is very common from the Bitcoin crowd, and is techically true.
+
+However, there is a lot of thought and intentional design that has gone into the supply dynamics of Monero. Monero implements a "defined supply" of 18.4m coins, and has a tail emission of 0.6XMR per block after the defined supply has been mined. That tail emission starts ~May, 2022.
+
+This means that Monero has extremely low inflation that approaches 0% *forever*, and is technically "disinflationary" or "asymptotatically approaching 0% inflation". The inflation rate is currently lower than Bitcoin and gold, and will continue to decrease. It's also important to realize that a low inflation rate like that of Monero is a way to replace lost coins over time in circulation, but is likely even too little inflation to account for lost coins (rough estimates are ~1.5% of coins lost in circulation each year, compared to Monero's current inflation rate of 1.12% as of writing). This would mean that Monero is in fact *deflationary*, even with the low perpetual issuance.
+
+It's also *extremely* important to make it clear that Monero's supply is pre-defined, verified and enforced via consensus, and entirely predictable, just like Bitcoin's -- you can know the inflation rate and totaly supply at any point in the future without doubts.
+
+This tail emission enables two key features in Monero
+
+1. A lower bound of network security forever (miners will always be able to rely on 0.6XMR per block, no matter the fee market)
+2. A dynamic block size (Monero's blocks can grow/shrink to adapt to short-term increases in usage, with a penalty to mining rewards during these times).
+
+For more on both of these, see the resources below.
+
+### Resources
+
+- Descriptive website with graphs showing the supply dynamics of Monero:
+  - <https://monero.supply>
+- "Why Monero has a tail emission":
+  - <https://localmonero.co/knowledge/monero-tail-emission>
+- "How Monero Solved the Block Size Problem That Plagues Bitcoin":
+  - <https://localmonero.co/knowledge/dynamic-block-size>
+- Inherent risks in not having a defined block reward in perpetuity:
+  - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
 # You can't audit the Monero supply
 
@@ -56,43 +86,13 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 
 This point of FUD is one that is hard to get to the bottom of as well, as there are lots of other questions that come out of it. I'll focus on transaction size in this one, as that is the most common complaint about Monero.
 
-Monero is, in fact, the most scalable cryptocurrency *when used privately*, and even when compared with default, transparent Bitcoin usage, it's transactions are only ~3-4x the size of Bitcoin transactions today. Monero's transactions were *much* larger in the past, but the Monero community, researchers, and developers have worked hard to improve the efficiency of Bitcoin, bringing transactions down from ~13kb when RingCT was first introduced to ~1.4kb today.
+Monero is, in fact, the most scalable cryptocurrency *when used privately*, and even when compared with default, transparent Bitcoin usage, it's transactions are only ~3-4x the size of Bitcoin transactions today. Monero's transactions were *much* larger in the past, but the Monero community, researchers, and developers have worked hard to improve the efficiency of Monero, bringing transactions down from ~13kb when RingCT was first introduced to ~1.4kb today.
 
 I've written an entire blog post around this topic, so for more on that see the resources below.
 
 ### Resources
 
 - [Comparing Private Spends]({{< ref "/content/posts/comparing-private-spends.md" >}})
-
-# Monero has an infinite supply
-
-### Response
-
-This one is very common from the Bitcoin crowd, and is techically true.
-
-However, there is a lot of nuance and intentional design that has gone into the supply dynamics of Monero. Monero implements a "defined supply" of 18.4m coins, and has a tail emission of 0.6XMR per block after the defined supply has been mined.
-
-This means, in effect, that Monero has extremely low inflation that approaches 0% *forever*, and is technically "disinflationary" or "asymptotatically approaching 0% inflation". The inflation rate is currently lower than Bitcoin and gold, and will continue to decrease.
-
-It's *extremely* important to note that Monero's supply is pre-defined, verified and enforced via consensus, and entirely predictable, just like Bitcoin's -- you can know the inflation rate and totaly supply at any point in the future without doubts.
-
-This tail emission enables two key features in Monero
-
-1. A lower bound of network security forever (miners will always be able to rely on 0.6XMR per block, no matter the fee market)
-2. A dynamic block size (Monero's blocks can grow/shrink to adapt to short-term increases in usage, with a penalty to mining rewards during these times).
-
-For more on both of these, see the resources below.
-
-### Resources
-
-- Descriptive website with graphs showing the supply dynamics of Monero:
-  - <https://monero.supply>
-- "Why Monero has a tail emission":
-  - <https://localmonero.co/knowledge/monero-tail-emission>
-- "How Monero Solved the Block Size Problem That Plagues Bitcoin":
-  - <https://localmonero.co/knowledge/dynamic-block-size>
-- Inherent risks in not having a defined block reward in perpetuity:
-  - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
 # Monero's hard-forks make it centralized
 
@@ -112,6 +112,37 @@ The key points I would make around this are walked through in detail in the Twit
   - <https://www.getmonero.org/2020/09/01/note-scheduled-upgrades.html>
 - Long thread by myself on the details around how Monero hard-forks and what they mean for centralization/decentralization:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1397543058070200324>
+
+# Monero mining is centralized
+
+### Response
+
+Monero's approach to mining is almost entirely unique in the cryptocurrency world, as it's community has maintained a core ethos of ASIC-resistance from the inception of the project.
+
+Monero aims for ASIC-resistance for two core reasons:
+
+1. Ensure easy access to Monero mining by as many people as possible
+2. Increase the security and decentralization of the network by aiding manufacturer and geographical diversity in mining Monero
+
+This goal has been accomplished via a few different mining algorithms in Monero's history, but the current algorithm, RandomX, has successfully prevented ASICs on the Monero network for over two years, despite a bull market and growing usage increasing the allure of mining Monero to ASIC manufacturers. I won't go into the technical details of RandomX here, but feel free to read through the resources below for more details.
+
+While Monero does have drastically less miners and energy used to secure the network compare to Bitcoin or Ethereum, it remains secure and extremely decentralized due to the technical approach in RandomX and the grassroots nature of the community up until now. This was made abundantly clear when ASIC-dominated coins experienced massive drops in hashrate (including Bitcoin!) when China banned mining in April, 2021:
+
+{{< figure src="/dispelling-monero-fud/china-banned-hashrate.png" position="center" style="border-radius: 8px;" >}}
+
+(From: <https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4>)
+
+### Resources
+
+- Excellent explainer on RandomX:
+  - <https://www.monerooutreach.org/stories/RandomX.html>
+- A detailed look at why RandomX is so unique:
+  - <https://localmonero.co/knowledge/monero-mining-randomx>
+- Monero faired extremely well during the ban on mining in China, unlike ASIC-dominated networks:
+  - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471103239823183880>
+  - <https://nitter.sethforprivacy.com/DouglasTuman/status/1470820539233144836?s=20>
+- A look at the economics of 51% attacking Monero
+  - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471202444185153540?s=20>
 
 # Monero has no adoption
 
@@ -144,33 +175,6 @@ Evidence:
 
 - Thread detailing some of the many ways that Monero is used around the world:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1461045397531549710>
-
-# Monero mining is centralized
-
-### Response
-
-Monero's approach to mining is almost entirely unique in the cryptocurrency world, as it's community has maintained a core ethos of ASIC-resistance from the inception of the project.
-
-Monero aims for ASIC-resistance for two core reasons:
-
-1. Ensure easy access to Monero mining by as many people as possible
-2. Increase the security and decentralization of the network by aiding manufacturer and geographical diversity in mining Monero
-
-This goal has been accomplished via a few different mining algorithms in Monero's history, but the current algorithm, RandomX, has successfully prevented ASICs on the Monero network for over two years, despite a bull market and growing usage increasing the allure of mining Monero to ASIC manufacturers. I won't go into the technical details of RandomX here, but feel free to read through the resources below for more details.
-
-While Monero does have drastically less miners and energy used to secure the network compare to Bitcoin or Ethereum, it remains extremely secure and decentralized due to the technical approach in RandomX and the grassroots nature of the community up until now.
-
-### Resources
-
-- Excellent explainer on RandomX:
-  - <https://www.monerooutreach.org/stories/RandomX.html>
-- A detailed look at why RandomX is so unique:
-  - <https://localmonero.co/knowledge/monero-mining-randomx>
-- Monero faired extremely well during the ban on mining in China, unlike ASIC-dominated networks:
-  - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471103239823183880>
-  - <https://nitter.sethforprivacy.com/DouglasTuman/status/1470820539233144836?s=20>
-- A look at the economics of 51% attacking Monero
-  - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471202444185153540?s=20>
 
 # KYC/AML-regulated exchanges won't support Monero/governments will ban Monero
 
