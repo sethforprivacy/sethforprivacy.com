@@ -110,7 +110,7 @@ The key points I would make around this are walked through in detail in the Twit
 
 - Blog post on scheduled upgrades in Monero:
   - <https://www.getmonero.org/2020/09/01/note-scheduled-upgrades.html>
-- Long thread by myself on the details around how Monero hard-forks and what they mean for centralization/decentralization:
+- Long thread on the details around how Monero hard-forks and what they mean for centralization/decentralization:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1397543058070200324>
 
 # Monero mining is centralized
@@ -119,10 +119,11 @@ The key points I would make around this are walked through in detail in the Twit
 
 Monero's approach to mining is almost entirely unique in the cryptocurrency world, as it's community has maintained a core ethos of ASIC-resistance from the inception of the project.
 
-Monero aims for ASIC-resistance for two core reasons:
+Monero aims for ASIC-resistance for three core reasons:
 
-1. Ensure easy access to Monero mining by as many people as possible
-2. Increase the security and decentralization of the network by aiding manufacturer and geographical diversity in mining Monero
+1. Get back to "one CPU, one vote"
+2. Ensure easy access to Monero mining by as many people as possible
+3. Increase the security and decentralization of the network by increasing manufacturer and geographical diversity in mining Monero
 
 This goal has been accomplished via a few different mining algorithms in Monero's history, but the current algorithm, RandomX, has successfully prevented ASICs on the Monero network for over two years, despite a bull market and growing usage increasing the allure of mining Monero to ASIC manufacturers. I won't go into the technical details of RandomX here, but feel free to read through the resources below for more details.
 
