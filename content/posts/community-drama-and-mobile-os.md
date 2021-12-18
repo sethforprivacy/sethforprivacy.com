@@ -1,7 +1,7 @@
 +++
 title = "Community Drama and My Search for a Privacy-Preserving Mobile OS"
 date = 2021-02-19T11:57:44-05:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["privacy", "Android", "GrapheneOS", "CopperheadOS", "CalyxOS"]

@@ -1,7 +1,7 @@
 +++
 title = "This Year in Monero - 2021"
 date = 2021-04-18T16:00:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Monero", "Moneroversary"]

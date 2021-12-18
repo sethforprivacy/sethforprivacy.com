@@ -1,7 +1,7 @@
 +++
 title = "Dispelling Monero FUD"
 date = 2021-12-17T00:00:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["monero", "privacy", "fud", "bitcoin"]

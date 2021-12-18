@@ -1,7 +1,7 @@
 +++
 title = "Run and mine on a p2pool Node"
 date = 2021-09-08T14:45:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy"
 cover = ""
 tags = ["Monero", "network", "p2p", "p2pool", "mining", "decentralization"]

@@ -1,7 +1,7 @@
 +++
 title = "Building sethforprivacy.com"
 date = 2020-11-30T12:08:53-05:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Hugo", "NGINX", "Tor", "Blog"]

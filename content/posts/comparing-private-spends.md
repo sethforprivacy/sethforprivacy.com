@@ -1,7 +1,7 @@
 +++
 title = "Comparing Reasonably Private Spends in Bitcoin, Monero, and Zcash"
 date = "2020-11-29T16:10:10Z"
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Monero", "Bitcoin", "Zcash"]

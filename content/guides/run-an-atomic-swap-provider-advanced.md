@@ -1,7 +1,7 @@
 +++
 title = "Run an atomic swap provider (Advanced)"
 date = 2021-08-24T22:00:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Atomic swaps", "Bitcoin", "Monero"]

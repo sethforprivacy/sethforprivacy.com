@@ -1,7 +1,7 @@
 +++
 title = "Donating to FOSS Projects and Pro-Privacy Organizations"
 date = 2021-04-13T23:00:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Monero", "donations", "open source", "FOSS"]

@@ -1,7 +1,7 @@
 +++
 title = "Bitcoin's Fungibility Graveyard"
 date = 2021-03-23T11:00:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["fungibility", "Bitcoin", "privacy"]

@@ -1,7 +1,7 @@
 +++
 title = "Switching to CalyxOS"
 date = 2021-03-13T12:30:00-05:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["privacy", "CalyxOS", "F-Droid"]

@@ -1,7 +1,7 @@
 +++
 title = "Mining Monero"
 date = 2021-05-02T13:50:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Monero", "Mining", "xmrig"]

@@ -1,7 +1,7 @@
 +++
 title = "Performing Bitcoin <> Monero Atomic Swaps"
 date = 2021-08-17T10:00:00-04:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Atomic swaps", "Bitcoin", "Monero"]

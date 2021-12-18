@@ -1,7 +1,7 @@
 +++
 title = "Run a Monero Node"
 date = 2020-12-31T11:49:13-05:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["Monero", "Network", "p2p"]

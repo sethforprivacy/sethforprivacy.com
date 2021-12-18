@@ -1,7 +1,7 @@
 +++
 title = "Announcing my new podcast - Opt Out!"
 date = 2021-06-10T14:00:00-05:00
-author = "Seth"
+author = "Seth For Privacy"
 authorTwitter = "sethforprivacy" #do not include @
 cover = ""
 tags = ["privacy", "podcast", "opt out"]
