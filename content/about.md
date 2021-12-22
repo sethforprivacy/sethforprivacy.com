@@ -93,52 +93,13 @@ Below you can find verification of this DNS domain, my Github profile, my Matrix
 
 <https://keyoxide.org/55eec39e2efdd3740f94dffb6b9791c6214d1e57>  
 
-## My Recommended Privacy Tools
-
-### Monero  
-
-[Monero](https://www.getmonero.org/) is a cryptocurrency that aims to be a privacy-preserving, decentralized, digital cash,
- allowing users to transact directly peer-to-peer without any trusted third parties while retaining strong privacy.
-
-### Tor  
-
-[Tor](https://www.torproject.org/) is an anonymity network protocol that helps users avoid ISP and government network 
-surveillance. It is the backbone of many privacy tools, and is a great initiative to help user's remain anonymous while 
-online.
-
-The Tor browser is the browser I would recommend people use for everyday browsing as it includes many default privacy protections by-default, while also sending all traffic natively over the Tor network.
-
-### Signal  
-
-[Signal](https://www.signal.org/) is an easy-to-use end-to-end encrypted messaging app, which allows people to easily 
-communicate without revealing data to any intermediaries. While not perfect, it's a great first step to get people on 
-the journey towards better online privacy, and I use it daily.
-
-**NOTE: Signal has chosen to integrate a pre-mined and suspicious cryptocurrency into their platform, raising many concerns over leadership and financial vulnerability to governments and regulators. For more context, see my two Twitter threads [here](https://twitter.com/sethforprivacy/status/1379791201558278144?s=21) and [here](https://twitter.com/sethforprivacy/status/1382107861082386434?s=21).**
-
-### Element/Matrix
-
-[Element](https://element.io/) is an open-source cross-platform application for accessing the Matrix decentralized chat protocol. While there are other clients available, I've enjoyed the Element client on both desktop and mobile.
-
-This is the primary way I prefer to do group chats, and is the way I stay involved with the Monero community on IRC as Element supports excellent native bridging.
-
-I'm also going to work on spinning up my own federated server for Matrix shortly, if time permits.
-
-### Standard Notes
-
-[Standard Notes](https://standardnotes.org/) is a great encrypted notes app available across platforms that also accepts Monero for subscriptions. Extensions add a lot of power features including encrypted attachment uploads to your own WebDav server, like Nextcloud.
-
-### Nextcloud
-
-[Nextcloud](https://nextcloud.com/athome/) is my personal cloud service of choice, and provides an easy to setup and use home cloud platform for storing files, photos, and much more with the plethora of community apps available.
-
 ## My Community Resources
 
 ### Opt Out, a FOSS and privacy-focused podcast
 
 Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty.
 
-Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info, or the podcast's website at [optoutpod.com](https://www.optoutpod.com/).
+Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info, here under the [Opt Out Podcast heading](https://blog.sethforprivacy.com/episodes/), or at the podcast's website at [optoutpod.com](https://www.optoutpod.com/).
 
 I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod.com>.
 

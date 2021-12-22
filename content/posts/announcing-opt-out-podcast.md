@@ -23,7 +23,7 @@ Each episode we’ll take a walk down the rabbit hole of privacy and data-sovere
 
 ## Where to find Opt Out
 
-While Opt Out is available on all major podcast platforms, you can also find each episode on my site, [optoutpod.com](https://www.optoutpod.com/).
+While Opt Out is available on all major podcast platforms, you can also find each episode on my site, [optoutpod.com](https://www.optoutpod.com/) or here under [Opt Out Podcast](https://blog.sethforprivacy.com/episodes/).
 
 The site will be the first place new episodes are published, hosts and serves the RSS feed for the podcast, and has handy buttons under the podcast description for jumping straight into your favorite podcast app at the show's listing.
 

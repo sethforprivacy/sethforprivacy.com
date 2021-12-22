@@ -45,9 +45,6 @@ languages:
         - identifier: guides
           name: Guides
           url: /guides
-        - identifier: privacytools
-          name: Recommended Tools
-          url: /about/#my-recommended-privacy-tools
         - identifier: resources
           name: Hosted Resources
           url: /about/#my-community-resources
@@ -56,7 +53,7 @@ languages:
           url: /index.xml
         - identifier: podcast
           name: Opt Out Podcast
-          url: 'https://www.optoutpod.com/'
+          url: /episodes
 privacy:
   disqus:
     disable: true
