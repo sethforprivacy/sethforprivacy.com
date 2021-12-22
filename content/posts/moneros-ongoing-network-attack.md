@@ -32,8 +32,8 @@ common attack surface with most other cryptocurrency networks and so are valuabl
 attempt to mitigate or resolve to harden the network before these attacks happen.
 
 The two best sources for info on this attack that have already been shared are [this Reddit post by u/dEBRUYNE_1](https://www.reddit.com/r/Monero/comments/jrh7mv/psa_informational_thread_on_the_recently_observed/) this Twitter thread by @fluffypony:
- 
-{{< twitter 1326130648491417602 >}}
+
+{{< tweet user="fluffypony" id="1326130648491417602" >}}
 
 # Timeline
 

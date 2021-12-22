@@ -90,7 +90,7 @@ As soon as I posted about how much I was enjoying CopperheadOS and what had help
 
 Members of the GrapheneOS community also started messaging members of the Monero community directly, attempting to undermine my reputation and contributions:
 
-{{< tweet 1362457609077424128 >}}
+{{< tweet user="sethforprivacy" id="1362457609077424128" >}}
 
 {{< figure src="/community-drama-and-mobile-os/graphene_DMs.png" position="center" style="border-radius: 8px;" >}}
 
@@ -102,7 +102,7 @@ All this to find out today that these attacks are coordinated brigading being pu
 
 Feel free to read all the brigade replies on the mentioned tweet, and note this is one of many such examples:
 
-{{< tweet 1356303734691819524 >}}
+{{< tweet user="_copperj" id="1356303734691819524" >}}
 
 *Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen.*
 

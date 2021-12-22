@@ -23,7 +23,7 @@ where I was surprised by the results, finding that Monero manages to be quite a 
 Bitcoin when trying to use both in a private manner. I'll use this blog post to break it down in a bit more detail,
 and add a new contender to the mix -- Zcash.
 
-{{< tweet 1285336820264382468 >}}
+{{< tweet user="sethforprivacy" id="1285336820264382468" >}}
 
 The reason I've chosen to focus on efficiency of each protocol is that users will generally prioritize simplicity and 
 low cost, and if a privacy protocol can provide both of those to users, they can greatly aid adoption of powerful tools.
@@ -120,7 +120,7 @@ It's important to note that it takes a great deal of time to perform a single "r
 spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
 for all users depending on input amount and pool size.
 
-{{< twitter 1270424174834712577 >}}
+{{< tweet user="sethforprivacy" id="1270424174834712577" >}}
 
 For this comparison I have omitted ["doxxic change"](https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs) 
 costs and [mixing fees](https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
@@ -158,7 +158,7 @@ choose to transact without hiding sender/receiver/amount for the vast majority o
 For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from 
 @JEhrenhofer:
 
-{{< twitter 1332552672185098240 >}}
+{{< tweet user="JEhrenhofer" id="1332552672185098240" >}}
 
 | Cryptocurrency | Transaction Size | Transaction Cost (in USD as of 2021-04-20) |
 | ---| --- | --- |
