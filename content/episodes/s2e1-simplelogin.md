@@ -10,7 +10,7 @@ description = "Heard about email aliasing but not sure where to start? This epis
 summary = "Heard about email aliasing but not sure where to start? This episode, we're sitting down with Son from SimpleLogin to chat about email aliasing."
 showFullContent = false
 toc = false
-draft = true
+draft = false
 +++
 
 # Episode
