@@ -14,3 +14,4 @@ hugo.linux
 sethforprivacy.com.code-workspace
 LICENSE
 README.md
+.hugo_build.lock
