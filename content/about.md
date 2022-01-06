@@ -127,6 +127,18 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/) (Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>)
   - More info: <https://codeberg.org/orenom/Wikiless>
 
+### Privacy-preserving chat servers
+
+- [Cwtch Group Server (Private p2p messenger)](cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion)
+  - Address: `cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion`
+  - Server bundle:
+    {{< code language="uri" title="Cwtch server bundle" id="2" expand="Show" collapse="Hide" isCollapsed="false" >}}
+    server:eyJLZXlzIjp7ImJ1bGxldGluX2JvYXJkX29uaW9uIjoidXJ3bTNkcWt2bnVpNDVkeXM0emdhd2U1aHRra3Nidm5neHdrbGZlb2Nmb3M1dGsydnF5Mnk3eWQiLCJwcml2YWN5X3Bhc3NfcHVibGljX2tleSI6ImZOSGRDZ3A2S0l5RFkwL0Z3UHFGdm9pVnBDMkxYQ1EzaTNDV0NlYnkrd3c9IiwidG9rZW5fc2VydmljZV9vbmlvbiI6ImN5anN6emxxY2w2Z2c0Z2lkNGhhank0bzZ4ejVvazR3Mnc3dHl5Y21qbmR0M2xnd2xtNjNzY3lkIn0sIlNpZ25hdHVyZSI6IlViN2NpSFA3OS82ZWh6MDRvbmIwZHR0bWlMbUNtSDhpMk9rd3FicjlGcU1ka3E3dWY5TXo2WHhrZG9LQlpabzlkUkJFbExCYXRUSUJKcHBGZWJ5SkRnPT0ifQ==
+    {{< /code >}}
+  - More info: <https://git.openprivacy.ca/cwtch.im/server>
+- Matrix - Coming soon!
+  - More info: <https://matrix-org.github.io/synapse/latest/welcome_and_overview.html>
+
 ### High-Performance Monero Nodes
 
 I host two high-performance Monero nodes that are free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
