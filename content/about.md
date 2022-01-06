@@ -15,10 +15,11 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 
 ## How To Contact Me  
 
-[Twitter - @sethforprivacy](https://twitter.com/sethforprivacy)  
-[Matrix - @sethsimmons:monero.social](https://matrix.to/#/@sethsimmons:monero.social)  
-[Threema - WBAAN4ZA](https://threema.id/WBAAN4ZA)  
-[Email - seth@sethforprivacy.com](mailto:seth@sethforprivacy.com)  
+- [Twitter](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
+- [Matrix](https://matrix.to/#/@sethsimmons:monero.social) - `@sethsimmons:monero.social`  
+- [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`  
+- [Cwtch](https://cwtch.im/)- `eitasbh6bzqpwyrzlu67bb2pygqba34yxertepupyvuuukvgwfofdyyd`  
+- [Email](mailto:seth@sethforprivacy.com) - `seth@sethforprivacy.com`
 
 ## PGP Key
 
