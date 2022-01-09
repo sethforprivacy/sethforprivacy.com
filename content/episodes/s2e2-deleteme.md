@@ -10,7 +10,7 @@ description = "Wondering how to take back control of the data captured by data b
 summary = "Wondering how to take back control of the data captured by data brokers before you started taking privacy more seriously? This episode, we're sitting down with Rob Shavell, co-founder of DeleteMe to chat about cleaning up the data about you that's been scooped up by data brokers across the internet."
 showFullContent = false
 toc = false
-draft = true
+draft = false
 +++
 
 # Episode
