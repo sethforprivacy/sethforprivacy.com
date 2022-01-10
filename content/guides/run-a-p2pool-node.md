@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2021-09-08T14:45:00-04:00"
-description: This guide will aim to make it very simple and straightforward for you
+summary: This guide will aim to make it very simple and straightforward for you
   to start and run your own Monero node and p2pool instance for decentralized and
   fee-less mining of Monero.
 draft: false

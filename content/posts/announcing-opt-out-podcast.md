@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2021-06-10T14:00:00-05:00"
-description: Welcome to Opt Out, where I sit down with passionate people to learn
+summary: Welcome to Opt Out, where I sit down with passionate people to learn
   why privacy matters to them, the tools and techniques they’ve found and leveraged,
   and where we encourage and inspire others towards personal privacy and data-sovereignty.
 draft: false

@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2020-11-30T12:08:53-05:00"
-description: In this post I’ll detail how I spun up my blog specifically and how you
+summary: In this post I’ll detail how I spun up my blog specifically and how you
   can do the same easily.
 draft: false
 hidemeta: false

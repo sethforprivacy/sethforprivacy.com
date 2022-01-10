@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2021-08-24T22:00:00-04:00"
-description: This guide will walk you through how to act as a provider (also known
+summary: This guide will walk you through how to act as a provider (also known
   as a seller or "automatic swap backend" (ASB)).
 draft: false
 hidemeta: false

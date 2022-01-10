@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2021-12-21T10:00:00-04:00"
-description: A quick post detailing a recommendation of the order of steps I would
+summary: A quick post detailing a recommendation of the order of steps I would
   take if starting from scratch in my privacy journey today.
 draft: false
 hidemeta: false

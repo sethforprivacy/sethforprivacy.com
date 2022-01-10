@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2020-11-29T16:10:10Z"
-description: I take a look at how each of the three most recognized privacy approaches
+summary: I take a look at how each of the three most recognized privacy approaches
   in cryptocurrency stack up in size, cost (in both money and time!), and throughput.
 draft: false
 keywords:

@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2021-03-23T11:00:00-04:00"
-description: Where the pipe-dream of Bitcoin's real-world fungibility goes to die.
+summary: Where the pipe-dream of Bitcoin's real-world fungibility goes to die.
 draft: false
 keywords:
 - fungibility

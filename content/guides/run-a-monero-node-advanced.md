@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2021-01-12T12:26:09-05:00"
-description: In this short post I'll detail how to run a Monero node using systemd
+summary: In this short post I'll detail how to run a Monero node using systemd
   scripts on a Linux server, the most common OS for virtual private servers (VPS).
 draft: false
 hidemeta: false

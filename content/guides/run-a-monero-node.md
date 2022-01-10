@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2020-12-31T11:49:13-05:00"
-description: In this short post I'll detail how to easily run a Monero node using
+summary: In this short post I'll detail how to easily run a Monero node using
   Docker on a Linux server, the most common OS for virtual private servers (VPS).
 draft: false
 hidemeta: false

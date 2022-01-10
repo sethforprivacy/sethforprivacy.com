@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2021-02-11T12:00:00-05:00"
-description: This post is an attempt to help clarify and highlight ways that people
+summary: This post is an attempt to help clarify and highlight ways that people
   from all backgrounds and walks of life who love Monero can jump in and help out
   using their unique skill-sets.
 draft: false

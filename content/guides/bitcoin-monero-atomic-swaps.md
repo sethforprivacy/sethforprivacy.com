@@ -3,7 +3,7 @@ TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2021-08-17T10:00:00-04:00"
-description: It's been a long time coming, but it's finally here. You can, *today*,
+summary: It's been a long time coming, but it's finally here. You can, *today*,
   swap Bitcoin <> Monero directly peer-to-peer, over Tor, with no custodian or trusted
   3rd-party, no KYC (Know Your Customer) info, nothing.
 draft: false

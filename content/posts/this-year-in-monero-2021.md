@@ -2,7 +2,7 @@
 author: Seth For Privacy
 comments: false
 date: "2021-04-18T16:00:00-04:00"
-description: As a way to celebrate and show the growth that has happened for Monero
+summary: As a way to celebrate and show the growth that has happened for Monero
   across the past year on this, the 7th anniversary of the Monero project, I wanted
   to take a snapshot of statistics and social media posts to highlight this growth.
 draft: false

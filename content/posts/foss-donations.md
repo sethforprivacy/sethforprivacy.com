@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2021-04-13T23:00:00-04:00"
-description: This post gives some projects and organizations that I personally love
+summary: This post gives some projects and organizations that I personally love
   and that accept donations in Monero.
 draft: false
 keywords:

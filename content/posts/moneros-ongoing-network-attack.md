@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2020-12-08T15:35:00-05:00"
-description: In this blog post I'll break down a rough timeline of events, a short
+summary: In this blog post I'll break down a rough timeline of events, a short
   list of the known attacks that have happened or are still occurring, and what users
   can do to mitigate these attacks and others like them in the future.
 draft: false

@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2021-12-17T00:00:00-04:00"
-description: In this post I’ll attempt to walk through the most common FUD around
+summary: In this post I’ll attempt to walk through the most common FUD around
   Monero (both valid and invalid) and help to clarify many of these points.
 draft: false
 keywords:

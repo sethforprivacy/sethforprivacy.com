@@ -2,7 +2,7 @@
 author: Seth For Privacy
 authorTwitter: sethforprivacy
 date: "2021-02-19T11:57:44-05:00"
-description: 'Community drama, legal battles, slandering, and harassment takes away
+summary: 'Community drama, legal battles, slandering, and harassment takes away
   from the important mission of any OS like this: privacy and security.'
 draft: false
 keywords:
