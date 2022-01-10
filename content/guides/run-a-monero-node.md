@@ -13,6 +13,7 @@ tags:
 - Network
 - p2p
 title: Run a Monero Node
+weight: 1
 ---
 
 # Introduction

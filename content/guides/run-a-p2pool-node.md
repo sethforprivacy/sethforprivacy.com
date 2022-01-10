@@ -17,6 +17,7 @@ tags:
 - mining
 - decentralization
 title: Run and mine on a p2pool Node
+weight: 2
 ---
 
 # Introduction
