@@ -1,17 +1,24 @@
-+++
-title = "Sponsor Special w/ Alex from LocalMonero and AgoraDesk"
-date = 2021-09-15T15:54:01-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "special"]
-keywords = ["privacy", "podcast", "opt out", "special"]
-description = "What's the best way to buy and sell Monero while maintaining personal privacy? This episode, we're sitting down with Alex, co-founder of LocalMonero, the newest sponsor of Opt Out."
-summary = "What's the best way to buy and sell Monero while maintaining personal privacy? This episode, we're sitting down with Alex, co-founder of LocalMonero, the newest sponsor of Opt Out."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-09-15T15:54:01-05:00"
+description: What's the best way to buy and sell Monero while maintaining personal
+  privacy? This episode, we're sitting down with Alex, co-founder of LocalMonero,
+  the newest sponsor of Opt Out.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- special
+tags:
+- privacy
+- podcast
+- opt out
+- special
+title: Sponsor Special w/ Alex from LocalMonero and AgoraDesk
+toc: false
+---
 
 # Episode
 

@@ -1,17 +1,27 @@
-+++
-title = "Personal responsibility in privacy, FOSS funding models, and Bitcoin w/ Matt Odell"
-date = 2021-11-13T15:18:47-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering why FOSS and privacy have become such a focus for Matt Odell and Citadel Dispatch, or wanting to learn more about FOSS in general? This episode, we're sitting down with Matt Odell for a bit of a different show where we focus on listener questions around FOSS, privacy, FOSS community ethos, and his journey towards privacy."
-summary = "Wondering why FOSS and privacy have become such a focus for Matt Odell and Citadel Dispatch, or wanting to learn more about FOSS in general? This episode, we're sitting down with Matt Odell for a bit of a different show where we focus on listener questions around FOSS, privacy, FOSS community ethos, and his journey towards privacy."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-11-13T15:18:47-05:00"
+description: Wondering why FOSS and privacy have become such a focus for Matt Odell
+  and Citadel Dispatch, or wanting to learn more about FOSS in general? This episode,
+  we're sitting down with Matt Odell for a bit of a different show where we focus
+  on listener questions around FOSS, privacy, FOSS community ethos, and his journey
+  towards privacy.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Personal responsibility in privacy, FOSS funding models, and Bitcoin w/ Matt
+  Odell
+toc: false
+---
 
 # Episode
 

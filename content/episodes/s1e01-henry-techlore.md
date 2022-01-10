@@ -1,17 +1,25 @@
-+++
-title = "Privacy as a journey and digital minimalism w/ Techlore"
-date = 2021-06-01T15:45:42-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "This week, I got the pleasure of sitting down with Henry from Techlore to chat about digital minimalism, privacy education, and some of the tools and projects that Henry recommends for taking back control of our privacy and data in an ever increasing world of data capture, tracking, and sharing."
-summary = "This week, I got the pleasure of sitting down with Henry from Techlore to chat about digital minimalism, privacy education, and some of the tools and projects that Henry recommends for taking back control of our privacy and data in an ever increasing world of data capture, tracking, and sharing."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-06-01T15:45:42-05:00"
+description: This week, I got the pleasure of sitting down with Henry from Techlore
+  to chat about digital minimalism, privacy education, and some of the tools and projects
+  that Henry recommends for taking back control of our privacy and data in an ever
+  increasing world of data capture, tracking, and sharing.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Privacy as a journey and digital minimalism w/ Techlore
+toc: false
+---
 
 # Episode
 

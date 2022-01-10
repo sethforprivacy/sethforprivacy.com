@@ -1,17 +1,23 @@
-+++
-title = "Dispelling Monero FUD"
-date = 2021-12-17T00:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["monero", "privacy", "fud", "bitcoin"]
-keywords = ["monero", "privacy", "fud", "bitcoin"]
-description = "In this post I’ll attempt to walk through the most common FUD around Monero (both valid and invalid) and help to clarify many of these points."
-summary = "In this post I’ll attempt to walk through the most common FUD around Monero (both valid and invalid) and help to clarify many of these points."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-12-17T00:00:00-04:00"
+description: In this post I’ll attempt to walk through the most common FUD around
+  Monero (both valid and invalid) and help to clarify many of these points.
+draft: false
+keywords:
+- monero
+- privacy
+- fud
+- bitcoin
+tags:
+- monero
+- privacy
+- fud
+- bitcoin
+title: Dispelling Monero FUD
+toc: true
+---
 
 # Introduction
 
@@ -129,7 +135,7 @@ This goal has been accomplished via a few different mining algorithms in Monero'
 
 While Monero does have drastically less miners and energy used to secure the network compare to Bitcoin or Ethereum, it remains secure and extremely decentralized due to the technical approach in RandomX and the grassroots nature of the community up until now. This was made abundantly clear when ASIC-dominated coins experienced massive drops in hashrate (including Bitcoin!) when China banned mining in April, 2021:
 
-{{< figure src="/dispelling-monero-fud/china-banned-hashrate.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/dispelling-monero-fud/china-banned-hashrate.png" align="center" style="border-radius: 8px;" >}}
 
 (From: <https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4>)
 

@@ -1,17 +1,22 @@
-+++
-title = "Announcing my new podcast - Opt Out!"
-date = 2021-06-10T14:00:00-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out"]
-keywords = ["privacy", "podcast", "opt out"]
-description = "Welcome to Opt Out, where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty."
-summary = "Welcome to Opt Out, where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-06-10T14:00:00-05:00"
+description: Welcome to Opt Out, where I sit down with passionate people to learn
+  why privacy matters to them, the tools and techniques they’ve found and leveraged,
+  and where we encourage and inspire others towards personal privacy and data-sovereignty.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+tags:
+- privacy
+- podcast
+- opt out
+title: Announcing my new podcast - Opt Out!
+toc: false
+---
 
 ## Welcome to Opt Out
 

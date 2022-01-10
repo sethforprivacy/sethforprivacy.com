@@ -1,17 +1,23 @@
-+++
-title = "Donating to FOSS Projects and Pro-Privacy Organizations"
-date = 2021-04-13T23:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "donations", "open source", "FOSS"]
-keywords = ["Monero", "donations", "open source", "FOSS"]
-description = "This post gives some projects and organizations that I personally love and that accept donations in Monero."
-summary = "This post gives some projects and organizations that I personally love and that accept donations in Monero."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-04-13T23:00:00-04:00"
+description: This post gives some projects and organizations that I personally love
+  and that accept donations in Monero.
+draft: false
+keywords:
+- Monero
+- donations
+- open source
+- FOSS
+tags:
+- Monero
+- donations
+- open source
+- FOSS
+title: Donating to FOSS Projects and Pro-Privacy Organizations
+toc: true
+---
 
 # Introduction
 

@@ -1,17 +1,19 @@
-+++
-title = "Run a Monero Node (Advanced)"
-date = 2021-01-12T12:26:09-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "Network", "p2p"]
-keywords = ["Monero", "Node", "p2p", "network"]
-description = "In this short post I'll detail how to run a Monero node using systemd scripts on a Linux server, the most common OS for virtual private servers (VPS)."
-summary = "In this short post I'll detail how to run a Monero node using systemd scripts on a Linux server, the most common OS for virtual private servers (VPS)."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2021-01-12T12:26:09-05:00"
+description: In this short post I'll detail how to run a Monero node using systemd
+  scripts on a Linux server, the most common OS for virtual private servers (VPS).
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Monero
+- Network
+- p2p
+title: Run a Monero Node (Advanced)
+---
 
 # Introduction
 
@@ -147,9 +149,9 @@ Installing `monerod` via a systemd script allows Monero to start automatically o
 
 Choose the proper configuration file depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
 
-*Note: My recommended configuration file is automatically expanded below, but feel free to choose one of the other 3 options as needed.*
+*Note: My recommended configuration file is the first one, but feel free to choose one of the other 3 options as needed.*
 
-{{< code language="conf" title="monerod config file" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```ini
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -176,9 +178,9 @@ enable-dns-blocklist=1
 # Set download and upload limits, if desired
 # limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
-{{< /code >}}
+```
 
-{{< code language="conf" title="monerod config file w/ public restricted RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
+```ini
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -206,9 +208,9 @@ enable-dns-blocklist=1
 # Set download and upload limits, if desired
 # limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
-{{< /code >}}
+```
 
-{{< code language="conf" title="monerod config file (pruned)" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```ini
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -238,9 +240,9 @@ enable-dns-blocklist=1
 # Set download and upload limits, if desired
 # limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
-{{< /code >}}
+```
 
-{{< code language="conf" title="monerod config file w/ public restricted RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```ini
 # /etc/monero/monerod.conf
 
 # Data directory (blockchain db and indices)
@@ -271,7 +273,7 @@ enable-dns-blocklist=1
 # Set download and upload limits, if desired
 # limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
-{{< /code >}}
+```
 
 Now copy and paste the configuration file you want to use:
 
@@ -283,7 +285,7 @@ sudo nano /etc/monero/monerod.conf
 
 Simply copy the contents of the systemd script below and save it to `/etc/systemd/system/monerod.service` using vim or nano:
 
-{{< code language="conf" title="monerod systemd script" id="4" expand="Show" collapse="Hide" isCollapsed="false" >}}
+```systemd
 [Unit]
 Description=Monero Full Node (Mainnet)
 After=network.target
@@ -339,7 +341,7 @@ NoNewPrivileges=true
 
 [Install]
 WantedBy=multi-user.target
-{{< /code >}}
+```
 
 ```bash
 sudo nano /etc/systemd/system/monerod.service
@@ -395,7 +397,7 @@ That will download the latest binaries, replace the old ones, and restart `moner
 
 A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
 
-{{< code language="help" title="monerod help output" id="5" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```bash
 Monero 'Oxygen Orion' (v0.17.1.8-release)
 Commands: 
   alt_chain_info [blockhash]
@@ -449,7 +451,7 @@ Commands:
   unban <address>
   update (check|download)
   version
-{{< /code >}}
+```
 
 When you want to run a command, simply run `monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
 

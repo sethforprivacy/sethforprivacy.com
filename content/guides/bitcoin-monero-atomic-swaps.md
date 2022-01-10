@@ -1,17 +1,20 @@
-+++
-title = "Performing Bitcoin <> Monero Atomic Swaps"
-date = 2021-08-17T10:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Atomic swaps", "Bitcoin", "Monero"]
-keywords = ["Atomic swaps", "Bitcoin", "Monero"]
-description = "It's been a long time coming, but it's finally here. You can, *today*, swap Bitcoin <> Monero directly peer-to-peer, over Tor, with no custodian or trusted 3rd-party, no KYC (Know Your Customer) info, nothing."
-summary = "It's been a long time coming, but it's finally here. You can, *today*, swap Bitcoin <> Monero directly peer-to-peer, over Tor, with no custodian or trusted 3rd-party, no KYC (Know Your Customer) info, nothing."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2021-08-17T10:00:00-04:00"
+description: It's been a long time coming, but it's finally here. You can, *today*,
+  swap Bitcoin <> Monero directly peer-to-peer, over Tor, with no custodian or trusted
+  3rd-party, no KYC (Know Your Customer) info, nothing.
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Atomic swaps
+- Bitcoin
+- Monero
+title: Performing Bitcoin <> Monero Atomic Swaps
+---
 
 # Introduction
 
@@ -58,7 +61,7 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
     ./swap --version
     ```
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/version.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/version.png" align="center" style="border-radius: 8px;" >}}
 
 # Making the swap (CLI)
 
@@ -84,7 +87,7 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
 
     This command will list available sellers, their min/max trade amounts, and the current price they are offering
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/list-sellers.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/list-sellers.png" align="center" style="border-radius: 8px;" >}}
 
 2. Start the swap (my peer is used here, replace with the preferred peer as-needed)
 
@@ -94,7 +97,7 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
 
     ***Don't forget to replace the Monero and Bitcoin address placeholders with your own!***
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/buy-xmr.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/buy-xmr.png" align="center" style="border-radius: 8px;" >}}
 
 3. Deposit Bitcoin to the provided address, making sure you send more than the minimum to cover fees for the swap transactions
 4. Watch the process of the swap
@@ -109,29 +112,29 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
 2. Select the preferred swap provider
 3. Enter the preferred amount of Bitcoin or Monero you'd like to swap within the minimum and maximum set by the swap provider
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/swap_web.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/swap_web.png" align="center" style="border-radius: 8px;" >}}
 
 4. Enter the appropriate Monero and Bitcoin addresses you control
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/addresses_web.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/addresses_web.png" align="center" style="border-radius: 8px;" >}}
 
 5. Follow the instructions to open the terminal
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/instructions_web.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/instructions_web.png" align="center" style="border-radius: 8px;" >}}
 
 6. Copy and paste the provided command into your terminal and run the command
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/cli_web.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/cli_web.png" align="center" style="border-radius: 8px;" >}}
 
 7. Deposit Bitcoin to the provided address, making sure you send more than the minimum to cover fees
 8. Watch the process of the swap
     Logs will be displayed showing the steps that are happening, be patient as confirmations are required on both the Bitcoin and Monero side and can take some time
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/cli_swap_web.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/cli_swap_web.png" align="center" style="border-radius: 8px;" >}}
 
 9. Profit
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/success_web.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/bitcoin-monero-atomic-swaps/success_web.png" align="center" style="border-radius: 8px;" >}}
 
 # What to do if the swap fails
 

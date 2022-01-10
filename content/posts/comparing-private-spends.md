@@ -1,17 +1,23 @@
-+++
-title = "Comparing Reasonably Private Spends in Bitcoin, Monero, and Zcash"
-date = "2020-11-29T16:10:10Z"
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "Bitcoin", "Zcash"]
-keywords = ["Monero", "Bitcoin", "Zcash", "privacy", "efficiency"]
-description = "I take a look at how each of the three most recognized privacy approaches in cryptocurrency stack up in size, cost (in both money and time!), and throughput."
-summary = "I take a look at how each of the three most recognized privacy approaches in cryptocurrency stack up in size, cost (in both money and time!), and throughput."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2020-11-29T16:10:10Z"
+description: I take a look at how each of the three most recognized privacy approaches
+  in cryptocurrency stack up in size, cost (in both money and time!), and throughput.
+draft: false
+keywords:
+- Monero
+- Bitcoin
+- Zcash
+- privacy
+- efficiency
+tags:
+- Monero
+- Bitcoin
+- Zcash
+title: Comparing Reasonably Private Spends in Bitcoin, Monero, and Zcash
+toc: true
+---
 
 
 ## Introduction  

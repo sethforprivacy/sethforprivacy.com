@@ -1,17 +1,23 @@
-+++
-title = "Digital identity, FOSS, and self-hosting w/ k3tan"
-date = 2021-06-13T15:44:08-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "This week, I got the pleasure of sitting down with k3tan to chat about privacy, self-hosting, and some of his favorite tools."
-summary = "This week, I got the pleasure of sitting down with k3tan to chat about privacy, self-hosting, and some of his favorite tools."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-06-13T15:44:08-05:00"
+description: This week, I got the pleasure of sitting down with k3tan to chat about
+  privacy, self-hosting, and some of his favorite tools.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Digital identity, FOSS, and self-hosting w/ k3tan
+toc: false
+---
 
 # Episode
 

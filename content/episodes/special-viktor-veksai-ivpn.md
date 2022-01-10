@@ -1,17 +1,26 @@
-+++
-title = "Sponsor Special w/ Viktor Vecsei from IVPN"
-date = 2021-12-03T15:49:17-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "special"]
-keywords = ["privacy", "podcast", "opt out", "special"]
-description = "Wanting to find a solid VPN provider, but struggling to break through all of the marketing fluff and grandiose claims? This episode, we're sitting down with Viktor, a member of the IVPN team, the newest sponsor of Opt Out to discuss the ethos behind IVPN, their approach to providing privacy to users, and some of the history of IVPN."
-summary = "Wanting to find a solid VPN provider, but struggling to break through all of the marketing fluff and grandiose claims? This episode, we're sitting down with Viktor, a member of the IVPN team, the newest sponsor of Opt Out to discuss the ethos behind IVPN, their approach to providing privacy to users, and some of the history of IVPN."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-12-03T15:49:17-05:00"
+description: Wanting to find a solid VPN provider, but struggling to break through
+  all of the marketing fluff and grandiose claims? This episode, we're sitting down
+  with Viktor, a member of the IVPN team, the newest sponsor of Opt Out to discuss
+  the ethos behind IVPN, their approach to providing privacy to users, and some of
+  the history of IVPN.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- special
+tags:
+- privacy
+- podcast
+- opt out
+- special
+title: Sponsor Special w/ Viktor Vecsei from IVPN
+toc: false
+---
 
 # Episode
 

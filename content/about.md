@@ -1,11 +1,16 @@
 ---
-title: "About"
-date: 2020-11-29T19:01:07-05:00
-toc: true
+author: Seth For Privacy
+comments: false
+date: "2020-11-29T19:01:07-05:00"
+description: ""
 draft: false
+hidemeta: false
+showToc: true
+tags: []
+title: About
 ---
 
-# About Me  
+# About Me
 
 My name is Seth, and I've started this blog to give me a space for longer-form analysis, thought, and content.
 
@@ -27,7 +32,7 @@ Fingerprint:
 
 `55EE C39E 2EFD D374 0F94  DFFB 6B97 91C6 214D 1E57`
 
-{{< code language="pgp" title="Full PGP Key" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGBwdW8BEACh2gGCMtmS6VgWf/4JCK8O4NKnQ5uoCIxG+oASc+kPOfWZwS0t
@@ -57,7 +62,7 @@ h6rCtdTWwnY90jJww8xedbjEy5OVT8gn7ay9lpWjWqCMowO24Qo8mhaZqnVzAmI1
 JEcJD9ltDAVcgs36
 =p/JF
 -----END PGP PUBLIC KEY BLOCK-----
-{{< /code >}}
+```
 
 ### CTemplar PGP key
 
@@ -71,7 +76,7 @@ Fingerprint:
 
 Full PGP key:
 
-{{< code language="pgp" title="CTemplar full PGP key" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: OpenPGP.js v4.10.4
 Comment: https://openpgpjs.org
@@ -86,7 +91,7 @@ YYEx3AIbDAAKCRDOfaMQAGyAZ887AQDckNbs+pNNw18JLUc/wc1IFtLKYSPT
 0pTg2z9bJy9EqQD/YfmVzRDMsjrxtkfm9EtBATNJN2sWRn57IoT9qB+opgM=
 =D/Fr
 -----END PGP PUBLIC KEY BLOCK-----
-{{< /code >}}
+```
 
 ### PGP-verified identities
 
@@ -110,21 +115,29 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 
 ### Privacy-preserving front-ends and tools
 
-- [Whoogle (Private Search)](https://search.sethforprivacy.com) (Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>)
+- [Whoogle (Private Search)](https://search.sethforprivacy.com)
+  - Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>
   - More info: <https://github.com/benbusby/whoogle-search>
-- [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com) (Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>)
+- [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com)
+  - Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>
   - More info: <https://cryptpad.fr/>
-- [Monero Blockchain Explorer](https://explore.sethforprivacy.com) (Tor: <http://exploredv42tq2nowrll6f27nuymenndwupueqvyugaqzbrvmjhhceqd.onion>)
+- [Monero Blockchain Explorer](https://explore.sethforprivacy.com)
+  - Tor: <http://exploredv42tq2nowrll6f27nuymenndwupueqvyugaqzbrvmjhhceqd.onion>
   - More info: <https://github.com/moneroexamples/onion-monero-blockchain-explorer>
-- [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com) (Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>)
+- [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com)
+  - Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>
   - More info: https://github.com/iv-org/invidious
-- [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com) (Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>)
+- [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com)
+  - Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>
   - More info: <https://github.com/zedeus/nitter>
-- [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com) (Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>)
+- [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com)
+  - Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>
   - More info: <https://codeberg.org/teddit/teddit>
-- [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com) (Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>)
+- [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com)
+  - Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>
   - More info: <https://privatebin.info/>
-- [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/) (Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>)
+- [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/)
+  - Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>
   - More info: <https://codeberg.org/orenom/Wikiless>
 
 ### Privacy-preserving chat servers
@@ -132,9 +145,11 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Cwtch Group Server (Private p2p messenger)](cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion)
   - Address: `cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion`
   - Server bundle:
-    {{< code language="uri" title="Cwtch server bundle" id="2" expand="Show" collapse="Hide" isCollapsed="false" >}}
+
+    ```plaintext
     server:eyJLZXlzIjp7ImJ1bGxldGluX2JvYXJkX29uaW9uIjoidXJ3bTNkcWt2bnVpNDVkeXM0emdhd2U1aHRra3Nidm5neHdrbGZlb2Nmb3M1dGsydnF5Mnk3eWQiLCJwcml2YWN5X3Bhc3NfcHVibGljX2tleSI6ImZOSGRDZ3A2S0l5RFkwL0Z3UHFGdm9pVnBDMkxYQ1EzaTNDV0NlYnkrd3c9IiwidG9rZW5fc2VydmljZV9vbmlvbiI6ImN5anN6emxxY2w2Z2c0Z2lkNGhhank0bzZ4ejVvazR3Mnc3dHl5Y21qbmR0M2xnd2xtNjNzY3lkIn0sIlNpZ25hdHVyZSI6IlViN2NpSFA3OS82ZWh6MDRvbmIwZHR0bWlMbUNtSDhpMk9rd3FicjlGcU1ka3E3dWY5TXo2WHhrZG9LQlpabzlkUkJFbExCYXRUSUJKcHBGZWJ5SkRnPT0ifQ==
-    {{< /code >}}
+    ```
+
   - More info: <https://git.openprivacy.ca/cwtch.im/server>
 - Matrix - Coming soon!
   - More info: <https://matrix-org.github.io/synapse/latest/welcome_and_overview.html>
@@ -221,5 +236,5 @@ For more info on OpenAlias, see the excellent guide by Justin [here](https://med
 
 ### Address/QR
 
-{{< figure src="/donation.png" position="center" style="border-radius: 8px;" link="monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY" >}}
+{{< figure src="/donation.png" align="center" style="border-radius: 8px;" link="monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY" >}}
 `86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY`

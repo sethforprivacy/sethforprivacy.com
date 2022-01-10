@@ -1,17 +1,18 @@
-+++
-title = "This Year in Monero - 2021"
-date = 2021-04-18T16:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "Moneroversary"]
-keywords = ["Monero", "Moneroversary"]
-description = "As a way to celebrate and show the growth that has happened for Monero across the past year on this, the 7th anniversary of the Monero project, I wanted to take a snapshot of statistics and social media posts to highlight this growth."
-summary = "As a way to celebrate and show the growth that has happened for Monero across the past year on this, the 7th anniversary of the Monero project, I wanted to take a snapshot of statistics and social media posts to highlight this growth."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+comments: false
+date: "2021-04-18T16:00:00-04:00"
+description: As a way to celebrate and show the growth that has happened for Monero
+  across the past year on this, the 7th anniversary of the Monero project, I wanted
+  to take a snapshot of statistics and social media posts to highlight this growth.
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Monero
+- Moneroversary
+title: This Year in Monero - 2021
+---
 
 # Introduction
 
@@ -35,14 +36,14 @@ Each section will highlight the previous year (04/2019 through 04/2020) as well 
 - Monero transactions grew from ~7,000tx per day to ~10,000tx per day
 - There were ***2,811,244*** total transactions, for an average of ***7,702*** transactions per day for the year.
 
-{{< figure src="/this-year-in-monero-2021/monero-6y-transactions.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-6y-transactions.png" align="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
 - Monero transactions grew from ~10,000tx per day to ~23,000tx per day
 - There were ***5,868,096*** total transactions, for an average of ***16,076*** transactions per day for the year
 
-{{< figure src="/this-year-in-monero-2021/monero-7y-transactions.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-7y-transactions.png" align="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Growth
 
@@ -56,7 +57,7 @@ Monero's on-chain usage grew ***208%*** YoY! Every one of these transactions was
 - There were ***292,651*** total blocks, for an average size of ***29.56KB*** per block for the year.
 - There were ***2,811,244*** total transactions, for an average of ***2.76KB*** per transaction.
 
-{{< figure src="/this-year-in-monero-2021/monero-6y-blockchain.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-6y-blockchain.png" align="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
@@ -64,7 +65,7 @@ Monero's on-chain usage grew ***208%*** YoY! Every one of these transactions was
 - There were ***262,588*** total blocks, for an average size of ***53.30KB*** per block for the year.
 - There were ***5,868,096*** total transactions, for an average of ***2.38KB*** per transaction.
 
-{{< figure src="/this-year-in-monero-2021/monero-7y-blockchain.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-7y-blockchain.png" align="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Growth
 
@@ -78,7 +79,7 @@ Monero's blockchain size grew ***180%*** faster YoY while the average transactio
 - There were ***292,651*** total blocks, for an average block subsidy of ***2.04XMR*** per block for the year.
 - Monero's emission per day dropped from ***~2,000XMR*** to ***~1,200XMR*** over the course of the year.
 
-{{< figure src="/this-year-in-monero-2021/monero-6y-emissions.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-6y-emissions.png" align="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
@@ -86,7 +87,7 @@ Monero's blockchain size grew ***180%*** faster YoY while the average transactio
 - There were ***262,588*** total blocks, for an average block subsidy of ***1.38XMR*** per block for the year.
 - Monero's emission per day dropped from ***~1,200XMR*** to ***~750XMR*** over the course of the year.
 
-{{< figure src="/this-year-in-monero-2021/monero-7y-emissions.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-7y-emissions.png" align="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Change
 
@@ -101,7 +102,7 @@ Monero's inflation decreased ***39.5%*** YoY and is steadily approaching the [ta
 - There were ***262,651*** total blocks, for an average total fees to miners of ***0.00419288XMR*** per block for the year.
 - There were ***2,811,244*** total transactions, for an average of ***0.000391666XMR*** per transaction.
 
-{{< figure src="/this-year-in-monero-2021/monero-6y-fees.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-6y-fees.png" align="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
@@ -110,7 +111,7 @@ Monero's inflation decreased ***39.5%*** YoY and is steadily approaching the [ta
 - There were ***262,588*** total blocks, for an average total fees to miners of ***0.00717767XMR*** per block for the year.
 - There were ***5,868,096*** total transactions, for an average of ***0.000321189XMR*** per transaction.
 
-{{< figure src="/this-year-in-monero-2021/monero-7y-fees.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-7y-fees.png" align="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Growth
 
@@ -128,7 +129,7 @@ Monero's fees spent increased ***71.11%*** YoY while the average transaction fee
 - Monero started after the RandomX upgrade with ***~27,000 miners***[^1].
 - Monero unique miners increased from ***27,247***[^1] to ***37,380***[^1] over the year.
 
-{{< figure src="/this-year-in-monero-2021/monero-hashrate-2020.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-hashrate-2020.png" align="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
@@ -136,7 +137,7 @@ Monero's fees spent increased ***71.11%*** YoY while the average transaction fee
 - Monero broke ***100,000 miners***[^1] for the first time in it's network history!
 - Monero unique miners increased from ***37,380***[^1] to ***102,163***[^1] over the year.
 
-{{< figure src="/this-year-in-monero-2021/monero-hashrate-2021.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/monero-hashrate-2021.png" align="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Growth
 
@@ -150,13 +151,13 @@ Monero's network hashrate increased ***89.25%*** YoY and network miners increase
 
 - Monero's main subreddit, [r/Monero](https://www.reddit.com/r/Monero) gained ***~11,000*** subscribers, going from ***~157,000*** to ***~168,000*** subscribers over the year.
 
-{{< figure src="/this-year-in-monero-2021/subreddit_2020.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/subreddit_2020.png" align="center" style="border-radius: 8px;" >}}
 
 ***04/2020 through 04/2021:***
 
 - Monero's main subreddit, [r/Monero](https://www.reddit.com/r/Monero) gained ***~43,000*** subscribers, going from ***~168,000*** to ***~211,000*** subscribers over the year.
 
-{{< figure src="/this-year-in-monero-2021/subreddit_2021.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/this-year-in-monero-2021/subreddit_2021.png" align="center" style="border-radius: 8px;" >}}
 
 ### Year over Year Growth
 

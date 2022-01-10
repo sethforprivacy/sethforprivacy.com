@@ -1,17 +1,25 @@
-+++
-title = "Privacy by default, contributing to FOSS, and Monero w/ Justin Ehrenhofer"
-date = 2021-07-26T15:37:31-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering how you can contribute to FOSS projects without being able to code, or why privacy needs to be the default option in tools you use? This episode, we're sitting down with Justin Ehrenhofer to chat about contributing to FOSS projects as a non-dev, why privacy by default matters, and where Monero fits into his toolkit."
-summary = "Wondering how you can contribute to FOSS projects without being able to code, or why privacy needs to be the default option in tools you use? This episode, we're sitting down with Justin Ehrenhofer to chat about contributing to FOSS projects as a non-dev, why privacy by default matters, and where Monero fits into his toolkit."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-07-26T15:37:31-05:00"
+description: Wondering how you can contribute to FOSS projects without being able
+  to code, or why privacy needs to be the default option in tools you use? This episode,
+  we're sitting down with Justin Ehrenhofer to chat about contributing to FOSS projects
+  as a non-dev, why privacy by default matters, and where Monero fits into his toolkit.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Privacy by default, contributing to FOSS, and Monero w/ Justin Ehrenhofer
+toc: false
+---
 
 # Episode
 

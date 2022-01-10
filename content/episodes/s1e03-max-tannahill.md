@@ -1,17 +1,24 @@
-+++
-title = "Mobile OS privacy, drag-net surveillance, and cryptocurrency usage w/ Max Tannahill"
-date = 2021-06-27T15:42:46-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wanting to learn more about mobile privacy, but not sure where to start? This episode, we sat down with Max Tannahill to chat about mobile OSs, surveillance, and cryptocurrency."
-summary = "Wanting to learn more about mobile privacy, but not sure where to start? This episode, we sat down with Max Tannahill to chat about mobile OSs, surveillance, and cryptocurrency."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-06-27T15:42:46-05:00"
+description: Wanting to learn more about mobile privacy, but not sure where to start?
+  This episode, we sat down with Max Tannahill to chat about mobile OSs, surveillance,
+  and cryptocurrency.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Mobile OS privacy, drag-net surveillance, and cryptocurrency usage w/ Max Tannahill
+toc: false
+---
 
 # Episode
 
