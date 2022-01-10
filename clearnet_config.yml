@@ -50,6 +50,8 @@ params:
     Content: >
       - Take a look at "Posts" for blog posts, "Guides" for guides on self-hosting and Monero, and "Opt Out Podcast" for content related to Opt Out.
 
+      -
+
       - ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
 
   socialIcons:
