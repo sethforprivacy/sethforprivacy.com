@@ -1,10 +1,7 @@
-FROM nginx:latest
+FROM nginx:alpine
 
-# Patch vulnerabilities
-RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Upgrade base image
+RUN set -ex && apk --update --no-cache upgrade
 
 # Copy clearnet static files
 COPY public /usr/share/nginx/html/public
