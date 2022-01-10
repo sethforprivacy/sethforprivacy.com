@@ -1,17 +1,26 @@
-+++
-title = "Transitioning to Linux and CalyxOS w/ Chris Blec"
-date = 2021-10-05T15:26:30-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering what it's like to take the dive and switch to Linux and CalyxOS at once? How does the recent push for vaccine mandates impact our journey towards privacy? This episode, we're sitting down with Chris Blec to chat about his journey to Linux and CalyxOS, security and privacy in cryptocurrency, our thoughts on the privacy implications of vaccine mandates, and much more."
-summary = "Wondering what it's like to take the dive and switch to Linux and CalyxOS at once? How does the recent push for vaccine mandates impact our journey towards privacy? This episode, we're sitting down with Chris Blec to chat about his journey to Linux and CalyxOS, security and privacy in cryptocurrency, our thoughts on the privacy implications of vaccine mandates, and much more."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-10-05T15:26:30-05:00"
+description: Wondering what it's like to take the dive and switch to Linux and CalyxOS
+  at once? How does the recent push for vaccine mandates impact our journey towards
+  privacy? This episode, we're sitting down with Chris Blec to chat about his journey
+  to Linux and CalyxOS, security and privacy in cryptocurrency, our thoughts on the
+  privacy implications of vaccine mandates, and much more.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Transitioning to Linux and CalyxOS w/ Chris Blec
+toc: false
+---
 
 # Episode
 

@@ -1,17 +1,19 @@
-+++
-title = "Run an atomic swap provider (Advanced)"
-date = 2021-08-24T22:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Atomic swaps", "Bitcoin", "Monero"]
-keywords = ["Atomic swaps", "Bitcoin", "Monero"]
-description = 'This guide will walk you through how to act as a provider (also known as a seller or "automatic swap backend" (ASB)).'
-summary = 'This guide will walk you through how to act as a provider (also known as a seller or "automatic swap backend" (ASB)).'
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2021-08-24T22:00:00-04:00"
+description: This guide will walk you through how to act as a provider (also known
+  as a seller or "automatic swap backend" (ASB)).
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Atomic swaps
+- Bitcoin
+- Monero
+title: Run an atomic swap provider (Advanced)
+---
 
 # Introduction
 
@@ -120,7 +122,7 @@ This guide will also assume you are using Linux, but commands should be similar 
     asb --version
     ```
 
-{{< figure src="/run-an-atomic-swap-provider-advanced/asb-version.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/run-an-atomic-swap-provider-advanced/asb-version.png" align="center" style="border-radius: 8px;" >}}
 
 ## monero-wallet-rpc
 
@@ -151,7 +153,7 @@ This guide will also assume you are using Linux, but commands should be similar 
     monero-wallet-rpc --version
     ```
 
-{{< figure src="/run-an-atomic-swap-provider-advanced/monero-wallet-rpc-version.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/run-an-atomic-swap-provider-advanced/monero-wallet-rpc-version.png" align="center" style="border-radius: 8px;" >}}
 
 ## Tor daemon
 
@@ -243,7 +245,7 @@ sudo nano /etc/systemd/system/monero-wallet-rpc.service
 
 ***NOTE: If you are not running a Monero node on the same host, be sure to replace the `127.0.0.1:18089` daemon-host arg with the appropriate Monero daemon URL, i.e. `node.sethforprivacy.com:18089`.***
 
-{{< code language="conf" title="monero-wallet-rpc systemd script" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
+```systemd
 [Unit]
 Description=Monero Wallet RPC (Mainnet)
 After=network.target
@@ -299,7 +301,7 @@ NoNewPrivileges=true
 
 [Install]
 WantedBy=multi-user.target
-{{< /code >}}
+```
 
 ## Automated swap broker (ASB) systemd config
 
@@ -311,7 +313,7 @@ sudo nano /etc/systemd/system/asb.service
 
 *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
-{{< code language="conf" title="asb systemd script" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
+```systemd
 [Unit]
 Description=Automated swap broker (ASB)
 After=network.target monero-wallet-rpc.service
@@ -357,7 +359,7 @@ NoNewPrivileges=true
 
 [Install]
 WantedBy=multi-user.target
-{{< /code >}}
+```
 
 ## ASB configuration file
 
@@ -403,7 +405,7 @@ Here are some key parameters you should change:
 
     *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
-    {{< code language="conf" title="asb config file" id="2" expand="Show" collapse="Hide" isCollapsed="false" >}}
+    ```ini
     [data]
     dir = "/etc/asb"
 
@@ -431,7 +433,7 @@ Here are some key parameters you should change:
     max_buy_btc = 0.001
     ask_spread = 0.05
     price_ticker_ws_url = "wss://ws.kraken.com/"
-    {{< /code >}}
+    ```
 
     Other recommended rendezvous nodes that can be used instead of mine int he configuration above:
 
@@ -539,11 +541,11 @@ On startup the ASB tool will provide you with a Monero address to use for deposi
 1. Navigate to <https://unstoppableswap.net/>
 2. Click on the "Swap provider" box
 
-    {{< figure src="/run-an-atomic-swap-provider-advanced/unstoppable-home.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/run-an-atomic-swap-provider-advanced/unstoppable-home.png" align="center" style="border-radius: 8px;" >}}
 
 3. Click "Submit a swap provider"
 
-    {{< figure src="/run-an-atomic-swap-provider-advanced/unstoppable-providers.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/run-an-atomic-swap-provider-advanced/unstoppable-providers.png" align="center" style="border-radius: 8px;" >}}
 
 4. Enter your external_address and peer ID
 
@@ -553,7 +555,7 @@ On startup the ASB tool will provide you with a Monero address to use for deposi
     sudo grep peer_id /var/log/asb/asb.log
     ```
 
-    {{< figure src="/run-an-atomic-swap-provider-advanced/unstoppable-submit.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/run-an-atomic-swap-provider-advanced/unstoppable-submit.png" align="center" style="border-radius: 8px;" >}}
 
 5. Click "Submit
 
@@ -669,7 +671,7 @@ To configure this, you will need to add TXT DNS records for your domain name, on
 
     *Note: This example is for Namecheap, but all domain providers should allow similar TXT record customization.*
 
-    {{< figure src="/run-an-atomic-swap-provider-advanced/dnsaddr-entries.png" position="center" style="border-radius: 8px;" >}}
+    {{< figure src="/run-an-atomic-swap-provider-advanced/dnsaddr-entries.png" align="center" style="border-radius: 8px;" >}}
 
     ```bash
     dnsaddr=/ip4/5.9.120.18/tcp/9939/p2p/12D3KooWCPcfhr6e7V7NHoKWRxZ5zPRr6v5hGrVPhHdsftQk2DXW

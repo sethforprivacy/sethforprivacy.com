@@ -1,17 +1,26 @@
-+++
-title = "PGP, Bitcoin, and Yunohost w/ Diverter"
-date = 2021-08-09T15:35:17-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Ever wondered how you can easily self-host tools, or thought about hosting tools for friends or family to use? This episode, we're sitting down Diverter to chat about his favorite hosting solution, Yunohost, the importance of hosting tools for friends, family, and online communities as Uncle Jim, and where Bitcoin fits into his toolkit."
-summary = "Ever wondered how you can easily self-host tools, or thought about hosting tools for friends or family to use? This episode, we're sitting down Diverter to chat about his favorite hosting solution, Yunohost, the importance of hosting tools for friends, family, and online communities as Uncle Jim, and where Bitcoin fits into his toolkit."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-08-09T15:35:17-05:00"
+description: Ever wondered how you can easily self-host tools, or thought about hosting
+  tools for friends or family to use? This episode, we're sitting down Diverter to
+  chat about his favorite hosting solution, Yunohost, the importance of hosting tools
+  for friends, family, and online communities as Uncle Jim, and where Bitcoin fits
+  into his toolkit.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: PGP, Bitcoin, and Yunohost w/ Diverter
+toc: false
+---
 
 # Episode
 

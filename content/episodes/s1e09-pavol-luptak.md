@@ -1,17 +1,25 @@
-+++
-title = "Cryptoanarchy and freedom w/ Pavol Lupták"
-date = 2021-09-19T15:29:07-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "What is crypto-anarchy? How can I opt out if my country has become too authoritarian or dangerous to remain in? This episode, we're sitting down with Pavol Lupták to chat about what crypto-anarchy is and why permanent residencies can be a way to physically (and financially) opt out of broken systems."
-summary = "What is crypto-anarchy? How can I opt out if my country has become too authoritarian or dangerous to remain in? This episode, we're sitting down with Pavol Lupták to chat about what crypto-anarchy is and why permanent residencies can be a way to physically (and financially) opt out of broken systems."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-09-19T15:29:07-05:00"
+description: What is crypto-anarchy? How can I opt out if my country has become too
+  authoritarian or dangerous to remain in? This episode, we're sitting down with Pavol
+  Lupták to chat about what crypto-anarchy is and why permanent residencies can be
+  a way to physically (and financially) opt out of broken systems.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Cryptoanarchy and freedom w/ Pavol Lupták
+toc: false
+---
 
 # Episode
 

@@ -1,17 +1,20 @@
-+++
-title = "Privacy first steps"
-date = 2021-12-21T10:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "threat model", "beginner"]
-keywords = ["privacy", "threat model", "beginner"]
-description = "A quick post detailing a recommendation of the order of steps I would take if starting from scratch in my privacy journey today."
-summary = "A quick post detailing a recommendation of the order of steps I would take if starting from scratch in my privacy journey today."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2021-12-21T10:00:00-04:00"
+description: A quick post detailing a recommendation of the order of steps I would
+  take if starting from scratch in my privacy journey today.
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- privacy
+- threat model
+- beginner
+title: Privacy first steps
+weight: 1
+---
 
 # Introduction
 
@@ -29,7 +32,7 @@ For more on threat modeling, check out the following resources:
 - [Privacy Guides threat modeling tutorial](https://www.privacyguides.org/threat-modeling/)
 - [ArsTechnica threat modeling tutorial](https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/)
 
-# 1. Find a privacy-loving community
+## 1. Find a privacy-loving community
 
 The first in the list might not be a technical solution, but it's by far the most important in my experience. Having a group of people around you to support you, give solid feedback, and bounce ideas off of is an *essential* aspect of a successful journey towards privacy.
 
@@ -44,7 +47,7 @@ Before you go any further, I'd recommend this step be priority number one for yo
 - [Bitcoin Freedom and Tech Matrix room](https://matrix.to/#/#Bitcoin:usethe.tools)
   - This room has been an incredible resource for me throughout the time I've been there, and is much more broad in scope than just Bitcoin. Highly recommend joining!
 
-# 2. Use a privacy-preserving browser
+## 2. Use a privacy-preserving browser
 
 The next step is one that can be daunting, but thankfully there are excellent browser alternatives out there these days. We spend more and more of our lives in web apps as time goes by, and so a browser that is more privacy-preserving by default (and tuned to be even better!) can be a huge win in decreasing the amount of data that 3rd-parties can collect about you from simply browsing.
 
@@ -70,7 +73,7 @@ Extensions:
 - Password manager extension
   - This extension will change based on the password manager you choose in the next step, but I highly recommend installing the password manager extension (where available) for much simpler autofill and password management when browsing.
 
-# 3. Use a password manager
+## 3. Use a password manager
 
 While this step isn't *technically* privacy related, properly securing accounts can lead to much better privacy by reducing the amount of data leaks and hacks you experience as a result of stolen or leaked credentials. Password managers make it extremely simple to manage usernames and passwords across all of the sites and apps you use, without needing to re-use password (or username or email!) in order to remember them. This has drastic implications on security, and is a huge step forward in your journey.
 
@@ -81,7 +84,7 @@ Migrating to a password manager is also a great chance to think twice about whic
 - [KeepassXC](https://keepassxc.org/)
   - KeepassXC is a well-respected FOSS password manager, but importantly does not integrate sync across devices natively, which is a deal-breaker for me. Outside of that, though, it works extremely well and has a long and solid history.
 
-# 4. Use a privacy-preserving email service
+## 4. Use a privacy-preserving email service
 
 Many people choose to start here, and I fully understand if you feel the same way, but to me the process of switching email providers was a *long* one and quite involved, so I would generally have done this after improving my browsing and having a password manager handy. Migrating email and passwords (with a good password manager) go hand-in-hand quite well, and can save you a lot of time if you can couple the two tasks.
 
@@ -94,7 +97,7 @@ Using an email provider that is privacy-preserving and uses some native method o
 - [Tutanota](https://tutanota.com/)
   - While I haven't used them, I know many people I trust who do and have heard nothing but great things. They also provide steep discounts to FOSS and non-profit organizations, so well worth a look if you happen to be a part of either of those.
 
-# 5. Use a privacy-preserving search engine
+## 5. Use a privacy-preserving search engine
 
 This step can seem extremely annoying at first as none of the privacy-preserving search engines are quite as fast or complete as simply using Google, but the data you provide to a search engine tells *a lot* about you, and removing that data point is a key step towards reducing your digital footprint.
 
@@ -109,7 +112,7 @@ Each of the alternatives have some key pros and cons, and are really up to perso
   - Searx is probably the most hard-core of the options, but provides a very solid experience and search results across multiple sources.
   - [Public instances](https://searx.space/)
 
-# 6. Switch yourself and your friends/family to a more private messaging service/app
+## 6. Switch yourself and your friends/family to a more private messaging service/app
 
 Step 6 can be one of the most difficult ones, as to get the most benefit you really need your friends and family (those you chat with most) to jump ship to a private messaging app as well. Thankfully, I was able to get all of my friends and family to switch to Signal, but I know that's not always possible.
 
@@ -125,7 +128,7 @@ The "messaging wars" continue to rage, but I'll make my recommendations based on
   - Threema takes the template of WhatsApp and orients the app around preserving user-privacy, including end-to-end encrypted chats by default, voice messages, and other features users of WhatsApp will be very familiar with. It also drops the phone number requirement of Signal, which is a big win for pseudonymity (but does make it incapable of handling SMS messages, unlike Signal).
   - I tend to use Threema for chats with people I don't know personally, and have really enjoyed the experience (both with direct and group messaging).
 
-# 7. Use a non-logging and trustworthy VPN provider
+## 7. Use a non-logging and trustworthy VPN provider
 
 ***NOTE: My podcast, Opt Out, is sponsored by one of the VPNs recommended here. That does not, however, change my recommendation, but I wanted to state it plainly so you can make a well-informed decision. This post (and it's content) are not sponsored in any way, however.***
 
@@ -149,7 +152,7 @@ To help you make your own well-informed choices, here are some excellent resourc
   - ["Global surveillance, VPNs, and Tor w/ Smuggler"](https://www.optoutpod.com/global-surveillance-vpns-and-tor-w-smuggler/)
   - ["Balancing privacy with mental health, plus second realms w/ j43"](https://www.optoutpod.com/balancing-privacy-with-mental-health-plus-second-realms-w-j43/)
 
-# 8. Use a privacy-preserving mobile operating system
+## 8. Use a privacy-preserving mobile operating system
 
 This section is a bit more drastic than the others, but switching to an operating system that is designed around protecting user privacy gives you a strong foundation for all of the other steps to live on top of and enhances their effect (and often makes them easier!).
 
@@ -159,7 +162,7 @@ The only real recommendation I have here is below, but note that for some threat
   - I've long been a huge fan of CalyxOS, have run it for almost a year, and am a financial supporter of the [Calyx Institute](https://calyxos.org/), the non-profit organization behind CalyxOS. CalyxOS is an incredibly powerful tool, one that takes the open-source Android operating system created by Google and strips Google's tracking and services out of it, and then builds it back up with a focus on user privacy and FOSS app stores (like F-Droid).
   - For more on CalyxOS and my experience/recommendations, see my blog post ["Switching to CalyxOS"]({{< ref "/content/posts/switching-to-calyxos.md" >}}).
 
-# 9. Use a more privacy-conscious desktop operating system
+## 9. Use a more privacy-conscious desktop operating system
 
 This last step can be very daunting at first, but is a good step once you're a bit deeper down the privacy and self-sovereignty rabbit hole. Things are getting better each year, but switching to Linux is still something that requires some extra know-how and dedication to find alternative apps and tools.
 

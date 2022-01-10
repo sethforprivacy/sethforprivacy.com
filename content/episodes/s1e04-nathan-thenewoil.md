@@ -1,17 +1,26 @@
-+++
-title = "Threat models and the importance of open-source software w/ Nathan from TheNewOil"
-date = 2021-07-09T15:40:26-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering what the difference is between privacy, security, and anonymity and how the three intersect? How about what a threat model is and how to develop one for yourself? This episode, we're sitting down with Nathan from The New Oil to chat about threat modeling, the intersection of privacy, security, and anonymity, and how open-source software is central to opting out of surveillance."
-summary = "Wondering what the difference is between privacy, security, and anonymity and how the three intersect? How about what a threat model is and how to develop one for yourself? This episode, we're sitting down with Nathan from The New Oil to chat about threat modeling, the intersection of privacy, security, and anonymity, and how open-source software is central to opting out of surveillance."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-07-09T15:40:26-05:00"
+description: Wondering what the difference is between privacy, security, and anonymity
+  and how the three intersect? How about what a threat model is and how to develop
+  one for yourself? This episode, we're sitting down with Nathan from The New Oil
+  to chat about threat modeling, the intersection of privacy, security, and anonymity,
+  and how open-source software is central to opting out of surveillance.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Threat models and the importance of open-source software w/ Nathan from TheNewOil
+toc: false
+---
 
 # Episode
 

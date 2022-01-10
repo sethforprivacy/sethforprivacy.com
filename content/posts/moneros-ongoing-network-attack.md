@@ -1,17 +1,24 @@
-+++
-title = "A Brief Breakdown of Monero's Ongoing Network Attacks"
-date = "2020-12-08T15:35:00-05:00"
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "Network", "p2p"]
-keywords = ["Monero", "Eclipse", "Sybil", "p2p", "network"]
-description = "In this blog post I'll break down a rough timeline of events, a short list of the known attacks that have happened or are still occurring, and what users can do to mitigate these attacks and others like them in the future."
-summary = "In this blog post I'll break down a rough timeline of events, a short list of the known attacks that have happened or are still occurring, and what users can do to mitigate these attacks and others like them in the future."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2020-12-08T15:35:00-05:00"
+description: In this blog post I'll break down a rough timeline of events, a short
+  list of the known attacks that have happened or are still occurring, and what users
+  can do to mitigate these attacks and others like them in the future.
+draft: false
+keywords:
+- Monero
+- Eclipse
+- Sybil
+- p2p
+- network
+tags:
+- Monero
+- Network
+- p2p
+title: A Brief Breakdown of Monero's Ongoing Network Attacks
+toc: true
+---
 
 # Introduction
 

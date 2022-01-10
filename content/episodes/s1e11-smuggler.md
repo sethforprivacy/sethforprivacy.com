@@ -1,17 +1,25 @@
-+++
-title = "Global surveillance, VPNs, and Tor w/ Smuggler"
-date = 2021-10-17T15:24:28-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering how global surveillance could realistically work, or how VPNs can play a role in your privacy? This episode, we're sitting down with Smuggler to chat about global surveillance, a realistic look at VPNs (and Tor!), and his journey as a cypherpunk."
-summary = "Wondering how global surveillance could realistically work, or how VPNs can play a role in your privacy? This episode, we're sitting down with Smuggler to chat about global surveillance, a realistic look at VPNs (and Tor!), and his journey as a cypherpunk."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-10-17T15:24:28-05:00"
+description: Wondering how global surveillance could realistically work, or how VPNs
+  can play a role in your privacy? This episode, we're sitting down with Smuggler
+  to chat about global surveillance, a realistic look at VPNs (and Tor!), and his
+  journey as a cypherpunk.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Global surveillance, VPNs, and Tor w/ Smuggler
+toc: false
+---
 
 # Episode
 

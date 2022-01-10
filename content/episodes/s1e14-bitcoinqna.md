@@ -1,17 +1,24 @@
-+++
-title = "A Bitcoiner's journey towards privacy w/ BitcoinQnA"
-date = 2021-11-28T00:00:00-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering what drives normal people to focus on FOSS? This episode, we're sitting down with QnA to chat about his journey towards privacy through Bitcoin and the impact of FOSS along the way."
-summary = "Wondering what drives normal people to focus on FOSS? This episode, we're sitting down with QnA to chat about his journey towards privacy through Bitcoin and the impact of FOSS along the way."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-11-28T00:00:00-05:00"
+description: Wondering what drives normal people to focus on FOSS? This episode, we're
+  sitting down with QnA to chat about his journey towards privacy through Bitcoin
+  and the impact of FOSS along the way.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: A Bitcoiner's journey towards privacy w/ BitcoinQnA
+toc: false
+---
 
 # Episode
 

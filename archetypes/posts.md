@@ -1,17 +1,12 @@
-+++
-title = "{{ replace .Name "-" " " | title }}"
-date = {{ .Date }}
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out"]
-keywords = ["privacy", "podcast", "opt out"]
-description = ""
-summary = ""
-showFullContent = false
-toc = false
-draft = true
-+++
+---
+title: "{{ replace .Name "-" " " | title }}""
+date: {{ .Date }}
+# weight: 1
+# aliases: ["/first"]
+tags: []
+author: "Seth For Privacy"
+description: ""
+---
 
 # Introduction
 

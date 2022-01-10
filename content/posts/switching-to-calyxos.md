@@ -1,17 +1,20 @@
-+++
-title = "Switching to CalyxOS"
-date = 2021-03-13T12:30:00-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "CalyxOS", "F-Droid"]
-keywords = ["privacy", "CalyxOS", "F-Droid"]
-description = "How and why I made the jump to CalyxOS for my mobile operating system."
-summary = "How and why I made the jump to CalyxOS for my mobile operating system."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-03-13T12:30:00-05:00"
+description: How and why I made the jump to CalyxOS for my mobile operating system.
+draft: false
+keywords:
+- privacy
+- CalyxOS
+- F-Droid
+tags:
+- privacy
+- CalyxOS
+- F-Droid
+title: Switching to CalyxOS
+toc: true
+---
 
 # Introduction
 

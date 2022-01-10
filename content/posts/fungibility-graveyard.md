@@ -1,17 +1,20 @@
-+++
-title = "Bitcoin's Fungibility Graveyard"
-date = 2021-03-23T11:00:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["fungibility", "Bitcoin", "privacy"]
-keywords = ["fungibility", "Bitcoin", "privacy"]
-description = "Where the pipe-dream of Bitcoin's real-world fungibility goes to die."
-summary = "Where the pipe-dream of Bitcoin's real-world fungibility goes to die."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-03-23T11:00:00-04:00"
+description: Where the pipe-dream of Bitcoin's real-world fungibility goes to die.
+draft: false
+keywords:
+- fungibility
+- Bitcoin
+- privacy
+tags:
+- fungibility
+- Bitcoin
+- privacy
+title: Bitcoin's Fungibility Graveyard
+toc: true
+---
 
 # Introduction
 

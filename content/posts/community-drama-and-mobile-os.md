@@ -1,17 +1,25 @@
-+++
-title = "Community Drama and My Search for a Privacy-Preserving Mobile OS"
-date = 2021-02-19T11:57:44-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "Android", "GrapheneOS", "CopperheadOS", "CalyxOS"]
-keywords = ["privacy", "Android", "GrapheneOS", "CopperheadOS", "CalyxOS"]
-description = "Community drama, legal battles, slandering, and harassment takes away from the important mission of any OS like this: privacy and security."
-summary = "Community drama, legal battles, slandering, and harassment takes away from the important mission of any OS like this: privacy and security."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-02-19T11:57:44-05:00"
+description: 'Community drama, legal battles, slandering, and harassment takes away
+  from the important mission of any OS like this: privacy and security.'
+draft: false
+keywords:
+- privacy
+- Android
+- GrapheneOS
+- CopperheadOS
+- CalyxOS
+tags:
+- privacy
+- Android
+- GrapheneOS
+- CopperheadOS
+- CalyxOS
+title: Community Drama and My Search for a Privacy-Preserving Mobile OS
+toc: true
+---
 
 # Introduction
 
@@ -92,13 +100,13 @@ Members of the GrapheneOS community also started messaging members of the Monero
 
 {{< tweet user="sethforprivacy" id="1362457609077424128" >}}
 
-{{< figure src="/community-drama-and-mobile-os/graphene_DMs.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/community-drama-and-mobile-os/graphene_DMs.png" align="center" style="border-radius: 8px;" >}}
 
 This has happened twice, with the latest being directly to someone via IRC. I have no idea how they found this person or why they chose them, but thankfully the Monero community can see through attacks like these.
 
 All this to find out today that these attacks are coordinated brigading being pushed from the top down in Matrix and Telegram channels (at least) by members of the GrapheneOS community, this instance being by a lead dev for GrapheneOS as [listed on their Github](https://github.com/orgs/GrapheneOS/people):
 
-{{< figure src="/community-drama-and-mobile-os/graphene_brigading.jpg" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/community-drama-and-mobile-os/graphene_brigading.jpg" align="center" style="border-radius: 8px;" >}}
 
 Feel free to read all the brigade replies on the mentioned tweet, and note this is one of many such examples:
 

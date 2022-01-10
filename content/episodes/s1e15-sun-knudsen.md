@@ -1,17 +1,25 @@
-+++
-title = "Privacy education, funding, and Apple w/ Sun Knudsen"
-date = 2021-12-21T00:00:00-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering why someone decides to do privacy education and research full-time? This episode, we're sitting down with Sun Knudsen to chat about his education and research on privacy, funding in the privacy and FOSS spaces, and a little bit of macOS vs Linux."
-summary = "Wondering why someone decides to do privacy education and research full-time? This episode, we're sitting down with Sun Knudsen to chat about his education and research on privacy, funding in the privacy and FOSS spaces, and a little bit of macOS vs Linux."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-12-21T00:00:00-05:00"
+description: Wondering why someone decides to do privacy education and research full-time?
+  This episode, we're sitting down with Sun Knudsen to chat about his education and
+  research on privacy, funding in the privacy and FOSS spaces, and a little bit of
+  macOS vs Linux.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+tags:
+- privacy
+- podcast
+- opt out
+- season 1
+title: Privacy education, funding, and Apple w/ Sun Knudsen
+toc: false
+---
 
 # Episode
 

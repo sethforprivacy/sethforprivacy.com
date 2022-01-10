@@ -1,17 +1,22 @@
-+++
-title = "Email aliasing w/ Son from SimpleLogin"
-date = 2022-01-03T09:30:00-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out"]
-keywords = ["privacy", "podcast", "opt out"]
-description = "Heard about email aliasing but not sure where to start? This episode, we're sitting down with Son from SimpleLogin to chat about email aliasing."
-summary = "Heard about email aliasing but not sure where to start? This episode, we're sitting down with Son from SimpleLogin to chat about email aliasing."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2022-01-03T09:30:00-05:00"
+description: Heard about email aliasing but not sure where to start? This episode,
+  we're sitting down with Son from SimpleLogin to chat about email aliasing.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 2
+tags:
+- privacy
+- podcast
+- opt out
+title: Email aliasing w/ Son from SimpleLogin
+toc: false
+---
 
 # Episode
 

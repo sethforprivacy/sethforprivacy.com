@@ -1,17 +1,23 @@
-+++
-title = "Run and mine on a p2pool Node"
-date = 2021-09-08T14:45:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy"
-cover = ""
-tags = ["Monero", "network", "p2p", "p2pool", "mining", "decentralization"]
-keywords = ["Monero", "network", "p2p", "p2pool", "mining", "decentralization"]
-description = "This guide will aim to make it very simple and straightforward for you to start and run your own Monero node and p2pool instance for decentralized and fee-less mining of Monero."
-summary = "This guide will aim to make it very simple and straightforward for you to start and run your own Monero node and p2pool instance for decentralized and fee-less mining of Monero."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2021-09-08T14:45:00-04:00"
+description: This guide will aim to make it very simple and straightforward for you
+  to start and run your own Monero node and p2pool instance for decentralized and
+  fee-less mining of Monero.
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Monero
+- network
+- p2p
+- p2pool
+- mining
+- decentralization
+title: Run and mine on a p2pool Node
+---
 
 # Introduction
 
@@ -282,7 +288,7 @@ nano ~/p2pool/docker-compose.yml
 
 *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
-{{< code language="docker" title="docker-compose.yml" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```yaml
 version: '3.5'
 services:
   p2pool:
@@ -326,7 +332,7 @@ volumes:
   tor-keys:
   p2pool-data:
 
-{{< /code >}}
+```
 
 ***NOTE: Be sure to replace the Monero address (468y...b55R) with your own primary address (an address starting with 4), or else you'll be making generous hashrate donations to me!***
 

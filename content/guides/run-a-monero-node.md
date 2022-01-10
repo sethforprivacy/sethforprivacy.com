@@ -1,17 +1,19 @@
-+++
-title = "Run a Monero Node"
-date = 2020-12-31T11:49:13-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "Network", "p2p"]
-keywords = ["Monero", "Node", "p2p", "network"]
-description = "In this short post I'll detail how to easily run a Monero node using Docker on a Linux server, the most common OS for virtual private servers (VPS)."
-summary = "In this short post I'll detail how to easily run a Monero node using Docker on a Linux server, the most common OS for virtual private servers (VPS)."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2020-12-31T11:49:13-05:00"
+description: In this short post I'll detail how to easily run a Monero node using
+  Docker on a Linux server, the most common OS for virtual private servers (VPS).
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Monero
+- Network
+- p2p
+title: Run a Monero Node
+---
 
 # Introduction
 
@@ -120,43 +122,43 @@ If you would like to inspect the source code behind the image used here or build
 [Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
 [Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)
 
-*Note: My recommended commands are automatically expanded below, but feel free to choose one of the other 3 options as needed.*
+*Note: My recommended commands are the first set below, but feel free to choose one of the other 3 options as needed.*
 
-{{< code language="bash" title="monerod Docker w/o public RPC" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
     monerod tor
-{{< /code >}}
+```
 
-{{< code language="bash" title="monerod Docker w/ public RPC" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
+```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
     monerod tor
-{{< /code >}}
+```
 
-{{< code language="bash" title="monerod Docker w/o public RPC (pruned)" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
     monerod tor
-{{< /code >}}
+```
 
-{{< code language="bash" title="monerod Docker w/ public RPC (pruned)" id="4" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower --cleanup \
     monerod tor
-{{< /code >}}
+```
 
 To watch the logs for `monerod`, simply run:
 
@@ -176,7 +178,7 @@ Nothing else needs to be done manually!
 
 A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
 
-{{< code language="help" title="monerod help output" id="5" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```bash
 Monero 'Oxygen Orion' (v0.17.1.8-release)
 Commands: 
   alt_chain_info [blockhash]
@@ -230,7 +232,7 @@ Commands:
   unban <address>
   update (check|download)
   version
-{{< /code >}}
+```
 
 When you want to run a command, simply run `docker exec monerod /usr/local/bin/monerod name_of_command` and it will automatically connect to the daemon, run the command, and print the output of that command to the terminal.
 

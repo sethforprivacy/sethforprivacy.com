@@ -1,17 +1,24 @@
-+++
-title = "Clean up your data online w/ Rob Shavell from DeleteMe"
-date = 2022-01-09T16:00:00-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out"]
-keywords = ["privacy", "podcast", "opt out"]
-description = "Wondering how to take back control of the data captured by data brokers before you started taking privacy more seriously? This episode, we're sitting down with Rob Shavell, co-founder of DeleteMe to chat about cleaning up the data about you that's been scooped up by data brokers across the internet."
-summary = "Wondering how to take back control of the data captured by data brokers before you started taking privacy more seriously? This episode, we're sitting down with Rob Shavell, co-founder of DeleteMe to chat about cleaning up the data about you that's been scooped up by data brokers across the internet."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2022-01-09T16:00:00-05:00"
+description: Wondering how to take back control of the data captured by data brokers
+  before you started taking privacy more seriously? This episode, we're sitting down
+  with Rob Shavell, co-founder of DeleteMe to chat about cleaning up the data about
+  you that's been scooped up by data brokers across the internet.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 2
+tags:
+- privacy
+- podcast
+- opt out
+title: Clean up your data online w/ Rob Shavell from DeleteMe
+toc: false
+---
 
 # Episode
 

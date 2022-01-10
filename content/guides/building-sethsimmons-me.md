@@ -1,19 +1,23 @@
-+++
-title = "Building sethforprivacy.com"
-date = 2020-11-30T12:08:53-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Hugo", "NGINX", "Tor", "Blog"]
-keywords = ["Hugo", "Markdown", "NGINX", "Tor", "blog"]
-description = "In this post I’ll detail how I spun up my blog specifically and how you can do the same easily."
-summary = "In this post I’ll detail how I spun up my blog specifically and how you can do the same easily."
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2020-11-30T12:08:53-05:00"
+description: In this post I’ll detail how I spun up my blog specifically and how you
+  can do the same easily.
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Hugo
+- NGINX
+- Tor
+- Blog
+title: Building sethforprivacy.com
+---
 
-# Introduction  
+# Introduction
+
 I figured the second post I made should be about this blog in general, as it has been a long time coming. I've been 
 planning this for months, but due to some life events, I've been quite busy and unable to pursue this. Now that I have 
 some more free time, I was inspired to finally take the dive and start it up after [SerHack](https://serhack.me) reached
@@ -27,7 +31,7 @@ In this post I'll detail how I spun up my blog specifically and detail some next
 
 Let's dive in.
 
-# Hosting  
+# Hosting
 
 For hosting my blog I decided to go with a well known cloud provider, [Linode](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d),
  and spin up a basic Debian VM to build on top of. A few of the things that I set up on a new host like this are:
@@ -41,12 +45,11 @@ For hosting my blog I decided to go with a well known cloud provider, [Linode](h
 
 Once I had these basics installed, it was time to dive into Hugo and learn my way around it.
 
-# Installing Hugo  
+# Installing Hugo
 
 While I could have installed Hugo via apt, I decided to compile from the source to get the latest features and improved 
-theme support. Hugo made this simple with their clear and detailed docs, so I simply followed [their "Installing"](https://gohugo.io/getting-started/installing)
- docs.
- 
+theme support. Hugo made this simple with their clear and detailed docs, so I simply followed [their "Installing"](https://gohugo.io/getting-started/installing) docs.
+
 The first step was [installing Go](https://golang.org/doc/install):
 
 ```bash
@@ -67,8 +70,7 @@ Once I had Go installed and working (test with `go version`), it was time to bui
   go install --tags extended
 ```
 
-The build takes a bit depending on resources, but installs the latest Hugo directly to a directory we just added to 
-$PATH.
+The build takes a bit depending on resources, but installs the latest Hugo directly to a directory we just added to $PATH.
 
 To update Hugo later on, simply run the following commands:
 
@@ -80,7 +82,7 @@ To update Hugo later on, simply run the following commands:
 
 Now it was time to spin up a test site and play around with themes.
 
-# Starting my new Hugo site  
+# Starting my new Hugo site
 
 Hugo's docs again came in handy here, as they have a great [quick start guide](https://gohugo.io/getting-started/quick-start/)
  that makes it easy to get your test site up and running. Once I had simple site up, I tried out a few themes and 
@@ -98,7 +100,7 @@ All it took to start up a new blog post was:
 
 Then I just edited the MarkDown and alt+tabbed to FireFox to check my changes as I went!
 
-# Deploying the site publicly with NGINX  
+# Deploying the site publicly with NGINX
 
 The above is all that is needed to see the site for yourself, but obviously the end goal is to share this with others. To 
 do that I chose to deploy NGINX, which is a very simple and easy to use web server that is widely available.
@@ -106,7 +108,7 @@ do that I chose to deploy NGINX, which is a very simple and easy to use web serv
 [This post](https://gideonwolfe.com/posts/sysadmin/hugonginx/) by Gideon Wolfe came in handy, and gave me the building 
 blocks I needed to customize my NGINX configuration to match the way Hugo works.
 
-## Installing NGINX from their apt repos  
+## Installing NGINX from their apt repos
 
 To install NGINX I chose to install the latest from their own repositories, as I wanted to be sure to have compatibility 
 with the latest security standards. [Their docs](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/#official-debian-ubuntu-packages) 
@@ -185,7 +187,7 @@ server {
 
 *Note: To properly serve over Tor you need to set the baseURL to the .onion address while also setting a unique publishDir in a different configuration file for Hugo. You can see my full config.toml files below.*
 
-{{< code language="toml" title="clearnet_config.toml for sethforprivacy.com" id="0" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```toml
 baseURL = "https://sethforprivacy.com/"
 languageCode = "en-us"
 title = "sethforprivacy.com"
@@ -297,9 +299,9 @@ enableGitInfo = true
     endLevel = 2
     ordered = false
     startLevel = 1
-{{< /code >}}
+```
 
-{{< code language="toml" title="tor_config.toml for 6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```toml
 baseURL = "http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion/"
 publishDir = "tor"
 languageCode = "en-us"
@@ -412,7 +414,7 @@ enableGitInfo = true
     endLevel = 2
     ordered = false
     startLevel = 1
-{{< /code >}}
+```
 
 A simple `nginx -t` to verify the configuration was valid, a restart of NGINX via `sudo systemctl restart nginx`, and I 
 was up and running on both clearnet and Tor!
@@ -427,7 +429,7 @@ prompt Tor users who navigate to the clearnet site to use the native Tor site in
 
 My full NGINX configuration file is below:
 
-{{< code language="conf" title="Full NGINX Configuration for sethforprivacy.com" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```conf
 # generated 2020-11-29, Mozilla Guideline v5.6, nginx 1.18, OpenSSL 1.1.1d, intermediate configuration, no OCSP
 # https://ssl-config.mozilla.org/#server=nginx&version=1.18&config=intermediate&openssl=1.1.1d&ocsp=false&guideline=5.6
 
@@ -565,7 +567,7 @@ server {
             try_files $uri $uri/ =404;
     }
 }
-{{< /code >}}
+```
 
 # Writing workflow  
 

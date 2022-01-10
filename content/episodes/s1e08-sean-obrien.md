@@ -1,17 +1,24 @@
-+++
-title = "Decentralized and censorship-resistant messaging platforms w/ Sean O'Brien"
-date = 2021-09-06T15:30:57-05:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["privacy", "podcast", "opt out", "season 1"]
-keywords = ["privacy", "podcast", "opt out", "season 1"]
-description = "Wondering what alternatives are available for Twitter or similar centralized and censored services? This episode, we're sitting down with Sean O'Brien to chat about the need for decentralized and censorship-resistant micro-blogging and short messaging platforms."
-summary = "Wondering what alternatives are available for Twitter or similar centralized and censored services? This episode, we're sitting down with Sean O'Brien to chat about the need for decentralized and censorship-resistant micro-blogging and short messaging platforms."
-showFullContent = false
-toc = false
-draft = false
-+++
+---
+author: Seth For Privacy
+authorTwitter: sethforprivacy
+date: "2021-09-06T15:30:57-05:00"
+description: Wondering what alternatives are available for Twitter or similar centralized
+  and censored services? This episode, we're sitting down with Sean O'Brien to chat
+  about the need for decentralized and censorship-resistant micro-blogging and short
+  messaging platforms.
+draft: false
+keywords:
+- privacy
+- podcast
+- opt out
+- season 1
+- privacy
+- podcast
+- opt out
+- season 1
+title: Decentralized and censorship-resistant messaging platforms w/ Sean O'Brien
+toc: false
+---
 
 # Episode
 

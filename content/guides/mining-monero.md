@@ -1,17 +1,20 @@
-+++
-title = "Mining Monero"
-date = 2021-05-02T13:50:00-04:00
-author = "Seth For Privacy"
-authorTwitter = "sethforprivacy" #do not include @
-cover = ""
-tags = ["Monero", "Mining", "xmrig"]
-keywords = ["Monero", "mining", "xmrig"]
-description = "This will be a simple guide to get you started with a few more advanced options/recommendations at the end, but hopefull will help to simplify the process for those of you wanting to get started mining Monero!"
-summary = "This will be a simple guide to get you started with a few more advanced options/recommendations at the end, but hopefull will help to simplify the process for those of you wanting to get started mining Monero!"
-showFullContent = false
-toc = true
-draft = false
-+++
+---
+TocOpen: false
+author: Seth For Privacy
+comments: false
+date: "2021-05-02T13:50:00-04:00"
+description: This will be a simple guide to get you started with a few more advanced
+  options/recommendations at the end, but hopefull will help to simplify the process
+  for those of you wanting to get started mining Monero!
+draft: false
+hidemeta: false
+showToc: true
+tags:
+- Monero
+- Mining
+- xmrig
+title: Mining Monero
+---
 
 # Introduction
 
@@ -74,11 +77,11 @@ XMRig will automatically use the `config.json` file you edited earlier and will 
 
 The easiest way to run XMRig on Linux or macOS is to navigate to the folder you extracted XMRig to, right-click, and select "Open in Terminal" (or similar).
 
-{{< figure src="/mining-monero/open-in-terminal.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/open-in-terminal.png" align="center" style="border-radius: 8px;" >}}
 
 Once the terminal opens, simply run `sudo ./xmrig`, enter your user's password, and XMRig will start mining directly to your chosen pool and wallet address immediately!
 
-{{< figure src="/mining-monero/sudo-xmrig.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/sudo-xmrig.png" align="center" style="border-radius: 8px;" >}}
 
 # Run a p2pool node
 
@@ -93,7 +96,7 @@ Once you have `p2pool` up and running, you can easily point any and all of your 
 
 To get started, simply copy the below configuration file and paste it into the `config.json` file that was provided with your download of XMRig, overwriting all other text already in the file, while replacing the `127.0.0.1` address with the IP address/DNS address of the `p2pool` node/VPS you're running it on.
 
-{{< figure src="/mining-monero/config.json.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/config.json.png" align="center" style="border-radius: 8px;" >}}
 
 ```json
 {
@@ -178,7 +181,7 @@ The developers of my favorite pool, <https://cryptonote.social>, also made a *ve
 
 - <https://cryptonote.social/tools/monero-cart>
 
-{{< figure src="/mining-monero/MoneroCart.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/MoneroCart.png" align="center" style="border-radius: 8px;" >}}
 
 The link above has tips on how to get started with MoneroCart, so feel free to dive in there if you choose to use that instead of XMRig.
 
@@ -198,19 +201,19 @@ I'll recommend a few of my favorite pools below, but there is a list available o
 
 <https://cryptonote.social> is my favorite pool, and the one that I have been mining at for a long time. It has a great admin, solid uptime, and a very unique approach to mining with a leaderboard, great custom tools, and differing approaches to payouts. It is my top recommendation and I'd love to see it continue to grow!
 
-{{< figure src="/mining-monero/cryptonote.social.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/cryptonote.social.png" align="center" style="border-radius: 8px;" >}}
 
 ### pool.xmr.pt
 
 <https://pool.xmr.pt/> is another great small pool with an active community on Matrix that I have experience mining at. Highly recommend supporting a small pool like this!
 
-{{< figure src="/mining-monero/pool.xmr.pt.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/pool.xmr.pt.png" align="center" style="border-radius: 8px;" >}}
 
 ### xmr.pool.gntl.co.uk
 
 <https://xmr.pool.gntl.co.uk/> is a great slightly larger pool with an active community that I have mined at occasionally in the past, and have enjoyed.
 
-{{< figure src="/mining-monero/gntl.co.uk.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/gntl.co.uk.png" align="center" style="border-radius: 8px;" >}}
 
 ## Configuring your mining software
 
@@ -230,7 +233,7 @@ Example configurations can be found below, but note that if you simply copy and 
 
 If you want to build your own configuration for a different pool, take a look at <https://xmrig.com/wizard> for a guided wizard to help you along the way!
 
-{{< code language="json" title="cryptonote.social w/ TLS" id="0" expand="Show" collapse="Hide" isCollapsed="false" >}}
+```json
 {
     "autosave": true,
     "donate-level": 5,
@@ -250,9 +253,9 @@ If you want to build your own configuration for a different pool, take a look at
         }
     ]
 }
-{{< /code >}}
+```
 
-{{< code language="json" title="gntl.co.uk w/ TLS" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```json
 {
     "autosave": true,
     "donate-level": 5,
@@ -268,9 +271,9 @@ If you want to build your own configuration for a different pool, take a look at
         }
     ]
 }
-{{< /code >}}
+```
 
-{{< code language="json" title="pool.xmr.pt w/ TLS" id="3" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```json
 {
     "autosave": true,
     "donate-level": 5,
@@ -287,13 +290,13 @@ If you want to build your own configuration for a different pool, take a look at
         }
     ]
 }
-{{< /code >}}
+```
 
 To get started, simply copy the above configuration file for the desired pool and paste it into the `config.json` file that was provided with your download of XMRig, overwriting all other text already in the file.
 
 ***Make sure to replace the address and username with your own!***
 
-{{< figure src="/mining-monero/config.json.png" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/mining-monero/config.json.png" align="center" style="border-radius: 8px;" >}}
 
 [^1]: This will differ between wallets, but the instructions for doing so in the GUI can be found at [here](https://github.com/monero-ecosystem/monero-GUI-guide/blob/da1bf0da4dc9a5268b17ff5c8121aa8013be73eb/en/ch06.md#receive-monero).
 
