@@ -34,7 +34,7 @@ params:
   showtoc: true
   tocopen: false
 
-  contentTypeName: "posts"
+  mainSections: posts
 
   assets:
     disableHLJS: true
@@ -156,4 +156,4 @@ markup:
     guessSyntax: true
     lineNos: false
     # noClasses: false
-    style: monokai
+    style: dracula

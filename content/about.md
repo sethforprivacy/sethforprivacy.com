@@ -1,12 +1,9 @@
 ---
 author: Seth For Privacy
-comments: false
 date: "2020-11-29T19:01:07-05:00"
-description: ""
 draft: false
-hidemeta: false
+hidemeta: true
 showToc: true
-tags: []
 title: About
 ---
 
