@@ -107,7 +107,7 @@ menu:
       weight: 2
     - identifier: podcast
       name: Opt Out Podcast
-      url: "https://optout.sethforprivacy.com"
+      url: "https://dev.optoutpod.com"
       weight: 3
     - identifier: about
       name: About
