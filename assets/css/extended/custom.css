@@ -1,3 +1,15 @@
+:root {
+    --theme: rgb(255, 255, 255);
+    --entry: rgb(255, 255, 255);
+    --primary: rgba(255, 102, 0, 1);
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214);
+    --content: rgb(31, 31, 31);
+    --hljs-bg: rgb(28, 29, 33);
+    --code-bg: rgb(245, 245, 245);
+    --border: rgb(238, 238, 238);
+}
+
 .dark {
     --theme: rgb(0, 0, 0);
     --entry: rgb(22, 22, 24);
@@ -5,7 +17,4 @@
     --secondary: rgba(235, 235, 255, 0.66);
     --tertiary: rgba(0, 0, 0, 0.32);
     --content: rgba(235, 235, 255, 0.82);
-    --hljs-bg: #1a1818;
-    --code-bg: #37383e;
-    --border: #446;
 }
