@@ -33,7 +33,7 @@ params:
   hidemeta: false
   hideSummary: false
   showtoc: true
-  tocopen: false
+  tocopen: true
 
   mainSections: posts
 
@@ -66,6 +66,10 @@ params:
       url: "https://www.reddit.com/user/fort3hlulz"
     - name: github
       url: "https://github.com/sethforprivacy"
+    - name: monero
+      url: "monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY"
+    - name: bitcoin
+      url: "https://paynym.is/+fallingrecipe6C9"
     - name: rss
       url: "/index.xml"
 
