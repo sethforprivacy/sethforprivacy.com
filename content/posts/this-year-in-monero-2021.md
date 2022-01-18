@@ -45,7 +45,7 @@ Each section will highlight the previous year (04/2019 through 04/2020) as well 
 
 {{< figure src="/this-year-in-monero-2021/monero-7y-transactions.png" align="center" style="border-radius: 8px;" >}}
 
-### Year over Year Growth
+***Year over Year Growth***
 
 Monero's on-chain usage grew ***208%*** YoY! Every one of these transactions was done via private-by-default transactions that protect sender, receiver, and amounts.
 
@@ -67,7 +67,7 @@ Monero's on-chain usage grew ***208%*** YoY! Every one of these transactions was
 
 {{< figure src="/this-year-in-monero-2021/monero-7y-blockchain.png" align="center" style="border-radius: 8px;" >}}
 
-### Year over Year Growth
+***Year over Year Growth***
 
 Monero's blockchain size grew ***180%*** faster YoY while the average transaction size dropped ***13.76%*** YoY (thanks, [CLSAG](https://www.getmonero.org/resources/moneropedia/clsag.html))!
 
@@ -89,7 +89,7 @@ Monero's blockchain size grew ***180%*** faster YoY while the average transactio
 
 {{< figure src="/this-year-in-monero-2021/monero-7y-emissions.png" align="center" style="border-radius: 8px;" >}}
 
-### Year over Year Change
+***Year over Year Ghange***
 
 Monero's inflation decreased ***39.5%*** YoY and is steadily approaching the [tail emission](https://localmonero.co/knowledge/monero-tail-emission) of ***0.6XMR*** per block!
 
@@ -113,7 +113,7 @@ Monero's inflation decreased ***39.5%*** YoY and is steadily approaching the [ta
 
 {{< figure src="/this-year-in-monero-2021/monero-7y-fees.png" align="center" style="border-radius: 8px;" >}}
 
-### Year over Year Growth
+***Year over Year Growth***
 
 Monero's fees spent increased ***71.11%*** YoY while the average transaction fee dropped ***17.99%*** YoY (thanks, [CLSAG](https://www.getmonero.org/resources/moneropedia/clsag.html))!
 
@@ -139,7 +139,7 @@ Monero's fees spent increased ***71.11%*** YoY while the average transaction fee
 
 {{< figure src="/this-year-in-monero-2021/monero-hashrate-2021.png" align="center" style="border-radius: 8px;" >}}
 
-### Year over Year Growth
+***Year over Year Growth***
 
 Monero's network hashrate increased ***89.25%*** YoY and network miners increased ***173.30%*** YoY and ***274.95%*** since the introduction of RandomX!
 
@@ -159,7 +159,7 @@ Monero's network hashrate increased ***89.25%*** YoY and network miners increase
 
 {{< figure src="/this-year-in-monero-2021/subreddit_2021.png" align="center" style="border-radius: 8px;" >}}
 
-### Year over Year Growth
+***Year over Year Growth***
 
 Monero's subreddit subscriber count grew ***25.59%*** YoY and grew ***290%*** faster than the previous year!
 
@@ -188,7 +188,7 @@ Monero's subreddit subscriber count grew ***25.59%*** YoY and grew ***290%*** fa
 - Monero's main subreddit, [@monero](https://twitter.com/monero) gained ***69,209*** followers.
 - The @monero Twitter account went from ***319,884*** to ***389,093*** followers.
 
-### Year over Year Growth
+***Year over Year Growth***
 
 Monero's Twitter follower count grew ***21.63%*** YoY and grew ***1,870%*** faster than the previous year!
 
