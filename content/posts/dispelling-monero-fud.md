@@ -20,7 +20,7 @@ toc: true
 weight: 2
 ---
 
-# Introduction
+## Introduction
 
 One of the most common issues I deal with as someone passionate about personal privacy is fighting through common fear, uncertainty, and doubt (FUD) that is mentioned by those who don't understand an issue thoroughly, or from people who are maliciously spreading FUD to demean a project or tool they don't want people to use.
 
@@ -32,9 +32,9 @@ All I want out of this post is people to have the chance to make well-informed d
 
 Let's walk through the common FUD points one-by-one below.
 
-# Monero has an infinite supply
+## Monero has an infinite supply
 
-### Response
+***Response***
 
 This one is very common from the Bitcoin crowd, and is techically true.
 
@@ -51,7 +51,7 @@ This tail emission enables two key features in Monero
 
 For more on both of these, see the resources below.
 
-### Resources
+***Resources***
 
 - Descriptive website with graphs showing the supply dynamics of Monero:
   - <https://monero.supply>
@@ -62,9 +62,9 @@ For more on both of these, see the resources below.
 - Inherent risks in not having a defined block reward in perpetuity:
   - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
-# You can't audit the Monero supply
+## You can't audit the Monero supply
 
-### Response
+***Response***
 
 This is probably the most common point of FUD brought against Monero, and is caused by the complexity and nuance involved in understanding how supply audits work in cryptocurrencies.
 
@@ -74,7 +74,7 @@ This audit is possible because coinbase transactions (those transactions that ar
 
 Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validate the supply by manually adding up UTXO amounts, as transactions are never known-spent by the network, only by the parties involved in each specific transaction. This does force some added reliance on code/cryptography over Bitcoin, but as-of-yet I know of *no one* validating the Bitcoin supply this way. It does remain a valuable advantage of a transparent cryptocurrency, though it comes at the cost of transactional privacy of every user in the system.
 
-### Resources
+***Resources***
 
 - Excellent and nuanced blog post on auditability in cryptocurrencies:
   - <https://web.getmonero.org/2020/01/17/auditability.html>
@@ -87,9 +87,9 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 - [Monero vuln that was not exploited, was detectable](https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html)
 - [Bitcoin vuln that was exploited, was detectable](https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/)
 
-# Monero can't scale
+## Monero can't scale
 
-### Response
+***Response***
 
 This point of FUD is one that is hard to get to the bottom of as well, as there are lots of other questions that come out of it. I'll focus on transaction size in this one, as that is the most common complaint about Monero.
 
@@ -97,13 +97,13 @@ Monero is, in fact, the most scalable cryptocurrency *when used privately*, and 
 
 I've written an entire blog post around this topic, so for more on that see the resources below.
 
-### Resources
+***Resources***
 
 - [Comparing Private Spends]({{< ref "/content/posts/comparing-private-spends.md" >}})
 
-# Monero's hard-forks make it centralized
+## Monero's hard-forks make it centralized
 
-### Response
+***Response***
 
 The key points I would make around this are walked through in detail in the Twitter thread below, but here are some bulletpoints on Monero's hard-forks:
 
@@ -113,16 +113,16 @@ The key points I would make around this are walked through in detail in the Twit
 - The process of deciding what goes into a hard-fork, when to hard-fork, and what approaches to take *all* happens publicly, either on Github or in IRC/Matrix (mostly through scheduled meetings)
 - Monero has yet to have a contentious hard-fork, showing strong community support for every hard-fork so far
 
-### Resources
+***Resources***
 
 - Blog post on scheduled upgrades in Monero:
   - <https://www.getmonero.org/2020/09/01/note-scheduled-upgrades.html>
 - Long thread on the details around how Monero hard-forks and what they mean for centralization/decentralization:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1397543058070200324>
 
-# Monero mining is centralized
+## Monero mining is centralized
 
-### Response
+***Response***
 
 Monero's approach to mining is almost entirely unique in the cryptocurrency world, as it's community has maintained a core ethos of ASIC-resistance from the inception of the project.
 
@@ -140,7 +140,7 @@ While Monero does have drastically less miners and energy used to secure the net
 
 (From: <https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4>)
 
-### Resources
+***Resources***
 
 - Excellent explainer on RandomX:
   - <https://www.monerooutreach.org/stories/RandomX.html>
@@ -152,9 +152,9 @@ While Monero does have drastically less miners and energy used to secure the net
 - A look at the economics of 51% attacking Monero
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471202444185153540?s=20>
 
-# Monero has no adoption
+## Monero has no adoption
 
-### Response
+***Response***
 
 Thankfully, this one is quite easy to answer and is growing more incorrect by the day. 
 
@@ -162,7 +162,7 @@ Monero is gaining strong acceptance in both the standard economy among merchants
 
 All of Monero's adoption is due to grassroots marketing, word-of-mouth, and technical merit due to Monero protecting both sender and receiver privacy so well while keeping fees low.
 
-### Resources
+***Resources***
 
 Payments:
 
@@ -184,9 +184,9 @@ Evidence:
 - Thread detailing some of the many ways that Monero is used around the world:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1461045397531549710>
 
-# KYC/AML-regulated exchanges won't support Monero/governments will ban Monero
+## KYC/AML-regulated exchanges won't support Monero/governments will ban Monero
 
-### Response
+***Response***
 
 This one is a key point of contention for me, as while I see no reason for regulated exchanges to *not* support Monero (in a legal or regulatory sense), I'm not really worried about whether or not centralized exchanges (the Coinbase.com's of the world) choose to list Monero or not. Exchanges like these are an easy point of control and surveillance for malicious entities and nation states while creating immense risk to end-users for data breaches, hacks, and leaks.
 
@@ -194,7 +194,7 @@ Monero *should* be supported everywhere, but the Monero community is committed t
 
 I'll put some resources below to browse, but for those that specifically would like to see centralized exchanges support Monero, I'd recommend looking at the first entry from Perkins Coie.
 
-### Resources
+***Resources***
 
 - "Anti-Money Laundering Regulation of Privacy-Enabling Cryptocurrencies"
   - <https://www.perkinscoie.com/en/news-insights/anti-money-laundering-regulation-of-privacy-enabling-cryptocurrencies.html>
@@ -215,9 +215,9 @@ Excellent decentralized exchanges supporting Monero:
   - <https://github.com/comit-network/xmr-btc-swap>
   - <https://github.com/farcaster-project/farcaster-node>
 
-# Monero can't support layer-two networks (like Lightning)
+## Monero can't support layer-two networks (like Lightning)
 
-### Response
+***Response***
 
 While Monero does lack the complex compute capabilities of Ethereum and the simple scripting ability of Bitcoin, there have already been some fascinating approaches presented by researchers on how to support layer-two networks like Lightning on Monero *without protocol changes* today, in theory.
 
@@ -225,7 +225,7 @@ Monero's layer-one scaling (much of which was mentioned previously in this post)
 
 For more on the possibility of layer-two networks in Monero, see the resources below. Please note, however, that none of these approaches have been deployed on Monero and may have issues not yet seen in the theoretical papers.
 
-### Resources
+***Resources***
 
 - "PayMo: Payment Channels For Monero"
   - <https://eprint.iacr.org/2020/1441>
@@ -234,7 +234,7 @@ For more on the possibility of layer-two networks in Monero, see the resources b
 - "Sleepy Channels: Bitcoin-Compatible Bi-directional Payment Channels without Watchtowers" (also applies to Monero with PayMo)
   - <https://eprint.iacr.org/2021/1445>
 
-# Conclusion
+## Conclusion
 
 Hopefully this brief post has given you some good info and resources to come to your own well-informed conclusions, and can help to dispel some of the common myths and FUD surrounding Monero today.
 
