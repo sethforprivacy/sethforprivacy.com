@@ -1,5 +1,4 @@
 ---
-TocOpen: false
 author: Seth For Privacy
 comments: false
 date: "2021-12-21T10:00:00-04:00"
