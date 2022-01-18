@@ -102,7 +102,7 @@ Below you can find verification of this DNS domain, my Github profile, my Matrix
 
 Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty.
 
-Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info, here under the [Opt Out Podcast heading](https://blog.sethforprivacy.com/episodes/), or at the podcast's website at [optoutpod.com](https://www.optoutpod.com/).
+Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info, at the new WIP site [dev.optoutpod.com](https://dev.optoutpod.com), or at the podcast's current website at [optoutpod.com](https://www.optoutpod.com/).
 
 I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod.com>.
 

@@ -1,6 +1,6 @@
-baseURL: 'https://blog.sethforprivacy.com/'
+baseURL: 'https://sethforprivacy.com/'
 languageCode: en-us
-title: blog.sethforprivacy.com
+title: sethforprivacy.com
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -14,7 +14,7 @@ minify:
 
 params:
   # env: production
-  title: blog.sethforprivacy.com
+  title: sethforprivacy.com
   description: "A simple blog about privacy, Monero, and self-hosting"
   author: sethforprivacy
   DateFormat: "January 2, 2006"
