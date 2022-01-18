@@ -131,9 +131,9 @@ FireFox has quickly become my browser-of-choice for day-to-day browsing, even th
 
 https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/
 
-#### Alternatives
+***Alternatives***
 
-##### Brave Browser
+***Brave Browser***
 
 An alternative I am currently testing is [Brave Browser](https://brave.com), a privacy-preserving version of Google Chrome with some nice added features. The best way to install Brave is via an updater app that is present in F-Droid: 
 
@@ -267,9 +267,9 @@ VLC is a well-respected and trusted video player, and one I have used for many, 
 
 https://f-droid.org/en/packages/org.videolan.vlc/
 
-#### Alternatives
+***Alternatives***
 
-##### MPV for Android
+***MPV for Android***
 
 MPV Android is a great and simple FOSS player available via Github: https://github.com/mpv-android/mpv-android/releases/latest
 
@@ -289,9 +289,9 @@ Make sure you have the [Aurora Store](https://auroraoss.com/) installed first, a
 
 Future updates will be served via Aurora as well.
 
-#### Alternatives
+***Alternatives***
 
-##### Waze
+***Waze***
 
 While Waze is owned by Google, it provides an easy and non-account-based option for modern navigation. I made sure to go into the settings of Waze and enable some of the privacy features and disable data collection, but it's still not an ideal choice.
 
