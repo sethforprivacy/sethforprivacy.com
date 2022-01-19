@@ -59,7 +59,7 @@ Another great way you can get involved in the Monero project is to help to educa
 
 Here are a few concrete ways you can help in education:
 
-- [Start up a blog of your own]({{< ref "/content/guides/building-sethsimmons-me.md" >}})
+- [Start up a blog of your own]({{< ref "/content/guides/building-this-blog.md" >}})
 - Write up threads on Twitter or Reddit posts about things you've learned about or learned to do with Monero
 - Make video "how-tos" of everyday things you do with Monero, such as sending Monero, using a Ledger device, etc.
 

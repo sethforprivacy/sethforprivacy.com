@@ -12,7 +12,7 @@ tags:
 - NGINX
 - Tor
 - Blog
-title: Building sethforprivacy.com
+title: Building this blog
 ---
 
 # Introduction
@@ -28,7 +28,11 @@ MarkDown, a format that is familiar to many who have worked with Github in the p
 
 In this post I'll detail how I spun up my blog specifically and detail some next steps I have planned as well.
 
-Let's dive in.
+For the entire source code behind this site, see the Github repo below:
+
+<https://github.com/sethforprivacy/sethforprivacy.com>
+
+***NOTE: This blog post is a bit outdated now as I have moved to a full Docker + Traefik setup, but I hope to update it soon.***
 
 # Hosting
 
@@ -184,236 +188,345 @@ server {
 }
 ```
 
-*Note: To properly serve over Tor you need to set the baseURL to the .onion address while also setting a unique publishDir in a different configuration file for Hugo. You can see my full config.toml files below.*
+*Note: To properly serve over Tor you need to set the baseURL to the .onion address while also setting a unique publishDir in a different configuration file for Hugo. You can see my full config.yaml files below.*
 
-```toml
-baseURL = "https://sethforprivacy.com/"
-languageCode = "en-us"
-title = "sethforprivacy.com"
-theme = "terminal"
-paginate = 5
-enableGitInfo = true
+{{< collapse summary="clearnet_config.yml" >}}
 
-[params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+```yaml
+baseURL: 'https://sethforprivacy.com/'
+languageCode: en-us
+title: sethforprivacy.com
+theme: PaperMod
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
+minify:
+  disableXML: true
+  minifyOutput: true
 
-  # show selector to switch language
-  showLanguageSelector = false
+params:
+  # env: production
+  title: sethforprivacy.com
+  description: "A simple blog about privacy, Monero, and self-hosting"
+  author: sethforprivacy
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
 
-  # set theme to full screen width
-  fullWidthTheme = false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
 
-  # center theme with default width
-  centerTheme = true
+  mainSections: posts
 
-  # set a custom favicon (default is a `themeColor` square)
-  favicon = "favicon.ico"
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+  label:
+    text: "Home"
+    icon: /favicon.ico
+    iconHeight: 35
+  
+  homeInfoParams:
+    Title: "Welcome to Seth For Privacy's blog! \U0001F44B"
+    Content: >
+      - Take a look at "Posts" for blog posts, "Guides" for guides on self-hosting and Monero, and "Opt Out Podcast" for content related to Opt Out.
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+      -
 
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = "sethforprivacy"
-  site = "sethforprivacy"
+      - ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "sethforprivacy.com"
-    subtitle = "A simple blog about privacy, Monero, and me"
-    owner = "Seth For Privacy"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+  socialIcons:
+    - name: email
+      url: "mailto:seth@sethforprivacy.com"
+    - name: twitter
+      url: "https://twitter.com/sethforprivacy"
+    - name: matrix
+      url: "https://matrix.to/#/@sethsimmons:monero.social"
+    - name: reddit
+      url: "https://www.reddit.com/user/fort3hlulz"
+    - name: github
+      url: "https://github.com/sethforprivacy"
+    - name: monero
+      url: "monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY"
+    - name: bitcoin
+      url: "https://paynym.is/+fallingrecipe6C9"
+    - name: rss
+      url: "/index.xml"
 
-    [languages.en.params.logo]
-      logoText = "sethforprivacy.com"
-      logoHomeLink = "/"
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About Me"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "posts"
-        name = "Posts"
-        url = "/posts"
-      [[languages.en.menu.main]]
-        identifier = "guides"
-        name = "Guides"
-        url = "/guides"
-      [[languages.en.menu.main]]
-        identifier = "privacytools"
-        name = "Recommended Privacy Tools"
-        url = "/about/#my-recommended-privacy-tools"
-        
-[privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    anonymizeIP = false
-    disable = true
-    respectDoNotTrack = false
-    useSessionStorage = false
-  [privacy.instagram]
-    disable = true
-    simple = false
-  [privacy.twitter]
-    disable = false
-    enableDNT = false
-    simple = true
-  [privacy.vimeo]
-    disable = true
-    enableDNT = false
-    simple = false
-  [privacy.youtube]
-    disable = true
-    privacyEnhanced = false
+  editPost:
+    URL: "https://github.com/sethforprivacy/sethforprivacy.com/blob/master/content"
+    Text: "Suggest Changes To This Post" # edit text
+    appendFilePath: true # to append file path to Edit link
 
-[markup]
-  [markup.tableOfContents]
-    endLevel = 2
-    ordered = false
-    startLevel = 1
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts
+      weight: 1
+    - identifier: guides
+      name: Guides
+      url: /guides
+      weight: 2
+    - identifier: podcast
+      name: Opt Out Podcast
+      url: "https://dev.optoutpod.com"
+      weight: 3
+    - identifier: about
+      name: About
+      url: /about
+      weight: 4
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 5
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: false
+    disable: true
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: true
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: true
+  vimeo:
+    disable: true
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: true
+    privacyEnhanced: false
+markup:
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 1
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    # noClasses: false
+    style: solarized-dark
+
 ```
 
-```toml
-baseURL = "http://6idyd6chquyis57aavk3nhqyu3x2xfrqelj4ay5atwrorfcpdqeuifid.onion/"
-publishDir = "tor"
-languageCode = "en-us"
-title = "sethforprivacy.com"
-theme = "terminal"
-paginate = 5
-enableGitInfo = true
+{{< /collapse >}}
+{{< collapse summary="tor_config.yml" >}}
 
-[params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+```yaml
+baseURL: 'http://sfprivg7qec6tdle7u6hdepzjibin6fn3ivm6qlwytr235rh5vc6bfqd.onion/'
+publishDir: tor
+languageCode: en-us
+title: sethforprivacy.com
+theme: PaperMod
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
+minify:
+  disableXML: true
+  minifyOutput: true
 
-  # show selector to switch language
-  showLanguageSelector = false
+params:
+  env: production
+  title: sethforprivacy.com
+  description: "A simple blog about privacy, Monero, and self-hosting"
+  author: sethforprivacy
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
 
-  # set theme to full screen width
-  fullWidthTheme = false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
 
-  # center theme with default width
-  centerTheme = true
+  mainSections: posts
 
-  # set a custom favicon (default is a `themeColor` square)
-  favicon = "favicon.ico"
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+  label:
+    text: "Home"
+    icon: /favicon.ico
+    iconHeight: 35
+  
+  homeInfoParams:
+    Title: "Welcome to Seth For Privacy's blog! \U0001F44B"
+    Content: >
+      - Take a look at "Posts" for blog posts, "Guides" for guides on self-hosting and Monero, and "Opt Out Podcast" for content related to Opt Out.
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+      -
 
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = "sethforprivacy"
-  site = "sethforprivacy"
+      - ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "sethforprivacy.com"
-    subtitle = "A simple blog about privacy, Monero, and me"
-    owner = "Seth For Privacy"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+  socialIcons:
+    - name: email
+      url: "mailto:seth@sethforprivacy.com"
+    - name: twitter
+      url: "https://twitter.com/sethforprivacy"
+    - name: matrix
+      url: "https://matrix.to/#/@sethsimmons:monero.social"
+    - name: reddit
+      url: "https://www.reddit.com/user/fort3hlulz"
+    - name: github
+      url: "https://github.com/sethforprivacy"
+    - name: monero
+      url: "monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY"
+    - name: bitcoin
+      url: "https://paynym.is/+fallingrecipe6C9"
+    - name: rss
+      url: "/index.xml"
 
-    [languages.en.params.logo]
-      logoText = "sethforprivacy.com"
-      logoHomeLink = "/"
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About Me"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "posts"
-        name = "Posts"
-        url = "/posts"
-      [[languages.en.menu.main]]
-        identifier = "guides"
-        name = "Guides"
-        url = "/guides"
-      [[languages.en.menu.main]]
-        identifier = "privacytools"
-        name = "Recommended Privacy Tools"
-        url = "/about/#my-recommended-privacy-tools"
-        
-[privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    anonymizeIP = false
-    disable = true
-    respectDoNotTrack = false
-    useSessionStorage = false
-  [privacy.instagram]
-    disable = true
-    simple = false
-  [privacy.twitter]
-    disable = false
-    enableDNT = false
-    simple = true
-  [privacy.vimeo]
-    disable = true
-    enableDNT = false
-    simple = false
-  [privacy.youtube]
-    disable = true
-    privacyEnhanced = false
+  editPost:
+    URL: "https://github.com/sethforprivacy/sethforprivacy.com/blob/master/content"
+    Text: "Suggest Changes To This Post" # edit text
+    appendFilePath: true # to append file path to Edit link
 
-[markup]
-  [markup.tableOfContents]
-    endLevel = 2
-    ordered = false
-    startLevel = 1
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts
+      weight: 1
+    - identifier: guides
+      name: Guides
+      url: /guides
+      weight: 2
+    - identifier: podcast
+      name: Opt Out Podcast
+      url: "http://optoutkoplzfgs7wl3gkg5nmtrrs7ki6ljcguf7c4w7rdsrtozlghxad.onion"
+      weight: 3
+    - identifier: about
+      name: About
+      url: /about
+      weight: 4
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 5
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: false
+    disable: true
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: true
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: true
+  vimeo:
+    disable: true
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: true
+    privacyEnhanced: false
+markup:
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 1
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    # noClasses: false
+    style: solarized-dark
+
 ```
+
+{{< /collapse >}}
 
 A simple `nginx -t` to verify the configuration was valid, a restart of NGINX via `sudo systemctl restart nginx`, and I 
 was up and running on both clearnet and Tor!
@@ -427,6 +540,8 @@ prompt Tor users who navigate to the clearnet site to use the native Tor site in
 ```
 
 My full NGINX configuration file is below:
+
+{{< collapse summary="nginx.conf" >}}
 
 ```conf
 # generated 2020-11-29, Mozilla Guideline v5.6, nginx 1.18, OpenSSL 1.1.1d, intermediate configuration, no OCSP
@@ -567,6 +682,8 @@ server {
     }
 }
 ```
+
+{{< /collapse >}}
 
 # Writing workflow  
 

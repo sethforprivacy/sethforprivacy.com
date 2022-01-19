@@ -133,6 +133,10 @@ docker run -d \
     monerod tor
 ```
 
+{{< collapse summary="Alternative Docker commands" >}}
+
+Public node:
+
 ```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
 docker run -d \
@@ -141,6 +145,8 @@ docker run -d \
     containrrr/watchtower --cleanup \
     monerod tor
 ```
+
+Pruned node:
 
 ```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
@@ -151,6 +157,8 @@ docker run -d \
     monerod tor
 ```
 
+Public and pruned node:
+
 ```bash
 docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 docker run -d \
@@ -159,6 +167,8 @@ docker run -d \
     containrrr/watchtower --cleanup \
     monerod tor
 ```
+
+{{< /collapse >}}
 
 To watch the logs for `monerod`, simply run:
 

@@ -288,6 +288,8 @@ nano ~/p2pool/docker-compose.yml
 
 *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
+{{< collapse summary="docker-compose.yml" >}}
+
 ```yaml
 version: '3.5'
 services:
@@ -333,6 +335,8 @@ volumes:
   p2pool-data:
 
 ```
+
+{{< /collapse >}}
 
 ***NOTE: Be sure to replace the Monero address (468y...b55R) with your own primary address (an address starting with 4), or else you'll be making generous hashrate donations to me!***
 

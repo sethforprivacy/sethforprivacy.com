@@ -179,6 +179,8 @@ enable-dns-blocklist=1
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 ```
 
+{{< collapse summary="Public node monerod.conf" >}}
+
 ```ini
 # /etc/monero/monerod.conf
 
@@ -208,6 +210,10 @@ enable-dns-blocklist=1
 # limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 ```
+
+{{< /collapse >}}
+
+{{< collapse summary="Pruned node monerod.conf" >}}
 
 ```ini
 # /etc/monero/monerod.conf
@@ -241,6 +247,10 @@ enable-dns-blocklist=1
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 ```
 
+{{< /collapse >}}
+
+{{< collapse summary="Pruned and public node monerod.conf" >}}
+
 ```ini
 # /etc/monero/monerod.conf
 
@@ -273,6 +283,8 @@ enable-dns-blocklist=1
 # limit-rate-up=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 # limit-rate-down=128000 # 128000 kB/s == 125MB/s == 1GBit/s; a raise from default 2048 kB/s; contribute more to p2p network
 ```
+
+{{< /collapse >}}
 
 Now copy and paste the configuration file you want to use:
 
