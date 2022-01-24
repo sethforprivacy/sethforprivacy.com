@@ -63,7 +63,7 @@ params:
     - name: matrix
       url: "https://matrix.to/#/@sethsimmons:monero.social"
     - name: reddit
-      url: "https://www.reddit.com/user/fort3hlulz"
+      url: "https://www.reddit.com/user/sethforprivacy"
     - name: github
       url: "https://github.com/sethforprivacy"
     - name: monero

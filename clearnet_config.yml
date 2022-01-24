@@ -62,7 +62,7 @@ params:
     - name: matrix
       url: "https://matrix.to/#/@sethsimmons:monero.social"
     - name: reddit
-      url: "https://www.reddit.com/user/fort3hlulz"
+      url: "https://www.reddit.com/user/sethforprivacy"
     - name: github
       url: "https://github.com/sethforprivacy"
     - name: monero
@@ -111,7 +111,7 @@ menu:
       weight: 2
     - identifier: podcast
       name: Opt Out Podcast
-      url: "https://dev.optoutpod.com"
+      url: "https://optoutpod.com"
       weight: 3
     - identifier: about
       name: About
