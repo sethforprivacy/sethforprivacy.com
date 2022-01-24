@@ -127,7 +127,26 @@ The "messaging wars" continue to rage, but I'll make my recommendations based on
   - Threema takes the template of WhatsApp and orients the app around preserving user-privacy, including end-to-end encrypted chats by default, voice messages, and other features users of WhatsApp will be very familiar with. It also drops the phone number requirement of Signal, which is a big win for pseudonymity (but does make it incapable of handling SMS messages, unlike Signal).
   - I tend to use Threema for chats with people I don't know personally, and have really enjoyed the experience (both with direct and group messaging).
 
-## 7. Use a non-logging and trustworthy VPN provider
+## 7. Use a more privacy-preserving form of money
+
+This step can definitely slide around in order, but can be an extremely helpful one to get down before pursuing a VPN service or mobile OS to help enable private ways to pay for these types of services and hardware.
+
+While cryptocurrencies like Bitcoin are commonly considered private or anonymous, it's important that you realize that most cryptocurrencies *are not* privacy preserving by default, and merely enable fragile pseudonymity at best. With this in mind, here are a couple recommendations for using cryptocurrencies while preserving your privacy.
+
+- [Use Monero](https://getmonero.org/)
+  - Monero is a privacy-preserving cryptocurrency in the vein of Bitcoin, but enabling privacy for the sender, receiver, and amount of each transaction by-default. This means you can use any wallet you prefer and gain the same time-tested and excellent privacy offered by the Monero protocol. For more info on Monero, check out the following links:
+    - [What is Monero? A simple animated introduction to Monero](https://www.youtube.com/watch?v=B7sLnmlZ-kU)
+    - [A more in-depth look at Monero's privacy](https://www.youtube.com/watch?v=H33ggs7bh8M)
+    - [A feature-by-feature breakdown of Monero](https://www.monerooutreach.org/gallery/know-monero.html)
+- [Use Samourai Wallet for Bitcoin](https://samouraiwallet.com/)
+  - Samourai Wallet is by far the best way to use Bitcoin, in my opinion, and enables fairly easy to use and approachable privacy without the need for another cryptocurrency. While privacy on Bitcoin can be extremely fragile and difficult to achieve, Samourai Wallet makes it as simple as possible, keeps fees down, and has a long track record of preserving user privacy on Bitcoin. For more info on Samourai, check out the following links:
+    - [Their website](https://samouraiwallet.com/)
+    - [Their code](https://code.samourai.io/explore/groups)
+    - [Simple guide to mixing Bitcoin using Samourai Wallet by BitcoinQnA]( https://bitcoiner.guide/privacy/separate/)
+    - [In-depth guide to Samourai Wallet usage by EconoAlchemist](https://www.econoalchemist.com/post/bitcoin-wallets-for-beginners-part-ii)
+    - [An in-depth walk through of what Samourai Wallet is, how they operate, and what you can expect](https://optoutpod.com/episodes/s2e03-samourai-wallet/)
+
+## 8. Use a non-logging and trustworthy VPN provider
 
 ***NOTE: My podcast, Opt Out, is sponsored by one of the VPNs recommended here. That does not, however, change my recommendation, but I wanted to state it plainly so you can make a well-informed decision. This post (and it's content) are not sponsored in any way, however.***
 
@@ -151,7 +170,7 @@ To help you make your own well-informed choices, here are some excellent resourc
   - ["Global surveillance, VPNs, and Tor w/ Smuggler"](https://www.optoutpod.com/global-surveillance-vpns-and-tor-w-smuggler/)
   - ["Balancing privacy with mental health, plus second realms w/ j43"](https://www.optoutpod.com/balancing-privacy-with-mental-health-plus-second-realms-w-j43/)
 
-## 8. Use a privacy-preserving mobile operating system
+## 9. Use a privacy-preserving mobile operating system
 
 This section is a bit more drastic than the others, but switching to an operating system that is designed around protecting user privacy gives you a strong foundation for all of the other steps to live on top of and enhances their effect (and often makes them easier!).
 
@@ -161,7 +180,7 @@ The only real recommendation I have here is below, but note that for some threat
   - I've long been a huge fan of CalyxOS, have run it for almost a year, and am a financial supporter of the [Calyx Institute](https://calyxos.org/), the non-profit organization behind CalyxOS. CalyxOS is an incredibly powerful tool, one that takes the open-source Android operating system created by Google and strips Google's tracking and services out of it, and then builds it back up with a focus on user privacy and FOSS app stores (like F-Droid).
   - For more on CalyxOS and my experience/recommendations, see my blog post ["Switching to CalyxOS"]({{< ref "/content/posts/switching-to-calyxos.md" >}}).
 
-## 9. Use a more privacy-conscious desktop operating system
+## 10. Use a more privacy-conscious desktop operating system
 
 This last step can be very daunting at first, but is a good step once you're a bit deeper down the privacy and self-sovereignty rabbit hole. Things are getting better each year, but switching to Linux is still something that requires some extra know-how and dedication to find alternative apps and tools.
 
