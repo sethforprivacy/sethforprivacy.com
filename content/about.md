@@ -18,7 +18,7 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 ## How To Contact Me  
 
 - [Twitter](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
-- [Matrix](https://matrix.to/#/@sethsimmons:monero.social) - `@sethsimmons:monero.social`  
+- [Matrix](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com) - `@sethforprivacy:matrix.optoutpod.com`  
 - [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`  
 - [Cwtch](https://cwtch.im/)- `eitasbh6bzqpwyrzlu67bb2pygqba34yxertepupyvuuukvgwfofdyyd`  
 - [Email](mailto:seth@sethforprivacy.com) - `seth@sethforprivacy.com`
