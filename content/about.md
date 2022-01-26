@@ -29,6 +29,8 @@ Fingerprint:
 
 `55EE C39E 2EFD D374 0F94  DFFB 6B97 91C6 214D 1E57`
 
+{{ collapse summary="PGP Key" }}
+
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -61,34 +63,42 @@ JEcJD9ltDAVcgs36
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-### CTemplar PGP key
+{{ /collapse }}
 
-My primary email provider is CTemplar, and I use their generated PGP key for signing (*not* encrypting) emails I send from that account (starting Nov 2nd, 2021).
+### ProtonMail PGP key
+
+My primary email provider is ProtonMail, and I use their generated PGP key for signing (*not* encrypting) emails I send from that account (starting Jan 26, 2022).
 
 To validate an email is from me, please ensure the following PGP key is used to sign said email:
 
 Fingerprint:
 
-`35e6178dd2477340b42e4305ce7da310006c8067`
+`D7F7 313E 8792 F59E 5B65  19E0 BDBB 0A37 0BC5 23BA`
 
 Full PGP key:
 
+{{ collapse summary="ProtonMail PGP Key" }}
+
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: OpenPGP.js v4.10.4
+Version: OpenPGP.js v4.10.10
 Comment: https://openpgpjs.org
 
-xjMEYYEx3BYJKwYBBAHaRw8BAQdAcQTDaZId+tN58jH8S99kUl4IUf6L0yhT
-PF2Gk4SlWmrNGTxzZXRoQHNldGhmb3Jwcml2YWN5LmNvbT7CeAQQFgoAIAUC
-YYEx3AYLCQcIAwIEFQgKAgQWAgEAAhkBAhsDAh4BAAoJEM59oxAAbIBnMBYB
-AJZRlQ8uwtPKjwxIljylbh4rFnd2hg2Y+l1bj6Ak8dPtAP9M6VBbZn19eNOd
-iL7LkOcem67bU08vhBDhAlsejL+cCM44BGGBMdwSCisGAQQBl1UBBQEBB0D+
-lrh/7bwP/bDaqgoDoGpMAcRSCzghF5nhjn9ZHMDtSwMBCAfCYQQYFggACQUC
-YYEx3AIbDAAKCRDOfaMQAGyAZ887AQDckNbs+pNNw18JLUc/wc1IFtLKYSPT
-0pTg2z9bJy9EqQD/YfmVzRDMsjrxtkfm9EtBATNJN2sWRn57IoT9qB+opgM=
-=D/Fr
+xjMEYfGNJBYJKwYBBAHaRw8BAQdA6lxzGd+mO3RROCPz5xgpCILH28HhHJtT
+3ssSK9YeL1zNMXNldGhAc2V0aGZvcnByaXZhY3kuY29tIDxzZXRoQHNldGhm
+b3Jwcml2YWN5LmNvbT7CjwQQFgoAIAUCYfGNJAYLCQcIAwIEFQgKAgQWAgEA
+AhkBAhsDAh4BACEJEL27CjcLxSO6FiEE1/cxPoeS9Z5bZRngvbsKNwvFI7qw
+OQEA6YDwJemRkFJqWQnUcE0kIT2CrQ2Z0A8Ro7L30lIPqhcBAKFNCD6uhdwz
+g7nbPHy+VIaGqXUsCYkkEuFor3OEtloCzjgEYfGNJBIKKwYBBAGXVQEFAQEH
+QAZORKFgOyRYI8PUdqF8t8X5XPkbYhcrafQZ65a+vdYKAwEIB8J4BBgWCAAJ
+BQJh8Y0kAhsMACEJEL27CjcLxSO6FiEE1/cxPoeS9Z5bZRngvbsKNwvFI7o9
+NwD/WsuGOChadtKPNRw7tSS6OdpeBUTYqkZy5qmk2NDSnZsA+gOoC9S3+CXl
+hOzhrrXhfHHaEpXU+mKFVGVjp8BIjnIM
+=CXck
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+{{ /collapse }}
 
 ### PGP-verified identities
 
