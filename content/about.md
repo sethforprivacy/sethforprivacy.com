@@ -29,7 +29,7 @@ Fingerprint:
 
 `55EE C39E 2EFD D374 0F94  DFFB 6B97 91C6 214D 1E57`
 
-{{< collapse summary="PGP Key" >}}
+{{< collapse summary="Full PGP Public Key" >}}
 
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -75,9 +75,7 @@ Fingerprint:
 
 `D7F7 313E 8792 F59E 5B65  19E0 BDBB 0A37 0BC5 23BA`
 
-Full PGP key:
-
-{{< collapse summary="ProtonMail PGP Key" >}}
+{{< collapse summary="Full ProtonMail PGP Public Key" >}}
 
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
