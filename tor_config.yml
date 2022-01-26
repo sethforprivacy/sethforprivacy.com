@@ -61,13 +61,13 @@ params:
     - name: twitter
       url: "https://twitter.com/sethforprivacy"
     - name: matrix
-      url: "https://matrix.to/#/@sethsimmons:monero.social"
+      url: "https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com"
     - name: reddit
       url: "https://www.reddit.com/user/sethforprivacy"
     - name: github
       url: "https://github.com/sethforprivacy"
     - name: monero
-      url: "monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY"
+      url: "https://sethforprivacy.com/about/#donations"
     - name: bitcoin
       url: "https://paynym.is/+fallingrecipe6C9"
     - name: rss
