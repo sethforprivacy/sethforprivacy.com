@@ -23,7 +23,9 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 - [Cwtch](https://cwtch.im/)- `eitasbh6bzqpwyrzlu67bb2pygqba34yxertepupyvuuukvgwfofdyyd`  
 - [Email](mailto:seth@sethforprivacy.com) - `seth@sethforprivacy.com`
 
-## PGP Key
+## Primary PGP Key
+
+If you'd like to reach me over any of the contact points above and add a layer of encryption/signing via PGP, please use the below PGP public key to do so.
 
 Fingerprint:  
 
