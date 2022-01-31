@@ -22,6 +22,9 @@ params:
   defaultTheme: dark
   disableThemeToggle: false
 
+  images:
+    - /monero_profile.jpeg
+
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
