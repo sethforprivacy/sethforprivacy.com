@@ -454,16 +454,16 @@ To work around this, you can take one of the following approaches
 - The easiest way to send funds from the wallet is to use an *unrestricted* RPC node -- ideally, either the same computer as your node, or using the Monero GUI wallet w/ integrated node
   - Once you're using an unrestricted node, you can sweep as many outputs as you want at once (max ~194 per transaction) without issues
 - If you want to use your own node as an unrestricted RPC node on another host on your local network, you can enable unrestricted RPC by adding these two flags and allowing port `18081/tcp` through the *local* firewall of the host the node is running on:
-    
+
   - `--rpc-bind-ip=0.0.0.0 --confirm-external-bind`
 
-- If you don't have a local unrestricted RPC node, you can instead manually sweep small amounts of outputs using Feather Wallet or the Monero CLI wallet
+- If you don't have a local unrestricted RPC node, you can instead manually sweep small amounts of outputs using [Feather Wallet](https://featherwallet.org/) or the Monero CLI wallet
 
 It's important to remember to *never* expose restricted RPC to the internet. If you run a node at home that you want to use for p2pool sweeping, be sure to not forward port `18080/tcp` to that host and only access it internally.
 
 #### Sweeping all payouts with Feather Wallet
 
-My preferred way to actually sweep all of the payouts into larger outputs is using Feather Wallet, my favorite desktop wallet for Monero, and an unrestricted RPC node on my home network.
+My preferred way to actually sweep all of the payouts into larger outputs is using [Feather Wallet](https://featherwallet.org/), my favorite desktop wallet for Monero, and an unrestricted RPC node on my home network.
 
 1. Start by setting the node in-use to your local *unrestricted RPC* node under File>Settings>Node and adding your own node to the custom list:
 
