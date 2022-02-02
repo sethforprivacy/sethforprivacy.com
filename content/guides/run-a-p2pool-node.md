@@ -438,6 +438,25 @@ If you don't want to enter your address into website, simply watch the wallet in
 
 To view general pool statistics for the current mainnet p2pool instance, see <https://p2pool.io/>.
 
+# Handling payouts
+
+One of the great features of p2pool is that when you earn Monero you get paid out in every block found during the 6h window.
+
+However, this does lead to *a lot* of outputs in your wallet, and there are some specific things you need to keep in mind when spending from a wallet that has many (read: hundreds) of outputs from p2pool mining.
+
+- The easiest way to send funds from the wallet is to use an *unrestricted* RPC remote node -- ideally, either the same computer as your node, or using the Monero GUI wallet w/ integrated node
+  - Once you're using an unrestricted node, you can sweep as many outputs as you want at once (max ~194 per transaction) without issues
+  - You can enable unrestricted RPC by adding these two flags: `--rpc-bind-ip=0.0.0.0 --confirm-external-bind"` and allowing port `18081/tcp` through the *local* firewall of the host the node is running on
+- Manually sweep small amounts of outputs using Feather Wallet or the Monero CLI wallet
+
+It's important to remember to *never* expose restricted RPC to the internet. If you run a node at home that you want to use for p2pool sweeping, be sure to not forward port `18080/tcp` to that host and only access it internally.
+
+## Sweeping all payouts with Feather Wallet
+
+My preferred way to actually sweep all of the payouts into larger outputs is using Feather Wallet, my favorite desktop wallet for Monero.
+
+To do so, start by setting the node in-use to your local *unrestricted RPC* node:
+
 # Resolving issues
 
 While `monerod` is very stable and rarely has any issues, occasionally `p2pool` can get hung up and fail to function properly. If you do run into issues with p2pool not allowing you to mine against it, or being generally unresponsive, just run the following command to restart it and let it sync back up:
