@@ -19,7 +19,7 @@ title: Run and mine on a p2pool Node
 weight: 2
 ---
 
-# Introduction
+## Introduction
 
 ***NOTE: Much of the beginning of this guide is taken from my related guide, ["Run a Monero Node"]({{< ref "/content/guides/run-a-monero-node.md" >}}), but is necessary here as running your own node is usually required for p2pool usage.***
 
@@ -34,7 +34,7 @@ For more information on why you would want to use p2pool instead of a normal poo
 - [Mining Monero with P2Pool - Windows; Quick start guide](https://www.youtube.com/watch?v=yfbvTksF9ic)
 - [Windows installer for p2pool](https://github.com/WeebDataHoarder/p2pool-nsis/releases/latest)
 
-# Pre-requisites
+## Pre-requisites
 
 I will assume in this guide that you have purchased and SSH'd into the VPS/host of your choosing, but if you need help with those first steps here are a few good links to follow:
 
@@ -47,7 +47,7 @@ I will assume in this guide that you have purchased and SSH'd into the VPS/host 
 
 If you're using your own hardware at home, this guide will still generally apply to you assuming you are running Ubuntu/Debian.
 
-# Recommended hardware
+## Recommended hardware
   
 - Pruned Node[^1]
   - 2+ vCPUs/cores
@@ -56,7 +56,7 @@ If you're using your own hardware at home, this guide will still generally apply
   
 [^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
-# Why run your own Monero node?
+## Why run your own Monero node?
 
 The Monero network relies on a distributed web of Monero nodes, each of which validate transactions, propagate transactions to the rest of the network, and helps new nodes easily and quickly synchronize to the current state of the network.
 
@@ -71,7 +71,7 @@ You can choose to either [setup a node via systemd and binaries]({{< ref "run-a-
 
 Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://containrrr.dev/watchtower/).
 
-# Why run and mine on p2pool instead of a "normal" Monero pool?
+## Why run and mine on p2pool instead of a "normal" Monero pool?
 
 Mining on Monero has always been one of the most decentralized PoW networks in the cryptocurrency space, but an issue that has plagued Monero (and all other PoW cryptocurrencies) is that even if miners themselves are numerous and diverse geographically, pools used by those miners are generally very few, geographically similar, and entirely centralized.
 
@@ -81,9 +81,10 @@ Pools and their operators are one of the most vulnerable aspects of Monero minin
 
 Running p2pool allows you to participate in a second blockchain that is used to decentralize the normal pool functionality, while contributing work as a whole to the main Monero network.
 
-For more details on p2pool and why you should use it, see the official Github repository: <https://github.com/SChernykh/p2pool>
+For more details on p2pool and why you should use it, see this knowledge article from LocalMonero:
+- [P2Pool and Its Role in Decentralizing Monero Mining](https://localmonero.co/knowledge/p2pool-decentralizing-monero-mining)
 
-# Update and install required packages
+## Update and install required packages
 
 1. Install a few tools we will need later:
 
@@ -110,7 +111,7 @@ For more details on p2pool and why you should use it, see the official Github re
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
 
-# Initial hardening via UFW
+## Initial hardening via UFW
 
 We will want to make sure that the system is hardened in a simple way by making sure that the firewall is locked down to only allow access to the ports necessary for SSH and `monerod`, using UFW.
 
@@ -142,7 +143,7 @@ sudo ufw allow 3333/tcp
 sudo ufw enable
 ```
 
-# Download and run monerod and p2pool via Docker
+## Download and run monerod and p2pool via Docker
 
 This section will use a simple [Docker Compose](https://docs.docker.com/compose/) configuration file that tells Docker exactly how each part needs to be configured and connected together.
 
@@ -277,7 +278,7 @@ If you would like to inspect the source code behind the image used here or build
 
     You should see lines like `SideChain verified block`, and after a few minutes of syncing you should see a line like `SideChain new chain tip`.
 
-## If you already run a Monero node
+### If you already run a Monero node
 
 If you already run a node and don't want to migrate to this Docker Compose setup, simply add the flag `--zmq-pub tcp://0.0.0.0:18083` to your `monerod` instance and restart it, forward port `18083/tcp`, and then use the below docker-compose file and replace the `--host` value with the IP or DNS address of your existing node:
 
@@ -342,7 +343,7 @@ volumes:
 
 Once you've created the above file, start at step 4 in the section above.
 
-# Connect your miners to p2pool
+## Connect your miners to p2pool
 
 Now that `monerod` and `p2pool` are up and running, all that's left is to point your miners over to the new `p2pool` server you just spun up!
 
@@ -378,7 +379,7 @@ If you want to use a configuration file with XMRig, you can use the below config
 
 For more details on miner configuration, see my guide ["Mining Monero"]({{< ref "/content/guides/mining-monero.md" >}}).
 
-# Viewing your mining stats
+## Viewing your mining stats
 
 As there is no standard pool for you to use to check your statistics, you may be wondering how you can see your pool-side hashrate in total, shares found, accumulated approximate reward, etc.
 
@@ -430,7 +431,9 @@ Control + Q
 
 This signals to the Docker console that you want to disconnect without killing the running `p2pool` process.
 
-# Checking payouts
+## Payouts
+
+### Checking payouts
 
 The easiest way to check your payouts is to use a community-run website, [p2pool.observer](https://p2pool.observer/), and enter your payout address to view statistics, shares, payouts, etc.
 
@@ -438,26 +441,49 @@ If you don't want to enter your address into website, simply watch the wallet in
 
 To view general pool statistics for the current mainnet p2pool instance, see <https://p2pool.io/>.
 
-# Handling payouts
+### Handling payouts
 
 One of the great features of p2pool is that when you earn Monero you get paid out in every block found during the 6h window.
 
 However, this does lead to *a lot* of outputs in your wallet, and there are some specific things you need to keep in mind when spending from a wallet that has many (read: hundreds) of outputs from p2pool mining.
 
-- The easiest way to send funds from the wallet is to use an *unrestricted* RPC remote node -- ideally, either the same computer as your node, or using the Monero GUI wallet w/ integrated node
+Nodes using restricted RPC for wallet access (as most do and should) have a limit on the number of outputs you can send in a single transaction to prevent spam or attacks on the node.
+
+To work around this, you can take one of the following approaches
+
+- The easiest way to send funds from the wallet is to use an *unrestricted* RPC node -- ideally, either the same computer as your node, or using the Monero GUI wallet w/ integrated node
   - Once you're using an unrestricted node, you can sweep as many outputs as you want at once (max ~194 per transaction) without issues
-  - You can enable unrestricted RPC by adding these two flags: `--rpc-bind-ip=0.0.0.0 --confirm-external-bind"` and allowing port `18081/tcp` through the *local* firewall of the host the node is running on
-- Manually sweep small amounts of outputs using Feather Wallet or the Monero CLI wallet
+- If you want to use your own node as an unrestricted RPC node on another host on your local network, you can enable unrestricted RPC by adding these two flags and allowing port `18081/tcp` through the *local* firewall of the host the node is running on:
+    
+  - `--rpc-bind-ip=0.0.0.0 --confirm-external-bind`
+
+- If you don't have a local unrestricted RPC node, you can instead manually sweep small amounts of outputs using Feather Wallet or the Monero CLI wallet
 
 It's important to remember to *never* expose restricted RPC to the internet. If you run a node at home that you want to use for p2pool sweeping, be sure to not forward port `18080/tcp` to that host and only access it internally.
 
-## Sweeping all payouts with Feather Wallet
+#### Sweeping all payouts with Feather Wallet
 
-My preferred way to actually sweep all of the payouts into larger outputs is using Feather Wallet, my favorite desktop wallet for Monero.
+My preferred way to actually sweep all of the payouts into larger outputs is using Feather Wallet, my favorite desktop wallet for Monero, and an unrestricted RPC node on my home network.
 
-To do so, start by setting the node in-use to your local *unrestricted RPC* node:
+1. Start by setting the node in-use to your local *unrestricted RPC* node under File>Settings>Node and adding your own node to the custom list:
 
-# Resolving issues
+  {{< figure src="/run-a-p2pool-node/setnode.png" align="center" style="border-radius: 8px;" >}}
+
+2. Go to the Coins tab (enable it in View if necessary) and search for "Coinbase" (this will limit the coins displayed to only those that are p2pool/mining rewards), select all, right click, and select "Sweep selected outputs"
+
+  {{< figure src="/run-a-p2pool-node/selectallcoinbase.png" align="center" style="border-radius: 8px;" >}}
+
+3. On the popup, check the "Send to self" box and hit "OK". This will combine all of the p2pool outputs and send them back into the same wallet.
+
+  {{< figure src="/run-a-p2pool-node/sendtoself.png" align="center" style="border-radius: 8px;" >}}
+
+4. Confirm the transaction on the next screen (note that the generation of the transaction can take a few seconds if you have a lot of outputs!)
+
+  {{< figure src="/run-a-p2pool-node/confirmtx.png" align="center" style="border-radius: 8px;" >}}
+
+4. Alternatively, enter another address you own and send the combined outputs there
+
+## Resolving issues
 
 While `monerod` is very stable and rarely has any issues, occasionally `p2pool` can get hung up and fail to function properly. If you do run into issues with p2pool not allowing you to mine against it, or being generally unresponsive, just run the following command to restart it and let it sync back up:
 
@@ -476,7 +502,7 @@ docker-compose up -d
 
 If neither of these sets of commands resolve the issues, please file an [issue in Github](https://github.com/SChernykh/p2pool/issues) or reach out in Matrix (`#monero-pow:matrix.org`) for help.
 
-# Alternative ways to run p2pool
+## Alternative ways to run p2pool
 
 If you don't prefer this approach or would like to build from source yourself, check out the following two approaches:
 
@@ -485,13 +511,13 @@ If you don't prefer this approach or would like to build from source yourself, c
 
 There are many ways to get up and running, but I've built out the approach in this guide in an attempt to simplify the process for users. Feel free to use whatever approach you're most comfortable with and that fits threat model!
 
-# Disclaimer
+## Disclaimer
 
 While this software has worked well for me and is good to go for mainnet, it is of course not foolproof and is still in active development. Be aware that bugs may exist and you're *very* early to p2pool usage in general.
 
 I am not responsible for any lost funds or issues you may have with configuration or running of p2pool, but will try to help as much as possible if you do run into issues.
 
-# Conclusion
+## Conclusion
 
 Hopefully this has been a nice (relatively) simple guide to get you started mining Monero via p2pool! p2pool is an essential tool to removing trust from mining pools and removing the power of potential future regulation, so I'm beyond excited that it is finally possible and works quite well.
 
