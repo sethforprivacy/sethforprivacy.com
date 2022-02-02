@@ -481,7 +481,7 @@ My preferred way to actually sweep all of the payouts into larger outputs is usi
 
   {{< figure src="/run-a-p2pool-node/confirmtx.png" align="center" style="border-radius: 8px;" >}}
 
-4. Alternatively, enter another address you own and send the combined outputs there
+5. Alternatively, enter another address you own and send the combined outputs there
 
 ## Resolving issues
 
