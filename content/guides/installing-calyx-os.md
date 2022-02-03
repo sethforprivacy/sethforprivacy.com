@@ -39,6 +39,24 @@ draft: true
 
     {{< figure src="/installing-calyx-os/verification.png" align="center" style="border-radius: 8px;" >}}
 
+3. Enable developer options
+
+4. Enable OEM unlocking
+
+5. Allow the device-flasher script to be run and run it
+
+    Commands:
+
+    ```bash
+    chmod +x device-flasher.linux\n
+    adb devices
+    ./device-flasher.linux
+    ```
+
+    Expected output:
+
+    {{< figure src="/installing-calyx-os/flashing.png" align="center" style="border-radius: 8px;" >}}
+
 # Conclusion
 
 If you have any questions from this post or would like more information on a specific aspect of the post, please reach out via [Twitter, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
