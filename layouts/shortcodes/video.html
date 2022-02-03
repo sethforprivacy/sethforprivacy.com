@@ -1,0 +1,7 @@
+<center>
+    <video preload='{{ .Get "preload" }}' loop muted playsinline aria-label='{{ .Get "label" }}' style='width: {{ .Get "width" }}; height: auto;' controls>
+        {{ with .Get "mp4" }}<source src="{{ . }}" type="video/mp4">{{ end }}
+        {{ with .Get "webm" }}<source src="{{ . }}" type="video/webm">{{ end }}
+        <p> Your browser does not support video. </p>
+    </video>
+</center>
