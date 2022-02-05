@@ -32,7 +32,7 @@ This concern isn't only a fun thought exercise, unfortunately, as users of Bitco
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
-***Current confirmed cases: 25***
+***Current confirmed cases: 27***
 
 ## Wasabi
 
@@ -74,6 +74,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source](https://twitter.com/ODELL/status/1234514628115341313)
     {{< tweet user="ODELL" id="1234514628115341313" >}}
   - [Response from BlockFi](https://tweetstamp.org/1234531935038341120)
+- A user's loan is closed while under water (causing a loss of 50%) due to the previous owner of the coins using a mixing service or tool:
+  - [Twitter Source](https://twitter.com/Bitfinexed/status/1489833237765660673)
+    {{< tweet user="Bitfinexed" id="1489833237765660673" >}}
+  - [Reddit Source](https://www.reddit.com/r/blockfi/comments/skxiei/blockfi_horrible_loan_experience_fortune_lost/)
 - A user's account is flagged upon mixing coins after withdrawal from Voyager:
   - [Twitter Source](https://twitter.com/sundaywar/status/1366854774864322560)
     {{< tweet user="sundaywar" id="1366854774864322560" >}}
@@ -178,6 +182,8 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/blockfi_coinjoin.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/blockfi_coinjoin2.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/blockfi_coinjoin3.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/paxos_coinjoin.png" align="center" style="border-radius: 8px;" >}}
 
