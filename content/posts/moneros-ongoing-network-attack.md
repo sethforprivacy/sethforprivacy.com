@@ -194,7 +194,7 @@ principle of p2p networks like Monero. The Monero community and developers will 
 network in the meantime to reduce the attack vectors available to attackers.
 
 Thankfully in Monero there is far less data for attackers to capture compared to most other cryptocurrency networks as 
-transactions hide the sender, receiver, and amount transacted by-default. This lessens the impact of spying attacks on 
+transactions hide the sender, receiver, and amount transacted by default. This lessens the impact of spying attacks on 
 the network, but users with advanced threat models should still perform the mitigations mentioned above.
 
 The last important note here is that none of these attacks affected the Monero protocol itself -- all on-chain privacy 

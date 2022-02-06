@@ -18,13 +18,13 @@ toc: true
 
 # Introduction
 
-Bitcoin is often touted as a fungible and private asset and digital cash alternative, when in fact it is technically non-fungible. Each bitcoin in circulation has a distinct history attached to it ensuring that 1BTC != 1BTC. While coin histories can be somewhat obfuscated with tools like CoinJoin, the fungibility of Bitcoin remains distinctly lacking.
+Bitcoin is often touted as a fungible and private asset and digital cash alternative, when in fact it is technically non-fungible. Each bitcoin in circulation has a distinct history attached to it ensuring that 1 BTC != 1 BTC. While coin histories can be somewhat obfuscated with tools like CoinJoin, the fungibility of Bitcoin remains distinctly lacking.
 
 Many Bitcoiners purport that fungibility can be gained through more users mixing, or by peer-pressuring and boycotting exchanges and services that flag or trace Bitcoin transactions. In theory this is possible (suppose in another universe, everyone mixes), but why leave it up to chance?
 
-The Monero community sees fungibility as a basic safety feature. Good tools should include safety features by default, strong enough to withstand both governmental and social attacks. This is far preferable to relying on the goodwill of governments and regulators, or the peer-pressure of us as users to ensure fungibility of digital cash. Do you really want your coins to be fungible only if your grandma correctly follows a 50 page mixing guide?
+The Monero community sees fungibility as a basic safety feature. Good tools should include safety features by default, strong enough to withstand both governmental and social attacks. This is far preferable to relying on the good will of governments and regulators, or the peer-pressure of us as users to ensure fungibility of digital cash. Do you really want your coins to be fungible only if your grandma correctly follows a 50 page mixing guide?
 
-Monero relies on privacy by-default, for all users and all transactions, to ensure that 1XMR = 1XMR, no matter what. Monero is fungible today, not just in a pipe dream.
+Monero relies on privacy by default, for all users and all transactions, to ensure that 1 XMR = 1 XMR, no matter what. Monero is fungible today, not just in a pipe dream.
 
 # The Fungibility Graveyard
 

@@ -134,7 +134,7 @@ This step can definitely slide around in order, but can be an extremely helpful 
 While cryptocurrencies like Bitcoin are commonly considered private or anonymous, it's important that you realize that most cryptocurrencies *are not* privacy preserving by default, and merely enable fragile pseudonymity at best. With this in mind, here are a couple recommendations for using cryptocurrencies while preserving your privacy.
 
 - [Use Monero](https://getmonero.org/)
-  - Monero is a privacy-preserving cryptocurrency in the vein of Bitcoin, but enabling privacy for the sender, receiver, and amount of each transaction by-default. This means you can use any wallet you prefer and gain the same time-tested and excellent privacy offered by the Monero protocol. For more info on Monero, check out the following links:
+  - Monero is a privacy-preserving cryptocurrency in the vein of Bitcoin, but enabling privacy for the sender, receiver, and amount of each transaction by default. This means you can use any wallet you prefer and gain the same time-tested and excellent privacy offered by the Monero protocol. For more info on Monero, check out the following links:
     - [What is Monero? A simple animated introduction to Monero](https://www.youtube.com/watch?v=B7sLnmlZ-kU)
     - [A more in-depth look at Monero's privacy](https://www.youtube.com/watch?v=H33ggs7bh8M)
     - [A feature-by-feature breakdown of Monero](https://www.monerooutreach.org/gallery/know-monero.html)

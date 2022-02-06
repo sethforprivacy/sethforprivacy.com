@@ -71,7 +71,7 @@ Bitcoin at the moment. For more information on how the basics of Samourai Wallet
 
 [Monero](https://www.getmonero.org/) was created in 2014 as a fork of a project called “Bytecoin” by a small community of developers. Monero is not a 
 fork of Bitcoin, and uses an entirely new codebase called “Cryptonote”[^3] that has evolved into the Monero protocol. 
-Monero was started with three core aims -- privacy that is usable and approachable for the masses, by-default, a 
+Monero was started with three core aims -- privacy that is usable and approachable for the masses, by default, a 
  scalable and iterating base-layer, and ASIC-resistance to enable commodity hardware mining which aids decentralization.
   
 Monero enables this default privacy for all users of the network through a variety of means:

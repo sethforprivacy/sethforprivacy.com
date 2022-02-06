@@ -103,7 +103,7 @@ https://f-droid.org/en/packages/de.danoeh.antennapod/
 
 ***Why I like it***
 
-An open-source, encrypted by-default, and highly portable password manager is a powerful tool. I use Bitwarden across all of my devices and thoroughly enjoy the feature-set.
+An open-source, encrypted by default, and highly portable password manager is a powerful tool. I use Bitwarden across all of my devices and thoroughly enjoy the feature-set.
 
 ***Where to get it***
 
@@ -237,7 +237,7 @@ https://f-droid.org/en/packages/com.standardnotes/
 
 [Tor](https://www.torproject.org/) is an anonymity network protocol that helps users avoid ISP and government network surveillance. It is the backbone of many privacy tools, and is a great initiative to help user’s remain anonymous while online.
 
-The Tor browser is the browser I would recommend people use for everyday browsing as it includes many default privacy protections by-default, while also sending all traffic natively over the Tor network.
+The Tor browser is the browser I would recommend people use for everyday browsing as it includes many default privacy protections by default, while also sending all traffic natively over the Tor network.
 
 Orbot allows you to tunnel specific apps through Tor, or even tunnel all of your phones traffic over the Tor network if desired.
 
