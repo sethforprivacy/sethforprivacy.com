@@ -18,7 +18,7 @@ toc: true
 
 # Introduction
 
-Bitcoin is often touted as a fungible and private asset and digital cash alternative, when in fact it is technically non-fungible. Each bitcoin in circulation has a distinct history attached to it ensuring that 1BTC != 1BTC. While coin histories can be somewhat ofuscated with tools like CoinJoin, the fungibility of Bitcoin remains distinctly lacking.
+Bitcoin is often touted as a fungible and private asset and digital cash alternative, when in fact it is technically non-fungible. Each bitcoin in circulation has a distinct history attached to it ensuring that 1BTC != 1BTC. While coin histories can be somewhat obfuscated with tools like CoinJoin, the fungibility of Bitcoin remains distinctly lacking.
 
 Many Bitcoiners purport that fungibility can be gained through more users mixing, or by peer-pressuring and boycotting exchanges and services that flag or trace Bitcoin transactions. In theory this is possible (suppose in another universe, everyone mixes), but why leave it up to chance?
 
