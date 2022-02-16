@@ -92,4 +92,4 @@ Donating in Monero not only is a great use-case for private, fungible money like
 
 # Something Missing?
 
-If you have a favorite FOSS project or pro-privacy organization that accepts Monero donations, please feel free to reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) or open a pull request with the addition against <https://github.com/sethforprivacy/sethforprivacy.com-content>.
+If you have a favorite FOSS project or pro-privacy organization that accepts Monero donations, please feel free to reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) or open a pull request with the addition against <https://github.com/sethforprivacy/sethforprivacy.com-content>.

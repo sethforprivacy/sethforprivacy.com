@@ -305,4 +305,4 @@ While the jump to a de-Googled phone may not be the easiest, it's a great furthe
 
 The experience is surprisingly user-friendly once you get used to how to get apps and migrate over to strong open-source alternatives where possible, and I would highly recommend this for those somewhat tech-savvy users who want to preserve their privacy while on the go.
 
-If you have any questions from this post or would like more information on a specific aspect of my switch to CalyxOS, please reach out via [Twitter, Matrix, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my switch to CalyxOS, please reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).

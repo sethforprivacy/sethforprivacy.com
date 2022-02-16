@@ -198,4 +198,4 @@ There are *many* options to choose from when considering switching to Linux, but
 
 While these steps are certainly not the end-all-be-all of privacy, they're hopefully a solid and straightforward set of steps to get you thinking about where to go next in your privacy journey. Take them with a grain of salt and see what is most important to you personally, then make the jump into the next step of your journey!
 
-If you have any questions from this post or would like more information on a specific aspect of the post, I'd love to hear from you via [Twitter, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of the post, I'd love to hear from you via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
