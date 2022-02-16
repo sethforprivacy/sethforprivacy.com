@@ -23,7 +23,7 @@ toc: true
 
 # Introduction
 
-Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on [CopperheadOS](https://copperhead.co/android/). 
+Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on [CopperheadOS](https://copperhead.co/android/).
 
 I have since switched to CalyxOS and [written a post]({{< ref "/content/posts/switching-to-calyxos.md" >}}) about my experiences and takeaways.
 
@@ -34,51 +34,54 @@ In full disclosure, I originally chose CopperheadOS entirely from my own researc
 The three main choices presented to me as de-Googled Android-based OSs were [CopperheadOS](https://copperhead.co/), [GrapheneOS](https://grapheneos.org/), and [CalyxOS](https://calyxos.org/). Upon exploring each of these, I came away with the following takeaways for each:
 
 - ## CopperheadOS
+
     _(have used personally)_
   - Pros
-      - Recommended by Bitcoin and Monero community members I trust
-      - Hardened and de-Googled OS with no Google Play Services
-      - Quick and helpful support
-      - Enterprise longevity
-      - Consistent updates
-      - Native app integrations like Samourai Wallet
-      - Accept Monero as payment
+    - Recommended by Bitcoin and Monero community members I trust
+    - Hardened and de-Googled OS with no Google Play Services
+    - Quick and helpful support
+    - Enterprise longevity
+    - Consistent updates
+    - Native app integrations like Samourai Wallet
+    - Accept Monero as payment
   - Cons
-      - Source-available instead of open-source
-      - Requires a (relatively) costly subscription for updates and support
-      - Phones must be flashed by resellers, cannot manually flash
-      - Ongoing legal battle against GrapheneOS and some of it's contributors
+    - Source-available instead of open-source
+    - Requires a (relatively) costly subscription for updates and support
+    - Phones must be flashed by resellers, cannot manually flash
+    - Ongoing legal battle against GrapheneOS and some of it's contributors
 
 - ## GrapheneOS
+
     _(have not used personally)_
   - Pros
-      - Large community
-      - Hardened and de-Googled OS with no Google Play Services
-      - Fully open-source
-      - Good technical reputation
-      - Free
-      - Accept Monero for donations
+    - Large community
+    - Hardened and de-Googled OS with no Google Play Services
+    - Fully open-source
+    - Good technical reputation
+    - Free
+    - Accept Monero for donations
   - Cons
-      - Long record of harassment and brigading of Copperhead users (including myself, as I will detail in this post) by community members
-        - *Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen.*
-      - Ongoing legal battle against CopperheadOS
+    - Long record of harassment and brigading of Copperhead users (including myself, as I will detail in this post) by community members
+      - _Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen._
+    - Ongoing legal battle against CopperheadOS
 
 - ## CalyxOS
+
     _(have used personally)_
   - Pros
-      - Recommended by Bitcoin and Monero community members I trust
-      - Includes [microG](https://calyxos.org/features/microg/) for using Google Play Services
-        - Greatly eases the transition to a de-Googled OS as you can still use apps relying on Google Play Services
-      - Hardened and de-Googled OS
-      - Fully open-source
-      - Good technical reputation
-      - Free
+    - Recommended by Bitcoin and Monero community members I trust
+    - Includes [microG](https://calyxos.org/features/microg/) for using Google Play Services
+      - Greatly eases the transition to a de-Googled OS as you can still use apps relying on Google Play Services
+    - Hardened and de-Googled OS
+    - Fully open-source
+    - Good technical reputation
+    - Free
   - Cons
-      - Worse privacy guarantees if using microG
-        - Can disable entirely on initial setup if desired
-      - Smaller project
-      - Do not accept Monero for donations
-        - Will be added soon
+    - Worse privacy guarantees if using microG
+      - Can disable entirely on initial setup if desired
+    - Smaller project
+    - Do not accept Monero for donations
+      - Will be added soon
 
 # Why I chose CopperheadOS
 
@@ -88,13 +91,15 @@ The core reason that I chose to go with CopperheadOS over GrapheneOS (I decided 
 
 I was very much on the fence about this decision, but continued to recommend both GrapheneOS and CalyxOS as alternatives for those not wanting to pay the subscription or unwilling to use a source-available project.
 
-*Note: Since writing this post I have changed to using CalyxOS. For more details on the thought process on the change, please see [written a post]({{< ref "/content/posts/switching-to-calyxos.md#why-calyxos" >}})*
+_Note: Since writing this post I have changed to using CalyxOS. For more details on the thought process on the change, please see [Switching to CalyxOS]({{< ref "/content/posts/switching-to-calyxos.md#why-calyxos" >}})_
 
 # GrapheneOS community member's organized campaign of harassment, slander, and brigading
 
-Unfortunately, choosing CopperheadOS of my own free will and writing about it during my free time was taken as an attack and misinformation campaign on GrapheneOS by their leader [Daniel Micay](https://tweet.lambda.dance/DanielMicay) and others in the community.
+Unfortunately, choosing CopperheadOS of my own free will and writing about it during my free time was taken as an attack and misinformation campaign on GrapheneOS by their leader [Daniel Micay](https://nitter.sethforprivacy.com/DanielMicay) and others in the community.
 
-As soon as I posted about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://tweet.lambda.dance/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
+As soon as I posted about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://nitter.sethforprivacy.com/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
+
+***Edit: The tweet and account above have both been deleted since writing this article.***
 
 Members of the GrapheneOS community also started messaging members of the Monero community directly, attempting to undermine my reputation and contributions:
 
@@ -112,7 +117,7 @@ Feel free to read all the brigade replies on the mentioned tweet, and note this 
 
 {{< tweet user="_copperj" id="1356303734691819524" >}}
 
-*Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen.*
+_Note: I cannot prove that this is not a few rogue members of the community and is representative of the GrapheneOS community as a whole, but this type of behavior has been exhibited in almost all interactions I have had with GrapheneOS community members. Hopefully this is merely rogue actors and not indicative of the whole community or project, but that is not the conclusion I have come to based on my own personal experience and evidence I have seen._
 
 # Negative behavior of CopperheadOS
 

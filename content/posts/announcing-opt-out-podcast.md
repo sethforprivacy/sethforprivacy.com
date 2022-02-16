@@ -28,7 +28,7 @@ Each episode we’ll take a walk down the rabbit hole of privacy and data-sovere
 
 ## Where to find Opt Out
 
-While Opt Out is available on all major podcast platforms, you can also find each episode on my site, [optoutpod.com](https://www.optoutpod.com/) or at the WIP site at [dev.optoutpod.com](https://dev.optoutpod.com).
+While Opt Out is available on all major podcast platforms, you can also find each episode on my site, [optoutpod.com](https://optoutpod.com/).
 
 The site will be the first place new episodes are published, hosts and serves the RSS feed for the podcast, and has handy buttons under the podcast description for jumping straight into your favorite podcast app at the show's listing.
 
@@ -41,6 +41,6 @@ You can also follow the show on Twitter [@optoutpod](https://twitter.com/optoutp
 
 ## How to support Opt Out
 
-If you like what I'm doing at Opt Out, you can support the podcast by sharing it with your friends, posting about it on social media, suggesting questions and guests for the show, or donating to help pay for operating costs via <https://www.optoutpod.com/support/>.
+If you like what I'm doing at Opt Out, you can support the podcast by sharing it with your friends, posting about it on social media, suggesting questions and guests for the show, or donating to help pay for operating costs via <https://optoutpod.com/about/#donations>.
 
 Thanks in advance for listening, and I hope you learn as much as I do each episode!

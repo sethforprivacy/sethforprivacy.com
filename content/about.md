@@ -113,7 +113,7 @@ Below you can find verification of this DNS domain, my Github profile, my Matrix
 
 Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty.
 
-Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info, at the new WIP site [dev.optoutpod.com](https://dev.optoutpod.com), or at the podcast's current website at [optoutpod.com](https://www.optoutpod.com/).
+Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info or the podcast's website at [optoutpod.com](https://optoutpod.com/).
 
 I also host a Peertube mirror of all Opt Out videos at <https://videos.optoutpod.com>.
 
@@ -129,12 +129,9 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com)
   - Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>
   - More info: <https://cryptpad.fr/>
-- [Monero Blockchain Explorer](https://explore.sethforprivacy.com)
-  - Tor: <http://exploredv42tq2nowrll6f27nuymenndwupueqvyugaqzbrvmjhhceqd.onion>
-  - More info: <https://github.com/moneroexamples/onion-monero-blockchain-explorer>
 - [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com)
   - Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>
-  - More info: https://github.com/iv-org/invidious
+  - More info: <https://github.com/iv-org/invidious>
 - [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com)
   - Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>
   - More info: <https://github.com/zedeus/nitter>

@@ -142,7 +142,7 @@ While cryptocurrencies like Bitcoin are commonly considered private or anonymous
   - Samourai Wallet is by far the best way to use Bitcoin, in my opinion, and enables fairly easy to use and approachable privacy without the need for another cryptocurrency. While privacy on Bitcoin can be extremely fragile and difficult to achieve, Samourai Wallet makes it as simple as possible, keeps fees down, and has a long track record of preserving user privacy on Bitcoin. For more info on Samourai, check out the following links:
     - [Their website](https://samouraiwallet.com/)
     - [Their code](https://code.samourai.io/explore/groups)
-    - [Simple guide to mixing Bitcoin using Samourai Wallet by BitcoinQnA]( https://bitcoiner.guide/privacy/separate/)
+    - [Simple guide to mixing Bitcoin using Samourai Wallet by BitcoinQnA](https://bitcoiner.guide/privacy/separate/)
     - [In-depth guide to Samourai Wallet usage by EconoAlchemist](https://www.econoalchemist.com/post/bitcoin-wallets-for-beginners-part-ii)
     - [An in-depth walk through of what Samourai Wallet is, how they operate, and what you can expect](https://optoutpod.com/episodes/s2e03-samourai-wallet/)
 
@@ -157,7 +157,7 @@ Using a non-logging and trustworthy VPN is a great way to shift the trust from y
 I have used both of the below VPNs extensively and they also come recommended by many people I trust dearly.
 
 - [IVPN](https://www.ivpn.net/)
-  - I've spoken at length on why I trust and use IVPN, but for more details check out [this link](https://www.optoutpod.com/sponsors/#sponsor-ivpn).
+  - I've spoken at length on why I trust and use IVPN, but for more details check out [this link](https://optoutpod.com/sponsors/#ivpn).
   - tl;dr -- trustworthy team, incredible cross-platform clients, strong reputation, extremely honest about shortcomings of VPNs generally, externally audited, fast, Wireguard support
 - [Mullvad](https://mullvad.net/en/)
   - Mullvad is an amazing VPN provider and have long been a recommendation of mine. They have a long and storied history, great service, accountless setup, and solid cross-platform clients.
@@ -165,10 +165,10 @@ I have used both of the below VPNs extensively and they also come recommended by
 To help you make your own well-informed choices, here are some excellent resources:
 
 - [IVPN's own tool, "Do I need a VPN?"](https://www.doineedavpn.com/)
-- [Techlore's incredible VPN toolkit](https://www.doineedavpn.com/)
-- Two episodes of [Opt Out](https://www.optoutpod.com/) focused on VPNs and Tor:
-  - ["Global surveillance, VPNs, and Tor w/ Smuggler"](https://www.optoutpod.com/global-surveillance-vpns-and-tor-w-smuggler/)
-  - ["Balancing privacy with mental health, plus second realms w/ j43"](https://www.optoutpod.com/balancing-privacy-with-mental-health-plus-second-realms-w-j43/)
+- [Techlore's incredible VPN toolkit](https://techlore.tech/vpnchart.html)
+- Two episodes of [Opt Out](https://optoutpod.com/) focused on VPNs and Tor:
+  - ["Global surveillance, VPNs, and Tor w/ Smuggler"](https://optoutpod.com/global-surveillance-vpns-and-tor-w-smuggler/)
+  - ["Balancing privacy with mental health, plus second realms w/ j43"](https://optoutpod.com/balancing-privacy-with-mental-health-plus-second-realms-w-j43/)
 
 ## 9. Use a privacy-preserving mobile operating system
 

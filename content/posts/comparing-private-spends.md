@@ -107,7 +107,7 @@ little adoption and normal, Bitcoin-like transactions are by far the majority of
 
 For more info on how Zcash works technically, see ["Zcash Technology"](https://z.cash/technology/) for a solid introduction.
 
-[^9]: [https://z.cash/technology/zksnarks/](https://z.cash/technology/zksnarks/)
+[^9]: [What are zk-SNARKs?](https://z.cash/technology/zksnarks/)
 
 ## Comparing Size and Cost  
 
