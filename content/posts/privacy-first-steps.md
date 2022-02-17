@@ -42,6 +42,7 @@ Before you go any further, I'd recommend this step be priority number one for yo
 - [Techlore's Matrix room](https://matrix.to/#/+techlore-official:matrix.org)
   - [Discord](https://discord.gg/Xd7baMSpqS)
 - [Opt Out Podcast Matrix room](https://matrix.to/#/#optout:monero.social)
+  - [A guide to joining Matrix on the Opt Out homeserver](https://optoutpod.com/posts/come-join-opt-out-on-matrix/)
 - [TheNewOil Matrix room](https://matrix.to/#/#TheNewOil:matrix.org)
 - [Bitcoin Freedom and Tech Matrix room](https://matrix.to/#/#Bitcoin:usethe.tools)
   - This room has been an incredible resource for me throughout the time I've been there, and is much more broad in scope than just Bitcoin. Highly recommend joining!
