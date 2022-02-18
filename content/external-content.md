@@ -22,6 +22,7 @@ This is a page to simply catalog and organize blog posts, guides, or podcast epi
 - [LocalMonero - P2Pool and Its Role in Decentralizing Monero Mining](https://localmonero.co/knowledge/p2pool-decentralizing-monero-mining)
 - [LocalMonero - View Tags: How One Byte Will Reduce Monero Wallet Sync Times by 40%+](https://localmonero.co/knowledge/view-tags-reduce-monero-sync-time)
 - [LocalMonero - How Monero Uses Hard-Forks to Upgrade the Network](https://localmonero.co/knowledge/network-upgrades)
+- [LocalMonero - How Remote Nodes Impact Monero’s Privacy](https://localmonero.co/knowledge/remote-nodes-privacy)
 - [getmonero.org - This Year in Monero - 2021](https://www.getmonero.org/2021/04/24/this-year-in-monero.html)
 
 ### Bitcoin

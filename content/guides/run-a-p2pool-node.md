@@ -231,6 +231,16 @@ If you would like to inspect the source code behind the image used here or build
 
     ***NOTE: Be sure to replace the Monero address (468y...b55R) with your own primary address (an address starting with 4), or else you'll be making generous hashrate donations to me!***
 
+    If you'd like to use the smaller side-chain (which will allow faster shares but less commonly found blocks, rewards over time will be roughly equal!), you can simple add `--mini` in the `command:` section of the p2pool service like so:
+
+    ```yaml
+    command: >-
+      --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
+      --stratum "0.0.0.0:3333" --loglevel "0"
+      --p2p "0.0.0.0:37888" --host "monerod"
+      --rpc-port "18089" --mini
+    ```
+
     Explanations of the containers used in the above `docker-compose.yml` file:
 
     1. `monerod`: The Monero daemon is the process that connects to the Monero blockchain, synchronizes with other nodes on the network, and validates and keeps track of transactions happening in the Monero blockchain.  
