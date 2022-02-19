@@ -53,12 +53,13 @@ For more on both of these, see the resources below.
 
 ***Resources***
 
-- Descriptive website with graphs showing the supply dynamics of Monero:
-  - <https://monero.supply>
 - "Why Monero has a tail emission":
   - <https://localmonero.co/knowledge/monero-tail-emission>
 - "How Monero Solved the Block Size Problem That Plagues Bitcoin":
   - <https://localmonero.co/knowledge/dynamic-block-size>
+- Excellent Twitter thread on Monero's tail emission and supply approach:
+  {{< tweet user="DontTraceMeBruh" id="1489979998228426754" >}}
+  - <https://twitter.com/DontTraceMeBruh/status/1489979998228426754?s=19>
 - Inherent risks in not having a defined block reward in perpetuity:
   - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
