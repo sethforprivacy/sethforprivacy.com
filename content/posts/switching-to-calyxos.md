@@ -245,18 +245,6 @@ Orbot allows you to tunnel specific apps through Tor, or even tunnel all of your
 
 Tor and Orbot are both available via F-Droid, but in order to access them you will need to enable Guardian Project repo in F-Droid's repository settings.
 
-## Updater for Spotify
-
-***Why I like it***
-
-I normally use YouTube Music, but as part of this switch I wanted to find a new music subscription service that had the ability to function without Google Services. Spotify was highly recommended, and I've been liking it so far.
-
-This particular app allows you to easily download, install, and update Spotify via direct APK downloads, as Spotify does not provide APKs on their site nor are they listed on F-Droid.
-
-***Where to get it***
-
-https://f-droid.org/en/packages/ru.ra66it.updaterforspotify/
-
 ## VLC for video
 
 ***Why I like it***
