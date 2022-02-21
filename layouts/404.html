@@ -1,0 +1,8 @@
+{{ define "main"}}
+<script>plausible("404",{ props: { path: document.location.pathname } });</script>
+    <main id="main">
+      <div>
+       <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
+      </div>
+    </main>
+{{ end }}

@@ -162,6 +162,7 @@
 {{- template "_internal/google_analytics.html" . }}
 {{- /* Plausible privacy-preserving analytics */}}
 <script defer data-domain="sethforprivacy.com" src="https://stats.sethforprivacy.com/js/stats.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
