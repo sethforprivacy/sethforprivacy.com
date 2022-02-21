@@ -161,7 +161,7 @@
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}
 {{- /* Plausible privacy-preserving analytics */}}
-<script defer data-domain="sethforprivacy.com" src="https://analytics.sethforprivacy.com/js/plausible.js"></script>
+<script defer data-domain="sethforprivacy.com" src="https://analytics.sethforprivacy.com/js/stats.js"></script>
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
