@@ -36,7 +36,7 @@ Let's walk through the common FUD points one-by-one below.
 
 ***Response***
 
-This one is very common from the Bitcoin crowd, and is techically true.
+This one is very common from the Bitcoin crowd, and is technically true.
 
 However, there is a lot of thought and intentional design that has gone into the supply dynamics of Monero. Monero implements a "defined supply" of 18.4m coins, and has a tail emission of 0.6XMR per block after the defined supply has been mined. That tail emission starts ~May, 2022.
 
