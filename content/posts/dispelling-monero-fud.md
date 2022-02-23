@@ -239,4 +239,4 @@ For more on the possibility of layer-two networks in Monero, see the resources b
 
 Hopefully this brief post has given you some good info and resources to come to your own well-informed conclusions, and can help to dispel some of the common myths and FUD surrounding Monero today.
 
-If you have any questions from this post or would like more information on a specific aspect of the post, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).

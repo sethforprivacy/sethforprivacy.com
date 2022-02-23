@@ -172,4 +172,4 @@ For more details on this method, see <https://plausible.io/docs/excluding-locals
 
 ## Conclusion
 
-If you have any questions from this post or would like more information on a specific aspect of the post, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).

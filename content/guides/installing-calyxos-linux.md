@@ -132,4 +132,4 @@ Thankfully, the process above has been made extremely simple by the hard work of
 
 Please consider [donating to the Calyx Institute](https://members.calyxinstitute.org/donate) or [becoming a Calyx Institute member](https://calyxinstitute.org/membership) to help support their work and bring a privacy-preserving mobile OS to more people like you!
 
-If you have any questions from this post or would like more information on a specific aspect of the post, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
