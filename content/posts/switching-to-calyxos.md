@@ -18,23 +18,17 @@ toc: true
 
 # Introduction
 
-*This post originally recommended CopperheadOS and focused on my experiences with that, but I have since transitioned to CalyxOS and thought that this post would be the best place to share that process as well.*
-
 As the next step in my journey towards reducing my digital footprint and improving my privacy, I wanted to step away from the tracking-centric and monopolized mobile operating systems (OSs) that are most commonly used by people all around the world.
 
 As Android is an open-source operating system at the core with many vendor-specific changes and additions on top, it provides a great base for a privacy-centric OS once stripped of any Google tracking services and applications.
 
-The three main contenders today are [CalyxOS](https://calyxos.org/), [GrapheneOS](https://grapheneos.org), and [CopperheadOS](https://copperhead.co/).
-
-*Note: GrapheneOS and/or CopperheadOS are common recommendations, but due to [many factors]({{< ref "/content/posts/community-drama-and-mobile-os.md" >}}) I can not recommend either one.*
+The three main contenders today are [CalyxOS](https://calyxos.org/) and [GrapheneOS](https://grapheneos.org).
 
 # Why CalyxOS?
 
-All three options above have the same [Android Open Source Project (AOSP)](https://source.android.com/) base and focus heavily on stripping Google services out, while GrapheneOS and CopperheadOS add in a few security optimizations to the base OS to help close off advanced threat vectors. While I appreciate the hyper-secure approach taken by both GrapheneOS and CopperheadOS, these security optimizations add quite a bit of lag and greatly slow down the usage of the OS as a whole.
+All three options above have the same [Android Open Source Project (AOSP)](https://source.android.com/) base and focus heavily on stripping Google services out, while GrapheneOS adds in some more technical and detailed security optimizations to the base OS to help close off advanced threat vectors.
 
-I spent two months using CopperheadOS as my daily driver and enjoyed the overall experience, but after the many-sided drama and some behind the scenes issues, I decided to flash CalyxOS and make the jump. The main driver for choosing CalyxOS was the overall strength of the organization (Calyx) behind the OS and the balanced approach taken with CalyxOS -- give users options but lean towards preserving good UX when it doesn't conflict with private options.
-
-For a more detailed comparison of the three, see my breakdown of each at ["Comparing CopperheadOS, GrapheneOS, and CalyxOS"]({{< ref "/posts/community-drama-and-mobile-os.md#comparing-copperheados-grapheneos-and-calyxos" >}}).
+The main driver for choosing CalyxOS was the overall strength of the organization (Calyx) behind the OS and the balanced approach taken with CalyxOS -- give users options but lean towards preserving good UX when it doesn't conflict with private options.
 
 # How do I install it?
 
@@ -43,6 +37,8 @@ Thankfully, Calyx has made the process very straightforward with a pre-built fla
 I simply downloaded the appropriate package for the Pixel 4a, downloaded the flashing tool for Linux at https://calyxos.org/get/install/, and followed the instructions the flashing tool put in my terminal.
 
 It took all of ten minutes to flash and setup, and was very straightforward. You can see all the supported devices and downloads at https://calyxos.org/get/.
+
+I've also written a guide that walks you through verification and installation from a Linux computer, which lays things out a bit simpler: [Verifying and installing CalyxOS from Linux]({{< ref "/content/guides/installing-calyxos-linux.md" >}})
 
 *Be sure to also check out [BitcoinQ+A's installation guide](https://bitcoiner.guide/calyxos/) for more details on his thoughts on CalyxOS and how to install it with step by step instructions.*
 

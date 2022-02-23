@@ -21,6 +21,8 @@ title: Community Drama and My Search for a Privacy-Preserving Mobile OS
 toc: true
 ---
 
+***This post has been archived and much of the content is either outdated or impossible to verify. In the interest of doing what I can to move forward and repairing a broken relationship with the GrapheneOS community, I am archiving the post.***
+
 # Introduction
 
 Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on [CopperheadOS](https://copperhead.co/android/).
