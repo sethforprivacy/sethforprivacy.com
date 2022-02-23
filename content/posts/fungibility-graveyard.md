@@ -53,6 +53,13 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - A user's Paxos account is frozen upon attempted withdrawal to Samourai Wallet for mixing:
   - [Twitter Source](https://twitter.com/RonaldMcHodled/status/1222172084610027523)
     {{< tweet user="RonaldMcHodled" id="1222172084610027523" >}}
+- The Ethereum DAO hacker's use of Wasabi Wallet leads directly to his ID after simple tracing
+  - [News Source](https://www.forbes.com/sites/laurashin/2022/02/22/exclusive-austrian-programmer-and-ex-crypto-ceo-likely-stole-11-billion-of-ether/?sh=6e7cc3bc7f58)
+  - [Twitter Source](https://twitter.com/laurashin/status/1496087239037698048)
+    {{< tweet user="laurashin" id="1496087239037698048" >}}
+  - [Twitter Source demonstrating tracing](https://twitter.com/LaurentMT/status/1496252516702605318)
+    {{< tweet user="LaurentMT" id="1496252516702605318" >}}
+  - [YouTube source demonstrating tracing](https://www.youtube.com/watch?v=alcLdBsoDDg)
 
 ## Samourai
 
@@ -104,6 +111,13 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Reddit Source](https://www.reddit.com/r/CryptoCurrency/comments/c7bw1h/question_what_is_someone_sends_me_stolen_funds/)
 - 28 cryptocurrency addresses (including Bitcoin) are sanctioned due to alleged use to fund Russian operations:  
   - [Government Source](https://archive.ph/IqnrX)
+- Bitcoin donated to the "Freedom Convoy" in Canada is blacklisted and frozen at centralized exchanges
+  - [News Source](https://www.coindesk.com/layer2/2022/02/22/frozen-bitcoin-tied-to-canadian-protests-lands-at-coinbase-cryptocom/)
+  - [Twitter Source](https://twitter.com/CoinDesk/status/1496220843420131329)
+    {{< tweet user="CoinDesk" id="1496220843420131329" >}}
+  - [News Source on addresses sanctioned](https://www.coindesk.com/policy/2022/02/16/canada-sanctions-34-crypto-wallets-tied-to-trucker-freedom-convoy/)
+  - [Twitter source on addresses sanctioned](https://twitter.com/CoinDesk/status/1494002689931620352)
+    {{< tweet user="CoinDesk" id="1494002689931620352" >}}
 
 ## Compliant Mining and "Virgin" Bitcoin
 
