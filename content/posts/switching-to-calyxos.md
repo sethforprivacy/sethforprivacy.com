@@ -22,7 +22,7 @@ As the next step in my journey towards reducing my digital footprint and improvi
 
 As Android is an open-source operating system at the core with many vendor-specific changes and additions on top, it provides a great base for a privacy-centric OS once stripped of any Google tracking services and applications.
 
-The three main contenders today are [CalyxOS](https://calyxos.org/) and [GrapheneOS](https://grapheneos.org).
+The two main contenders today are [CalyxOS](https://calyxos.org/) and [GrapheneOS](https://grapheneos.org).
 
 # Why CalyxOS?
 
