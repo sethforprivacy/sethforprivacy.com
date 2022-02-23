@@ -151,7 +151,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 # Something Missing?
 
-If you've noticed an instance of fungibility causing issues in the real world with Bitcoin, please feel free to reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) or open a pull request with the addition against <https://github.com/sethforprivacy/sethforprivacy.com-content>.
+If you've noticed an instance of fungibility causing issues in the real world with Bitcoin, please feel free to reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) or open a pull request with the addition against <https://github.com/sethforprivacy/sethforprivacy.com-content>.
 
 # Credits
 

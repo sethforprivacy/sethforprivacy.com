@@ -183,4 +183,4 @@ It would be great to see more businesses and projects being built on top of Mone
 
 Hopefully this guide has sparked some ideas on how you can give back to Monero using your unique skill-set, background, and experience. The more of the community that gives back in ways like these, the larger and more mature Monero will be and the more easily we can fulfill the goals of private, fungible, self-sovereing, censorship-resistant money.
 
-I look forward to hearing about things you do after reading this, so please feel free to reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) with what you've chosen to do or new ways you've thought of to contribute that could be added to this post!
+I look forward to hearing about things you do after reading this, so please feel free to reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) with what you've chosen to do or new ways you've thought of to contribute that could be added to this post!

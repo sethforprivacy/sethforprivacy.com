@@ -201,7 +201,7 @@ The last important note here is that none of these attacks affected the Monero p
 measures are intact and unaffected. These attacks merely target the p2p network layer, something that is shared by all 
 decentralized cryptocurrencies.
 
-If you have any questions from this post or would like more information on a specific aspect of the attack, please reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of the attack, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
 
 Thanks!
 

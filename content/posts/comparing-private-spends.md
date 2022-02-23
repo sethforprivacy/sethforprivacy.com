@@ -235,7 +235,7 @@ can better hone this approach to give a clear picture of privacy tool efficiency
 
 Thanks for tuning in to my first blog post, and hopefully you'll keep a close eye on my future writings!
 
-If you have any questions from this post or would like to connect with me otherwise, please reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like to connect with me otherwise, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
 
 ## Transactions used for estimates  
 #### Bitcoin  

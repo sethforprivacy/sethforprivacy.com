@@ -139,4 +139,4 @@ I want to be intentional about providing options for people to take control of t
 
 If you're using Google Android/iOS today and want to switch, I can highly recommend [CalyxOS](https://calyxos.org/) as a great alternative that can be a bit easier to transition to due to [support for microG](https://calyxos.org/features/microg/) based on personal experience, and be sure to take a look at [my guide]({{< ref "/content/posts/switching-to-calyxos.md" >}}) to help the transition.
 
-If you have any questions from this post or would like more information on a specific aspect of my thought process or decision here, please reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my thought process or decision here, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).

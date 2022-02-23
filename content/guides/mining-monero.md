@@ -169,7 +169,7 @@ If you're running a local Tor daemon, you can easily mine over Tor by adding one
 
 Hopefully this guide has made it a bit simpler for you to get started, and can act as some motivation to do your part and further decentralize the network, all while earning some KYC-free Monero.
 
-As always, if you have any questions from this post or would like more information on a specific aspect of mining, please reach out via [Signal,  Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+As always, if you have any questions from this post or would like more information on a specific aspect of mining, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
 
 # Legacy pool mining
 
