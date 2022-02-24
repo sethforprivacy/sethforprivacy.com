@@ -96,7 +96,7 @@ There is an extremely active Monero community there, with some of the most popul
     
 Make sure to jump in and participate in discussions, share interesting news and posts, and contribute where you see fit!
 
-*You can find me on Reddit at [u/fort3hlulz](https://www.reddit.com/user/fort3hlulz).*
+*You can find me on Reddit at [u/sethforprivacy](https://www.reddit.com/user/sethforprivacy).*
 
 ### Matrix/IRC
 
@@ -104,7 +104,7 @@ The vast majority of the "inner workings" of Monero happen on Matrix and IRC, tw
 
 A list of the most common Matrix/IRC channels is available on [getmonero.org](https://www.getmonero.org/community/hangouts/).
 
-*You can find me on Matrix [@sethsimmons:monero.social](https://matrix.to/#/@sethsimmons:monero.social), or IRC under the nick "sethsimmons".*
+*You can find me on Matrix [@sethforprivacy:matrix.optoutpod.com](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com), or IRC under the nick "sethforprivacy".*
 
 ### Offline
 
@@ -181,6 +181,6 @@ It would be great to see more businesses and projects being built on top of Mone
 
 # Conclusion
 
-Hopefully this guide has sparked some ideas on how you can give back to Monero using your unique skill-set, background, and experience. The more of the community that gives back in ways like these, the larger and more mature Monero will be and the more easily we can fulfill the goals of private, fungible, self-sovereing, censorship-resistant money.
+Hopefully this guide has sparked some ideas on how you can give back to Monero using your unique skill-set, background, and experience. The more of the community that gives back in ways like these, the larger and more mature Monero will be and the more easily we can fulfill the goals of private, fungible, self-sovereign, censorship-resistant money.
 
 I look forward to hearing about things you do after reading this, so please feel free to reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) with what you've chosen to do or new ways you've thought of to contribute that could be added to this post!
