@@ -14,6 +14,7 @@ tags:
 - privacy
 title: Bitcoin's Fungibility Graveyard
 toc: true
+weight: 3
 ---
 
 # Introduction
@@ -32,7 +33,7 @@ This concern isn't only a fun thought exercise, unfortunately, as users of Bitco
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
-***Current confirmed cases: 29***
+***Current confirmed cases: 30***
 
 ## Wasabi
 
@@ -118,6 +119,13 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [News Source on addresses sanctioned](https://www.coindesk.com/policy/2022/02/16/canada-sanctions-34-crypto-wallets-tied-to-trucker-freedom-convoy/)
   - [Twitter source on addresses sanctioned](https://twitter.com/CoinDesk/status/1494002689931620352)
     {{< tweet user="CoinDesk" id="1494002689931620352" >}}
+- A user's Bitcoin is frozen by FixedFloat.com due to suspected illicit acquisition (hack/theft)
+  - [Reddit Source](https://www.reddit.com/r/Monero/comments/t1gyoo/fixedfloat_scammed_me_for_6000_usd/)
+  - [Reddit Source - Response by FixedFloat](https://www.reddit.com/r/Monero/comments/t1gyoo/fixedfloat_scammed_me_for_6000_usd/hygp7bc/?utm_source=reddit&utm_medium=web2x&context=3)
+  - [Reddit Source - Further detailed response by FixedFloat on the traceability of Bisq](https://www.reddit.com/r/Monero/comments/t1gyoo/fixedfloat_scammed_me_for_6000_usd/hyo163k/?utm_source=reddit&utm_medium=web2x&context=3)
+  {{< collapse summary="Source Image" >}}
+  {{< figure src="/fungibility-graveyard/fixedfloat_tainted.jpeg" align="center" style="border-radius: 8px;" >}}
+  {{< /collapse >}}
 
 ## Compliant Mining and "Virgin" Bitcoin
 
