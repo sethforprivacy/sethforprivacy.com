@@ -58,8 +58,8 @@ For more on both of these, see the resources below.
 - "How Monero Solved the Block Size Problem That Plagues Bitcoin":
   - <https://localmonero.co/knowledge/dynamic-block-size>
 - Excellent Twitter thread on Monero's tail emission and supply approach:
+  - <https://nitter.sethforprivacy.com/DontTraceMeBruh/status/1489979998228426754?s=19>
   {{< tweet user="DontTraceMeBruh" id="1489979998228426754" >}}
-  - <https://twitter.com/DontTraceMeBruh/status/1489979998228426754?s=19>
 - Inherent risks in not having a defined block reward in perpetuity:
   - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
@@ -69,11 +69,11 @@ For more on both of these, see the resources below.
 
 This is probably the most common point of FUD brought against Monero, and is caused by the complexity and nuance involved in understanding how supply audits work in cryptocurrencies.
 
-Monero's supply can be easily audited by anyone running a Monero node, but this process does rely on the soundness of the `monerod` software implementation and the validity of cryptography used in rangeproofs that verify amounts in each transaction without revealing them.
+Monero's supply can be easily audited by anyone running a Monero node, but this process does rely on the soundness of the `monerod` software implementation and the validity of cryptography used in range-proofs. These range-proofs allow it to be *mathematically proven* that the inputs and outputs of each transaction add up to zero *without* revealing amounts, ensuring that the supply is sound and not inflated in any way. Every node on the network is validating these range-proofs in each transaction every time a transaction is first seen, and validating all historical range-proofs when initially syncing.
 
-This audit is possible because coinbase transactions (those transactions that are mining rewards in each block including issuance + transaction fees) are intentionally transparent and amounts of these outputs are not obfuscated in any way. Monero users running a node can simply validate these totals on-demand, and all node owners are constantly verifying the amounts in transactions via range proofs.
+A manual audit is possible because coinbase transactions (those transactions that are mining rewards in each block including issuance + transaction fees) are intentionally transparent and amounts of these outputs are not obfuscated in any way. Monero users running a node can simply validate these totals on-demand, and all node owners are constantly verifying the amounts in transactions via range-proofs.
 
-Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validate the supply by manually adding up UTXO amounts, as transactions are never known-spent by the network, only by the parties involved in each specific transaction. This does force some added reliance on code/cryptography over Bitcoin, but as-of-yet I know of *no one* validating the Bitcoin supply this way. It does remain a valuable advantage of a transparent cryptocurrency, though it comes at the cost of transactional privacy of every user in the system.
+Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validate the supply by manually adding up UTXO amounts, as transactions are never known-spent by the network, only by the parties involved in each specific transaction. This does force some added reliance on code/cryptography over Bitcoin, but as-of-yet I know of *no one* validating the Bitcoin supply this way. It does remain a valuable advantage of a transparent cryptocurrency, though it comes at the cost of the transactional privacy of every user in the system.
 
 ***Resources***
 
@@ -83,8 +83,10 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
   - <https://invidious.sethforprivacy.com/watch?v=meDkx6gRPMg>
 - Anyone can easily verify the supply of Monero:
   - <https://nitter.sethforprivacy.com/fluffypony/status/1292032287396306944>
-- Audio clip of me sharing about auditability in Bitcoin and Monero:
-  - <https://nitter.sethforprivacy.com/DontTraceMeBruh/status/1414602052471332864?s=20>
+  {{< tweet user="fluffypony" id="1292032287396306944" >}}
+- Audio clip about auditability in Bitcoin and Monero:
+  - <https://nitter.sethforprivacy.com/DontTraceMeBruh/status/1414602052471332864>
+  {{< tweet user="DontTraceMeBruh" id="1414602052471332864" >}}
 - [Monero vuln that was not exploited, was detectable](https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html)
 - [Bitcoin vuln that was exploited, was detectable](https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/)
 
@@ -120,6 +122,7 @@ The key points I would make around this are walked through in detail in the Twit
   - <https://www.getmonero.org/2020/09/01/note-scheduled-upgrades.html>
 - Long thread on the details around how Monero hard-forks and what they mean for centralization/decentralization:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1397543058070200324>
+  {{< tweet user="sethforprivacy" id="1397543058070200324" >}}
 
 ## Monero mining is centralized
 
@@ -149,9 +152,12 @@ While Monero does have drastically less miners and energy used to secure the net
   - <https://localmonero.co/knowledge/monero-mining-randomx>
 - Monero faired extremely well during the ban on mining in China, unlike ASIC-dominated networks:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471103239823183880>
+  {{< tweet user="sethforprivacy" id="1471103239823183880" >}}
   - <https://nitter.sethforprivacy.com/DouglasTuman/status/1470820539233144836?s=20>
+  {{< tweet user="DouglasTuman" id="1470820539233144836" >}}
 - A look at the economics of 51% attacking Monero
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1471202444185153540?s=20>
+  {{< tweet user="sethforprivacy" id="1471202444185153540" >}}
 
 ## Monero has no adoption
 
@@ -184,6 +190,7 @@ Evidence:
 
 - Thread detailing some of the many ways that Monero is used around the world:
   - <https://nitter.sethforprivacy.com/sethforprivacy/status/1461045397531549710>
+  {{< tweet user="sethforprivacy" id="1461045397531549710" >}}
 
 ## KYC/AML-regulated exchanges won't support Monero/governments will ban Monero
 
@@ -231,7 +238,8 @@ For more on the possibility of layer-two networks in Monero, see the resources b
 - "PayMo: Payment Channels For Monero"
   - <https://eprint.iacr.org/2020/1441>
 - Twitter thread on PayMo by one of the authors:
-  - <https://twitter.com/aravind2112/status/1329420254884335617>
+  - <https://nitter.sethforprivacy.com/aravind2112/status/1329420254884335617>
+  {{< tweet user="aravind2112" id="1329420254884335617" >}}
 - "Sleepy Channels: Bitcoin-Compatible Bi-directional Payment Channels without Watchtowers" (also applies to Monero with PayMo)
   - <https://eprint.iacr.org/2021/1445>
 
