@@ -123,9 +123,12 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 
 ### Privacy-preserving front-ends and tools
 
-- [Whoogle (Private Search)](https://search.sethforprivacy.com)
+- [Whoogle (private search front-end for Google)](https://search.sethforprivacy.com)
   - Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>
   - More info: <https://github.com/benbusby/whoogle-search>
+- [searx (private search aggregation)](https://searx.sethforprivacy.com)
+  - Tor: <http://4nz3r6ka7v2tzn3t6bk4yxyaqgubymrluavdbbvn3ndj2iq7hkqw2oid.onion>
+  - More info: <https://github.com/searx/searx>
 - [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com)
   - Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>
   - More info: <https://cryptpad.fr/>
