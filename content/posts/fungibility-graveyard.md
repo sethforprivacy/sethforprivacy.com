@@ -33,7 +33,7 @@ This concern isn't only a fun thought exercise, unfortunately, as users of Bitco
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
-***Current confirmed cases: 30***
+***Current confirmed cases: 31***
 
 ## Wasabi
 
@@ -61,6 +61,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source demonstrating tracing](https://twitter.com/LaurentMT/status/1496252516702605318)
     {{< tweet user="LaurentMT" id="1496252516702605318" >}}
   - [YouTube source demonstrating tracing](https://www.youtube.com/watch?v=alcLdBsoDDg)
+- Wasabi Wallet announces they will start censoring mixing inputs to prevent certain users from mixing their funds
+  - [Twitter Source](https://twitter.com/nobsbitcoin/status/1503799730291326978)
+    {{< tweet user="nobsbitcoin" id="1503799730291326978" >}}
+  - [Telegram Source](https://t.me/WasabiWallet/63992)
 
 ## Samourai
 
@@ -198,6 +202,8 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/bitvavo_wasabi.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/paxos_wasabi.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/wasabi_censorship.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/bitmex_joinmarket.png" align="center" style="border-radius: 8px;" >}}
 
