@@ -62,8 +62,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
     {{< tweet user="LaurentMT" id="1496252516702605318" >}}
   - [YouTube source demonstrating tracing](https://www.youtube.com/watch?v=alcLdBsoDDg)
 - Wasabi Wallet announces they will start censoring mixing inputs to prevent certain users from mixing their funds
-  - [Twitter Source](https://twitter.com/nobsbitcoin/status/1503799730291326978)
-    {{< tweet user="nobsbitcoin" id="1503799730291326978" >}}
+  - [Twitter Source](https://twitter.com/wasabiwallet/status/1503091503207432193)
+    {{< tweet user="wasabiwallet" id="1503091503207432193" >}}
   - [Telegram Source](https://t.me/WasabiWallet/63992)
 
 ## Samourai
