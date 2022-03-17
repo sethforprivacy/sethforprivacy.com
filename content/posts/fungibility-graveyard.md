@@ -33,7 +33,7 @@ This concern isn't only a fun thought exercise, unfortunately, as users of Bitco
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
-***Current confirmed cases: 31***
+***Current confirmed cases: 32***
 
 ## Wasabi
 
@@ -165,6 +165,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Reddit Source](https://www.reddit.com/r/Monero/comments/mcxwhp/a_mail_from_block_fi/)
 - Luke Dashjr, Bitcoin core developer, blocks gambling sites as "spam" in a Bitcoin implementation:
   - [News Source](https://www.coindesk.com/blacklist-debate-ok-meddle-bitcoins-code)
+- Coinbase proactively traces and blacklists 25,000 addresses connected with Russian users in order to comply with sanctions against Russia
+  - ***Note: The percentage/amount of these addresses that are Bitcoin is not public information.***
+  - [News Source](https://www.breitbart.com/tech/2022/03/08/coinbase-blacklists-25000-russian-crypto-addresses/)
+  - [Blog Source](https://blog.coinbase.com/using-crypto-tech-to-promote-sanctions-compliance-8a17b1dabd68)
 
 # Additional Reading on Fungibility
 
