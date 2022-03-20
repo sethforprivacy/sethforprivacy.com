@@ -17,7 +17,7 @@ params:
   env: production
   title: sethforprivacy.com
   description: "A simple blog about privacy, Monero, and self-hosting"
-  author: sethforprivacy
+  author: Seth For Privacy
   DateFormat: "January 2, 2006"
   defaultTheme: dark
   disableThemeToggle: false
@@ -48,6 +48,7 @@ params:
     text: "Home"
     icon: /favicon.ico
     iconHeight: 35
+    iconWidth: 35 
   
   homeInfoParams:
     Title: "Welcome to Seth For Privacy's blog! \U0001F44B"
