@@ -61,6 +61,8 @@ params:
   socialIcons:
     - name: email
       url: "mailto:seth@sethforprivacy.com"
+    - name: pgpkey
+      url: "/about/#primary-pgp-key"
     - name: twitter
       url: "https://twitter.com/sethforprivacy"
     - name: matrix
