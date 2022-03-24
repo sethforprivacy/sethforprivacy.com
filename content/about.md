@@ -244,5 +244,5 @@ For more info on OpenAlias, see the excellent guide by Justin [here](https://med
 
 ### Address/QR
 
-{{< figure src="/donation.png" align="center" style="border-radius: 8px;" link="monero:86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY" >}}
-`86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY`
+{{< figure src="/donation.png" align="center" style="border-radius: 8px;" link="monero:88sZ9ivXGm6AvKEMfjzTNQ7NQijk8ahGBHygukcGMuFR7tNMB9FhFpdGTmioUoqQuNXVruebH1iD2S3H3XaV7j9kHLP9RmC" >}}
+`88sZ9ivXGm6AvKEMfjzTNQ7NQijk8ahGBHygukcGMuFR7tNMB9FhFpdGTmioUoqQuNXVruebH1iD2S3H3XaV7j9kHLP9RmC`
