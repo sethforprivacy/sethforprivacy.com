@@ -23,7 +23,7 @@ params:
   disableThemeToggle: false
 
   images:
-    - /monero_profile.jpeg
+    - /opengraph.png
 
   ShowReadingTime: true
   ShowShareButtons: true

@@ -9,6 +9,8 @@ title: About
 
 # About Me
 
+{{< figure src="/opengraph.png#floatleft" align="center" style="border-radius: 8px;" >}}
+
 My name is Seth, and I've started this blog to give me a space for longer-form analysis, thought, and content.
 
 My aim overall is to educate and learn more myself about where technology and privacy meet, and am deeply enthusiastic about the ability these technologies grant people to take back control of their data, and more broadly, their digital lives.
