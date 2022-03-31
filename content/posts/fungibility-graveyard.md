@@ -19,11 +19,11 @@ weight: 3
 
 # Introduction
 
-Bitcoin is often touted as a fungible and private asset and digital cash alternative, when in fact it is technically non-fungible. Each bitcoin in circulation has a distinct history attached to it ensuring that 1 BTC is not equal to 1 BTC. While coin histories can be somewhat obfuscated with tools like CoinJoin, the fungibility of Bitcoin remains distinctly lacking.
+Bitcoin is often touted as a fungible and private asset and digital cash alternative, when in fact it is technically non-fungible. Each bitcoin in circulation has a distinct history attached to it ensuring that 1 BTC is not equal to 1 BTC. While coin histories can be somewhat obfuscated with tools like CoinJoin, the fungibility of Bitcoin remains distinctly lacking. This lack of fungibility imposes an immense burden on those using Bitcoin as a method of exchange (MoE), introduces a permissioned and centralized layer to the network, and destroys the confidence of everyone accepting funds in Bitcoin.
 
 Many Bitcoiners purport that fungibility can be gained through more users mixing, or by peer-pressuring and boycotting exchanges and services that flag or trace Bitcoin transactions. In theory this is possible (suppose in another universe, everyone mixes), but why leave it up to chance?
 
-The Monero community sees fungibility as a basic safety feature. Good tools should include safety features by default, strong enough to withstand both governmental and social attacks. This is far preferable to relying on the good will of governments and regulators, or the peer-pressure of us as users to ensure fungibility of digital cash. Do you really want your coins to be fungible only if your grandma correctly follows a 50 page mixing guide?
+The Monero community sees fungibility as a basic safety feature. Good tools should include safety features by default, strong enough to withstand both governmental and social attacks. This is far preferable to relying on the good will of governments and regulators, or the peer-pressure of us as users to ensure fungibility of digital cash. Do you really want your coins to be fungible only if everyone in Bitcoin correctly follows a 36h-long privacy guide?
 
 Monero relies on privacy by default, for all users and all transactions, to ensure that 1 XMR is equal to 1 XMR, no matter what. Monero is fungible today, not just in a pipe dream.
 
@@ -33,7 +33,7 @@ This concern isn't only a fun thought exercise, unfortunately, as users of Bitco
 
 Below is a list of sources confirming cases of flagging, denied withdrawals, denied deposits, and censorship by services because of a distinct lack of fungibility within Bitcoin. The list is broken down by the tool or reason for the flagging or censorship.
 
-***Current confirmed cases: 32***
+***Current confirmed cases: 33***
 
 ## Wasabi
 
@@ -130,6 +130,9 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   {{< collapse summary="Source Image" >}}
   {{< figure src="/fungibility-graveyard/fixedfloat_tainted.jpeg" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
+- A user's Coinbase account is frozen and then shut down due to tainted transactions from 2y prior
+  - [Twitter Source](https://twitter.com/AwyeeDeaterBob/status/1439377414484807680)
+  {{< tweet user="AwyeeDeaterBob" id="1439377414484807680" >}}
 
 ## Compliant Mining and "Virgin" Bitcoin
 
@@ -172,12 +175,14 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 # Additional Reading on Fungibility
 
+- [SLP363 Seth For Privacy – Bitcoin & Fungibility Discussion](https://stephanlivera.com/episode/363/)
 - ["How could regulators successfully introduce Bitcoin censorship and other dystopias"](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/amp/)
 - ["Bitcoin censorship will most likely come, pt 2"](https://juraj.bednar.io/en/blog-en/2020/11/18/bitcoin-censorship-will-most-likely-come-pt-2/)
 - ["Compliant Miners"](https://6102bitcoin.com/blog/compliant-miners/)
 - [Bitcoin’s Attack Vectors: Fungibility](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)
 - [What is fungibility and why does it matter?](https://monero.stackexchange.com/questions/1967/what-is-fungibility-and-why-does-it-matter)
 - [Fungibility - Moneropedia](https://web.getmonero.org/resources/moneropedia/fungibility.html)
+- [Adam Back on the lack of fungibility in Bitcoin and it's effects](https://www.youtube.com/watch?v=2eWMwj8AnA0)
 
 # Something Missing?
 
@@ -238,5 +243,9 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/voyager_coinjoin.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/localbitcoin_tainted.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/coinbase_taint.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
 
 {{< /collapse >}}
