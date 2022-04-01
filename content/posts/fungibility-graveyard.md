@@ -175,13 +175,14 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 # Additional Reading on Fungibility
 
-- [SLP363 Seth For Privacy – Bitcoin & Fungibility Discussion](https://stephanlivera.com/episode/363/)
-- ["How could regulators successfully introduce Bitcoin censorship and other dystopias"](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/amp/)
-- ["Bitcoin censorship will most likely come, pt 2"](https://juraj.bednar.io/en/blog-en/2020/11/18/bitcoin-censorship-will-most-likely-come-pt-2/)
-- ["Compliant Miners"](https://6102bitcoin.com/blog/compliant-miners/)
-- [Bitcoin’s Attack Vectors: Fungibility](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)
-- [What is fungibility and why does it matter?](https://monero.stackexchange.com/questions/1967/what-is-fungibility-and-why-does-it-matter)
-- [Fungibility - Moneropedia](https://web.getmonero.org/resources/moneropedia/fungibility.html)
+- ["SLP363 Seth For Privacy – Bitcoin & Fungibility Discussion" - Stephan Livera Podcast](https://stephanlivera.com/episode/363/)
+- ["Why Fungibility Is Important in Understanding Money and Crypto" - Mises Institute](https://mises.org/wire/why-fungibility-important-understanding-money-and-crypto)
+- ["How could regulators successfully introduce Bitcoin censorship and other dystopias" - Juraj Bednar](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/amp/)
+- ["Bitcoin censorship will most likely come, pt 2" - Juraj Bednar](https://juraj.bednar.io/en/blog-en/2020/11/18/bitcoin-censorship-will-most-likely-come-pt-2/)
+- ["Compliant Miners" - 6102bitcoin](https://6102bitcoin.com/blog/compliant-miners/)
+- ["Bitcoin’s Attack Vectors: Fungibility"](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)
+- ["What is fungibility and why does it matter?" - Monero SE](https://monero.stackexchange.com/questions/1967/what-is-fungibility-and-why-does-it-matter)
+- ["Fungibility" - Moneropedia](https://web.getmonero.org/resources/moneropedia/fungibility.html)
 - [Adam Back on the lack of fungibility in Bitcoin and it's effects](https://www.youtube.com/watch?v=2eWMwj8AnA0)
 - [Andreas Antonopoulos on the risks of a lack of fungibility and miner censorship as a result](https://youtu.be/J8y_GypCWf4?t=2530)
   - ***Segment starts at 42:10 and goes until 45:15***
