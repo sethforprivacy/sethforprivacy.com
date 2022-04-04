@@ -23,7 +23,6 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 - [Matrix](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com) - `@sethforprivacy:matrix.optoutpod.com`  
 - [Signal](https://signal.org/download/) - `+1 (616) 326 4079`
 - [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`  
-- [Cwtch](https://cwtch.im/)- `eitasbh6bzqpwyrzlu67bb2pygqba34yxertepupyvuuukvgwfofdyyd`  
 - [Email](mailto:seth@sethforprivacy.com) - `seth@sethforprivacy.com`
 
 ## Primary PGP Key
