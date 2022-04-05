@@ -23,7 +23,7 @@ toc: true
 
 As I've been working on building out my own approach to privacy and self-sovereign infrastructure, I've been struck by just how many projects and organizations accept Monero donations to help fund their operations and development.
 
-Donating in Monero not only is a great use-case for private, fungible money like Monero, it increases these projects investment in Monero and shows people the power of Monero and the ethos of it's community.
+Donating in Monero not only is a great use-case for private, fungible money like Monero, it increases these projects investment in Monero and shows people the power of Monero and the ethos of its community.
 
 # Monero
 

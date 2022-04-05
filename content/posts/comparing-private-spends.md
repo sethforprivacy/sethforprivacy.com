@@ -45,7 +45,7 @@ But first, an introduction to each network's approach to privacy.
 
 [Bitcoin](https://bitcoin.org/en/) is the king of cryptocurrencies and made major breakthroughs that enabled the 
 existence of cryptocurrencies like [Monero](https://www.getmonero.org/) and [Zcash](https://z.cash). While many thought 
-it's approach to privacy sufficient in the early days, people quickly realized that the pseudonymity it offered was 
+its approach to privacy sufficient in the early days, people quickly realized that the pseudonymity it offered was 
 insufficient for many use cases and allowed users to very easily ruin their own privacy via things like combining 
 outputs, re-using addresses, and simple output amount analysis among many other heuristics.
 
@@ -183,7 +183,7 @@ size and block time to match their own needs and goals. To provide a common grou
   
 #### Bitcoin Network Notes  
 
-Bitcoin has retained the 10min block times from it's inception, but block sizes have been changed (in a way) with the 
+Bitcoin has retained the 10min block times from its inception, but block sizes have been changed (in a way) with the 
 introduction of SegWit[^11] to a maximum of 4MB for native SegWit transactions, and 1MB for "legacy" transactions. To 
 provide the optimal network conditions for this comparison, I am assuming a 100% native SegWit adoption, something that 
 is not even close to reality, but provides a better picture of what is *possible* in Bitcoin natively.

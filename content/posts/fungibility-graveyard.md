@@ -183,7 +183,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - ["Bitcoin’s Attack Vectors: Fungibility"](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)
 - ["What is fungibility and why does it matter?" - Monero SE](https://monero.stackexchange.com/questions/1967/what-is-fungibility-and-why-does-it-matter)
 - ["Fungibility" - Moneropedia](https://web.getmonero.org/resources/moneropedia/fungibility.html)
-- [Adam Back on the lack of fungibility in Bitcoin and it's effects](https://www.youtube.com/watch?v=2eWMwj8AnA0)
+- [Adam Back on the lack of fungibility in Bitcoin and its effects](https://www.youtube.com/watch?v=2eWMwj8AnA0)
 - [Andreas Antonopoulos on the risks of a lack of fungibility and miner censorship as a result](https://youtu.be/J8y_GypCWf4?t=2530)
   - ***Segment starts at 42:10 and goes until 45:15***
 

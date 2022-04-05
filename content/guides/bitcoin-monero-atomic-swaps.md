@@ -170,7 +170,7 @@ For more details on the swap protocol's steps, see <https://comit.network/blog/2
 - The Bitcoin change address you provide should be an *unused* address for privacy reasons.
 - The Bitcoin change address will be used in the case of a swap failure to return the funds to your own wallet.
 - The Monero receive address should be a subaddress per swap peer (or per swap), ideally.
-- 2 confirmations on the Bitcoin side and 10 on the Monero side are required, so be patient during the swap process and let the `swap` tool do it's thing. If you have to stop it during a swap you can use the `./swap resume` feature, but the ideal thing to do is leave the tool open until the swap is completed.
+- 2 confirmations on the Bitcoin side and 10 on the Monero side are required, so be patient during the swap process and let the `swap` tool do its thing. If you have to stop it during a swap you can use the `./swap resume` feature, but the ideal thing to do is leave the tool open until the swap is completed.
 - For more information on the swap protocol and steps involved, see <https://comit.network/blog/2020/10/06/monero-bitcoin/>.
 - If you have issues with the swap, file an [issue in Github](https://github.com/comit-network/xmr-btc-swap/issues) or reach out in Matrix (`#comit-monero:matrix.org`) for help.
 

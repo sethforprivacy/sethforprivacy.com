@@ -134,7 +134,7 @@ Monero's fees spent increased ***71.11%*** YoY while the average transaction fee
 ***04/2020 through 04/2021:***
 
 - Monero's network hashrate increased from ***1.21GH/s*** to ***2.29GH/s*** over the year.
-- Monero broke ***100,000 miners***[^1] for the first time in it's network history!
+- Monero broke ***100,000 miners***[^1] for the first time in its network history!
 - Monero unique miners increased from ***37,380***[^1] to ***102,163***[^1] over the year.
 
 {{< figure src="/this-year-in-monero-2021/monero-hashrate-2021.png" align="center" style="border-radius: 8px;" >}}

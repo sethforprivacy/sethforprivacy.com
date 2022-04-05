@@ -50,7 +50,7 @@ The three main choices presented to me as de-Googled Android-based OSs were [Cop
     - Source-available instead of open-source
     - Requires a (relatively) costly subscription for updates and support
     - Phones must be flashed by resellers, cannot manually flash
-    - Ongoing legal battle against GrapheneOS and some of it's contributors
+    - Ongoing legal battle against GrapheneOS and some of its contributors
 
 - ## GrapheneOS
 

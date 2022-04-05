@@ -89,7 +89,7 @@ https://f-droid.org/en/packages/com.beemdevelopment.aegis/
 
 ***Why I like it***
 
-AntennaPod is a great open-source podcast app that shares a lot of it's UX with Pocket Casts, but is available through F-Droid. I've just started using it, but so far it's an excellent FOSS replacement for Pocket Casts!
+AntennaPod is a great open-source podcast app that shares a lot of its UX with Pocket Casts, but is available through F-Droid. I've just started using it, but so far it's an excellent FOSS replacement for Pocket Casts!
 
 ***Where to get it***
 
@@ -111,7 +111,7 @@ https://mobileapp.bitwarden.com/fdroid/
 
 ***Why I like it***
 
-Element is the native Matrix client available across platforms, and is something I use daily on both desktop and Android. It isn't without it's quirks but works quite well and is a great way to stay engaged with many communities in the privacy and FOSS ecosystem.
+Element is the native Matrix client available across platforms, and is something I use daily on both desktop and Android. It isn't without its quirks but works quite well and is a great way to stay engaged with many communities in the privacy and FOSS ecosystem.
 
 ***Where to get it***
 

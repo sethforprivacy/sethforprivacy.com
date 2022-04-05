@@ -149,7 +149,7 @@ While cryptocurrencies like Bitcoin are commonly considered private or anonymous
 
 ## 8. Use a non-logging and trustworthy VPN provider
 
-***NOTE: My podcast, Opt Out, is sponsored by one of the VPNs recommended here. That does not, however, change my recommendation, but I wanted to state it plainly so you can make a well-informed decision. This post (and it's content) are not sponsored in any way, however.***
+***NOTE: My podcast, Opt Out, is sponsored by one of the VPNs recommended here. That does not, however, change my recommendation, but I wanted to state it plainly so you can make a well-informed decision. This post (and its content) are not sponsored in any way, however.***
 
 VPNs often get a bad rap as there are *so many* malicious and predatory VPN providers out there with tons of money throwing around bad advertisements. VPNs as a tool, however, are an important part of a privacy journey, in my opinion.
 

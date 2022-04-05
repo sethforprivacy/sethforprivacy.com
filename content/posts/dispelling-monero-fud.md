@@ -96,7 +96,7 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 
 This point of FUD is one that is hard to get to the bottom of as well, as there are lots of other questions that come out of it. I'll focus on transaction size in this one, as that is the most common complaint about Monero.
 
-Monero is, in fact, the most scalable cryptocurrency *when used privately*, and even when compared with default, transparent Bitcoin usage, it's transactions are only ~3-4x the size of Bitcoin transactions today. Monero's transactions were *much* larger in the past, but the Monero community, researchers, and developers have worked hard to improve the efficiency of Monero, bringing transactions down from ~13kb when RingCT was first introduced to ~1.4kb today.
+Monero is, in fact, the most scalable cryptocurrency *when used privately*, and even when compared with default, transparent Bitcoin usage, its transactions are only ~3-4x the size of Bitcoin transactions today. Monero's transactions were *much* larger in the past, but the Monero community, researchers, and developers have worked hard to improve the efficiency of Monero, bringing transactions down from ~13kb when RingCT was first introduced to ~1.4kb today.
 
 I've written an entire blog post around this topic, so for more on that see the resources below.
 
@@ -111,7 +111,7 @@ I've written an entire blog post around this topic, so for more on that see the 
 The key points I would make around this are walked through in detail in the Twitter thread below, but here are some bulletpoints on Monero's hard-forks:
 
 - Monero used to hard-fork every 6mo, but now only hard-forks as-needed for key network upgrades
-- Monero's hard-forks enable it to constantly improve and adapt it's privacy protocol (among other things) to stay ahead in the privacy arms race
+- Monero's hard-forks enable it to constantly improve and adapt its privacy protocol (among other things) to stay ahead in the privacy arms race
 - Monero's hard-forks always include thorough code review before merging, and if any key parts of consensus code are touched (like with the upcoming Bulletproofs+), the code is audited by multiple 3rd-party auditing groups/companies
 - The process of deciding what goes into a hard-fork, when to hard-fork, and what approaches to take *all* happens publicly, either on Github or in IRC/Matrix (mostly through scheduled meetings)
 - Monero has yet to have a contentious hard-fork, showing strong community support for every hard-fork so far
@@ -128,7 +128,7 @@ The key points I would make around this are walked through in detail in the Twit
 
 ***Response***
 
-Monero's approach to mining is almost entirely unique in the cryptocurrency world, as it's community has maintained a core ethos of ASIC-resistance from the inception of the project.
+Monero's approach to mining is almost entirely unique in the cryptocurrency world, as its community has maintained a core ethos of ASIC-resistance from the inception of the project.
 
 Monero aims for ASIC-resistance for three core reasons:
 
