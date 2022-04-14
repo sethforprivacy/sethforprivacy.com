@@ -26,7 +26,7 @@ The two main contenders today are [CalyxOS](https://calyxos.org/) and [GrapheneO
 
 # Why CalyxOS?
 
-All three options above have the same [Android Open Source Project (AOSP)](https://source.android.com/) base and focus heavily on stripping Google services out, while GrapheneOS adds in some more technical and detailed security optimizations to the base OS to help close off advanced threat vectors.
+Both options above have the same [Android Open Source Project (AOSP)](https://source.android.com/) base and focus heavily on stripping Google services out, while GrapheneOS adds in some more technical and detailed security optimizations to the base OS to help close off advanced threat vectors.
 
 The main driver for choosing CalyxOS was the overall strength of the organization (Calyx) behind the OS and the balanced approach taken with CalyxOS -- give users options but lean towards preserving good UX when it doesn't conflict with private options.
 
@@ -34,9 +34,9 @@ The main driver for choosing CalyxOS was the overall strength of the organizatio
 
 Thankfully, Calyx has made the process very straightforward with a pre-built flashing tool available from their site.
 
-I simply downloaded the appropriate package for the Pixel 4a, downloaded the flashing tool for Linux at https://calyxos.org/get/install/, and followed the instructions the flashing tool put in my terminal.
+I simply downloaded the appropriate package for the Pixel 4a, downloaded the flashing tool for Linux at <https://calyxos.org/install/>, and followed the instructions the flashing tool put in my terminal.
 
-It took all of ten minutes to flash and setup, and was very straightforward. You can see all the supported devices and downloads at https://calyxos.org/get/.
+It took all of ten minutes to flash and setup, and was very straightforward. You can see all the supported devices and downloads at <https://calyxos.org/install/> as well.
 
 I've also written a guide that walks you through verification and installation from a Linux computer, which lays things out a bit simpler: [Verifying and installing CalyxOS from Linux]({{< ref "/content/guides/installing-calyxos-linux.md" >}})
 
