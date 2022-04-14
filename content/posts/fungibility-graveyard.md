@@ -131,8 +131,11 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   {{< figure src="/fungibility-graveyard/fixedfloat_tainted.jpeg" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
 - A user's Coinbase account is frozen and then shut down due to tainted transactions from 2y prior
-  - [Twitter Source](https://twitter.com/AwyeeDeaterBob/status/1439377414484807680)
-  {{< tweet user="AwyeeDeaterBob" id="1439377414484807680" >}}
+  - [Twitter Source (user's account was suspended after this was added to the post)](https://twitter.com/AwyeeDeaterBob/status/1439377414484807680)
+  {{< collapse summary="Source Image" >}}
+  {{< figure src="/fungibility-graveyard/coinbase_taint.png" align="center" style="border-radius: 8px;" >}}
+  {{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
+  {{< /collapse >}}
 
 ## Compliant Mining and "Virgin" Bitcoin
 

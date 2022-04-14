@@ -2,7 +2,7 @@ baseURL: 'http://sfprivg7qec6tdle7u6hdepzjibin6fn3ivm6qlwytr235rh5vc6bfqd.onion/
 publishDir: tor
 languageCode: en-us
 title: sethforprivacy.com
-theme: PaperMod
+theme: PaperModX
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -37,6 +37,7 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+  TocSide: 'left'
 
   mainSections: posts
 
@@ -53,11 +54,9 @@ params:
   homeInfoParams:
     Title: "Welcome to Seth For Privacy's blog! \U0001F44B"
     Content: >
-      - Take a look at "Posts" for blog posts, "Guides" for guides on self-hosting and Monero, and "Opt Out Podcast" for content related to Opt Out.
-
-      -
-
-      - ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
+      Take a look at ["Posts"](/posts) for various blog posts, ["Guides"](/guides) for guides on self-hosting, privacy, and Monero, and ["Opt Out Podcast"](https://optoutpod.com) for content related to my podcast, Opt Out.
+      <br/><br/>
+      ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
 
   socialIcons:
     - name: email
