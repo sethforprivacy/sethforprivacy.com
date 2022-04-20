@@ -60,7 +60,7 @@ Browsers:
     - By far my favorite hardening guide for Firefox, goes step by step with very simple instructions and walks you through the process. Don't let it scare you! It's very straightforward, and only needs to be done once per computer you have/use.
 - [Brave Browser](https://brave.com/)
   - Brave has some excellent defaults, but certainly takes some odd approaches (like cryptocurrency ads all over the place and built-in cryptocurrency wallets which aren't helpful to most people).
-    - [Brave hardening guide from anonymousplanet.org](https://anonymousplanet.org/guide.html#appendix-v1-hardening-your-browsers)
+    - [Brave hardening guide from anonymousplanet-ng.org](https://anonymousplanet-ng.org/guide.html#brave-1)
 - [Ungoogled Chromium](https://github.com/Eloston/ungoogled-chromium)
   - Ungoogled Chromium takes the best of Chrome Browser and strips Google from it, making a very compelling and very fast browser. It can be a bit tricky to get and keep updated on some operating systems, and extension installation and updates are a bit of a pain, but it's a great option for those who are a bit more hardcore but like the Chrome web engine.
 
