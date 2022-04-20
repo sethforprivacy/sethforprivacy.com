@@ -91,9 +91,9 @@ Many people choose to start here, and I fully understand if you feel the same wa
 Using an email provider that is privacy-preserving and uses some native method of E2EE as well is a key way to reduce the data available about your communication, shopping, job hunting, etc. from an invasive company like Google or Microsoft. This is a very important step, and gives you an awesome chance to evaluate what subscriptions and accounts you want to keep, and make a clean break from the rest.
 
 - [ProtonMail](https://protonmail.com/)
-  - Probably the most well-known name in the privacy-preserving email space, and for good reason. ProtonMail has many solid features out of the box, a usable free tier, and solid cross-platform clients to go with a long history of supporting user privacy.
+  - Probably the most well-known name in the privacy-preserving email space, and for good reason. ProtonMail has many solid features out of the box, a usable free tier, and solid cross-platform clients to go with a long history of supporting user privacy. Their excellent UX and support make this my preferred email provider, and how I do all of my email.
 - [CTemplar](https://ctemplar.com/)
-  - I personally prefer and use CTemplar, as I appreciate their pricing, their approach to privacy, their release of a mobile app in F-Droid, and their acceptance of Monero directly for payments.
+  - I have personally used CTemplar, as I appreciate their pricing, their approach to privacy, their release of a mobile app in F-Droid, and their acceptance of Monero directly for payments. However, the overall user-experience is not on-par with Protonmail, and thus I use Protonmail instead for all of my email.
 - [Tutanota](https://tutanota.com/)
   - While I haven't used them, I know many people I trust who do and have heard nothing but great things. They also provide steep discounts to FOSS and non-profit organizations, so well worth a look if you happen to be a part of either of those.
 
