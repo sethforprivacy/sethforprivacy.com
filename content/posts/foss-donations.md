@@ -87,9 +87,11 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://www.fosshub.com/crypto.html>
 - VideoLAN, makers of VLC Player[^1]:  
   - <https://www.videolan.org/contribute.html>
+- Music Caster, a FOSS music player that can cast files and URLs[^1]:
+  - <https://github.com/elibroftw/music-caster/#donate-or-translate>
 
 [^1]: These projects or organizations have not been used/vetted by myself personally, but have come recommended by followers or Monero community members.
 
 # Something Missing?
 
-If you have a favorite FOSS project or pro-privacy organization that accepts Monero donations, please feel free to reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) or open a pull request with the addition against <https://github.com/sethforprivacy/sethforprivacy.com-content>.
+If you have a favorite FOSS project or pro-privacy organization that accepts Monero donations, please feel free to reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) or open a pull request via the "Suggest Changes to this Post" button at the top of the post, or at <https://github.com/sethforprivacy/sethforprivacy.com/blob/master/content/posts/foss-donations.md>.
