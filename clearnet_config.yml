@@ -162,9 +162,5 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    # anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    lineNos: false
-    # noClasses: false
-    style: solarized-dark
+    anchorLineNos: true
+    lineNos: true
