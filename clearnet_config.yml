@@ -37,6 +37,7 @@ params:
   showtoc: true
   tocopen: true
   TocSide: 'left'
+  useCustomAnalytics: true
 
   mainSections: posts
 
