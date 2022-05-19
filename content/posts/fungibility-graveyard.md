@@ -65,7 +65,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source](https://twitter.com/wasabiwallet/status/1503091503207432193)
     {{< tweet user="wasabiwallet" id="1503091503207432193" >}}
   - [Telegram Source](https://t.me/WasabiWallet/63992)
-- A user's Gemini account is frozen upong attempted withdrawal to Wasabi Wallet for mixing:
+- A user's Gemini account is frozen after previous transactions with Wasabi Wallet were discovered upon review of his account:
   - [Twitter Source](https://twitter.com/bjackson2718/status/1527040352770588673)
   {{< tweet user="bjackson2718" id="1527040352770588673" >}}
 
