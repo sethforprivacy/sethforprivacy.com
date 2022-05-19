@@ -87,8 +87,9 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 - Audio clip about auditability in Bitcoin and Monero:
   - <https://nitter.sethforprivacy.com/DontTraceMeBruh/status/1414602052471332864>
   {{< tweet user="DontTraceMeBruh" id="1414602052471332864" >}}
-- [Monero vuln that was not exploited, was detectable](https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html)
-- [Bitcoin vuln that was exploited, was detectable](https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/)
+- [Monero vulnerability that was not exploited and was detectable](https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html)
+- [Bitcoin vulnerability that was exploited and was detectable](https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/)
+- [Bitcoin vulnerability that was not exploited and was detectable](https://www.coindesk.com/markets/2018/09/21/the-latest-bitcoin-bug-was-so-bad-developers-kept-its-full-details-a-secret/)
 
 ## Monero can't scale
 
