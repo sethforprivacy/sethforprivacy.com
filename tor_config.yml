@@ -119,6 +119,8 @@ menu:
       name: Opt Out Podcast
       url: "http://optoutkoplzfgs7wl3gkg5nmtrrs7ki6ljcguf7c4w7rdsrtozlghxad.onion"
       weight: 3
+      params:
+        external: true
     - identifier: external-content
       name: External Content
       url: /external-content

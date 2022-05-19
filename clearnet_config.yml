@@ -118,6 +118,8 @@ menu:
       name: Opt Out Podcast
       url: "https://optoutpod.com"
       weight: 3
+      params:
+        external: true
     - identifier: external-content
       name: External Content
       url: /external-content
