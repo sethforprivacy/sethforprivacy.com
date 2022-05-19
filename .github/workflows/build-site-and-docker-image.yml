@@ -31,6 +31,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+          extended: true
 
       - name: Build clearnet
         run: hugo --config clearnet_config.yml --destination ./public
