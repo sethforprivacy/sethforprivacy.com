@@ -81,6 +81,7 @@ Migrating to a password manager is also a great chance to think twice about whic
 
 - [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
   - Bitwarden is my personal favorite and what my wife and I use. It works very well, is open-source, cross-platform, and can be self-hosted (if desired).
+  - [Opt Out episode on Bitwarden](https://optoutpod.com/episodes/s2e09-bitwarden/)
 - [KeepassXC](https://keepassxc.org/)
   - KeepassXC is a well-respected FOSS password manager, but importantly does not integrate sync across devices natively, which is a deal-breaker for me. Outside of that, though, it works extremely well and has a long and solid history.
 
@@ -106,6 +107,7 @@ Each of the alternatives have some key pros and cons, and are really up to perso
 - [Whoogle](https://github.com/benbusby/whoogle-search)
   - I personally host a [public instance of Whoogle](https://search.sethforprivacy.com/) and really appreciate the ability to get Google search results without revealing IP address and without the extra bloat of Google searches. It's also quite easy to self-host, if desired.
   - [Public instances](https://github.com/benbusby/whoogle-search#public-instances)
+  - [Opt Out episode on Whoogle](https://optoutpod.com/episodes/s2e12-whoogle/)
 - [Searx](https://searx.github.io/searx/)
   - Searx is probably the most hard-core of the options, but provides a very solid experience and search results across multiple sources.
   - [Public instances](https://searx.space/)
@@ -171,13 +173,15 @@ To help you make your own well-informed choices, here are some excellent resourc
 
 ## 9. Use a privacy-preserving mobile operating system
 
-This section is a bit more drastic than the others, but switching to an operating system that is designed around protecting user privacy gives you a strong foundation for all of the other steps to live on top of and enhances their effect (and often makes them easier!).
+This section is a bit more drastic than the others, but switching to an operating system that is designed around protecting user privacy gives you a strong foundation for all of the other steps to live on top of and enhances their effect (and often makes them easier!). For more on the broad topic of mobile privacy, listen to this [episode I did with Matt Odell on Citadel Dispatch](https://citadeldispatch.com/cd34/) on the topic.
 
-The only real recommendation I have here is below, but note that for some threat models using an iPhone can be a solid approach to gaining strong *3rd-party* privacy (i.e. from other data collection, but not from Apple).
+The only real recommendations I have here are below, but note that for some threat models using an iPhone can be a solid approach to gaining strong *3rd-party* privacy (i.e. from other data collection, but not from Apple).
 
 - [CalyxOS](https://calyxos.org/)
   - I've long been a huge fan of CalyxOS, have run it for almost a year, and am a financial supporter of the [Calyx Institute](https://calyxos.org/), the non-profit organization behind CalyxOS. CalyxOS is an incredibly powerful tool, one that takes the open-source Android operating system created by Google and strips Google's tracking and services out of it, and then builds it back up with a focus on user privacy and FOSS app stores (like F-Droid).
   - For more on CalyxOS and my experience/recommendations, see my blog post ["Switching to CalyxOS"]({{< ref "/content/posts/switching-to-calyxos.md" >}}).
+- [GrapheneOS](https://grapheneos.org/)
+  - I've been testing out GrapheneOS for the last few months and am thoroughly impressed with how far the usability has come over the past 6mo or so. The Google Compatibility Layer enables microG-like support for apps, and works seamlessly once installed properly. If you want a bit more security to go with the privacy, consider trying out GrapheneOS.
 
 ## 10. Use a more privacy-conscious desktop operating system
 
