@@ -101,8 +101,8 @@ This step can seem extremely annoying at first as none of the privacy-preserving
 
 Each of the alternatives have some key pros and cons, and are really up to personal choice -- I'd recommend trying them each for a day or more as your default and see what solution fits you best.
 
-- [DuckDuckGo](https://duckduckgo.com/)
-  - DDG uses Bing results on the back-end, but is one of the more polished and fast user experiences in the space. They're one of the easiest to switch to, for sure.
+- [Brave Search](https://search.brave.com/)
+  - Unlike the other options here (and other popular ones), Brave is building their own search engine from the ground up instead of just proxying results from Google or Microsoft. I've been testing this out lately as a replacement for DuckDuckGo and have been thoroughly impressed. Solid results, great features (bangs!), and no issues using with a VPN (unlike Startpage).
 - [Whoogle](https://github.com/benbusby/whoogle-search)
   - I personally host a [public instance of Whoogle](https://search.sethforprivacy.com/) and really appreciate the ability to get Google search results without revealing IP address and without the extra bloat of Google searches. It's also quite easy to self-host, if desired.
   - [Public instances](https://github.com/benbusby/whoogle-search#public-instances)

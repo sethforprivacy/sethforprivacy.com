@@ -58,8 +58,7 @@ For more on both of these, see the resources below.
 - "How Monero Solved the Block Size Problem That Plagues Bitcoin":
   - <https://localmonero.co/knowledge/dynamic-block-size>
 - Excellent Twitter thread on Monero's tail emission and supply approach:
-  - <https://nitter.sethforprivacy.com/DontTraceMeBruh/status/1489979998228426754?s=19>
-  {{< tweet user="DontTraceMeBruh" id="1489979998228426754" >}}
+  - <https://www.twitter.com/DontTraceMeBruh/status/1489979998228426754>
 - Inherent risks in not having a defined block reward in perpetuity:
   - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
@@ -81,12 +80,13 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
   - <https://web.getmonero.org/2020/01/17/auditability.html>
 - Very thorough and detailed talk on the issues surrounding auditability in cryptocurrencies:
   - <https://invidious.sethforprivacy.com/watch?v=meDkx6gRPMg>
+- Detailed presentation from Aaron Feickert on supply auditablity in cryptocurrencies:
+  - <https://invidious.sethforprivacy.com/watch?v=aHv2gq4Wm5I>
+- Audio clip about auditability in Bitcoin and Monero:
+  - <https://www.twitter.com/DontTraceMeBruh/status/1414602052471332864>
 - Anyone can easily verify the supply of Monero:
   - <https://nitter.sethforprivacy.com/fluffypony/status/1292032287396306944>
   {{< tweet user="fluffypony" id="1292032287396306944" >}}
-- Audio clip about auditability in Bitcoin and Monero:
-  - <https://nitter.sethforprivacy.com/DontTraceMeBruh/status/1414602052471332864>
-  {{< tweet user="DontTraceMeBruh" id="1414602052471332864" >}}
 - [Monero vulnerability that was not exploited and was detectable](https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html)
 - [Bitcoin vulnerability that was exploited and was detectable](https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/)
 - [Bitcoin vulnerability that was not exploited and was detectable](https://www.coindesk.com/markets/2018/09/21/the-latest-bitcoin-bug-was-so-bad-developers-kept-its-full-details-a-secret/)
