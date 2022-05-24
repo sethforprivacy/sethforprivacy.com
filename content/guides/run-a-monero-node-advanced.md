@@ -71,7 +71,7 @@ First we need to install a few tools we will need later:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y ufw gpg wget
+sudo apt-get install -y ufw gpg wget bzip2
 ```
 
 # Initial Hardening via UFW
