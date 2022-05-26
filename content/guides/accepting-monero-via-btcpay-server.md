@@ -202,6 +202,10 @@ Thankfully the docs for using BTCPay Server are *excellent* and all apply exactl
 
 When a user is prompted to pay an invoice, now they can select Monero from the dropdown and pay without any extra hoops or unique back-ends!
 
+If you'd like to see what the payment flow looks like for a simple donation/PoS, you can try it out below (feel free to not send funds and just click through if you'd like!):
+
+{{< btcpayserver >}}
+
 ## Conclusion
 
 A huge, huge thank you to the contributors who have made BTCPay Server possible and who continue to improve it, and to those in the space contributing financially to the project to ensure it continues to grow.
