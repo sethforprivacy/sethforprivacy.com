@@ -1,7 +1,7 @@
 ---
 title: "Accepting Monero via Btcpay Server"
 date: 2022-05-26T13:26:49-04:00
-summary: 
+summary: "I've spun up a BTCPay Server instance for my own use and built a guide out of the process, so hopefully this will aid others wanting to accept Monero at their stores, for donations, or any other use-case get up and rolling with BTCPay Server!"
 draft: true
 hidemeta: false
 showToc: true
@@ -166,16 +166,20 @@ Assuming all went well, you should now be able to navigate to your new BTCPay Se
 
 ## Create an account and a store
 
-The first thing you'll need to do is create an account on your new instance -- be sure to use a secure email and strong password (hopefully via a password manager like Bitwarden!) -- so that you can create stores, manage wallets, etc. Follow the official docs to do so here: [Register account - docs.btcpayserver.org](https://docs.btcpayserver.org/RegisterAccount/)
+The first thing you'll need to do is create an account on your new instance -- be sure to use a secure email and strong password (hopefully via a password manager like Bitwarden!) -- so that you can create stores, manage wallets, etc.
 
-Once you're logged in, you'll want to go ahead and create a store to manage wallets, invoices, etc. for the given store. Follow the official docs to do so here: [Create a store - docs.btcpayserver.org](https://docs.btcpayserver.org/CreateStore/)
+***Follow the official docs to do so here: [Register account - docs.btcpayserver.org](https://docs.btcpayserver.org/RegisterAccount/)***
+
+Once you're logged in, you'll want to go ahead and create a store to manage wallets, invoices, etc. for the given store.
+
+***Follow the official docs to do so here: [Create a store - docs.btcpayserver.org](https://docs.btcpayserver.org/CreateStore/)***
 
 {{< figure src="/accepting-monero-via-btcpay-server/store_created.png" align="center" style="border-radius: 8px;" >}}
 
 ## Setup your Bitcoin and Monero wallets
 
 1. Select "Setup a wallet" and select the preferred wallet option to setup your Bitcoin wallet
-   1. [Wallet Setup - docs.btcpayserver.org](https://docs.btcpayserver.org/WalletSetup/)
+   1. Follow the official docs to do so here: [Wallet Setup - docs.btcpayserver.org](https://docs.btcpayserver.org/WalletSetup/)
    {{< figure src="/accepting-monero-via-btcpay-server/store_created.png" align="center" style="border-radius: 8px;" >}}
 2. Go to "Settings" to configure your Monero wallet
    {{< figure src="/accepting-monero-via-btcpay-server/monero_settings.png" align="center" style="border-radius: 8px;" >}}
@@ -183,10 +187,10 @@ Once you're logged in, you'll want to go ahead and create a store to manage wall
    {{< figure src="/accepting-monero-via-btcpay-server/modify_monero.png" align="center" style="border-radius: 8px;" >}}
 4. Create a new Monero wallet or use an existing one using the Monero desktop wallet or CLI wallet
    1. Download the official Monero desktop wallet here: [Monero GUI Wallet - getmonero.org](https://www.getmonero.org/downloads/#gui)
-   2. You'll need the wallet and key files generated to use with BTCPay Server, not just the seed etc.
+   2. You'll need the wallet and key files generated to use with BTCPay Server, not just the seed phrase
 5. Go to the path where the wallet file and keys are stored
    1. These files are usually stored in your user directory under the "Monero" folder in a "Wallets" folder
-6. Upload the Monero wallet file and keys to the respective options in the "Monero" wallet options, and hit save
+6. Upload the Monero wallet file and keys to the respective options in the "Monero" wallet options (along with the wallet password, if desired!), and hit save
 
 Now just wait for the Bitcoin and Monero nodes to sync, and you should be all set!
 
