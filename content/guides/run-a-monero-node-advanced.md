@@ -106,9 +106,7 @@ Create our system user and directories for Monero configuration, PID, and log fi
 
 ```bash
 # Create a system user and group to run monerod
-sudo addgroup --system monero
-sudo adduser --system monero --home /var/lib/monero
-sudo usermod -g monero monero
+sudo adduser --gid monero --system monero --home /var/lib/monero
 
 # Create necessary directories for monerod
 sudo mkdir /var/run/monero
