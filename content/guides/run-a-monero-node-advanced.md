@@ -105,9 +105,10 @@ sudo ufw enable
 Create our system user and directories for Monero configuration, PID, and log files:
 
 ```bash
-# Create a system user and group to run monerod as
+# Create a system user and group to run monerod
 sudo addgroup --system monero
 sudo adduser --system monero --home /var/lib/monero
+sudo usermod -g monero monero
 
 # Create necessary directories for monerod
 sudo mkdir /var/run/monero
