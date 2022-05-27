@@ -259,6 +259,8 @@ If you'd like to see what the payment flow looks like for a simple donation/PoS,
 
 If you'd like to contribute and improve Monero support within BTCPay Server, here are the relevent repositories:
 
+- [btcpayserver](https://github.com/btcpayserver/btcpayserver/tree/master/BTCPayServer/Services/Altcoins/Monero)
+  - This directory controls the front-end and BTCPay Server interactions with the Monero node and wallet
 - [btcpayserver-docker](https://github.com/btcpayserver/btcpayserver-docker)
   - Specifically this file: [monero.yaml](https://github.com/btcpayserver/btcpayserver-docker/blob/master/docker-compose-generator/docker-fragments/monero.yml)
   - This file controls the way that the Monero Docker containers are started and managed
