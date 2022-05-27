@@ -92,9 +92,9 @@ This will create the necessary folders in the home directory of your root user a
 
 ## Configuring BTCPay Server with Monero support
 
-This guide will assume you want to accept Bitcoin and Monero (as that is the most common reason for choosing BTCPay Server), but feel free to use the collapsed configuration below if you *just* want to accept Monero.
+This guide will assume you want to accept Bitcoin as well as Monero (as that is the most common reason for choosing BTCPay Server over Monero-only payment processors), but feel free to use the collapsed configuration below if you *just* want to accept Monero.
 
-In order to properly configure BTCPay Server you use something called *environment variables* to set the necessary options before installing and starting the server.
+In order to properly configure BTCPay Server you use something called "environment variables" to set the necessary options before installing and starting the server.
 
 ***Be sure to replace `btcpay.EXAMPLE.com` with the domain you setup previously!***
 
@@ -123,7 +123,11 @@ export BTCPAYGEN_REVERSEPROXY="nginx"
 export BTCPAY_ENABLE_SSH=true
 ```
 
-Only Monero support (click the arrow to expand):
+***If you want to also accept Lightning Network transactions, just add this command to the above:***
+
+`export BTCPAYGEN_LIGHTNING="clightning"`
+
+***To only enable Monero support, click the arrow to expand the configuration below:***
 
 {{< collapse summary="Only Monero support" >}}
 
@@ -216,6 +220,7 @@ Once you're logged in, you'll want to go ahead and create a store to manage wall
 4. Make a note of the location you stored the view-only wallet in, as we'll need to upload those files to BTCPay Server in the next step
 
 ### Add the view-only wallet to BTCPay Server
+
 1. Go to "Settings" to configure your Monero wallet
    {{< figure src="/accepting-monero-via-btcpay-server/monero_settings.png" align="center" style="border-radius: 8px;" >}}
 2. Select the "Monero" option, and then "Modify" next to the wallet
@@ -268,7 +273,6 @@ Key areas that need improvement:
   - Improving this would allow much simpler migration to new wallets, replacing wallets that are no longer wanted, etc.
 - Monero acceptance relies *solely* on the Kraken API
   - Allowing alternate APIs to be used, even just as fall-back APIs to gather price data would allow shop owners to continue accepting Monero for payments even if Kraken's API is unavailable
-
 
 ## Conclusion
 
