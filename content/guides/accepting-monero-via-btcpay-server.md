@@ -1,5 +1,5 @@
 ---
-title: "Accepting Monero via Btcpay Server"
+title: "Accepting Monero via BTCPay Server"
 date: 2022-05-26T13:26:49-04:00
 summary: "I've spun up a BTCPay Server instance for my own use and built a guide out of the process, so hopefully this will aid others wanting to accept Monero at their stores, for donations, or any other use-case get up and rolling with BTCPay Server!"
 draft: false
