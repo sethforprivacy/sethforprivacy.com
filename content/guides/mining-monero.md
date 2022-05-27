@@ -13,7 +13,7 @@ tags:
 - Mining
 - xmrig
 title: Mining Monero
-weight: 3
+weight: 2
 ---
 
 # Introduction

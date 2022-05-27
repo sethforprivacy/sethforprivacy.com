@@ -9,6 +9,7 @@ tags:
   - Merchants
   - BTCPay Server
   - Node
+weight: 3
 ---
 
 One of the tasks I've taken on in the Monero community is maintaining support for Monero in BTCPay Server, and I've realized that due to the Bitcoin focus of BTCPay Server the docs are less than ideal for Monero acceptance.
