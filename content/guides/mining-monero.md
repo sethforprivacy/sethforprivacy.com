@@ -3,7 +3,7 @@ author: Seth For Privacy
 comments: false
 date: "2021-05-02T13:50:00-04:00"
 summary: This will be a simple guide to get you started with a few more advanced
-  options/recommendations at the end, but hopefull will help to simplify the process
+  options/recommendations at the end, but hopefully will help to simplify the process
   for those of you wanting to get started mining Monero!
 draft: false
 hidemeta: false
