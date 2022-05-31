@@ -18,6 +18,8 @@ draft: false
 
 This will by no means be an exhaustive list, and I could use any help I can get keeping it up to date or finding historical proposals that have fallen out of favor. The sections below will be broken down by project or implementation and in order of proposal (where possible).
 
+***Note: While some of these proposals were non-starters or have been abandoned, some are interesting and potentially promising proposals. This is not a "hall of shame list", but rather a chance to learn from past proposals and keep up with new ones as we go along.***
+
 ## Bitcoin
 
 ### Confidential Transactions
@@ -59,7 +61,7 @@ Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, 
 
 PayJoin may also be well-known to the Bitcoin privacy crowd as it has gotten some media and minor adoption despite it's official "Draft" status. PayJoin lets the sender and recipient of a transaction work together to build a combined transaction that includes a UTXO (or more) from both the sender and intended recipient of funds, obfuscating the true nature of the payment on-chain.
 
-PayJoin has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 and [BTCPay Server](https://btcpayserver.org/) in late 2020. See their docs for more info:
+A similar protocol has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 (before the PayJoin proposal BIP) and [BTCPay Server](https://btcpayserver.org/) in late 2020. See their docs for more info:
 
 - [Stowaway - Samourai Wallet](https://docs.samourai.io/en/spend-tools#stowaway)
 - [BTCPay Server Payjoin Guide - BTCPay Server](https://docs.btcpayserver.org/Payjoin/)
@@ -218,6 +220,19 @@ But Liquid remains practically unused even after four years of being in the wild
 {{< figure src="/proposed-bitcoin-privacy-improvements/liquid_sadpool.png" align="center" style="border-radius: 8px;" >}}
 
 - [Official website](https://liquid.net/)
+
+### FediMint
+
+FediMint (and the specific initial implementation, minimint) is a relatively new proposal for building a federated Chaumian-blinded eCash as a side-chain to Bitcoin, denominated in Bitcoin. These federated side-chains would be relatively small, interoperable, and would compete on reputation, uptime, and fees.
+
+While it is still very much a work in progress, minimint holds promise for a middle-ground between fully self-sovereign Lightning Network usage (Zeus, Core LN, LND, etc.) and single-custodian Lightning Network usage (Cash App, Strike, etc.) by allowing a trusted federation of custodians to hold funds and manage Lightning node(s) for their users.
+
+{{< figure src="/proposed-bitcoin-privacy-improvements/fedimint.jpeg" align="center" style="border-radius: 8px;" >}}
+
+Note that the proposal is still fully custodial, but has differing tradeoffs compared to something like [the Liquid Network]({{< relref "#the-liquid-network" >}}).
+
+- [FediMint website](https://fedimint.org/)
+- [minimint Github repository](https://github.com/fedimint/minimint)
 
 # Conclusion
 
