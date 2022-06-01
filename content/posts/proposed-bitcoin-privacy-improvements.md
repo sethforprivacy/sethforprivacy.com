@@ -18,7 +18,7 @@ draft: false
 
 This will by no means be an exhaustive list, and I could use any help I can get keeping it up to date or finding historical proposals that have fallen out of favor. The sections below will be broken down by project or implementation and in order of proposal (where possible).
 
-***Note: While some of these proposals were non-starters or have been abandoned, some are interesting and potentially promising proposals. This is not a "hall of shame list", but rather a chance to learn from past proposals and keep up with new ones as we go along.***
+***Note: While some of these proposals were non-starters or have been abandoned, some are interesting and potentially promising proposals. This is not a "hall of shame", but rather a chance to learn from past proposals and keep up with new ones as we go along.***
 
 ## Bitcoin
 
