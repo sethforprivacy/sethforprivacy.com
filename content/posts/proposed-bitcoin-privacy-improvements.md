@@ -231,6 +231,8 @@ While it is still very much a work in progress, minimint holds promise for a mid
 
 {{< figure src="/proposed-bitcoin-privacy-improvements/fedimint.jpeg" align="center" style="border-radius: 8px;" >}}
 
+[Image Credit - @ODELL](https://twitter.com/ODELL/status/1531648367658401792)
+
 Note that the proposal is still fully custodial, but has differing tradeoffs compared to something like [the Liquid Network]({{< relref "#the-liquid-network" >}}).
 
 - [FediMint website](https://fedimint.org/)
