@@ -62,6 +62,12 @@ For more on both of these, see the resources below.
 - Inherent risks in not having a defined block reward in perpetuity:
   - <https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf>
 
+Monero's long-term emissions as a percentage of total supply (notice they are constantly approaching 0%):
+
+{{< figure src="/dispelling-monero-fud/monero_inflation_longterm.png" align="center" style="border-radius: 8px;" >}}
+
+[Image Credit - @TheStoicCoiner](https://twitter.com/TheStoicCoiner/status/1531562719945510912)
+
 ## You can't audit the Monero supply
 
 ***Response***
