@@ -1,140 +1,163 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-    {{- if .Site.Copyright }}
-    <span>{{ .Site.Copyright | markdownify }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
-    {{- end }}
-    <span>
-        | Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-    <span>
-        | 
-        <a href="https://sethforprivacy.com/posts/privacy-preserving-stats/" rel="noopener noreferrer" target="_blank">Privacy-preserving statistics via Plausible</a>
-        (<a href="https://sethforprivacy.com/plausible-exclusion/" rel="noopener noreferrer" target="_blank">Opt out</a>)
-    </span>
+  {{- if site.Copyright }}
+  <span>{{ site.Copyright | markdownify }}</span>
+  {{- else }}
+  <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
+  {{- end -}}
+  <span style="display: inline-block; margin-left: 1em;">
+    | Powered by
+    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
+  </span>
+  <span>
+    | 
+    <a href="https://sethforprivacy.com/posts/privacy-preserving-stats/" rel="noopener noreferrer" target="_blank">Privacy-preserving statistics via Plausible</a>
+    (<a href="https://sethforprivacy.com/plausible-exclusion/" rel="noopener noreferrer" target="_blank">Opt out</a>)
+  </span>
 </footer>
 {{- end }}
 
-{{- if (not .Site.Params.disableScrollToTop) }}
+{{- if (not site.Params.disableScrollToTop) }}
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+    <path d="M12 6H0l6-6z" />
+  </svg>
 </a>
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
 
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+  (function() {
+    /* theme toggle */
+    const disableThemeToggle = '{{ if site.Params.disableThemeToggle }}1{{ end }}' == '1';
+    if (disableThemeToggle) {
+      return;
     }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-
-{{- if (not .Site.Params.disableScrollToTop) }}
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-{{- end }}
-
-{{- if (not .Site.Params.disableThemeToggle) }}
-<script>
+    // listen to toggle button
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-{{- end }}
-
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
-
-        function copyingDone() {
-            copybutton.innerText = '{{- i18n "code_copied" | default "copied!" }}';
-            setTimeout(() => {
-                copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            // td containing LineNos
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            // table containing LineNos and code
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            // code blocks not having highlight as parent class
-            codeblock.parentNode.appendChild(copybutton);
-        }
+      window.dispatchEvent(new CustomEvent('toggle-theme'));
     });
+  })();
+</script>
+
+<script>
+  (function () {
+    let menu = document.getElementById('menu')
+    if (menu) {
+      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+      menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+      }
+    }
+
+    const disableSmoothScroll = '{{- if (.Param "DisableSmoothScroll") -}}1{{- end -}}' == '1';
+    const enableInstantClick = '{{- if (.Param "EnableInstantClick") -}}1{{- end -}}' == '1';
+    // instant click and smooth scroll are mutually exclusive
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
+      return;
+    }
+    // only run this code if smooth scroll should be enabled
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+          behavior: "smooth"
+        });
+        if (id === "top") {
+          history.replaceState(null, null, " ");
+        } else {
+          history.pushState(null, null, `#${id}`);
+        }
+      });
+    });
+  })();
+</script>
+
+{{- if (not site.Params.disableScrollToTop) }}
+<script>
+  var mybutton = document.getElementById("top-link");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      mybutton.style.visibility = "visible";
+      mybutton.style.opacity = "1";
+    } else {
+      mybutton.style.visibility = "hidden";
+      mybutton.style.opacity = "0";
+    }
+  };
 </script>
 {{- end }}
+
+{{- /* Base64Email */}}
+{{- if (.Param "MaskedEmail") }}
+<script>
+  document.querySelectorAll('.masked-email').forEach((el) => {
+    el.innerText = atob(el.innerText);
+    el.classList.remove('masked-email')
+  })
+</script>
+{{- end -}}
+
+
+{{/* Clear ToC Scroll */}}
+<script>
+  if (window.scrollListeners) {
+    // console.log('disable toc scroll', scrollListeners)
+    for (const listener of scrollListeners) {
+      window.removeEventListener('scroll', listener)
+    }
+  }
+  window.scrollListeners = []
+</script>
+
+{{/* Load mediumZoom script */}}
+{{/* It has to be loaded here because of the data-no-instant attribute */}}
+{{- $imagezoom := resources.Get "js/medium-zoom.min.js" }}
+<script src="{{ $imagezoom.RelPermalink }}" data-no-instant
+  {{- if site.Params.assets.disableFingerprinting }}integrity="{{ $imagezoom.Data.Integrity }}"{{- end }}
+></script>
+
+{{- if .IsPage }}
+  {{- partial "page_footer.html" . }}
+{{- end}}
+
+{{- /* Search */}}
+{{- if (eq .Layout `search`) -}}
+<link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+{{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) }}
+{{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
+{{- if not site.Params.assets.disableFingerprinting }}
+{{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | minify | fingerprint }}
+<script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
+{{- else }}
+{{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | minify }}
+<script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}"></script>
+{{- end }}
+
+{{- else }}
+
+{{- /* InstantClick.js */}}
+{{- if (.Param "EnableInstantClick") }}
+{{- $instantclick := resources.Get "js/instantclick.js" }}
+{{- if hugo.IsProduction }}
+  {{- $instantclick = minify $instantclick }}
+{{- end }}
+<script src="{{ $instantclick.RelPermalink }}" data-no-instant
+  {{- if site.Params.assets.disableFingerprinting }}integrity="{{ $instantclick.Data.Integrity }}"{{- end }}
+></script>
+<script data-no-instant>
+  // http://instantclick.io/scripts
+  // InstantClick.on('change', function(isInitialLoad) {
+  //   if (isInitialLoad) {
+  //     return;
+  //   }
+  // });
+  InstantClick.init();
+</script>
+{{- end }}
+
+{{- end -}}

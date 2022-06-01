@@ -61,16 +61,18 @@ Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, 
 
 PayJoin may also be well-known to the Bitcoin privacy crowd as it has gotten some media and minor adoption despite it's official "Draft" status. PayJoin lets the sender and recipient of a transaction work together to build a combined transaction that includes a UTXO (or more) from both the sender and intended recipient of funds, obfuscating the true nature of the payment on-chain.
 
-A similar protocol has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 (before the PayJoin proposal BIP), and PayJoin proper was implemented in [BTCPay Server](https://btcpayserver.org/) in [June 2020](https://github.com/btcpayserver/btcpayserver/releases/tag/v1.0.5.0) and [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) in [August 2020](https://github.com/JoinMarket-Org/joinmarket-clientserver/releases/tag/v0.7.0). See their docs for more info:
+A similar protocol has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 as "Stowaway" (before the PayJoin proposal BIP), and PayJoin proper was implemented in [BTCPay Server](https://btcpayserver.org/) in [June 2020](https://github.com/btcpayserver/btcpayserver/releases/tag/v1.0.5.0), [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) in [August 2020](https://github.com/JoinMarket-Org/joinmarket-clientserver/releases/tag/v0.7.0), [Blue Wallet](https://bluewallet.io) in [October 2020](https://twitter.com/bluewalletio/status/1313822205286010883), and [Sparrow Wallet](https://sparrowwallet.com/) in [November 2020](https://github.com/sparrowwallet/sparrow/releases/tag/0.9.7). See their docs for more info:
 
 - [Stowaway - Samourai Wallet](https://docs.samourai.io/en/spend-tools#stowaway)
-- [BTCPay Server Payjoin Guide - BTCPay Server](https://docs.btcpayserver.org/Payjoin/)
+- [BTCPay Server PayJoin Guide - BTCPay Server](https://docs.btcpayserver.org/Payjoin/)
 - [PayJoin (aka P2EP) user guide - JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/PAYJOIN.md)
+- [Paying to a PayNym - Sparrow Wallet](https://sparrowwallet.com/docs/spending-privately.html#paying-to-a-paynym)
 
-Although implemented in some wallets and tools, PayJoin usage unfortunately remains very sparse today.
+Although implemented in some wallets and tools, PayJoin usage unfortunately seems to remain very sparse today (though it's hard to detect on-chain so might be higher than we realize). Most of the lack of adoption appears to be due to the need to keep hot keys on the merchant side in order to support PayJoin which many merchants are unwilling to do for the advantages PayJoin brings.
 
 - [Initial blog post on PayJoin](https://reyify.com/blog/payjoin)
 - [Original PayJoin BIP - 78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
+- [PayJoin Adoption - Bitcoin Wiki](https://en.bitcoin.it/wiki/PayJoin_adoption)
 
 ### Peer-to-Peer Communication Encryption - BIP 151 and BIP 324
 

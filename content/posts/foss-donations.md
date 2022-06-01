@@ -57,7 +57,7 @@ Donating in Monero not only is a great use-case for private, fungible money like
 - Yotter, a privacy-preserving YouTube and Twitter front-end:
   - <https://github.com/pluja/pluja/blob/main/SUPPORT.md>
 - The Hitchhiker’s Guide to Online Anonymity[^1]:  
-  - <https://anonymousplanet.org/donations.html>
+  - <https://anonymousplanet-ng.org/donations.html>
 
 # Mobile OSs and Applications
 
