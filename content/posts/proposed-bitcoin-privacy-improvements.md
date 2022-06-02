@@ -24,11 +24,11 @@ This will by no means be an exhaustive list, and I could use any help I can get 
 
 ### Confidential Transactions
 
-> Status: Never formally proposed for Bitcoin
+> ***Status:*** Never formally proposed for Bitcoin
 
-> Pros: Drastically improved privacy against amount-based heuristics; enables greatly improved and more flexible app-layer privacy tools for Bitcoin (i.e. unequal output CoinJoins)
+> ***Pros:*** Drastically improved privacy against amount-based heuristics; enables greatly improved and more flexible app-layer privacy tools for Bitcoin (i.e. unequal output CoinJoins)
 
-> Cons: Supply auditability becomes more complex (but is still possible) and relies on more advanced cryptography
+> ***Cons:*** Supply auditability becomes more complex (but is still possible) and relies on more advanced cryptography
 
 Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are a technique used to blind the amounts in a transaction in way that is still verifiable and provable without revealing amounts to anyone outside of the transaction participants. Miners, nodes, and external observers can still validate that transactions do not create or destroy funds without knowing the true amounts being transferred.
 
@@ -40,11 +40,11 @@ Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are 
 
 ### Reusable Payment Codes for Hierarchical Deterministic Wallets - BIP 47
 
-> Status: Unanimously discouraged for implementation
+> ***Status:*** Unanimously discouraged for implementation
 
-> Pros: Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses)
+> ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses)
 
-> Cons: Most versions require a notification transaction to be sent on-chain so that the recipient knows how to look for funds sent to them; Notification transaction can undermine privacy if done incorrectly
+> ***Cons:*** Most versions require a notification transaction to be sent on-chain so that the recipient knows how to look for funds sent to them; Notification transaction can undermine privacy if done incorrectly
 
 The proposal for reusable payment codes is one of the well-known BIPs due to the adoption and usage of it by [Samourai Wallet](https://samouraiwallet.com/) under the name "[PayNym](https://samouraiwallet.com/paynym)". This proposal is similar to stealth addresses in that a single payment code can be used to derive unlinkable on-chain addresses, but differs in that it does not use different addressing formats on-chain and instead relies on a notification transaction to allow the recipient to find their funds on-chain.
 
@@ -54,11 +54,11 @@ PayNyms, despite being rejected/discouraged in BIP 47 have seen quite widespread
 
 ### Stealth Addresses - BIP 63
 
-> Status: Never accepted as a BIP despite being given a BIP number
+> ***Status:*** Never accepted as a BIP despite being given a BIP number
 
-> Pros: When enforced, prevents all links between off-chain addresses/pubkeys and on-chain one-time addresses; Breaks all address-based heuristics
+> ***Pros:*** When enforced, prevents all links between off-chain addresses/pubkeys and on-chain one-time addresses; Breaks all address-based heuristics
 
-> Cons: Wallet scanning now has to scan all transactions to validate which ones are owned by the user's private keys; Can no longer do simple address-based wallet sync
+> ***Cons:*** Wallets now have to scan all transactions to validate which ones are owned by the user's private keys; Can no longer do simple address-based wallet sync
 
 Stealth Addresses are a novel concept that allows a receiver to share or publish a single static address that senders can derive one-time addresses from, breaking any cryptographic links to the shared/published address on-chain. While this does add considerable overhead to wallet scan times (all transactions must be scanned to see what is owned by your private keys instead of just validating known addresses) it entirely breaks wallet clustering by addresses along with many other key heuristics.
 
@@ -70,9 +70,11 @@ Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, 
 
 ### PayJoin - BIP 78
 
-> Status: Draft
+> ***Status:*** Draft
 
-> Pros: Creates transactions that look normal but break common heuristics; 
+> ***Pros:*** Creates transactions that look normal but break common heuristics; Easy to perform when supported by the recipient
+
+> ***Cons:*** Requires hot wallet on the merchant/recipient side, cannot send to simple address etc.; Malicious sender can attempt to force recipient to reveal UTXOs (attack is mitigated if properly implemented)
 
 PayJoin may also be well-known to the Bitcoin privacy crowd as it has gotten some media and minor adoption despite it's official "Draft" status. PayJoin lets the sender and recipient of a transaction work together to build a combined transaction that includes a UTXO (or more) from both the sender and intended recipient of funds, obfuscating the true nature of the payment on-chain.
 
@@ -91,7 +93,11 @@ Although implemented in some wallets and tools, PayJoin usage unfortunately seem
 
 ### Peer-to-Peer Communication Encryption - BIP 151 and BIP 324
 
-> Status: Original BIP 151 withdrawn, new BIP 324 in draft
+> ***Status:*** Original BIP 151 withdrawn, new BIP 324 in draft
+
+> ***Pros:*** Prevents simple snooping by ISPs and mobile carriers; Prevents man-in-the-middle attacks by rogue nodes pretending to be your specified remote node; Can pin known-good nodes to ensure you have healthy nodes as peers
+
+> ***Cons:*** Increased overhead in p2p protocol; New DoS vectors created by the use of encryption; Does not fully prevent deep packet inspection by ISPs etc.
 
 Peer-to-peer communication encryption is a large and necessary step forward in securing the p2p network in Bitcoin against common attacks and providing basic privacy to those running a node from their ISP and other basic surveillance, and has been proposed for Bitcoin via BIPs 151 and 324.
 
@@ -109,19 +115,28 @@ p2p comms encryption is something that is not commonly done in the cryptocurrenc
 
 ### Dandelion - BIP 156
 
-> Status: Rejected
+> ***Status:*** Rejected
+
+> ***Pros (specifically Dandelion++ iteration):*** Prevents deterministic linking of transactions back to their originating node by active surveillance of the p2p network; Provides strong network-level privacy without necessitating use of an anonymity network (which have their own serious DoS/Sybil issues)
+
+> ***Cons (specifically Dandelion++ iteration):*** Transaction broadcast takes much longer (usually 1-1.5min for complete propogation instead of just a few seconds); Opens up new DoS vectors if using a malicious remote node and not your own
 
 Dandelion is an approach to bringing plausible deniability to the Bitcoin peer-to-peer network in a way that prevents others on the network from deterministically tying transactions with the originating node. It does this by selecting a set of nodes to transmit the transaction to in series (one at a time, called the "stem" phase) and then only transmit to the rest of the network after a pre-determined number of nodes have also transmitted the transaction (called the "fluff" phase).
 
 Dandelion++, an iteration that resolves many of the problems with the original Dandelion proposal, was implemented in Monero in 2020.
 
 - [Original Dandelion BIP - 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki)
+- [Dandelion++ journal article](https://arxiv.org/pdf/1805.11060.pdf)
 - ["Dandelion for Monero" - Monero Outreach](https://www.monerooutreach.org/stories/dandelion.html)
 - ["How Dandelion++ Keeps Monero's Transaction Origins Private" - LocalMonero](https://localmonero.co/knowledge/monero-dandelion)
 
 ### Taproot - BIP 341
 
-> Status: Draft (but actually not, as it's already deployed in Bitcoin via soft-fork)
+> ***Status:*** Draft (but actually not, as it's already deployed in Bitcoin via soft-fork)
+
+> ***Pros:*** Drastically improved privacy when using scripts (like multi-sig or Lightning channel opens/closes) assuming broad adoption; More scripting possibilities via Tapscript; Potential efficiency improvements, batching, etc.
+
+> ***Cons:*** Non-cooperative channel-close transactions must still reveal script, negating privacy gains in those situations
 
 Taproot is likely the most well-recognized BIP on this list, and has actually been implemented in Bitcoin despite still being marked as "Draft" in the BIP Github repository.
 
@@ -133,7 +148,7 @@ Once Taproot is usable for Lightning Network channel opens it will provide good 
 
 ### SNICKER
 
-> Status: Abandoned, never formally proposed for Bitcoin
+> ***Status:*** Abandoned, never formally proposed for Bitcoin
 
 As I don't know much about SNICKER I won't go into detail on my thoughts, but see the quote below for the summary of what the proposal was meant to do:
 
@@ -145,9 +160,13 @@ As far as I can tell the proposal has been abandoned since 2020.
 
 ### CoinSwap
 
-> Status: WIP, but never formally proposed for Bitcoin
+> ***Status:*** WIP, but never formally proposed for Bitcoin
 
-CoinSwap was a popular and oft-discussed proposal in 2020 to allow users to swap UTXOs (and thus their associated history), but was met with strong pushback as it does nothing to remove history or break deterministic links.
+> ***Pros:*** Appears to be a normal transaction type on-chain
+
+> ***Cons:*** Does not actually obfuscate or break any on-chain history, it merely attempts to break simple ownership heuristics; Allows those with tainted funds to swap for "clean" funds to the detriment of the swap participant; No clear privacy advantages in most situations
+
+CoinSwap was a popular and oft-discussed proposal in 2020 to allow users to swap UTXOs (and thus their associated history), but was met with strong push-back as it does nothing to remove history or break deterministic links.
 
 See the below quote for a simple summary of CoinSwap
 
@@ -160,7 +179,11 @@ It seemed that CoinSwap has been abandoned as there was no progress since 2020, 
 
 ### Silent Payments
 
-> Status: WIP, but never formally proposed for Bitcoin
+> ***Status:*** WIP, but never formally proposed for Bitcoin
+
+> ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Does not require on-chain notification transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}})
+
+> ***Cons:*** Currently completely incompatible with light-wallets; Adding a new Silent Payment code after IBD requires completely restarting IBD
 
 Silent Payments are all the rage in recent Bitcoin discussion, and are similar in some ways to BIP 47 [mentioned above]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}).
 
@@ -178,7 +201,11 @@ As the Lightning Network was originally designed as a tool for scalability and n
 
 ### Route Blinding
 
-> Status: WIP
+> ***Status:*** WIP
+
+> ***Pros:*** Prevents sender from ascertaining full route to recipient; Hides recipient node alias/pubkey; Provides much better recipient privacy overall vs current transparent routing methods; Can provide better payment success rate by providing local routing data in some specific scenarios
+
+> ***Cons:*** Can be difficult to craft blinded routes in specific routing graph scenarios; Can have a negative impact on payment success rate in specific scenarios
 
 The current Lightning Network suffers from severe issues centered around receiver privacy, and Route Blinding is one of the key proposals seeking to remedy at least a part of this issue.
 
@@ -193,9 +220,13 @@ Route blinding is still very much a work in progress but shows promise for allow
 
 ### Trampoline Onion Routing
 
-> Status: WIP
+> ***Status:*** WIP
 
-While not stricly a privacy improvement, Trampoline Onion Routing can provide better route privacy in some scenarios for the receiver and so is mentioned here. It can also be paired with route blinding to provide even better receive privacy, especially for use-cases where you cannot run a full node or construct entire routes yourself for whatever reason.
+> ***Pros:*** Can allow light-wallets to craft routes in a privacy-preserving way without a full route graph; Can be used to provide receiver privacy from the sender (but not the trampoline node AFAICT)
+
+> ***Cons:*** None that I know of at this time
+
+While not strictly a privacy improvement, Trampoline Onion Routing can provide better route privacy in some scenarios for the receiver and so is mentioned here. It can also be paired with route blinding to provide even better receive privacy, especially for use-cases where you cannot run a full node or construct entire routes yourself for whatever reason.
 
 The full privacy implications are still under consideration, but it will be an interesting proposal to follow along with.
 
@@ -205,7 +236,11 @@ The full privacy implications are still under consideration, but it will be an i
 
 ### Alias SCID
 
-> Status: WIP
+> ***Status:*** WIP
+
+> ***Pros:*** Prevents simple linking of payments to single node alias/pubkey by using a unique alias per channel/peer
+
+> ***Cons:*** None that I know of at this time
 
 One of the critical privacy issues in Lightning today is the fact that nodes have permanent aliases and pubkeys that are used for gossip and channel management, and as such any receipt of payments leaks your nodes alias and pubkey to the sender of the payment.
 
@@ -215,18 +250,28 @@ The key approach to resolving this issue in Lightning is something called "Alias
 
 ### Offers - BOLT 12
 
-> Status: WIP
+> ***Status:*** WIP
+
+> ***Pros:*** Drastically improved privacy and flexibility for payments as the recipient; Much smaller QR codes and much less data needed in the offer itself (as the necessary data is collected from the recipients node directly instead of being all included in the invoice as in BOLT 11 invoices)
+
+> ***Cons:*** None that I know of at this time
 
 BOLT 12 is a combination of many of the other proposed improvements and integrates them into a new and much more flexible invoice type for Lightning, also called an "offer". The implementation of BOLT 12 alongside route blinding and node alias SCIDs would be a big step forward for both privacy and user experience in Lightning, and is somewhat of the current holy grail of proposals.
 
 Be sure to keep an eye on its development if you use or are interested in the Lightning Network as it promises to fix many of the current issues.
 
 - [Website](https://bolt12.org/)
-- [Offers BOLT PR](https://github.com/lightning/bolts/pull/798)
+- [BOLT 12 - Offers BOLT PR](https://github.com/lightning/bolts/pull/798)
 
 ## Sidechains
 
 ### The Liquid Network
+
+> ***Status:*** Live since 2018
+
+> ***Pros:*** Mildly improved per-transaction privacy due to Confidential Transactions (but mostly useless due to almost no usage reducing crowd to hide in); Cheaper fees than on-chain
+
+> ***Cons:*** Custodial (via a federation); Almost no usage gives you almost no crowd to hide in; Past issues with "emergency" multisig being held by very few parties
 
 The Liquid Network is a Bitcoin-pegged and federated side-chain for Bitcoin that allows users to peg BTC to redeem it for L-BTC and then be able to transact on the Liquid Network.
 
@@ -241,6 +286,12 @@ But Liquid remains practically unused even after four years of being in the wild
 - [Official website](https://liquid.net/)
 
 ### FediMint
+
+> WIP
+
+> ***Pros:*** Very strong privacy when transacting within the side-chain; Interoperable with the Lightning Network without requiring each user to run a node/manage channels/etc.; Anyone can start a new minimint, not just specific people/groups; Can choose a specific minimint to used based on federation members reputation, trust, etc.; Can serve as a middle-ground between self-sovereign Lightning (Zeus, Core LN, LND, etc.) and "single-custodian" Lightning (Wallet of Satoshi, Cash App, Strike, etc.) while retaining user privacy from custodians
+
+> ***Cons:*** Custodial (via federations); Potential regulatory pressure on federation members due to custody/transfer of user's funds; Centralization of Lightning Network due to users not running their own node/managing channels/etc. and instead relying on federation Lightning services
 
 FediMint (and the specific initial implementation, minimint) is a relatively new proposal for building a federated Chaumian-blinded eCash as a side-chain to Bitcoin, denominated in Bitcoin. These federated side-chains would be relatively small, interoperable, and would compete on reputation, uptime, and fees.
 
