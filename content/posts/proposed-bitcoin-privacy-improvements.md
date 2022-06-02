@@ -26,7 +26,12 @@ This will by no means be an exhaustive list, and I could use any help I can get 
 
 > Status: Never formally proposed for Bitcoin
 
+> Pros: Drastically improved privacy against amount-based heuristics; enables greatly improved and more flexible app-layer privacy tools for Bitcoin (i.e. unequal output CoinJoins)
+
+> Cons: Supply auditability becomes more complex (but is still possible) and relies on more advanced cryptography
+
 Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are a technique used to blind the amounts in a transaction in way that is still verifiable and provable without revealing amounts to anyone outside of the transaction participants. Miners, nodes, and external observers can still validate that transactions do not create or destroy funds without knowing the true amounts being transferred.
+
 
 - [Initial proposal/investigation by Greg Maxwell](https://elementsproject.org/features/confidential-transactions/investigation)
 - [Confidential Transactions in Elements](https://elementsproject.org/features/confidential-transactions)
@@ -37,6 +42,10 @@ Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are 
 
 > Status: Unanimously discouraged for implementation
 
+> Pros: Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses)
+
+> Cons: Most versions require a notification transaction to be sent on-chain so that the recipient knows how to look for funds sent to them; Notification transaction can undermine privacy if done incorrectly
+
 The proposal for reusable payment codes is one of the well-known BIPs due to the adoption and usage of it by [Samourai Wallet](https://samouraiwallet.com/) under the name "[PayNym](https://samouraiwallet.com/paynym)". This proposal is similar to stealth addresses in that a single payment code can be used to derive unlinkable on-chain addresses, but differs in that it does not use different addressing formats on-chain and instead relies on a notification transaction to allow the recipient to find their funds on-chain.
 
 PayNyms, despite being rejected/discouraged in BIP 47 have seen quite widespread usage and have recently been implemented in [Sparrow Wallet](https://sparrowwallet.com/) and even by a Bitcoin mining pool, "[Lincoin](https://lincoin.com/)".
@@ -46,6 +55,10 @@ PayNyms, despite being rejected/discouraged in BIP 47 have seen quite widespread
 ### Stealth Addresses - BIP 63
 
 > Status: Never accepted as a BIP despite being given a BIP number
+
+> Pros: When enforced, prevents all links between off-chain addresses/pubkeys and on-chain one-time addresses; Breaks all address-based heuristics
+
+> Cons: Wallet scanning now has to scan all transactions to validate which ones are owned by the user's private keys; Can no longer do simple address-based wallet sync
 
 Stealth Addresses are a novel concept that allows a receiver to share or publish a single static address that senders can derive one-time addresses from, breaking any cryptographic links to the shared/published address on-chain. While this does add considerable overhead to wallet scan times (all transactions must be scanned to see what is owned by your private keys instead of just validating known addresses) it entirely breaks wallet clustering by addresses along with many other key heuristics.
 
@@ -58,6 +71,8 @@ Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, 
 ### PayJoin - BIP 78
 
 > Status: Draft
+
+> Pros: Creates transactions that look normal but break common heuristics; 
 
 PayJoin may also be well-known to the Bitcoin privacy crowd as it has gotten some media and minor adoption despite it's official "Draft" status. PayJoin lets the sender and recipient of a transaction work together to build a combined transaction that includes a UTXO (or more) from both the sender and intended recipient of funds, obfuscating the true nature of the payment on-chain.
 
