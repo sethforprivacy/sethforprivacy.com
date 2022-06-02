@@ -32,7 +32,6 @@ This will by no means be an exhaustive list, and I could use any help I can get 
 
 Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are a technique used to blind the amounts in a transaction in way that is still verifiable and provable without revealing amounts to anyone outside of the transaction participants. Miners, nodes, and external observers can still validate that transactions do not create or destroy funds without knowing the true amounts being transferred.
 
-
 - [Initial proposal/investigation by Greg Maxwell](https://elementsproject.org/features/confidential-transactions/investigation)
 - [Confidential Transactions in Elements](https://elementsproject.org/features/confidential-transactions)
 - [Ring Confidential Transactions - article on Monero's RingCT implementation of Confidential Transactions](https://eprint.iacr.org/2015/1098.pdf)
@@ -119,7 +118,7 @@ p2p comms encryption is something that is not commonly done in the cryptocurrenc
 
 > ***Pros (specifically Dandelion++ iteration):*** Prevents deterministic linking of transactions back to their originating node by active surveillance of the p2p network; Provides strong network-level privacy without necessitating use of an anonymity network (which have their own serious DoS/Sybil issues)
 
-> ***Cons (specifically Dandelion++ iteration):*** Transaction broadcast takes much longer (usually 1-1.5min for complete propogation instead of just a few seconds); Opens up new DoS vectors if using a malicious remote node and not your own
+> ***Cons (specifically Dandelion++ iteration):*** Transaction broadcast takes much longer (usually 1-1.5min for complete propagation instead of just a few seconds); Opens up new DoS vectors if using a malicious remote node and not your own
 
 Dandelion is an approach to bringing plausible deniability to the Bitcoin peer-to-peer network in a way that prevents others on the network from deterministically tying transactions with the originating node. It does this by selecting a set of nodes to transmit the transaction to in series (one at a time, called the "stem" phase) and then only transmit to the rest of the network after a pre-determined number of nodes have also transmitted the transaction (called the "fluff" phase).
 
@@ -263,7 +262,7 @@ Be sure to keep an eye on its development if you use or are interested in the Li
 - [Website](https://bolt12.org/)
 - [BOLT 12 - Offers BOLT PR](https://github.com/lightning/bolts/pull/798)
 
-## Sidechains
+## Side-chains
 
 ### The Liquid Network
 
