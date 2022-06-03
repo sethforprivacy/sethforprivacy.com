@@ -28,7 +28,7 @@ This will by no means be an exhaustive list, and I could use any help I can get 
 
 > ***Pros:*** Drastically improved privacy against amount-based heuristics; enables greatly improved and more flexible app-layer privacy tools for Bitcoin (i.e. unequal output CoinJoins)
 
-> ***Cons:*** Supply auditability becomes more complex (but is still possible) and relies on more advanced cryptography
+> ***Cons:*** Supply auditability becomes more complex (but is still possible) and relies on more advanced cryptography; Transaction sizes and verification times are both significantly increased
 
 Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are a technique used to blind the amounts in a transaction in way that is still verifiable and provable without revealing amounts to anyone outside of the transaction participants. Miners, nodes, and external observers can still validate that transactions do not create or destroy funds without knowing the true amounts being transferred.
 
@@ -49,6 +49,8 @@ The proposal for reusable payment codes is one of the well-known BIPs due to the
 
 PayNyms, despite being rejected/discouraged in BIP 47 have seen quite widespread usage and have recently been implemented in [Sparrow Wallet](https://sparrowwallet.com/) and even by a Bitcoin mining pool, "[Lincoin](https://lincoin.com/)".
 
+A [great summary of the three main reusable payment code schemes has been provided by Ruben Somsen](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a?permalink_comment_id=4013454#gistcomment-4013454), the author of [Silent Payments]({{< relref "#silent-payments" >}}) in the gist for [Reusable Taproot addresses](#reusable-taproot-addresses).
+
 - [Original Payment Code BIP - 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki)
 
 ### Stealth Addresses - BIP 63
@@ -61,7 +63,11 @@ PayNyms, despite being rejected/discouraged in BIP 47 have seen quite widespread
 
 Stealth Addresses are a novel concept that allows a receiver to share or publish a single static address that senders can derive one-time addresses from, breaking any cryptographic links to the shared/published address on-chain. While this does add considerable overhead to wallet scan times (all transactions must be scanned to see what is owned by your private keys instead of just validating known addresses) it entirely breaks wallet clustering by addresses along with many other key heuristics.
 
-Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, but were never adopted. Monero, on the other hand, includes Stealth Addresses as they were a core part of the original Cryptonote protocol that Monero was created from.
+Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, but were [abandoned as a BIP after `OP_RETURN` was changed](https://www.reddit.com/r/Bitcoin/comments/5xm9bt/comment/dejcjmw/?utm_source=share&utm_medium=web2x&context=3):
+
+> OP_RETURN got changed to 40 bytes at the last minute, preventing my stealth address standard from working, and moved on to work on other things. - u/petertodd
+
+While Dark Wallet did implement stealth addresses for Bitcoin, the wallet never officially launched and was abandoned. Monero, on the other hand, includes Stealth Addresses as they were a core part of the original Cryptonote protocol that Monero was created from.
 
 - [Original Stealth Address BIP - 63](https://github.com/genjix/bips/blob/master/bip-stealth.mediawiki)
 - ["How Monero Stealth Addresses Protect Your Identity" - LocalMonero](https://localmonero.co/knowledge/monero-stealth-addresses)
@@ -178,11 +184,11 @@ It seemed that CoinSwap has been abandoned as there was no progress since 2020, 
 
 ### Silent Payments
 
-> ***Status:*** WIP, but never formally proposed for Bitcoin
+> ***Status:*** WIP, not yet formally proposed for Bitcoin
 
 > ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Does not require on-chain notification transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}})
 
-> ***Cons:*** Currently completely incompatible with light-wallets; Adding a new Silent Payment code after IBD requires completely restarting IBD
+> ***Cons:*** Currently completely incompatible with light-wallets; Adding a new Silent Payment code after IBD requires completely restarting IBD; Requires constant scanning of the blockchain for new uses/transactions
 
 Silent Payments are all the rage in recent Bitcoin discussion, and are similar in some ways to BIP 47 [mentioned above]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}).
 
@@ -190,7 +196,41 @@ While they also offer the ability to share or publicize a single static payment 
 
 It will be interesting to see this proposal play out but so far the better option appears to be BIP 47 still.
 
+A [great summary of the three main reusable payment code schemes has been provided by Ruben Somsen](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a?permalink_comment_id=4013454#gistcomment-4013454), the author of Silent Payments in the gist for [Reusable Taproot addresses](#reusable-taproot-addresses).
+
 - [Silent Address proposal gist](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8)
+
+### Reusable Taproot addresses
+
+> ***Status:*** WIP, not yet formally proposed for Bitcoin
+
+> ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Combines first payment and notification into one "real" transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}); Notification transaction appears just like any other Taproot spend on-chain
+
+> ***Cons:*** Sender and receiver both must support and use Taproot; Sender needs to follow a special protocol to be able to recover from backup
+
+While this proposal bears many similarities to [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}) and [Silent Payments]({{< relref "#silent-payments" >}}), it leverages new capabilities in Taproot to essentially improve on the tradeoffs taken by BIP 47 reusable payment codes. A [great summary has been provided by Ruben Somsen](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a?permalink_comment_id=4013454#gistcomment-4013454), the author of [Silent Payments]({{< relref "#silent-payments" >}}) in the gist below:
+
+> ***Reusable Taproot addresses:***
+>
+> No continuous scanning of every transaction
+> One-time interaction with the recipient (stateful for sender: if they forget, they need to interact again)
+> No on-chain footprint
+> Sender needs to follow a special protocol to be able to recover from backup (this downside can be mitigated, see below)
+>
+> ***BIP 47:***
+>
+> No continuous scanning of every transaction
+> No interaction with the recipient
+> On-chain footprint (or alternatively one-time interaction and stateful backups)
+>
+> ***Silent Payments:***
+>
+> Continuous scanning of every transaction (increases cost of running full node)
+> No interaction with the recipient
+> No on-chain footprint
+
+- [Reusable Taproot addresses proposal gist](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a)
+- [Proof-of-concept implementation](https://github.com/w0xlt/reusable-taproot-addresses)
 
 ## Lightning Network
 
