@@ -212,22 +212,22 @@ While this proposal bears many similarities to [BIP 47]({{< relref "#reusable-pa
 
 > ***Reusable Taproot addresses:***
 >
-> No continuous scanning of every transaction
-> One-time interaction with the recipient (stateful for sender: if they forget, they need to interact again)
-> No on-chain footprint
-> Sender needs to follow a special protocol to be able to recover from backup (this downside can be mitigated, see below)
+> - No continuous scanning of every transaction
+> - One-time interaction with the recipient (stateful for sender: if they forget, they need to interact again)
+> - No on-chain footprint
+> - Sender needs to follow a special protocol to be able to recover from backup (this downside can be mitigated, see below)
 >
 > ***BIP 47:***
 >
-> No continuous scanning of every transaction
-> No interaction with the recipient
-> On-chain footprint (or alternatively one-time interaction and stateful backups)
+> - No continuous scanning of every transaction
+> - No interaction with the recipient
+> - On-chain footprint (or alternatively one-time interaction and stateful backups)
 >
 > ***Silent Payments:***
 >
-> Continuous scanning of every transaction (increases cost of running full node)
-> No interaction with the recipient
-> No on-chain footprint
+> - Continuous scanning of every transaction (increases cost of running full node)
+> - No interaction with the recipient
+> - No on-chain footprint
 
 - [Reusable Taproot addresses proposal gist](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a)
 - [Proof-of-concept implementation](https://github.com/w0xlt/reusable-taproot-addresses)
