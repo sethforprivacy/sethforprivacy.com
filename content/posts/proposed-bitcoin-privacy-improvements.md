@@ -159,9 +159,10 @@ As I don't know much about SNICKER I won't go into detail on my thoughts, but se
 
 > SNICKER (Simple Non-Interactive Coinjoin with Keys for Encryption Reused) is a simple method for allowing the creation of a two party coinjoin without any synchronisation or interaction between the participants. It relies on the idea of reused keys (either reused addresses, or identification of ownership of signed inputs and thus pubkeys in signatures).
 
-As far as I can tell the proposal has been abandoned since 2020.
+As far as I can tell the proposal has been abandoned since 2020 outside of a [partial implementation in JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/SNICKER.md).
 
 - [SNICKER proposal gist](https://gist.github.com/AdamISZ/2c13fb5819bd469ca318156e2cf25d79)
+- [Partial implementation of SNICKER in JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/SNICKER.md)
 
 ### CoinSwap
 
