@@ -2,7 +2,7 @@
 title: "Donations"
 date: 2022-06-14T10:53:50-04:00
 draft: false
-showToc: true
+showToc: false
 hidemeta: true
 aliases: ["/donate"]
 ---
