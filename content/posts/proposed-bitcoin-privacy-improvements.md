@@ -189,17 +189,19 @@ It seemed that CoinSwap has been abandoned as there was no progress since 2020, 
 
 > ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Does not require on-chain notification transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}})
 
-> ***Cons:*** Currently completely incompatible with light-wallets; Adding a new Silent Payment code after IBD requires completely restarting IBD; Requires constant scanning of the blockchain for new uses/transactions
+> ***Cons:*** Currently completely incompatible with light-wallets; Requires constant scanning of the blockchain for new uses/transactions
 
 Silent Payments are all the rage in recent Bitcoin discussion, and are similar in some ways to BIP 47 [mentioned above]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}).
 
-While they also offer the ability to share or publicize a single static payment code and receive payments that are not linkable on-chain, there remain serious tradeoffs in the approach that make light-wallet usage practically impossible and can require complete re-downloading of the Bitcoin blockchain to find new transactions for any new Silent Addresses.
+While they also offer the ability to share or publicize a single static payment code and receive payments that are not linkable on-chain, there remain serious tradeoffs in the approach that make light-wallet usage practically infeasible.
 
 It will be interesting to see this proposal play out but so far the better option appears to be BIP 47 still.
 
 A [great summary of the three main reusable payment code schemes has been provided by Ruben Somsen](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a?permalink_comment_id=4013454#gistcomment-4013454), the author of Silent Payments in the gist for [Reusable Taproot addresses](#reusable-taproot-addresses).
 
-- [Silent Address proposal gist](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8)
+- [Silent Payments proposal gist](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8)
+- [Silent Payments presentation](https://rumble.com/v12kuz7-bitcoin-silent-payments.html)
+- [Bitcoin, Explained 58: Silent Payments](https://www.youtube.com/watch?v=42PMLaz7Avk&t=20s)
 
 ### Reusable Taproot addresses
 
