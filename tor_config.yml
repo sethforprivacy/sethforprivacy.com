@@ -131,10 +131,14 @@ menu:
       name: About
       url: /about
       weight: 5
+    - identifier: donate
+      name: Donate
+      url: /donate
+      weight: 6
     - identifier: search
       name: Search
       url: /search
-      weight: 6
+      weight: 10
 
 privacy:
   disqus:
