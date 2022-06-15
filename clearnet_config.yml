@@ -73,9 +73,9 @@ params:
     - name: github
       url: "https://github.com/sethforprivacy"
     - name: monero
-      url: "https://sethforprivacy.com/about/#donations"
+      url: "https://sethforprivacy.com/donate"
     - name: bitcoin
-      url: "https://paynym.is/+fallingrecipe6C9"
+      url: "https://sethforprivacy.com/donate"
     - name: rss
       url: "/index.xml"
 
