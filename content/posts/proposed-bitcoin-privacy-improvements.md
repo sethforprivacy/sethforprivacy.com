@@ -187,15 +187,15 @@ It seemed that CoinSwap has been abandoned as there was no progress since 2020, 
 
 > ***Status:*** WIP, not yet formally proposed for Bitcoin
 
-> ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Does not require on-chain notification transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}})
+> ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Does not require on-chain notification transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}); Less risk of privacy "foot guns" vs BIP 47
 
-> ***Cons:*** Currently completely incompatible with light-wallets; Requires constant scanning of the blockchain for new uses/transactions
+> ***Cons:*** Currently incompatible with light-wallets; Requires constant scanning of the blockchain for new uses/transactions
 
-Silent Payments are all the rage in recent Bitcoin discussion, and are similar in some ways to BIP 47 [mentioned above]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}).
+Silent Payments are all the rage in recent Bitcoin discussion, and are similar in many ways to BIP 47 [mentioned above]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}), iterating on [Stealth Addresses]({{< relref "#stealth-addresses---bip-63" >}}) with an alternate set of tradeoffs vs BIP 47.
 
-While they also offer the ability to share or publicize a single static payment code and receive payments that are not linkable on-chain, there remain serious tradeoffs in the approach that make light-wallet usage practically infeasible.
+While they also offer the ability to share a single static payment code and receive payments that are not linkable on-chain, the key drawback in the approach versus BIP 47 is that the receiver must check every transaction on-chain after the payment code was generated/shared in order to find transactions sent to them. The main differentiator vs BIP 47 is that there are less privacy concerns (due to the lack of notification transaction) but a more difficult receiver experience.
 
-It will be interesting to see this proposal play out but so far the better option appears to be BIP 47 still.
+It will be interesting to see this proposal play out versus BIP 47, especially as BIP 47 has finally been seeing traction outside of just Samourai Wallet.
 
 A [great summary of the three main reusable payment code schemes has been provided by Ruben Somsen](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a?permalink_comment_id=4013454#gistcomment-4013454), the author of Silent Payments in the gist for [Reusable Taproot addresses](#reusable-taproot-addresses).
 
