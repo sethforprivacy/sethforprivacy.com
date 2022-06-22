@@ -202,6 +202,7 @@ A [great summary of the three main reusable payment code schemes has been provid
 - [Silent Payments proposal gist](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8)
 - [Silent Payments presentation](https://rumble.com/v12kuz7-bitcoin-silent-payments.html)
 - [Bitcoin, Explained 58: Silent Payments](https://www.youtube.com/watch?v=42PMLaz7Avk&t=20s)
+- ["Bitcoin Silent Payments and Secret Blinding Keys" - Bitcoin Magazine](https://bitcoinmagazine.com/technical/bitcoin-silent-payments-secret-keys)
 
 ### Reusable Taproot addresses
 
