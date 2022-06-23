@@ -17,6 +17,7 @@ This is a page to simply catalog and organize blog posts, guides, or podcast epi
 - [CoinDesk - A Step-by-Step Guide to Going Private](https://www.coindesk.com/layer2/privacyweek/2022/01/27/a-step-by-step-guide-to-going-private/)
 - [Crypto Voices - Show 120: Seth for Privacy - Opt Out](https://soundcloud.com/cryptovoices/show-120-seth-for-privacy-opt-out)
 - [Citadel Dispatch - e0.3.4 – mobile phone privacy with @sethforprivacy](https://citadeldispatch.com/cd34/)
+- [Litecoin Underground - Seth For Privacy (interview on personal privacy)](https://player.fm/series/litecoin-underground/seth-for-privacy)
 
 ### Monero
 
@@ -27,12 +28,15 @@ This is a page to simply catalog and organize blog posts, guides, or podcast epi
 - [LocalMonero - Contributing Back to Monero](https://localmonero.co/knowledge/contributing-to-monero)
 - [LocalMonero - Why (And How!) You Should Hold Your Own Keys](https://localmonero.co/knowledge/hold-your-keys)
 - [LocalMonero - Monero’s Ring Signatures vs CoinJoin Like in Wasabi](https://localmonero.co/knowledge/ring-signatures-vs-coinjoin)
+- [LocalMonero - How Monero Uniquely Enables Circular Economies](https://localmonero.co/knowledge/monero-circular-economies)
 - [getmonero.org - This Year in Monero - 2021](https://www.getmonero.org/2021/04/24/this-year-in-monero.html)
 
 ### Bitcoin
 
 - [MoneroTalk - Seth Simmons on Bitcoin Mining Censorship and More](https://www.monerotalk.live/seth-simmons-on-bitcoin-mining-censorship-and-more)
 - [Stephan Livera Podcast - SLP363 Seth For Privacy – Bitcoin & Fungibility Discussion](https://stephanlivera.com/episode/363/)
+- [Bitcoin Magazine - Reviewing Privacy-enhancing Proposals for Bitcoin](https://bitcoinmagazine.com/technical/list-of-bitcoin-privacy-proposals)
+- [Bitcoin Dad Pod - Interview: Seth For Privacy](https://bitcoindadpod.fireside.fm/15)
 
 # Conclusion
 
