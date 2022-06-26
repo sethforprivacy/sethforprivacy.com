@@ -15,7 +15,7 @@ tags:
 title: Building Monero's Circular Economy via Privacy Tools
 toc: true
 cover:
-    image: "/how-monero-uniquely-enables-circular-economies/1.png"
+    image: "/static/how-monero-uniquely-enables-circular-economies/1.png"
 ---
 
 {{< figure src="/how-monero-uniquely-enables-circular-economies/1.png" align="center" style="border-radius: 8px;" >}}
