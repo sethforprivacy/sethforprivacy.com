@@ -468,7 +468,7 @@ To work around this, you can take one of the following approaches
 
 - If you don't have a local unrestricted RPC node, you can instead manually sweep small amounts of outputs using [Feather Wallet](https://featherwallet.org/) or the Monero CLI wallet
 
-It's important to remember to *never* expose restricted RPC to the internet. If you run a node at home that you want to use for p2pool sweeping, be sure to not forward port `18080/tcp` to that host and only access it internally.
+It's important to remember to *never* expose unrestricted RPC to the internet. If you run a node at home that you want to use for p2pool sweeping, be sure to not forward port `18081/tcp` to that host and only access it internally.
 
 #### Sweeping all payouts with Feather Wallet
 
