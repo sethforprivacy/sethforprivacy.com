@@ -6,8 +6,6 @@ author: "Seth For Privacy"
 description: "This is a page to simply catalog and organize blog posts, guides, or podcast episodes that are outside of my own blog or podcast."
 ---
 
-# Introduction
-
 This is a page to simply catalog and organize blog posts, guides, or podcast episodes that are outside of my own blog or podcast.
 
 ## Content
@@ -30,6 +28,7 @@ This is a page to simply catalog and organize blog posts, guides, or podcast epi
 - [LocalMonero - Monero’s Ring Signatures vs CoinJoin Like in Wasabi](https://localmonero.co/knowledge/ring-signatures-vs-coinjoin)
 - [LocalMonero - How Monero Uniquely Enables Circular Economies](https://localmonero.co/knowledge/monero-circular-economies)
 - [getmonero.org - This Year in Monero - 2021](https://www.getmonero.org/2021/04/24/this-year-in-monero.html)
+- [What Bitcoin Did - Privacy on Monero vs Bitcoin with Seth for Privacy](https://www.whatbitcoindid.com/podcast/privacy-on-monero-vs-bitcoin)
 
 ### Bitcoin
 
@@ -37,7 +36,8 @@ This is a page to simply catalog and organize blog posts, guides, or podcast epi
 - [Stephan Livera Podcast - SLP363 Seth For Privacy – Bitcoin & Fungibility Discussion](https://stephanlivera.com/episode/363/)
 - [Bitcoin Magazine - Reviewing Privacy-enhancing Proposals for Bitcoin](https://bitcoinmagazine.com/technical/list-of-bitcoin-privacy-proposals)
 - [Bitcoin Dad Pod - Interview: Seth For Privacy](https://bitcoindadpod.fireside.fm/15)
+- [What Bitcoin Did - Privacy on Monero vs Bitcoin with Seth for Privacy](https://www.whatbitcoindid.com/podcast/privacy-on-monero-vs-bitcoin)
 
-# Conclusion
+## Conclusion
 
 If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
