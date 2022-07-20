@@ -1,12 +1,7 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-  {{- if site.Copyright }}
-  <span>{{ site.Copyright | markdownify }}</span>
-  {{- else }}
-  <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
-  {{- end -}}
   <span style="display: inline-block; margin-left: 1em;">
-    | Powered by
+    Powered by
     <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
     <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
   </span>
