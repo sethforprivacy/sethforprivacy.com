@@ -15,8 +15,6 @@ title: Run a Monero Node
 weight: 1
 ---
 
-# Introduction
-
 With the [ongoing network attacks in Monero]({{< ref "/content/posts/moneros-ongoing-network-attack.md" >}}), it's a great time for users to dive into running their [own node](https://www.monerooutreach.org/monero_best_practices/your_own_node.html).
 
 In this short post I'll detail how to easily run a Monero node on a Linux server, the most common OS for virtual private servers (VPS). I would highly recommend running either Debian or Ubuntu for your Linux distribution, and this guide will assume you are running one of those.
@@ -32,7 +30,7 @@ I will also assume in this guide that you have purchased and SSH'd into the VPS/
 
 If you're using your own hardware at home, this guide will still generally apply to you assuming you are running Ubuntu/Debian.
 
-# Recommended hardware
+## Recommended hardware
 
 - Full Node
   - 2+ vCPUs/cores
@@ -46,7 +44,7 @@ If you're using your own hardware at home, this guide will still generally apply
   
 [^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
-# Why run your own Monero node?
+## Why run your own Monero node?
 
 The Monero network relies on a distributed web of Monero nodes, each of which validate transactions, propagate transactions to the rest of the network, and helps new nodes easily and quickly synchronize to the current state of the network.
 
@@ -65,7 +63,7 @@ Deploying via Docker has a few key benefits, namely a simple and cross-OS compat
 
 *Note: If you'd love to deploy a node but this guide is still a bit too advanced for you, checkout [xmrcannon.net](https://xmrcannon.net/), a great community resource that allows you to pay in Monero to have a node spun up for you.*
 
-# Update and install required packages
+## Update and install required packages
 
 First we need to install a few tools we will need later:
 
@@ -85,7 +83,7 @@ su - $USER
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
 
-# Initial Hardening via UFW
+## Initial Hardening via UFW
 
 We will want to make sure that the system is hardened in a simple way by making sure that the firewall is locked down to only allow access to the ports necessary for SSH and `monerod`, using UFW.
 
@@ -111,7 +109,7 @@ sudo ufw allow 18089/tcp
 sudo ufw enable
 ```
 
-# Download and run monero via Docker
+## Download and run monero via Docker
 
 Choose the proper command set below depending on if you want to run a full node or a pruned node and whether you want to advertise your public restricted RPC node to allow other users to sync their wallets using your node or not:
 
@@ -176,13 +174,22 @@ To watch the logs for `monerod`, simply run:
 docker logs --follow monerod
 ```
 
-# Updating your Monero node
+## Running as a different user
+
+In situations where you need the daemon to be run as a different user, I have added [fixuid](https://github.com/boxboat/fixuid) to enable that. Much of the work for this was taken from cornfeedhobo's [docker-monero](https://github.com/cornfeedhobo/docker-monero), and enables you to specify a new user/group in your `docker run` or `docker-compose.yml` file to run as a different user.
+
+- In `docker run` commands, you can specify the user like this: `--user 1000:1000`
+- In `docker-compose.yml` files, you can specify the user like this: `user: ${FIXUID:-1000}:${FIXGID:-1000}`
+
+A great use-case for this is running with the daemon's files stored on an NFS mount, or running monerod on a Synology NAS.
+
+## Updating your Monero node
 
 As we are running Monero in a Docker container and have deployed Watchtower along with it, the node will automatically be restarted with the latest version of `monerod` whenever a new version is tagged in Github.
 
 Nothing else needs to be done manually!
 
-# Sending commands to your node
+## Sending commands to your node
 
 `monerod` supports sending commands locally, allowing you get additional info on the status of `monerod`, set bandwidth limits, set peer limits, etc.
 
@@ -253,25 +260,25 @@ A few of my most commonly used commands are:
 - `docker exec monerod /usr/local/bin/monerod print_net_stats`: print network statistics since `monerod` started, including received and sent traffic total, average rates, and the limits set
 - `docker exec monerod /usr/local/bin/monerod update check`: check if an updated version of `monerod` has been released
 
-# Port forwarding
+## Port forwarding
 
 If you decide to use this guide on a device on your home network, you will need to be sure to port forward `18080/tcp` and `18089/tcp` through your router or [use an anonymity network like Tor]({{< ref "#tor" >}}).
 
 A good central site with a lot of guides for specific routers can be found at [portforward.com](https://portforward.com/router.htm). Just make sure to select your proper router make and model, and then open 18080/18089 for TCP only.
 
-# Using anonymity networks
+## Using anonymity networks
 
-## Tor
+### Tor
 
 If you would like to also expose your RPC port over Tor as a Hidden Service, follow these few commands and you're all set. This allows you to access your RPC port entirely over Tor without ever even needing to go through exit nodes.
 
-### Run a Tor Docker container
+#### Run a Tor Docker container
 
 ```bash
 docker run -d --restart unless-stopped --link monerod:monerod --name tor --volume tor-keys:/var/lib/tor/hidden_service/ goldy/tor-hidden-service
 ```
 
-### Get the HiddenService address
+#### Get the HiddenService address
 
 ```bash
 docker exec -ti tor onions
@@ -279,13 +286,13 @@ docker exec -ti tor onions
 
 *Note: To test connectivity, simply visit `http://replacewithnewonionaddress:18089/get_info` in the Tor browser and make sure you get a block of text back.*
 
-# Connecting to your new remote node
+## Connecting to your new remote node
 
 This will depend on the wallet you've chosen to use, but usually just entails specifying the IP address of your node (either your home IP address or that of your VPS-provided host) or Onion address.
 
 An example of how to do this in the main desktop wallet [is provided here.](https://www.getmonero.org/resources/user-guides/remote_node_gui.html)
 
-# A few helpful Linux CLI tools
+## A few helpful Linux CLI tools
 
 A few of my favorite tools for general Linux CLI usage are below, hopefully they will help you out getting more comfortable with the CLI or keeping a closer eye on your node!
 
@@ -298,7 +305,7 @@ A few of my favorite tools for general Linux CLI usage are below, hopefully they
 - [multitail](https://www.vanheusden.com/multitail/)
   - a much more fully-featured way to view logs (especially more than one at a time)
 
-# Conclusion
+## Conclusion
 
 Hopefully this guide simplified the process of setting up a remote node on a VPS, and many more similar guides should be popping up shortly.
 
