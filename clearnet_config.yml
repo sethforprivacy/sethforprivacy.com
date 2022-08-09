@@ -7,6 +7,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+pygmentsUseClasses: true
 
 minify:
   disableXML: true
