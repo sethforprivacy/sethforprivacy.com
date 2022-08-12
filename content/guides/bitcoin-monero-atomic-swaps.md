@@ -42,7 +42,7 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
 
 # Getting the tools
 
-1. Download the latest release of the `swap` tool, i.e. `swap_0.10.0_Linux_x86_64.tar`
+1. Download the latest release of the `swap` tool, i.e. `swap_0.11.0_Linux_x86_64.tar`
 
     <https://github.com/comit-network/xmr-btc-swap/releases/latest>
 
@@ -51,7 +51,7 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
 
     ```bash
     cd ~/Downloads
-    tar xvf swap_0.10.0_Linux_x86_64.tar
+    tar xvf swap_0.11.0_Linux_x86_64.tar
     ```
 
 3. Verify the binary is working properly
