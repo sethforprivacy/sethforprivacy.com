@@ -277,6 +277,159 @@ Key areas that need improvement:
 - Monero acceptance relies *solely* on the Kraken API
   - Allowing alternate APIs to be used, even just as fall-back APIs to gather price data would allow shop owners to continue accepting Monero for payments even if Kraken's API is unavailable
 
+## Troubleshooting
+
+### Fixing issues with permissions on BTCPay Server Monero daemons
+
+A [recent change](https://github.com/monero-project/monero/commit/602926fe9d2dabb099a32313175a4acb84846cd9) to `monerod` makes it write SSL certs to disk in its data directory, something that can fail if the permissions on the data directory are incorrect. You can follow the steps here to correct those issues and get `monerod` back up and running.
+
+#### From the `monerod` container
+
+##### Exec into monerod container
+
+```bash
+docker exec -ti btcpayserver_monerod bash
+cd ~
+```
+
+##### List permissions on cert files
+
+```bash
+monero@64bc4693c90c:~$ ls -alF .bitmonero/
+total 17652
+drwxr-xr-x 3 monero monero     4096 Jul 21 12:20 ./
+drwxr-xr-x 3 monero monero     4096 Jul 21 06:28 ../
+-rw-r--r-- 1 monero monero 17872897 Aug 15 20:33 bitmonero.log
+drwxr-xr-x 2 monero monero     4096 Jul 12 06:11 lmdb/
+-rw-r--r-- 1 monero monero   174456 Aug 15 20:30 p2pstate.bin
+-r--r--r-- 1 root   root     1606 Jul 21 12:20 rpc_ssl.crt
+-r-------- 1 root   root     3268 Jul 21 12:20 rpc_ssl.key
+```
+
+##### Set proper permissions
+
+```bash
+chmod 444 .bitmonero/rpc_ssl.crt
+chown monero:monero .bitmonero/rpc_ssl.crt
+chmod 400 .bitmonero/rpc_ssl.key
+chown monero:monero .bitmonero/rpc_ssl.key
+```
+
+##### Verify proper permissions
+
+```bash
+monero@64bc4693c90c:~$ ls -alF .bitmonero/
+total 17652
+drwxr-xr-x 3 monero monero     4096 Jul 21 12:20 ./
+drwxr-xr-x 3 monero monero     4096 Jul 21 06:28 ../
+-rw-r--r-- 1 monero monero 17872897 Aug 15 20:33 bitmonero.log
+drwxr-xr-x 2 monero monero     4096 Jul 12 06:11 lmdb/
+-rw-r--r-- 1 monero monero   174456 Aug 15 20:30 p2pstate.bin
+-r--r--r-- 1 monero monero     1606 Jul 21 12:20 rpc_ssl.crt
+-r-------- 1 monero monero     3268 Jul 21 12:20 rpc_ssl.key
+```
+
+##### If there are no cert files present
+
+If there are no cert files present already, you will need to fix permissions on the directory itself so `monerod` can create the new files:
+
+```bash
+chown monero:monero .bitmonero
+```
+
+#### From the host OS
+
+##### List permissions on cert files
+
+```bash
+sudo ls -lan /var/lib/docker/volumes/generated_xmr_data/_data
+total 17660
+drwxr-xr-x 3 101 101     4096 Jul 21 12:20 .
+drwx-----x 3   0   0     4096 May 25 15:21 ..
+-rw-r--r-- 1 101 101 17877166 Aug 16 17:29 bitmonero.log
+drwxr-xr-x 2 101 101     4096 Jul 12 06:11 lmdb
+-rw-r--r-- 1 101 101   177101 Aug 16 17:31 p2pstate.bin
+-r--r--r-- 1 0   0     1606 Jul 21 12:20 rpc_ssl.crt
+-r-------- 1 0   0     3268 Jul 21 12:20 rpc_ssl.key
+```
+
+##### Set proper permissions
+
+```bash
+sudo chmod 444 /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.crt
+sudo chown monero:monero /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.crt
+sudo chmod 400 /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.key
+sudo chown monero:monero /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.key
+```
+
+##### Verify proper permissions
+
+```bash
+sudo ls -lan /var/lib/docker/volumes/generated_xmr_data/_data
+total 17660
+drwxr-xr-x 3 101 101     4096 Jul 21 12:20 .
+drwx-----x 3   0   0     4096 May 25 15:21 ..
+-rw-r--r-- 1 101 101 17877166 Aug 16 17:29 bitmonero.log
+drwxr-xr-x 2 101 101     4096 Jul 12 06:11 lmdb
+-rw-r--r-- 1 101 101   177101 Aug 16 17:31 p2pstate.bin
+-r--r--r-- 1 101 101     1606 Jul 21 12:20 rpc_ssl.crt
+-r-------- 1 101 101     3268 Jul 21 12:20 rpc_ssl.key
+```
+
+##### If there are no cert files present
+
+If there are no cert files present already, you will need to fix permissions on the directory itself so `monerod` can create the new files:
+
+```bash
+sudo chown 101:101 /var/lib/docker/volumes/generated_xmr_data/_data
+```
+
+##### Other notes
+
+- If you can't exec into the container because it's crashing, you can do the same on the local filesystem by finding the bind mounted folder, likely `/var/lib/docker/volumes/generated_xmr_data/_data` and performing the steps above on it from the host OS
+- If you get a permission error trying to set permissions above, make sure to run the `chmod` and `chown` commands as `sudo`
+
+### Replacing Monero view-only wallet files
+
+Occasionally you can run into issues with the Monero wallet files being corrupted or having incorrect permissions, or you simply want to migrate to a new wallet which unfortunately must be done manually for now.
+
+#### Delete all current wallet files
+
+***NOTE: Be sure you do not need these wallet files before performing this step!***
+
+```bash
+sudo rm /var/lib/docker/volumes/generated_xmr_wallet/_data/*
+```
+
+#### Upload new wallet files and password file
+
+Place the new wallet files on the host OS file system, and then do the following (replace the first set of filenames if yours do not match):
+
+```bash
+docker cp btcpay_monero_view_only btcpayserver_monero_wallet:/wallet/wallet
+docker cp btcpay_monero_view_only.keys btcpayserver_monero_wallet:/wallet/wallet.keys
+```
+
+You also need to set the wallet password via a password file:
+
+```bash
+echo "PASSWORD_HERE" > password
+docker cp password btcpayserver_monero_wallet:/wallet/password
+```
+
+#### Set permissions on the new wallet files
+
+```bash
+sudo chmod 666 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet.keys /var/lib/docker/volumes/generated_xmr_wallet/_data/password
+sudo chown 101:101 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet
+```
+
+You may also need to restart BTCPay or the Monero wallet container, but usually it should work without that. If not, you can restart the wallet container with:
+
+```bash
+docker restart btcpayserver_monero_wallet
+```
+
 ## Conclusion
 
 A huge, huge thank you to the contributors who have made BTCPay Server possible and who continue to improve it, and to those in the space contributing financially to the project to ensure it continues to grow.
