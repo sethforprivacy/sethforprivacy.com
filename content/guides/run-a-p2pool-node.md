@@ -39,8 +39,8 @@ I will assume in this guide that you have purchased and SSH'd into the VPS/host 
 
 - [Hosting services accepting Monero](https://www.getmonero.org/community/merchants/#hosting)
   - These are some options available for hosting a VPS while paying with Monero, and each come with pro's and con's.
-- [Hetzner Dedicated Servers](https://www.hetzner.com/dedicated-rootserver)
-  - A solid and cheap dedicated server provider based out of Germany, they do not accept Monero (yet!) but are a great choice for a high-performance node.
+- [Joe's Datacenter](https://joesdatacenter.com/)
+  - A solid and cheap VPS and dedicated server provider based out of the US, they accept Bitcoin but do not accept Monero (yet!) and are a great choice for a high-performance node.
 - [Simple Linode deployment guide](https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/)
   - If you use Linode, please consider using [my referral link](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d) so we both get free credits.
 
