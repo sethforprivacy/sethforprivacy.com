@@ -153,6 +153,8 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 
 ### Privacy-preserving chat servers
 
+- [Matrix](https://matrix-org.github.io/synapse/latest/welcome_and_overview.html)
+  - More info: <https://optoutpod.com/posts/come-join-opt-out-on-matrix/>
 - [Cwtch Group Server (Private p2p messenger)](cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion)
   - Address: `cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion`
   - Server bundle:
@@ -162,31 +164,45 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
     ```
 
   - More info: <https://git.openprivacy.ca/cwtch.im/server>
-- Matrix - Coming soon!
-  - More info: <https://matrix-org.github.io/synapse/latest/welcome_and_overview.html>
 
 ### High-Performance Monero Nodes
 
-I host two high-performance Monero nodes that are free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
+I host a high-performance Monero node that is free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
+
+#### Mainnet
 
 - RPC (use this address in your wallet for a remote node):
   - `node.sethforprivacy.com`
     - Port `18089`
-  - `node2.sethforprivacy.com`
-    - Port `18089`
   - `sfprpc5klzs5vyitq2mrooicgk2wcs5ho2nm3niqduvzn5o6ylaslaqd.onion`
-    - Port `18089`
-  - `sfprpc2fws6ltnq4hyr7lvpul3nank5layd7q7tyc5h4gy4h77gtabad.onion`
     - Port `18089`
 - p2p:
   - `node.sethforprivacy.com`
     - Port `18080`
-  - `node2.sethforprivacy.com`
-    - Port `18080`
   - `sfpp2p7wnfjv3lrvfan4jmmkvhnbsbimpa3cqyuf7nt6zd24xhcqcsyd.onion`
     - Port `18080`
-  - `sfpp2p2tlgpsjxygeknkkfq4ho5uco56zvp2whn7bz2v7xbyqoslofqd.onion`
-    - Port `18080`
+
+#### Testnet
+
+Only use these nodes for testing out Monero software, these are testnet-only!
+
+- RPC (use this address in your wallet for a remote node):
+  - `node.sethforprivacy.com`
+    - Port `28089`
+- p2p:
+  - `node.sethforprivacy.com`
+    - Port `28080`
+
+#### Stagenet
+
+Only use these nodes for testing out Monero software, these are stagenet-only!
+
+- RPC (use this address in your wallet for a remote node):
+  - `node.sethforprivacy.com`
+    - Port `38089`
+- p2p:
+  - `node.sethforprivacy.com`
+    - Port `38080`
 
 ### Tor Relay/Guard Node
 
@@ -195,38 +211,19 @@ I also host a Tor relay/guard node, available at the below address:
 - `tor.sethforprivacy.com:443`
   - [Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
 
-### Atomic Swap Rendezvous Node
-
-The current atomic swap protocol provided by COMIT network uses rendezvous nodes as decentralized servers for discovering swap partners, offers, etc.
-
-I run one of these nodes that you can use to discover current sellers of Monero, and you can use it as shown below:
-
-Rendezvous node:
-
-- `/dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6BX8FuwajdvktSzmMg4U5ZX2uYZjHeu`
-
-```bash
-./swap list-sellers --rendezvous-point /dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6BX8FuwajdvktSzmMg4U5ZX2uYZjHeu
-```
-
-If you run an ASB, please consider switching to using my rendezvous node instead of the original testing node:
-
-Set `rendezvous_point` in your ASB `config.toml` to:
-
-```conf
-rendezvous_point = "/dnsaddr/swap.sethforprivacy.com/p2p/12D3KooWCULyZKuV9YEkb6BX8FuwajdvktSzmMg4U5ZX2uYZjHeu"
-```
-
 ### Monero Docker Images
 
 I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
 
-- [Monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
+- [monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
+- [monero-wallet-rpc Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monero-wallet-rpc)
 - [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)
 
 ### Github Repositories
 
 - [simple-monerod-docker](https://github.com/sethforprivacy/simple-monerod-docker)
+  - A simple and straightforward Dockerized monerod built from source and exposing standard ports.
+- [simple-monero-wallet-rpc-docker](https://github.com/sethforprivacy/simple-monero-wallet-rpc-docker)
   - A simple and straightforward Dockerized monerod built from source and exposing standard ports.
 - [p2pool-docker](https://github.com/sethforprivacy/p2pool-docker)
   - A simple and straightforward Dockerized p2pool built from source and exposing standard ports.
