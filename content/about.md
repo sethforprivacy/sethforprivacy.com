@@ -172,6 +172,9 @@ I host a high-performance Monero node that is free to use for anyone, both as a 
 #### Mainnet
 
 - RPC (use this address in your wallet for a remote node):
+  - `https://node.sethforprivacy.com`
+    - Port `443` (should not normally need to specify port)
+    - Use this whenever possible for properly terminated/certified SSL
   - `node.sethforprivacy.com`
     - Port `18089`
   - `sfprpc5klzs5vyitq2mrooicgk2wcs5ho2nm3niqduvzn5o6ylaslaqd.onion`
