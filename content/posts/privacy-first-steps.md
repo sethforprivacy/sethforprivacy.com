@@ -39,13 +39,11 @@ Not only is this type of community beneficial along the way, they can often help
 
 Before you go any further, I'd recommend this step be priority number one for you no matter your own personal threat model. Below are some recommended communities that I have found helpful along the way:
 
-- [Techlore's Matrix room](https://matrix.to/#/+techlore-official:matrix.org)
+- [Techlore's Forums](https://discuss.techlore.tech/)
   - [Discord](https://discord.gg/Xd7baMSpqS)
 - [Opt Out Podcast Matrix room](https://matrix.to/#/#opt-out-podcast:matrix.optoutpod.com)
   - [A guide to joining Matrix on the Opt Out homeserver](https://optoutpod.com/posts/come-join-opt-out-on-matrix/)
 - [TheNewOil Matrix room](https://matrix.to/#/#TheNewOil:matrix.org)
-- [Bitcoin Freedom and Tech Matrix room](https://matrix.to/#/#Bitcoin:usethe.tools)
-  - This room has been an incredible resource for me throughout the time I've been there, and is much more broad in scope than just Bitcoin. Highly recommend joining!
 
 ## 2. Use a privacy-preserving browser
 
@@ -104,13 +102,14 @@ Each of the alternatives have some key pros and cons, and are really up to perso
 
 - [Brave Search](https://search.brave.com/)
   - Unlike the other options here (and other popular ones), Brave is building their own search engine from the ground up instead of just proxying results from Google or Microsoft. I've been testing this out lately as a replacement for DuckDuckGo and have been thoroughly impressed. Solid results, great features (bangs!), and no issues using with a VPN (unlike Startpage).
+- [Searx](https://searx.github.io/searx/)
+  - Searx is probably the most hard-core of the options, but provides a very solid experience and search results across multiple sources. The more I use it the more impressed I am with it!
+  - My public instance is available at <https://searx.sethforprivacy.com>
+  - [Public instances](https://searx.space/)
 - [Whoogle](https://github.com/benbusby/whoogle-search)
   - I personally host a [public instance of Whoogle](https://search.sethforprivacy.com/) and really appreciate the ability to get Google search results without revealing IP address and without the extra bloat of Google searches. It's also quite easy to self-host, if desired.
   - [Public instances](https://github.com/benbusby/whoogle-search#public-instances)
   - [Opt Out episode on Whoogle](https://optoutpod.com/episodes/s2e12-whoogle/)
-- [Searx](https://searx.github.io/searx/)
-  - Searx is probably the most hard-core of the options, but provides a very solid experience and search results across multiple sources.
-  - [Public instances](https://searx.space/)
 
 ## 6. Switch yourself and your friends/family to a more private messaging service/app
 
@@ -162,6 +161,8 @@ I have used both of the below VPNs extensively and they also come recommended by
   - tl;dr -- trustworthy team, incredible cross-platform clients, strong reputation, extremely honest about shortcomings of VPNs generally, externally audited, fast, Wireguard support
 - [Mullvad](https://mullvad.net/en/)
   - Mullvad is an amazing VPN provider and have long been a recommendation of mine. They have a long and storied history, great service, accountless setup, and solid cross-platform clients.
+- [Proton VPN](https://protonvpn.com/)
+  - Proton have proven themselves time and time again to be a focused and dedicated company, and their VPN service reflects that. It works extremely well, has a generous free plan, and comes bundled with most of their email plans for very cheap.
 
 To help you make your own well-informed choices, here are some excellent resources:
 
@@ -181,7 +182,7 @@ The only real recommendations I have here are below, but note that for some thre
   - I've long been a huge fan of CalyxOS, have run it for almost a year, and am a financial supporter of the [Calyx Institute](https://calyxos.org/), the non-profit organization behind CalyxOS. CalyxOS is an incredibly powerful tool, one that takes the open-source Android operating system created by Google and strips Google's tracking and services out of it, and then builds it back up with a focus on user privacy and FOSS app stores (like F-Droid).
   - For more on CalyxOS and my experience/recommendations, see my blog post ["Switching to CalyxOS"]({{< ref "/content/posts/switching-to-calyxos.md" >}}).
 - [GrapheneOS](https://grapheneos.org/)
-  - I've been testing out GrapheneOS for the last few months and am thoroughly impressed with how far the usability has come over the past 6mo or so. The Google Compatibility Layer enables microG-like support for apps, and works seamlessly once installed properly. If you want a bit more security to go with the privacy, consider trying out GrapheneOS.
+  - I've been testing out GrapheneOS for the last few months and am thoroughly impressed with how far the usability has come over the past 6mo or so. The Google Compatibility Layer enables microG-like support for apps and works seamlessly once installed properly. If you want a bit more security to go with the privacy, consider trying out GrapheneOS.
 
 ## 10. Use a more privacy-conscious desktop operating system
 
