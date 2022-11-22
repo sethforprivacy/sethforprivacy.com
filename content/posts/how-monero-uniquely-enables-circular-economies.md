@@ -100,7 +100,7 @@ While you may not think of Telegram as a "privacy tool" due to it's lack of stro
 
 {{< figure src="/how-monero-uniquely-enables-circular-economies/9.png" align="center" style="border-radius: 8px;" >}}
 
-Signal is one of my favorite privacy tools, and is a no-brainer to include on this list. The strong default privacy, simple UX, and broad name recognition make it an excellent fit for those who go deeper into these new alternate economies. One of my favorite ways to use it is to become "ethical Vekslaks", a term I learned from [Juraj Bednar]() when I got the privilege of interviewing him on [Opt Out](https://optoutpod.com) in season 1. An ethical Vekslak is someone who steps into the gap and helps to on and off-board people to these economies by helping them exchange fiat currency for cryptocurrencies like Monero. For more on the concept, listen to the episode I did with him:
+Signal is one of my favorite privacy tools, and is a no-brainer to include on this list. The strong default privacy, simple UX, and broad name recognition make it an excellent fit for those who go deeper into these new alternate economies. One of my favorite ways to use it is to become "ethical Vekslaks", a term I learned from [Juraj Bednar](https://optoutpod.com/guests/juraj-bednar) when I got the privilege of interviewing him on [Opt Out](https://optoutpod.com) in season 1. An ethical Vekslak is someone who steps into the gap and helps to on and off-board people to these economies by helping them exchange fiat currency for cryptocurrencies like Monero. For more on the concept, listen to the episode I did with him:
 
 - [Parallel econonomies and ethical Veksláks w/ Juraj Bednar](https://optoutpod.com/episodes/s1e07-juraj-bednar/)
 
