@@ -39,7 +39,6 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 - A user's Binance SGD account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Twitter Source](https://twitter.com/bittlecat/status/1207621591820951552)
-  {{< tweet user="bittlecat" id="1207621591820951552" >}}
 - A user's Paxful account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/czext2/paxful_account_was_frozen_due_to_coinjoin/)
 - A user's Bitfinex account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
@@ -166,7 +165,6 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - Only "virgin" Bitcoin mined by state-sanctioned miners can be used in Iran:  
   - [News Source](https://bitcoinmagazine.com/culture/iran-using-cryptocurrency-for-imports)
   - [Twitter Source](https://twitter.com/Fatalmeh/status/1390338789462224908)
-    {{< tweet user="Fatalmeh" id="1390338789462224908" >}}
 
 ## General Fungibility Issues
 
