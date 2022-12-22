@@ -12,9 +12,9 @@ description: "A list of Bitcoin proposals and ideas to improve privacy that are 
 draft: false
 ---
 
-[Ragnar Lifthrasir asked for a list of Bitcoin proposals](https://twitter.com/Ragnarly/status/1531667098522382336) and ideas to improve privacy that either are still a work in progress, were abandoned or never implemented, or failed to make an impact, and so here is my attempt at just that.
+Ragnar Lifthrasir asked for a list of Bitcoin proposals and ideas to improve privacy that either are still a work in progress, were abandoned or never implemented, or failed to make an impact, and so here is my attempt at just that.
 
-{{< tweet user="Ragnarly" id="1531667098522382336" >}}
+
 
 This will by no means be an exhaustive list, and I could use any help I can get keeping it up to date or finding historical proposals that have fallen out of favor. The sections below will be broken down by project or implementation and in order of proposal (where possible).
 
