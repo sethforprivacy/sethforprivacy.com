@@ -207,12 +207,60 @@ Only use these nodes for testing out Monero software, these are stagenet-only!
   - `node.sethforprivacy.com`
     - Port `38080`
 
+### High-performance Bitcoin Fulcrum Node
+
+I host a high-performance Bitcoin node (using [Fulcrum](https://github.com/cculianu/Fulcrum)) that anyone is free to use.
+
+This is run using a slightly tweaked version of this repo: <https://github.com/sethforprivacy/easy-fulcrum>
+
+***NOTE: While I am committed to not logging, it's very important with Bitcoin that you host your own node if at all possible! Using my node could give me visibility into large amounts of information on how you use Bitcoin if I was malicious.***
+
+- Clearnet:
+  - `ssl://fulcrum.sethforprivacy.com:50002`
+- Tor:
+  - `ssl://iuo6acfdicxhrovyqrekefh4rg2b7vgmzeeohc5cbwegawwhqpdxkgad.onion:50002`
+
+You can verify the certificate provided matches the below, and if it doesn't match for any reason ***stop using the server and notify me ASAP!***:
+
+{{< collapse summary="Fulcrum certificate" >}}
+
+```plaintext
+-----BEGIN CERTIFICATE-----
+MIIEAzCCAuugAwIBAgIUJl9/aBlMpXr4BPwuIPwS1tIBJAMwDQYJKoZIhvcNAQEL
+BQAwgZAxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApTb21lLVN0YXRlMRkwFwYDVQQK
+DBBTZXRoIEZvciBQcml2YWN5MSMwIQYDVQQDDBpmdWxjcnVtLnNldGhmb3Jwcml2
+YWN5LmNvbTEsMCoGCSqGSIb3DQEJARYdZnVsY3J1bS5ndW04bkBzaW1wbGVsb2dp
+bi5jb20wHhcNMjIxMjIzMTUzMTQxWhcNMzIxMjIwMTUzMTQxWjCBkDELMAkGA1UE
+BhMCVVMxEzARBgNVBAgMClNvbWUtU3RhdGUxGTAXBgNVBAoMEFNldGggRm9yIFBy
+aXZhY3kxIzAhBgNVBAMMGmZ1bGNydW0uc2V0aGZvcnByaXZhY3kuY29tMSwwKgYJ
+KoZIhvcNAQkBFh1mdWxjcnVtLmd1bThuQHNpbXBsZWxvZ2luLmNvbTCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMh3686r7s9J6wwhX1UTMRPF1xvGua0s
+k6mcf6wNzpqhb+CAD/P4/gs1r4F8r7s4zdHpaD6Ll6kBo16QWnLKXMGd+XKCYRjh
+8ByVXhi/eLRPBC8D9BoYj19/xzsj8uWIwqO3NR8ze2BXNBKX99pH6cfBv3jD/Zt9
+tVWBvS2hK5P2jYpK30kQJgPvKxnrRkV6H7dslOyOFku6uknYVtQ74cYYBeD74lVv
+CU/XhAaHnco8mzY4Yk8fvwGgbmGoLZ1IhyvjJtxo3zL/Iqr8YC8XnyzJSydB+ct5
+gcjtcRRlxhynJE/Rv8rvZ0omHvkplyPk+gaQJb18Cn29bLmS094F778CAwEAAaNT
+MFEwHQYDVR0OBBYEFI+aT0QwxcinlYK8b4blPAHPnweuMB8GA1UdIwQYMBaAFI+a
+T0QwxcinlYK8b4blPAHPnweuMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL
+BQADggEBAHSYJUqXNGsQmWNNiodlOJicWaHWNU61Xca91hC69/TMYYbU8j/bxY/d
+TpJs34uPMyV421uMoQsCynA/q+GfbEjgvqnyvZj178Lq+WhRXrWOgMQmLMktWpP9
+oepQLk9pakXFluMU6r8NMtd30jnhJEo2yyierPtSpQN1Ow9WzngDgihXXbTRPBL1
+fsoYklP755SRD3XGJ566G2VimDicoOyxGM8Ddvk+500wcoTzCf7LOVqO3N3MFXyQ
+fm6ClK6S1JWRJ//EubMwyfsvgpQezpjFBnP1Vn7p8UsvXVE6lhfYwpZqzqxjKWhh
+fo/Lj1BRvnJa0zzXyuAI+5so7Kh3/Ts=
+-----END CERTIFICATE-----
+```
+
+{{< /collapse >}}
+
+To verify this certificate in Sparrow, simply save the certificate text above as a `.pem` file on your computer and then select it in the Sparrow server dialogue.
+
 ### Tor Relay/Guard Node
 
 I also host a Tor relay/guard node, available at the below address:
 
-- `tor.sethforprivacy.com:443`
-  - [Node Statistics (Nickname: torsethforprivacy)](https://metrics.torproject.org/rs.html#details/3CCEF96871A49AC06149E4AA8E14D270D881F6D3)
+- `tor.sethforprivacy.com:8443`
+  - [Node Statistics (Nickname: sethforprivacy)](https://metrics.torproject.org/rs.html#details/79E2258804C826FE2927D0E1540DE42DBE104638)
 
 ### Monero Docker Images
 
