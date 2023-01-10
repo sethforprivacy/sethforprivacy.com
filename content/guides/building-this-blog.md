@@ -251,7 +251,7 @@ params:
 
   socialIcons:
     - name: email
-      url: "mailto:seth@sethforprivacy.com"
+      url: "mailto:sethforprivacy.vqhyi@simplelogin.com"
     - name: twitter
       url: "https://twitter.com/sethforprivacy"
     - name: matrix
