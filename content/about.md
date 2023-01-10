@@ -25,7 +25,7 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 - [Briar](briar://acydkymetdoh3bmygrvjduh6atgg54eomiwxa2raxerkcgs4sxxhk) - `briar://acydkymetdoh3bmygrvjduh6atgg54eomiwxa2raxerkcgs4sxxhk`
 - [Matrix](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com) - `@sethforprivacy:matrix.optoutpod.com`
 - [Twitter](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
-- [Email](mailto:seth@sethforprivacy.com) - `seth (at) sethforprivacy (dot) com`
+- [Email](mailto:sethforprivacy.vqhyi@simplelogin.com) - `sethforprivacy.vqhyi@simplelogin.com`
 
 ## Primary PGP Key
 
