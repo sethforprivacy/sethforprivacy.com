@@ -19,13 +19,12 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 
 ## How To Contact Me  
 
-- [Signal](https://signal.org/download/) - `+1 (616) 326 4079`
+- Signal - `+1 (616) 326 4079`
 - [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`
 - [Session](session://0500cd745d20205d670b1c8d0d4993e37587a819dc6340a94f6eb48950ab15262c) - `0500cd745d20205d670b1c8d0d4993e37587a819dc6340a94f6eb48950ab15262c`
-- [Briar](briar://acydkymetdoh3bmygrvjduh6atgg54eomiwxa2raxerkcgs4sxxhk) - `briar://acydkymetdoh3bmygrvjduh6atgg54eomiwxa2raxerkcgs4sxxhk`
 - [Matrix](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com) - `@sethforprivacy:matrix.optoutpod.com`
 - [Twitter](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
-- [Email](mailto:sethforprivacy.vqhyi@simplelogin.com) - `sethforprivacy.vqhyi@simplelogin.com`
+- Nostr - `seth@sethforprivacy.com` or `npub1tr4dstaptd2sp98h7hlysp8qle6mw7wmauhfkgz3rmxdd8ndprusnw2y5g`
 
 ## Primary PGP Key
 
