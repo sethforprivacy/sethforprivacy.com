@@ -20,6 +20,7 @@ I am a site reliability engineer by day, but have fallen down the privacy and cr
 ## How To Contact Me  
 
 - Signal - `+1 (616) 326 4079`
+- [SimpleX](https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2F0CtpAgMrcbi0tDKSojOxxwDL5g2ZVd7-%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAuyZ_n3N9SVwzIUq4oWl0QvSQDw_ZodrC4tuN96-920Q%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion)
 - [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`
 - [Session](session://0500cd745d20205d670b1c8d0d4993e37587a819dc6340a94f6eb48950ab15262c) - `0500cd745d20205d670b1c8d0d4993e37587a819dc6340a94f6eb48950ab15262c`
 - [Matrix](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com) - `@sethforprivacy:matrix.optoutpod.com`
