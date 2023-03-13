@@ -764,4 +764,4 @@ The biggest new features I'd like to add to my site are:
 - Automatic deployments whenever a new commit is pushed to my repo
 - Simple search
 
-Thanks for reading, and please don't hesitate to reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions or would like more detail!
+Thanks for reading, and please don't hesitate to reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions or would like more detail!

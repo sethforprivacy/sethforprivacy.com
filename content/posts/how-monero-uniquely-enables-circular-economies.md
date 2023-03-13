@@ -18,8 +18,6 @@ cover:
     image: "https://sethforprivacy.com/how-monero-uniquely-enables-circular-economies/1.png"
 ---
 
-{{< figure src="/how-monero-uniquely-enables-circular-economies/1.png" align="center" style="border-radius: 8px;" >}}
-
 One of the most important aspects in the survival and growth of cryptocurrencies and their usability is the formation of circular economies. We have seen these pop up at small scale within Bitcoin and other cryptocurrencies, but Monero has multiple attributes that uniquely enable us to build and participate circular economies.
 
 ***This is a blog post form of the presentation I original gave at [Monerotopia](https://monerotopia.com/) in April of 2022. For the original video, please see below:***

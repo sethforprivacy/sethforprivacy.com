@@ -15,6 +15,12 @@ You can easily donate Bitcoin (on-chain or via Lightning) or Monero via my BTCPa
 
 {{< btcpayserver >}}
 
+## Lightning via Lightning Address
+
+You can easily donate Bitcoin via Lightning to my Lightning Address:
+
+`seth@btcpay.sethforprivacy.com`
+
 ### Monero via OpenAlias
 
 To use OpenAlias, just type (or paste) the following address into the "To" field in your favorite Monero wallet:

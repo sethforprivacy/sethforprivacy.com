@@ -436,4 +436,4 @@ A huge, huge thank you to the contributors who have made BTCPay Server possible 
 
 Such a powerful payment processor having solid Monero support is a huge win, and I hope more merchants will start to use BTCPay Server for accepting Monero (and Bitcoin!) ASAP.
 
-As always, if you have any questions from this post or would like more information on accepting Monero as a merchant or using BTCPay Server, please reach out via [Signal, Matrix, Threema, or email]({{< ref "/content/about.md#how-to-contact-me" >}}).
+As always, if you have any questions from this post or would like more information on accepting Monero as a merchant or using BTCPay Server, please reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
