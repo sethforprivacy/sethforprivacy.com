@@ -5,7 +5,7 @@ tags: ["bitcoin", "privacy", "monero"]
 author: "Seth For Privacy"
 description: "I'm not a Bitcoin maximalist. I'm not a Monero maximalist. I'm a freedom maximalist."
 cover:
-    image: https://sethforprivacy.com/banner.jpg
+    image: /banner.jpg
 ---
 
 I'm not a Bitcoin maximalist.
