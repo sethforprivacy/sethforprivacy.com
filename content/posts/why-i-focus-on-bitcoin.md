@@ -68,10 +68,16 @@ If you want to dig more into the proposed and upcoming privacy improvements for 
 
 - [Proposed Bitcoin Privacy Improvements]({{< ref "/content/posts/proposed-bitcoin-privacy-improvements.md" >}})
 
-## Conclusion
+## Where I am now
 
 I recently realized while I had shifted focus to Bitcoin, I had never fully discussed the reasons why with anyone publicly, much less shared the reasoning. This post is an attempt to do that and while I'm sure it doesn't 100% cover my shift, it hopefully provides some transparency. After many years volunteering in the Monero community and doing what I could there, I feel that the time has come for me to dedicate the majority of my time back to Bitcoin, and my role at Foundation is a key part of that.
 
 Foundation enables me to focus practically all of my time on building out tools for preserving privacy on Bitcoin, educating others on what Bitcoin is and how to use it best, and producing a sovereign computing ecosystem over the coming years that will enable far more people to reach digital sovereignty than have been able to in the past. This empowerment means that I'm no longer having to split my attention and efforts between a fiat job and my passions of personal privacy and financial sovereignty, and instead can do what I love each day and help bring many more people with me on the journey to sovereignty.
+
+## Conclusion
+
+What does this mean for my recommendations to those seeking financial freedom? Not much, for now. Whenever possible, Monero is still my go-to recommendation as it provides strong privacy by default and is an amazing spending tool. If Monero isn't available for some reason, then Bitcoin with proper privacy usage through a wallet like Sparrow wallet is my current recommendation, with a new tool on the horizon that will be my go-to for Bitcoin. While I am focusing my time primarily on Bitcoin now, that doesn't mean that I've forsaken Monero as a tool for freedom or that I will stop recommending it or highlighting its power to the broader space.
+
+I want to maximize freedom available to each and every person who wakes up, and both Bitcoin and Monero provide valuable tools to achieve financial freedom.
 
 This is a much more personal and transparent post than the majority of my writing, and I'd love to talk through it more with each of you. If you have questions around what I've mentioned here or want to dive more deeply into things, please reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
