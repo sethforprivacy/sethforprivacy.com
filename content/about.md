@@ -15,14 +15,11 @@ My name is Seth, and I've started this blog to give me a space for longer-form a
 
 My aim overall is to educate and learn more myself about where technology and privacy meet, and am deeply enthusiastic about the ability these technologies grant people to take back control of their data, and more broadly, their digital lives.
 
-I am a site reliability engineer by day, but have fallen down the privacy and cryptocurrency rabbit holes as of late and will be focusing my posts on those two topics.
-
 ## How To Contact Me  
 
 - Signal - `+1 (616) 326 4079`
 - [SimpleX](https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2F0CtpAgMrcbi0tDKSojOxxwDL5g2ZVd7-%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAuyZ_n3N9SVwzIUq4oWl0QvSQDw_ZodrC4tuN96-920Q%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion)
 - [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`
-- [Session](session://0500cd745d20205d670b1c8d0d4993e37587a819dc6340a94f6eb48950ab15262c) - `0500cd745d20205d670b1c8d0d4993e37587a819dc6340a94f6eb48950ab15262c`
 - [Matrix](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com) - `@sethforprivacy:matrix.optoutpod.com`
 - [Twitter](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
 - Nostr - `seth@sethforprivacy.com` or `npub1tr4dstaptd2sp98h7hlysp8qle6mw7wmauhfkgz3rmxdd8ndprusnw2y5g`
@@ -71,45 +68,6 @@ JEcJD9ltDAVcgs36
 
 {{< /collapse >}}
 
-### ProtonMail PGP key
-
-My primary email provider is ProtonMail, and I use their generated PGP key for signing (*not* encrypting) emails I send from that account (starting Jan 26, 2022).
-
-To validate an email is from me, please ensure the following PGP key is used to sign said email:
-
-Fingerprint:
-
-`D7F7 313E 8792 F59E 5B65  19E0 BDBB 0A37 0BC5 23BA`
-
-{{< collapse summary="Full ProtonMail PGP Public Key" >}}
-
-```plaintext
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: OpenPGP.js v4.10.10
-Comment: https://openpgpjs.org
-
-xjMEYfGNJBYJKwYBBAHaRw8BAQdA6lxzGd+mO3RROCPz5xgpCILH28HhHJtT
-3ssSK9YeL1zNMXNldGhAc2V0aGZvcnByaXZhY3kuY29tIDxzZXRoQHNldGhm
-b3Jwcml2YWN5LmNvbT7CjwQQFgoAIAUCYfGNJAYLCQcIAwIEFQgKAgQWAgEA
-AhkBAhsDAh4BACEJEL27CjcLxSO6FiEE1/cxPoeS9Z5bZRngvbsKNwvFI7qw
-OQEA6YDwJemRkFJqWQnUcE0kIT2CrQ2Z0A8Ro7L30lIPqhcBAKFNCD6uhdwz
-g7nbPHy+VIaGqXUsCYkkEuFor3OEtloCzjgEYfGNJBIKKwYBBAGXVQEFAQEH
-QAZORKFgOyRYI8PUdqF8t8X5XPkbYhcrafQZ65a+vdYKAwEIB8J4BBgWCAAJ
-BQJh8Y0kAhsMACEJEL27CjcLxSO6FiEE1/cxPoeS9Z5bZRngvbsKNwvFI7o9
-NwD/WsuGOChadtKPNRw7tSS6OdpeBUTYqkZy5qmk2NDSnZsA+gOoC9S3+CXl
-hOzhrrXhfHHaEpXU+mKFVGVjp8BIjnIM
-=CXck
------END PGP PUBLIC KEY BLOCK-----
-```
-
-{{< /collapse >}}
-
-### PGP-verified identities
-
-Below you can find verification of this DNS domain, my Github profile, my Matrix profile, and my Twitter account, all signed via PGP:
-
-<https://keyoxide.org/55eec39e2efdd3740f94dffb6b9791c6214d1e57>  
-
 ## My Community Resources
 
 ### Opt Out, a FOSS and privacy-focused podcast
@@ -147,23 +105,11 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com)
   - Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>
   - More info: <https://privatebin.info/>
-- [Wikiless (Private Wikipedia front-end)](https://wikiless.sethforprivacy.com/)
-  - Tor: <http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion>
-  - More info: <https://codeberg.org/orenom/Wikiless>
 
 ### Privacy-preserving chat servers
 
 - [Matrix](https://matrix-org.github.io/synapse/latest/welcome_and_overview.html)
   - More info: <https://optoutpod.com/posts/come-join-opt-out-on-matrix/>
-- [Cwtch Group Server (Private p2p messenger)](cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion)
-  - Address: `cwtch:urwm3dqkvnui45dys4zgawe5htkksbvngxwklfeocfos5tk2vqy2y7yd.onion`
-  - Server bundle:
-
-    ```plaintext
-    server:eyJLZXlzIjp7ImJ1bGxldGluX2JvYXJkX29uaW9uIjoidXJ3bTNkcWt2bnVpNDVkeXM0emdhd2U1aHRra3Nidm5neHdrbGZlb2Nmb3M1dGsydnF5Mnk3eWQiLCJwcml2YWN5X3Bhc3NfcHVibGljX2tleSI6ImZOSGRDZ3A2S0l5RFkwL0Z3UHFGdm9pVnBDMkxYQ1EzaTNDV0NlYnkrd3c9IiwidG9rZW5fc2VydmljZV9vbmlvbiI6ImN5anN6emxxY2w2Z2c0Z2lkNGhhank0bzZ4ejVvazR3Mnc3dHl5Y21qbmR0M2xnd2xtNjNzY3lkIn0sIlNpZ25hdHVyZSI6IlViN2NpSFA3OS82ZWh6MDRvbmIwZHR0bWlMbUNtSDhpMk9rd3FicjlGcU1ka3E3dWY5TXo2WHhrZG9LQlpabzlkUkJFbExCYXRUSUJKcHBGZWJ5SkRnPT0ifQ==
-    ```
-
-  - More info: <https://git.openprivacy.ca/cwtch.im/server>
 
 ### High-Performance Monero Nodes
 
