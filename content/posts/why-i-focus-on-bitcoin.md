@@ -40,16 +40,6 @@ While this may be an obvious truth to most people, it's one that has striking im
 
 This network effect has showed no signs of stopping, and the broader ecosystem around Bitcoin and its usage in a self-sovereign and non-custodial way has only ramped up in recent years.
 
-### Bitcoin's privacy is usually "good enough"
-
-This one will chafe at many in the Monero community, but is a lesson I've learned over long discussions with Bitcoiners like [Matt Odell](https://mattodell.com/), [Juraj Bednar](https://juraj.bednar.io/en/juraj-bednar-2/), [BitcoinQnA](https://bitcoiner.guide/), and [Alex Gladstein](https://alexgladstein.com/). Though Bitcoin's privacy is absolutely not where I'd like to see it long-term, for the majority of threat models, Bitcoin's privacy is good enough. If we can merely help users to on and off-board from Bitcoin through exchanges that don't tie personal information to their Bitcoin activity (a la "KYC" exchanges), we can provide "good enough" privacy to users of Bitcoin without them even taking more extreme privacy steps. The tools that allow users to buy and sell Bitcoin without KYC are also rapidly improving as they gain traction, with things like [AgoraDesk](https://agoradesk.com/), [azte.co](https://azte.co/), [Peach Bitcoin](https://peachbitcoin.com/), [RoboSats](https://learn.robosats.com/), and [Bisq](https://bisq.network/) getting better by the day.
-
-Once identity is properly separated from Bitcoin activity, its pseudonymity can prove to be enough for the average threat model, while more advanced tooling allows those under more targeted surveillance to access powerful privacy. Pairing this default pseudonymity - detached from identity - with improving privacy tools that require less and less manual intervention and effort by Bitcoiners is only improving the base level of privacy in Bitcoin over time.
-
-### Bitcoin's network effects amplify my work's impact
-
-This one is pretty simple, but as the user base and growing network effect of Bitcoin expands, any work that I can do to empower Bitcoin users to regain privacy, avoid KYC exchanges, and use powerful privacy tools in an accessible way impacts more people.
-
 ### If no one fights for privacy on Bitcoin, it becomes a dystopian panopticon
 
 While I am most certainly not preventing the slide towards dystopia in Bitcoin single-handedly, the efforts of a relative few have pushed against the tide towards surveillance, KYC, and custodial solutions over the past few years and have successfully shifted the Bitcoin community to being more mindful of privacy. If everyone who cared deeply about personal privacy abandons Bitcoin due to its inherent transparency, it would rapidly become a dystopian nightmare of surveillance, even worse than the legacy financial system in many ways.
@@ -57,6 +47,12 @@ While I am most certainly not preventing the slide towards dystopia in Bitcoin s
 As understanding the need for personal privacy remains relatively niche while Bitcoin becomes more mainstream, an exodus of privacy-conscious individuals in Bitcoin would not lead to a "flippening" of Monero or a similar privacy tool being more used than Bitcoin, but would likely just leave more people captured in a terrifying panopticon. The collapse of Bitcoin as a relatively private on and off-ramp to tools like Monero would also cause great harm to these tools and limit who could actually gain access to them.
 
 All that to say, I believe that I can do my part to help stem the tide and make Bitcoin privacy more accessible, while helping to steer Bitcoiners clear of KYC exchanges, custodial wallets, and the allure of "mass adoption at all costs."
+
+### Bitcoin's privacy can be made "good enough"
+
+This one will chafe at many in the Monero community, but is a lesson I've learned over long discussions with Bitcoiners like [Matt Odell](https://mattodell.com/), [Juraj Bednar](https://juraj.bednar.io/en/juraj-bednar-2/), [BitcoinQnA](https://bitcoiner.guide/), and [Alex Gladstein](https://alexgladstein.com/). Though Bitcoin's privacy is absolutely not where I'd like to see it long-term, for the majority of threat models, Bitcoin's privacy can be good enough. If we can merely help users to on and off-board from Bitcoin through exchanges that don't tie personal information to their Bitcoin activity (a la "KYC" exchanges), we can provide "good enough" privacy to users of Bitcoin without them even taking more extreme privacy steps. The tools that allow users to buy and sell Bitcoin without KYC are also rapidly improving as they gain traction, with things like [AgoraDesk](https://agoradesk.com/), [azte.co](https://azte.co/), [Peach Bitcoin](https://peachbitcoin.com/), [RoboSats](https://learn.robosats.com/), and [Bisq](https://bisq.network/) getting better by the day.
+
+Once identity is properly separated from Bitcoin activity, its pseudonymity can prove to be enough for the average threat model, while more advanced tooling allows those under more targeted surveillance to access powerful privacy. Pairing this default pseudonymity - detached from identity - with improving privacy tools that require less and less manual intervention and effort by Bitcoiners is only improving the base level of privacy in Bitcoin over time. We still have a long ways to go in making privacy tools on the app layer with Bitcoin usable by the masses, but we're making steady strides there and there are exciting things on the horizon to help.
 
 ### Bitcoin's privacy tooling is improving rapidly
 
@@ -67,6 +63,10 @@ The ability for a Bitcoiner who wants privacy to actually take real steps today 
 If you want to dig more into the proposed and upcoming privacy improvements for Bitcoin, along with the history around Bitcoin privacy, you can check out my other blog post on the topic:
 
 - [Proposed Bitcoin Privacy Improvements]({{< ref "/content/posts/proposed-bitcoin-privacy-improvements.md" >}})
+
+### Bitcoin's network effects amplify my work's impact
+
+This one is pretty simple, but as the user base and growing network effect of Bitcoin expands, any work that I can do to empower Bitcoin users to regain privacy, avoid KYC exchanges, and use powerful privacy tools in an accessible way impacts more people.
 
 ## Where I am now
 
