@@ -89,7 +89,8 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://www.videolan.org/contribute.html>
 - Music Caster, a FOSS music player that can cast files and URLs[^1]:
   - <https://github.com/elibroftw/music-caster/#donate-or-translate>
-
+- Linux Mint, an easy to use linux distribution.
+  - <https://linuxmint.com/donors.php>
 [^1]: These projects or organizations have not been used/vetted by myself personally, but have come recommended by followers or Monero community members.
 
 # Something Missing?
