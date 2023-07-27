@@ -99,8 +99,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Twitter Source](https://twitter.com/jehrenhofer/status/1235963248522006528)
     {{< tweet user="jehrenhofer" id="1235963248522006528" >}}
 - A user's account is frozen due to 6mo-old post-CoinJoin transactions by Bitwala:
-  - [Twitter Source](https://twitter.com/riccardomasutti/status/1375507165151076353)
-    {{< tweet user="riccardomasutti" id="1375507165151076353" >}}
+  - [Twitter Source (tweet is now deleted)](https://twitter.com/riccardomasutti/status/1375507165151076353)
+    {{< collapse summary="Source Image" >}}
+    {{< figure src="/fungibility-graveyard/bitwala_coinjoin.png" align="center" style="border-radius: 8px;" >}}
+    {{< /collapse >}}
 
 ## Tainted Bitcoin
 
