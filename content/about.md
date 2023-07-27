@@ -111,6 +111,16 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Matrix](https://matrix-org.github.io/synapse/latest/welcome_and_overview.html)
   - More info: <https://optoutpod.com/posts/come-join-opt-out-on-matrix/>
 
+### Public mempool.space Instance
+
+I have also spun up a public and freely available instance of mempool.space. Feel free to use it to keep up with Bitcoin fees, check transactions, etc. If at all possible, please use the Tor browser to access it to prevent me or anyone else from linking your IP address to any transactions you view.
+
+***NOTE: While I am committed to not logging, it's very important with Bitcoin that you run your own block explorer if at all possible! Using my instance could give me visibility into large amounts of information on how you use Bitcoin if I was malicious.***
+
+- [Mempool.space Instance (Bitcoin blockchain explorer)](https://mempool.sethforprivacy.com/)
+  - Tor: <http://65eztccmkxk4u3kxjjqgckntxr7rgezmeeww36eewxasefg7iukgvqid.onion>
+  - More info: <https://github.com/mempool/mempool>
+
 ### High-Performance Monero Nodes
 
 I host a high-performance Monero node that is free to use for anyone, both as a p2p peer and a remote RPC for wallet usage:
