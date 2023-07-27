@@ -104,7 +104,7 @@ The vast majority of the "inner workings" of Monero happen on Matrix and IRC, tw
 
 A list of the most common Matrix/IRC channels is available on [getmonero.org](https://www.getmonero.org/community/hangouts/).
 
-*You can find me on Matrix [@sethforprivacy:matrix.optoutpod.com](https://matrix.to/#/@sethforprivacy:matrix.optoutpod.com), or IRC under the nick "sethforprivacy".*
+*You can find me on Matrix [@sethforprivacy:agoradesk.com](https://matrix.to/#/@sethforprivacy:agoradesk.com), or IRC under the nick "sethforprivacy".*
 
 ### Offline
 

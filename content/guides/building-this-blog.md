@@ -250,14 +250,8 @@ params:
       - ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
 
   socialIcons:
-    - name: email
-      url: "mailto:sethforprivacy.vqhyi@simplelogin.com"
     - name: twitter
       url: "https://twitter.com/sethforprivacy"
-    - name: matrix
-      url: "https://matrix.to/#/@sethsimmons:monero.social"
-    - name: reddit
-      url: "https://www.reddit.com/user/fort3hlulz"
     - name: github
       url: "https://github.com/sethforprivacy"
     - name: monero

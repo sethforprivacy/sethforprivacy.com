@@ -41,8 +41,7 @@ Before you go any further, I'd recommend this step be priority number one for yo
   - [Discord](https://discord.gg/Xd7baMSpqS)
 - [The Sovereign Bitcoiner, a fantastic new content feed and community focused on Bitcoin, digital sovereignty, and privacy](https://sovrnbitcoiner.com/)
   - [Telegram Chat](https://t.me/SovrnBitcoiner)
-- [Opt Out Podcast Matrix room](https://matrix.to/#/#opt-out-podcast:matrix.optoutpod.com)
-  - [A guide to joining Matrix on the Opt Out home-server](https://optoutpod.com/posts/come-join-opt-out-on-matrix/)
+- [Opt Out Podcast Matrix room](https://matrix.to/#/#opt-out-podcast:monero.social)
 - [TheNewOil Matrix room](https://matrix.to/#/#TheNewOil:matrix.org)
 
 ### 2. Use a privacy-preserving browser
