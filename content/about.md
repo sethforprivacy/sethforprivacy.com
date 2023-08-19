@@ -19,7 +19,6 @@ My aim overall is to educate and learn more myself about where technology and pr
 
 - Signal - `+1 (616) 326 4079`
 - [SimpleX](https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2F0CtpAgMrcbi0tDKSojOxxwDL5g2ZVd7-%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAuyZ_n3N9SVwzIUq4oWl0QvSQDw_ZodrC4tuN96-920Q%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion)
-- [Threema](https://threema.id/WBAAN4ZA) - `WBAAN4ZA`
 - [Matrix](https://matrix.to/#/@sethforprivacy:agoradesk.com) - `@sethforprivacy:agoradesk.com`
 - [Twitter](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
 - Nostr - `seth@sethforprivacy.com` or `npub1tr4dstaptd2sp98h7hlysp8qle6mw7wmauhfkgz3rmxdd8ndprusnw2y5g`
