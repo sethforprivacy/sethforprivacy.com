@@ -233,3 +233,11 @@ I have created a bare-bones and simple `monerod` Docker image that compiles from
   - A simple and straightforward Dockerized p2pool built from source and exposing standard ports.
 - [self-hosted-services](https://github.com/sethforprivacy/self-hosted-services)
   - A core set of privacy-preserving services that can be easily self-hosted via Docker Compose.
+
+### My Favorite RSS Feeds
+
+My favorite way to keep up with developments in the space is *not* using social media, but rather by using RSS feeds to get the latest long-form content from reliable and helpful sites and authors.
+
+I've uploaded my latest list of RSS feeds that I use in an easy-to-import OPML file to Github. For most clients you can simply download the file and import it directly, but for others you may need to copy-paste the RSS feeds in manually using the feed URLs for any feeds you want.
+
+{{< gist sethforprivacy 0b02d7effae7599e609683bf98ba38be >}}
