@@ -85,9 +85,9 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 - Excellent and nuanced blog post on auditability in cryptocurrencies:
   - <https://web.getmonero.org/2020/01/17/auditability.html>
 - Very thorough and detailed talk on the issues surrounding auditability in cryptocurrencies:
-  - <https://invidious.sethforprivacy.com/watch?v=meDkx6gRPMg>
+  - <https://www.youtube.com/watch?v=meDkx6gRPMg>
 - Detailed presentation from Aaron Feickert on supply auditablity in cryptocurrencies:
-  - <https://invidious.sethforprivacy.com/watch?v=aHv2gq4Wm5I>
+  - <https://www.youtube.com/watch?v=aHv2gq4Wm5I>
 - Audio clip about auditability in Bitcoin and Monero:
   - <https://www.twitter.com/DontTraceMeBruh/status/1414602052471332864>
 - Anyone can easily verify the supply of Monero:
