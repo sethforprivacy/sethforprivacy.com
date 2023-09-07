@@ -93,6 +93,8 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 - Anyone can easily verify the supply of Monero:
   - <https://nitter.sethforprivacy.com/fluffypony/status/1292032287396306944>
   {{< tweet user="fluffypony" id="1292032287396306944" >}}
+- [Independent supply verification tools that confirm no hidden inflation](https://www.moneroinflation.com/)
+  - These tools were written by a third-party developer in a different language (Python) and confirm that there is no auditability issue present.
 - [Monero vulnerability that was not exploited and was detectable](https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html)
 - [Bitcoin vulnerability that was exploited and was detectable](https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/)
 - [Bitcoin vulnerability that was not exploited and was detectable](https://www.coindesk.com/markets/2018/09/21/the-latest-bitcoin-bug-was-so-bad-developers-kept-its-full-details-a-secret/)
