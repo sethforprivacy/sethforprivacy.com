@@ -90,23 +90,12 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com)
   - Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>
   - More info: <https://cryptpad.fr/>
-- [Invidious (Private YouTube front-end)](https://invidious.sethforprivacy.com)
-  - Tor: <http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion>
-  - More info: <https://github.com/iv-org/invidious>
 - [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com)
   - Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>
   - More info: <https://github.com/zedeus/nitter>
-- [Teddit (Private Reddit front-end)](https://teddit.sethforprivacy.com)
-  - Tor: <http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion>
-  - More info: <https://codeberg.org/teddit/teddit>
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com)
   - Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>
   - More info: <https://privatebin.info/>
-
-### Privacy-preserving chat servers
-
-- [Matrix](https://matrix-org.github.io/synapse/latest/welcome_and_overview.html)
-  - More info: <https://optoutpod.com/posts/come-join-opt-out-on-matrix/>
 
 ### Public mempool.space Instance
 
