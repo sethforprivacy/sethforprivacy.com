@@ -90,9 +90,6 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmj
 - [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com)
   - Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>
   - More info: <https://cryptpad.fr/>
-- [Nitter (private Twitter front-end)](https://nitter.sethforprivacy.com)
-  - Tor: <http://jebqj47jgxleaiosfcxfibx2xdahjettuydlxbg64azd4khsxv6kawid.onion>
-  - More info: <https://github.com/zedeus/nitter>
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com)
   - Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>
   - More info: <https://privatebin.info/>
