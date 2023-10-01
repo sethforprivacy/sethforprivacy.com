@@ -175,12 +175,12 @@ If you would like to inspect the source code behind the image used here or build
           - bitmonero:/home/monero
         ports:
           - 18080:18080
-          - 18083:18083
+          - 18084:18084
           - 18089:18089
         command: >-
           --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089
           --public-node --no-igd --enable-dns-blocklist --prune-blockchain
-          --zmq-pub=tcp://0.0.0.0:18083 --in-peers=50 --out-peers=50
+          --zmq-pub=tcp://0.0.0.0:18084 --in-peers=50 --out-peers=50
 
       p2pool:
         image: sethsimmons/p2pool:latest
@@ -196,7 +196,7 @@ If you would like to inspect the source code behind the image used here or build
           - 37889:37889
         command: >-
           --wallet "468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R"
-          --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889" 
+          --stratum "0.0.0.0:3333" --p2p "0.0.0.0:37889" --zmq-port "18084"
           --loglevel "0" --addpeers "65.21.227.114:37889,node.sethforprivacy.com:37889"
           --host "monerod" --rpc-port "18089"
 
@@ -289,7 +289,7 @@ If you would like to inspect the source code behind the image used here or build
 
 ### If you already run a Monero node
 
-If you already run a node and don't want to migrate to this Docker Compose setup, simply add the flag `--zmq-pub tcp://0.0.0.0:18083` to your `monerod` instance and restart it, forward port `18083/tcp`, and then use the below docker-compose file and replace the `--host` value with the IP or DNS address of your existing node:
+If you already run a node and don't want to migrate to this Docker Compose setup, simply add the flag `--zmq-pub tcp://0.0.0.0:18084` to your `monerod` instance and restart it, forward port `18084/tcp`, and then use the below docker-compose file and replace the `--host` value with the IP or DNS address of your existing node:
 
 ```bash
 mkdir ~/p2pool
