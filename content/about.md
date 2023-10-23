@@ -194,13 +194,6 @@ fo/Lj1BRvnJa0zzXyuAI+5so7Kh3/Ts=
 
 To verify this certificate in Sparrow, simply save the certificate text above as a `.pem` file on your computer and then select it in the Sparrow server dialogue.
 
-### Tor Relay/Guard Node
-
-I also host a Tor relay/guard node, available at the below address:
-
-- `tor.sethforprivacy.com:8443`
-  - [Node Statistics (Nickname: sethforprivacy)](https://metrics.torproject.org/rs.html#details/79E2258804C826FE2927D0E1540DE42DBE104638)
-
 ### Monero Docker Images
 
 I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
