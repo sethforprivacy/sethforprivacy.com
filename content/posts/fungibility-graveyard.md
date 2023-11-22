@@ -167,6 +167,9 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - Only "virgin" Bitcoin mined by state-sanctioned miners can be used in Iran:  
   - [News Source](https://bitcoinmagazine.com/culture/iran-using-cryptocurrency-for-imports)
   - [Twitter Source](https://twitter.com/Fatalmeh/status/1390338789462224908)
+- F2Pool filters 4 OFAC-sanctioned transactions from their mined blocks intentionally:
+  - [Blog source](https://b10c.me/observations/08-missing-sanctioned-transactions/?t)
+  - [Twitter Source, showing co-founder confirming their censorship](https://twitter.com/Diverter_NoKYC/status/1727218593119822210?s=20)
 
 ## General Fungibility Issues
 
@@ -256,5 +259,7 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/coinbase_taint.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/f2pool.jpeg" align="center" style="border-radius: 8px;" >}}
 
 {{< /collapse >}}
