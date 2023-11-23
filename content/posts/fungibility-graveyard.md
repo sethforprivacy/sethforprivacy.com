@@ -103,6 +103,9 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
     {{< collapse summary="Source Image" >}}
     {{< figure src="/fungibility-graveyard/bitwala_coinjoin.png" align="center" style="border-radius: 8px;" >}}
     {{< /collapse >}}
+- Swan's custodians terminate accounts of any user who directly interacts with a mixing service "such as Wasabi, Samourai, and similar services:"
+  - [Twitter Source](https://x.com/WimTweets/status/1723178230474052041?s=20)
+  - [Swan's response](https://x.com/skwp/status/1723444038932582414?s=20)
 
 ## Tainted Bitcoin
 
@@ -261,5 +264,7 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/f2pool.jpeg" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/swan.jpeg" align="center" style="border-radius: 8px;" >}}
 
 {{< /collapse >}}
