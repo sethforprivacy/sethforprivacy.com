@@ -417,8 +417,6 @@ params:
       url: "mailto:seth@sethforprivacy.com"
     - name: twitter
       url: "https://twitter.com/sethforprivacy"
-    - name: matrix
-      url: "https://matrix.to/#/@sethsimmons:monero.social"
     - name: reddit
       url: "https://www.reddit.com/user/fort3hlulz"
     - name: github

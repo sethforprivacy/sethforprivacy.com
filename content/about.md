@@ -194,14 +194,6 @@ fo/Lj1BRvnJa0zzXyuAI+5so7Kh3/Ts=
 
 To verify this certificate in Sparrow, simply save the certificate text above as a `.pem` file on your computer and then select it in the Sparrow server dialogue.
 
-### Monero Docker Images
-
-I have created a bare-bones and simple `monerod` Docker image that compiles from source according to the selected tag:
-
-- [monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
-- [monero-wallet-rpc Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monero-wallet-rpc)
-- [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)
-
 ### Github Repositories
 
 - [simple-monerod-docker](https://github.com/sethforprivacy/simple-monerod-docker)

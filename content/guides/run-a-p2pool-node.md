@@ -104,8 +104,8 @@ For more details on p2pool and why you should use it, see this knowledge article
 3. Install Docker Compose:
 
     ```bash
-    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-    sudo chmod +x /usr/local/bin/docker-compose
+    sudo apt-get update
+    sudo apt-get install docker-compose-plugin
     ```
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
@@ -150,9 +150,7 @@ This allows us to simplify down the launch of `monerod` and `p2pool` down to a f
 
 If you would like to inspect the source code behind the image used here or build it yourself, please see the below links:
 
-- [monerod Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)  
-- [monerod Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)  
-- [p2pool Docker Hub Images](https://hub.docker.com/r/sethsimmons/p2pool)  
+- [monerod Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)
 - [p2pool Source Repository](https://github.com/sethforprivacy/p2pool-docker)  
 
 1. Copy and paste the below configuration file wherever you would like on the host, for this guide I will use `~/p2pool`:
@@ -168,7 +166,7 @@ If you would like to inspect the source code behind the image used here or build
     version: '3.5'
     services:
       monerod:
-        image: sethsimmons/simple-monerod:latest
+        image: ghcr.io/sethforprivacy/simple-monerod:latest
         restart: unless-stopped
         container_name: monerod
         volumes:
@@ -183,7 +181,7 @@ If you would like to inspect the source code behind the image used here or build
           --zmq-pub=tcp://0.0.0.0:18083 --in-peers=50 --out-peers=50
 
       p2pool:
-        image: sethsimmons/p2pool:latest
+        image: ghcr.io/sethforprivacy/p2pool:latest
         restart: unless-stopped
         container_name: p2pool
         tty: true
@@ -304,7 +302,7 @@ nano ~/p2pool/docker-compose.yml
 version: '3.5'
 services:
   p2pool:
-    image: sethsimmons/p2pool:latest
+    image: ghcr.io/sethforprivacy/p2pool:latest
     restart: unless-stopped
     container_name: p2pool
     tty: true

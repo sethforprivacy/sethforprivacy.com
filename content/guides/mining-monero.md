@@ -226,7 +226,7 @@ The general process should be the same between any pool, but the specifics for c
 
 1. Create a new sub-address that you will use for mining within your favorite wallet[^1]
 2. Select the appropriate pool address and port (i.e. `cryptonote.social:5556`)
-3. Select a username (i.e. `sethsimmonsdonation`).
+3. Select a username (i.e. `sethforprivacydonation`).
 4. Set the appropriate extra options like TLS, Tor usage, etc.
 
 Example configurations can be found below, but note that if you simply copy and paste and do not replace the address/username, you will be donating to me :)
@@ -245,7 +245,7 @@ If you want to build your own configuration for a different pool, take a look at
             "coin": "monero",
             "algo": null,
             "url": "cryptonote.social:5556",
-            "user": "86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY.sethsimmonsdonation",
+            "user": "86JzKKyZvtEC98y6zJxCCVfcA3r75XngPBjpYDE6zRR36keNGMHwZomDjMCv1oCYB2j9myiFqEJQF3JtnhKdfX546T91eaY.sethforprivacydonation",
             "pass": "x",
             "tls": true,
             "keepalive": true,

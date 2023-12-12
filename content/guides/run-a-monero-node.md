@@ -115,15 +115,14 @@ Choose the proper command set below depending on if you want to run a full node 
 
 An alternative Docker implementation is also available [on Github](https://github.com/lalanza808/docker-monero-node), which even includes native Grafana visualizations. This guide will focus on being extremely simple, so I'll stick to just `monerod` here.
 
-If you would like to inspect the source code behind the image used here or build it yourself, please see the below links:
+If you would like to inspect the source code behind the image used here or build it yourself, please see the below link:
 
-[Docker Hub Images](https://hub.docker.com/r/sethsimmons/simple-monerod)
 [Source Repository](https://github.com/sethforprivacy/simple-monerod-docker)
 
 *Note: My recommended commands are the first set below, but feel free to choose one of the other 3 options as needed.*
 
 ```bash
-docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero ghcr.io/sethforprivacy/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
@@ -136,7 +135,7 @@ docker run -d \
 Public node:
 
 ```bash
-docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero ghcr.io/sethforprivacy/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
@@ -147,7 +146,7 @@ docker run -d \
 Pruned node:
 
 ```bash
-docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero ghcr.io/sethforprivacy/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
@@ -158,7 +157,7 @@ docker run -d \
 Public and pruned node:
 
 ```bash
-docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero ghcr.io/sethforprivacy/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
