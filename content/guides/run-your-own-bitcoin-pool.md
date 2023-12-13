@@ -1,7 +1,7 @@
 ---
 date: 2023-12-12T14:57:21-05:00
 summary: In this guide I will lay out the detailed steps for how you can get started running *your own Bitcoin mining pool.*
-draft: true
+draft: false
 hidemeta: false
 showToc: true
 tags:
@@ -217,7 +217,9 @@ If you would like to inspect the source code behind the image used here or build
 
 ### If you already run a Bitcoin node
 
-If you already run a node and don't want to migrate to this Docker Compose setup, simply add the flag `zmqpubrawblock=tcp://*:3000` to your `bitcoind` instance and restart it, forward port `3000/tcp`, and then use the below Docker Compose file and replace the `--host` value with the IP or DNS address of your existing node:
+If you already run a node and don't want to migrate to this Docker Compose setup, simply add the flag or config file line `zmqpubrawblock=tcp://*:3000` to your `bitcoind` instance and restart it, forward port `3000/tcp` (or whichever port you choose), use the below Docker Compose file, and update the `pool.env` file with the IP or DNS address of your existing node. To see the full steps, simply expand the collapsed section below:
+
+{{< collapse summary="public-pool with remote node steps" >}}
 
 1. Get the necessary files from Github and place them wherever you'd like, for this guide I will use `~/pool`:
 
@@ -304,6 +306,8 @@ If you already run a node and don't want to migrate to this Docker Compose setup
 
     You should see lines like `Bitcoin RPC connected` and `Stratum server is listening on port 3333`.
 
+{{< /collapse >}}
+
 ## Connecting your miners
 
 Now that you have a working pool properly set up, connecting your miners is trivial! Just point them to your specific domain and stratum port, i.e.:
@@ -323,13 +327,13 @@ docker compose -f docker-compose-no-bitcoind.yml logs --follow public-pool
 
 You'll see logs like this for every client that joins:
 
-`public-pool  | New client ID: : 11aaf9cc, ::ffff:24.25.209.99:57060`
+`public-pool  | New client ID: : 11aaf9cc, ::ffff:1.2.3.4:57060`
 
 ## Credit
 
-Please note that **all** credit here belongs to the fantastic creator of [public-pool](https://github.com/benjamin-wilson/public-pool), [Benjamin Wilson](https://github.com/benjamin-wilson). If you appreciate the ability to easily spin up your own pool in a few minutes with 100% FOSS code, please consider taking a moment and sending him a donation for his time! You can find his donation details on the bottom of his pool instance and mine:
+Please note that **all** credit here belongs to the fantastic creator of [public-pool](https://github.com/benjamin-wilson/public-pool), [Benjamin Wilson](https://github.com/benjamin-wilson). If you appreciate the ability to easily spin up your own pool in a few minutes with 100% FOSS code, please consider taking a moment and sending him a donation for his time! You can find his donation details on the bottom of his pool instance (and any other pools that are created this way):
 
-<https://web.public-pool.io/#/>
+- <https://web.public-pool.io/#/>
 
 ## Conclusion
 
