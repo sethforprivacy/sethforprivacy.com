@@ -5,16 +5,15 @@ draft: true
 hidemeta: false
 showToc: true
 tags:
-- Monero
+- Bitcoin
 - network
 - p2p
-- p2pool
 - mining
 - decentralization
 title: Run your own Bitcoin pool
 ---
 
-In this guide I will lay out the detailed steps for how you can get started running *your own Bitcoin mining pool.* While it can seem incredibly daunting to do something like this, thanks to the work of the fantastic creator of [public-pool](https://github.com/benjamin-wilson/public-pool), [Benjamin Wilson](https://github.com/benjamin-wilson) it's easier than ever today.
+In this guide I will lay out the detailed steps for how you can get started running *your own Bitcoin mining pool.* While it can seem incredibly daunting to do something like this, thanks to the work of the fantastic creator of [public-pool](https://github.com/benjamin-wilson/public-pool), [Benjamin Wilson](https://github.com/benjamin-wilson), it's easier than ever today.
 
 I've taken the time to help "Dockerize" the public-pool code to allow you to run it without needing to compile from source. If you want to get into the nitty-gritty details of compilation and go that route, please take a look at the official repo for more info:
 
