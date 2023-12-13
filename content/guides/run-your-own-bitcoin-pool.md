@@ -199,14 +199,23 @@ If you would like to inspect the source code behind the image used here or build
 
     `bitcoind` can take anywhere from 4-6h to a few days to sync fully, depending on your hardware.
 
-5. Once `bitcoind` is fully synced, start up the other services
+5. Watch the logs of `bitcoind` to ensure it started and is synchronizing properly
+
+    ```bash
+    cd ~/pool
+    docker compose logs --follow bitcoind
+    ```
+
+    You should see lines the logging output slow from *crazy fast mode* to just outputting lines when connecting to new nodes or updating the chain tip with the latest block.
+
+6. Once `bitcoind` is fully synced, start up the other services
 
     ```bash
     cd ~/pool
     docker compose up -d
     ```
 
-6. Watch the logs of public-pool to ensure it started and is synchronizing properly
+7. Watch the logs of `public-pool`` to ensure it started and is synchronizing properly
 
     ```bash
     cd ~/pool
