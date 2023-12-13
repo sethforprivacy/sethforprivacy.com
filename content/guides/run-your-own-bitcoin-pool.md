@@ -126,7 +126,7 @@ If you would like to inspect the source code behind the image used here or build
     mkdir ~/pool
     cd ~/pool
     git clone https://github.com/sethforprivacy/simple-public-pool.git .
-    nano docker-compose.yml
+    nano docker-compose.yaml
     ```
 
     Be sure to update the lines with `REPLACE_ME` in them, all of which need you to specify the domain you want to use for your pool.
@@ -153,7 +153,7 @@ If you would like to inspect the source code behind the image used here or build
 
     *To escape from the nano shell and save the file, hit `ctrl+x`, then `y` to save the file.*
 
-    Explanations of the containers used in the above `docker-compose.yml` file:
+    Explanations of the containers used in the above `docker-compose.yaml` file:
 
     1. `bitcoind`: The Bitcoin daemon is the process that connects to the Bitcoin blockchain, synchronizes with other nodes on the network, and validates and keeps track of transactions happening in the Monero blockchain.  
     2. `public-pool`: This is the actual pool process that watches the Bitcoin network via `bitcoind`, builds block templates based on the mempool, and provides those block templates as jobs directly to miners.
@@ -227,7 +227,7 @@ If you already run a node and don't want to migrate to this Docker Compose setup
     mkdir ~/pool
     cd ~/pool
     git clone https://github.com/sethforprivacy/simple-public-pool.git
-    nano docker-compose-no-bitcoind.yml
+    nano docker-compose-no-bitcoind.yaml
     ```
 
     Be sure to update the lines with `REPLACE_ME` in them, all of which need you to specify the domain you want to use for your pool.
@@ -254,7 +254,7 @@ If you already run a node and don't want to migrate to this Docker Compose setup
 
     *To escape from the nano shell and save the file, hit `ctrl+x`, then `y` to save the file.*
 
-    Explanations of the containers used in the above `docker-compose-no-bitcoind.yml` file:
+    Explanations of the containers used in the above `docker-compose-no-bitcoind.yaml` file:
 
     1. `public-pool`: This is the actual pool process that watches the Bitcoin network via `bitcoind`, builds block templates based on the mempool, and provides those block templates as jobs directly to miners.
     2. `public-pool-ui`: This is the web UI that allows miners to see their statistics, view payouts, and keep track of the overall pool growth and usage.
@@ -294,14 +294,14 @@ If you already run a node and don't want to migrate to this Docker Compose setup
 
     ```bash
     cd ~/pool
-    docker compose -f docker-compose-no-bitcoind.yml up -d
+    docker compose -f docker-compose-no-bitcoind.yaml up -d
     ```
 
 4. Watch the logs of public-pool to ensure it started and is synchronizing properly
 
     ```bash
     cd ~/pool
-    docker compose -f docker-compose-no-bitcoind.yml logs --follow public-pool
+    docker compose -f docker-compose-no-bitcoind.yaml logs --follow public-pool
     ```
 
     You should see lines like `Bitcoin RPC connected` and `Stratum server is listening on port 3333`.
@@ -322,7 +322,7 @@ You should see your miner start getting work immediately, and can watch the work
 
 ```bash
 cd ~/pool
-docker compose -f docker-compose-no-bitcoind.yml logs --follow public-pool
+docker compose -f docker-compose-no-bitcoind.yaml logs --follow public-pool
 ```
 
 You'll see logs like this for every client that joins:
