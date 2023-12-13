@@ -125,10 +125,6 @@ menu:
       weight: 3
       params:
         external: true
-    - identifier: external-content
-      name: External Content
-      url: /external-content
-      weight: 4
     - identifier: about
       name: About
       url: /about
