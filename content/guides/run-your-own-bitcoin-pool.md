@@ -248,15 +248,15 @@ If you already run a node and don't want to migrate to this Docker Compose setup
     # Replace with an email address where Let's Encrypt can reach you to alert you to certificates that are expiring for any reason.
      - "--certificatesresolvers.selfhostedservices.acme.email=REPLACE_ME"
     
-    # Line 55
+    # Line 44
     # Replace REPLACE_ME with the domain you want to use, i.e. pool.sethforprivacy.com
     - "traefik.http.routers.public-pool-api.rule=Host(`REPLACE_ME`) && PathPrefix(`/api`)"
 
-    # Line 65
+    # Line 54
     # Replace REPLACE_ME with the domain you want to use, i.e. pool.sethforprivacy.com
     - DOMAIN=REPLACE_ME
 
-    # Line 68
+    # Line 57
     # Replace REPLACE_ME with the domain you want to use, i.e. pool.sethforprivacy.com
     - "traefik.http.routers.public-pool-ui.rule=Host(`REPLACE_ME`)"
     ```
