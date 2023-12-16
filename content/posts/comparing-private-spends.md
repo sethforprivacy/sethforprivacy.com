@@ -19,8 +19,8 @@ title: Comparing Reasonably Private Spends in Bitcoin, Monero, and Zcash
 toc: true
 ---
 
-
 ## Introduction  
+
 As my first blog post I wanted to go ahead and share some thoughts I've had about efficiency within transaction types 
 when comparing privacy protocols and usage.
 
@@ -41,7 +41,7 @@ up in size, cost (in both money and time!), and throughput.
 
 But first, an introduction to each network's approach to privacy.
 
-#### Bitcoin - Privacy by Wallet  
+### Bitcoin - Privacy by Wallet
 
 [Bitcoin](https://bitcoin.org/en/) is the king of cryptocurrencies and made major breakthroughs that enabled the 
 existence of cryptocurrencies like [Monero](https://www.getmonero.org/) and [Zcash](https://z.cash). While many thought 
@@ -61,13 +61,13 @@ between the input UTXOs and output addresses. The most well known approaches to 
 maker/taker model instead of a coordinator model, but that is outside the scope of this blog post).
 
 For this blog post we'll focus on Samourai wallet, as that is most widely accepted as the ideal way to gain privacy in 
-Bitcoin at the moment. For more information on how the basics of Samourai Wallet work, see 
+Bitcoin. For more information on how the basics of Samourai Wallet work, see 
 ["Samourai 101"](https://www.bitcoinqna.com/post/samourai-101) for a great explainer.
 
 [^1]: For more info see https://bitcoinmagazine.com/articles/coinjoin-combining-bitcoin-transactions-to-obfuscate-trails-and-increase-privacy-1465235087  
 [^2]: For more info see https://blog.bitmex.com/the-lightning-network/
 
-#### Monero - Privacy by Default  
+### Monero - Privacy by Default  
 
 [Monero](https://www.getmonero.org/) was created in 2014 as a fork of a project called “Bytecoin” by a small community of developers. Monero is not a 
 fork of Bitcoin, and uses an entirely new codebase called “Cryptonote”[^3] that has evolved into the Monero protocol. 
@@ -76,9 +76,9 @@ Monero was started with three core aims -- privacy that is usable and approachab
   
 Monero enables this default privacy for all users of the network through a variety of means:
 
-- RingCT[^4]: this technology hides all amounts sent and received on-chain (via Confidential Transactions[^5]), as well 
-as hides which output is actually being spent among (currently) 10 others (via ring signatures[^6]). This requires no 
+- Ring Signatures[^6]: this technology hides the true spend in every transaction, protecting the privacy of the sender. This requires no 
 coordination and is completely non-interactive (unlike CoinJoin) and happens entirely via the protocol itself.  
+- RingCT[^4]: this technology hides all amounts sent and received on-chain (via Confidential Transactions[^5]).
 - Stealth addresses[^7]: this technology hides sender and receiver addresses on-chain by letting the sender generate a 
 one-time address using the receiver’s public key, so no actual addresses are ever published to the blockchain.  
 - Dandelion++[^8]: This technology helps to hide the sender’s IP address when sending Monero by using a special method 
@@ -94,7 +94,7 @@ extra effort, making multiple transactions, or relying on a central coordinator.
 [^7]: https://www.getmonero.org/resources/moneropedia/stealthaddress.html
 [^8]: https://www.monerooutreach.org/stories/dandelion.html
 
-#### Zcash - Privacy by Pool  
+### Zcash - Privacy by Pool  
 
 [Zcash](https://z.cash) is a code fork of Bitcoin created in 2016 that adds on optional privacy via a technology called 
 zk-SNARKs[^9], allowing users to opt-in to hiding the sender, receiver, and amount of a given transaction (if sending 
@@ -114,7 +114,7 @@ For more info on how Zcash works technically, see ["Zcash Technology"](https://z
 As comparing across unique networks is very difficult, I've done my best to find a unifying set of metrics that we can 
 more easily compare, and used the common denominator of USD as a fee measure as native units are not easily comparable.
 
-#### Bitcoin Transaction Notes  
+### Bitcoin Transaction Notes
 
 This example chain of transactions represents the recommended way to gain "reasonable privacy" and spend in 
 Bitcoin, and requires a [TX0 pre-mix transaction](https://medium.com/samourai-wallet/diving-head-first-into-whirlpool-anonymity-sets-4156a54b0bc7), 
@@ -122,9 +122,8 @@ a [Whirlpool mixing transaction](https://samouraiwallet.com/whirlpool), and a po
 [STONEWALL transaction](https://samouraiwallet.com/stonewall) is used for the comparison, as this is most common and 
 does not require a trusted second part).
 
-It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and in my own testing it took ~4.5h to go from TX0 to STONEWALL 
-spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
-for all users depending on input amount and pool size.
+It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and in my own testing it took ~4.5h to go from TX0 to STONEWALL spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
+for all users depending on input amount and pool size. Note that this amount can vary greatly depending on how much a user is willing to spend on fees, how congested the network is, block time variability, etc.
 
 {{< tweet user="sethforprivacy" id="1270424174834712577" >}}
 
@@ -132,7 +131,7 @@ For this comparison I have omitted ["doxxic change"](https://www.bitcoinqna.com/
 costs and [mixing fees](https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
 transactions. I am purely listing Bitcoin transaction fees below.
 
-#### Monero Transaction Notes  
+### Monero Transaction Notes  
 
 This example transaction is a standard 1-in 2-out Monero transaction with the present network technology, and 
 represents the most common spend. Note that no preparatory, mixing, or post-mix transactions are necessary to protect 
@@ -140,14 +139,14 @@ the sender, receiver, and amount, or to break any deterministic links along the 
 
 Sending a Monero transaction is as simple as a basic Bitcoin transaction, and takes ~2min to confirm on-chain.
 
-#### Zcash Transaction Notes  
+### Zcash Transaction Notes  
 
 This example transaction is a standard 1-in 2-out z-to-z transaction in Zcash, and represents the highest level of 
 privacy available to users who opt-in to sending from and to a z-address (fully shielded). This type of transaction 
 hides the sender, receiver, and amount on-chain. Note that no preparatory, mixing, or post-mix transactions are 
 necessary to protect the sender, receiver, and amount, or to break any deterministic links along the way.
 
-#### Results  
+### Results  
 
 As you can see below, Monero offers the most cost and space-efficient transactions of the three networks, saving almost 
 900b per "reasonably private" spend compared to comparable transactions in Bitcoin and Zcash, and is 33% the cost of 
@@ -161,16 +160,17 @@ pruneable in any way at present.
 It's important to note that most users of both Zcash and Bitcoin do not opt into using these privacy tools, and instead 
 choose to transact without hiding sender/receiver/amount for the vast majority of transactions.
 
-For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from 
-@JEhrenhofer:
+For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from @JEhrenhofer:
 
 {{< tweet user="JEhrenhofer" id="1332552672185098240" >}}
 
-| Cryptocurrency | Transaction Size | Transaction Cost (in USD as of 2022-02-18) |
+| Cryptocurrency | Transaction Size | Transaction Cost (in USD as of 2023-12-16) |
 | ---| --- | --- |
-| Bitcoin | 2,363b, 1,475vb | $2.93 (@ 5sat/vb) |
-| Monero  | 1,419b | $0.0208 (median) |
-| Zcash   | 2,373b | $0.0232 (median) |
+| Bitcoin | 2,363b, 1,475vb | $93.85 (@ 150sat/vb) |
+| Monero  | 1,419b | $0.056 (median) |
+| Zcash   | 2,373b | $0.0293 (median) |
+
+*Note that the lowest possible cost for this transaction flow in Bitcoin (in USD as of 2023-12-16) is $0.63 @ 1sat/vb.*
 
 [^10]: https://www.getmonero.org/resources/moneropedia/pruning.html
 
@@ -181,7 +181,7 @@ size and block time to match their own needs and goals. To provide a common grou
  limits/times of each network and the throughput that allows, as well as provide a version of each weighted to Bitcoin's
   design choices of 10min block times and 1MB/4MB block size caps.
   
-#### Bitcoin Network Notes  
+### Bitcoin Network Notes
 
 Bitcoin has retained the 10min block times from its inception, but block sizes have been changed (in a way) with the 
 introduction of SegWit[^11] to a maximum of 4MB for native SegWit transactions, and 1MB for "legacy" transactions. To 
@@ -192,7 +192,7 @@ More details of how the weighting of transactions works in Bitcoin can be found 
 
 [^11]: https://bitcoinmagazine.com/what-is-bitcoin/what-is-segwit
 
-#### Monero Network Notes  
+### Monero Network Notes  
 
 The Monero network has a block time of 2min, but has a more complex block size limit than most other networks. In 
 Monero, block sizes have a median and a hard cap that can both be expanded by miners at the expense of block subsidy 
@@ -201,13 +201,13 @@ cap, but the Monero network can easily and smoothly scale up without any develop
 
 For more info on how this dynamic block scaling works, see ["How Monero Solved the Block Size Problem That Plagues Bitcoin"](https://localmonero.co/knowledge/dynamic-block-size).
 
-#### Zcash Network Notes  
+### Zcash Network Notes  
 
 Zcash uses similar properties to the Bitcoin network, but with a reduced block time of only 1.25min between blocks while
  also changing block size to 2MB. As SegWit is not supported, there is no complicated block limit differences to discuss
   here.
 
-#### Results  
+### Results
 
 As you can see below, due to the much more space-efficient transactions in Monero, you can support the most 
 Bitcoin-weighted TPS when comparing "reasonably private" spends across the three networks.
@@ -237,14 +237,18 @@ Thanks for tuning in to my first blog post, and hopefully you'll keep a close ey
 
 If you have any questions from this post or would like to connect with me otherwise, please reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
 
-## Transactions used for estimates  
-#### Bitcoin  
+## Transactions used for estimates
+
+### Bitcoin
+
 [TX0 pre-mix transaction](https://blockstream.info/tx/5787a5eb16bb7e5e16651f5f1bdc5afde146c6f7f5b3516e1ab77c5444128fa2?output:5)  
 [Whirlpool mix transaction](https://blockstream.info/tx/4e72519d391ce83e0659c9022a00344bedbb253de1747cf290162b3d3ea51479)  
 [STONEWALL post-mix transaction](https://blockstream.info/tx/ce2394b8d4d3b5be4712184b554c8b8ca6772e5baa1123482b9e50ef5bf2e8a2?input:0)  
 
-#### Monero  
+### Monero
+
 https://xmrchain.net/search?value=66679d2326cb2f7596cb6e2e25f586c819025b9daa902c901f80fa9b41c33e41 
 
-#### Zcash  
+### Zcash
+
 https://blockchair.com/zcash/transaction/62cb32927d0fcfa6b8d5d36dfc72631191722f971b1141864fbcf73e06588d64 
