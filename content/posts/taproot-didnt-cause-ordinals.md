@@ -50,6 +50,8 @@ Additionally, Ordinals being stored in witness data allows those who run a node 
 
 It's extremely like that if we had never included the SegWit soft-fork into Bitcoin that the Ordinals craze would still have happened, and along with it a drastically worse outcome for the blockchain. In this alternate reality, Ordinals (and all similar NFTs) would likely be inscribed directly into the UTXO set, similar to how Stamps function today.
 
+Some within the Bitcoin community have been asking for a removal of the SegWit witness data discount to force Ordinals to pay the same fees as all other users per byte. Unfortunately, this would have two extremely detrimental side-effects: it would disincentivize healthy UTXO management (consolidating UTXOs vs creating new ones) and incentivize Ordinals to be put in the UTXO set directly.
+
 While putting the data into the UTXO set does cost those creating these NFTs drastically more, it also means that those running a Bitcoin node cannot prune the data, no matter what. Bitcoin relies on nodes being able to retain the entire UTXO set in order to verify transactions properly and prevent double-spends, and any data within that UTXO set must be kept in perpetuity.
 
 That would be drastically worse for those running a Bitcoin node, and makes the Ordinals in SegWit witness data pale in comparison when it comes to negative impact on Bitcoin nodes.
