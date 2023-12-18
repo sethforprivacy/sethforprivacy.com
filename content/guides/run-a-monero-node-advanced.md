@@ -553,6 +553,6 @@ Also available as Tor HiddenServices at:
 
 `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
 
-Please reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
+Please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
 Thanks!

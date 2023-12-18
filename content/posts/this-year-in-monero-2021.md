@@ -248,7 +248,7 @@ Monero's Twitter follower count grew ***21.63%*** YoY and grew ***1,870%*** fast
 
 # Something Missing?
 
-If you see something missing from this post that was a major highlight of the year, please feel free to reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
+If you see something missing from this post that was a major highlight of the year, please feel free to reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
 
 # Resources Used
 

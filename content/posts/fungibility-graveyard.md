@@ -201,7 +201,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 # Something Missing?
 
-If you've noticed an instance of fungibility causing issues in the real world with Bitcoin, please feel free to reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) or click [suggest a change to this post on Github](https://github.com/sethforprivacy/sethforprivacy.com/blob/master/content/posts/fungibility-graveyard.md).
+If you've noticed an instance of fungibility causing issues in the real world with Bitcoin, please feel free to reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) or click [suggest a change to this post on Github](https://github.com/sethforprivacy/sethforprivacy.com/blob/master/content/posts/fungibility-graveyard.md).
 
 # Credits
 

@@ -528,4 +528,4 @@ I am not responsible for any lost funds or issues you may have with configuratio
 
 Hopefully this has been a nice (relatively) simple guide to get you started mining Monero via p2pool! p2pool is an essential tool to removing trust from mining pools and removing the power of potential future regulation, so I'm beyond excited that it is finally possible and works quite well.
 
-If you have specific questions or need some help, please reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).

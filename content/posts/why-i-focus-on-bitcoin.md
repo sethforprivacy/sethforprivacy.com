@@ -80,4 +80,4 @@ What does this mean for my recommendations to those seeking financial freedom? N
 
 I want to maximize freedom available to each and every person who wakes up, and both Bitcoin and Monero provide valuable tools to achieve financial freedom.
 
-This is a much more personal and transparent post than the majority of my writing, and I'd love to talk through it more with each of you. If you have questions around what I've mentioned here or want to dive more deeply into things, please reach out via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+This is a much more personal and transparent post than the majority of my writing, and I'd love to talk through it more with each of you. If you have questions around what I've mentioned here or want to dive more deeply into things, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
