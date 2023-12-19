@@ -11,7 +11,7 @@ description: "I've taken the time to collect, rebut, and give resources for each
 
 It happens with every proposal made for improving Bitcoin. First, the technical developers and researchers way in with strong and legitimate concerns, they hash out the details, and the proposal slowly improves over time. But at some point some of these concerns make their way onto social media and quickly become parroted FUD for those who don't like the concept of a proposal.
 
-That same effect has happened with covenants on Bitcoin, so I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants I've seen in the space. We'll go in order from the most to least common I've seen, but note it's a subjective order!
+That same effect has happened with covenants on Bitcoin, so I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants I've seen in the space. We'll go in order from the most to least common I've seen, but note it's a subjective order! As [CTV](https://covenants.info/proposals/ctv/) is the most popular and likely initial covenant proposal, I'll also highlight any specific call-outs necessary to understand how FUD does (or does not) apply to CTV.
 
 Having at least an introductory idea of what covenants are is vital to this conversation, so o learn more about covenants before diving into these points you can read more in these resources:
 
@@ -31,6 +31,8 @@ If we keep ringing the "unintended consequences" alarm bell for everything, we'l
 
 Every technology can and will have unintended consequences, both good and bad. Bitcoin is used for bad things today but that doesn't change the fact that it is freedom money and a necessity for freedom. At some point you have to do your best to make a technology a net positive and remove unintended consequences and move forward with the clear benefits it provides.
 
+**CTV-specific: CTV is an extremely simple and specific implementation of covenants that does not support recursive covenants intentionally. This makes the potential unintended consequences drastically lower and easier to quantify.**
+
 ## Exchanges could force encumbering covenants
 
 Honestly this one is the easiest to debunk, and [@4moonsettler](https://twitter.com/4moonsettler) has done a great job here:
@@ -44,6 +46,8 @@ If you have the ability to withdraw to a wallet of your choice, there is no way 
 {{< tweet user="jxpcsnmz" id="1737089845003190280" >}}
 
 Preventing the immense positives that covenants bring for self-custody, self-custodial Lightning, privacy, and further scaling for a vague governmental attack that is more easily done without covenants makes no sense to me.
+
+CTV-specific: Note that CTV as an implementation of covenants *does not* support recursion, so the concept of a recursive encumbering covenant often lumped into this counter-argument is not valid with CTV. While a malicious actor could still create an encumbering covenant, it could not be infinitely recursive and would be far harder to craft in a harmful way.
 
 ## Conclusion
 
