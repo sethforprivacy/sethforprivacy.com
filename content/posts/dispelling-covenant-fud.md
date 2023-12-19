@@ -3,7 +3,6 @@ title: "Dispelling Covenant FUD"
 date: 2023-12-19T07:05:30-05:00
 tags: 
 - Bitcoin
-- Taproot
 - Ordinals
 - Covenants
 author: "Seth For Privacy"
