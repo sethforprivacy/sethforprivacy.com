@@ -13,6 +13,14 @@ It happens with every proposal made for improving Bitcoin. First, the technical 
 
 That same effect has happened with covenants on Bitcoin, so I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants I've seen in the space. We'll go in order from the most to least common I've seen, but note it's a subjective order!
 
+Having at least an introductory idea of what covenants are is vital to this conversation, so o learn more about covenants before diving into these points you can read more in these resources:
+
+- [Bitcoin Covenants Wiki | covenants.info](https://covenants.info/)
+- [Next-Gen Smart Contracts for Bitcoin | UTXOS.org](https://utxos.org/)
+- [Bitcoin Covenants](https://bitcoincovenants.com/)
+- [OP_CHECKTEMPLATEVERIFY | Bitcoin Optech](https://bitcoinops.org/en/topics/op_checktemplateverify/)
+- [Covenants | Bitcoin Optech](https://bitcoinops.org/en/topics/covenants/)
+
 ## Covenants could have unintended consequences
 
 While this is a great place to *start* when considering proposals to Bitcoin, there has to be a point where you say "we've done enough research and resolved all known bad consequences." This one is easy to refute (thanks [@lopp](https://twitter.com/lopp)!), as there are also unintended consequences of **not** improving the protocol; i.e. a lack of approachable privacy, a harsh limit on how many people can self-custody Bitcoin, a less useful Lightning network, etc. We can quantify some of these, but there are surely many more that cannot be quantified (yet).
