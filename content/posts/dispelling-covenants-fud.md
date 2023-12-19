@@ -1,5 +1,5 @@
 ---
-title: "Dispelling Covenant FUD"
+title: "Dispelling Covenants FUD"
 date: 2023-12-19T07:05:30-05:00
 tags: 
 - Bitcoin
