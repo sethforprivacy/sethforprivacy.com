@@ -3,8 +3,8 @@ title: "Dispelling Covenant FUD"
 date: 2023-12-19T07:05:30-05:00
 tags: 
 - Bitcoin
-- Ordinals
 - Covenants
+- FUD
 author: "Seth For Privacy"
 description: "I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants."
 ---
