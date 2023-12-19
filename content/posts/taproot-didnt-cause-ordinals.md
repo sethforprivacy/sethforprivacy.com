@@ -34,11 +34,15 @@ Unfortunately, there is a common misunderstanding (thanks for the troll name [@T
 
 SegWit was a major upgrade and bug fix for Bitcoin that enabled the Lightning network to be built and included a 3MB "witness" data allowance within each block w/ reduced fees for data to incentivize spending UTXOs (therefore making them prunable). More on SegWit in a fantastic post from [@River](https://twitter.com/River) here:
 
-<https://river.com/learn/what-is-segwit/>
+<https://bitcoinmagazine.com/technical/the-witness-discount-why-some-bytes-are-cheaper-than-others>
 
 This incentivized portion of each transaction (called "witness" data) is intended for things like Bitcoin scripts, but can be used to store any data as long as it's done the "right" way. Specifically, Ordinals store them in an "envelope" between two opcodes, allowing the data to count as witness data and get the discount. This storage method was possible before SegWit, but now saves on fees in comparison to pre-SegWit usage.
 
 While this of course was not the intent of SegWit, it underlines the simple fact that if someone wants to store arbitrary data in a blockchain, they will find ways to do it.
+
+If you want a deep dive into what exactly SegWit changed, why, and why they chose the discount they did, you can read more in a fantastic post from [@reardencode](https://twitter.com/reardencode) here:
+
+<https://bitcoinmagazine.com/technical/the-witness-discount-why-some-bytes-are-cheaper-than-others>
 
 ## Does that make SegWit bad?
 
