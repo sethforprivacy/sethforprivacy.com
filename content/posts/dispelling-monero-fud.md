@@ -17,7 +17,6 @@ tags:
 - bitcoin
 title: Dispelling Monero FUD
 toc: true
-weight: 2
 ---
 
 ## Introduction
