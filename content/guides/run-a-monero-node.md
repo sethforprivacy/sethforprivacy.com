@@ -12,7 +12,6 @@ tags:
 - Network
 - p2p
 title: Run a Monero Node
-weight: 1
 ---
 
 With the [ongoing network attacks in Monero]({{< ref "/content/posts/moneros-ongoing-network-attack.md" >}}), it's a great time for users to dive into running their [own node](https://www.monerooutreach.org/monero_best_practices/your_own_node.html).

@@ -14,7 +14,6 @@ tags:
 - privacy
 title: Bitcoin's Fungibility Graveyard
 toc: true
-weight: 3
 ---
 
 # Introduction
