@@ -15,4 +15,4 @@ RUN rm /etc/nginx/conf.d/default.conf
 # Copy custom nginx.conf file
 COPY nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 80 443
+EXPOSE 80
