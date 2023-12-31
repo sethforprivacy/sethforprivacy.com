@@ -1,15 +1,16 @@
 ---
-title: "Dispelling Covenants FUD"
+title: "Dispelling CTV FUD"
 date: 2023-12-19T07:05:30-05:00
 tags: 
 - Bitcoin
 - Covenants
+- CTV
 - FUD
 author: "Seth For Privacy"
 description: "I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants."
 ---
 
-It happens with every proposal made for improving Bitcoin. First, the technical developers and researchers way in with strong and legitimate concerns, they hash out the details, and the proposal slowly improves over time. But at some point some of these concerns make their way onto social media and quickly become parroted FUD for those who don't like the concept of a proposal.
+It happens with every proposal made for improving Bitcoin. First, the technical developers and researchers weigh in with strong and legitimate concerns, they hash out the details, and the proposal slowly improves over time. But at some point some of these concerns make their way onto social media and quickly become parroted FUD for those who don't like the concept of a proposal.
 
 That same effect has happened with covenants on Bitcoin, so I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants I've seen in the space. We'll go in order from the most to least common I've seen, but note it's a subjective order! As [CTV](https://covenants.info/proposals/ctv/) is the most popular and likely initial covenant proposal, I'll also highlight any specific call-outs necessary to understand how FUD does (or does not) apply to CTV.
 
