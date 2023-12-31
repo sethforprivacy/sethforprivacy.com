@@ -12,15 +12,16 @@ description: "I've taken the time to collect, rebut, and give resources for each
 
 It happens with every proposal made for improving Bitcoin. First, the technical developers and researchers weigh in with strong and legitimate concerns, they hash out the details, and the proposal slowly improves over time. But at some point some of these concerns make their way onto social media and quickly become parroted FUD for those who don't like the concept of a proposal.
 
-That same effect has happened with covenants on Bitcoin, so I've taken the time to collect, rebut, and give resources for each of the most common FUD points against CTV-based covenants I've seen in the space. We'll go in order from the most to least common I've seen, but note it's a subjective order! As [CTV](https://covenants.info/proposals/ctv/) is the most popular and likely initial covenant proposal, I'll also highlight any specific call-outs necessary to understand how FUD does (or does not) apply to CTV.
+That same effect has happened with covenants on Bitcoin, so I've taken the time to collect, rebut, and give resources for each of the most common FUD points against CTV-based covenants I've seen in the space. We'll go in order from the most to least common I've seen, but note it's a subjective order! As [CTV](https://covenants.info/proposals/ctv/) is the most popular and likely initial covenant proposal, that is the focus of this particular post.
 
-Having at least an introductory idea of what covenants are is vital to this conversation, so o learn more about covenants before diving into these points you can read more in these resources:
+Having at least an introductory idea of what covenants are is vital to this conversation, so to learn more about covenants before diving into these points you can read more in these resources:
 
 - [Bitcoin Covenants Wiki | covenants.info](https://covenants.info/)
 - [Next-Gen Smart Contracts for Bitcoin | UTXOS.org](https://utxos.org/)
 - [Bitcoin Covenants](https://bitcoincovenants.com/)
 - [OP_CHECKTEMPLATEVERIFY | Bitcoin Optech](https://bitcoinops.org/en/topics/op_checktemplateverify/)
 - [Covenants | Bitcoin Optech](https://bitcoinops.org/en/topics/covenants/)
+- [What is #CTV BIP 119 (covenants)? | X thread by @dallasirushing](https://twitter.com/dallasirushing/status/1740443095689318566)
 
 ## CTV could have unintended consequences
 
@@ -32,7 +33,7 @@ If we keep ringing the "unintended consequences" alarm bell for everything, we'l
 
 Every technology can and will have unintended consequences, both good and bad. Bitcoin is used for bad things today but that doesn't change the fact that it is freedom money and a necessity for freedom. At some point you have to do your best to make a technology a net positive and remove unintended consequences and move forward with the clear benefits it provides.
 
-**CTV-specific: CTV is an extremely simple and specific implementation of covenants that intentionally does not support recursive covenants. This makes the potential unintended consequences much lower and easier to quantify.**
+CTV is an extremely simple and specific implementation of covenants that intentionally does not support recursive covenants, and instead acts more as a way to perform more complex transactions without needing a time-consuming and complex Pre-Signed Bitcoin Transaction (PSBT) exchange. This makes the potential unintended consequences much lower and easier to quantify.
 
 ## Exchanges could force encumbering covenants
 
@@ -40,7 +41,7 @@ Honestly this one is the easiest to debunk, and [@4moonsettler](https://twitter.
 
 {{< tweet user="4moonsettler" id="1736892059879895050" >}}
 
-The only thing I would add is that if a government was able to force exchanges to do this, why wouldn't they just make self-custody illegal or force users into a much easier and simpler 2-of-2 multisig where they hold a key?
+The only thing I would add is that if a government was able to force exchanges to do this, why wouldn't they just make self-custody illegal or force users into a much easier and simpler 2-of-2 multisig where they hold a key? This would be trivial to setup for an exchange, as they already have strong multisig wallets in-place, and already maintain blacklists of places their users are not allowed to withdraw funds to.
 
 If you have the ability to withdraw to a wallet of your choice, there is no way for an exchange to force you into a covenant. If you can't withdraw to a wallet of your choice, you're FUBAR'd anyways and covenants don't make the situation any worse. If they can limit how you spend the money they sent to you, did they really send it?
 
