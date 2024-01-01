@@ -22,6 +22,7 @@ Having at least an introductory idea of what covenants are is vital to this conv
 - [OP_CHECKTEMPLATEVERIFY | Bitcoin Optech](https://bitcoinops.org/en/topics/op_checktemplateverify/)
 - [Covenants | Bitcoin Optech](https://bitcoinops.org/en/topics/covenants/)
 - [What is #CTV BIP 119 (covenants)? | X thread by @dallasirushing](https://twitter.com/dallasirushing/status/1740443095689318566)
+- [Covenants 101, with a focus on CTV | X thread by @OwenKemeys](https://x.com/owenkemeys/status/1741575353716326835?s=61)
 
 ## CTV could have unintended consequences
 
