@@ -30,7 +30,7 @@ Donating in Monero not only is a great use-case for private, fungible money like
 - The Monero Community Crowdfunding System (CCS) where all native funding for Monero projects and contributors occur:  
   - <https://ccs.getmonero.org/funding-required/>
 - Feather, a Tor-native Monero desktop wallet:  
-  - <https://featherwallet.org/faq/#how-can-i-support-the-development-of-feather>
+  - <https://docs.featherwallet.org/guides/donate>
 - Cake Wallet, a mobile Monero wallet for both iOS and Android:  
   - <https://cakewallet.com/>
 - Monerujo, a mobile Monero wallet for Android:  
