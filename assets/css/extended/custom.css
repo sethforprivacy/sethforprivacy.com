@@ -15,9 +15,6 @@
 }
 
 blockquote.twitter-tweet {
-    font: 14px/1.45 '-apple-system',BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-    border-left: 4px solid var(--twitter-color);
-    padding-left: 1.5em;
     color: var(--secondary);
 }
 
