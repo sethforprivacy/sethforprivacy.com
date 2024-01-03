@@ -1,10 +1,9 @@
 ---
-title: "Taproot Didn't Cause JPEGs on Bitcoin"
+title: "Taproot Didn't Cause JPEGs Or Inscriptions on Bitcoin"
 date: 2023-12-18T07:15:45-05:00
 tags: 
 - Bitcoin
 - Taproot
-- Ordinals
 - NFTs
 - Covenants
 author: "Seth For Privacy"
@@ -13,7 +12,7 @@ description: "tl;dr - Focus on how we can make Bitcoin better via covenants."
 
 *Note: This was originally [posted on X](https://twitter.com/sethforprivacy/status/1736715932704063997) and has been re-posted/reformatted for posterity here.*
 
-I've seen the view that "Taproot caused/enabled arbitrary data storage on Bitcoin" commonly mentioned across Twitter, and it's one that can be extremely harmful. Many in the space would love to further ossify (prevent change) in Bitcoin and use jpegs/BRC-20 tokens/Stamps "spam" as the reason for doing so, but I'd argue that that would be the worst possible outcome from this situation.
+I've seen the view that "Taproot caused/enabled arbitrary data storage on Bitcoin" commonly mentioned across Twitter, and it's one that can be extremely harmful. Many in the space would love to further ossify (prevent change) in Bitcoin and use jpegs/inscriptions "spam" as the reason for doing so, but I'd argue that that would be the worst possible outcome from this situation.
 
 This needs a lengthy explanation to properly grasp what's at play here, though, so let's get into the fun details.
 
@@ -31,7 +30,7 @@ All of these happened before both SegWit and Taproot, and there are many more ca
 
 ## But I thought Taproot enabled this?
 
-Unfortunately, there is a common misunderstanding (thanks for the troll name [@TaprootWizards](https://twitter.com/TaprootWizards) 😅) that Taproot enabled this type of data storage, thus opening the way for jpeg/BRC-20 token/Stamp "spam." In reality, this type of arbitrary data storage on Bitcoin has always been possible, but was made much cheaper to do with the introduction of SegWit in 2017.
+Unfortunately, there is a common misunderstanding (thanks for the troll name [@TaprootWizards](https://twitter.com/TaprootWizards) 😅) that Taproot enabled this type of data storage, thus opening the way for jpeg/inscription "spam." In reality, this type of arbitrary data storage on Bitcoin has always been possible, but was made much cheaper to do with the introduction of SegWit in 2017.
 
 SegWit was a major upgrade and bug fix for Bitcoin that enabled the Lightning network to be built and included a 3MB "witness" data allowance within each block w/ reduced fees for data to incentivize spending UTXOs (therefore making them prunable). More on SegWit in a fantastic post from [@River](https://twitter.com/River) here:
 
@@ -63,7 +62,7 @@ That would be drastically worse for those running a Bitcoin node, and makes the 
 
 ## So what can we do about it?
 
-The solution to reducing the cost of using Bitcoin is not censoring jpegs (something that isn't even technologically possible, BTW), but rather finally building solutions to Bitcoin's long-term scaling. Jpegs/BRC-20 tokens/Stamps have highlighted something most of us knew would happen -- base-layer fees would become untenably high, as they have to for Bitcoin to be secure long-term.
+The solution to reducing the cost of using Bitcoin is not censoring jpegs (something that isn't even technologically possible, BTW), but rather finally building solutions to Bitcoin's long-term scaling. Jpegs/inscriptions have highlighted something most of us knew would happen -- base-layer fees would become untenably high, as they have to for Bitcoin to be secure long-term.
 
 In order for the average person to use Bitcoin, we need powerful scaling solutions like layer twos, and unfortunately Lightning in it's current form isn't the final solution. Lightning relies on every channel-owner (and thus user when done in a non-custodial manner) being able to settle back on-chain to resolve disputes, something that isn't economically feasible in a realistic fee environment.
 
