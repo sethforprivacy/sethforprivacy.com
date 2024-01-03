@@ -60,7 +60,7 @@ While putting the data into the UTXO set does cost those creating these NFTs dra
 
 That would be drastically worse for those running a Bitcoin node, and makes the inscriptions in SegWit witness data pale in comparison when it comes to negative impact on Bitcoin nodes.
 
-The vast majority of usage for arbitrary data storage has already shifted away from inscribing JPEGs and to non-fungible token protocols like BRC-20 and Stamps. You can read more on the overall usage of each protocol from a fantastic thread by [@mononautical](https://twitter.com/mononautical)
+The vast majority of usage for arbitrary data storage has already shifted away from inscribing JPEGs and to non-fungible token protocols like BRC-20 and Stamps. You can read more on the overall usage of each protocol from a fantastic thread by [@mononautical](https://twitter.com/mononautical):
 
 {{< tweet user="mononautical" id="1742358704484155478" >}}
 
