@@ -15,7 +15,9 @@ tags:
 title: Mining Monero
 ---
 
-# Introduction
+{{< notice info >}}
+While this guide is still useful for those who want to mine on multiple machines or "Uncle Jim" p2pool mining for others, if you just have a single machine to mine on I'd recommend using [Gupax](https://github.com/hinto-janai/gupax?tab=readme-ov-file#guide) instead. [Gupax](https://github.com/hinto-janai/gupax?tab=readme-ov-file#guide) is a FANTASTIC all-in-one Monero mining app for desktop that simplifies the entire process.
+{{< /notice >}}
 
 It's been a long time coming, but one of the things I love about Monero is the ability for it to be mined with "commodity hardware" -- in other words, hardware you already likely have around the house, office, etc.
 

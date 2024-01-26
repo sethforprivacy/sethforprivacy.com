@@ -1,7 +1,7 @@
 baseURL: 'https://sethforprivacy.com/'
 languageCode: en-us
 title: sethforprivacy.com
-theme: PaperMod
+theme: ["hugo-notice", "PaperMod"]
 
 enableRobotsTXT: true
 buildDrafts: false

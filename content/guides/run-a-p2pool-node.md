@@ -18,7 +18,9 @@ tags:
 title: Run and mine on a p2pool Node
 ---
 
-## Introduction
+{{< notice info >}}
+While this guide is still useful for those who want to mine on multiple machines or "Uncle Jim" p2pool mining for others, if you just have a single machine to mine on I'd recommend using [Gupax](https://github.com/hinto-janai/gupax?tab=readme-ov-file#guide) instead. [Gupax](https://github.com/hinto-janai/gupax?tab=readme-ov-file#guide) is a FANTASTIC all-in-one Monero mining app for desktop that simplifies the entire process.
+{{< /notice >}}
 
 ***NOTE: Much of the beginning of this guide is taken from my related guide, ["Run a Monero Node"]({{< ref "/content/guides/run-a-monero-node.md" >}}), but is necessary here as running your own node is usually required for p2pool usage.***
 

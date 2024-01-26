@@ -2,7 +2,7 @@ baseURL: 'http://sfprivg7qec6tdle7u6hdepzjibin6fn3ivm6qlwytr235rh5vc6bfqd.onion/
 publishDir: tor
 languageCode: en-us
 title: sethforprivacy.com
-theme: PaperMod
+theme: ["hugo-notice", "PaperMod"]
 
 enableRobotsTXT: true
 buildDrafts: false
