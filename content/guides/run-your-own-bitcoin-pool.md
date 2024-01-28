@@ -126,6 +126,7 @@ If you would like to inspect the source code behind the image used here or build
     mkdir ~/pool
     cd ~/pool
     git clone https://github.com/sethforprivacy/simple-public-pool.git .
+    cd simple-public-pool
     nano docker-compose.yaml
     ```
 
