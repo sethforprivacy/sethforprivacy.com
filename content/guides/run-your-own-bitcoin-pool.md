@@ -123,9 +123,8 @@ If you would like to inspect the source code behind the image used here or build
 1. Get the necessary files from Github and place them wherever you'd like, for this guide I will use `~/pool`:
 
     ```bash
-    mkdir ~/pool
+    git clone https://github.com/sethforprivacy/simple-public-pool.git ./pool
     cd ~/pool
-    git clone https://github.com/sethforprivacy/simple-public-pool.git .
     nano docker-compose.yaml
     ```
 
