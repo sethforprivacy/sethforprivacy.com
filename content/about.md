@@ -17,7 +17,7 @@ My aim overall is to educate and learn more myself about where technology and pr
 
 ## How To Contact Me  
 
-- [Signal](https://signal.me/#eu/Cy1EK0D1W1e1VI/mhQ9C7m7QbnLXnyPhDUb3yTrNetP2ctqMbexAb4llN/PXaBCZ) - `sethforprivacy.93`
+- Signal - `@sethforprivacy.01`
 - [SimpleX](https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2F0CtpAgMrcbi0tDKSojOxxwDL5g2ZVd7-%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAuyZ_n3N9SVwzIUq4oWl0QvSQDw_ZodrC4tuN96-920Q%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion)
 - [Matrix](https://matrix.to/#/@sethforprivacy:agoradesk.com) - `@sethforprivacy:agoradesk.com`
 - [Twitter/X](https://twitter.com/sethforprivacy) - `@sethforprivacy`  
