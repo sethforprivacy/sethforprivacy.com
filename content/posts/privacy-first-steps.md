@@ -39,8 +39,6 @@ Before you go any further, I'd recommend this step be priority number one for yo
 
 - [Techlore's Forums](https://discuss.techlore.tech/)
   - [Discord](https://discord.gg/Xd7baMSpqS)
-- [The Sovereign Bitcoiner, a fantastic new content feed and community focused on Bitcoin, digital sovereignty, and privacy](https://sovrnbitcoiner.com/)
-  - [Telegram Chat](https://t.me/SovrnBitcoiner)
 - [Opt Out Podcast Matrix room](https://matrix.to/#/#opt-out-podcast:monero.social)
 - [TheNewOil Matrix room](https://matrix.to/#/#TheNewOil:matrix.org)
 
@@ -57,7 +55,7 @@ Browsers:
     - By far my favorite hardening guide for Firefox and made by my good friends at [TechLore](https://techlore.tech/), goes step by step with very simple instructions and walks you through the process. Don't let it scare you! It's very straightforward, and only needs to be done once per computer you have/use.
 - [Brave Browser](https://brave.com/)
   - Brave has some excellent defaults, but certainly takes some odd approaches (like cryptocurrency ads all over the place and built-in cryptocurrency wallets which aren't helpful to most people).
-    - [Brave hardening guide from anonymousplanet-ng.org](https://anonymousplanet-ng.org/guide.html#brave-1)
+    - [Brave hardening guide from anonymousplanet.org](https://anonymousplanet.org/guide.html#brave-1)
 - [Ungoogled Chromium](https://github.com/Eloston/ungoogled-chromium)
   - Ungoogled Chromium takes the best of Chrome Browser and strips Google from it, making a very compelling and very fast browser. It can be a bit tricky to get and keep updated on some operating systems, and extension installation and updates are a bit of a pain, but it's a great option for those who are a bit more hardcore but like the Chrome web engine.
 
@@ -128,6 +126,8 @@ Each of the alternatives have some key pros and cons, and are really up to perso
   - I personally host a [public instance of Whoogle](https://search.sethforprivacy.com/) and really appreciate the ability to get Google search results without revealing IP address and without the extra bloat of Google searches. It's also quite easy to self-host, if desired.
   - [Public instances](https://github.com/benbusby/whoogle-search#public-instances)
   - [Opt Out episode on Whoogle](https://optoutpod.com/episodes/s2e12-whoogle/)
+- [Kagi](https://kagi.com/)
+  - Kagi.com is a search engine with a new and refreshing take on things - instead of paying with your data or your eyes via ads, you simply... pay! Kagi has multiple paid plans (which can be paid in Bitcoin!) and has been my go-to lately as it performs extremely well and is completely ad-free.
 
 ### 7. Switch yourself and your friends/family to a more private messaging service/app
 
