@@ -84,8 +84,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 ## All CoinJoins
 
 - Multiple user's deposits are flagged by BlockFi upon depositing from a CoinJoin tool like Wasabi:
-  - [Twitter Source](https://twitter.com/ODELL/status/1234514628115341313)
-    {{< tweet user="ODELL" id="1234514628115341313" >}}
+  - [Twitter Source (Source is now deleted)](https://twitter.com/ODELL/status/1234514628115341313)
+    {{< collapse summary="Source Image" >}}
+    {{< figure src="/fungibility-graveyard/blockfi_coinjoin.png" align="center" style="border-radius: 8px;" >}}
+    {{< /collapse >}}
   - [Response from BlockFi](https://tweetstamp.org/1234531935038341120)
 - A user's loan is closed while under water (causing a loss of 50%) due to the previous owner of the coins using a mixing service or tool:
   - [Twitter Source](https://twitter.com/Bitfinexed/status/1489833237765660673)
@@ -229,8 +231,6 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/wasabi_censorship.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/bitmex_joinmarket.png" align="center" style="border-radius: 8px;" >}}
-
-{{< figure src="/fungibility-graveyard/blockfi_coinjoin.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/blockfi_coinjoin2.png" align="center" style="border-radius: 8px;" >}}
 
