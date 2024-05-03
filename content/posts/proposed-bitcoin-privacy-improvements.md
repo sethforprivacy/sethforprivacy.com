@@ -98,7 +98,7 @@ Although implemented in some wallets and tools, PayJoin usage unfortunately seem
 
 ### Peer-to-Peer Communication Encryption - BIP 151 and BIP 324
 
-> ***Status:*** Original BIP 151 withdrawn, new BIP 324 in draft
+> ***Status:*** BIP 324 deployed in Bitcoin Core v26.x and enabled by default in v27.0
 
 > ***Pros:*** Prevents simple snooping by ISPs and mobile carriers; Prevents man-in-the-middle attacks by rogue nodes pretending to be your specified remote node; Can pin known-good nodes to ensure you have healthy nodes as peers
 
