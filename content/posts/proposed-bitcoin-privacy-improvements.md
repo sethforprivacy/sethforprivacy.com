@@ -185,7 +185,7 @@ It seemed that CoinSwap has been abandoned as there was no progress since 2020, 
 
 ### Silent Payments
 
-> ***Status:*** WIP, not yet formally proposed for Bitcoin
+> ***Status:*** Approved as BIP 352
 
 > ***Pros:*** Much easier receipt of funds to a static address while preserving privacy; No direct link between payment code and on-chain addresses/transactions (unlike static Bitcoin addresses); Does not require on-chain notification transaction, unlike [BIP 47]({{< relref "#reusable-payment-codes-for-hierarchical-deterministic-wallets---bip-47" >}}); Less risk of privacy "foot guns" vs BIP 47
 
@@ -199,10 +199,12 @@ It will be interesting to see this proposal play out versus BIP 47, especially a
 
 A [great summary of the three main reusable payment code schemes has been provided by Ruben Somsen](https://gist.github.com/Kixunil/0ddb3a9cdec33342b97431e438252c0a?permalink_comment_id=4013454#gistcomment-4013454), the author of Silent Payments in the gist for [Reusable Taproot addresses](#reusable-taproot-addresses).
 
+- [Silent Payments - 352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)
 - [Silent Payments proposal gist](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8)
 - [Silent Payments presentation](https://rumble.com/v12kuz7-bitcoin-silent-payments.html)
 - [Bitcoin, Explained 58: Silent Payments](https://www.youtube.com/watch?v=42PMLaz7Avk&t=20s)
 - ["Bitcoin Silent Payments and Secret Blinding Keys" - Bitcoin Magazine](https://bitcoinmagazine.com/technical/bitcoin-silent-payments-secret-keys)
+- ["Making sense of stealth addresses" - Foundation Blog](https://foundation.xyz/2023/02/making-sense-of-stealth-addresses/)
 
 ### Reusable Taproot addresses
 
