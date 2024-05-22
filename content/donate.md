@@ -19,9 +19,7 @@ You can easily donate Bitcoin (on-chain or via Lightning) or Monero via my BTCPa
 
 You can easily donate Bitcoin via Lightning to my Lightning Address:
 
-{{< figure src="/lnaddress.png" link="lightning:seth@btcpay.sethforprivacy.com" >}}
-
-`seth@btcpay.sethforprivacy.com`
+{{< figure src="/lnaddress.png" link="lightning:seth@btcpay.sethforprivacy.com" align="center" style="border-radius: 8px;" caption="seth@btcpay.sethforprivacy.com" >}}
 
 ## Bitcoin via Silent Payments
 
