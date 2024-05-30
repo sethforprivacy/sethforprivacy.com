@@ -160,10 +160,6 @@ pruneable in any way at present.
 It's important to note that most users of both Zcash and Bitcoin do not opt into using these privacy tools, and instead 
 choose to transact without hiding sender/receiver/amount for the vast majority of transactions.
 
-For more info on comparing the frequency of spends utilizing these privacy tools, see a recent Tweet thread from @JEhrenhofer:
-
-{{< tweet user="JEhrenhofer" id="1332552672185098240" >}}
-
 | Cryptocurrency | Transaction Size | Transaction Cost (in USD as of 2023-12-16) |
 | ---| --- | --- |
 | Bitcoin | 2,363b, 1,475vb | $93.85 (@ 150sat/vb) |
