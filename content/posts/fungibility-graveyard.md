@@ -37,40 +37,40 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 ## Wasabi
 
 - A user's Binance SGD account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
-  - [Twitter Source](https://twitter.com/bittlecat/status/1207621591820951552)
+  - [Twitter Source](https://x.com/bittlecat/status/1207621591820951552)
 - A user's Paxful account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/czext2/paxful_account_was_frozen_due_to_coinjoin/)
 - A user's Bitfinex account is frozen upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://old.reddit.com/r/WasabiWallet/comments/beqj8r/bitfinex_lock_account/)
 - A user's Bitstamp account is flagged months/years after withdrawal to Wasabi Wallet for mixing:
-  - [Twitter Source (deleted after this blog was published)](https://twitter.com/6102bitcoin/status/1367376460214853632)
+  - [Twitter Source (deleted after this blog was published)](https://x.com/6102bitcoin/status/1367376460214853632)
   {{< collapse summary="Source Image" >}}
   {{< figure src="/fungibility-graveyard/bitstamp_wasabi.png" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
 - A user's BitVavo account is closed upon attempted withdrawal to Wasabi Wallet for mixing:
   - [Reddit Source](https://www.reddit.com/r/Bitcoin/comments/i8ye6x/exchange_account_closed_because_of_risk_profile/)
 - A user's Paxos account is frozen upon attempted withdrawal to Samourai Wallet for mixing:
-  - [Twitter Source](https://twitter.com/RonaldMcHodled/status/1222172084610027523)
+  - [Twitter Source](https://x.com/RonaldMcHodled/status/1222172084610027523)
     {{< tweet user="RonaldMcHodled" id="1222172084610027523" >}}
 - The Ethereum DAO hacker's use of Wasabi Wallet leads directly to his ID after simple tracing
   - [News Source](https://www.forbes.com/sites/laurashin/2022/02/22/exclusive-austrian-programmer-and-ex-crypto-ceo-likely-stole-11-billion-of-ether/?sh=6e7cc3bc7f58)
-  - [Twitter Source](https://twitter.com/laurashin/status/1496087239037698048)
+  - [Twitter Source](https://x.com/laurashin/status/1496087239037698048)
     {{< tweet user="laurashin" id="1496087239037698048" >}}
-  - [Twitter Source demonstrating tracing](https://twitter.com/LaurentMT/status/1496252516702605318)
+  - [Twitter Source demonstrating tracing](https://x.com/LaurentMT/status/1496252516702605318)
     {{< tweet user="LaurentMT" id="1496252516702605318" >}}
   - [YouTube source demonstrating tracing](https://www.youtube.com/watch?v=alcLdBsoDDg)
 - Wasabi Wallet announces they will start censoring mixing inputs to prevent certain users from mixing their funds
-  - [Twitter Source](https://twitter.com/wasabiwallet/status/1503091503207432193)
+  - [Twitter Source](https://x.com/wasabiwallet/status/1503091503207432193)
     {{< tweet user="wasabiwallet" id="1503091503207432193" >}}
   - [Telegram Source](https://t.me/WasabiWallet/63992)
 - A user's Gemini account is frozen after previous transactions with Wasabi Wallet were discovered upon review of his account:
-  - [Twitter Source](https://twitter.com/bjackson2718/status/1527040352770588673)
+  - [Twitter Source](https://x.com/bjackson2718/status/1527040352770588673)
   {{< tweet user="bjackson2718" id="1527040352770588673" >}}
 
 ## Samourai
 
 - A users's Bottlepay deposit is rejected/returned upon depositing mixed funds:
-  - [Twitter Source (deleted after this blog was published)](https://twitter.com/Marty_P_B/status/1366737347887456260)
+  - [Twitter Source (deleted after this blog was published)](https://x.com/Marty_P_B/status/1366737347887456260)
   {{< collapse summary="Source Image" >}}
   {{< figure src="/fungibility-graveyard/bottlepay_samourai.png" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
@@ -78,29 +78,31 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 ## JoinMarket
 
 - A user's BitMEX account is flagged months after withdrawal to JoinMarket for mixing:
-  - [Twitter Source](https://twitter.com/kristapsk/status/1374336620158140419)
+  - [Twitter Source](https://x.com/kristapsk/status/1374336620158140419)
     {{< tweet user="kristapsk" id="1374336620158140419" >}}
 
 ## All CoinJoins
 
 - Multiple user's deposits are flagged by BlockFi upon depositing from a CoinJoin tool like Wasabi:
-  - [Twitter Source (Source is now deleted)](https://twitter.com/ODELL/status/1234514628115341313)
+  - [Twitter Source (Source is now deleted)](https://x.com/ODELL/status/1234514628115341313)
     {{< collapse summary="Source Image" >}}
     {{< figure src="/fungibility-graveyard/blockfi_coinjoin.png" align="center" style="border-radius: 8px;" >}}
     {{< /collapse >}}
   - [Response from BlockFi](https://tweetstamp.org/1234531935038341120)
 - A user's loan is closed while under water (causing a loss of 50%) due to the previous owner of the coins using a mixing service or tool:
-  - [Twitter Source](https://twitter.com/Bitfinexed/status/1489833237765660673)
+  - [Twitter Source](https://x.com/Bitfinexed/status/1489833237765660673)
     {{< tweet user="Bitfinexed" id="1489833237765660673" >}}
   - [Reddit Source](https://www.reddit.com/r/blockfi/comments/skxiei/blockfi_horrible_loan_experience_fortune_lost/)
 - A user's account is flagged upon mixing coins after withdrawal from Voyager:
-  - [Twitter Source](https://twitter.com/sundaywar/status/1366854774864322560)
+  - [Twitter Source](https://x.com/sundaywar/status/1366854774864322560)
     {{< tweet user="sundaywar" id="1366854774864322560" >}}
 - Paxos official statement on handling of Bitcoin with a history of CoinJoin:
-  - [Twitter Source](https://twitter.com/jehrenhofer/status/1235963248522006528)
-    {{< tweet user="jehrenhofer" id="1235963248522006528" >}}
+  - [Twitter Source (now unavailable)](https://x.com/jehrenhofer/status/1235963248522006528)
+    {{< collapse summary="Source Image" >}}
+    {{< figure src="/fungibility-graveyard/paxos_coinjoin.png" align="center" style="border-radius: 8px;" >}}
+    {{< /collapse >}}
 - A user's account is frozen due to 6mo-old post-CoinJoin transactions by Bitwala:
-  - [Twitter Source (tweet is now deleted)](https://twitter.com/riccardomasutti/status/1375507165151076353)
+  - [Twitter Source (tweet is now deleted)](https://x.com/riccardomasutti/status/1375507165151076353)
     {{< collapse summary="Source Image" >}}
     {{< figure src="/fungibility-graveyard/bitwala_coinjoin.png" align="center" style="border-radius: 8px;" >}}
     {{< /collapse >}}
@@ -113,10 +115,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - A user receives tainted Bitcoin that cause two exchange accounts to be locked upon deposits:
   - [Bisq Source](https://bisq.community/t/dirty-btc-coins-on-the-xmr-market/7798)
 - A user is attacked by the media upon receiving a donation from a "far-right" donor:
-  - [Twitter Source](https://twitter.com/sethforprivacy/status/1370721319680155651)
+  - [Twitter Source](https://x.com/sethforprivacy/status/1370721319680155651)
     {{< tweet user="sethforprivacy" id="1370721319680155651" >}}
 - Multiple user's exchange accounts are closed after making a donation to a dark-net researcher:
-  - [Twitter Source](https://twitter.com/DarkDotFail/status/1359243753664303104)
+  - [Twitter Source](https://x.com/DarkDotFail/status/1359243753664303104)
     {{< tweet user="DarkDotFail" id="1359243753664303104" >}}
 - A user's account is closed by LocalBitcoins after sending funds directly to a DNM:  
   - [Reddit Source](https://www.reddit.com/r/darknet/comments/mrjd99/local_bitcoin_website_terminated_my_account_after/)
@@ -126,10 +128,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Government Source](https://archive.ph/IqnrX)
 - Bitcoin donated to the "Freedom Convoy" in Canada is blacklisted and frozen at centralized exchanges
   - [News Source](https://www.coindesk.com/layer2/2022/02/22/frozen-bitcoin-tied-to-canadian-protests-lands-at-coinbase-cryptocom/)
-  - [Twitter Source](https://twitter.com/CoinDesk/status/1496220843420131329)
+  - [Twitter Source](https://x.com/CoinDesk/status/1496220843420131329)
     {{< tweet user="CoinDesk" id="1496220843420131329" >}}
   - [News Source on addresses sanctioned](https://www.coindesk.com/policy/2022/02/16/canada-sanctions-34-crypto-wallets-tied-to-trucker-freedom-convoy/)
-  - [Twitter source on addresses sanctioned](https://twitter.com/CoinDesk/status/1494002689931620352)
+  - [Twitter source on addresses sanctioned](https://x.com/CoinDesk/status/1494002689931620352)
     {{< tweet user="CoinDesk" id="1494002689931620352" >}}
 - A user's Bitcoin is frozen by FixedFloat.com due to suspected illicit acquisition (hack/theft)
   - [Reddit Source](https://www.reddit.com/r/Monero/comments/t1gyoo/fixedfloat_scammed_me_for_6000_usd/)
@@ -139,7 +141,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   {{< figure src="/fungibility-graveyard/fixedfloat_tainted.jpeg" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
 - A user's Coinbase account is frozen and then shut down due to tainted transactions from 2y prior
-  - [Twitter Source (user's account was suspended after this was added to the post)](https://twitter.com/AwyeeDeaterBob/status/1439377414484807680)
+  - [Twitter Source (user's account was suspended after this was added to the post)](https://x.com/AwyeeDeaterBob/status/1439377414484807680)
   {{< collapse summary="Source Image" >}}
   {{< figure src="/fungibility-graveyard/coinbase_taint.png" align="center" style="border-radius: 8px;" >}}
   {{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
@@ -156,7 +158,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [News Source](https://cointelegraph.com/news/the-blacklist-marathon-only-mining-fully-compliant-bitcoin-transactions)
   - [First compliant block mined](https://mempool.space/block/000000000000000000003f8cb66fe1ecfb38754abc9c4d4a62b71de45fef8777)
   - [List of compliant blocks mined by MARA Pool w/ block template comparisons](https://miningpool.observer/template-and-block?pool=MARA%20Pool)
-  - [Twitter thread with details on the first 10 compliant blocks](https://twitter.com/sethforprivacy/status/1393206480195788805)
+  - [Twitter thread with details on the first 10 compliant blocks](https://x.com/sethforprivacy/status/1393206480195788805)
     {{< tweet user="sethforprivacy" id="1393206480195788805" >}}
 - Blockseer launches compliant Bitcoin mining pool that only mines approved and filtered transactions:
   - "Blocks posted to the Bitcoin blockchain by Blockseer’s pool will only contain filtered transactions using Blockseer and Walletscore’s labeling data, along with verified sources such as the United States OFAC blacklist for crypto."
@@ -170,10 +172,10 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Confirmation Source](https://www.youtube.com/watch?v=WcXp17fjcT8&t=2223s)
 - Only "virgin" Bitcoin mined by state-sanctioned miners can be used in Iran:  
   - [News Source](https://bitcoinmagazine.com/culture/iran-using-cryptocurrency-for-imports)
-  - [Twitter Source](https://twitter.com/Fatalmeh/status/1390338789462224908)
+  - [Twitter Source](https://x.com/Fatalmeh/status/1390338789462224908)
 - F2Pool filters 4 OFAC-sanctioned transactions from their mined blocks intentionally:
   - [Blog source](https://b10c.me/observations/08-missing-sanctioned-transactions/?t)
-  - [Twitter Source, showing co-founder confirming their censorship](https://twitter.com/Diverter_NoKYC/status/1727218593119822210?s=20)
+  - [Twitter Source, showing co-founder confirming their censorship](https://x.com/Diverter_NoKYC/status/1727218593119822210?s=20)
 
 ## General Fungibility Issues
 
@@ -206,10 +208,10 @@ If you've noticed an instance of fungibility causing issues in the real world wi
 
 # Credits
 
-- Several of the sources linked above were pulled from an excellent resource by [@6102bitcoin](https://twitter.com/6102bitcoin?s=21) on cases of CoinJoin flagging: https://6102bitcoin.com/coinjoin-flagging/.
+- Several of the sources linked above were pulled from an excellent resource by [@6102bitcoin](https://x.com/6102bitcoin?s=21) on cases of CoinJoin flagging: https://6102bitcoin.com/coinjoin-flagging/.
 - Many of the linked sources were provided by Monero community members on Reddit and Twitter on threads like the below:
   - https://www.reddit.com/r/Monero/comments/mbn12q/i_created_a_new_blog_post_will_be_a_new_site_soon/
-  - https://twitter.com/sethforprivacy/status/1374445921484689408?s=21
+  - https://x.com/sethforprivacy/status/1374445921484689408?s=21
 - Thanks to the many Monero community members who contributed sources privately or contributed wording and feedback on this page itself.
 
 # Source Image Archive
@@ -235,8 +237,6 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/blockfi_coinjoin2.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/blockfi_coinjoin3.png" align="center" style="border-radius: 8px;" >}}
-
-{{< figure src="/fungibility-graveyard/paxos_coinjoin.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/bitwala_coinjoin.png" align="center" style="border-radius: 8px;" >}}
 

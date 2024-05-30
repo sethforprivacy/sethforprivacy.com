@@ -89,7 +89,7 @@ Now it was time to spin up a test site and play around with themes.
 
 Hugo's docs again came in handy here, as they have a great [quick start guide](https://gohugo.io/getting-started/quick-start/)
  that makes it easy to get your test site up and running. Once I had simple site up, I tried out a few themes and 
-eventually settled on ["Terminal"](https://github.com/panr/hugo-theme-terminal) by [@panr](https://twitter.com/panr). Not only was the theme very 
+eventually settled on ["Terminal"](https://github.com/panr/hugo-theme-terminal) by [@panr](https://x.com/panr). Not only was the theme very 
 minimal and dark by default, but it had a great Monero-like color scheme to choose from.
 
 One of the best features of Hugo is that it is *extremely* simple to test out changes to your site/posts as you go, 
@@ -251,7 +251,7 @@ params:
 
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/sethforprivacy"
+      url: "https://x.com/sethforprivacy"
     - name: github
       url: "https://github.com/sethforprivacy"
     - name: monero
@@ -416,7 +416,7 @@ params:
     - name: email
       url: "mailto:seth@sethforprivacy.com"
     - name: twitter
-      url: "https://twitter.com/sethforprivacy"
+      url: "https://x.com/sethforprivacy"
     - name: reddit
       url: "https://www.reddit.com/user/fort3hlulz"
     - name: github

@@ -37,7 +37,7 @@ You can find video versions of each episode, along with the soundbites I make fr
 - [YouTube](https://www.youtube.com/c/OptOutPodcast)
 - [PeerTube](https://videos.optoutpod.com)
 
-You can also follow the show on Twitter [@optoutpod](https://twitter.com/optoutpod), where updates, polls, new guests, and regular snippets from the show will be shared.
+You can also follow the show on Twitter [@optoutpod](https://x.com/optoutpod), where updates, polls, new guests, and regular snippets from the show will be shared.
 
 ## How to support Opt Out
 

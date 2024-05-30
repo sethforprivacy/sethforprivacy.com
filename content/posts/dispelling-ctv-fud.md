@@ -21,12 +21,12 @@ Having at least an introductory idea of what covenants are is vital to this conv
 - [Bitcoin Covenants](https://bitcoincovenants.com/)
 - [OP_CHECKTEMPLATEVERIFY | Bitcoin Optech](https://bitcoinops.org/en/topics/op_checktemplateverify/)
 - [Covenants | Bitcoin Optech](https://bitcoinops.org/en/topics/covenants/)
-- [What is #CTV BIP 119 (covenants)? | X thread by @dallasirushing](https://twitter.com/dallasirushing/status/1740443095689318566)
+- [What is #CTV BIP 119 (covenants)? | X thread by @dallasirushing](https://x.com/dallasirushing/status/1740443095689318566)
 - [Covenants 101, with a focus on CTV | X thread by @OwenKemeys](https://x.com/owenkemeys/status/1741575353716326835?s=61)
 
 ## CTV could have unintended consequences
 
-While this is a great place to *start* when considering proposals to Bitcoin, there has to be a point where you say "we've done enough research and resolved all known bad consequences." This one is easy to refute (thanks [@lopp](https://twitter.com/lopp)!), as there are also unintended consequences of **not** improving the protocol; i.e. a lack of approachable privacy, a harsh limit on how many people can self-custody Bitcoin, a less useful Lightning network, etc. We can quantify some of these, but there are surely many more that cannot be quantified (yet).
+While this is a great place to *start* when considering proposals to Bitcoin, there has to be a point where you say "we've done enough research and resolved all known bad consequences." This one is easy to refute (thanks [@lopp](https://x.com/lopp)!), as there are also unintended consequences of **not** improving the protocol; i.e. a lack of approachable privacy, a harsh limit on how many people can self-custody Bitcoin, a less useful Lightning network, etc. We can quantify some of these, but there are surely many more that cannot be quantified (yet).
 
 {{< tweet user="lopp" id="1737082565570310359" >}}
 
@@ -38,7 +38,7 @@ CTV is an extremely simple and specific implementation of covenants that intenti
 
 ## Exchanges could force encumbering covenants
 
-Honestly this one is the easiest to debunk, and [@4moonsettler](https://twitter.com/4moonsettler) has done a great job here:
+Honestly this one is the easiest to debunk, and [@4moonsettler](https://x.com/4moonsettler) has done a great job here:
 
 {{< tweet user="4moonsettler" id="1736892059879895050" >}}
 

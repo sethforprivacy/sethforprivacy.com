@@ -97,9 +97,9 @@ _Note: Since writing this post I have changed to using CalyxOS. For more details
 
 # GrapheneOS community member's organized campaign of harassment, slander, and brigading
 
-Unfortunately, choosing CopperheadOS of my own free will and writing about it during my free time was taken as an attack and misinformation campaign on GrapheneOS by their leader [Daniel Micay](https://twitter.com/DanielMicay) and others in the community.
+Unfortunately, choosing CopperheadOS of my own free will and writing about it during my free time was taken as an attack and misinformation campaign on GrapheneOS by their leader [Daniel Micay](https://x.com/DanielMicay) and others in the community.
 
-As soon as I posted about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://twitter.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://twitter.com/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
+As soon as I posted about how much I was enjoying CopperheadOS and what had helped me with the transition, I began receiving [canned reply spam](https://x.com/anupritaisno1/status/1350497125021278208?s=20) (one of many examples, see [another new/purchased user account here](https://x.com/twitty16553128)) from new or purchased accounts anytime I mentioned CopperheadOS.
 
 ***Edit: The tweet and account above have both been deleted since writing this article.***
 

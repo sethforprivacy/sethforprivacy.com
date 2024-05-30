@@ -180,12 +180,12 @@ Monero's subreddit subscriber count grew ***25.59%*** YoY and grew ***290%*** fa
 
 ***04/2019 through 04/2020:***
 
-- Monero's main Twitter account, [@monero](https://twitter.com/monero) gained ***3,502*** followers.
+- Monero's main Twitter account, [@monero](https://x.com/monero) gained ***3,502*** followers.
 - The @monero Twitter account went from ***317,010*** to ***320,512*** followers.
 
 ***04/2020 through 04/2021:***
 
-- Monero's main subreddit, [@monero](https://twitter.com/monero) gained ***69,209*** followers.
+- Monero's main subreddit, [@monero](https://x.com/monero) gained ***69,209*** followers.
 - The @monero Twitter account went from ***319,884*** to ***389,093*** followers.
 
 ***Year over Year Growth***
@@ -195,25 +195,25 @@ Monero's Twitter follower count grew ***21.63%*** YoY and grew ***1,870%*** fast
 ### Top Ten Tweets
 
 - "Love this #Monero cheat sheet. Get your privacy on - @coinbureau"
-  - <https://twitter.com/coinbureau/status/1382348948803883010?s=20>
+  - <https://x.com/coinbureau/status/1382348948803883010?s=20>
 - "'Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.' ― Edward Snowden #monero $XMR - @girlgone_crypto"
-  - <https://twitter.com/girlgone_crypto/status/1275427089294876674?s=20>
+  - <https://x.com/girlgone_crypto/status/1275427089294876674?s=20>
 - "Over 100k miners securing the #Monero network. New ATH. No ASICs. One CPU. One vote. <https://miningpoolstats.stream/monero> - @DontTraceMeBruh"
-  - <https://twitter.com/DontTraceMeBruh/status/1383481500704788489?s=20>
+  - <https://x.com/DontTraceMeBruh/status/1383481500704788489?s=20>
 - "I'll have you know that the words 'Monero' and 'XMR' are not mentioned in Chainalysis crypto crime report 2021 that just came out. Not even once, over 113 pages. - @binaryFate"
-  - <https://twitter.com/binaryFate/status/1359926676138909699?s=20>
+  - <https://x.com/binaryFate/status/1359926676138909699?s=20>
 - "If #monero came out first, then #bitcoin, everybody would say 'Why would I give up my privacy?'"
-  - <https://twitter.com/vikrantnyc/status/1366375047812812804?s=20>
+  - <https://x.com/vikrantnyc/status/1366375047812812804?s=20>
 - ""In Nobody We Trust" - #Monero - @girlgone_crypto"
-  - <https://twitter.com/girlgone_crypto/status/1326280779643543552?s=20>
+  - <https://x.com/girlgone_crypto/status/1326280779643543552?s=20>
 - "Now you know why I was so bullish for #Monero last year. The upcoming $XMR - $BTC atomic swaps are going to be a gamechanger. Will be interesting to see how much BTC 'disappears' from the #Bitcoin network when it goes live. - @coinbureau"
-  - <https://twitter.com/coinbureau/status/1360983149778526213?s=20>
+  - <https://x.com/coinbureau/status/1360983149778526213?s=20>
 - "And the #Monero network has been upgraded! Enjoy your 20% cheaper, lighter, and faster to verify private *by default* transactions. #MoneroKeepsBuilding #CLSAG - @sethforprivacy"
-  - <https://twitter.com/sethforprivacy/status/1317258377945374721?s=20>
+  - <https://x.com/sethforprivacy/status/1317258377945374721?s=20>
 - "Bitcoin was envisioned as an *anonymous* P2P digital cash. However, that title is today best reserved for privacy coins like #Monero. In my video today, I look at Monero once again and explain why I think $XMR is so undervalued - @coinbureau"
-  - <https://twitter.com/coinbureau/status/1376204882106068995?s=20>
+  - <https://x.com/coinbureau/status/1376204882106068995?s=20>
 - "We're excited to see THORChain, a cross-chain decentralised liquidity network, collaborating with Haven to integrate #Monero!"
-  - <https://twitter.com/monero/status/1382646165456498688?s=20>
+  - <https://x.com/monero/status/1382646165456498688?s=20>
 
 # Highlighted CCS Campaigns
 

@@ -65,7 +65,7 @@ Monero's long-term emissions as a percentage of total supply (notice they are co
 
 {{< figure src="/dispelling-monero-fud/monero_inflation_longterm.png" align="center" style="border-radius: 8px;" >}}
 
-[Image Credit - @TheStoicCoiner](https://twitter.com/TheStoicCoiner/status/1531562719945510912)
+[Image Credit - @TheStoicCoiner](https://x.com/TheStoicCoiner/status/1531562719945510912)
 
 ## You can't audit the Monero supply
 
@@ -90,7 +90,7 @@ Unlike Bitcoin, however, Monero users cannot simply do "napkin math" and validat
 - Audio clip about auditability in Bitcoin and Monero:
   - <https://www.twitter.com/DontTraceMeBruh/status/1414602052471332864>
 - Anyone can easily verify the supply of Monero:
-  - <https://twitter.com/fluffypony/status/1292032287396306944>
+  - <https://x.com/fluffypony/status/1292032287396306944>
   {{< tweet user="fluffypony" id="1292032287396306944" >}}
 - [Independent supply verification tools that confirm no hidden inflation](https://www.moneroinflation.com/)
   - These tools were written by a third-party developer in a different language (Python) and confirm that there is no auditability issue present.
@@ -129,7 +129,7 @@ The key points I would make around this are walked through in detail in the Twit
 - Blog post on scheduled upgrades in Monero:
   - <https://www.getmonero.org/2020/09/01/note-scheduled-upgrades.html>
 - Long thread on the details around how Monero hard-forks and what they mean for centralization/decentralization:
-  - <https://twitter.com/sethforprivacy/status/1397543058070200324>
+  - <https://x.com/sethforprivacy/status/1397543058070200324>
   {{< tweet user="sethforprivacy" id="1397543058070200324" >}}
 
 ## Monero mining is centralized
@@ -159,12 +159,12 @@ While Monero does have drastically less miners and energy used to secure the net
 - A detailed look at why RandomX is so unique:
   - <https://localmonero.co/knowledge/monero-mining-randomx>
 - Monero faired extremely well during the ban on mining in China, unlike ASIC-dominated networks:
-  - <https://twitter.com/sethforprivacy/status/1471103239823183880>
+  - <https://x.com/sethforprivacy/status/1471103239823183880>
   {{< tweet user="sethforprivacy" id="1471103239823183880" >}}
-  - <https://twitter.com/DouglasTuman/status/1470820539233144836?s=20>
+  - <https://x.com/DouglasTuman/status/1470820539233144836?s=20>
   {{< tweet user="DouglasTuman" id="1470820539233144836" >}}
 - A look at the economics of 51% attacking Monero
-  - <https://twitter.com/sethforprivacy/status/1471202444185153540?s=20>
+  - <https://x.com/sethforprivacy/status/1471202444185153540?s=20>
   {{< tweet user="sethforprivacy" id="1471202444185153540" >}}
 
 ## Monero has no adoption
@@ -197,7 +197,7 @@ Donations:
 Evidence:
 
 - Thread detailing some of the many ways that Monero is used around the world:
-  - <https://twitter.com/sethforprivacy/status/1461045397531549710>
+  - <https://x.com/sethforprivacy/status/1461045397531549710>
   {{< tweet user="sethforprivacy" id="1461045397531549710" >}}
 
 ## KYC/AML-regulated exchanges won't support Monero/governments will ban Monero
@@ -246,7 +246,7 @@ For more on the possibility of layer-two networks in Monero, see the resources b
 - "PayMo: Payment Channels For Monero"
   - <https://eprint.iacr.org/2020/1441>
 - Twitter thread on PayMo by one of the authors:
-  - <https://twitter.com/aravind2112/status/1329420254884335617>
+  - <https://x.com/aravind2112/status/1329420254884335617>
   {{< tweet user="aravind2112" id="1329420254884335617" >}}
 - "Sleepy Channels: Bitcoin-Compatible Bi-directional Payment Channels without Watchtowers" (also applies to Monero with PayMo)
   - <https://eprint.iacr.org/2021/1445>

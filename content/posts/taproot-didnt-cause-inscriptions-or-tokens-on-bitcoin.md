@@ -10,7 +10,7 @@ author: "Seth For Privacy"
 description: "tl;dr - Focus on how we can make Bitcoin better via covenants."
 ---
 
-*Note: This was originally [posted on X](https://twitter.com/sethforprivacy/status/1736715932704063997) and has been re-posted/reformatted for posterity here.*
+*Note: This was originally [posted on X](https://x.com/sethforprivacy/status/1736715932704063997) and has been re-posted/reformatted for posterity here.*
 
 I've seen the view that "Taproot caused/enabled arbitrary data storage on Bitcoin" commonly mentioned across Twitter, and it's one that can be extremely harmful. Many in the space would love to further ossify (prevent change) in Bitcoin and use inscriptions/tokens "spam" as the reason for doing so, but I'd argue that that would be the worst possible outcome from this situation.
 
@@ -30,9 +30,9 @@ All of these happened before both SegWit and Taproot, and there are many more ca
 
 ## But I thought Taproot enabled this?
 
-Unfortunately, there is a common misunderstanding (thanks for the troll name [@TaprootWizards](https://twitter.com/TaprootWizards) 😅) that Taproot enabled this type of data storage, thus opening the way for jpeg/inscription "spam." In reality, this type of arbitrary data storage on Bitcoin has always been possible, but was made much cheaper to do with the introduction of SegWit in 2017.
+Unfortunately, there is a common misunderstanding (thanks for the troll name [@TaprootWizards](https://x.com/TaprootWizards) 😅) that Taproot enabled this type of data storage, thus opening the way for jpeg/inscription "spam." In reality, this type of arbitrary data storage on Bitcoin has always been possible, but was made much cheaper to do with the introduction of SegWit in 2017.
 
-SegWit was a major upgrade and bug fix for Bitcoin that enabled the Lightning network to be built and included a 3MB "witness" data allowance within each block w/ reduced fees for data to incentivize spending UTXOs (therefore making them prunable). More on SegWit in a fantastic post from [@River](https://twitter.com/River) here:
+SegWit was a major upgrade and bug fix for Bitcoin that enabled the Lightning network to be built and included a 3MB "witness" data allowance within each block w/ reduced fees for data to incentivize spending UTXOs (therefore making them prunable). More on SegWit in a fantastic post from [@River](https://x.com/River) here:
 
 <https://river.com/learn/what-is-segwit/>
 
@@ -40,7 +40,7 @@ This incentivized portion of each transaction (called "witness" data) is intende
 
 While this of course was not the intent of SegWit, it underlines the simple fact that if someone wants to store arbitrary data in a blockchain, they will find ways to do it.
 
-If you want a deep dive into what exactly SegWit changed, why, and why they chose the discount they did, you can read more in a fantastic post from [@reardencode](https://twitter.com/reardencode) here:
+If you want a deep dive into what exactly SegWit changed, why, and why they chose the discount they did, you can read more in a fantastic post from [@reardencode](https://x.com/reardencode) here:
 
 <https://bitcoinmagazine.com/technical/the-witness-discount-why-some-bytes-are-cheaper-than-others>
 
@@ -60,7 +60,7 @@ While putting the data into the UTXO set does cost those creating these NFTs dra
 
 That would be drastically worse for those running a Bitcoin node, and makes the inscriptions in SegWit witness data pale in comparison when it comes to negative impact on Bitcoin nodes.
 
-The vast majority of usage for arbitrary data storage has already shifted away from inscribing JPEGs and to non-fungible token protocols like BRC-20 and Stamps. You can read more on the overall usage of each protocol from a fantastic thread by [@mononautical](https://twitter.com/mononautical):
+The vast majority of usage for arbitrary data storage has already shifted away from inscribing JPEGs and to non-fungible token protocols like BRC-20 and Stamps. You can read more on the overall usage of each protocol from a fantastic thread by [@mononautical](https://x.com/mononautical):
 
 {{< tweet user="mononautical" id="1742358704484155478" >}}
 

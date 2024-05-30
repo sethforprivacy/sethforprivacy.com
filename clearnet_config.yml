@@ -68,7 +68,7 @@ params:
     - name: pgpkey
       url: "/about/#primary-pgp-key"
     - name: twitter
-      url: "https://twitter.com/sethforprivacy"
+      url: "https://x.com/sethforprivacy"
     - name: matrix
       url: "https://matrix.to/#/@sethforprivacy:agoradesk.com"
     - name: reddit

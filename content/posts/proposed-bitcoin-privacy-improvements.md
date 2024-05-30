@@ -83,7 +83,7 @@ While Dark Wallet did implement stealth addresses for Bitcoin, the wallet never 
 
 PayJoin may also be well-known to the Bitcoin privacy crowd as it has gotten some media and minor adoption despite it's official "Draft" status. PayJoin lets the sender and recipient of a transaction work together to build a combined transaction that includes a UTXO (or more) from both the sender and intended recipient of funds, obfuscating the true nature of the payment on-chain.
 
-A similar protocol has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 as "Stowaway" (before the PayJoin proposal BIP), and PayJoin proper was implemented in [BTCPay Server](https://btcpayserver.org/) in [June 2020](https://github.com/btcpayserver/btcpayserver/releases/tag/v1.0.5.0), [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) in [August 2020](https://github.com/JoinMarket-Org/joinmarket-clientserver/releases/tag/v0.7.0), [Blue Wallet](https://bluewallet.io) in [October 2020](https://twitter.com/bluewalletio/status/1313822205286010883), and [Sparrow Wallet](https://sparrowwallet.com/) in [November 2020](https://github.com/sparrowwallet/sparrow/releases/tag/0.9.7). See their docs for more info:
+A similar protocol has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 as "Stowaway" (before the PayJoin proposal BIP), and PayJoin proper was implemented in [BTCPay Server](https://btcpayserver.org/) in [June 2020](https://github.com/btcpayserver/btcpayserver/releases/tag/v1.0.5.0), [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) in [August 2020](https://github.com/JoinMarket-Org/joinmarket-clientserver/releases/tag/v0.7.0), [Blue Wallet](https://bluewallet.io) in [October 2020](https://x.com/bluewalletio/status/1313822205286010883), and [Sparrow Wallet](https://sparrowwallet.com/) in [November 2020](https://github.com/sparrowwallet/sparrow/releases/tag/0.9.7). See their docs for more info:
 
 - [Stowaway - Samourai Wallet](https://docs.samourai.io/en/spend-tools#stowaway)
 - [BTCPay Server PayJoin Guide - BTCPay Server](https://docs.btcpayserver.org/Payjoin/)
@@ -344,7 +344,7 @@ While it is still very much a work in progress, minimint holds promise for a mid
 
 {{< figure src="/proposed-bitcoin-privacy-improvements/fedimint.jpeg" align="center" style="border-radius: 8px;" >}}
 
-[Image Credit - @ODELL](https://twitter.com/ODELL/status/1531648367658401792)
+[Image Credit - @ODELL](https://x.com/ODELL/status/1531648367658401792)
 
 Note that the proposal is still fully custodial, but has differing tradeoffs compared to something like [the Liquid Network]({{< relref "#the-liquid-network" >}}).
 

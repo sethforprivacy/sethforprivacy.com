@@ -75,7 +75,7 @@ Twitter is a common place for cryptocurrency users (among others), and is a plac
 
 Feel free to jump in and start sharing about Monero and engaging with others there!
 
-*You can find me on Twitter [@sethforprivacy](https://twitter.com/sethforprivacy).*
+*You can find me on Twitter [@sethforprivacy](https://x.com/sethforprivacy).*
 
 ### Reddit
 
