@@ -235,7 +235,7 @@ Now just wait for the Bitcoin and Monero nodes to sync, and you should be all se
 ***P.S. -- if you ever need to replace the Monero wallet with another one, you cannot do it through the UI and must run this command:***
 
 ```bash
-docker exec -ti btcpayserver_monero_wallet rm -r /wallet && docker restart btcpayserver_monero_wallet
+docker exec -ti btcpayserver_monero_wallet rm  /wallet/wallet /wallet/wallet.keys /wallet/password && docker restart btcpayserver_monero_wallet
 ```
 
 ***Once you've run that you can then upload new wallet files as you did during the initial setup.*** 
