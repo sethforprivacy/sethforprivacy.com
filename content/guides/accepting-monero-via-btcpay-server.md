@@ -420,6 +420,7 @@ docker cp password btcpayserver_monero_wallet:/wallet/password
 
 ```bash
 sudo chmod 666 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet.keys /var/lib/docker/volumes/generated_xmr_wallet/_data/password
+sudo chmod 600 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet
 sudo chown 101:101 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet
 ```
 
