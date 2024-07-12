@@ -109,6 +109,9 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - Swan's custodians terminate accounts of any user who directly interacts with a mixing service "such as Wasabi, Samourai, and similar services:"
   - [Twitter Source](https://x.com/WimTweets/status/1723178230474052041?s=20)
   - [Swan's response](https://x.com/skwp/status/1723444038932582414?s=20)
+- [Giacomo Zucco](https://x.com/giacomozucco) has JoinMarket post-mix funds frozen by Volet.com.
+  - [Twitter Source](https://x.com/giacomozucco/status/1810646144868921590)
+  - [Volet.com's response](https://x.com/VoletCom/status/1811310067313967193)
 
 ## Tainted Bitcoin
 
@@ -265,5 +268,11 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 {{< figure src="/fungibility-graveyard/f2pool.jpeg" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/swan.jpeg" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/zucco-op.jpeg" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/zucco-volet.jpeg" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/fungibility-graveyard/zucco-jam.jpeg" align="center" style="border-radius: 8px;" >}}
 
 {{< /collapse >}}
