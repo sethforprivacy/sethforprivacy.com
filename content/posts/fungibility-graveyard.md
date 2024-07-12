@@ -141,7 +141,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   - [Reddit Source - Response by FixedFloat](https://www.reddit.com/r/Monero/comments/t1gyoo/fixedfloat_scammed_me_for_6000_usd/hygp7bc/?utm_source=reddit&utm_medium=web2x&context=3)
   - [Reddit Source - Further detailed response by FixedFloat on the traceability of Bisq](https://www.reddit.com/r/Monero/comments/t1gyoo/fixedfloat_scammed_me_for_6000_usd/hyo163k/?utm_source=reddit&utm_medium=web2x&context=3)
   {{< collapse summary="Source Image" >}}
-  {{< figure src="/fungibility-graveyard/fixedfloat_tainted.jpeg" align="center" style="border-radius: 8px;" >}}
+  {{< figure src="/fungibility-graveyard/fixedfloat_tainted.png" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
 - A user's Coinbase account is frozen and then shut down due to tainted transactions from 2y prior
   - [Twitter Source (user's account was suspended after this was added to the post)](https://x.com/AwyeeDeaterBob/status/1439377414484807680)
@@ -265,14 +265,14 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 
 {{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/fungibility-graveyard/f2pool.jpeg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/fungibility-graveyard/f2pool.png" align="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/fungibility-graveyard/swan.jpeg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/fungibility-graveyard/swan.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/zucco-op.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/zucco-volet.png" align="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/fungibility-graveyard/zucco-jam.jpeg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/fungibility-graveyard/zucco-jam.png" align="center" style="border-radius: 8px;" >}}
 
 {{< /collapse >}}

@@ -342,7 +342,7 @@ FediMint (and the specific initial implementation, minimint) is a relatively new
 
 While it is still very much a work in progress, minimint holds promise for a middle-ground between fully self-sovereign Lightning Network usage (Zeus, Core LN, LND, etc.) and single-custodian Lightning Network usage (Cash App, Strike, etc.) by allowing a trusted federation of custodians to hold funds and manage Lightning node(s) for their users.
 
-{{< figure src="/proposed-bitcoin-privacy-improvements/fedimint.jpeg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/proposed-bitcoin-privacy-improvements/fedimint.png" align="center" style="border-radius: 8px;" >}}
 
 [Image Credit - @ODELL](https://x.com/ODELL/status/1531648367658401792)
 

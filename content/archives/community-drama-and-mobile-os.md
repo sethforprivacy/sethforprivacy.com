@@ -113,7 +113,7 @@ This has happened twice, with the latest being directly to someone via IRC. I ha
 
 All this to find out today that these attacks are coordinated brigading being pushed from the top down in Matrix and Telegram channels (at least) by members of the GrapheneOS community, this instance being by a lead dev for GrapheneOS as [listed on their Github](https://github.com/orgs/GrapheneOS/people):
 
-{{< figure src="/community-drama-and-mobile-os/graphene_brigading.jpg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/community-drama-and-mobile-os/graphene_brigading.png" align="center" style="border-radius: 8px;" >}}
 
 Feel free to read all the brigade replies on the mentioned tweet, and note this is one of many such examples:
 
