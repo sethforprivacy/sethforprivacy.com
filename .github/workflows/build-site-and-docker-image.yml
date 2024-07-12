@@ -58,7 +58,7 @@ jobs:
           do
               tmpfile=$(mktemp)
               zopflipng -m -y "$file" "$tmpfile"
-              mv "$tmpfile" "file"
+              mv "$tmpfile" "$file"
           done
 
       - name: Compress Tor static files
@@ -78,7 +78,7 @@ jobs:
           do
               tmpfile=$(mktemp)
               zopflipng -m -y "$file" "$tmpfile"
-              mv "$tmpfile" "file"
+              mv "$tmpfile" "$file"
           done          
 
       - name: Build and push to Github Packages Docker Registry
