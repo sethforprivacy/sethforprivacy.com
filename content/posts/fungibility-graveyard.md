@@ -269,9 +269,9 @@ Where the source has already been taken down, see the "Source Image" drop-down u
 
 {{< figure src="/fungibility-graveyard/swan.jpeg" align="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/fungibility-graveyard/zucco-op.jpeg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/fungibility-graveyard/zucco-op.png" align="center" style="border-radius: 8px;" >}}
 
-{{< figure src="/fungibility-graveyard/zucco-volet.jpeg" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/fungibility-graveyard/zucco-volet.png" align="center" style="border-radius: 8px;" >}}
 
 {{< figure src="/fungibility-graveyard/zucco-jam.jpeg" align="center" style="border-radius: 8px;" >}}
 
