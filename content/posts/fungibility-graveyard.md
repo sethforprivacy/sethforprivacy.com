@@ -146,6 +146,8 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
   {{< figure src="/fungibility-graveyard/coinbase_taint.png" align="center" style="border-radius: 8px;" >}}
   {{< figure src="/fungibility-graveyard/coinbase_taint1.png" align="center" style="border-radius: 8px;" >}}
   {{< /collapse >}}
+- User @giacomozucco has his Bitcoin frozen by Volet.com due to tainted coins. https://x.com/VoletCom/status/1811320332323533234
+
 
 ## Compliant Mining and "Virgin" Bitcoin
 
