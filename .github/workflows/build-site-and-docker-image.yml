@@ -54,7 +54,7 @@ jobs:
       - name: Compress public static images
         run: |
           cd public
-          for file in $(find . -iname *.png)
+          for file in $(find . -iname "*.png")
           do
               tmpfile=$(mktemp)
               zopflipng -m -y "$file" "$tmpfile"
@@ -74,7 +74,7 @@ jobs:
       - name: Compress Tor static images
         run: |
           cd tor
-          for file in $(find . -iname *.png)
+          for file in $(find . -iname "*.png")
           do
               tmpfile=$(mktemp)
               zopflipng -m -y "$file" "$tmpfile"
