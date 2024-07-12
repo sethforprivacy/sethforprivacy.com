@@ -56,8 +56,7 @@ jobs:
           cd public
           for file in $(find . -iname "*.png")
           do
-              tmpfile=$(mktemp)
-              zopflipng -m -y "$file" "$tmpfile"
+              zopflipng -m -y "$file" tmpfile
               mv "$tmpfile" "$file"
           done
 
@@ -76,8 +75,7 @@ jobs:
           cd tor
           for file in $(find . -iname "*.png")
           do
-              tmpfile=$(mktemp)
-              zopflipng -m -y "$file" "$tmpfile"
+              zopflipng -m -y "$file" tmpfile
               mv "$tmpfile" "$file"
           done          
 
