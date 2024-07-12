@@ -51,13 +51,6 @@ jobs:
               rm "$file"
               touch -r "$file".gz "$file"
           done
-      - name: Compress public static images
-        run: |
-          cd public
-          for file in $(find . -iname '*.png')
-          do
-              zopflipng -m -y "$file" "$file"
-          done
 
       - name: Compress Tor static files
         run: |
@@ -67,15 +60,7 @@ jobs:
               zopfli "$file"
               rm "$file"
               touch -r "$file".gz "$file"
-          done
-
-      - name: Compress Tor static images
-        run: |
-          cd tor
-          for file in $(find . -iname '*.png')
-          do
-              zopflipng -m -y "$file" "$file"
-          done          
+          done     
 
       - name: Build and push to Github Packages Docker Registry
         id: docker_build
