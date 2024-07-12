@@ -56,8 +56,9 @@ jobs:
           cd public
           for file in $(find . -iname *.png)
           do
-              zopflipng -m -y $1 "$file"
-              mv "$file" "$1"
+              tmpfile=$(mktemp)
+              zopflipng -m -y "$file" "$tmpfile"
+              mv "$tmpfile" "file"
           done
 
       - name: Compress Tor static files
@@ -75,8 +76,9 @@ jobs:
           cd tor
           for file in $(find . -iname *.png)
           do
-              zopflipng -m -y $1 "$file"
-              mv "$file" "$1"
+              tmpfile=$(mktemp)
+              zopflipng -m -y "$file" "$tmpfile"
+              mv "$tmpfile" "file"
           done          
 
       - name: Build and push to Github Packages Docker Registry
