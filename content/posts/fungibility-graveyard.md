@@ -80,6 +80,9 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - A user's BitMEX account is flagged months after withdrawal to JoinMarket for mixing:
   - [Twitter Source](https://x.com/kristapsk/status/1374336620158140419)
     {{< tweet user="kristapsk" id="1374336620158140419" >}}
+- [Giacomo Zucco](https://x.com/giacomozucco) has JoinMarket post-mix funds frozen by Volet.com.
+  - [Twitter Source](https://x.com/giacomozucco/status/1810646144868921590)
+  - [Volet.com's response](https://x.com/VoletCom/status/1811310067313967193)
 
 ## All CoinJoins
 
@@ -109,9 +112,6 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 - Swan's custodians terminate accounts of any user who directly interacts with a mixing service "such as Wasabi, Samourai, and similar services:"
   - [Twitter Source](https://x.com/WimTweets/status/1723178230474052041?s=20)
   - [Swan's response](https://x.com/skwp/status/1723444038932582414?s=20)
-- [Giacomo Zucco](https://x.com/giacomozucco) has JoinMarket post-mix funds frozen by Volet.com.
-  - [Twitter Source](https://x.com/giacomozucco/status/1810646144868921590)
-  - [Volet.com's response](https://x.com/VoletCom/status/1811310067313967193)
 
 ## Tainted Bitcoin
 
