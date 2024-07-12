@@ -60,8 +60,6 @@ The instructions I provide will assume you are using Linux, but Windows/macOS sh
     ./swap --version
     ```
 
-    {{< figure src="/bitcoin-monero-atomic-swaps/version.png" align="center" style="border-radius: 8px;" >}}
-
 # Making the swap (CLI)
 
 1. List sellers and select one (you can skip this step if you know the peer you'd like to swap with)

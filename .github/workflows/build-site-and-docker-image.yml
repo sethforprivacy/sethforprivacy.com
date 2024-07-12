@@ -45,7 +45,7 @@ jobs:
       - name: Compress public static files
         run: |
           cd public
-          for file in $(find . -type f)
+          for file in $(find . -type f ! -name '*.png')
           do
               zopfli "$file"
               rm "$file"
@@ -54,16 +54,15 @@ jobs:
       - name: Compress public static images
         run: |
           cd public
-          for file in $(find . -iname "*.png")
+          for file in $(find . -iname '*.png')
           do
-              zopflipng -m -y "$file" tmpfile
-              mv tmpfile "$file"
+              zopflipng -m -y "$file" "$file"
           done
 
       - name: Compress Tor static files
         run: |
           cd tor
-          for file in $(find . -type f)
+          for file in $(find . -type f ! -name '*.png')
           do
               zopfli "$file"
               rm "$file"
@@ -73,10 +72,9 @@ jobs:
       - name: Compress Tor static images
         run: |
           cd tor
-          for file in $(find . -iname "*.png")
+          for file in $(find . -iname '*.png')
           do
-              zopflipng -m -y "$file" tmpfile
-              mv tmpfile "$file"
+              zopflipng -m -y "$file" "$file"
           done          
 
       - name: Build and push to Github Packages Docker Registry
