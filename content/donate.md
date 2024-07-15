@@ -30,3 +30,9 @@ If you're already jumping on the Silent Payments train and have a wallet that su
 Want to learn more about Silent Payments? Check out the site I built to help with that below.
 
 <https://silentpayments.xyz>
+
+## Bitcoin via BIP 353 username
+
+BIP 353 adoption is on the rise, and I'm loving it so far. For an easy way to tip me in wallets that support it, simply enter `seth@sethforprivacy.com` to pay via Silent Payments or LN via BOLT 12.
+
+For more on setting up your own username, check out the guide [here]({{< ref "content/guides/setting-up-a-bitcoin-username.md" >}}).
