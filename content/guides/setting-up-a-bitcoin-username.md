@@ -203,3 +203,12 @@ You'll still need a domain for this, so feel free to use the directions above up
 I'm very excited to see BIP 353 usernames grow in adoption, as they make reusable, privacy-preserving payment methods far easier to discover and use when paying other Bitcoiners. Hopefully this guide helps more and more people get setup and rolling! If this guide seems too daunting for you (or you just don't want to deal with owning a domain), be sure to check out [twelve.cash](https://twelve.cash/), a fantastic (but trusted!) service.
 
 If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+
+## Appendix: Additional community-recommended domain providers
+
+{{< callout emoji="⚠️" text="Please note that I have not personally used the following domain providers, but they have been recommended to me by individuals I have a reason to trust. Use at your own risk!" >}}
+
+- [MyNymBox](https://mynymbox.io/)
+- [IncogNet](https://incognet.io/)
+- [NiceVPS](https://nicevps.net/)
+  - [Tor .Onion URL](http://nicevpsvzo5o6mtvvdiurhkemnv7335f74tjk42rseoj7zdnqy44mnqd.onion/)
