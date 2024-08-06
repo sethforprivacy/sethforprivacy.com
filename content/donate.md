@@ -31,7 +31,7 @@ You can easily donate Bitcoin via Lightning to my BOLT 12 offer:
 
 If you're already jumping on the Silent Payments train and have a wallet that supports sending to a Silent Payment address, a fantastic way to donate and support my work is using the privacy-preserving Silent Payment address below:
 
-{{< figure src="/silentpayments.png" link="bitcoin:sp1qqweplq6ylpfrzuq6hfznzmv28djsraupudz0s0dclyt8erh70pgwxqkz2ydatksrdzf770umsntsmcjp4kcz7jqu03jeszh0gdmpjzmrf5u4zh0c" align="center" style="border-radius: 8px;" caption="sp1qqweplq6ylpfrzuq6hfznzmv28djsraupudz0s0dclyt8erh70pgwxqkz2ydatksrdzf770umsntsmcjp4kcz7jqu03jeszh0gdmpjzmrf5u4zh0c" >}}
+{{< figure src="/silentpayments.png" link="bitcoin:sp1qqweplq6ylpfrzuq6hfznzmv28djsraupudz0s0dclyt8erh70pgwxqkz2ydatksrdzf770umsntsmcjp4kcz7jqu03jeszh0gdmpjzmrf5u4zh0c" align="center" style="border-radius: 8px;" caption="`sp1qqweplq6ylpfrzuq6hfznzmv28djsraupudz0s0dclyt8erh70pgwxqkz2ydatksrdzf770umsntsmcjp4kcz7jqu03jeszh0gdmpjzmrf5u4zh0c`" >}}
 
 Want to learn more about Silent Payments? Check out the site I built to help with that below.
 
