@@ -17,15 +17,15 @@ You can easily donate Bitcoin (on-chain or via Lightning) or Monero via my BTCPa
 
 ## Bitcoin via BIP 353 username
 
-BIP 353 adoption is on the rise, and I'm loving it so far. For an easy way to tip me in wallets that support it, simply enter `tips@sethforprivacy.com` to pay via Silent Payments or LN via BOLT 12.
+[BIP 353](https://bips.dev/353/) adoption is on the rise, and I'm loving it so far. For an easy way to tip me in wallets that support it, simply enter `tips@sethforprivacy.com` to pay via Silent Payments or LN via BOLT 12.
 
 For more on setting up your own username, check out the guide [here]({{< ref "content/guides/setting-up-a-bitcoin-username.md" >}}).
 
-## Lightning via Lightning Address
+## Lightning via BOLT 12 offer
 
-You can easily donate Bitcoin via Lightning to my Lightning Address:
+You can easily donate Bitcoin via Lightning to my BOLT 12 offer:
 
-{{< figure src="/lnaddress.png" link="lightning:seth@btcpay.sethforprivacy.com" align="center" style="border-radius: 8px;" caption="`seth@btcpay.sethforprivacy.com`" >}}
+{{< figure src="/bolt12.png" link="lightning:lno1zrxq8pjw7qjlm68mtp7e3yvxee4y5xrgjhhyf2fxhlphpckrvevh50u0qgve8erq859ugpp8lzpk2pf8atxrq7s9ljwxvc0lt53yhsdzj592wqszzcmftue8eeeflhks0wkppyug4pl6c5g0uh6pqczez76ekk2t8ewqqvedkpuu3ya8wt0mzeapn0pcjzu6v9aw786fj63htcn03wmghx6pt20ulk3j2wqs2w9245tk8ymt77kezvsqq05t64hk988ah4rgqmf0z4stecyl9acjz865txge7gszqxkka6765qqsyc50jeduhux0qrghey0vsl7ndy" align="center" style="border-radius: 8px;" caption="`lno1zrxq8pjw7qjlm68mtp7e3yvxee4y5xrgjhhyf2fxhlphpckrvevh50u0qgve8erq859ugpp8lzpk2pf8atxrq7s9ljwxvc0lt53yhsdzj592wqszzcmftue8eeeflhks0wkppyug4pl6c5g0uh6pqczez76ekk2t8ewqqvedkpuu3ya8wt0mzeapn0pcjzu6v9aw786fj63htcn03wmghx6pt20ulk3j2wqs2w9245tk8ymt77kezvsqq05t64hk988ah4rgqmf0z4stecyl9acjz865txge7gszqxkka6765qqsyc50jeduhux0qrghey0vsl7ndy`" >}}
 
 ## Bitcoin via Silent Payments
 
