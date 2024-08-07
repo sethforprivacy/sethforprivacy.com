@@ -11,7 +11,7 @@ If you've enjoyed my work and would like to give me a little more time to dedica
 
 ## Monero or Bitcoin/Lightning via BTCPay Server
 
-You can easily donate Bitcoin (on-chain or via Lightning) or Monero via my BTCPay Server instance:
+You can easily donate Bitcoin (on-chain only) or Monero via my BTCPay Server instance:
 
 {{< btcpayserver >}}
 
