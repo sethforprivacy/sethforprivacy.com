@@ -91,6 +91,6 @@ The primary focus for me in getting the DC1 was to have something that I could u
 
 ## Conclusion
 
-All in all, I have come away from my first two weeks using the same word ever time I describe the DC1 to someone else -- *magical*. The hardware and software shortcomings that come with being an extremely early adopter to a new category of technology are certainly here, but they're dwarfed by the magnificence of the display and the new places and things it opens up to you. Daylight nailed what mattered -- the screen -- and have given themselves a chance to break into the market with something that is finally *unique.* I've been a tech enthusiast since I was a child, and it's been a very long time since I've been this enamored with a piece of technology.
+All in all, I have come away from my first two weeks using the same word every time I describe the DC1 to someone else -- *magical*. The hardware and software shortcomings that come with being an extremely early adopter to a new category of technology are certainly here, but they're dwarfed by the magnificence of the display and the new places and things it opens up to you. Daylight nailed what mattered -- the screen -- and have given themselves a chance to break into the market with something that is finally *unique.* I've been a tech enthusiast since I was a child, and it's been a very long time since I've been this enamored with a piece of technology.
 
 Is it perfect? No. Is it magical? *Absolutely.*
