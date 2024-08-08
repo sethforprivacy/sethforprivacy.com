@@ -16,7 +16,7 @@ What if our devices focused on *empowering* us instead of *ensnaring* us? What 
 
 As an early adopter of the DC1 and one of the first to purchase it (with Bitcoin, no less!) the unboxing experience here is far from standard. I was lucky enough to be able to pick up my DC1 from the Daylight booth at the Bitcoin Conference in Nashville, giving me a couple of weeks to fully test it out in the rhythms of my daily life before writing up a full review. As an early adopter, my DC1 came pre-loaded with an alpha version of sol:os, the early-stage Android fork that the Daylight team has built to start shifting the software to better meet their vision for minimal distractions and maximal creativity.
 
-{{< figure src="/daylight-dc1-magical-imperfection/unboxing.jpg" title="A unique unboxing experience" >}}
+{{< figure src="/daylight-dc1-magical-imperfection/unboxing.png" title="A unique unboxing experience" >}}
 
 The DC1 came loaded in a Daylight-branded Patagonia backpack, a unique way to carry around just what you need to spend some time at a park or coffee shop patio (my workstation of choice) for a few hours to  read, write, or draw. The backpack also had the standard paperwork, an Apple Magic keyboard (a stand-in for the forthcoming Daylight official keyboard attachment), a LAMY stylus, and charging cables for the tablet and keyboard. While this won't be the standard unboxing experience for most people, it was an awesome touch and a positive first touch-point with the company overall.
 
@@ -28,13 +28,15 @@ The Daylight DC1 takes a powerful new approach to displays, doing away with the 
 
 The ability to just use the DC1 in bright daylight or a well lit room without any backlight is pure magic. I've found myself spending far more time outside reading and writing then ever before, as I can finally get a *better* view of what I'm doing outdoors than I can indoors on any other display. If you're like me and value getting out to a good coffee shop, sitting at the park, or simply laying in the grass of your backyard while doing the things you love (not just reading books!) it's quite simply a game changer.
 
-{{< figure src="/daylight-dc1-magical-imperfection/sunlight.jpg" title="Using the DC1 on a sunny day without backlight" >}}
+{{< figure src="/daylight-dc1-magical-imperfection/sunlight.png" title="Using the DC1 on a sunny day without backlight" >}}
 
 Step inside or want to use the DC1 at night? You'll often be surprised that the screen is usable even without a backlight with simple indoor lighting (I'm writing this sentence with merely a lamp on my nightstand as backlighting). But if it's a bit too dim for that, Daylight has you covered -- the DC1 has a unique backlight with two adjustments. You can change the brightness as you're used to, but you can also adjust the coolness or warmth of the backlight to fit your preference. I much prefer the amber, no-blue-light backlight 100% of the time, but can quickly switch to the cooler backlight with a simple slider in the drop-down quick settings. The combination of reflective LCD with amber backlight means that between ambient light and backlight I never have to go above ~10% brightness.
 
-{{< figure src="/daylight-dc1-magical-imperfection/indoors.jpg" title="Using the DC1 inside without any room lights or backlight" >}}
+{{< figure src="/daylight-dc1-magical-imperfection/indoors.png" title="Using the DC1 inside without any room lights or backlight" >}}
 
 All in all, the DC1s display is literally unique -- there is no other device in the world today that can boast the unique blend of usefulness for all types of creativity and learning. If you have the chance to see the DC1 in action, *take it* and see for yourself what I mean, as I still smile every  time I turn on my DC1. It makes it far easier for me to use the DC1 as I need, engage in a healthy manner, and *actually put it down when I'm done*. Doom scrolling and falling down the YouTube rabbit holes are far less addictive with the lack of color, and I find myself yearning more to use it for consuming useful content and writing than anything else.
+
+{{< figure src="/daylight-dc1-magical-imperfection/coffee-shop.png" title="The dream coffee shop patio computer" >}}
 
 The other major aspect of the screen that has been immensely refreshing is the lack of blue light when using the amber backlight, as well as the flicker-free LCD technology used here. The combination of those two things has noticeably lowered my eye strain at the end of the day and led to less migraines as well. It's a subtle difference if you've never tried something like well-made blue-light blocking glasses before (I wear a pair of Ra Optics glasses whenever I'm at my computer or watching TV), but it's one that has a cumulative effect each day for sure.
 
@@ -62,7 +64,7 @@ Multitasking worked well in my usage, split-screen is effective (especially in l
 
 The two unique aspects of sol:os today are it's launcher and a unique new content reader app from Daylight simply called "Reader". The launcher that comes pre-loaded with the DC1 is called Niagara and is a minimalistic launcher that fits well with the focus Daylight is taking. It gives a clean user experience, simplifies your home screen, and reduces distractions effectively. It closely mirrors a launcher I've long used on Android for similar reasons -- OLauncher -- as changing the launcher on your phone is an excellent first step towards digital minimalism.
 
-{{< figure src="/daylight-dc1-magical-imperfection/on-desk.jpg" title="Niagara, the default launcher on sol:os" >}}
+{{< figure src="/daylight-dc1-magical-imperfection/on-desk.png" title="Niagara, the default launcher on sol:os" >}}
 
 Reader allows you to easily send content to your Daylight from any Android or iOS phone or any browser, and Reader will download and save a local copy the next time you open the app on your DC1. This quickly became my go-to way to consume long-form content, and I find myself sending news articles, blog posts, and forum threads to my DC1 from my laptop throughout the day. It also functions as a PDF reader with good (if simple) markup functionality, making it much easier for me to keep up with the latest research in the cryptography, privacy, and cryptocurrency space. My only request for Reader? Add a page-turn navigation mode instead of just scrolling, so it's more useful for consuming PDF ebooks!
 
