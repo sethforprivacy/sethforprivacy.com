@@ -5,7 +5,7 @@ tags: ["tech", "reviews"]
 author: "Seth For Privacy"
 description: "I've been a tech enthusiast since I was a child, and it's been a very long time since I've been this enamored with a piece of technology."
 cover:
-    image: /daylight-dc1-magical-imperfection/unboxing.jpg
+    image: dc1.jpg
 ---
 
 What if our devices focused on *empowering* us instead of *ensnaring* us? What if limiting the capabilities of our electronics in specific and intentional ways could actually free us up to be more *human?* It's questions like these that lie at the heart of Daylight's entry into the space, kicking things off with their [DC1 tablet](https://daylightcomputer.com/). Let's dive in together and inspect the DC1 from all sides to see if it lives up to the grand ideas of the Daylight team, how it's shifted my expectations from my devices, and what it could mean for the future of computing.
