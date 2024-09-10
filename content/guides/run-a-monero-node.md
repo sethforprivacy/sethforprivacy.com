@@ -14,8 +14,6 @@ tags:
 title: Run a Monero Node
 ---
 
-With the [ongoing network attacks in Monero]({{< ref "/content/posts/moneros-ongoing-network-attack.md" >}}), it's a great time for users to dive into running their [own node](https://www.monerooutreach.org/monero_best_practices/your_own_node.html).
-
 In this short post I'll detail how to easily run a Monero node on a Linux server, the most common OS for virtual private servers (VPS). I would highly recommend running either Debian or Ubuntu for your Linux distribution, and this guide will assume you are running one of those.
 
 I will also assume in this guide that you have purchased and SSH'd into the VPS/host of your choosing, but if you need help with those first steps here are a few good links to follow:
@@ -25,7 +23,6 @@ I will also assume in this guide that you have purchased and SSH'd into the VPS/
 - [Joe's Datacenter](https://joesdatacenter.com/)
   - A solid and cheap VPS and dedicated server provider based out of the US, they accept Bitcoin but do not accept Monero (yet!) and are a great choice for a high-performance node.
 - [Simple Linode deployment guide](https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/)
-  - If you use Linode, please consider using [my referral link](https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d) so we both get free credits.
 
 If you're using your own hardware at home, this guide will still generally apply to you assuming you are running Ubuntu/Debian.
 
@@ -307,13 +304,13 @@ A few of my favorite tools for general Linux CLI usage are below, hopefully they
 
 Hopefully this guide simplified the process of setting up a remote node on a VPS, and many more similar guides should be popping up shortly.
 
-I used the commands and info in this guide to kick off a new remote node on baremetal at [Joe's Datacenter](https://joesdatacenter.com/), feel free to utilize it for wallet sync, add it as a priority peer, etc:
+I used the commands and info in this guide to kick off a new remote node, feel free to utilize it for wallet sync, add it as a priority peer, etc:
 
-`node.sethforprivacy.com:18089` (high-performance node on baremetal at Joe's Datacenter in Kansas City, Missouri)
+`node.sethforprivacy.com:18089` (high-performance node on baremetal)
 
 Also available as a Tor HiddenService at:
 
-`rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`
+`sfprpc2fws6ltnq4hyr7lvpul3nank5layd7q7tyc5h4gy4h77gtabad.onion:18089`
 
 Please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
