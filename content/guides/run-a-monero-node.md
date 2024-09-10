@@ -55,8 +55,6 @@ You can choose to either [setup a node via systemd and binaries]({{< ref "run-a-
 
 Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://containrrr.dev/watchtower/).
 
-*Note: If you'd love to deploy a node but this guide is still a bit too advanced for you, checkout [xmrcannon.net](https://xmrcannon.net/), a great community resource that allows you to pay in Monero to have a node spun up for you.*
-
 ## Update and install required packages
 
 First we need to install a few tools we will need later:
