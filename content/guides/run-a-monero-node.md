@@ -18,10 +18,8 @@ In this short post I'll detail how to easily run a Monero node on a Linux server
 
 I will also assume in this guide that you have purchased and SSH'd into the VPS/host of your choosing, but if you need help with those first steps here are a few good links to follow:
 
-- [Hosting services accepting Monero](https://www.getmonero.org/community/merchants/#hosting)
+- [Hosting services accepting Monero](https://monerica.com/)
   - These are some options available for hosting a VPS while paying with Monero, and each come with pro's and con's.
-- [Joe's Datacenter](https://joesdatacenter.com/)
-  - A solid and cheap VPS and dedicated server provider based out of the US, they accept Bitcoin but do not accept Monero (yet!) and are a great choice for a high-performance node.
 - [Simple Linode deployment guide](https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/)
 
 If you're using your own hardware at home, this guide will still generally apply to you assuming you are running Ubuntu/Debian.
@@ -31,12 +29,12 @@ If you're using your own hardware at home, this guide will still generally apply
 - Full Node
   - 2+ vCPUs/cores
   - 4GB+ RAM
-  - 175GB+ SSD
+  - 200GB+ SSD
   
 - Pruned Node[^1]
   - 2+ vCPUs/cores
   - 4GB+ RAM
-  - 75GB+ SSD
+  - 100GB+ SSD
   
 [^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
