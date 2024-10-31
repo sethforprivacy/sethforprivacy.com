@@ -139,14 +139,14 @@ The "messaging wars" continue to rage, but I'll make my recommendations based on
 
 - [Signal](https://www.signal.org/)
   - Signal holds the brand recognition they do for a reason -- it's extremely easy to use, easy to onboard new people, and has the core feature-set that most messaging apps do. Even though it's not perfect, it's an incredible tool and has been a huge boon for the privacy space and free speech so far. 
-  - Note that Signal does require a phone number to use, but that comes with the important ability to handle SMS natively in Signal. It's also important to note this does not harm reduce the *privacy* provided by Signal, but can be detrimental if pseudonymity or anonymity in messaging are key to your threat model.
+  - Note that Signal does require a phone number to use, but this does not harm the *privacy* provided by Signal, but can be detrimental if pseudonymity or anonymity in messaging are key to your threat model.
   - I tend to use Signal with people I know personally, and couldn't live without it.
 - [SimpleX Chat](https://optoutpod.com/episodes/s3e02-simplexchat/)
   - SimpleX is a newcomer on the scene and has taken my messenger use by storm. I absolutely love their approach to providing privacy not just for message contents but also for all metadata, their server-based approach, and their slick UI and UX. It's quickly becoming my go-to instead of Signal due to the lack of any phone number requirement.
   - I interviewed the founder of Simplex, Evgeny, on Opt Out and learned a lot from him. I highly recommend listening to the episode to get a detailed picture of what they're building and what SimpleX can do today.
     - [SimpleX chat and how privacy aligns with the future of computing](https://optoutpod.com/episodes/s3e02-simplexchat/)
 - [Threema](https://threema.ch/en)
-  - Threema takes the template of WhatsApp and orients the app around preserving user-privacy, including end-to-end encrypted chats by default, voice messages, and other features users of WhatsApp will be very familiar with. It also drops the phone number requirement of Signal, which is a big win for pseudonymity (but does make it incapable of handling SMS messages, unlike Signal).
+  - Threema takes the template of WhatsApp and orients the app around preserving user-privacy, including end-to-end encrypted chats by default, voice messages, and other features users of WhatsApp will be very familiar with. It also drops the phone number requirement of Signal, which is a big win for pseudonymity.
   - I tend to use Threema for chats with people I don't know personally, and have really enjoyed the experience (both with direct and group messaging).
 
 ### 8. Use a more privacy-preserving form of money
