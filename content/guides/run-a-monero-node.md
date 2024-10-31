@@ -266,7 +266,7 @@ If you would like to also expose your RPC port over Tor as a Hidden Service, fol
 #### Run a Tor Docker container
 
 ```bash
-docker run -d --restart unless-stopped --link monerod:monerod --name tor --volume tor-keys:/var/lib/tor/hidden_service/ goldy/tor-hidden-service
+docker run -d --restart unless-stopped --link monerod:monerod --name tor --volume tor-keys:/var/lib/tor/hidden_service/ ghcr.io/sethforprivacy/tor:latest
 ```
 
 #### Get the HiddenService address

@@ -201,7 +201,7 @@ If you would like to inspect the source code behind the image used here or build
           --host "monerod" --rpc-port "18089"
 
       tor:
-        image: goldy/tor-hidden-service:latest
+        image: ghcr.io/sethforprivacy/tor:latest
         container_name: tor
         restart: unless-stopped
         links:
@@ -322,7 +322,7 @@ services:
       --host "monerod" --rpc-port "18089"
 
   tor:
-    image: goldy/tor-hidden-service:latest
+    image: ghcr.io/sethforprivacy/tor:latest
     container_name: tor
     restart: unless-stopped
     links:
