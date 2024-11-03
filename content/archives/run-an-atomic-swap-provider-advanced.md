@@ -64,7 +64,7 @@ It's important that you understand that running this tool will allow users on th
   - Swap IDs
   - Transaction IDs
   - IP addresses
-- [Run your own Monero node]({{< ref "/content/guides/run-a-monero-node.md" >}})
+- [Run your own Monero node]({{< ref "/guides/run-a-monero-node.md" >}})
 - If possible, run your own Bitcoin node and [ElectrumX server](https://electrumx-spesmilo.readthedocs.io/en/latest/)
 - Use a Bitcoin privacy tool like [Samourai Wallet](https://www.samouraiwallet.com/) to protect your privacy and protect you from tainted Bitcoin after receiving funds from swaps
   - For more on Bitcoin privacy, checkout BitcoinQnA's posts on the topic here: <https://bitcoiner.guide/privacy/>
@@ -78,7 +78,7 @@ This guide will assume the below things are already in place:
 - You are able to get to a command line on the host you want to use for the tool
 - If you want to use DNS, you already have a domain name and are comfortable configuring DNS
 - You are either running your own Monero node or have one handy that you trust
-  - Anyone is more than welcome to use my [public Monero node]({{< ref "/content/about.md#high-performance-monero-nodes" >}})
+  - Anyone is more than welcome to use my [public Monero node]({{< ref "/about.md#high-performance-monero-nodes" >}})
 - You already have some Monero you are willing to sell via the ASB
 - You are comfortable sending and receiving Monero
 - You are comfortable handling potentially tainted Bitcoin via a tool like [Samourai Wallet](https://www.samouraiwallet.com/)
@@ -709,4 +709,4 @@ I am not responsible for any lost funds or issues you may have with handling of 
 
 Hopefully this has been a nice (relatively) simple guide to get you started providing Monero liquidity for those wanting to trustlessly swap Bitcoin for Monero via atomic swaps! Atomic swaps are an essential tool to removing trust from exchanges and removing the power of potential future regulation, so I'm beyond excited that they are finally possible and work quite well.
 
-If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

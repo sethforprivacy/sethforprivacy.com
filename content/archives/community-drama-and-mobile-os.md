@@ -27,7 +27,7 @@ toc: true
 
 Earlier this year I explored moving from iOS to a de-Googled and hardened mobile operating system. I wanted to be more intentional about my data footprint and continue my privacy journey, where I ultimately settled on [CopperheadOS](https://copperhead.co/android/).
 
-I have since switched to CalyxOS and [written a post]({{< ref "/content/posts/switching-to-calyxos.md" >}}) about my experiences and takeaways.
+I have since switched to CalyxOS and [written a post]({{< ref "/posts/switching-to-calyxos.md" >}}) about my experiences and takeaways.
 
 In full disclosure, I originally chose CopperheadOS entirely from my own research, paid in full with Monero for the phone and the service, and wrote a blog post to help others interested in privacy and who may want to switch to a more privacy-conscious mobile operating system.
 
@@ -93,7 +93,7 @@ The core reason that I chose to go with CopperheadOS over GrapheneOS (I decided 
 
 I was very much on the fence about this decision, but continued to recommend both GrapheneOS and CalyxOS as alternatives for those not wanting to pay the subscription or unwilling to use a source-available project.
 
-_Note: Since writing this post I have changed to using CalyxOS. For more details on the thought process on the change, please see [Switching to CalyxOS]({{< ref "/content/posts/switching-to-calyxos.md#why-calyxos" >}})_
+_Note: Since writing this post I have changed to using CalyxOS. For more details on the thought process on the change, please see [Switching to CalyxOS]({{< ref "/posts/switching-to-calyxos.md#why-calyxos" >}})_
 
 # GrapheneOS community member's organized campaign of harassment, slander, and brigading
 
@@ -139,6 +139,6 @@ I want to be intentional about providing options for people to take control of t
 
 # Next steps
 
-If you're using Google Android/iOS today and want to switch, I can highly recommend [CalyxOS](https://calyxos.org/) as a great alternative that can be a bit easier to transition to due to [support for microG](https://calyxos.org/features/microg/) based on personal experience, and be sure to take a look at [my guide]({{< ref "/content/posts/switching-to-calyxos.md" >}}) to help the transition.
+If you're using Google Android/iOS today and want to switch, I can highly recommend [CalyxOS](https://calyxos.org/) as a great alternative that can be a bit easier to transition to due to [support for microG](https://calyxos.org/features/microg/) based on personal experience, and be sure to take a look at [my guide]({{< ref "/posts/switching-to-calyxos.md" >}}) to help the transition.
 
-If you have any questions from this post or would like more information on a specific aspect of my thought process or decision here, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my thought process or decision here, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

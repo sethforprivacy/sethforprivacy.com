@@ -21,7 +21,7 @@ As a way to celebrate and show the growth that has happened for Monero across th
 This is by no means an exhaustive list of ways in which Monero grew, and some of the most important growth came in increased acceptance and adoption of Monero for donations and payments:
 
 - [Merchants accepting Monero for payment](https://www.getmonero.org/community/merchants/)
-- [FOSS Projects and Pro-Privacy Organizations accepting Monero for donations]({{< ref "/content/posts/foss-donations.md" >}})
+- [FOSS Projects and Pro-Privacy Organizations accepting Monero for donations]({{< ref "/posts/foss-donations.md" >}})
 
 # Statistics
 
@@ -243,12 +243,12 @@ Monero's Twitter follower count grew ***21.63%*** YoY and grew ***1,870%*** fast
 
 - [CLSAG, a new ring signature mechanism that improves transaction efficiency](https://www.getmonero.org/resources/moneropedia/clsag.html)
   - "CLSAG, users see a 20% improvement in signature verification, and at least a 10% overall improvement for typical transactions. For example, a typical Monero transaction (2 inputs and 2 outputs) which usually weighs 2.5kB, takes only 1.9kB of blockchain space with CLSAG, a ~25% improvement."
-- [Monero put out several updates to resolve and prevent network attacks from a prolonged and aggressive attack on the p2p network]({{< ref "/content/posts/moneros-ongoing-network-attack.md" >}})
+- [Monero put out several updates to resolve and prevent network attacks from a prolonged and aggressive attack on the p2p network]({{< ref "/posts/moneros-ongoing-network-attack.md" >}})
   - "Monero’s peer-to-peer (p2p) network has been undergoing several different types of attack by an entity who has consistently attacked, spammed, and attempted to undermine the Monero network and community for years."
 
 # Something Missing?
 
-If you see something missing from this post that was a major highlight of the year, please feel free to reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
+If you see something missing from this post that was a major highlight of the year, please feel free to reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}) and I'll work to get it added ASAP.
 
 # Resources Used
 

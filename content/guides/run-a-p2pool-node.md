@@ -22,11 +22,11 @@ title: Run and mine on a p2pool Node
 While this guide is still useful for those who want to mine on multiple machines or "Uncle Jim" p2pool mining for others, if you just have a single machine to mine on I'd recommend using [Gupax](https://github.com/hinto-janai/gupax?tab=readme-ov-file#guide) instead. [Gupax](https://github.com/hinto-janai/gupax?tab=readme-ov-file#guide) is a FANTASTIC all-in-one Monero mining app for desktop that simplifies the entire process.
 {{< /notice >}}
 
-***NOTE: Much of the beginning of this guide is taken from my related guide, ["Run a Monero Node"]({{< ref "/content/guides/run-a-monero-node.md" >}}), but is necessary here as running your own node is usually required for p2pool usage.***
+***NOTE: Much of the beginning of this guide is taken from my related guide, ["Run a Monero Node"]({{< ref "/guides/run-a-monero-node.md" >}}), but is necessary here as running your own node is usually required for p2pool usage.***
 
 This guide will aim to make it very simple and straightforward for you to start and run your own Monero node and p2pool instance for decentralized and fee-less mining of Monero. p2pool is a huge breakthrough that allows individual miners full control over the mining process, removing trust in pools and pool operators and allowing anyone to mine in a decentralized fashion while keeping payout variance down as opposed to solo mining.
 
-Note that once you have this up and running on a VPS or personal hardware, you will want to mine against your p2pool node as the "pool" in your mining configuration. For more on mining Monero generally, including setting up XMRig, see my other guide, ["Mining Monero"]({{< ref "/content/guides/mining-monero.md" >}}).
+Note that once you have this up and running on a VPS or personal hardware, you will want to mine against your p2pool node as the "pool" in your mining configuration. For more on mining Monero generally, including setting up XMRig, see my other guide, ["Mining Monero"]({{< ref "/guides/mining-monero.md" >}}).
 
 For more information on why you would want to use p2pool instead of a normal pool for mining, please see: [Why run and mine on p2pool instead of a "normal" Monero pool?]({{< relref "#why-run-and-mine-on-p2pool-instead-of-a-normal-monero-pool" >}})
 
@@ -265,7 +265,7 @@ If you would like to inspect the source code behind the image used here or build
 
     `monerod` can take anywhere from 4-6h to a few days to sync fully, depending on your hardware.
 
-    ***If you have any more questions about the `monerod` portion of this, please see my guide at ["Run a Monero Node"]({{< ref "/content/guides/run-a-monero-node.md" >}}).***
+    ***If you have any more questions about the `monerod` portion of this, please see my guide at ["Run a Monero Node"]({{< ref "/guides/run-a-monero-node.md" >}}).***
 
 4. Replace `--wallet` address with your own in `docker-compose.yml`
 
@@ -386,7 +386,7 @@ If you want to use a configuration file with XMRig, you can use the below config
 }
 ```
 
-For more details on miner configuration, see my guide ["Mining Monero"]({{< ref "/content/guides/mining-monero.md" >}}).
+For more details on miner configuration, see my guide ["Mining Monero"]({{< ref "/guides/mining-monero.md" >}}).
 
 ## Viewing your mining stats
 
@@ -530,4 +530,4 @@ I am not responsible for any lost funds or issues you may have with configuratio
 
 Hopefully this has been a nice (relatively) simple guide to get you started mining Monero via p2pool! p2pool is an essential tool to removing trust from mining pools and removing the power of potential future regulation, so I'm beyond excited that it is finally possible and works quite well.
 
-If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

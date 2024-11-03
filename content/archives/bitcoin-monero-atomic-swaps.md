@@ -182,4 +182,4 @@ I am not responsible for any lost funds or issues you may have with handling of 
 
 Hopefully this has been a nice simple guide to get you started trustlessly swapping Bitcoin for Monero via atomic swaps! Atomic swaps are an essential tool to removing trust from exchanges and removing the power of potential future regulation, so I'm beyond excited that they are finally possible and work quite well.
 
-If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have specific questions or need some help, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

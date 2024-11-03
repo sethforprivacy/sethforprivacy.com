@@ -38,7 +38,7 @@ I simply downloaded the appropriate package for the Pixel 4a, downloaded the fla
 
 It took all of ten minutes to flash and setup, and was very straightforward. You can see all the supported devices and downloads at <https://calyxos.org/install/> as well.
 
-I've also written a guide that walks you through verification and installation from a Linux computer, which lays things out a bit simpler: [Verifying and installing CalyxOS from Linux]({{< ref "/content/guides/installing-calyxos-linux.md" >}})
+I've also written a guide that walks you through verification and installation from a Linux computer, which lays things out a bit simpler: [Verifying and installing CalyxOS from Linux]({{< ref "/guides/installing-calyxos-linux.md" >}})
 
 *Be sure to also check out [BitcoinQ+A's installation guide](https://bitcoiner.guide/calyxos/) for more details on his thoughts on CalyxOS and how to install it with step by step instructions.*
 
@@ -289,4 +289,4 @@ While the jump to a de-Googled phone may not be the easiest, it's a great furthe
 
 The experience is surprisingly user-friendly once you get used to how to get apps and migrate over to strong open-source alternatives where possible, and I would highly recommend this for those somewhat tech-savvy users who want to preserve their privacy while on the go.
 
-If you have any questions from this post or would like more information on a specific aspect of my switch to CalyxOS, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect of my switch to CalyxOS, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

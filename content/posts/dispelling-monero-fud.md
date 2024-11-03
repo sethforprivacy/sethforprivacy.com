@@ -110,7 +110,7 @@ I've written an entire blog post around this topic, so for more on that see the 
 
 ***Resources***
 
-- [Comparing Private Spends]({{< ref "/content/posts/comparing-private-spends.md" >}})
+- [Comparing Private Spends]({{< ref "/posts/comparing-private-spends.md" >}})
 
 ## Monero's hard-forks make it centralized
 
@@ -192,7 +192,7 @@ Payments:
 
 Donations:
 
-- [Donating to FOSS Projects and Pro-Privacy Organizations]({{< ref "/content/posts/foss-donations.md" >}})
+- [Donating to FOSS Projects and Pro-Privacy Organizations]({{< ref "/posts/foss-donations.md" >}})
 
 Evidence:
 
@@ -255,4 +255,4 @@ For more on the possibility of layer-two networks in Monero, see the resources b
 
 Hopefully this brief post has given you some good info and resources to come to your own well-informed conclusions, and can help to dispel some of the common myths and FUD surrounding Monero today.
 
-If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

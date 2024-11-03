@@ -202,7 +202,7 @@ You'll still need a domain for this, so feel free to use the directions above up
 
 I'm very excited to see BIP 353 usernames grow in adoption, as they make reusable, privacy-preserving payment methods far easier to discover and use when paying other Bitcoiners. Hopefully this guide helps more and more people get setup and rolling! If this guide seems too daunting for you (or you just don't want to deal with owning a domain), be sure to check out [twelve.cash](https://twelve.cash/), a fantastic (but trusted!) service.
 
-If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
 
 ## Appendix: Additional community-recommended domain providers
 

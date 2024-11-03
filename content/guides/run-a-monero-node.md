@@ -308,6 +308,6 @@ Also available as a Tor HiddenService at:
 
 `sfprpc2fws6ltnq4hyr7lvpul3nank5layd7q7tyc5h4gy4h77gtabad.onion:18089`
 
-Please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
+Please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
 Thanks!

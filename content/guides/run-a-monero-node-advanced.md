@@ -16,7 +16,7 @@ title: Run a Monero Node (Advanced)
 
 # Introduction
 
-With the [ongoing network attacks in Monero]({{< ref "/content/posts/moneros-ongoing-network-attack.md" >}}), it's a great time for users to dive into running their [own node](https://www.monerooutreach.org/monero_best_practices/your_own_node.html).
+With the [ongoing network attacks in Monero]({{< ref "/posts/moneros-ongoing-network-attack.md" >}}), it's a great time for users to dive into running their [own node](https://www.monerooutreach.org/monero_best_practices/your_own_node.html).
 
 In this short post I'll detail how to easily run a Monero node on a Linux server, the most common OS for virtual private servers (VPS). I would highly recommend running either Debian or Ubuntu for your Linux distribution, and this guide will assume you are running one of those.
 
@@ -61,7 +61,7 @@ Each node can expose two different services, each of which has a positive impact
 
 In this guide I have only given configuration files and Docker commands that expose the p2p port, as that is a key help to the network. Feel free to use one of the configuration files utilizing the `public-node` arg listed below if you'd also like to advertise your restricted RPC port.
 
-You can choose to either deploy `monerod` [as a Docker container]({{< ref "/content/guides/run-a-monero-node.md" >}}) or setup a node via systemd and using "official" binaries below.
+You can choose to either deploy `monerod` [as a Docker container]({{< ref "/guides/run-a-monero-node.md" >}}) or setup a node via systemd and using "official" binaries below.
 
 *Note: If you'd like to build from source instead of downloading and verifying binaries, please checkout the [great gist from tannerdsilva](https://gist.github.com/tannerdsilva/071100b6b7f5e2903b2c4ba232bccd68).*
 
@@ -553,6 +553,6 @@ Also available as Tor HiddenServices at:
 
 `rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089`  
 
-Please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
+Please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}) if you have any questions, think a step needs clarification, or need further help getting up and running.
 
 Thanks!

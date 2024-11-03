@@ -43,7 +43,7 @@ No, you likely won't get rich mining Monero, but it's an *excellent* way to earn
 
 This is an avenue that I consider under-explored in the space, but an awesome way that you can donate to your favorite projects (even if you don't have any Monero to begin with!) is to donate via mining! 
 
-Simply use the donation address of your favorite project (you can find a list of possible options I've compiled [here]({{< ref "/content/posts/foss-donations.md" >}})) and fire up a miner and donate in a permissionless, censorship-resistant, and untraceable manner.
+Simply use the donation address of your favorite project (you can find a list of possible options I've compiled [here]({{< ref "/posts/foss-donations.md" >}})) and fire up a miner and donate in a permissionless, censorship-resistant, and untraceable manner.
 
 # Downloading your mining software
 
@@ -88,8 +88,8 @@ Once the terminal opens, simply run `sudo ./xmrig`, enter your user's password, 
 
 In order to mine using p2pool, the best way to help the Monero network and mine, you'll need to be running a p2pool node.
 
-- For more on how to run a p2pool node, see my guide on the topic [here]({{< ref "/content/guides/run-a-p2pool-node.md" >}}).
-- For more on why to use p2pool instead of centralized pools, see [here]({{< ref "/content/guides/run-a-p2pool-node.md#why-run-and-mine-on-p2pool-instead-of-a-normal-monero-pool" >}}).
+- For more on how to run a p2pool node, see my guide on the topic [here]({{< ref "/guides/run-a-p2pool-node.md" >}}).
+- For more on why to use p2pool instead of centralized pools, see [here]({{< ref "/guides/run-a-p2pool-node.md#why-run-and-mine-on-p2pool-instead-of-a-normal-monero-pool" >}}).
 
 # Connect your miners to p2pool
 
@@ -170,7 +170,7 @@ If you're running a local Tor daemon, you can easily mine over Tor by adding one
 
 Hopefully this guide has made it a bit simpler for you to get started, and can act as some motivation to do your part and further decentralize the network, all while earning some KYC-free Monero.
 
-As always, if you have any questions from this post or would like more information on a specific aspect of mining, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+As always, if you have any questions from this post or would like more information on a specific aspect of mining, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
 
 # Legacy pool mining
 

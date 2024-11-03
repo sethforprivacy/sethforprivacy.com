@@ -73,7 +73,7 @@ JEcJD9ltDAVcgs36
 
 Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty.
 
-Check out my [announcement blog post]({{< ref "/content/posts/announcing-opt-out-podcast.md" >}}) for more info or the podcast's website at [optoutpod.com](https://optoutpod.com/).
+Check out my [announcement blog post]({{< ref "/posts/announcing-opt-out-podcast.md" >}}) for more info or the podcast's website at [optoutpod.com](https://optoutpod.com/).
 
 ### Status page for all of my community resources
 

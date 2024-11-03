@@ -59,7 +59,7 @@ Another great way you can get involved in the Monero project is to help to educa
 
 Here are a few concrete ways you can help in education:
 
-- [Start up a blog of your own]({{< ref "/content/guides/building-this-blog.md" >}})
+- [Start up a blog of your own]({{< ref "/guides/building-this-blog.md" >}})
 - Write up threads on Twitter or Reddit posts about things you've learned about or learned to do with Monero
 - Make video "how-tos" of everyday things you do with Monero, such as sending Monero, using a Ledger device, etc.
 
@@ -183,4 +183,4 @@ It would be great to see more businesses and projects being built on top of Mone
 
 Hopefully this guide has sparked some ideas on how you can give back to Monero using your unique skill-set, background, and experience. The more of the community that gives back in ways like these, the larger and more mature Monero will be and the more easily we can fulfill the goals of private, fungible, self-sovereign, censorship-resistant money.
 
-I look forward to hearing about things you do after reading this, so please feel free to reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}) with what you've chosen to do or new ways you've thought of to contribute that could be added to this post!
+I look forward to hearing about things you do after reading this, so please feel free to reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}) with what you've chosen to do or new ways you've thought of to contribute that could be added to this post!

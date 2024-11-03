@@ -347,4 +347,4 @@ Please note that **all** credit here belongs to the fantastic creator of [public
 
 I hope this guide will help to spawn many more "Uncle Jim" style pools for small communities to be able to easily come together and point their hash at a pool that follows their principles, further decentralizing the Bitcoin network.
 
-If you have specific questions or need some help, please reach out via [Signal, SimpleX, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have specific questions or need some help, please reach out via [Signal, SimpleX, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

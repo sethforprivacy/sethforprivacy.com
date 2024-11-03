@@ -53,11 +53,11 @@ Browsers:
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - ["The Ultimate Guide to Firefox Hardening!" - TechLore](https://www.youtube.com/watch?v=F7-bW2y6lcI)
     - By far my favorite hardening guide for Firefox and made by my good friends at [TechLore](https://techlore.tech/), goes step by step with very simple instructions and walks you through the process. Don't let it scare you! It's very straightforward, and only needs to be done once per computer you have/use.
+- [LibreWolf](https://librewolf.net/)
+  - I've been leaning on LibreWolf more and more thanks to it's strong defaults, essentially giving a pre-hardened Firefox that does a great job keeping up to date with upstream Firefox updates. No hardening guide necessary, just install and enjoy!
 - [Brave Browser](https://brave.com/)
   - Brave has some excellent defaults, but certainly takes some odd approaches (like cryptocurrency ads all over the place and built-in cryptocurrency wallets which aren't helpful to most people).
     - [Brave hardening guide from anonymousplanet.org](https://anonymousplanet.org/guide.html#brave-1)
-- [Ungoogled Chromium](https://github.com/Eloston/ungoogled-chromium)
-  - Ungoogled Chromium takes the best of Chrome Browser and strips Google from it, making a very compelling and very fast browser. It can be a bit tricky to get and keep updated on some operating systems, and extension installation and updates are a bit of a pain, but it's a great option for those who are a bit more hardcore but like the Chrome web engine.
 
 Extensions:
 
@@ -74,8 +74,10 @@ While this step isn't *technically* privacy related, properly securing accounts 
 
 Migrating to a password manager is also a great chance to think twice about which accounts you *actually need*, and close those you don't in the process.
 
+- [Proton Pass](https://proton.me/pass)
+  - As a Visionary Proton user, I got the chance to try Proton Pass early and have been amazed at the strides it's made already. Proton Pass has a beautiful, simple UI, powerful features, native integration with Proton aliases + SimpleLogin, and much more. To me it's the best password manager out there, and most Proton plans even give it to you for free.
 - [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
-  - Bitwarden is my personal favorite and what my wife and I use. It works very well, is open-source, cross-platform, and can be self-hosted (if desired).
+  - Bitwarden was my personal favorite and what my wife and I used for many years (until recently switching to Proton Pass). It works very well, is open-source, cross-platform, and can be self-hosted (if desired).
   - [Opt Out episode on Bitwarden](https://optoutpod.com/episodes/s2e09-bitwarden/)
 - [KeepassXC](https://keepassxc.org/)
   - KeepassXC is a well-respected FOSS password manager, but importantly does not integrate sync across devices natively, which is a deal-breaker for me. Outside of that, though, it works extremely well and has a long and solid history.
@@ -105,6 +107,7 @@ If you'd like to purchase a premium plan for either of the below services, you c
     - [Email aliasing w/ Son from SimpleLogin](https://optoutpod.com/episodes/s2e01-simplelogin/)
   - SimpleLogin is also free and open-source, and can even be self-hosted!
     - <https://github.com/simple-login/app>
+  - NOTE: After Proton's acquisition of SimpleLogin, aliasing has become a native feature in Proton Mail and Proton Pass. If you're already a Proton user, check out the aliasing in both!
 - [AnonAddy](https://anonaddy.com/)
   - While I haven't used AnonAddy myself, I've heard very good things from people I highly trust. It has a very similar approach to SimpleLogin but with a more generous free plan.
   - AnonAddy is also free and open-source, and can even be self-hosted!
@@ -128,6 +131,7 @@ Each of the alternatives have some key pros and cons, and are really up to perso
   - [Opt Out episode on Whoogle](https://optoutpod.com/episodes/s2e12-whoogle/)
 - [Kagi](https://kagi.com/)
   - Kagi.com is a search engine with a new and refreshing take on things - instead of paying with your data or your eyes via ads, you simply... pay! Kagi has multiple paid plans (which can be paid in Bitcoin!) and has been my go-to lately as it performs extremely well and is completely ad-free.
+  - NOTE: One major downside with an account-based search platform is that your searches can be easily tied back to your account. If you use Kagi, be sure to pay with Bitcoin, use an email alias, etc.
 
 ### 7. Switch yourself and your friends/family to a more private messaging service/app
 
@@ -138,16 +142,13 @@ Introducing a private-by-default and end-to-end encrypted messaging app into you
 The "messaging wars" continue to rage, but I'll make my recommendations based only on what I've used heavily here.
 
 - [Signal](https://www.signal.org/)
-  - Signal holds the brand recognition they do for a reason -- it's extremely easy to use, easy to onboard new people, and has the core feature-set that most messaging apps do. Even though it's not perfect, it's an incredible tool and has been a huge boon for the privacy space and free speech so far. 
-  - Note that Signal does require a phone number to use, but this does not harm the *privacy* provided by Signal, but can be detrimental if pseudonymity or anonymity in messaging are key to your threat model.
-  - I tend to use Signal with people I know personally, and couldn't live without it.
-- [SimpleX Chat](https://optoutpod.com/episodes/s3e02-simplexchat/)
+  - Signal holds the brand recognition they do for a reason -- it's extremely easy to use, easy to onboard new people, and has the core feature-set that most messaging apps do. Even though it's not perfect, it's an incredible tool and has been a huge boon for the privacy space and free speech so far.
+  - Note that Signal does require a phone number to use, but this does not harm the *privacy* provided by Signal, and it's affects on anonymity/pseudonymity have been drastically lessened with the introduction of usernames.
+  - I almost exclusively use Signal with people I know personally, and couldn't live without it.
+- [SimpleX Chat](https://simplex.chat/)
   - SimpleX is a newcomer on the scene and has taken my messenger use by storm. I absolutely love their approach to providing privacy not just for message contents but also for all metadata, their server-based approach, and their slick UI and UX. It's quickly becoming my go-to instead of Signal due to the lack of any phone number requirement.
   - I interviewed the founder of Simplex, Evgeny, on Opt Out and learned a lot from him. I highly recommend listening to the episode to get a detailed picture of what they're building and what SimpleX can do today.
     - [SimpleX chat and how privacy aligns with the future of computing](https://optoutpod.com/episodes/s3e02-simplexchat/)
-- [Threema](https://threema.ch/en)
-  - Threema takes the template of WhatsApp and orients the app around preserving user-privacy, including end-to-end encrypted chats by default, voice messages, and other features users of WhatsApp will be very familiar with. It also drops the phone number requirement of Signal, which is a big win for pseudonymity.
-  - I tend to use Threema for chats with people I don't know personally, and have really enjoyed the experience (both with direct and group messaging).
 
 ### 8. Use a more privacy-preserving form of money
 
@@ -160,14 +161,15 @@ While cryptocurrencies like Bitcoin are commonly considered private or anonymous
     - [What is Monero? A simple animated introduction to Monero](https://www.youtube.com/watch?v=B7sLnmlZ-kU)
     - [A more in-depth look at Monero's privacy](https://www.youtube.com/watch?v=H33ggs7bh8M)
     - [A feature-by-feature breakdown of Monero](https://www.monerooutreach.org/gallery/know-monero.html)
-- Use [Samourai Wallet](https://samouraiwallet.com/) or [Sparrow Wallet](https://www.sparrowwallet.com/) for Bitcoin
-  - The privacy stack that Samourai Wallet have built is by far the best way to use Bitcoin, and enables fairly easy to use and approachable privacy without the need for another cryptocurrency. While privacy on Bitcoin can be extremely fragile and difficult to achieve, Samourai Wallet makes it as simple as possible, keeps fees down, and has a long track record of preserving user privacy on Bitcoin. For more info on Samourai, check out the following links:
-    - [Their website](https://samouraiwallet.com/)
-    - [Their code](https://code.samourai.io/explore/groups)
-    - [Simple guide to mixing Bitcoin using Samourai Wallet by BitcoinQnA](https://bitcoiner.guide/privacy/separate/)
-    - [In-depth guide to Samourai Wallet usage by EconoAlchemist](https://www.econoalchemist.com/post/bitcoin-wallets-for-beginners-part-ii)
-    - [An in-depth walk through of what Samourai Wallet is, how they operate, and what you can expect](https://optoutpod.com/episodes/s2e03-samourai-wallet/)
-  - Sparrow Wallet is built from the ground up as an approachable and yet powerful desktop wallet for Bitcoin, with deep support for the Samourai privacy tools like Whirlpool and their post-mix tooling. It allows you to easily connect to your own node, use a recommended public node, or run Bitcoin Core on the same computer and connect directly. I actually use Sparrow Wallet almost exclusively for on-chain transactions these days, paired with my [Foundation Passport hardware wallet](https://foundationdevices.com/passport/).
+    - [Try Monero in Cake Wallet](https://cakewallet.com)
+- [Use Cake Wallet with Silent Payments on Bitcoin](https://cakewallet.com)
+  - Cake Wallet is a multi-cryptocurrency wallet that focuses heavily on financial privacy, starting with Monero and recently expanding to Bitcoin privacy with [Silent Payments](https://silentpayments.xyz). Silent Payments are especially useful if you need an easy way to accept donations or raise funds and don't want the headache of setting up servers etc.
+    - [Their website](https://cakewallet.com)
+    - [Their code](https://github.com/cake-tech/cake_wallet/)
+    - [Their docs, a great way to get started](https://guides.cakewallet.com/)
+    - [Intro to Silent Payments + tutorial by Ian Major](https://youtu.be/payDPlHzp58)
+- [Use Sparrow Wallet](https://www.sparrowwallet.com/)
+  - Sparrow Wallet is built from the ground up as an approachable and yet powerful desktop wallet for Bitcoin. It allows you to easily connect to your own node, use a recommended public node, or run Bitcoin Core on the same computer and connect directly. I actually use Sparrow Wallet almost exclusively for on-chain transactions these days, paired with my [Foundation Passport hardware wallet](https://foundation.xyz/passport/).
     - [Their website](https://www.sparrowwallet.com/)
     - [Their code](https://github.com/sparrowwallet/sparrow)
     - [Their docs, a great way to get started](https://www.sparrowwallet.com/docs/)
@@ -186,7 +188,7 @@ I have used both of the below VPNs extensively and they also come recommended by
   - I've spoken at length on why I trust and use IVPN, but for more details check out [this link](https://optoutpod.com/sponsors/#ivpn).
   - tl;dr -- trustworthy team, incredible cross-platform clients, strong reputation, extremely honest about shortcomings of VPNs generally, externally audited, fast, Wireguard support
 - [Mullvad](https://mullvad.net/en/)
-  - Mullvad is an amazing VPN provider and have long been a recommendation of mine. They have a long and storied history, great service, accountless setup, and solid cross-platform clients.
+  - Mullvad is an amazing VPN provider and have long been a recommendation of mine. They have a long and storied history, great service, account-less setup, and solid cross-platform clients.
 - [Proton VPN](https://protonvpn.com/)
   - Proton have proven themselves time and time again to be a focused and dedicated company, and their VPN service reflects that. It works extremely well, has a generous free plan, and comes bundled with most of their email plans for very cheap.
 
@@ -207,8 +209,8 @@ The only real recommendations I have here are below, but note that for some thre
 - [GrapheneOS](https://grapheneos.org/)
   - I've been testing out GrapheneOS for over a year now and am thoroughly impressed with how far the usability has come since the beginning of 2022. The [Sandboxed Google Play Service](https://grapheneos.org/usage#sandboxed-google-play) enables better support for apps than microG and works seamlessly once installed. If you want a bit more security to go with the privacy, consider trying out GrapheneOS.
 - [CalyxOS](https://calyxos.org/)
-  - I've long been a huge fan of CalyxOS, have run it for almost a year, and am a financial supporter of the [Calyx Institute](https://calyxos.org/), the non-profit organization behind CalyxOS. CalyxOS is an incredibly powerful tool, one that takes the open-source Android operating system created by Google and strips Google's tracking and services out of it, and then builds it back up with a focus on user privacy and FOSS app stores (like F-Droid).
-  - For more on CalyxOS and my experience/recommendations, see my blog post ["Switching to CalyxOS"]({{< ref "/content/posts/switching-to-calyxos.md" >}}).
+  - I've long been a huge fan of CalyxOS, ran it for almost a year, and am a financial supporter of the [Calyx Institute](https://calyxos.org/), the non-profit organization behind CalyxOS. CalyxOS is an incredibly powerful tool, one that takes the open-source Android operating system created by Google and strips Google's tracking and services out of it, and then builds it back up with a focus on user privacy and FOSS app stores (like F-Droid).
+  - For more on CalyxOS and my experience/recommendations, see my blog post ["Switching to CalyxOS"]({{< ref "/posts/switching-to-calyxos.md" >}}).
 
 ### 11. Use a more privacy-conscious desktop operating system
 
@@ -230,4 +232,4 @@ There are *many* options to choose from when considering switching to Linux, but
 
 While these steps are certainly not the end-all-be-all of privacy, they're hopefully a solid and straightforward set of steps to get you thinking about where to go next in your privacy journey. Take them with a grain of salt and see what is most important to you personally, then make the jump into the next step of your journey!
 
-If you have any questions from this post or would like more information on a specific aspect, I'd love to hear from you via [Signal, SimpleX, Threema, or Nostr]({{< ref "/content/about.md#how-to-contact-me" >}}).
+If you have any questions from this post or would like more information on a specific aspect, I'd love to hear from you via [Signal, SimpleX, Threema, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
