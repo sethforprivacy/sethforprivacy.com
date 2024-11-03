@@ -162,17 +162,17 @@ While cryptocurrencies like Bitcoin are commonly considered private or anonymous
     - [A more in-depth look at Monero's privacy](https://www.youtube.com/watch?v=H33ggs7bh8M)
     - [A feature-by-feature breakdown of Monero](https://www.monerooutreach.org/gallery/know-monero.html)
     - [Try Monero in Cake Wallet](https://cakewallet.com)
+- Use Robosats + Zeus
+  - With the attack on financial privacy coming in the cases against Samourai Wallet and Tornado Cash, privacy on Bitcoin has gotten drastically more difficult. The first step that every privacy-conscious Bitcoiner needs to take is to avoid linking their real-world identity with their on-chain activity by avoiding "KYC" exchanges that require ID to use.
+  - [Robosats](https://learn.robosats.com/) is a fantastic, Lightning-only no-KYC exchange that allows you to easily buy and sell Bitcoin with other real people around the world, all anonymously.
+  - [Zeus](https://zeusln.com/) is the best Lightning wallet out there for preserving your privacy, and works well with Robosats. You can either remote control a Lightning node you run on something like Start9, or you can run it with your node on your phone directly.
+  - [A simple guide to using the two together to buy/sell/spend Bitcoin privately](https://x.com/btcqna/status/1810703621731778757)
 - [Use Cake Wallet with Silent Payments on Bitcoin](https://cakewallet.com)
   - Cake Wallet is a multi-cryptocurrency wallet that focuses heavily on financial privacy, starting with Monero and recently expanding to Bitcoin privacy with [Silent Payments](https://silentpayments.xyz). Silent Payments are especially useful if you need an easy way to accept donations or raise funds and don't want the headache of setting up servers etc.
     - [Their website](https://cakewallet.com)
     - [Their code](https://github.com/cake-tech/cake_wallet/)
     - [Their docs, a great way to get started](https://guides.cakewallet.com/)
     - [Intro to Silent Payments + tutorial by Ian Major](https://youtu.be/payDPlHzp58)
-- [Use Sparrow Wallet](https://www.sparrowwallet.com/)
-  - Sparrow Wallet is built from the ground up as an approachable and yet powerful desktop wallet for Bitcoin. It allows you to easily connect to your own node, use a recommended public node, or run Bitcoin Core on the same computer and connect directly. I actually use Sparrow Wallet almost exclusively for on-chain transactions these days, paired with my [Foundation Passport hardware wallet](https://foundation.xyz/passport/).
-    - [Their website](https://www.sparrowwallet.com/)
-    - [Their code](https://github.com/sparrowwallet/sparrow)
-    - [Their docs, a great way to get started](https://www.sparrowwallet.com/docs/)
 
 ### 9. Use a non-logging and trustworthy VPN provider
 
