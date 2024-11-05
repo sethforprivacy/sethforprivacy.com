@@ -206,7 +206,9 @@ If you have any questions from this post or would like more information on a spe
 
 ## Appendix: Additional community-recommended domain providers
 
-{{< callout emoji="⚠️" text="Please note that I have not personally used the following domain providers, but they have been recommended to me by individuals I have a reason to trust. Use at your own risk!" >}}
+{{< notice warning >}}
+Please note that I have not personally used the following domain providers, but they have been recommended to me by individuals I have a reason to trust. Use at your own risk!
+{{< /notice >}}
 
 - [MyNymBox](https://mynymbox.io/)
 - [IncogNet](https://incognet.io/)

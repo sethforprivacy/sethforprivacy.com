@@ -250,10 +250,6 @@ When a user is prompted to pay an invoice, now they can select Monero from the d
 
 {{< figure src="/accepting-monero-via-btcpay-server/monero_invoice.png" align="center" style="border-radius: 8px;" >}}
 
-If you'd like to see what the payment flow looks like for a simple donation/PoS, you can try it out below (feel free to not send funds and just click through if you'd like!):
-
-{{< btcpayserver >}}
-
 ## Contributing to Monero support in BTCPay Server
 
 If you'd like to contribute and improve Monero support within BTCPay Server, here are the relevent repositories:
