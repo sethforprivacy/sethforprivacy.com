@@ -9,11 +9,11 @@ aliases: ["/donate"]
 
 If you've enjoyed my work and would like to give me a little more time to dedicate to it, I'll happily take any Monero or Bitcoin you'd like to throw my way:
 
-## Monero or Bitcoin/Lightning via BTCPay Server
+## Monero
 
-You can easily donate Bitcoin (on-chain only) or Monero via my BTCPay Server instance:
+You can easily donate Monero using the QR code or address below:
 
-{{< btcpayserver >}}
+`42uDZuVw13kSCf6BFFWanFcofAvCjMeatf3zzA6Gbms7UDgwB6rd6hLYAyP985YoyLdsa8NwhSgtH6dWadw7TeXiTHaMQS8`
 
 ## Bitcoin via BIP 353 username
 
