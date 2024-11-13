@@ -200,7 +200,7 @@ I host a high-performance Litecoin node (using [Fulcrum](https://github.com/ccul
 
 This is run using a slightly tweaked version of this repo: <https://github.com/sethforprivacy/easy-fulcrum>
 
-***NOTE: While I am committed to not logging, it's very important with Bitcoin that you host your own node if at all possible! Using my node could give me visibility into large amounts of information on how you use Bitcoin if I was malicious.***
+***NOTE: While I am committed to not logging, it's very important with Litecoin that you host your own node if at all possible! Using my node could give me visibility into large amounts of information on how you use Litecoin if I was malicious.***
 
 - Clearnet:
   - `ssl://ltc-fulcrum.sethforprivacy.com:60002`
