@@ -194,6 +194,17 @@ fo/Lj1BRvnJa0zzXyuAI+5so7Kh3/Ts=
 
 To verify this certificate in Sparrow, simply save the certificate text above as a `.pem` file on your computer and then select it in the Sparrow server dialogue.
 
+### High-performance Litecoin Fulcrum Node
+
+I host a high-performance Litecoin node (using [Fulcrum](https://github.com/cculianu/Fulcrum) and my own [`litecoind` Docker image](https://github.com/sethforprivacy/docker-litecoind)) that anyone is free to use.
+
+This is run using a slightly tweaked version of this repo: <https://github.com/sethforprivacy/easy-fulcrum>
+
+***NOTE: While I am committed to not logging, it's very important with Bitcoin that you host your own node if at all possible! Using my node could give me visibility into large amounts of information on how you use Bitcoin if I was malicious.***
+
+- Clearnet:
+  - `ssl://ltc-fulcrum.sethforprivacy.com:60002`
+
 ### Github Repositories
 
 - [simple-monerod-docker](https://github.com/sethforprivacy/simple-monerod-docker)
@@ -202,8 +213,10 @@ To verify this certificate in Sparrow, simply save the certificate text above as
   - A simple and straightforward Dockerized monerod built from source and exposing standard ports.
 - [p2pool-docker](https://github.com/sethforprivacy/p2pool-docker)
   - A simple and straightforward Dockerized p2pool built from source and exposing standard ports.
-- [self-hosted-services](https://github.com/sethforprivacy/self-hosted-services)
-  - A core set of privacy-preserving services that can be easily self-hosted via Docker Compose.
+- [docker-bitcoind](https://github.com/sethforprivacy/docker-bitcoind)
+  - An optimized and up-to-date Docker image for running `bitcoind`.
+- [docker-litecoind](https://github.com/sethforprivacy/docker-litecoind)
+  - An optimized and up-to-date Docker image for running `litecoind`.
 
 ### My Favorite RSS Feeds
 
