@@ -235,6 +235,7 @@ If you already run a node and don't want to migrate to this Docker Compose setup
     mkdir ~/pool
     cd ~/pool
     git clone https://github.com/sethforprivacy/simple-public-pool.git
+    cd /simple-public-pool
     nano docker-compose-no-bitcoind.yaml
     ```
 
