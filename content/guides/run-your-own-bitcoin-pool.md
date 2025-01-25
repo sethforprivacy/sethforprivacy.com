@@ -163,8 +163,9 @@ If you would like to inspect the source code behind the image used here or build
 2. Copy the example `pool.env.example` file
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool
     cp pool.env.example pool.env
+    nano
     ```
 
     ***Be sure to edit this file!*** You need to properly set a secure username and password to be used for Bitcoin RPC authentication, which will also be used in the next step's `bitcoin.conf` file. These are the lines that must be edited:
@@ -179,7 +180,7 @@ If you would like to inspect the source code behind the image used here or build
 3. Copy the example `bitcoin.conf.example` file to `bitcoin.conf` and set variables properly
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     cp bitcoin.conf.example bitcoin.conf
     ```
 
@@ -193,7 +194,7 @@ If you would like to inspect the source code behind the image used here or build
 4. Start `bitcoind` and allow it to sync fully:
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     docker compose up -d bitcoind
     ```
 
@@ -202,7 +203,7 @@ If you would like to inspect the source code behind the image used here or build
 5. Watch the logs of `bitcoind` to ensure it started and is synchronizing properly
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     docker compose logs --follow bitcoind
     ```
 
@@ -211,14 +212,14 @@ If you would like to inspect the source code behind the image used here or build
 6. Once `bitcoind` is fully synced, start up the other services
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     docker compose up -d
     ```
 
 7. Watch the logs of `public-pool`` to ensure it started and is synchronizing properly
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     docker compose logs --follow public-pool
     ```
 
@@ -273,7 +274,7 @@ If you already run a node and don't want to migrate to this Docker Compose setup
 2. Copy the example `pool.env.example` file
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     cp pool.env.example pool.env
     ```
 
@@ -303,14 +304,14 @@ If you already run a node and don't want to migrate to this Docker Compose setup
 3. Start up all services
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     docker compose -f docker-compose-no-bitcoind.yaml up -d
     ```
 
 4. Watch the logs of public-pool to ensure it started and is synchronizing properly
 
     ```bash
-    cd ~/pool
+    cd ~/pool/simple-public-pool$
     docker compose -f docker-compose-no-bitcoind.yaml logs --follow public-pool
     ```
 
@@ -331,7 +332,7 @@ Or for miners that don't accept/handle the `stratum+tcp://` prefix:
 You should see your miner start getting work immediately, and can watch the worker join the pool in your logs:
 
 ```bash
-cd ~/pool
+cd ~/pool/simple-public-pool$
 docker compose -f docker-compose-no-bitcoind.yaml logs --follow public-pool
 ```
 
