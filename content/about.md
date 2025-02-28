@@ -77,22 +77,27 @@ Check out my [announcement blog post]({{< ref "/posts/announcing-opt-out-podcast
 
 ### Status page for all of my community resources
 
-Go to <https://status.sethforprivacy.com> (Tor: <http://rtafhojj2atlfi74oidwiwmjwn3kqcpp7dlugiw3aonlhkfpc3vipeyd.onion>) to see the uptime and any outages associated with the services that I run.
+Go to <https://status.sethforprivacy.com> (Tor: <http://su2ibebe5rl57gedg2lrkzcn746e4msomm6w6h3l5f4c2axqjww4fwid.onion>) to see the uptime and any outages associated with the services that I run.
 
 ### Privacy-preserving front-ends and tools
 
 - [Whoogle (private search front-end for Google)](https://search.sethforprivacy.com)
-  - Tor: <http://nuifgsnbb2mcyza74o7illtqmuaqbwu4flam3cdmsrnudwcmkqur37qd.onion>
+  - Tor: <http:/sew4zbgawb7p37ngodub4gzvjqmwciinfmehak5niv7jfiobsitwixad.onion>
   - More info: <https://github.com/benbusby/whoogle-search>
 - [searx (private search aggregation)](https://searx.sethforprivacy.com)
-  - Tor: <http://4nz3r6ka7v2tzn3t6bk4yxyaqgubymrluavdbbvn3ndj2iq7hkqw2oid.onion>
+  - Tor: <http://jmehuleemz4jxzk3r4ipmbt5wgyv6tleluygpee5ey2diecrc4zg5yqd.onion>
   - More info: <https://github.com/searx/searx>
 - [Cryptpad (E2EE document storage and collaboration)](https://cryptpad.sethforprivacy.com)
-  - Tor: <http://mlo2pzkvhdav63g4ijbjjurtf2gbctvrx4lbs5k4zqv2h6i7tqiayaad.onion>
+  - Tor: <http://mn7nul4dqwxqpsyii2isq3bj7dkk7k6p7v37zufk6ebssgr4tmbo6zqd.onion>
   - More info: <https://cryptpad.fr/>
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com)
-  - Tor: <http://br7nyvov6d272llqalpb2kdjqavqcradkfbalkitn2nzfnw3wex4j2yd.onion>
+  - Tor: <http://4ynh2fktyk3fk4oqtnqkhnnkcmvd4omf3kskcgchn7jna5ciw3reksqd.onion>
   - More info: <https://privatebin.info/>
+- [Public Pool (solo mining pool)](https://pool.sethforprivacy.com)
+  - Tor: <http://3n34xl7zp44xxj5v6b344y6inbgcokalh3z75zm76xyv4wjp34ts56ad.onion>
+  - More info: <https://github.com/benjamin-wilson/public-pool>
+- [SilentPayments.xyz](https://silentpayments.xyz)
+  - Tor: <http://osjndnqzypx3df7ev32habe6beeqhrqjru5q4jxbym7gpuib7yqwzbyd.onion>
 
 ### Public mempool.space Instance
 
