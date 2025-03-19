@@ -50,21 +50,20 @@ If you happen to be running one of the recommended browsers, awesome! Just take 
 
 Browsers:
 
-- [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-  - ["The Ultimate Guide to Firefox Hardening!" - TechLore](https://www.youtube.com/watch?v=F7-bW2y6lcI)
-    - By far my favorite hardening guide for Firefox and made by my good friends at [TechLore](https://techlore.tech/), goes step by step with very simple instructions and walks you through the process. Don't let it scare you! It's very straightforward, and only needs to be done once per computer you have/use.
-- [LibreWolf](https://librewolf.net/)
-  - I've been leaning on LibreWolf more and more thanks to it's strong defaults, essentially giving a pre-hardened Firefox that does a great job keeping up to date with upstream Firefox updates. No hardening guide necessary, just install and enjoy!
 - [Brave Browser](https://brave.com/)
   - Brave has some excellent defaults, but certainly takes some odd approaches (like cryptocurrency ads all over the place and built-in cryptocurrency wallets which aren't helpful to most people).
-    - [Brave hardening guide from anonymousplanet.org](https://anonymousplanet.org/guide.html#brave-1)
+    - [Brave hardening guide from anonymousplanet.org](https://anonymousplanet.org/guide/?h=brave#brave_1)
+- [LibreWolf](https://librewolf.net/)
+  - I've been leaning on LibreWolf more and more thanks to it's strong defaults, essentially giving a pre-hardened Firefox that does a great job keeping up to date with upstream Firefox updates. No hardening guide necessary, just install and enjoy!
+  - P.S. - As Firefox has made some... questionable privacy policy and data handling policy changes lately, the only form of Firefox I would recommend is LibreWolf to ensure that your data is not affected in any way by their changes upstream.
+- [Orion](https://kagi.com/orion/)
+  - For those of you on macOS, I've been *thoroughly* enjoying Orion browser since making the switch to Kagi. It's extremely lightweight and fast, has native tracker and ad blocking as you'd expect, and of course first-class integration with Kagi search as well. It is still in beta so proceed with caution, but it's been my daily driver since I switched to macOS for my work machine for the past few months and has been fantastic.
 
 Extensions:
 
 - [uBlock Origin](https://github.com/gorhill/uBlock)
   - By far the most important extension and available for all of the browsers mentioned above, uBlock goes *far* beyond just blocking ads, and handles a wide swath of ad, tracker, and script blocking in a way that is very rarely detrimental to the browsing experience but has a massive impact on privacy and load times for pages. An absolute *must* install, no matter which browser you choose.
-- [LocalCDN](https://www.localcdn.org/)
-  - Similarly to [Decentraleyes](https://decentraleyes.org/), LocalCDN helps to improve privacy by replacing externally hosted assets with local ones, reducing network calls and reducing the risk of compromised assets being delivered by web pages. Deeply understanding what this does takes a deep knowledge of how the modern Internet works, but none of that is necessary here -- LocalCDN just works and works well.
+  - NOTE: Installing uBlock isn't necessary on Brave and Orion in the recommended browsers above, but if you use any others it's a must-have.
 - Password manager extension
   - This extension will change based on the password manager you choose in the next step, but I highly recommend installing the password manager extension (where available) for much simpler autofill and password management when browsing.
 
@@ -119,6 +118,10 @@ This step can seem extremely annoying at first as none of the privacy-preserving
 
 Each of the alternatives have some key pros and cons, and are really up to personal choice -- I'd recommend trying them each for a day or more as your default and see what solution fits you best.
 
+- [Kagi](https://kagi.com/)
+  - Kagi.com is a search engine with a new and refreshing take on things - instead of paying with your data or your eyes via ads, you simply... pay! Kagi has multiple paid plans (which can be paid in Bitcoin!) and has been my go-to lately as it performs extremely well and is completely ad-free. I'm not sure I can go back to another search engine at this point, Kagi, is that good.
+  - NOTE: One major downside with an account-based search platform is that your searches can be easily tied back to your account. If you use Kagi and want to ensure your searches remain anonymous, be sure to enable their [Privacy Pass](https://blog.kagi.com/kagi-privacy-pass) feature on your respective platform to cryptographically break the links between your searches and your account. NGL, it's badass.
+  - [Opt Out episode on Kagi](https://optoutpod.com/episodes/how-kagi-is-fixing-search-vlad-prelovac/)
 - [Brave Search](https://search.brave.com/)
   - Unlike the other options here (and other popular ones), Brave is building their own search engine from the ground up instead of just proxying results from Google or Microsoft. I've been testing this out lately as a replacement for DuckDuckGo and have been thoroughly impressed. Solid results, great features (bangs!), ~~and no issues using with a VPN (unlike Startpage)~~ (*Update: unfortunately, starting in 2023 I have had off-and-on issues with Captcha's being served when using a VPN with Brave Search*).
 - [Searx](https://searx.github.io/searx/)
@@ -129,9 +132,6 @@ Each of the alternatives have some key pros and cons, and are really up to perso
   - I personally host a [public instance of Whoogle](https://search.sethforprivacy.com/) and really appreciate the ability to get Google search results without revealing IP address and without the extra bloat of Google searches. It's also quite easy to self-host, if desired.
   - [Public instances](https://github.com/benbusby/whoogle-search#public-instances)
   - [Opt Out episode on Whoogle](https://optoutpod.com/episodes/s2e12-whoogle/)
-- [Kagi](https://kagi.com/)
-  - Kagi.com is a search engine with a new and refreshing take on things - instead of paying with your data or your eyes via ads, you simply... pay! Kagi has multiple paid plans (which can be paid in Bitcoin!) and has been my go-to lately as it performs extremely well and is completely ad-free.
-  - NOTE: One major downside with an account-based search platform is that your searches can be easily tied back to your account. If you use Kagi, be sure to pay with Bitcoin, use an email alias, etc.
 
 ### 7. Switch yourself and your friends/family to a more private messaging service/app
 
@@ -171,12 +171,10 @@ While cryptocurrencies like Bitcoin are commonly considered private or anonymous
   - Cake Wallet is a multi-cryptocurrency wallet that focuses heavily on financial privacy, starting with Monero and recently expanding to Bitcoin privacy with [Silent Payments](https://silentpayments.xyz). Silent Payments are especially useful if you need an easy way to accept donations or raise funds and don't want the headache of setting up servers etc.
     - [Their website](https://cakewallet.com)
     - [Their code](https://github.com/cake-tech/cake_wallet/)
-    - [Their docs, a great way to get started](https://guides.cakewallet.com/)
+    - [Their docs, a great way to get started](https://docs.cakewallet.com/)
     - [Intro to Silent Payments + tutorial by Ian Major](https://youtu.be/payDPlHzp58)
 
 ### 9. Use a non-logging and trustworthy VPN provider
-
-***NOTE: My podcast, Opt Out, is sponsored by one of the VPNs recommended here. That does not, however, change my recommendation, but I wanted to state it plainly so you can make a well-informed decision. This post (and its content) are not sponsored in any way, however.***
 
 VPNs often get a bad rap as there are *so many* malicious and predatory VPN providers out there with tons of money throwing around bad advertisements. VPNs as a tool, however, are an important part of a privacy journey, in my opinion.
 
@@ -185,7 +183,6 @@ Using a non-logging and trustworthy VPN is a great way to shift the trust from y
 I have used both of the below VPNs extensively and they also come recommended by many people I trust dearly.
 
 - [IVPN](https://www.ivpn.net/)
-  - I've spoken at length on why I trust and use IVPN, but for more details check out [this link](https://optoutpod.com/sponsors/#ivpn).
   - tl;dr -- trustworthy team, incredible cross-platform clients, strong reputation, extremely honest about shortcomings of VPNs generally, externally audited, fast, Wireguard support
 - [Mullvad](https://mullvad.net/en/)
   - Mullvad is an amazing VPN provider and have long been a recommendation of mine. They have a long and storied history, great service, account-less setup, and solid cross-platform clients.
