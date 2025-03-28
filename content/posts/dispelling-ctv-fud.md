@@ -28,7 +28,7 @@ Having at least an introductory idea of what covenants are is vital to this conv
 
 While this is a great place to *start* when considering proposals to Bitcoin, there has to be a point where you say "we've done enough research and resolved all known bad consequences." This one is easy to refute (thanks [@lopp](https://x.com/lopp)!), as there are also unintended consequences of **not** improving the protocol; i.e. a lack of approachable privacy, a harsh limit on how many people can self-custody Bitcoin, a less useful Lightning network, etc. We can quantify some of these, but there are surely many more that cannot be quantified (yet).
 
-{{< tweet user="lopp" id="1737082565570310359" >}}
+{{< x user="lopp" id="1737082565570310359" >}}
 
 If we keep ringing the "unintended consequences" alarm bell for everything, we'll never improve Bitcoin. If we had done that in the past, we wouldn't have ever implemented Lightning. If Satoshi had thought that way, he would have never released Bitcoin to the world.
 
@@ -40,13 +40,13 @@ CTV is an extremely simple and specific implementation of covenants that intenti
 
 Honestly this one is the easiest to debunk, and [@4moonsettler](https://x.com/4moonsettler) has done a great job here:
 
-{{< tweet user="4moonsettler" id="1736892059879895050" >}}
+{{< x user="4moonsettler" id="1736892059879895050" >}}
 
 The only thing I would add is that if a government was able to force exchanges to do this, why wouldn't they just make self-custody illegal or force users into a much easier and simpler 2-of-2 multisig where they hold a key? This would be trivial to setup for an exchange, as they already have strong multisig wallets in-place, and already maintain blacklists of places their users are not allowed to withdraw funds to.
 
 If you have the ability to withdraw to a wallet of your choice, there is no way for an exchange to force you into a covenant. If you can't withdraw to a wallet of your choice, you're FUBAR'd anyways and covenants don't make the situation any worse. If they can limit how you spend the money they sent to you, did they really send it?
 
-{{< tweet user="jxpcsnmz" id="1737089845003190280" >}}
+{{< x user="jxpcsnmz" id="1737089845003190280" >}}
 
 Preventing the immense positives that covenants bring for self-custody, self-custodial Lightning, privacy, and further scaling for a vague governmental attack that is more easily done without covenants makes no sense to me.
 

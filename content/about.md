@@ -229,4 +229,4 @@ My favorite way to keep up with developments in the space is *not* using social 
 
 I've uploaded my latest list of RSS feeds that I use in an easy-to-import OPML file to Github. For most clients you can simply download the file and import it directly, but for others you may need to copy-paste the RSS feeds in manually using the feed URLs for any feeds you want.
 
-{{< gist sethforprivacy 0b02d7effae7599e609683bf98ba38be >}}
+<https://gist.github.com/sethforprivacy/0b02d7effae7599e609683bf98ba38be>

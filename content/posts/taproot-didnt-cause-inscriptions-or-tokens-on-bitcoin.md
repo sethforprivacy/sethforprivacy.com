@@ -62,7 +62,7 @@ That would be drastically worse for those running a Bitcoin node, and makes the 
 
 The vast majority of usage for arbitrary data storage has already shifted away from inscribing JPEGs and to non-fungible token protocols like BRC-20 and Stamps. You can read more on the overall usage of each protocol from a fantastic thread by [@mononautical](https://x.com/mononautical):
 
-{{< tweet user="mononautical" id="1742358704484155478" >}}
+{{< x user="mononautical" id="1742358704484155478" >}}
 
 ## So what can we do about it?
 

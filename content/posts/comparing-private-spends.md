@@ -29,7 +29,7 @@ where I was surprised by the results, finding that Monero manages to be quite a 
 Bitcoin when trying to use both in a private manner. I'll use this blog post to break it down in a bit more detail,
 and add a new contender to the mix -- Zcash.
 
-{{< tweet user="sethforprivacy" id="1285336820264382468" >}}
+{{< x user="sethforprivacy" id="1285336820264382468" >}}
 
 The reason I've chosen to focus on efficiency of each protocol is that users will generally prioritize simplicity and 
 low cost, and if a privacy protocol can provide both of those to users, they can greatly aid adoption of powerful tools.
@@ -125,7 +125,7 @@ does not require a trusted second part).
 It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and in my own testing it took ~4.5h to go from TX0 to STONEWALL spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
 for all users depending on input amount and pool size. Note that this amount can vary greatly depending on how much a user is willing to spend on fees, how congested the network is, block time variability, etc.
 
-{{< tweet user="sethforprivacy" id="1270424174834712577" >}}
+{{< x user="sethforprivacy" id="1270424174834712577" >}}
 
 For this comparison I have omitted ["doxxic change"](https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs) 
 costs and [mixing fees](https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
