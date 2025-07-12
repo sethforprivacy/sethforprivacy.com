@@ -3,7 +3,7 @@ title: "On Zcash"
 date: 2025-07-12T15:00:00-04:00
 tags: ["bitcoin", "privacy", "monero", "zcash"]
 author: "Seth For Privacy"
-description: "Here's to freedom tech maximalism instead of tribalism."
+description: "Zcash: jack of all trades, master of none"
 ---
 
 As I've followed the rise and fall of Zcash's popularity in my time in the crypto and privacy spaces, it's been fascinating to see the shifting narratives, successes, and failures as it has fought to remain in the limelight in a rapidly changing space. A recent blog post by an OG cypher punk and someone I highly respect, [Frank Braun](https://frankbraun.org/), gave me a good chance to think more on where I see Zcash fitting in today, and more specifically, where I think it continues to fall short.
