@@ -10,6 +10,8 @@ As I've followed the rise and fall of Zcash's popularity in my time in the crypt
 
 I will preface the rest of this post with something I have said often -- I am in no way tied to the dominance of Monero *specifically*, and merely want the world to have easily accessible, privacy-preserving digital cash at their fingertips. Today, that is Monero, but if somehow that changed and a different tool was best serving the needs of the average, privacy-loving individual and leading to broader human freedom and flourishing, I would gladly jump ship.
 
+> I'm not a Bitcoin maximalist. I'm not a Monero maximalist. I'm a freedom maximalist.
+
 Lastly, before you read this post I'd highly recommend you read [Frank's original blog post](https://frankbraun.org/t-addr/) in full to get a better idea of his holistic arguments, but I'll quote his post where relevant inline throughout.
 
 ## The user's perspective
