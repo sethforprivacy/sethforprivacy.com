@@ -3,7 +3,7 @@ title: "Verifying and installing CalyxOS from Linux"
 date: "2022-02-01T12:08:53-05:00"
 tags: []
 author: "Seth For Privacy"
-description: "Dive into a more privacy-preserving mobile OS with CalyxOS, and get there using this guide for installing CalyxOS from Linux"
+summary: "Dive into a more privacy-preserving mobile OS with CalyxOS, and get there using this guide for installing CalyxOS from Linux"
 draft: false
 ---
 

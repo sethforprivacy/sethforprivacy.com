@@ -3,7 +3,7 @@ title: "Daylight DC1: Magical imperfection"
 date: 2024-08-08T15:19:34-04:00
 tags: ["tech", "reviews"]
 author: "Seth For Privacy"
-description: "I've been a tech enthusiast since I was a child, and it's been a very long time since I've been this enamored with a piece of technology."
+summary: "I've been a tech enthusiast since I was a child, and it's been a very long time since I've been this enamored with a piece of technology."
 cover:
     image: dc1.png
 ---

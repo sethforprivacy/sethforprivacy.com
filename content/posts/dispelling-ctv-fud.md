@@ -7,7 +7,7 @@ tags:
 - CTV
 - FUD
 author: "Seth For Privacy"
-description: "I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants using CTV."
+summary: "I've taken the time to collect, rebut, and give resources for each of the most common FUD points against covenants using CTV."
 ---
 
 It happens with every proposal made for improving Bitcoin. First, the technical developers and researchers weigh in with strong and legitimate concerns, they hash out the details, and the proposal slowly improves over time. But at some point some of these concerns make their way onto social media and quickly become parroted FUD for those who don't like the concept of a proposal.

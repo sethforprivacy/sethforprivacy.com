@@ -8,7 +8,7 @@ tags:
   - BIP
   - BOLT
 author: "Seth For Privacy"
-description: "A list of Bitcoin proposals and ideas to improve privacy that are still a work in progress, were abandoned or never implemented, or failed to make a noticeable impact."
+summary: "A list of Bitcoin proposals and ideas to improve privacy that are still a work in progress, were abandoned or never implemented, or failed to make a noticeable impact."
 draft: false
 ---
 

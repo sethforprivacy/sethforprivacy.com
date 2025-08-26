@@ -16,7 +16,7 @@ minify:
 params:
   # env: production
   title: sethforprivacy.com
-  description: "A simple blog about privacy, Monero, and self-hosting"
+  description: "A simple blog about privacy, Monero, Bitcoin, and self-hosting"
   author: Seth For Privacy
   DateFormat: "January 2, 2006"
   defaultTheme: dark
@@ -58,7 +58,7 @@ params:
   homeInfoParams:
     Title: "Welcome to Seth For Privacy's blog! \U0001F44B"
     Content: >
-      Take a look at ["Posts"](/posts) for various blog posts, ["Guides"](/guides) for guides on self-hosting, privacy, Bitcoin, and Monero, and ["Opt Out Podcast"](https://optoutpod.com) for content related to my podcast, Opt Out.
+      Take a look at [Posts](/posts) for various blog posts, [Guides](/guides) for guides on self-hosting, privacy, Bitcoin, and Monero, and [Opt Out Podcast](https://optoutpod.com) for content related to my podcast, Opt Out.
       <br/><br/>
       ***To contact me, use one of the methods below or [an alternative](/about/#how-to-contact-me).***
 

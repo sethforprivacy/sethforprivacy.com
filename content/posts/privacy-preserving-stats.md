@@ -4,7 +4,7 @@ date: 2022-02-23T10:00:10-05:00
 aliases: ["/privacy"]
 tags: ["plausible", "privacy", "statistics", "self-hosted"]
 author: "Seth For Privacy"
-description: "In this post I'll dive into the key features of Plausible's self-hosted statistics tool, the key datapoints you should be aware of, and how to disable or block it if desired."
+summary: "In this post I'll dive into the key features of Plausible's self-hosted statistics tool, the key datapoints you should be aware of, and how to disable or block it if desired."
 cover:
     image: /privacy-preserving-stats/sethforprivacy_stats.png
 ---

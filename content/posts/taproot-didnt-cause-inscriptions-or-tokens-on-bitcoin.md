@@ -7,7 +7,7 @@ tags:
 - NFTs
 - Covenants
 author: "Seth For Privacy"
-description: "tl;dr - Focus on how we can make Bitcoin better via covenants."
+summary: "tl;dr - Focus on how we can make Bitcoin better via covenants."
 ---
 
 *Note: This was originally [posted on X](https://x.com/sethforprivacy/status/1736715932704063997) and has been re-posted/reformatted for posterity here.*

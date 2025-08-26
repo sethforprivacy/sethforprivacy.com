@@ -3,7 +3,7 @@ title: "Why I Focus on Bitcoin"
 date: 2023-03-12T20:19:34-04:00
 tags: ["bitcoin", "privacy", "monero"]
 author: "Seth For Privacy"
-description: "I'm not a Bitcoin maximalist. I'm not a Monero maximalist. I'm a freedom maximalist."
+summary: "I'm not a Bitcoin maximalist. I'm not a Monero maximalist. I'm a freedom maximalist."
 cover:
     image: /banner.jpg
 ---
