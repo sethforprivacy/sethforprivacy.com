@@ -406,10 +406,10 @@ That will download the latest binaries, replace the old ones, and restart `moner
 
 `monerod` supports sending commands locally, allowing you get additional info on the status of `monerod`, set bandwidth limits, set peer limits, etc.
 
-A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
+A full list of commands as of `v0.18.5.1` can be found below, or by running `monerod help`:
 
 ```bash
-Monero 'Oxygen Orion' (v0.17.1.8-release)
+Monero 'Fluorine Fermi' (v0.18.5.1-release)
 Commands: 
   alt_chain_info [blockhash]
   apropos <keyword> [<keyword> ...]

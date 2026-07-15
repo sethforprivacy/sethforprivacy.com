@@ -70,7 +70,7 @@ Each node can expose two different services, each of which has a positive impact
 
 You can choose to either [setup a node via systemd and binaries]({{< ref "run-a-monero-node-advanced.md" >}}) or deploy `monerod` as a Docker container below.
 
-Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://containrrr.dev/watchtower/).
+Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://watchtower.nickfedor.com/).
 
 ## Why run and mine on p2pool instead of a "normal" Monero pool?
 
@@ -100,7 +100,7 @@ For more details on p2pool and why you should use it, see this knowledge article
     curl -fsSL https://get.docker.com -o get-docker.sh
     sudo sh get-docker.sh
     sudo usermod -aG docker $USER
-    su - $USER
+    newgrp docker
     ```
 
 3. Install Docker Compose:
@@ -165,7 +165,6 @@ If you would like to inspect the source code behind the image used here or build
     *To escape from the nano shell and save the file, hit `ctrl+x`.*
 
     ```yaml
-    version: '3.5'
     services:
       monerod:
         image: ghcr.io/sethforprivacy/simple-monerod:latest
@@ -216,7 +215,7 @@ If you would like to inspect the source code behind the image used here or build
           - tor-keys:/var/lib/tor/hidden_service/
 
       watchtower:
-        image: containrrr/watchtower:latest
+        image: nickfedor/watchtower:latest
         container_name: watchtower
         restart: unless-stopped
         volumes:
@@ -260,7 +259,7 @@ If you would like to inspect the source code behind the image used here or build
 
     ```bash
     cd ~/p2pool
-    docker-compose up -d monerod
+    docker compose up -d monerod
     ```
 
     `monerod` can take anywhere from 4-6h to a few days to sync fully, depending on your hardware.
@@ -275,14 +274,14 @@ If you would like to inspect the source code behind the image used here or build
 
     ```bash
     cd ~/p2pool
-    docker-compose up -d
+    docker compose up -d
     ```
 
 6. Watch the logs of p2pool to ensure it started and is synchronizing properly
 
     ```bash
     cd ~/p2pool
-    docker-compose logs --follow p2pool
+    docker compose logs --follow p2pool
     ```
 
     You should see lines like `SideChain verified block`, and after a few minutes of syncing you should see a line like `SideChain new chain tip`.
@@ -301,7 +300,6 @@ nano ~/p2pool/docker-compose.yml
 {{< collapse summary="docker-compose.yml" >}}
 
 ```yaml
-version: '3.5'
 services:
   p2pool:
     image: ghcr.io/sethforprivacy/p2pool:latest
@@ -334,7 +332,7 @@ services:
         - tor-keys:/var/lib/tor/hidden_service/
 
   watchtower:
-    image: containrrr/watchtower:latest
+    image: nickfedor/watchtower:latest
     container_name: watchtower
     restart: unless-stopped
     volumes:
@@ -498,7 +496,7 @@ While `monerod` is very stable and rarely has any issues, occasionally `p2pool` 
 
 ```bash
 cd ~/p2pool
-docker-compose restart p2pool
+docker compose restart p2pool
 ```
 
 If you're still having issues after giving that a few minutes to sync up, you can blow away p2pool and start the p2pool sync from scratch with the following commands:
@@ -506,7 +504,7 @@ If you're still having issues after giving that a few minutes to sync up, you ca
 ```bash
 cd ~/p2pool
 docker rm --force p2pool
-docker-compose up -d
+docker compose up -d
 ```
 
 If neither of these sets of commands resolve the issues, please file an [issue in Github](https://github.com/SChernykh/p2pool/issues) or reach out in Matrix (`#monero-pow:matrix.org`) for help.
