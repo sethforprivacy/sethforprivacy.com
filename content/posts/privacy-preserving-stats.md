@@ -32,14 +32,17 @@ I settled on Plausible as the tool for my site due to two core reasons:
 
 ***For detailed info on all aspects of Plausible, see their [official docs](https://plausible.io/docs).***
 
-Plausible also provides an extremely simple dashboard that keeps things easy to consume, and allows me to easily expose the statistics I can see publicly for transparency. If you'd like to view the statistics I have access to in their entirety, you can see the statistics around both of my sites below:
+Plausible also provides an extremely simple dashboard that keeps things easy to consume, and allowed me to easily expose the statistics I could see publicly for transparency. Screenshots of the dashboards I had for both of my sites are below:
 
-- [Visitor statistics for sethforprivacy.com](https://web.archive.org/web/2024/https://stats.sethforprivacy.com/sethforprivacy.com)
-    {{< figure src="/privacy-preserving-stats/sethforprivacy_stats.png" align="center" style="border-radius: 8px;" >}}
-- [Visitor statistics for optoutpod.com](https://web.archive.org/web/2024/https://stats.sethforprivacy.com/optoutpod.com)
-    {{< figure src="/privacy-preserving-stats/optoutpod_stats.png" align="center" style="border-radius: 8px;" >}}
+Visitor statistics for sethforprivacy.com:
 
-Exposing the statistics publicly is an important part of the approach so that you, the reader, can see 100% of the information I have access to around visitors to the site.
+{{< figure src="/privacy-preserving-stats/sethforprivacy_stats.png" align="center" style="border-radius: 8px;" >}}
+
+Visitor statistics for optoutpod.com:
+
+{{< figure src="/privacy-preserving-stats/optoutpod_stats.png" align="center" style="border-radius: 8px;" >}}
+
+Exposing the statistics publicly was an important part of the approach so that you, the reader, could see 100% of the information I had access to around visitors to the site.
 
 In addition, Plausible's statistics gathering script is extremely lightweight and simple to deploy. The entire source code for the script can be viewed below and can be compared to the live version at <https://web.archive.org/web/2024/https://stats.sethforprivacy.com/js/plausible.outbound-links.js> at any time:
 

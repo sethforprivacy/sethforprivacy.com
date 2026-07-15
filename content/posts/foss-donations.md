@@ -83,8 +83,6 @@ Donating in Monero not only is a great use-case for private, fungible money like
 
 # Others
 
-- FOSSHub, a FOSS-centric software download hub[^1]:  
-  - <https://www.fosshub.com/>
 - VideoLAN, makers of VLC Player[^1]:  
   - <https://www.videolan.org/contribute.html>
 - Music Caster, a FOSS music player that can cast files and URLs[^1]:
