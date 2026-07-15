@@ -56,13 +56,13 @@ via Lightning is still very much a work-in-progress and not well understood).
 CoinJoin is a technique where a group of unique users use a central coordinator to build a shared transaction that 
 combines all of their input UTXOs of the same fixed amount and then "mixes" these funds to break deterministic links 
 between the input UTXOs and output addresses. The most well known approaches to this are 
-[Samourai](https://samouraiwallet.com/), [Wasabi](https://www.wasabiwallet.io/), and 
+[Samourai](https://web.archive.org/web/2024/https://samouraiwallet.com/), [Wasabi](https://www.wasabiwallet.io/), and 
 [JoinMarket](https://github.com/Joinmarket-Org/joinmarket-clientserver/releases) (note that JoinMarket uses a 
 maker/taker model instead of a coordinator model, but that is outside the scope of this blog post).
 
 For this blog post we'll focus on Samourai wallet, as that is most widely accepted as the ideal way to gain privacy in 
 Bitcoin. For more information on how the basics of Samourai Wallet work, see 
-["Samourai 101"](https://www.bitcoinqna.com/post/samourai-101) for a great explainer.
+["Samourai 101"](https://web.archive.org/web/2024/https://www.bitcoinqna.com/post/samourai-101) for a great explainer.
 
 [^1]: For more info see https://bitcoinmagazine.com/articles/coinjoin-combining-bitcoin-transactions-to-obfuscate-trails-and-increase-privacy-1465235087  
 [^2]: For more info see https://blog.bitmex.com/the-lightning-network/
@@ -89,7 +89,7 @@ extra effort, making multiple transactions, or relying on a central coordinator.
 
 [^3]: https://cryptonote.org/whitepaper.pdf
 [^4]: https://www.getmonero.org/resources/moneropedia/ringCT.html
-[^5]: https://localmonero.co/knowledge/monero-ringct
+[^5]: https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-ringct
 [^6]: https://www.getmonero.org/resources/moneropedia/ringsignatures.html
 [^7]: https://www.getmonero.org/resources/moneropedia/stealthaddress.html
 [^8]: https://www.monerooutreach.org/stories/dandelion.html
@@ -118,8 +118,8 @@ more easily compare, and used the common denominator of USD as a fee measure as 
 
 This example chain of transactions represents the recommended way to gain "reasonable privacy" and spend in 
 Bitcoin, and requires a [TX0 pre-mix transaction](https://medium.com/samourai-wallet/diving-head-first-into-whirlpool-anonymity-sets-4156a54b0bc7), 
-a [Whirlpool mixing transaction](https://samouraiwallet.com/whirlpool), and a post-mix transaction (here a 
-[STONEWALL transaction](https://samouraiwallet.com/stonewall) is used for the comparison, as this is most common and 
+a [Whirlpool mixing transaction](https://web.archive.org/web/2024/https://samouraiwallet.com/whirlpool), and a post-mix transaction (here a 
+[STONEWALL transaction](https://web.archive.org/web/2024/https://samouraiwallet.com/stonewall) is used for the comparison, as this is most common and 
 does not require a trusted second part).
 
 It's important to note that it takes a great deal of time to perform a single "reasonably private" spend, and in my own testing it took ~4.5h to go from TX0 to STONEWALL spend. This overall time could be reduced somewhat by creating multiple mixed outputs from each TX0, but is not possible 
@@ -127,8 +127,8 @@ for all users depending on input amount and pool size. Note that this amount can
 
 {{< x user="sethforprivacy" id="1270424174834712577" >}}
 
-For this comparison I have omitted ["doxxic change"](https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs) 
-costs and [mixing fees](https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
+For this comparison I have omitted ["doxxic change"](https://web.archive.org/web/2024/https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs) 
+costs and [mixing fees](https://web.archive.org/web/2024/https://www.whirlpoolfees.com/), as they are variable and hard to compare with Monero and Zcash 
 transactions. I am purely listing Bitcoin transaction fees below.
 
 ### Monero Transaction Notes  
@@ -195,7 +195,7 @@ Monero, block sizes have a median and a hard cap that can both be expanded by mi
 penalties proportional to the block size increase. For the calculations below I've chosen the default block size hard 
 cap, but the Monero network can easily and smoothly scale up without any developer intervention or software releases.
 
-For more info on how this dynamic block scaling works, see ["How Monero Solved the Block Size Problem That Plagues Bitcoin"](https://localmonero.co/knowledge/dynamic-block-size).
+For more info on how this dynamic block scaling works, see ["How Monero Solved the Block Size Problem That Plagues Bitcoin"](https://web.archive.org/web/2024/https://localmonero.co/knowledge/dynamic-block-size).
 
 ### Zcash Network Notes  
 

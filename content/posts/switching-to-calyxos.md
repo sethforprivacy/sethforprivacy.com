@@ -103,9 +103,9 @@ An open-source, encrypted by default, and highly portable password manager is a 
 
 ***Where to get it***
 
-For Bitwarden (and some other apps on this list) you will have to install the repo provided by the creator:
+For Bitwarden (and some other apps on this list) you will have to install the repo provided by the creator, linked from their download page:
 
-https://mobileapp.bitwarden.com/fdroid/
+https://bitwarden.com/download/
 
 ## Element for community interactions
 
@@ -151,13 +151,17 @@ Note that if you're on a Pixel 5/4a 5G you will need a build that is version 8.1
 
 ## Infinity for Reddit
 
+{{< notice warning >}}
+**Update:** Infinity for Reddit was discontinued in 2023 following Reddit's API pricing changes and is no longer available on F-Droid. The link below is an archived snapshot for reference only.
+{{< /notice >}}
+
 ***Why I like it***
 
 Infinity is a gorgeous Reddit app with great features, and has been a much better overall experience than I ever had on iOS. Highly recommended.
 
 ***Where to get it***
 
-https://f-droid.org/en/packages/ml.docilealligator.infinityforreddit/
+https://web.archive.org/web/2024/https://f-droid.org/en/packages/ml.docilealligator.infinityforreddit/
 
 ## Monerujo for payments
 
@@ -189,15 +193,19 @@ https://f-droid.org/en/packages/org.schabi.newpipe/
 
 ## Samourai Wallet for Bitcoin payments
 
+{{< notice warning >}}
+**Update:** The Samourai Wallet project was seized by the DOJ and its founders arrested in April 2024; the app, Whirlpool coordinator, and download servers are no longer operational. The links below point to archived snapshots and are left for historical reference only.
+{{< /notice >}}
+
 ***Why I like it***
 
-[Samourai Wallet](https://samouraiwallet.com/) is a privacy-preserving Bitcoin wallet that aims to make it easier for users to mix and spend Bitcoin while not revealing their transaction history or wallet balances to the observer.
+[Samourai Wallet](https://web.archive.org/web/2024/https://samouraiwallet.com/) is a privacy-preserving Bitcoin wallet that aims to make it easier for users to mix and spend Bitcoin while not revealing their transaction history or wallet balances to the observer.
 
 ***Where to get it***
 
 Install the Samourai repo in F-Droid:
 
-https://samouraiwallet.com/download/fdroid
+https://web.archive.org/web/2024/https://samouraiwallet.com/download/fdroid
 
 ## Signal for all messaging
 

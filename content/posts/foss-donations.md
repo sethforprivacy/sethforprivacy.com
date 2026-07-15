@@ -49,7 +49,7 @@ Donating in Monero not only is a great use-case for private, fungible money like
 - Tor, a privacy-preserving network protocol and multi-platform browser:  
   - <https://donate.torproject.org/cryptocurrency/>
 - i2p, a privacy-preserving network protocol:  
-  - <https://geti2p.net/en/get-involved/donate>
+  - <https://geti2p.net/en/get-involved>
 - Nitter, a privacy-preserving Twitter front-end:  
   - <https://github.com/zedeus/nitter>
 - Teddit, a privacy-preserving Reddit front-end:  
@@ -78,13 +78,11 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://riseup.net/donate>
 - Calyx, a privacy-centric non-profit that builds CalyxOS, my current mobile OS (coming soon):  
   - <https://calyxinstitute.org/>
-- PrivacyTools.io, a privacy-oriented community and service provider:  
-  - <https://privacytools.io/donate/>
+- Privacy Guides (the successor to PrivacyTools.io), a privacy-oriented community and resource:  
+  - <https://www.privacyguides.org/en/about/donate/>
 
 # Others
 
-- FOSSHub, a FOSS-centric software download hub[^1]:  
-  - <https://www.fosshub.com/crypto.html>
 - VideoLAN, makers of VLC Player[^1]:  
   - <https://www.videolan.org/contribute.html>
 - Music Caster, a FOSS music player that can cast files and URLs[^1]:

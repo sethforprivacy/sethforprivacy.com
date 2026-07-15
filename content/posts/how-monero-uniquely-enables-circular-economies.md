@@ -78,7 +78,7 @@ The current breakdown of trust in Bitcoin as a method of exchange is leading to 
 
 ### 3. Monero's low fees ensure a free flow of commerce
 
-One of the simplest points to grasp about Monero transactions is that transaction fees are incredibly low and will remain reasonable in the long-term thanks to the [tail emission](https://localmonero.co/knowledge/monero-tail-emission) and [dynamic block size](https://localmonero.co/knowledge/dynamic-block-size).
+One of the simplest points to grasp about Monero transactions is that transaction fees are incredibly low and will remain reasonable in the long-term thanks to the [tail emission](https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-tail-emission) and [dynamic block size](https://web.archive.org/web/2024/https://localmonero.co/knowledge/dynamic-block-size).
 
 These low fees make sure that commerce can flow freely no matter the amount of blockchain congestion, further reducing the mental burden and stress on participants to try and time their transactions or wait hours/days to confirm low-fee transactions. With fees around 1c today, you can transact freely with any size of transaction without worry about fees down the line.
 
