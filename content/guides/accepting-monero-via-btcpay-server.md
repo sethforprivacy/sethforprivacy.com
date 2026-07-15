@@ -15,7 +15,7 @@ One of the tasks I've taken on in the Monero community is maintaining support fo
 
 In order to help improve that, I figured I'd spin up a BTCPay Server instance for my own use and build a guide out of the process, so hopefully this will aid others wanting to accept Monero at their stores, for donations, or any other use-case get up and rolling with BTCPay Server!
 
-For this guide I will assume you're running Ubuntu 20.04+ on a local machine or VPS, but much of the guide will easily translate to other popular Linux distributions.
+For this guide I will assume you're running Ubuntu 24.04+ on a local machine or VPS, but much of the guide will easily translate to other popular Linux distributions.
 
 ***A big thank you for a lot of help to [Mike Olthoff](https://x.com/olthoff) of [CoinCards](https://coincards.com/) and for a lot of material pulled from his WIP guide [on Github](https://github.com/astupidmoose/Monero-on-BTCPay/blob/main/README.md)***
 

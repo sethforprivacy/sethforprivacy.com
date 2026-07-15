@@ -82,7 +82,7 @@ I'll lay out the three apps I love the most to get reusable, privacy-preserving 
 
 1. Download [Zeus](https://zeusln.com/)
 2. Setup a new wallet (either using the quick start self-contained node or connecting to your own CLN node)
-   1. Note that LND does not currently support BOLT 12 and likely won't for months yet, unfortunately
+   1. Note that CLN supports BOLT 12 natively, while LND only supports it behind an experimental flag (`--protocol.experimental-offers`) or via the [LNDK](https://github.com/lndk-org/lndk) sidecar
 3. Save your new seed phrase (if applicable)
 4. Swipe left-to-right on the "Lightning" pill on the home screen
 5. Tap on "Pay Codes"

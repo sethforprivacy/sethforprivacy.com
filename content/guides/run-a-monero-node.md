@@ -53,7 +53,7 @@ In this guide I have only given configuration files and Docker commands that exp
 
 You can choose to either [setup a node via systemd and binaries]({{< ref "run-a-monero-node-advanced.md" >}}) or deploy `monerod` as a Docker container below.
 
-Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://containrrr.dev/watchtower/).
+Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://watchtower.nickfedor.com/).
 
 ## Update and install required packages
 
@@ -70,7 +70,7 @@ Then install Docker:
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
-su - $USER
+newgrp docker
 ```
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
@@ -118,7 +118,7 @@ docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower --cleanup \
+    nickfedor/watchtower --cleanup \
     monerod tor
 ```
 
@@ -131,7 +131,7 @@ docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower --cleanup \
+    nickfedor/watchtower --cleanup \
     monerod tor
 ```
 
@@ -142,7 +142,7 @@ docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower --cleanup \
+    nickfedor/watchtower --cleanup \
     monerod tor
 ```
 
@@ -153,7 +153,7 @@ docker run -d --restart unless-stopped --name="monerod" -p 18080:18080 -p 18089:
 docker run -d \
     --name watchtower --restart unless-stopped \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower --cleanup \
+    nickfedor/watchtower --cleanup \
     monerod tor
 ```
 
@@ -184,10 +184,10 @@ Nothing else needs to be done manually!
 
 `monerod` supports sending commands locally, allowing you get additional info on the status of `monerod`, set bandwidth limits, set peer limits, etc.
 
-A full list of commands as of `v0.17.1.8` can be found below, or by running `monerod help`:
+A full list of commands as of `v0.18.5.1` can be found below, or by running `monerod help`:
 
 ```bash
-Monero 'Oxygen Orion' (v0.17.1.8-release)
+Monero 'Fluorine Fermi' (v0.18.5.1-release)
 Commands: 
   alt_chain_info [blockhash]
   apropos <keyword> [<keyword> ...]

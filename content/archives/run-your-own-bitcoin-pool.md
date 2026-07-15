@@ -11,6 +11,8 @@ tags:
 - mining
 - decentralization
 title: Run your own Bitcoin pool
+aliases:
+- /guides/run-your-own-bitcoin-pool/
 ---
 
 In this guide I will lay out the detailed steps for how you can get started running *your own Bitcoin mining pool.* While it can seem incredibly daunting to do something like this, thanks to the work of the fantastic creator of [public-pool](https://github.com/benjamin-wilson/public-pool), [Benjamin Wilson](https://github.com/benjamin-wilson), it's easier than ever today.
@@ -44,7 +46,7 @@ Each node can expose one powerful service:
 
 - Peer-to-Peer (p2p) port (default 8333): this port allows other nodes on the network to connect to your node to download the blockchain and send you any transactions they validate that you do not yet have.
 
-Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://containrrr.dev/watchtower/).
+Deploying via Docker has a few key benefits, namely a simple and cross-OS compatible install along with automatic updates via [Watchtower](https://watchtower.nickfedor.com/).
 
 ## Why run and mine on an instance of public-pool instead of a "normal" Bitcoin pool?
 
@@ -73,7 +75,7 @@ Now let's get started.
     curl -fsSL https://get.docker.com -o get-docker.sh
     sudo sh get-docker.sh
     sudo usermod -aG docker $USER
-    su - $USER
+    newgrp docker
     ```
 
 *Note: This command downloads a script and runs as root directly from Docker. Please make sure you are comfortable doing this, and be wary of doing this on a personal computer. If you'd like to avoid that, please follow the official docs [here](https://docs.docker.com/engine/install/debian/#install-using-the-repository) to install from the repository.*
