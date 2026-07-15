@@ -53,9 +53,9 @@ For more on both of these, see the resources below.
 ***Resources***
 
 - "Why Monero has a tail emission":
-  - <https://localmonero.co/knowledge/monero-tail-emission>
+  - <https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-tail-emission>
 - "How Monero Solved the Block Size Problem That Plagues Bitcoin":
-  - <https://localmonero.co/knowledge/dynamic-block-size>
+  - <https://web.archive.org/web/2024/https://localmonero.co/knowledge/dynamic-block-size>
 - Excellent Twitter thread on Monero's tail emission and supply approach:
   - <https://www.twitter.com/DontTraceMeBruh/status/1489979998228426754>
 - Inherent risks in not having a defined block reward in perpetuity:
@@ -157,7 +157,7 @@ While Monero does have drastically less miners and energy used to secure the net
 - Excellent explainer on RandomX:
   - <https://www.monerooutreach.org/stories/RandomX.html>
 - A detailed look at why RandomX is so unique:
-  - <https://localmonero.co/knowledge/monero-mining-randomx>
+  - <https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-mining-randomx>
 - Monero faired extremely well during the ban on mining in China, unlike ASIC-dominated networks:
   - <https://x.com/sethforprivacy/status/1471103239823183880>
   {{< x user="sethforprivacy" id="1471103239823183880" >}}
@@ -224,7 +224,7 @@ I'll put some resources below to browse, but for those that specifically would l
 Excellent decentralized exchanges supporting Monero:
 
 - LocalMonero, an excellent and privacy-preserving way to buy and sell Monero
-  - <https://localmonero.co/>
+  - <https://web.archive.org/web/2024/https://localmonero.co/>
 - Haveno, a WIP decentralized and entirely peer-to-peer exchange
   - <https://haveno.exchange/>
 - Atomic swaps (WIP)

@@ -35,7 +35,7 @@ Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are 
 - [Initial proposal/investigation by Greg Maxwell](https://elementsproject.org/features/confidential-transactions/investigation)
 - [Confidential Transactions in Elements](https://elementsproject.org/features/confidential-transactions)
 - [Ring Confidential Transactions - article on Monero's RingCT implementation of Confidential Transactions](https://eprint.iacr.org/2015/1098.pdf)
-- ["How RingCT Hides Monero Transaction Amounts" - LocalMonero](https://localmonero.co/knowledge/monero-ringct)
+- ["How RingCT Hides Monero Transaction Amounts" - LocalMonero](https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-ringct)
 
 ### Reusable Payment Codes for Hierarchical Deterministic Wallets - BIP 47
 
@@ -45,7 +45,7 @@ Confidential Transactions (used in Monero since 2017 and Liquid since 2018) are 
 
 > ***Cons:*** Most versions require a notification transaction to be sent on-chain so that the recipient knows how to look for funds sent to them; Notification transaction can undermine privacy if done incorrectly
 
-The proposal for reusable payment codes is one of the well-known BIPs due to the adoption and usage of it by [Samourai Wallet](https://samouraiwallet.com/) under the name "[PayNym](https://samouraiwallet.com/paynym)". This proposal is similar to stealth addresses in that a single payment code can be used to derive unlinkable on-chain addresses, but differs in that it does not use different addressing formats on-chain and instead relies on a notification transaction to allow the recipient to find their funds on-chain.
+The proposal for reusable payment codes is one of the well-known BIPs due to the adoption and usage of it by [Samourai Wallet](https://web.archive.org/web/2024/https://samouraiwallet.com/) under the name "[PayNym](https://web.archive.org/web/2024/https://samouraiwallet.com/paynym)". This proposal is similar to stealth addresses in that a single payment code can be used to derive unlinkable on-chain addresses, but differs in that it does not use different addressing formats on-chain and instead relies on a notification transaction to allow the recipient to find their funds on-chain.
 
 PayNyms, despite being rejected/discouraged in BIP 47 have seen quite widespread usage and have recently been implemented in [Sparrow Wallet](https://sparrowwallet.com/) and even by a Bitcoin mining pool, "[Lincoin](https://lincoin.com/)".
 
@@ -70,7 +70,7 @@ Stealth Addresses were originally proposed for Bitcoin in 2011 on Bitcoin Talk, 
 While Dark Wallet did implement stealth addresses for Bitcoin, the wallet never officially launched and was abandoned. Monero, on the other hand, includes Stealth Addresses as they were a core part of the original Cryptonote protocol that Monero was created from.
 
 - [Original Stealth Address BIP - 63](https://github.com/genjix/bips/blob/master/bip-stealth.mediawiki)
-- ["How Monero Stealth Addresses Protect Your Identity" - LocalMonero](https://localmonero.co/knowledge/monero-stealth-addresses)
+- ["How Monero Stealth Addresses Protect Your Identity" - LocalMonero](https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-stealth-addresses)
 - ["What is Stealth Address technology and Why Does Monero Use It?" - SerHack](https://serhack.me/articles/what-is-stealth-address-technology-monero/)
 
 ### PayJoin - BIP 78
@@ -83,9 +83,9 @@ While Dark Wallet did implement stealth addresses for Bitcoin, the wallet never 
 
 PayJoin may also be well-known to the Bitcoin privacy crowd as it has gotten some media and minor adoption despite it's official "Draft" status. PayJoin lets the sender and recipient of a transaction work together to build a combined transaction that includes a UTXO (or more) from both the sender and intended recipient of funds, obfuscating the true nature of the payment on-chain.
 
-A similar protocol has been implemented in [Samourai Wallet](https://samouraiwallet.com/) in 2019 as "Stowaway" (before the PayJoin proposal BIP), and PayJoin proper was implemented in [BTCPay Server](https://btcpayserver.org/) in [June 2020](https://github.com/btcpayserver/btcpayserver/releases/tag/v1.0.5.0), [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) in [August 2020](https://github.com/JoinMarket-Org/joinmarket-clientserver/releases/tag/v0.7.0), [Blue Wallet](https://bluewallet.io) in [October 2020](https://x.com/bluewalletio/status/1313822205286010883), and [Sparrow Wallet](https://sparrowwallet.com/) in [November 2020](https://github.com/sparrowwallet/sparrow/releases/tag/0.9.7). See their docs for more info:
+A similar protocol has been implemented in [Samourai Wallet](https://web.archive.org/web/2024/https://samouraiwallet.com/) in 2019 as "Stowaway" (before the PayJoin proposal BIP), and PayJoin proper was implemented in [BTCPay Server](https://btcpayserver.org/) in [June 2020](https://github.com/btcpayserver/btcpayserver/releases/tag/v1.0.5.0), [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) in [August 2020](https://github.com/JoinMarket-Org/joinmarket-clientserver/releases/tag/v0.7.0), [Blue Wallet](https://bluewallet.io) in [October 2020](https://x.com/bluewalletio/status/1313822205286010883), and [Sparrow Wallet](https://sparrowwallet.com/) in [November 2020](https://github.com/sparrowwallet/sparrow/releases/tag/0.9.7). See their docs for more info:
 
-- [Stowaway - Samourai Wallet](https://docs.samourai.io/en/spend-tools#stowaway)
+- [Stowaway - Samourai Wallet](https://web.archive.org/web/2024/https://docs.samourai.io/en/spend-tools#stowaway)
 - [BTCPay Server PayJoin Guide - BTCPay Server](https://docs.btcpayserver.org/Payjoin/)
 - [PayJoin (aka P2EP) user guide - JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/PAYJOIN.md)
 - [Paying to a PayNym - Sparrow Wallet](https://sparrowwallet.com/docs/spending-privately.html#paying-to-a-paynym)
@@ -133,7 +133,7 @@ Dandelion++, an iteration that resolves many of the problems with the original D
 - [Original Dandelion BIP - 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki)
 - [Dandelion++ journal article](https://arxiv.org/pdf/1805.11060.pdf)
 - ["Dandelion for Monero" - Monero Outreach](https://www.monerooutreach.org/stories/dandelion.html)
-- ["How Dandelion++ Keeps Monero's Transaction Origins Private" - LocalMonero](https://localmonero.co/knowledge/monero-dandelion)
+- ["How Dandelion++ Keeps Monero's Transaction Origins Private" - LocalMonero](https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-dandelion)
 
 ### Taproot - BIP 341
 

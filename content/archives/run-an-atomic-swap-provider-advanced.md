@@ -26,7 +26,7 @@ Atomic swaps open up a wide variety of cross-chain use-cases, but the key thing 
 
 For more info on atomic swaps, check out the links below:
 
-- <https://localmonero.co/knowledge/monero-atomic-swaps>
+- <https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-atomic-swaps>
 - <https://www.monerooutreach.org/stories/monero-atomic-swaps.html>
 - <https://github.com/comit-network/xmr-btc-swap>
 - <https://comit.network/blog/2020/10/06/monero-bitcoin/>
@@ -66,7 +66,7 @@ It's important that you understand that running this tool will allow users on th
   - IP addresses
 - [Run your own Monero node]({{< ref "/guides/run-a-monero-node.md" >}})
 - If possible, run your own Bitcoin node and [ElectrumX server](https://electrumx-spesmilo.readthedocs.io/en/latest/)
-- Use a Bitcoin privacy tool like [Samourai Wallet](https://www.samouraiwallet.com/) to protect your privacy and protect you from tainted Bitcoin after receiving funds from swaps
+- Use a Bitcoin privacy tool like [Samourai Wallet](https://web.archive.org/web/2024/https://www.samouraiwallet.com/) to protect your privacy and protect you from tainted Bitcoin after receiving funds from swaps
   - For more on Bitcoin privacy, checkout BitcoinQnA's posts on the topic here: <https://bitcoiner.guide/privacy/>
   - For specifically how to use Samourai Wallet, see his guide here: <https://bitcoiner.guide/privacy/separate/>
 
@@ -81,7 +81,7 @@ This guide will assume the below things are already in place:
   - Anyone is more than welcome to use my [public Monero node]({{< ref "/about.md#high-performance-monero-nodes" >}})
 - You already have some Monero you are willing to sell via the ASB
 - You are comfortable sending and receiving Monero
-- You are comfortable handling potentially tainted Bitcoin via a tool like [Samourai Wallet](https://www.samouraiwallet.com/)
+- You are comfortable handling potentially tainted Bitcoin via a tool like [Samourai Wallet](https://web.archive.org/web/2024/https://www.samouraiwallet.com/)
 
 # Getting the tools
 

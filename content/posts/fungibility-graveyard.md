@@ -92,7 +92,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
     {{< collapse summary="Source Image" >}}
     {{< figure src="/fungibility-graveyard/blockfi_coinjoin.png" align="center" style="border-radius: 8px;" >}}
     {{< /collapse >}}
-  - [Response from BlockFi](https://tweetstamp.org/1234531935038341120)
+  - [Response from BlockFi](https://web.archive.org/web/2024/https://tweetstamp.org/1234531935038341120)
 - A user's loan is closed while under water (causing a loss of 50%) due to the previous owner of the coins using a mixing service or tool:
   - [Twitter Source](https://x.com/Bitfinexed/status/1489833237765660673)
     {{< x user="Bitfinexed" id="1489833237765660673" >}}
@@ -196,7 +196,7 @@ Below is a list of sources confirming cases of flagging, denied withdrawals, den
 
 - ["SLP363 Seth For Privacy – Bitcoin & Fungibility Discussion" - Stephan Livera Podcast](https://stephanlivera.com/episode/363/)
 - ["Why Fungibility Is Important in Understanding Money and Crypto" - Mises Institute](https://mises.org/wire/why-fungibility-important-understanding-money-and-crypto)
-- ["How could regulators successfully introduce Bitcoin censorship and other dystopias" - Juraj Bednar](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/amp/)
+- ["How could regulators successfully introduce Bitcoin censorship and other dystopias" - Juraj Bednar](https://juraj.bednar.io/en/blog-en/2020/11/12/how-could-regulators-successfully-introduce-bitcoin-censorship-and-other-dystopias/)
 - ["Bitcoin censorship will most likely come, pt 2" - Juraj Bednar](https://juraj.bednar.io/en/blog-en/2020/11/18/bitcoin-censorship-will-most-likely-come-pt-2/)
 - ["Compliant Miners" - 6102bitcoin](https://6102bitcoin.com/blog/compliant-miners/)
 - ["Bitcoin’s Attack Vectors: Fungibility"](https://medium.com/chainrift-research/bitcoins-attack-vectors-fungibility-ed58cb4cff73)

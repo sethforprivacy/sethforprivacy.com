@@ -25,7 +25,7 @@ Atomic swaps open up a wide variety of cross-chain use-cases, but the key thing 
 
 For more info on atomic swaps, check out the links below:
 
-- <https://localmonero.co/knowledge/monero-atomic-swaps>
+- <https://web.archive.org/web/2024/https://localmonero.co/knowledge/monero-atomic-swaps>
 - <https://www.monerooutreach.org/stories/monero-atomic-swaps.html>
 - <https://github.com/comit-network/xmr-btc-swap>
 - <https://comit.network/blog/2020/10/06/monero-bitcoin/>

@@ -49,7 +49,7 @@ Donating in Monero not only is a great use-case for private, fungible money like
 - Tor, a privacy-preserving network protocol and multi-platform browser:  
   - <https://donate.torproject.org/cryptocurrency/>
 - i2p, a privacy-preserving network protocol:  
-  - <https://geti2p.net/en/get-involved/donate>
+  - <https://geti2p.net/en/get-involved>
 - Nitter, a privacy-preserving Twitter front-end:  
   - <https://github.com/zedeus/nitter>
 - Teddit, a privacy-preserving Reddit front-end:  

@@ -24,7 +24,7 @@ Please remember that not all threat models are equal, and not all people have th
 For more on threat modeling, check out the following resources:
 
 - [Threat modeling tutorial by Techlore](https://www.youtube.com/watch?v=DHZRhboZhfI)
-- [Threat modeling guide by TheNewOil](https://thenewoil.org/threatmodel.html)
+- [Threat modeling guide by TheNewOil](https://thenewoil.org/en/guides/prologue/threat-model/)
 - [EFF threat modeling tutorial](https://ssd.eff.org/en/module/your-security-plan)
 - [Privacy Guides threat modeling tutorial](https://www.privacyguides.org/threat-modeling/)
 - [ArsTechnica threat modeling tutorial](https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/)
@@ -52,7 +52,7 @@ Browsers:
 
 - [Brave Browser](https://brave.com/)
   - Brave has some excellent defaults, but certainly takes some odd approaches (like cryptocurrency ads all over the place and built-in cryptocurrency wallets which aren't helpful to most people).
-    - [Brave hardening guide from anonymousplanet.org](https://anonymousplanet.org/guide/?h=brave#brave_1)
+    - [Brave hardening guide from anonymousplanet.org](https://web.archive.org/web/2024/https://anonymousplanet.org/guide/?h=brave#brave_1)
 - [LibreWolf](https://librewolf.net/)
   - I've been leaning on LibreWolf more and more thanks to it's strong defaults, essentially giving a pre-hardened Firefox that does a great job keeping up to date with upstream Firefox updates. No hardening guide necessary, just install and enjoy!
   - P.S. - As Firefox has made some... questionable privacy policy and data handling policy changes lately, the only form of Firefox I would recommend is LibreWolf to ensure that your data is not affected in any way by their changes upstream.
@@ -89,7 +89,7 @@ Using an email provider that is privacy-preserving and uses some native method o
 
 - [ProtonMail](https://protonmail.com/)
   - Probably the most well-known name in the privacy-preserving email space, and for good reason. ProtonMail has many solid features out of the box, a usable free tier, and solid cross-platform clients to go with a long history of supporting user privacy. Their excellent UX and support make this my preferred email provider, and how I do all of my email.
-- [Tutanota](https://tutanota.com/)
+- [Tuta](https://tuta.com/) (formerly Tutanota)
   - While I haven't used them, I know many people I trust who do and have heard nothing but great things. They also provide steep discounts to FOSS and non-profit organizations, so well worth a look if you happen to be a part of either of those.
 
 ### 5. Use an email aliasing service
@@ -107,10 +107,10 @@ If you'd like to purchase a premium plan for either of the below services, you c
   - SimpleLogin is also free and open-source, and can even be self-hosted!
     - <https://github.com/simple-login/app>
   - NOTE: After Proton's acquisition of SimpleLogin, aliasing has become a native feature in Proton Mail and Proton Pass. If you're already a Proton user, check out the aliasing in both!
-- [AnonAddy](https://anonaddy.com/)
-  - While I haven't used AnonAddy myself, I've heard very good things from people I highly trust. It has a very similar approach to SimpleLogin but with a more generous free plan.
-  - AnonAddy is also free and open-source, and can even be self-hosted!
-    - <https://github.com/anonaddy/anonaddy>
+- [addy.io](https://addy.io/) (formerly AnonAddy)
+  - While I haven't used addy.io myself, I've heard very good things from people I highly trust. It has a very similar approach to SimpleLogin but with a more generous free plan.
+  - addy.io is also free and open-source, and can even be self-hosted!
+    - <https://github.com/anonaddy/addy.io>
 
 ### 6. Use a privacy-preserving search engine
 
@@ -199,7 +199,7 @@ To help you make your own well-informed choices, here are some excellent resourc
 
 ### 10. Use a privacy-preserving mobile operating system
 
-This section is a bit more drastic than the others, but switching to an operating system that is designed around protecting user privacy gives you a strong foundation for all of the other steps to live on top of and enhances their effect (and often makes them easier!). For more on the broad topic of mobile privacy, listen to this [episode I did with Matt Odell on Citadel Dispatch](https://citadeldispatch.com/cd34/) on the topic.
+This section is a bit more drastic than the others, but switching to an operating system that is designed around protecting user privacy gives you a strong foundation for all of the other steps to live on top of and enhances their effect (and often makes them easier!). For more on the broad topic of mobile privacy, listen to this [episode I did with Matt Odell on Citadel Dispatch](https://web.archive.org/web/2024/https://citadeldispatch.com/cd34/) on the topic.
 
 The only real recommendations I have here are below, but note that for some threat models using an iPhone can be a solid approach to gaining strong *3rd-party* privacy (i.e. from other data collection, but not from Apple).
 
