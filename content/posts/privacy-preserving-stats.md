@@ -9,6 +9,10 @@ cover:
     image: /privacy-preserving-stats/sethforprivacy_stats.png
 ---
 
+{{< notice info >}}
+**Update:** I have since retired the self-hosted Plausible instance that powered this site's statistics, so the public dashboards and opt-out links below are no longer live and point to archived snapshots where available. The rest of the post is left as a reference on privacy-preserving analytics.
+{{< /notice >}}
+
 ## Introduction
 
 As this blog and my podcast, [Opt Out](https://optoutpod.com), grow and reach a larger audience, having a way to gauge what topics are of interest to site visitors, what blog posts catch people's attention, and what resources they find the most useful that I link to is becoming a more and more useful tool to enable me to improve the content I create over time.
@@ -30,14 +34,14 @@ I settled on Plausible as the tool for my site due to two core reasons:
 
 Plausible also provides an extremely simple dashboard that keeps things easy to consume, and allows me to easily expose the statistics I can see publicly for transparency. If you'd like to view the statistics I have access to in their entirety, you can see the statistics around both of my sites below:
 
-- [Visitor statistics for sethforprivacy.com](https://stats.sethforprivacy.com/sethforprivacy.com)
+- [Visitor statistics for sethforprivacy.com](https://web.archive.org/web/2024/https://stats.sethforprivacy.com/sethforprivacy.com)
     {{< figure src="/privacy-preserving-stats/sethforprivacy_stats.png" align="center" style="border-radius: 8px;" >}}
-- [Visitor statistics for optoutpod.com](https://stats.sethforprivacy.com/optoutpod.com)
+- [Visitor statistics for optoutpod.com](https://web.archive.org/web/2024/https://stats.sethforprivacy.com/optoutpod.com)
     {{< figure src="/privacy-preserving-stats/optoutpod_stats.png" align="center" style="border-radius: 8px;" >}}
 
 Exposing the statistics publicly is an important part of the approach so that you, the reader, can see 100% of the information I have access to around visitors to the site.
 
-In addition, Plausible's statistics gathering script is extremely lightweight and simple to deploy. The entire source code for the script can be viewed below and can be compared to the live version at <https://stats.sethforprivacy.com/js/plausible.outbound-links.js> at any time:
+In addition, Plausible's statistics gathering script is extremely lightweight and simple to deploy. The entire source code for the script can be viewed below and can be compared to the live version at <https://web.archive.org/web/2024/https://stats.sethforprivacy.com/js/plausible.outbound-links.js> at any time:
 
 {{< collapse summary="plausible.outbound-links.js" >}}
 

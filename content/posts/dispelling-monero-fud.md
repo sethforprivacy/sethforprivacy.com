@@ -215,7 +215,7 @@ I'll put some resources below to browse, but for those that specifically would l
 - "Anti-Money Laundering Regulation of Privacy-Enabling Cryptocurrencies"
   - <https://www.perkinscoie.com/en/news-insights/anti-money-laundering-regulation-of-privacy-enabling-cryptocurrencies.html>
 - Short audio clips on why KYC is harmful:
-  - <https://invidious.sethforprivacy.com/search?q=opt+out+podcast+kyc+duration%3Ashort+sort%3Adate&page=1>
+  - <https://www.youtube.com/results?search_query=opt+out+podcast+kyc>
 - A great explainer and guide on avoiding KYC:
   - <https://bitcoiner.guide/nokyconly/>
 - An amazing list of KYC-free exchanges, merchants, and more:

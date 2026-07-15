@@ -78,13 +78,13 @@ Donating in Monero not only is a great use-case for private, fungible money like
   - <https://riseup.net/donate>
 - Calyx, a privacy-centric non-profit that builds CalyxOS, my current mobile OS (coming soon):  
   - <https://calyxinstitute.org/>
-- PrivacyTools.io, a privacy-oriented community and service provider:  
-  - <https://privacytools.io/donate/>
+- Privacy Guides (the successor to PrivacyTools.io), a privacy-oriented community and resource:  
+  - <https://www.privacyguides.org/en/about/donate/>
 
 # Others
 
 - FOSSHub, a FOSS-centric software download hub[^1]:  
-  - <https://www.fosshub.com/crypto.html>
+  - <https://www.fosshub.com/>
 - VideoLAN, makers of VLC Player[^1]:  
   - <https://www.videolan.org/contribute.html>
 - Music Caster, a FOSS music player that can cast files and URLs[^1]:

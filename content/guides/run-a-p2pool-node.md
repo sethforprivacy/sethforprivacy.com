@@ -83,7 +83,7 @@ Pools and their operators are one of the most vulnerable aspects of Monero minin
 Running p2pool allows you to participate in a second blockchain that is used to decentralize the normal pool functionality, while contributing work as a whole to the main Monero network.
 
 For more details on p2pool and why you should use it, see this knowledge article from LocalMonero:
-- [P2Pool and Its Role in Decentralizing Monero Mining](https://localmonero.co/knowledge/p2pool-decentralizing-monero-mining)
+- [P2Pool and Its Role in Decentralizing Monero Mining](https://web.archive.org/web/2024/https://localmonero.co/knowledge/p2pool-decentralizing-monero-mining)
 
 ## Update and install required packages
 

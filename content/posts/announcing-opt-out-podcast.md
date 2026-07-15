@@ -32,10 +32,9 @@ While Opt Out is available on all major podcast platforms, you can also find eac
 
 The site will be the first place new episodes are published, hosts and serves the RSS feed for the podcast, and has handy buttons under the podcast description for jumping straight into your favorite podcast app at the show's listing.
 
-You can find video versions of each episode, along with the soundbites I make from each episode, on both YouTube and my self-hosted PeerTube instance:
+You can find video versions of each episode, along with the soundbites I make from each episode, on YouTube:
 
 - [YouTube](https://www.youtube.com/c/OptOutPodcast)
-- [PeerTube](https://videos.optoutpod.com)
 
 You can also follow the show on Twitter [@optoutpod](https://x.com/optoutpod), where updates, polls, new guests, and regular snippets from the show will be shared.
 
