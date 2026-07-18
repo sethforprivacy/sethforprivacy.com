@@ -129,10 +129,6 @@ export BTCPAYGEN_REVERSEPROXY="nginx"
 export BTCPAY_ENABLE_SSH=true
 ```
 
-***If you want to also accept Lightning Network transactions, just add this command to the above:***
-
-`export BTCPAYGEN_LIGHTNING="clightning"`
-
 ***To only enable Monero support, click the arrow to expand the configuration below:***
 
 {{< collapse summary="Only Monero support" >}}
