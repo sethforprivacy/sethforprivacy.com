@@ -15,6 +15,10 @@ One of the tasks I've taken on in the Monero community is maintaining support fo
 
 In order to help improve that, I figured I'd spin up a BTCPay Server instance for my own use and build a guide out of the process, so hopefully this will aid others wanting to accept Monero at their stores, for donations, or any other use-case get up and rolling with BTCPay Server!
 
+{{< notice info >}}
+**Update, July 2026:** BTCPay Server has moved all altcoin support -- including Monero -- to a plugin system, with Monero support now maintained by the community in the [btcpayserver-monero-plugin](https://github.com/btcpay-monero/btcpayserver-monero-plugin) repository. This guide has been fully updated (and re-tested end-to-end!) to reflect the new plugin-based approach, which has made accepting Monero via BTCPay Server *dramatically* simpler -- no more manually creating and uploading view-only wallet files!
+{{< /notice >}}
+
 For this guide I will assume you're running Ubuntu 24.04+ on a local machine or VPS, but much of the guide will easily translate to other popular Linux distributions.
 
 ***A big thank you for a lot of help to [Mike Olthoff](https://x.com/olthoff) of [CoinCards](https://coincards.com/) and for a lot of material pulled from his WIP guide [on Github](https://github.com/astupidmoose/Monero-on-BTCPay/blob/main/README.md)***
@@ -24,8 +28,8 @@ For this guide I will assume you're running Ubuntu 24.04+ on a local machine or 
 - Pruned Node (the default Monero node type for BTCPay Server)[^1]
   - 2+ vCPUs/cores
   - 4GB+ RAM
-  - 100GB+ SSD
-    - ~25GB are required for the pruned Bitcoin node, and ~50GB for the pruned Monero node
+  - 250GB+ SSD
+    - ~40GB are required for the pruned Bitcoin node, and ~105GB for the pruned Monero node (as measured on a freshly synced instance in July 2026), so be sure to leave plenty of headroom for future chain growth
   
 [^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
@@ -33,7 +37,7 @@ For this guide I will assume you're running Ubuntu 24.04+ on a local machine or 
 
 While there are quite a few options out there for accepting Monero as a merchant, BTCPay Server remains one of the best options for merchants due to it's complete self-sovereignty, the easy acceptance of other cryptocurrencies (like Bitcoin or Lightning), and the ability to simply spin it up.
 
-The wide support for BTCPay Server also leads to it having many well-maintained plugins for common eCommerce platforms and you can even enable awesome additional features like automatic conversion to Monero from other assets via SideShift or Fixedfloat.
+The wide support for BTCPay Server also leads to it having many well-maintained plugins for common eCommerce platforms and you can even enable awesome additional features like automatic conversion to Monero from other assets via SideShift.
 
 ## Initial Hardening via UFW
 
@@ -96,6 +100,8 @@ This guide will assume you want to accept Bitcoin as well as Monero (as that is 
 
 In order to properly configure BTCPay Server you use something called "environment variables" to set the necessary options before installing and starting the server.
 
+While the Monero *plugin* is installed later through the BTCPay Server UI, setting `xmr` as one of your cryptos here is still required -- it's what tells BTCPay Server's Docker deployment to spin up the Monero node and wallet containers that the plugin talks to.
+
 ***Be sure to replace `btcpay.EXAMPLE.com` with the domain you setup previously!***
 
 ```bash
@@ -109,7 +115,7 @@ export NBITCOIN_NETWORK="mainnet"
 # Enable Bitcoin support
 export BTCPAYGEN_CRYPTO1="btc"
 
-# Enable Monero support
+# Deploy the Monero node and wallet containers used by the Monero plugin
 export BTCPAYGEN_CRYPTO2="xmr"
 
 # opt-save-storage-xs (opens new window)will keep around 3 months of blocks (prune BTC for 25 GB)
@@ -123,10 +129,6 @@ export BTCPAYGEN_REVERSEPROXY="nginx"
 export BTCPAY_ENABLE_SSH=true
 ```
 
-***If you want to also accept Lightning Network transactions, just add this command to the above:***
-
-`export BTCPAYGEN_LIGHTNING="clightning"`
-
 ***To only enable Monero support, click the arrow to expand the configuration below:***
 
 {{< collapse summary="Only Monero support" >}}
@@ -136,10 +138,9 @@ export BTCPAY_ENABLE_SSH=true
 # Set the custom domain you chose to use
 export BTCPAY_HOST="btcpay.EXAMPLE.com"
 
-# Enable Monero support
+# Deploy the Monero node and wallet containers used by the Monero plugin
 export BTCPAYGEN_CRYPTO1="xmr"
 
-# opt-save-storage-xs (opens new window)will keep around 3 months of blocks (prune BTC for 25 GB)
 # opt-add-tor enables Tor support for the UI and Bitcoin node
 export BTCPAYGEN_ADDITIONAL_FRAGMENTS="opt-add-tor"
 
@@ -163,7 +164,7 @@ This step is incredibly simple, as the script included with the BTCPay Server re
 This will:
 
 - Install Docker
-- Install Docker-Compose
+- Install Docker Compose
 - Make sure BTCPay starts at reboot via upstart or systemd
 - Setup environment variables to use BTCPay utilities
 - Add BTCPay utilities in /usr/bin
@@ -171,15 +172,34 @@ This will:
 
 Assuming all went well, you should now be able to navigate to your new BTCPay Server at the domain you chose earlier!
 
+***Note that both the Bitcoin and Monero nodes will start syncing from scratch in the background, which can take anywhere from several hours to a few days depending on your hardware. You can watch their progress in the "Your nodes are syncing" widget on the BTCPay Server dashboard, and can complete all of the following configuration steps while they sync -- but invoices won't be payable until syncing completes.***
+
 ## Create an account and a store
 
 The first thing you'll need to do is create an account on your new instance -- be sure to use a secure email and strong password (hopefully via a password manager like Bitwarden!) -- so that you can create stores, manage wallets, etc.
 
 ***Follow the official docs to do so here: [Register account - docs.btcpayserver.org](https://docs.btcpayserver.org/RegisterAccount/)***
 
-Once you're logged in, you'll want to go ahead and create a store to manage wallets, invoices, etc. for the given store.
+Once you're logged in, BTCPay Server will prompt you to create your first store to manage wallets, invoices, etc. Simply set a store name and your preferred default currency and you're on your way.
 
 ***Follow the official docs to do so here: [Create a store - docs.btcpayserver.org](https://docs.btcpayserver.org/CreateStore/)***
+
+## Install the Monero plugin
+
+As of BTCPay Server 2.x, all altcoin support -- including Monero -- has moved to community-maintained plugins, so the next step is to install the Monero plugin from within the BTCPay Server UI:
+
+1. Select "Manage Plugins" from the "Server Settings" menu (or the puzzle-piece icon in the top bar)
+2. Scroll down (or search) to find the "Monero" plugin by `btcpay-monero` under "Available Plugins"
+3. Select "Install"
+4. Once you see the "Plugin scheduled to be installed" notice, select "Restart now" in the banner at the top of the page to restart BTCPay Server and activate the plugin
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_plugin_install.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_plugin_restart.png" align="center" style="border-radius: 8px;" >}}
+
+After the restart (give it ~30s), you'll see a new "Monero" entry under the "Wallets" section of your store's sidebar. That's it -- the plugin is installed and connected to the Monero node and wallet containers you deployed earlier.
+
+If you'd like to inspect the source code behind the plugin, it lives here: [btcpay-monero/btcpayserver-monero-plugin](https://github.com/btcpay-monero/btcpayserver-monero-plugin)
 
 ## Setup your Bitcoin and Monero wallets
 
@@ -189,56 +209,53 @@ Once you're logged in, you'll want to go ahead and create a store to manage wall
 
 1. Select "Setup a wallet" and select the preferred wallet option to setup your Bitcoin wallet
 
- {{< figure src="/accepting-monero-via-btcpay-server/store_created.png" align="center" style="border-radius: 8px;" >}}
-
 ***Follow the official docs to do so here: [Wallet Setup - docs.btcpayserver.org](https://docs.btcpayserver.org/WalletSetup/)***
 
-### Create a view-only Monero wallet via Feather Wallet
+### Configure your Monero wallet
 
-1. Download Feather Wallet here: [Feather: a free Monero desktop wallet](https://featherwallet.org/)
-2. Create a new Monero wallet (skip to step 3 if you have an existing wallet you'd like to use instead)
-   1. Choose "Create new wallet"
-   {{< figure src="/accepting-monero-via-btcpay-server/create_wallet.png" align="center" style="border-radius: 8px;" >}}
-   2. ***SAVE YOUR SEED!***
-   {{< figure src="/accepting-monero-via-btcpay-server/seed.png" align="center" style="border-radius: 8px;" >}}
-   3. Name your wallet as you see fit
-   {{< figure src="/accepting-monero-via-btcpay-server/name_wallet.png" align="center" style="border-radius: 8px;" >}}
-   4. Set a strong password for your wallet
-   {{< figure src="/accepting-monero-via-btcpay-server/password_wallet.png" align="center" style="border-radius: 8px;" >}}
-3. Create a view-only wallet out of the new wallet for use in BTCPay Server
-   1. Select "Wallet" and then "View-only" in the top bar
-   {{< figure src="/accepting-monero-via-btcpay-server/view_only_dropdown.png" align="center" style="border-radius: 8px;" >}}
-   2. Select "Create view-only wallet"
-   {{< figure src="/accepting-monero-via-btcpay-server/create_view_only.png" align="center" style="border-radius: 8px;" >}}
-   3. Name the view-only wallet as desired and select "Save"
-      1. *P.S. - I like to put "view_only" or similar in the wallet to make sure I use the correct files later on*
-   {{< figure src="/accepting-monero-via-btcpay-server/name_view_only.png" align="center" style="border-radius: 8px;" >}}
-   4. Set a strong password for your view-only wallet
-   {{< figure src="/accepting-monero-via-btcpay-server/password_view_only.png" align="center" style="border-radius: 8px;" >}}
-   5. Done!
-   {{< figure src="/accepting-monero-via-btcpay-server/complete_view_only.png" align="center" style="border-radius: 8px;" >}}
-4. Make a note of the location you stored the view-only wallet in, as we'll need to upload those files to BTCPay Server in the next step
+This is where the new plugin *really* shines. In the past you had to create a view-only wallet in Feather Wallet, export the wallet files, and upload them (along with a password file) to BTCPay Server -- and any mistakes meant `docker cp`-ing files around and fixing permissions by hand.
 
-### Add the view-only wallet to BTCPay Server
+Now all you need from your Monero wallet of choice is three simple pieces of information:
 
-1. Go to "Settings" to configure your Monero wallet
-   {{< figure src="/accepting-monero-via-btcpay-server/monero_settings.png" align="center" style="border-radius: 8px;" >}}
-2. Select the "Monero" option, and then "Modify" next to the wallet
-   {{< figure src="/accepting-monero-via-btcpay-server/modify_monero.png" align="center" style="border-radius: 8px;" >}}
-3. Upload the Monero view-only wallet file and keys to the respective options in the "Monero" wallet options (along with the wallet password, if set)
-   1. These files are usually stored in your user directory under the "Monero" folder in a "wallets" folder, i.e. `/home/sethforprivacy/Monero/wallets/` 
-   {{< figure src="/accepting-monero-via-btcpay-server/upload_monero_wallet_files.png" align="center" style="border-radius: 8px;" >}}
-4. Check the "Enable" box, and hit save
+- Your **primary address** (the address starting with a `4`)
+- Your **private view key** (also called the "secret view key")
+- Your wallet's **restore height** (the block height your wallet was created at)
+
+Entering these into BTCPay Server gives it *view-only* access to your wallet -- it can generate subaddresses for invoices and watch for incoming payments, but it can never spend your funds, as your seed and spend key never leave your own wallet.
+
+You can grab these details from any proper Monero wallet:
+
+- **Feather Wallet**: `Wallet > Keys...` shows your primary address and secret view key, and `Wallet > Wallet Info` shows your restore height
+- **Cake Wallet**: The primary address is shown on the Receive screen, and your private view key is shown under `Settings > Show seed/keys`
+- **Monero GUI/CLI**: The `address` and `viewkey` commands print your primary address and secret view key
+
+***NOTE: Be sure to create a dedicated wallet for your store to preserve your privacy and keep accounting simple, and never share your* spend *key or seed with anyone -- BTCPay Server only needs the* view *key!***
+
+Once you have those details in hand:
+
+1. Select "Monero" under the "Wallets" section of your store's sidebar
+2. Enter your primary address into "Wallet Primary Address"
+3. Enter your private view key into "Wallet Private View Key"
+4. Enter your restore height into "Restore Height (Block Height)"
+   1. If you just created the wallet, the current block height works perfectly and saves the wallet from scanning the entire chain history
+5. Select "Set Wallet Details"
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_wallet_details.png" align="center" style="border-radius: 8px;" >}}
+
+You should see "View-only wallet created. The wallet will soon become available." -- the plugin creates and opens the view-only wallet server-side automatically:
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_wallet_created.png" align="center" style="border-radius: 8px;" >}}
+
+Once "Wallet RPC available" shows "True", you're almost done:
+
+1. Check the "Enabled" box to enable Monero payments on your store
+2. Choose your preferred "Consider the invoice settled when the payment transaction..." speed policy
+   1. "At Least One" (one confirmation, ~2 minutes) is a sensible default for most stores; use "At Least Ten" for high-value goods, and only use "Zero Confirmation" if instant settlement matters more to you than the (small) risk of accepting unconfirmed transactions
+3. Select "Save"
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_wallet_enabled.png" align="center" style="border-radius: 8px;" >}}
 
 Now just wait for the Bitcoin and Monero nodes to sync, and you should be all set!
-
-***P.S. -- if you ever need to replace the Monero wallet with another one, you cannot do it through the UI and must run this command:***
-
-```bash
-docker exec -ti btcpayserver_monero_wallet rm  /wallet/wallet /wallet/wallet.keys /wallet/password && docker restart btcpayserver_monero_wallet
-```
-
-***Once you've run that you can then upload new wallet files as you did during the initial setup.*** 
 
 ## Using your BTCPay Server instance
 
@@ -246,189 +263,53 @@ Thankfully the docs for using BTCPay Server are *excellent* and all apply exactl
 
 [User Guide - docs.btcpayserver.org](https://docs.btcpayserver.org/Guide/)
 
-When a user is prompted to pay an invoice, now they can select Monero from the dropdown and pay without any extra hoops or unique back-ends! An invoice in Monero looks like this to customers/donors:
+When a user is prompted to pay an invoice, now they can select Monero from the dropdown and pay without any extra hoops or unique back-ends!
 
-{{< figure src="/accepting-monero-via-btcpay-server/monero_invoice.png" align="center" style="border-radius: 8px;" >}}
+{{< figure src="/accepting-monero-via-btcpay-server/monero_invoice_checkout.png" align="center" style="border-radius: 8px;" >}}
 
 ## Contributing to Monero support in BTCPay Server
 
-If you'd like to contribute and improve Monero support within BTCPay Server, here are the relevent repositories:
+Monero support in BTCPay Server is now maintained by the community under the `btcpay-monero` organization, and contributions are always welcome. If you'd like to contribute and improve Monero support within BTCPay Server, here are the relevant repositories:
 
-- [btcpayserver](https://github.com/btcpayserver/btcpayserver/tree/master/BTCPayServer/Services/Altcoins/Monero)
-  - This directory controls the front-end and BTCPay Server interactions with the Monero node and wallet
+- [btcpayserver-monero-plugin](https://github.com/btcpay-monero/btcpayserver-monero-plugin)
+  - The Monero plugin itself -- this controls the front-end, wallet handling, and BTCPay Server interactions with the Monero node and wallet
 - [btcpayserver-docker](https://github.com/btcpayserver/btcpayserver-docker)
-  - Specifically this file: [monero.yaml](https://github.com/btcpayserver/btcpayserver-docker/blob/master/docker-compose-generator/docker-fragments/monero.yml)
+  - Specifically this file: [monero.yml](https://github.com/btcpayserver/btcpayserver-docker/blob/master/docker-compose-generator/docker-fragments/monero.yml)
   - This file controls the way that the Monero Docker containers are started and managed
-- [dockerfile-deps](https://github.com/btcpayserver/dockerfile-deps)
-  - Specifically this directory: [Monero](https://github.com/btcpayserver/dockerfile-deps/tree/master/Monero)
-  - The two `.Dockerfile` files are what the Monero node and wallet Docker images are built from, and the `notifier.sh` script is used to notify the BTCPay Server process when a transaction is received that satisfies an invoice
 
 Key areas that need improvement:
 
-- You cannot use distinct wallets per store/use, only one per server
+- The plugin shares a single Monero wallet across all stores on a server
   - Removing this limitation would allow for "Uncle Jim" BTCPay Server instances that are hosted by trusted friends/family/community members that other's can leverage for their stores without needing to host BTCPay Server themselves
-- You cannot replace/remove the Monero wallet/keys files without a manual deletion of them via CLI
-  - Improving this would allow much simpler migration to new wallets, replacing wallets that are no longer wanted, etc.
-- Monero acceptance relies *solely* on the Kraken API
-  - Allowing alternate APIs to be used, even just as fall-back APIs to gather price data would allow shop owners to continue accepting Monero for payments even if Kraken's API is unavailable
+- Replacing the Monero wallet still requires a manual deletion of the wallet files via CLI (see [Troubleshooting]({{< relref "#replacing-the-monero-view-only-wallet" >}}) below)
+  - Improving this would allow much simpler migration to new wallets directly from the UI
 
 ## Troubleshooting
 
-### Fixing issues with permissions on BTCPay Server Monero daemons
+### Invoices fail with "Payment method unavailable"
 
-A [recent change](https://github.com/monero-project/monero/commit/602926fe9d2dabb099a32313175a4acb84846cd9) to `monerod` makes it write SSL certs to disk in its data directory, something that can fail if the permissions on the data directory are incorrect. You can follow the steps here to correct those issues and get `monerod` back up and running.
+If creating an invoice fails with `XMR-CHAIN: Payment method unavailable (Node or wallet not available)`, your Monero node simply hasn't finished syncing yet -- the plugin holds off on generating invoices until the node is fully synced and the wallet is available. Check the sync progress in the dashboard widget or your store's Monero settings page, and give it time to finish.
 
-#### From the `monerod` container
+### Replacing the Monero view-only wallet
 
-##### Exec into monerod container
-
-```bash
-docker exec -ti btcpayserver_monerod bash
-cd ~
-```
-
-##### List permissions on cert files
+Occasionally you may want to migrate your store to a new wallet, which unfortunately must still be done manually for now. Note that the wallet setup form only appears in the UI when no wallet currently exists, so you have to remove the existing wallet files first:
 
 ```bash
-monero@64bc4693c90c:~$ ls -alF .bitmonero/
-total 17652
-drwxr-xr-x 3 monero monero     4096 Jul 21 12:20 ./
-drwxr-xr-x 3 monero monero     4096 Jul 21 06:28 ../
--rw-r--r-- 1 monero monero 17872897 Aug 15 20:33 bitmonero.log
-drwxr-xr-x 2 monero monero     4096 Jul 12 06:11 lmdb/
--rw-r--r-- 1 monero monero   174456 Aug 15 20:30 p2pstate.bin
--r--r--r-- 1 root   root     1606 Jul 21 12:20 rpc_ssl.crt
--r-------- 1 root   root     3268 Jul 21 12:20 rpc_ssl.key
-```
-
-##### Set proper permissions
-
-```bash
-chmod 444 .bitmonero/rpc_ssl.crt
-chown monero:monero .bitmonero/rpc_ssl.crt
-chmod 400 .bitmonero/rpc_ssl.key
-chown monero:monero .bitmonero/rpc_ssl.key
-```
-
-##### Verify proper permissions
-
-```bash
-monero@64bc4693c90c:~$ ls -alF .bitmonero/
-total 17652
-drwxr-xr-x 3 monero monero     4096 Jul 21 12:20 ./
-drwxr-xr-x 3 monero monero     4096 Jul 21 06:28 ../
--rw-r--r-- 1 monero monero 17872897 Aug 15 20:33 bitmonero.log
-drwxr-xr-x 2 monero monero     4096 Jul 12 06:11 lmdb/
--rw-r--r-- 1 monero monero   174456 Aug 15 20:30 p2pstate.bin
--r--r--r-- 1 monero monero     1606 Jul 21 12:20 rpc_ssl.crt
--r-------- 1 monero monero     3268 Jul 21 12:20 rpc_ssl.key
-```
-
-##### If there are no cert files present
-
-If there are no cert files present already, you will need to fix permissions on the directory itself so `monerod` can create the new files:
-
-```bash
-chown monero:monero .bitmonero
-```
-
-#### From the host OS
-
-##### List permissions on cert files
-
-```bash
-sudo ls -lan /var/lib/docker/volumes/generated_xmr_data/_data
-total 17660
-drwxr-xr-x 3 101 101     4096 Jul 21 12:20 .
-drwx-----x 3   0   0     4096 May 25 15:21 ..
--rw-r--r-- 1 101 101 17877166 Aug 16 17:29 bitmonero.log
-drwxr-xr-x 2 101 101     4096 Jul 12 06:11 lmdb
--rw-r--r-- 1 101 101   177101 Aug 16 17:31 p2pstate.bin
--r--r--r-- 1 0   0     1606 Jul 21 12:20 rpc_ssl.crt
--r-------- 1 0   0     3268 Jul 21 12:20 rpc_ssl.key
-```
-
-##### Set proper permissions
-
-```bash
-sudo chmod 444 /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.crt
-sudo chown monero:monero /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.crt
-sudo chmod 400 /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.key
-sudo chown monero:monero /var/lib/docker/volumes/generated_xmr_data/_data/rpc_ssl.key
-```
-
-##### Verify proper permissions
-
-```bash
-sudo ls -lan /var/lib/docker/volumes/generated_xmr_data/_data
-total 17660
-drwxr-xr-x 3 101 101     4096 Jul 21 12:20 .
-drwx-----x 3   0   0     4096 May 25 15:21 ..
--rw-r--r-- 1 101 101 17877166 Aug 16 17:29 bitmonero.log
-drwxr-xr-x 2 101 101     4096 Jul 12 06:11 lmdb
--rw-r--r-- 1 101 101   177101 Aug 16 17:31 p2pstate.bin
--r--r--r-- 1 101 101     1606 Jul 21 12:20 rpc_ssl.crt
--r-------- 1 101 101     3268 Jul 21 12:20 rpc_ssl.key
-```
-
-##### If there are no cert files present
-
-If there are no cert files present already, you will need to fix permissions on the directory itself so `monerod` can create the new files:
-
-```bash
-sudo chown 101:101 /var/lib/docker/volumes/generated_xmr_data/_data
-```
-
-##### Other notes
-
-- If you can't exec into the container because it's crashing, you can do the same on the local filesystem by finding the bind mounted folder, likely `/var/lib/docker/volumes/generated_xmr_data/_data` and performing the steps above on it from the host OS
-- If you get a permission error trying to set permissions above, make sure to run the `chmod` and `chown` commands as `sudo`
-
-### Replacing Monero view-only wallet files
-
-Occasionally you can run into issues with the Monero wallet files being corrupted or having incorrect permissions, or you simply want to migrate to a new wallet which unfortunately must be done manually for now.
-
-#### Delete all current wallet files
-
-***NOTE: Be sure you do not need these wallet files before performing this step!***
-
-```bash
-sudo rm /var/lib/docker/volumes/generated_xmr_wallet/_data/*
-```
-
-#### Upload new wallet files and password file
-
-Place the new wallet files on the host OS file system, and then do the following (replace the first set of filenames if yours do not match):
-
-```bash
-docker cp btcpay_monero_view_only btcpayserver_monero_wallet:/wallet/wallet
-docker cp btcpay_monero_view_only.keys btcpayserver_monero_wallet:/wallet/wallet.keys
-```
-
-You also need to set the wallet password via a password file:
-
-```bash
-echo "PASSWORD_HERE" > password
-docker cp password btcpayserver_monero_wallet:/wallet/password
-```
-
-#### Set permissions on the new wallet files
-
-```bash
-sudo chmod 666 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet.keys /var/lib/docker/volumes/generated_xmr_wallet/_data/password
-sudo chmod 600 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet
-sudo chown 101:101 /var/lib/docker/volumes/generated_xmr_wallet/_data/wallet
-```
-
-You may also need to restart BTCPay or the Monero wallet container, but usually it should work without that. If not, you can restart the wallet container with:
-
-```bash
+docker exec btcpayserver_monero_wallet rm -f /wallet/wallet /wallet/wallet.keys /wallet/password
 docker restart btcpayserver_monero_wallet
 ```
 
+***NOTE: If the wallet was open when you deleted the files, the wallet RPC daemon can write a stale `wallet` cache file back to disk as it shuts down. Double-check the directory is actually empty and repeat the two commands above if a `wallet` file remains:***
+
+```bash
+docker exec btcpayserver_monero_wallet ls /wallet/
+```
+
+Once the wallet directory is empty, refresh your store's Monero settings page and the "Set View-Only Wallet Details" form will be back -- just enter your new wallet's details as you did during the initial setup. Your "Enabled" and speed policy settings are preserved, so no need to reconfigure those.
+
 ## Conclusion
 
-A huge, huge thank you to the contributors who have made BTCPay Server possible and who continue to improve it, and to those in the space contributing financially to the project to ensure it continues to grow.
+A huge, huge thank you to the contributors who have made BTCPay Server possible and who continue to improve it, to those who have stepped up to maintain the Monero plugin under the new plugin system, and to those in the space contributing financially to the project to ensure it continues to grow.
 
 Such a powerful payment processor having solid Monero support is a huge win, and I hope more merchants will start to use BTCPay Server for accepting Monero (and Bitcoin!) ASAP.
 
