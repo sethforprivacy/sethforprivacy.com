@@ -28,8 +28,8 @@ For this guide I will assume you're running Ubuntu 24.04+ on a local machine or 
 - Pruned Node (the default Monero node type for BTCPay Server)[^1]
   - 2+ vCPUs/cores
   - 4GB+ RAM
-  - 100GB+ SSD
-    - ~25GB are required for the pruned Bitcoin node, and ~50GB for the pruned Monero node
+  - 250GB+ SSD
+    - ~40GB are required for the pruned Bitcoin node, and ~105GB for the pruned Monero node (as measured on a freshly synced instance in July 2026), so be sure to leave plenty of headroom for future chain growth
   
 [^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
@@ -197,8 +197,9 @@ As of BTCPay Server 2.x, all altcoin support -- including Monero -- has moved to
 3. Select "Install"
 4. Once you see the "Plugin scheduled to be installed" notice, select "Restart now" in the banner at the top of the page to restart BTCPay Server and activate the plugin
 
-<!-- TODO: screenshot - plugin manager showing the Monero plugin card with Install button -->
-<!-- TODO: screenshot - "Restart now" banner after scheduling the plugin install -->
+{{< figure src="/accepting-monero-via-btcpay-server/monero_plugin_install.png" align="center" style="border-radius: 8px;" >}}
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_plugin_restart.png" align="center" style="border-radius: 8px;" >}}
 
 After the restart (give it ~30s), you'll see a new "Monero" entry under the "Wallets" section of your store's sidebar. That's it -- the plugin is installed and connected to the Monero node and wallet containers you deployed earlier.
 
@@ -243,16 +244,20 @@ Once you have those details in hand:
    1. If you just created the wallet, the current block height works perfectly and saves the wallet from scanning the entire chain history
 5. Select "Set Wallet Details"
 
-<!-- TODO: screenshot - XMR Settings page with the Set View-Only Wallet Details form -->
+{{< figure src="/accepting-monero-via-btcpay-server/monero_wallet_details.png" align="center" style="border-radius: 8px;" >}}
 
-You should see "View-only wallet created. The wallet will soon become available." -- the plugin creates and opens the view-only wallet server-side automatically. Once "Wallet RPC available" shows "True", you're almost done:
+You should see "View-only wallet created. The wallet will soon become available." -- the plugin creates and opens the view-only wallet server-side automatically:
+
+{{< figure src="/accepting-monero-via-btcpay-server/monero_wallet_created.png" align="center" style="border-radius: 8px;" >}}
+
+Once "Wallet RPC available" shows "True", you're almost done:
 
 1. Check the "Enabled" box to enable Monero payments on your store
 2. Choose your preferred "Consider the invoice settled when the payment transaction..." speed policy
    1. "At Least One" (one confirmation, ~2 minutes) is a sensible default for most stores; use "At Least Ten" for high-value goods, and only use "Zero Confirmation" if instant settlement matters more to you than the (small) risk of accepting unconfirmed transactions
 3. Select "Save"
 
-<!-- TODO: screenshot - Enabled toggle + speed policy on the XMR Settings page -->
+{{< figure src="/accepting-monero-via-btcpay-server/monero_wallet_enabled.png" align="center" style="border-radius: 8px;" >}}
 
 Now just wait for the Bitcoin and Monero nodes to sync, and you should be all set!
 
@@ -264,7 +269,7 @@ Thankfully the docs for using BTCPay Server are *excellent* and all apply exactl
 
 When a user is prompted to pay an invoice, now they can select Monero from the dropdown and pay without any extra hoops or unique back-ends!
 
-<!-- TODO: screenshot - new checkout page showing a Monero invoice with subaddress QR -->
+{{< figure src="/accepting-monero-via-btcpay-server/monero_invoice_checkout.png" align="center" style="border-radius: 8px;" >}}
 
 ## Contributing to Monero support in BTCPay Server
 
