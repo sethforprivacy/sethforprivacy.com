@@ -14,7 +14,7 @@ minify:
   minifyOutput: true
 
 params:
-  # env: production
+  env: production
   title: sethforprivacy.com
   description: "A simple blog about privacy, Monero, Bitcoin, and self-hosting"
   author: Seth For Privacy
