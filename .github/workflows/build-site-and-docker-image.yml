@@ -33,11 +33,21 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: |
+            resources/_gen
+            /home/runner/.cache/hugo_cache
+          key: hugo-${{ hashFiles('hugo.yaml', 'tor_config.yml', 'assets/**', 'layouts/**') }}
+          restore-keys: |
+            hugo-
+
       - name: Build clearnet
-        run: hugo --config clearnet_config.yml --destination ./public
+        run: hugo --destination ./public
 
       - name: Build Tor
-        run: hugo --config tor_config.yml --destination ./tor
+        run: hugo --config hugo.yaml,tor_config.yml --destination ./tor
 
       - name: Install zopfli
         run: sudo apt-get install -y --no-install-recommends zopfli
@@ -72,6 +82,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/blog:latest
+            ghcr.io/${{ github.repository_owner }}/blog:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
             org.opencontainers.image.created=${{ steps.prep.outputs.created }}
