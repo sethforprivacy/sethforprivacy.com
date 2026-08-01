@@ -45,7 +45,7 @@ jobs:
       - name: Compress public static files
         run: |
           cd public
-          find . -type f -exec sh -c '
+          find . -type f ! -name '*.gz' -exec sh -c '
             for f do
               zopfli "$f"
               rm "$f"
@@ -56,7 +56,7 @@ jobs:
       - name: Compress Tor static files
         run: |
           cd tor
-          find . -type f -exec sh -c '
+          find . -type f ! -name '*.gz' -exec sh -c '
             for f do
               zopfli "$f"
               rm "$f"
