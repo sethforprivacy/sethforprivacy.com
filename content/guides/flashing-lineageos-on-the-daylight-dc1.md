@@ -162,12 +162,13 @@ The DC-1 uses dynamic partitions, so the `system` image has to be written from u
 
 3. Flash the system image
 
-    - Replace the filename with the image you downloaded and verified above
+    - Decompress the image you downloaded and verified above, then flash it (gapps users: substitute the gapps filename)
 
     - Commands:
 
         ```bash
-        fastboot flash system lineage-dc1-vanilla.img
+        xz -d lineage-23.2-20260823-dc1-vanilla.img.xz
+        fastboot flash system lineage-23.2-20260823-dc1-vanilla.img
         ```
 
 4. Wipe userdata -- **from the bootloader, not from fastbootd**
@@ -223,14 +224,55 @@ You lose the old download history and the provider rebuilds a compatible databas
 
 **Commands hit the wrong device or hang.** Another adb device is attached; use `-s <serial>` or `ANDROID_SERIAL`.
 
-## Getting back to stock
+## Flashing back to stock
 
-Boot into fastbootd and write back the stock `system` and `vbmeta` images you set aside earlier, or re-image the tablet with Daylight's OTA tooling ([adiktofsugar/daylight](https://github.com/adiktofsugar/daylight)). This is the reason for that backup step -- with a stock image in hand it's a short detour, and without one it's a waiting game.
+If LineageOS isn't for you, or you need the tablet back on Daylight's software for a warranty conversation, the road back is the same road in reverse -- this is exactly why the backup step earlier wasn't optional.
+
+1. Boot into fastbootd
+
+    - Commands:
+
+        ```bash
+        adb reboot bootloader
+        fastboot reboot fastboot
+        ```
+
+2. Flash the stock `system` and `vbmeta` images you set aside
+
+    - Commands:
+
+        ```bash
+        fastboot flash system stock-system.img
+        fastboot flash vbmeta_a stock-vbmeta.img
+        fastboot flash vbmeta_b stock-vbmeta.img
+        ```
+
+3. Wipe userdata (from the bootloader, same quirk as before) and reboot
+
+    - Commands:
+
+        ```bash
+        fastboot reboot bootloader
+        fastboot -w
+        fastboot reboot
+        ```
+
+If you never took a backup, re-image the tablet with Daylight's OTA tooling ([adiktofsugar/daylight](https://github.com/adiktofsugar/daylight)) or grab stock images from the DC-1 community before starting this section.
+
+{{< notice warning >}}
+Do **not** re-lock the bootloader (`fastboot flashing lock`) unless the device is fully back on unmodified, signed stock images -- `system` *and* `vbmeta`. Re-locking with anything else flashed can leave the tablet unbootable with no unlocked bootloader to recover from.
+{{< /notice >}}
 
 ## Conclusion
 
 The DC-1's hardware was always the point, and it deserves an OS that keeps getting security patches. Between the monthly LineageOS cadence and having the amber light, refresh rate, and display geometry handled in the image itself, this is the DC-1 I wanted from the start -- same magical screen, current Android underneath, and no Google services unless I ask for them.
 
-The build is maintained in the open at [github.com/sethforprivacy/dc1-lineage-gsi](https://github.com/sethforprivacy/dc1-lineage-gsi). Issues, test reports from other units, and pull requests are all very welcome -- the more DC-1s this gets exercised on, the better it gets.
+## Feedback, bugs, and getting in touch
+
+This is an early release that has been validated on a small number of units so far, which makes reports from *your* DC-1 genuinely valuable -- successes included.
+
+- **Something broke, or behaves oddly?** [Open an issue](https://github.com/sethforprivacy/dc1-lineage-gsi/issues/new) on the build repo. Include the release version you flashed, what you did, and what happened; if the device is up, `adb logcat -d` output around the problem turns a vague report into a fixable one.
+- **It just works?** That's worth an issue or a note too -- "flashed on my unit, no problems" from a handful of people is what moves this from *early* to *recommended*.
+- **Want to improve the build?** Pull requests to [dc1-lineage-gsi](https://github.com/sethforprivacy/dc1-lineage-gsi) are very welcome, and `docs/build.md` will get you from zero to a compiled image.
 
 If you have any questions from this post or would like more information on a specific aspect, please reach out via [Signal, SimpleX, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
