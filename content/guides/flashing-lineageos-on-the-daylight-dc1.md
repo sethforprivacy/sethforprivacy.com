@@ -167,8 +167,8 @@ The DC-1 uses dynamic partitions, so the `system` image has to be written from u
     - Commands:
 
         ```bash
-        xz -d lineage-23.2-20260823-dc1-vanilla.img.xz
-        fastboot flash system lineage-23.2-20260823-dc1-vanilla.img
+        xz -d lineage-23.2-20260824-dc1-vanilla.img.xz
+        fastboot flash system lineage-23.2-20260824-dc1-vanilla.img
         ```
 
 4. Wipe userdata -- **from the bootloader, not from fastbootd**
