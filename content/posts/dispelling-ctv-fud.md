@@ -46,7 +46,7 @@ The only thing I would add is that if a government was able to force exchanges t
 
 If you have the ability to withdraw to a wallet of your choice, there is no way for an exchange to force you into a covenant. If you can't withdraw to a wallet of your choice, you're FUBAR'd anyways and covenants don't make the situation any worse. If they can limit how you spend the money they sent to you, did they really send it?
 
-{{< x user="jxpcsnmz" id="1737089845003190280" >}}
+[jxpcsnmz on X](https://x.com/jxpcsnmz/status/1737089845003190280)
 
 Preventing the immense positives that covenants bring for self-custody, self-custodial Lightning, privacy, and further scaling for a vague governmental attack that is more easily done without covenants makes no sense to me.
 

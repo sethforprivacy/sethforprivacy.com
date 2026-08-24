@@ -16,7 +16,7 @@ tags:
 
 I've been [enamored with the Daylight DC-1]({{< ref "/posts/daylight-dc1-magical-imperfection.md" >}}) since the day I picked it up, and that hasn't changed. What *has* changed is the gap between the hardware and the software running on it -- the stock DC-1 ships an Android 13 base, and Android 13 is a long way behind on security patches at this point.
 
-The good news is that the DC-1 is a MediaTek MSSI device with A/B slots and dynamic partitions, which means the system partition is swappable by design. That makes it a near-perfect GSI target, and there is now a maintained community build for it: an unrooted [LineageOS 23.2 (Android 16) GSI](https://github.com/sethforprivacy/dc1-lineage-gsi) with the DC-1-specific bits (amber frontlight, refresh rate, display geometry, grayscale) baked into the image.
+The good news is that the DC-1 is a MediaTek device with strong chipset support. That makes it a near-perfect GSI target, and there is now a maintained community build for it: an unrooted [LineageOS 23.2 (Android 16) GSI](https://github.com/sethforprivacy/dc1-lineage-gsi) with the DC-1-specific bits (amber frontlight, refresh rate, display geometry, grayscale) baked into the image.
 
 This guide walks through taking a stock DC-1 and getting that build onto it, start to finish, including the one device-specific quirk that will bite you if you follow a generic GSI guide instead.
 
@@ -44,7 +44,7 @@ A stock GSI on the DC-1 boots, but it boots *wrong* -- no amber light, wrong scr
 - **No phantom camera or telephony.** The stock vendor image wrongly declares both; masking them fixes apps that go looking for a camera, and has the pleasant side effect of making the setup wizard skip its SIM screen entirely.
 - **Quieter logs.** The MediaTek wifi driver's log spam is muted and the log buffers are bigger, which matters the first time you have to actually debug something.
 
-And the reason for all of this: LineageOS merges the Android Security Bulletin into its release branches monthly, on schedule, and has done so for years. That's the strongest patch cadence in the Android ecosystem, and it's a large step up from where stock currently sits.
+And the reason for all of this: LineageOS merges the Android Security Bulletin into its release branches monthly, on schedule, and has done so for years. That's the strongest patch cadence in the Android ecosystem outside of GrapheneOS (which unfortunately won't work on this hardware), and it's a large step up from where stock currently sits.
 
 Worth being clear about what you *don't* get: the build is unrooted, with SELinux enforcing. Kernel and vendor partitions are untouched by a GSI flash, which is exactly why the panel and the amber LED keep working.
 
@@ -173,10 +173,6 @@ The DC-1 uses dynamic partitions, so the `system` image has to be written from u
 
 4. Wipe userdata -- **from the bootloader, not from fastbootd**
 
-    {{< notice warning >}}
-    This is the DC-1's one real gotcha. Running `fastboot -w` in userspace fastbootd fails on this device with `wipe task partition not found`. You have to be in *bootloader* fastboot for the wipe to work, where it formats userdata as f2fs correctly. Skipping the wipe leaves you with a mismatched `/data` and a stack of strange crashes.
-    {{< /notice >}}
-
     - Commands:
 
         ```bash
@@ -210,7 +206,9 @@ That's the whole setup. Everything else is a normal, current Android tablet.
 
 ## Troubleshooting
 
-**"android.process.media has stopped working", over and over.** You flashed over a kept `/data` (or the wipe didn't take). The old OS left a newer `downloads.db` schema behind and the download provider refuses to downgrade it, so the shared media process crash-loops. No wipe needed to fix it:
+**"android.process.media has stopped working", over and over.** 
+
+You flashed over a kept `/data` (or the wipe didn't take). The old OS left a newer `downloads.db` schema behind and the download provider refuses to downgrade it, so the shared media process crash-loops. No wipe needed to fix it:
 
 ```bash
 adb shell pm clear com.android.providers.downloads
@@ -218,11 +216,17 @@ adb shell pm clear com.android.providers.downloads
 
 You lose the old download history and the provider rebuilds a compatible database immediately.
 
-**Bootloop, stuck at the Orange State screen.** Verified boot is still active. Re-flash the empty vbmeta to both slots with the disable flags, exactly as in the flashing step above, then reboot.
+**Bootloop, stuck at the Orange State screen.** 
 
-**`fastboot -w` says the wipe task partition isn't found.** You're in fastbootd. Run `fastboot reboot bootloader` (or `adb reboot bootloader` if the device is booted) and do the wipe there.
+Verified boot is still active. Re-flash the empty vbmeta to both slots with the disable flags, exactly as in the flashing step above, then reboot.
 
-**Commands hit the wrong device or hang.** Another adb device is attached; use `-s <serial>` or `ANDROID_SERIAL`.
+**`fastboot -w` says the wipe task partition isn't found.** 
+
+You're in fastbootd. Run `fastboot reboot bootloader` (or `adb reboot bootloader` if the device is booted) and do the wipe there.
+
+**Commands hit the wrong device or hang.** 
+
+Another adb device is attached; use `-s <serial>` or `ANDROID_SERIAL`.
 
 ## Flashing back to stock
 
