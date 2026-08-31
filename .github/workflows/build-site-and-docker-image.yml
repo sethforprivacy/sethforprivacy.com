@@ -12,36 +12,36 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
+        uses: docker/setup-buildx-action@37fe631027851001ddb9b187196cc803df7f5f0e # v4
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v4
+        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.165.0'
           extended: true
 
       - name: Cache Hugo resources
-        uses: actions/cache@v6
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
         with:
           path: |
             resources/_gen
             /home/runner/.cache/hugo_cache
-          key: hugo-${{ hashFiles('hugo.yaml', 'tor_config.yml', 'assets/**', 'layouts/**') }}
+          key: hugo-${{ runner.os }}-${{ github.ref_name }}-${{ hashFiles('hugo.yaml', 'tor_config.yml', 'assets/**', 'layouts/**') }}
           restore-keys: |
-            hugo-
+            hugo-${{ runner.os }}-${{ github.ref_name }}-
 
       - name: Build clearnet
         run: hugo --destination ./public
@@ -74,9 +74,13 @@ jobs:
             done
           ' sh {} +
 
+      - name: Set image creation timestamp
+        id: created
+        run: echo "created=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
+
       - name: Build and push to Github Packages Docker Registry
         id: docker_build
-        uses: docker/build-push-action@v7
+        uses: docker/build-push-action@53b7df96c91f9c12dcc8a07bcb9ccacbed38856a # v7
         with:
           context: .
           push: true
@@ -85,7 +89,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/blog:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
-            org.opencontainers.image.created=${{ steps.prep.outputs.created }}
+            org.opencontainers.image.created=${{ steps.created.outputs.created }}
             org.opencontainers.image.revision=${{ github.sha }}
           cache-from: type=registry,ref=ghcr.io/${{ github.repository_owner }}/blog:latest
           cache-to: type=inline
