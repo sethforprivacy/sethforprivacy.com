@@ -58,7 +58,7 @@ Two variants are published on the [Releases page](https://github.com/sethforpriv
 Pick one. I'd nudge most people toward vanilla, and plenty of DC-1 owners specifically want the tablet to *not* have Play services on it -- but if you rely on Play-distributed apps, take the gapps image and save yourself the trouble.
 
 {{< notice info >}}
-On any non-stock Android build, Play Protect reports the device as "uncertified". In practice nearly everything works, including the Play Store itself; the small set of apps that demand strict hardware-backed Play Integrity may refuse to run. This is true of every custom ROM, not something specific to this build.
+On any non-stock Android build, Play Protect reports the device as "uncertified" -- true of every custom ROM, including official LineageOS. This used to be cosmetic; since mid-2026 Google now blocks app installs and updates on uncertified devices. If you take the gapps image, budget for one extra step after flashing: a ten-minute registration of the device on Google's side, covered in [Play Store certification](#play-store-certification-gapps-image) below. Apps that demand strict hardware-backed Play Integrity (banking, Google Wallet) are a separate, harder story for every custom ROM.
 {{< /notice >}}
 
 Whichever you pick, verify it before you flash it. Each release publishes a sha256 alongside the image -- compare, don't skip:
@@ -203,6 +203,54 @@ Once you're at the launcher:
 - The normal brightness slider still controls the white backlight independently when you're at the cool end of the range.
 
 That's the whole setup. Everything else is a normal, current Android tablet.
+
+## Play Store certification (gapps image)
+
+If you went with the gapps image, the first thing the Play Store will tell you is *"This device isn't Play Protect certified"*. As of 2026 that stopped being a cosmetic banner: Google now refuses app installs and updates on uncertified devices, which makes the store about as useful as an unlit lamp.
+
+The fix is Google's own, pointed exactly at us: custom ROM users are invited to register the device's Google Services Framework ID (GSF ID) on their [uncertified-device page](https://www.google.com/android/uncertified/). At least one DC-1 owner has already run this end to end and the block lifted; the flow below includes the sharp edges that cost them time.
+
+What you should know before you start:
+
+- Certification attaches to the **installation**, not the hardware. The GSF ID is minted the first time Play services checks in, and it survives every ROM re-flash -- you only ever re-do this after a factory reset, and each Android user profile mints its own.
+- There's no ROM-side alternative. Certification requires manufacturer-level compatibility testing plus a GMS license, and official LineageOS hits the same wall. The registration page is Google's sanctioned door for custom-ROM users.
+
+1. Read off the GSF ID
+
+    - Commands:
+
+        ```bash
+        adb shell content query --uri content://com.google.android.gsf.gservices --where "name='android_id'" --projection value
+        ```
+
+    - On recent Play services builds this can come back empty even though everything is fine -- Google filters the ID out of casual callers, which is also why the "Device ID" apps that used to do this job stopped working on Google Play services 26.x. If the query returns nothing, the [repo doc](https://github.com/sethforprivacy/dc1-lineage-gsi/blob/main/docs/play-certification.md) lists the remaining extraction routes.
+
+2. Register it
+
+    - Open [google.com/android/uncertified](https://www.google.com/android/uncertified/) in any browser, sign in with the **same account that's on the tablet**, paste the ID, solve the captcha, hit Register.
+
+    - Propagation runs from minutes to hours -- one DC-1 install measured about three -- so don't panic-refresh while it "isn't working yet".
+
+3. Flush the state and reboot
+
+    - Commands:
+
+        ```bash
+        adb shell pm clear com.android.vending
+        adb shell pm clear com.google.android.gms
+        ```
+
+    - Safe as written: clearing Play services does **not** mint a new GSF ID, so you won't be registering twice.
+
+4. Verify the honest way
+
+    - The label under Play Store → Settings → About can keep saying "uncertified" long after the block has lifted. Open **Gmail** cold instead: certified, it goes straight to your inbox; not certified, it bounces you through a compliance screen. Then install and update something for real.
+
+{{< notice info >}}
+Registration buys Play Store function: installs and updates. It does not buy **Play Integrity** -- the separate, hardware-backed attestation that banking apps and Google Wallet check. On most custom ROMs those apps stay out, though this particular tablet may get lucky: its bootloader reportedly still reports locked and green-status even when unlocked, and at least one DC-1 install stuck certification with no Play-Integrity workarounds at all. Treat any strict app as per-app until you've tried it, and report what you find.
+{{< /notice >}}
+
+The full write-up -- extraction fallbacks, the debugging trail, and why this step exists at all -- lives at [docs/play-certification.md](https://github.com/sethforprivacy/dc1-lineage-gsi/blob/main/docs/play-certification.md).
 
 ## Troubleshooting
 
