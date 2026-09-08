@@ -30,7 +30,7 @@ blockquote.twitter-tweet {
     --border: rgb(238, 238, 238);
 }
 
-.dark {
+:root[data-theme="dark"] {
     --theme: rgb(0, 0, 0);
     --entry: rgb(22, 22, 24);
     --primary: rgba(255, 102, 0, 1);
