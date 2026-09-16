@@ -1,6 +1,4 @@
 .git/
 themes/*/.git/
-public/
-tor/
 resources/_gen/
 .github/
