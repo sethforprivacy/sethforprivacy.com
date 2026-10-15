@@ -1,4 +1,4 @@
-FROM nginx:alpine@sha256:0e5caf3555a79db2f1624c61fb1e585c4298a26384fea83f3e5108e451c1eb2c
+FROM nginx:alpine@sha256:72aeb3308ef6cb3118242fb16389518923916dfa206e32d1a8377acc328b9870
 
 # Upgrade base image
 RUN set -ex && apk --update --no-cache upgrade
