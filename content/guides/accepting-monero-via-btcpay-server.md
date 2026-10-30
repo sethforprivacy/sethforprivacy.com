@@ -21,7 +21,7 @@ In order to help improve that, I figured I'd spin up a BTCPay Server instance fo
 
 For this guide I will assume you're running Ubuntu 24.04+ on a local machine or VPS, but much of the guide will easily translate to other popular Linux distributions.
 
-***A big thank you for a lot of help to [Mike Olthoff](https://x.com/olthoff) of [CoinCards](https://coincards.com/) and for a lot of material pulled from his WIP guide [on Github](https://github.com/astupidmoose/Monero-on-BTCPay/blob/main/README.md)***
+***A big thank you for a lot of help to [CoinCards](https://coincards.com/) and for a lot of material pulled from their WIP guide [on Github](https://github.com/astupidmoose/Monero-on-BTCPay/blob/main/README.md)***
 
 ## Recommended hardware
 
@@ -30,12 +30,12 @@ For this guide I will assume you're running Ubuntu 24.04+ on a local machine or 
   - 4GB+ RAM
   - 250GB+ SSD
     - ~40GB are required for the pruned Bitcoin node, and ~105GB for the pruned Monero node (as measured on a freshly synced instance in July 2026), so be sure to leave plenty of headroom for future chain growth
-  
+
 [^1]: A pruned node allows you to run your own Monero node without requiring as much disk space. Please see [the pruning Moneropedia entry](https://www.getmonero.org/resources/moneropedia/pruning.html) for more info.
 
 ## Why use BTCPay Server to accept Monero?
 
-While there are quite a few options out there for accepting Monero as a merchant, BTCPay Server remains one of the best options for merchants due to it's complete self-sovereignty, the easy acceptance of other cryptocurrencies (like Bitcoin or Lightning), and the ability to simply spin it up.
+While there are quite a few options out there for accepting Monero as a merchant, BTCPay Server remains one of the best options for merchants due to its complete self-sovereignty, the easy acceptance of other cryptocurrencies (like Bitcoin or Lightning), and the ability to simply spin it up.
 
 The wide support for BTCPay Server also leads to it having many well-maintained plugins for common eCommerce platforms and you can even enable awesome additional features like automatic conversion to Monero from other assets via SideShift.
 
@@ -118,7 +118,7 @@ export BTCPAYGEN_CRYPTO1="btc"
 # Deploy the Monero node and wallet containers used by the Monero plugin
 export BTCPAYGEN_CRYPTO2="xmr"
 
-# opt-save-storage-xs (opens new window)will keep around 3 months of blocks (prune BTC for 25 GB)
+# opt-save-storage-xs keeps around 3 months of blocks (prune BTC for 25 GB)
 # opt-add-tor enables Tor support for the UI and Bitcoin node
 export BTCPAYGEN_ADDITIONAL_FRAGMENTS="opt-save-storage-xs;opt-add-tor"
 
@@ -201,7 +201,7 @@ After the restart (give it ~30s), you'll see a new "Monero" entry under the "Wal
 
 If you'd like to inspect the source code behind the plugin, it lives here: [btcpay-monero/btcpayserver-monero-plugin](https://github.com/btcpay-monero/btcpayserver-monero-plugin)
 
-## Setup your Bitcoin and Monero wallets
+## Set up your Bitcoin and Monero wallets
 
 ### Configure the Bitcoin wallet of choice
 
@@ -280,7 +280,7 @@ Monero support in BTCPay Server is now maintained by the community under the `bt
 Key areas that need improvement:
 
 - The plugin shares a single Monero wallet across all stores on a server
-  - Removing this limitation would allow for "Uncle Jim" BTCPay Server instances that are hosted by trusted friends/family/community members that other's can leverage for their stores without needing to host BTCPay Server themselves
+  - Removing this limitation would allow for "Uncle Jim" BTCPay Server instances that are hosted by trusted friends/family/community members that others can leverage for their stores without needing to host BTCPay Server themselves
 - Replacing the Monero wallet still requires a manual deletion of the wallet files via CLI (see [Troubleshooting]({{< relref "#replacing-the-monero-view-only-wallet" >}}) below)
   - Improving this would allow much simpler migration to new wallets directly from the UI
 
