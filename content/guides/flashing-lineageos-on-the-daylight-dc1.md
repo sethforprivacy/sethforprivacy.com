@@ -97,9 +97,9 @@ If you're happy with what you saw, continue below for the permanent install.
         adb devices
         ```
 
-4. Get a copy of stock in hand *before* you unlock
+4. Get the stock image that matches this guide in hand *before* you unlock
 
-    - A GSI flash replaces the system partition, so returning to stock means writing the stock `system` and `vbmeta` images back. Have them on disk before you start: either an OTA zip / stock assets from the DC-1 community (daylighthacker.wiki), or Daylight's own OTA tooling ([adiktofsugar/daylight](https://github.com/adiktofsugar/daylight)).
+    - A GSI flash replaces the system partition, so make sure you have Daylight's current consumer image and SP Flash Tool downloaded and extracted before you start. See [Flashing back to stock](#flashing-back-to-stock) for the exact files, and for the one download mode you are allowed to use.
     - Do not skip this. It's the difference between "I'll put it back tonight" and "I'll put it back when someone posts an image."
 
 {{< notice info >}}
@@ -278,41 +278,85 @@ Another adb device is attached; use `-s <serial>` or `ANDROID_SERIAL`.
 
 ## Flashing back to stock
 
-If LineageOS isn't for you, or you need the tablet back on Daylight's software for a warranty conversation, the road back is the same road in reverse -- this is exactly why the backup step earlier wasn't optional.
+Two reasons to go back: an RMA or warranty conversation, or — more likely — Daylight's Android 16 build. **There is no tested way to flash Android 16 straight onto a unit running this GSI.** Daylight's update server recognises units by the build they report, and a tablet that has been on a custom ROM for months simply isn't in their rollout; their tested path is stock Android 13 → `1.0.18` → Android 16, entirely through their own OTA.
 
-1. Boot into fastbootd
+That also makes a plain fastboot reflash of your saved `system` and `vbmeta` a dead end for this purpose: it leaves a non-stock boot chain (unlocked bootloader, verity disabled in the GSI's `vbmeta`) and doesn't put the tablet back on Daylight's update server. To genuinely return to stock you need MediaTek's SP Flash Tool.
 
-    - Commands:
+### What you need
 
-        ```bash
-        adb reboot bootloader
-        fastboot reboot fastboot
-        ```
+- **An x86_64 Linux machine.** SP Flash Tool ships for Windows and Linux only. There is no macOS build, and a VM with USB passthrough is not a reliable way to talk to a device in BROM mode — the handshake is timing-sensitive and passthrough drops it. I did this from Debian.
+- **Daylight's current consumer image** from their [flashing and recovery page](https://daylightco.notion.site/Daylight-Flashing-and-Recovery-Tool-3db0b673e0bf802baa0ac4f79a05575d) — the `*-0.9.9.58.prod.2-signed-image.zip`, about 3 GB.
+- **`SP_Flash_Tool_v6.2228_Linux.zip`** from the same page.
+- A USB data cable and a charged tablet.
 
-2. Flash the stock `system` and `vbmeta` images you set aside
-
-    - Commands:
-
-        ```bash
-        fastboot flash system stock-system.img
-        fastboot flash vbmeta_a stock-vbmeta.img
-        fastboot flash vbmeta_b stock-vbmeta.img
-        ```
-
-3. Wipe userdata (from the bootloader, same quirk as before) and reboot
-
-    - Commands:
-
-        ```bash
-        fastboot reboot bootloader
-        fastboot -w
-        fastboot reboot
-        ```
-
-If you never took a backup, re-image the tablet with Daylight's OTA tooling ([adiktofsugar/daylight](https://github.com/adiktofsugar/daylight)) or grab stock images from the DC-1 community before starting this section.
+Extract both. The image unpacks to a `*.jagar.user-image/` directory holding `MT6789_Android_scatter.xml`, a ~4.7 GB `super.img`, and a `download_agent/` folder with `flash_signedDA.xml` and `authsv5_jagar.auth`. Keep that folder intact — the flash XML points at the scatter through a relative path.
 
 {{< notice warning >}}
-Do **not** re-lock the bootloader (`fastboot flashing lock`) unless the device is fully back on unmodified, signed stock images -- `system` *and* `vbmeta`. Re-locking with anything else flashed can leave the tablet unbootable with no unlocked bootloader to recover from.
+**Use Download Only. Never use Format All.**
+
+SP Flash Tool offers four operations, and the difference between them is the difference between "back to stock" and "back to stock with no serial number". In `MT6789_Android_scatter.xml`, `nvram`, `nvdata`, `proinfo`, `protect1`, `protect2`, `seccfg` and `otp` are all marked `is_download=false`, and the zip contains no images for them. Download Only honours those flags and never touches them. Format All erases the **whole chip** first and then writes the image — and since the image carries no `nvram` payload, there is nothing to write back. Your serial number and radio calibration are gone, and only Daylight can re-provision them. That is one dropdown selection away, and there is no recovery from it.
+{{< /notice >}}
+
+### The steps
+
+1. Stop ModemManager and add the tool's udev rule
+
+    - The kernel otherwise hands the preloader port to ModemManager, which breaks the download-agent handshake.
+
+    - Commands:
+
+        ```bash
+        sudo systemctl stop ModemManager
+        sudo install -m644 99-ttyacms.rules /etc/udev/rules.d/
+        sudo udevadm control --reload-rules
+        ```
+
+2. Start the flash in console mode, Download Only
+
+    - `-c download` *is* Download Only. The tool also accepts `format`, `format-download` and `firmware-upgrade`; you want none of them. Use the console mode rather than the GUI so the mode can't be misclicked and the run is loggable.
+
+    - Commands:
+
+        ```bash
+        cd SP_Flash_Tool_v6.2228_Linux
+        sudo ./SPFlashToolV6 \
+          -f ../fw/*.jagar.user-image/download_agent/flash_signedDA.xml \
+          -a ../fw/*.jagar.user-image/download_agent/authsv5_jagar.auth \
+          -c download -t with
+        ```
+
+3. Power the tablet fully off, then plug in USB
+
+    - Start the tool *first* and let it scan. The tablet appears as `0e8d:2000 MediaTek MT65xx Preloader` and the tool takes over from there — no key combination. It takes about five minutes and reboots on its own; hold the top-right power button until the Daylight splash if it stays dark.
+
+4. Expect the first boot to land in recovery — tap **Factory data reset**
+
+    - The tablet stops at *"Can't load Android system. Your data may be corrupt"* with **Try again** / **Factory data reset**. "Try again" loops forever.
+
+    - Download Only writes a blank `userdata.img`, but `metadata` is `is_download=false` too, so the GSI's file-based-encryption keys survive. Stock cannot initialise against keys belonging to a different system image. Recovery's factory reset formats `userdata` **and** `metadata` together, which is the pairing the stock build needs.
+
+### What you keep, and what you don't
+
+- **Kept:** the serial number, WiFi/Bluetooth MAC and IMEI-derived state — none of those partitions are ever downloaded.
+- **Lost:** `/sdcard` (notes, PDFs, downloads, screenshots), all apps and app data. Coming from a custom ROM there is nothing worth preserving here anyway, so don't try unchecking `userdata` to save it — you'll trade a clean restore for a boot loop you then have to clear.
+- **Bootloader:** comes back **locked and green on its own**, with no `fastboot flashing lock` needed. The stock signed `vbmeta`, `vbmeta_system` and `vbmeta_vendor` images replace the verity-disabled ones the GSI required, and the lock state lives in `seccfg`, which Download Only never writes. My unit came back reporting `ro.boot.verifiedbootstate=green`, `ro.boot.vbmeta.device_state=locked`, on fingerprint `Daylight/vext_jagar/jagar:13/TP1A.220624.014/2602101745:user/release-keys`.
+
+### Then hand it to Daylight's updater
+
+1. Plug in the charger
+
+    - Android refuses to apply an OTA on a low battery, and this is a multi-gigabyte install. Mine booted at 12%.
+
+2. Connect Wi-Fi, open **Software Updates**, tap Update
+
+    - That takes you to `1.0.18`, the build carrying their new updater. Give it a few minutes online first — a tablet their server hasn't heard from in months isn't offered the update immediately.
+
+3. Tell Daylight you're on `1.0.18`
+
+    - They move the unit onto Android 16 and it arrives as a normal "Update available" notification.
+
+{{< notice info >}}
+The full procedure, with the partition-table evidence behind each warning above, is in [`docs/restore-stock.md`](https://github.com/sethforprivacy/dc1-lineage-gsi/blob/main/docs/restore-stock.md) in the port's repo. [`tools/flash-stock.sh`](https://github.com/sethforprivacy/dc1-lineage-gsi/blob/main/tools/flash-stock.sh) wraps the whole thing, with Download Only hard-coded so it can't be changed by accident — `sudo DC1_STOCK=~/dc1-stock tools/flash-stock.sh`.
 {{< /notice >}}
 
 ## Conclusion
