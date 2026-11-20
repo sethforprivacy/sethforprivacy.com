@@ -73,10 +73,6 @@ Opt Out is a podcast where I sit down with passionate people to learn why privac
 
 Check out my [announcement blog post]({{< ref "/posts/announcing-opt-out-podcast.md" >}}) for more info or the podcast's website at [optoutpod.com](https://optoutpod.com/).
 
-### Status page for all of my community resources
-
-Go to <https://status.sethforprivacy.com> (Tor: <http://su2ibebe5rl57gedg2lrkzcn746e4msomm6w6h3l5f4c2axqjww4fwid.onion>) to see the uptime and any outages associated with the services that I run.
-
 ### Privacy-preserving front-ends and tools
 
 - [Whoogle (private search front-end for Google)](https://search.sethforprivacy.com)
@@ -91,9 +87,6 @@ Go to <https://status.sethforprivacy.com> (Tor: <http://su2ibebe5rl57gedg2lrkzcn
 - [Privatebin (Private and encrypted pastebin)](https://paste.sethforprivacy.com)
   - Tor: <http://4ynh2fktyk3fk4oqtnqkhnnkcmvd4omf3kskcgchn7jna5ciw3reksqd.onion>
   - More info: <https://privatebin.info/>
-- [Public Pool (solo mining pool)](https://pool.sethforprivacy.com)
-  - Tor: <http://3n34xl7zp44xxj5v6b344y6inbgcokalh3z75zm76xyv4wjp34ts56ad.onion>
-  - More info: <https://github.com/benjamin-wilson/public-pool>
 - [SilentPayments.xyz](https://silentpayments.xyz)
   - Tor: <http://osjndnqzypx3df7ev32habe6beeqhrqjru5q4jxbym7gpuib7yqwzbyd.onion>
 
